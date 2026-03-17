@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build Markdown from PDFs using:
 1) PPStructureV3 for layout analysis
-2) PaddleOCR for text-region OCR
-3) PaddleOCRVL for table-region recognition
+2) VietOCR for non-table region recognition
+3) PaddleOCRVL only for table-region recognition
 
 Output is assembled in top-to-bottom reading order.
 """
@@ -22,21 +22,6 @@ import pandas as pd
 import torch
 from PIL import Image
 from paddleocr import PPStructureV3, PaddleOCRVL
-
-TEXT_LABELS = {
-    "text",
-    "paragraph_title",
-    "title",
-    "header",
-    "footer",
-    "reference",
-    "caption",
-    "footnote",
-    "equation_text",
-    "abstract",
-    "content",
-    "ocr",
-}
 
 TABLE_LABELS = {"table"}
 
@@ -62,6 +47,10 @@ def safe_bbox(block) -> tuple[int, int, int, int]:
 
 def sort_blocks_top_down(blocks: Iterable) -> list:
     return sorted(blocks, key=lambda b: (int(b.bbox[1]), int(b.bbox[0])))
+
+
+def is_table_block(label: str) -> bool:
+    return label in TABLE_LABELS
 
 
 def normalize_text(text: str) -> str:
@@ -226,19 +215,17 @@ def process_pdf(pdf_path: Path, out_md: Path, layout_pipe, vietocr_bundle, table
             y2 = max(y1 + 1, y2)
             crop = page_img[y1:y2, x1:x2]
 
-            if label in TABLE_LABELS:
+            if is_table_block(label):
                 table_md = ocr_table_block_with_vl(table_vl, crop)
                 if table_md:
                     md_parts.append(table_md)
                     md_parts.append("")
                 continue
 
-            if label in TEXT_LABELS:
-                text = ocr_text_block_with_vietocr(vietocr_bundle, crop)
-                if text:
-                    md_parts.append(text)
-                    md_parts.append("")
-                continue
+            text = ocr_text_block_with_vietocr(vietocr_bundle, crop)
+            if text:
+                md_parts.append(text)
+                md_parts.append("")
 
         md_parts.append("")
 
