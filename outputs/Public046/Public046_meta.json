@@ -1,0 +1,1485 @@
+{
+  "table_of_contents": [
+    {
+      "title": "VIETTEL AI RACE TD046",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          187.123046875,
+          62.4921875
+        ],
+        [
+          486.869140625,
+          62.4921875
+        ],
+        [
+          485.705078125,
+          95.3828125
+        ],
+        [
+          185.958984375,
+          95.3828125
+        ]
+      ]
+    },
+    {
+      "title": "GI\u1edaI THI\u1ec6U K\u1ef8 THU\u1eacT TRONG H\u1eccC S\u00c2U L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          136.77734375,
+          93.73828125
+        ],
+        [
+          496.8580017089844,
+          93.73828125
+        ],
+        [
+          496.8580017089844,
+          111.828125
+        ],
+        [
+          135.61328125,
+          111.828125
+        ]
+      ]
+    },
+    {
+      "title": "1. Vectorization",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          55.583984375,
+          147.185546875
+        ],
+        [
+          159.7392120361328,
+          145.541015625
+        ],
+        [
+          159.7392120361328,
+          160.30877685546875
+        ],
+        [
+          55.583984375,
+          160.30877685546875
+        ]
+      ]
+    },
+    {
+      "title": "2. Mini-batch gradient descent",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          55.001953125,
+          668.0908203125
+        ],
+        [
+          241.29534912109375,
+          666.4462890625
+        ],
+        [
+          241.29534912109375,
+          681.1887817382812
+        ],
+        [
+          55.001953125,
+          682.0693359375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Mini-batch gradient descent l\u00e0 g\u00ec",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          54.7109375,
+          695.2255859375
+        ],
+        [
+          282.27099609375,
+          693.5810546875
+        ],
+        [
+          282.27099609375,
+          710.7995300292969
+        ],
+        [
+          54.7109375,
+          710.8486328125
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD046",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          204.001953125,
+          66.1923828125
+        ],
+        [
+          449.6200256347656,
+          64.5478515625
+        ],
+        [
+          449.6200256347656,
+          79.6488037109375
+        ],
+        [
+          202.837890625,
+          79.6488037109375
+        ]
+      ]
+    },
+    {
+      "title": "GI\u1edaI THI\u1ec6U K\u1ef8 THU\u1eacT TRONG H\u1eccC S\u00c2U L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          136.486328125,
+          93.73828125
+        ],
+        [
+          496.8580017089844,
+          93.73828125
+        ],
+        [
+          496.8580017089844,
+          111.828125
+        ],
+        [
+          136.486328125,
+          111.828125
+        ]
+      ]
+    },
+    {
+      "title": "2.2 C\u00e1c th\u00f4ng s\u1ed1 trong mini-batch gradient descent",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          53.837890625,
+          707.970703125
+        ],
+        [
+          368.716796875,
+          706.326171875
+        ],
+        [
+          368.716796875,
+          723.1595077514648
+        ],
+        [
+          53.837890625,
+          724.416015625
+        ]
+      ]
+    },
+    {
+      "title": "L\u1eddi khuy\u00ean:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          92.251953125,
+          329.728515625
+        ],
+        [
+          146.24398803710938,
+          328.083984375
+        ],
+        [
+          146.24398803710938,
+          341.6441345214844
+        ],
+        [
+          91.087890625,
+          341.6441345214844
+        ]
+      ]
+    },
+    {
+      "title": "3. Bias v\u00e0 variance",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          54.7109375,
+          402.498779296875
+        ],
+        [
+          175.54177856445312,
+          401.265625
+        ],
+        [
+          175.54177856445312,
+          415.4587707519531
+        ],
+        [
+          54.7109375,
+          415.4587707519531
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Bias, variance l\u00e0 g\u00ec",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          55.001953125,
+          431.0295104980469
+        ],
+        [
+          197.52731323242188,
+          429.6337890625
+        ],
+        [
+          197.52731323242188,
+          445.0694885253906
+        ],
+        [
+          55.001953125,
+          445.2568359375
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD046",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          200.80078125,
+          61.2587890625
+        ],
+        [
+          453.40234375,
+          61.2587890625
+        ],
+        [
+          452.23828125,
+          80.1708984375
+        ],
+        [
+          199.63671875,
+          80.1708984375
+        ]
+      ]
+    },
+    {
+      "title": "GI\u1edaI THI\u1ec6U K\u1ef8 THU\u1eacT TRONG H\u1eccC S\u00c2U L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          135.904296875,
+          93.73828125
+        ],
+        [
+          496.8580017089844,
+          93.73828125
+        ],
+        [
+          496.8580017089844,
+          111.828125
+        ],
+        [
+          135.904296875,
+          111.828125
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Bias, variance tradeoff",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          56.400001525878906,
+          478.1474609375
+        ],
+        [
+          221.75390625,
+          476.5029296875
+        ],
+        [
+          221.75390625,
+          493.80950927734375
+        ],
+        [
+          56.400001525878906,
+          493.80950927734375
+        ]
+      ]
+    },
+    {
+      "title": "3.3 \u0110\u00e1nh gi\u00e1 bias and variance",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          54.7109375,
+          543.1064453125
+        ],
+        [
+          247.32717895507812,
+          541.4619140625
+        ],
+        [
+          247.32717895507812,
+          557.4095153808594
+        ],
+        [
+          54.7109375,
+          558.7294921875
+        ]
+      ]
+    },
+    {
+      "title": "4. Dropout",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          55.29296875,
+          180.3487548828125
+        ],
+        [
+          131.55982971191406,
+          179.25390625
+        ],
+        [
+          131.55982971191406,
+          193.30877685546875
+        ],
+        [
+          55.29296875,
+          194.0546875
+        ]
+      ]
+    },
+    {
+      "title": "4.1 Dropout l\u00e0 g\u00ec",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          55.875,
+          208.8795166015625
+        ],
+        [
+          164.0699920654297,
+          207.6220703125
+        ],
+        [
+          164.0699920654297,
+          222.91949462890625
+        ],
+        [
+          55.875,
+          223.2451171875
+        ]
+      ]
+    },
+    {
+      "title": "4.2 Dropout h\u1ea1n ch\u1ebf vi\u1ec7c overfitting",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          55.29296875,
+          553.7958984375
+        ],
+        [
+          278.4992980957031,
+          552.1513671875
+        ],
+        [
+          278.4992980957031,
+          570.3695068359375
+        ],
+        [
+          55.29296875,
+          570.3695068359375
+        ]
+      ]
+    },
+    {
+      "title": "4.3 L\u1eddi khuy\u00ean khi d\u00f9ng dropout",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          54.12890625,
+          652.5995025634766
+        ],
+        [
+          262.1525573730469,
+          651.234375
+        ],
+        [
+          262.1525573730469,
+          666.6395111083984
+        ],
+        [
+          54.12890625,
+          667.6796875
+        ]
+      ]
+    },
+    {
+      "title": "5. Activation function",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          55.001953125,
+          140.607421875
+        ],
+        [
+          191.88429260253906,
+          138.962890625
+        ],
+        [
+          191.88429260253906,
+          154.30877685546875
+        ],
+        [
+          55.001953125,
+          154.30877685546875
+        ]
+      ]
+    },
+    {
+      "title": "5.1 Non-linear activation function",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          55.001953125,
+          169.8795166015625
+        ],
+        [
+          265.2538146972656,
+          168.564453125
+        ],
+        [
+          265.2538146972656,
+          183.91949462890625
+        ],
+        [
+          53.837890625,
+          183.91949462890625
+        ]
+      ]
+    },
+    {
+      "title": "5.2 Vanishing v\u00e0 exploding gradient",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          55.001953125,
+          678.7802734375
+        ],
+        [
+          278.80487060546875,
+          677.1357421875
+        ],
+        [
+          278.80487060546875,
+          694.1195068359375
+        ],
+        [
+          55.001953125,
+          694.4033203125
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD046",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          179.556640625,
+          62.0810546875
+        ],
+        [
+          488.615234375,
+          60.4365234375
+        ],
+        [
+          487.451171875,
+          97.4384765625
+        ],
+        [
+          178.392578125,
+          99.0830078125
+        ]
+      ]
+    },
+    {
+      "title": "GI\u1edaI THI\u1ec6U K\u1ef8 THU\u1eacT TRONG H\u1eccC S\u00c2U L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          135.61328125,
+          94.560546875
+        ],
+        [
+          496.8580017089844,
+          92.916015625
+        ],
+        [
+          496.8580017089844,
+          111.005859375
+        ],
+        [
+          134.44921875,
+          112.650390625
+        ]
+      ]
+    },
+    {
+      "title": "5.3 M\u1ed9t s\u1ed1 activation th\u00f4ng d\u1ee5ng",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          54.7109375,
+          141.0185546875
+        ],
+        [
+          260.75,
+          139.3740234375
+        ],
+        [
+          259.9100036621094,
+          155.4794921875
+        ],
+        [
+          53.546875,
+          156.6416015625
+        ]
+      ]
+    },
+    {
+      "title": "Sigmoid activation function",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          82.06640625,
+          164.0419921875
+        ],
+        [
+          281.3868713378906,
+          162.3974609375
+        ],
+        [
+          281.3868713378906,
+          178.06878662109375
+        ],
+        [
+          82.06640625,
+          178.06878662109375
+        ]
+      ]
+    },
+    {
+      "title": "Tanh activation function",
+      "heading_level": null,
+      "page_id": 9,
+      "polygon": [
+        [
+          83.521484375,
+          467.869140625
+        ],
+        [
+          265.54974365234375,
+          466.224609375
+        ],
+        [
+          265.54974365234375,
+          481.8387756347656
+        ],
+        [
+          83.521484375,
+          482.669921875
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD046\nGI\u1edaI THI\u1ec6U K\u1ef8 THU\u1eacT TRONG H\u1eccC S\u00c2U L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          125.13671875,
+          58.380859375
+        ],
+        [
+          506.94921875,
+          56.736328125
+        ],
+        [
+          505.78515625,
+          119.228515625
+        ],
+        [
+          123.97265625,
+          120.873046875
+        ]
+      ]
+    },
+    {
+      "title": "ReLU activation function",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          82.357421875,
+          140.1962890625
+        ],
+        [
+          269.189453125,
+          138.5517578125
+        ],
+        [
+          269.1410827636719,
+          154.30877685546875
+        ],
+        [
+          81.193359375,
+          154.30877685546875
+        ]
+      ]
+    },
+    {
+      "title": "Leaky ReLU",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          83.23046875,
+          451.423828125
+        ],
+        [
+          199.45376586914062,
+          449.779296875
+        ],
+        [
+          199.45376586914062,
+          464.6788024902344
+        ],
+        [
+          83.23046875,
+          466.224609375
+        ]
+      ]
+    },
+    {
+      "title": "6. Batch Normalize",
+      "heading_level": null,
+      "page_id": 10,
+      "polygon": [
+        [
+          53.837890625,
+          676.8687896728516
+        ],
+        [
+          178.08192443847656,
+          675.90234375
+        ],
+        [
+          178.08192443847656,
+          689.8287811279297
+        ],
+        [
+          53.837890625,
+          689.8287811279297
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD046\nGI\u1edaI THI\u1ec6U K\u1ef8 THU\u1eacT TRONG H\u1eccC S\u00c2U L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          137.05999755859375,
+          58.380859375
+        ],
+        [
+          506.94921875,
+          58.380859375
+        ],
+        [
+          505.78515625,
+          117.583984375
+        ],
+        [
+          137.05999755859375,
+          117.583984375
+        ]
+      ]
+    },
+    {
+      "title": "6.1 Ph\u00e2n t\u00edch nguy\u00ean nh\u00e2n",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          55.29296875,
+          240.79949951171875
+        ],
+        [
+          222.9256591796875,
+          240.1015625
+        ],
+        [
+          222.9256591796875,
+          254.8394775390625
+        ],
+        [
+          55.29296875,
+          254.90234375
+        ]
+      ]
+    },
+    {
+      "title": "6.2 Batch Normalization ra \u0111\u1eddi",
+      "heading_level": null,
+      "page_id": 11,
+      "polygon": [
+        [
+          55.29296875,
+          718.2490234375
+        ],
+        [
+          249.23312377929688,
+          716.6044921875
+        ],
+        [
+          249.23312377929688,
+          732.99951171875
+        ],
+        [
+          55.29296875,
+          732.99951171875
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD046\nGI\u1edaI THI\u1ec6U K\u1ef8 THU\u1eacT TRONG H\u1eccC S\u00c2U L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          137.05999755859375,
+          60.4365234375
+        ],
+        [
+          504.0390625,
+          58.7919921875
+        ],
+        [
+          504.0390625,
+          110.268798828125
+        ],
+        [
+          137.05999755859375,
+          110.268798828125
+        ]
+      ]
+    },
+    {
+      "title": "6.3 Hi\u1ec7u qu\u1ea3 c\u1ee7a batch normalization",
+      "heading_level": null,
+      "page_id": 12,
+      "polygon": [
+        [
+          55.29296875,
+          455.9462890625
+        ],
+        [
+          288.570556640625,
+          454.3017578125
+        ],
+        [
+          288.570556640625,
+          470.7695007324219
+        ],
+        [
+          55.29296875,
+          471.5693359375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          98
+        ],
+        [
+          "Line",
+          39
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Code",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          71
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          48
+        ],
+        [
+          "Line",
+          17
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          64
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          30
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          118
+        ],
+        [
+          "Line",
+          40
+        ],
+        [
+          "TableCell",
+          21
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          91
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Picture",
+          4
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          64
+        ],
+        [
+          "Line",
+          21
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "Equation",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          64
+        ],
+        [
+          "Line",
+          25
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          89
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          63
+        ],
+        [
+          "Line",
+          22
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 11,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          74
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 12,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          118
+        ],
+        [
+          "Line",
+          29
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public046"
+}

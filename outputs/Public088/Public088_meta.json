@@ -1,0 +1,455 @@
+{
+  "table_of_contents": [
+    {
+      "title": "VIETTEL AI RACE TD088\nM\u00e1y T\u00ednh Sinh H\u1ecdc (Biocomputing) D\u1ef1a \nTr\u00ean DNA V\u00e0 \u1ee8ng D\u1ee5ng Trong Y Sinh",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          169.6999969482422,
+          39.248779296875
+        ],
+        [
+          460.4200134277344,
+          39.248779296875
+        ],
+        [
+          460.4200134277344,
+          85.56878662109375
+        ],
+        [
+          169.6999969482422,
+          85.56878662109375
+        ]
+      ]
+    },
+    {
+      "title": "1. Gi\u1edbi thi\u1ec7u",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          98.9453125,
+          116.900390625
+        ],
+        [
+          183.38577270507812,
+          115.25390625
+        ],
+        [
+          183.38577270507812,
+          130.94879150390625
+        ],
+        [
+          97.78125,
+          130.94879150390625
+        ]
+      ]
+    },
+    {
+      "title": "2. M\u00e1y t\u00ednh sinh h\u1ecdc: \u0110\u1ecbnh ngh\u0129a v\u00e0 \u00fd ngh\u0129a",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          99.26399230957031,
+          382.8076171875
+        ],
+        [
+          357.1517639160156,
+          381.1611328125
+        ],
+        [
+          357.1517639160156,
+          398.69879150390625
+        ],
+        [
+          99.26399230957031,
+          398.69879150390625
+        ]
+      ]
+    },
+    {
+      "title": "3. \u01afu \u0111i\u1ec3m v\u01b0\u1ee3t tr\u1ed9i c\u1ee7a m\u00e1y t\u00ednh sinh h\u1ecdc",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          99.236328125,
+          535.9306640625
+        ],
+        [
+          352.9842529296875,
+          534.2841796875
+        ],
+        [
+          352.9842529296875,
+          551.23876953125
+        ],
+        [
+          98.072265625,
+          552.3955078125
+        ]
+      ]
+    },
+    {
+      "title": "4. Nguy\u00ean l\u00fd c\u01a1 b\u1ea3n",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          98.9453125,
+          216.5126953125
+        ],
+        [
+          223.85577392578125,
+          214.8662109375
+        ],
+        [
+          223.85577392578125,
+          229.70880126953125
+        ],
+        [
+          97.78125,
+          229.70880126953125
+        ]
+      ]
+    },
+    {
+      "title": "5. \u01afu th\u1ebf n\u1ed5i b\u1eadt",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          98.36328125,
+          487.77099609375
+        ],
+        [
+          207.52566528320312,
+          486.12451171875
+        ],
+        [
+          207.52566528320312,
+          503.3587646484375
+        ],
+        [
+          97.19921875,
+          503.41259765625
+        ]
+      ]
+    },
+    {
+      "title": "6. \u1ee8ng d\u1ee5ng trong y sinh h\u1ecdc",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          98.9453125,
+          718.27880859375
+        ],
+        [
+          275.8828125,
+          716.63232421875
+        ],
+        [
+          275.8828125,
+          732.27392578125
+        ],
+        [
+          98.9453125,
+          733.92041015625
+        ]
+      ]
+    },
+    {
+      "title": "7. C\u00e1c th\u00e0nh t\u1ef1u nghi\u00ean c\u1ee9u n\u1ed5i b\u1eadt",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          98.36328125,
+          333.00146484375
+        ],
+        [
+          314.32568359375,
+          331.35498046875
+        ],
+        [
+          314.32568359375,
+          347.8187561035156
+        ],
+        [
+          97.19921875,
+          348.64306640625
+        ]
+      ]
+    },
+    {
+      "title": "8. Th\u00e1ch th\u1ee9c tri\u1ec3n khai",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          98.36328125,
+          515.349609375
+        ],
+        [
+          249.0538330078125,
+          513.703125
+        ],
+        [
+          249.0538330078125,
+          528.7987670898438
+        ],
+        [
+          97.19921875,
+          528.7987670898438
+        ]
+      ]
+    },
+    {
+      "title": "9. T\u01b0\u01a1ng lai v\u00e0 xu h\u01b0\u1edbng",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          98.36328125,
+          116.900390625
+        ],
+        [
+          254.44976806640625,
+          115.25390625
+        ],
+        [
+          254.44976806640625,
+          130.94879150390625
+        ],
+        [
+          97.19921875,
+          130.94879150390625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          471
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          418
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          366
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          442
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "ListItem",
+          12
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Text",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          178
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public088"
+}

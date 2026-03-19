@@ -1,0 +1,753 @@
+{
+  "table_of_contents": [
+    {
+      "title": "VIETTEL AI RACE TD079",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          229.3203125,
+          38.6923828125
+        ],
+        [
+          460.4200134277344,
+          37.0458984375
+        ],
+        [
+          460.4200134277344,
+          52.20880126953125
+        ],
+        [
+          229.3203125,
+          52.20880126953125
+        ]
+      ]
+    },
+    {
+      "title": "1. Gi\u1edbi thi\u1ec7u",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          99.26399230957031,
+          145.7138671875
+        ],
+        [
+          183.38577270507812,
+          144.0673828125
+        ],
+        [
+          183.38577270507812,
+          159.38885498046875
+        ],
+        [
+          98.9453125,
+          159.38885498046875
+        ]
+      ]
+    },
+    {
+      "title": "2. Nguy\u00ean l\u00fd ho\u1ea1t \u0111\u1ed9ng",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          99.26399230957031,
+          363.46142578125
+        ],
+        [
+          241.96998596191406,
+          361.81494140625
+        ],
+        [
+          241.96998596191406,
+          377.8187561035156
+        ],
+        [
+          99.26399230957031,
+          377.8187561035156
+        ]
+      ]
+    },
+    {
+      "title": "3. C\u1ea5u tr\u00fac m\u1ea1ng CNN",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          98.36328125,
+          608.78759765625
+        ],
+        [
+          242.67080688476562,
+          607.14111328125
+        ],
+        [
+          242.67080688476562,
+          624.5887908935547
+        ],
+        [
+          98.36328125,
+          624.5887908935547
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD079",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          229.611328125,
+          37.0458984375
+        ],
+        [
+          460.4200134277344,
+          37.0458984375
+        ],
+        [
+          460.4200134277344,
+          53.5107421875
+        ],
+        [
+          229.611328125,
+          53.5107421875
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Tr\u01b0\u1eddng ti\u1ebfp nh\u1eadn c\u1ee5c b\u1ed9 (local receptive field)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          99.236328125,
+          160.5322265625
+        ],
+        [
+          384.8525695800781,
+          158.8857421875
+        ],
+        [
+          384.8525695800781,
+          175.82879638671875
+        ],
+        [
+          98.072265625,
+          175.82879638671875
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD079\nM\u1ea1ng Th\u1ea7n Kinh T\u00edch Ch\u1eadp \n(Convolutional Neural Networks \u2013 CNN)",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          169.6999969482422,
+          39.248779296875
+        ],
+        [
+          460.4200134277344,
+          39.248779296875
+        ],
+        [
+          460.4200134277344,
+          87.1287841796875
+        ],
+        [
+          169.6999969482422,
+          88.49853515625
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Tr\u1ecdng s\u1ed1 chia s\u1ebb (shared weight and bias)",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          98.654296875,
+          443.31591796875
+        ],
+        [
+          356.7711181640625,
+          441.66943359375
+        ],
+        [
+          356.7711181640625,
+          457.7587585449219
+        ],
+        [
+          97.490234375,
+          458.95751953125
+        ]
+      ]
+    },
+    {
+      "title": "3.3 L\u1edbp t\u1ed5ng h\u1ee3p (pooling layer)",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          98.36328125,
+          137.89306640625
+        ],
+        [
+          287.7701721191406,
+          136.24658203125
+        ],
+        [
+          287.7701721191406,
+          153.38885498046875
+        ],
+        [
+          98.36328125,
+          153.53466796875
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD079\nM\u1ea1ng Th\u1ea7n Kinh T\u00edch Ch\u1eadp \n(Convolutional Neural Networks \u2013 CNN) \nCho Ph\u00e2n T\u00edch \u1ea2nh Y T\u1ebf",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          169.6999969482422,
+          39.248779296875
+        ],
+        [
+          460.4200134277344,
+          39.248779296875
+        ],
+        [
+          460.4200134277344,
+          103.58880615234375
+        ],
+        [
+          169.6999969482422,
+          103.58880615234375
+        ]
+      ]
+    },
+    {
+      "title": "4. \u1ee8ng d\u1ee5ng trong ph\u00e2n t\u00edch \u1ea3nh y t\u1ebf",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          98.654296875,
+          432.61376953125
+        ],
+        [
+          319.6042175292969,
+          430.96728515625
+        ],
+        [
+          319.6042175292969,
+          447.07879638671875
+        ],
+        [
+          98.654296875,
+          448.25537109375
+        ]
+      ]
+    },
+    {
+      "title": "5. Ki\u1ebfn tr\u00fac CNN ph\u1ed5 bi\u1ebfn trong y t\u1ebf",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          97.78125,
+          642.54052734375
+        ],
+        [
+          319.9642639160156,
+          640.89404296875
+        ],
+        [
+          319.9642639160156,
+          658.0687866210938
+        ],
+        [
+          97.78125,
+          658.18212890625
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD079",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          229.3203125,
+          37.869140625
+        ],
+        [
+          460.4200134277344,
+          36.22265625
+        ],
+        [
+          460.4200134277344,
+          52.20880126953125
+        ],
+        [
+          228.15625,
+          52.6875
+        ]
+      ]
+    },
+    {
+      "title": "6. L\u1ee3i \u00edch trong y t\u1ebf",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          99.236328125,
+          212.396484375
+        ],
+        [
+          224.373046875,
+          210.75
+        ],
+        [
+          223.48423767089844,
+          228.1488037109375
+        ],
+        [
+          98.072265625,
+          228.861328125
+        ]
+      ]
+    },
+    {
+      "title": "7. Th\u00e1ch th\u1ee9c v\u00e0 h\u1ea1n ch\u1ebf",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          99.26399230957031,
+          407.09326171875
+        ],
+        [
+          253.84423828125,
+          405.44677734375
+        ],
+        [
+          253.84423828125,
+          422.69879150390625
+        ],
+        [
+          99.26399230957031,
+          422.73486328125
+        ]
+      ]
+    },
+    {
+      "title": "8. Xu h\u01b0\u1edbng t\u01b0\u01a1ng lai",
+      "heading_level": null,
+      "page_id": 7,
+      "polygon": [
+        [
+          97.78125,
+          618.66650390625
+        ],
+        [
+          236.5443115234375,
+          617.02001953125
+        ],
+        [
+          236.5443115234375,
+          633.5887908935547
+        ],
+        [
+          97.78125,
+          634.30810546875
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          478
+        ],
+        [
+          "Line",
+          40
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          407
+        ],
+        [
+          "Line",
+          34
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          200
+        ],
+        [
+          "Line",
+          19
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          110
+        ],
+        [
+          "Line",
+          12
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Picture",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          316
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "Text",
+          12
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          162
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Picture",
+          4
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          312
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          465
+        ],
+        [
+          "Line",
+          39
+        ],
+        [
+          "ListItem",
+          13
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          87
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public079"
+}

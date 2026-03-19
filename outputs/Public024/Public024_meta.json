@@ -1,0 +1,945 @@
+{
+  "table_of_contents": [
+    {
+      "title": "1. TH\u1ef0C PH\u1ea8M L\u00c0 G\u00cc?",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          72.017578125,
+          106.34765625
+        ],
+        [
+          228.005859375,
+          104.80078125
+        ],
+        [
+          227.9873504638672,
+          121.46881103515625
+        ],
+        [
+          70.822265625,
+          122.58984375
+        ]
+      ]
+    },
+    {
+      "title": "2. PH\u00c2N LO\u1ea0I TH\u1ef0C PH\u1ea8M",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.12109375,
+          403.34765625
+        ],
+        [
+          258.28424072265625,
+          401.80078125
+        ],
+        [
+          258.28424072265625,
+          419.0987854003906
+        ],
+        [
+          71.12109375,
+          419.58984375
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Ph\u00e2n lo\u1ea1i th\u1ef1c ph\u1ea9m theo th\u00e0nh ph\u1ea7n h\u00f3a h\u1ecdc",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          72.017578125,
+          478.37109375
+        ],
+        [
+          356.584228515625,
+          476.82421875
+        ],
+        [
+          356.584228515625,
+          493.3987731933594
+        ],
+        [
+          70.822265625,
+          493.3987731933594
+        ]
+      ]
+    },
+    {
+      "title": "Th\u1ef1c ph\u1ea9m gi\u00e0u glucid",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          98.61328125,
+          612.17578125
+        ],
+        [
+          272.78985595703125,
+          610.62890625
+        ],
+        [
+          272.78985595703125,
+          626.6287841796875
+        ],
+        [
+          98.61328125,
+          626.87109375
+        ]
+      ]
+    },
+    {
+      "title": "Th\u1ef1c ph\u1ea9m gi\u00e0u protein",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          99.2109375,
+          265.2890625
+        ],
+        [
+          279.26983642578125,
+          263.7421875
+        ],
+        [
+          279.26983642578125,
+          279.2109375
+        ],
+        [
+          99.2109375,
+          280.7578125
+        ]
+      ]
+    },
+    {
+      "title": "Th\u1ef1c ph\u1ea9m gi\u00e0u lipid",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          98.912109375,
+          353.4609375
+        ],
+        [
+          264.0548095703125,
+          351.9140625
+        ],
+        [
+          264.0548095703125,
+          368.2187805175781
+        ],
+        [
+          98.912109375,
+          368.9296875
+        ]
+      ]
+    },
+    {
+      "title": "Th\u1ef1c ph\u1ea9m d\u1ea1ng h\u1ed7n h\u1ee3p",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          99.509765625,
+          427.32421875
+        ],
+        [
+          288.2957458496094,
+          425.77734375
+        ],
+        [
+          288.2957458496094,
+          442.6387939453125
+        ],
+        [
+          99.509765625,
+          443.56640625
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Ph\u00e2n lo\u1ea1i th\u1ef1c ph\u1ea9m theo m\u1ee5c \u0111\u00edch s\u1eed d\u1ee5ng",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          71.419921875,
+          561.12890625
+        ],
+        [
+          344.94976806640625,
+          559.58203125
+        ],
+        [
+          344.94976806640625,
+          575.8387756347656
+        ],
+        [
+          70.224609375,
+          575.8387756347656
+        ]
+      ]
+    },
+    {
+      "title": "M\u1ee5c \u0111\u00edch dinh d\u01b0\u1ee1ng",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          99.2109375,
+          584.33203125
+        ],
+        [
+          264.0500183105469,
+          582.78515625
+        ],
+        [
+          264.0500183105469,
+          598.3087768554688
+        ],
+        [
+          99.2109375,
+          599.02734375
+        ]
+      ]
+    },
+    {
+      "title": "M\u1ee5c \u0111\u00edch ph\u00f2ng v\u00e0 tr\u1ecb b\u1ec7nh",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          99.509765625,
+          102.5087890625
+        ],
+        [
+          298.1357727050781,
+          101.70703125
+        ],
+        [
+          298.1357727050781,
+          115.46881103515625
+        ],
+        [
+          98.314453125,
+          116.40234375
+        ]
+      ]
+    },
+    {
+      "title": "2.3 C\u00e1c m\u1ee5c \u0111\u00edch s\u1eed d\u1ee5ng kh\u00e1c",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          71.419921875,
+          339.15234375
+        ],
+        [
+          256.84521484375,
+          337.60546875
+        ],
+        [
+          256.84521484375,
+          352.3787841796875
+        ],
+        [
+          71.419921875,
+          352.3787841796875
+        ]
+      ]
+    },
+    {
+      "title": "Th\u1ef1c ph\u1ea9m t\u01b0\u01a1i",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          98.912109375,
+          427.32421875
+        ],
+        [
+          234.63560485839844,
+          425.77734375
+        ],
+        [
+          234.63560485839844,
+          442.01953125
+        ],
+        [
+          98.912109375,
+          443.56640625
+        ]
+      ]
+    },
+    {
+      "title": "Th\u1ef1c ph\u1ea9m ch\u1ebf bi\u1ebfn \u1edf quy m\u00f4 gia \u0111\u00ecnh",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          99.509765625,
+          546.43359375
+        ],
+        [
+          361.234619140625,
+          544.88671875
+        ],
+        [
+          361.234619140625,
+          560.8387756347656
+        ],
+        [
+          98.314453125,
+          561.12890625
+        ]
+      ]
+    },
+    {
+      "title": "Th\u1ef1c ph\u1ea9m ch\u1ebf bi\u1ebfn \u1edf quy m\u00f4 c\u00f4ng nghi\u1ec7p",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          98.61328125,
+          636.15234375
+        ],
+        [
+          382.8757629394531,
+          634.60546875
+        ],
+        [
+          382.8757629394531,
+          650.1487731933594
+        ],
+        [
+          98.61328125,
+          650.84765625
+        ]
+      ]
+    },
+    {
+      "title": "3. C\u00c1C CH\u1ec8 TI\u00caU CH\u1ea4T L\u01af\u1ee2NG C\u1ee6A TH\u1ef0C PH\u1ea8M",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          71.419921875,
+          121.04296875
+        ],
+        [
+          400.728515625,
+          119.49609375
+        ],
+        [
+          400.1442565917969,
+          136.34881591796875
+        ],
+        [
+          70.224609375,
+          137.28515625
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Theo l\u0129nh v\u1ef1c khoa h\u1ecdc t\u1ef1 nhi\u00ean",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          72.017578125,
+          197.78875732421875
+        ],
+        [
+          279.7843933105469,
+          196.83984375
+        ],
+        [
+          279.7843933105469,
+          210.748779296875
+        ],
+        [
+          70.822265625,
+          211.53515625
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau v\u1eadt l\u00fd",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          99.2109375,
+          256.78125
+        ],
+        [
+          222.328125,
+          255.234375
+        ],
+        [
+          222.30152893066406,
+          270.1788330078125
+        ],
+        [
+          98.015625,
+          270.703125
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau h\u00f3a h\u1ecdc",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          98.912109375,
+          332.96484375
+        ],
+        [
+          234.5242462158203,
+          331.41796875
+        ],
+        [
+          234.5242462158203,
+          346.3787841796875
+        ],
+        [
+          98.912109375,
+          346.3787841796875
+        ]
+      ]
+    },
+    {
+      "title": "3.1.2.2. Ph\u1ee5 gia v\u00e0 ch\u1ea5t h\u1ed7 tr\u1ee3 k\u1ef9 thu\u1eadt",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          114.6199951171875,
+          439.69921875
+        ],
+        [
+          319.01287841796875,
+          438.15234375
+        ],
+        [
+          319.01287841796875,
+          454.1587829589844
+        ],
+        [
+          114.6199951171875,
+          454.39453125
+        ]
+      ]
+    },
+    {
+      "title": "3.1.2.3. C\u00e1c ch\u1ea5t kh\u00e1c",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          112.95703125,
+          530.19140625
+        ],
+        [
+          231.50503540039062,
+          528.64453125
+        ],
+        [
+          231.50503540039062,
+          545.2387847900391
+        ],
+        [
+          112.95703125,
+          545.2387847900391
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau h\u00f3a l\u00fd",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          98.61328125,
+          637.69921875
+        ],
+        [
+          225.13087463378906,
+          636.15234375
+        ],
+        [
+          225.13087463378906,
+          651.3487701416016
+        ],
+        [
+          98.61328125,
+          652.39453125
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau sinh h\u1ecdc",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          99.80859375,
+          102.48046875
+        ],
+        [
+          237.5242462158203,
+          100.93359375
+        ],
+        [
+          237.5242462158203,
+          115.46881103515625
+        ],
+        [
+          98.61328125,
+          115.62890625
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau h\u00f3a sinh",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          100.107421875,
+          193.5887451171875
+        ],
+        [
+          238.19456481933594,
+          192.5859375
+        ],
+        [
+          238.19456481933594,
+          206.54876708984375
+        ],
+        [
+          98.912109375,
+          206.54876708984375
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau bao b\u00ec",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          99.509765625,
+          268.018798828125
+        ],
+        [
+          225.85662841796875,
+          266.8359375
+        ],
+        [
+          225.85662841796875,
+          280.9787902832031
+        ],
+        [
+          98.314453125,
+          280.9787902832031
+        ]
+      ]
+    },
+    {
+      "title": "3.2 Theo c\u01a1 s\u1edf khoa h\u1ecdc c\u1ee7a ph\u01b0\u01a1ng ph\u00e1p ph\u00e2n t\u00edch",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          72.02399444580078,
+          342.24609375
+        ],
+        [
+          369.8472900390625,
+          340.69921875
+        ],
+        [
+          369.8472900390625,
+          355.2587585449219
+        ],
+        [
+          71.12109375,
+          355.39453125
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau h\u00f3a l\u00fd",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          98.912109375,
+          401.4140625
+        ],
+        [
+          225.13087463378906,
+          399.8671875
+        ],
+        [
+          225.13087463378906,
+          414.6587829589844
+        ],
+        [
+          98.912109375,
+          415.3359375
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau sinh h\u1ecdc",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          99.2109375,
+          490.74609375
+        ],
+        [
+          237.5242462158203,
+          489.19921875
+        ],
+        [
+          237.5242462158203,
+          503.9587707519531
+        ],
+        [
+          98.015625,
+          505.44140625
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ec9 ti\u00eau c\u1ea3m quan",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          98.912109375,
+          549.52734375
+        ],
+        [
+          246.17959594726562,
+          547.98046875
+        ],
+        [
+          246.17959594726562,
+          563.3587646484375
+        ],
+        [
+          98.912109375,
+          564.22265625
+        ]
+      ]
+    },
+    {
+      "title": "4. NH\u1eeeNG V\u1ea4N \u0110\u1ec0 QUAN T\u00c2M C\u1ee6A NG\u01af\u1edcI TI\u00caU D\u00d9NG V\u1ec0 CH\u1ea4T \nL\u01af\u1ee2NG TH\u1ef0C PH\u1ea8M",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.224609375,
+          607.1484375
+        ],
+        [
+          499.05999755859375,
+          605.6015625
+        ],
+        [
+          499.05999755859375,
+          639.2287750244141
+        ],
+        [
+          70.224609375,
+          639.6328125
+        ]
+      ]
+    },
+    {
+      "title": "4.1 An to\u00e0n th\u1ef1c ph\u1ea9m",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.822265625,
+          652.78125
+        ],
+        [
+          208.1256866455078,
+          651.234375
+        ],
+        [
+          208.1256866455078,
+          667.6687774658203
+        ],
+        [
+          70.822265625,
+          668.25
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          108
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          121
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          123
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          153
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          126
+        ],
+        [
+          "Line",
+          25
+        ],
+        [
+          "SectionHeader",
+          9
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Line",
+          11
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Span",
+          5
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public024"
+}

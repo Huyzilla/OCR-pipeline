@@ -1,0 +1,597 @@
+{
+  "table_of_contents": [
+    {
+      "title": "1. D\u00f2ng \u0111i\u1ec7n m\u1ed9t chi\u1ec1u (Direct Current \u2013 DC)",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          72.02399444580078,
+          121.4296875
+        ],
+        [
+          341.7835998535156,
+          119.8828125
+        ],
+        [
+          341.7835998535156,
+          136.34881591796875
+        ],
+        [
+          71.12109375,
+          136.8984375
+        ]
+      ]
+    },
+    {
+      "title": "1.1 \u0110\u1ecbnh ngh\u0129a (Definition)",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.822265625,
+          150.8203125
+        ],
+        [
+          229.53823852539062,
+          149.2734375
+        ],
+        [
+          229.53823852539062,
+          164.788818359375
+        ],
+        [
+          69.626953125,
+          164.788818359375
+        ]
+      ]
+    },
+    {
+      "title": "1.2 \u0110\u1ecbnh lu\u1eadt Ohm (Ohm's Law)",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          72.017578125,
+          268.76953125
+        ],
+        [
+          261.22161865234375,
+          267.22265625
+        ],
+        [
+          261.22161865234375,
+          283.1387939453125
+        ],
+        [
+          70.822265625,
+          283.46484375
+        ]
+      ]
+    },
+    {
+      "title": "Gi\u1ea3i th\u00edch:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.5234375,
+          489.5859375
+        ],
+        [
+          131.53343200683594,
+          488.0390625
+        ],
+        [
+          131.53343200683594,
+          502.998779296875
+        ],
+        [
+          70.5234375,
+          502.998779296875
+        ]
+      ]
+    },
+    {
+      "title": "Thi\u1ebft b\u1ecb Ohmic v\u00e0 Non-Ohmic:",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          69.92578125,
+          561.12890625
+        ],
+        [
+          245.310791015625,
+          559.58203125
+        ],
+        [
+          245.310791015625,
+          575.8387756347656
+        ],
+        [
+          69.92578125,
+          575.8387756347656
+        ]
+      ]
+    },
+    {
+      "title": "1.3 V\u00ed d\u1ee5 minh h\u1ecda",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.12109375,
+          649.30078125
+        ],
+        [
+          186.6199951171875,
+          647.75390625
+        ],
+        [
+          186.6199951171875,
+          663.8287811279297
+        ],
+        [
+          71.12109375,
+          663.99609375
+        ]
+      ]
+    },
+    {
+      "title": "1.4 C\u00f4ng su\u1ea5t \u0111i\u1ec7n (Power Calculation)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          71.12109375,
+          332.578125
+        ],
+        [
+          298.0654296875,
+          331.03125
+        ],
+        [
+          298.0654296875,
+          347.3387756347656
+        ],
+        [
+          69.92578125,
+          348.046875
+        ]
+      ]
+    },
+    {
+      "title": "2. D\u00f2ng \u0111i\u1ec7n xoay chi\u1ec1u (Alternating Current \u2013 AC)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          71.71875,
+          538.69921875
+        ],
+        [
+          375.7856750488281,
+          537.15234375
+        ],
+        [
+          375.7856750488281,
+          553.3987731933594
+        ],
+        [
+          70.5234375,
+          553.3987731933594
+        ]
+      ]
+    },
+    {
+      "title": "2.1 \u0110\u1ecbnh ngh\u0129a (Definition)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          70.5234375,
+          568.08984375
+        ],
+        [
+          229.53823852539062,
+          566.54296875
+        ],
+        [
+          229.53823852539062,
+          581.8387756347656
+        ],
+        [
+          70.5234375,
+          582.78515625
+        ]
+      ]
+    },
+    {
+      "title": "2.2 D\u1ea1ng s\u00f3ng (Waveform)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          71.12109375,
+          102.09375
+        ],
+        [
+          230.09765625,
+          100.546875
+        ],
+        [
+          229.64480590820312,
+          115.46881103515625
+        ],
+        [
+          69.92578125,
+          116.015625
+        ]
+      ]
+    },
+    {
+      "title": "2.3 M\u00f4 t\u1ea3 to\u00e1n h\u1ecdc c\u1ee7a s\u00f3ng sin AC",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          71.12109375,
+          220.4296875
+        ],
+        [
+          276.13592529296875,
+          218.8828125
+        ],
+        [
+          276.13592529296875,
+          233.6688232421875
+        ],
+        [
+          69.92578125,
+          234.3515625
+        ]
+      ]
+    },
+    {
+      "title": "2.4 \u1ee8ng d\u1ee5ng (Applications)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.224609375,
+          527.87109375
+        ],
+        [
+          237.71890258789062,
+          526.32421875
+        ],
+        [
+          237.71890258789062,
+          542.8387756347656
+        ],
+        [
+          70.224609375,
+          542.8387756347656
+        ]
+      ]
+    },
+    {
+      "title": "1. Truy\u1ec1n t\u1ea3i d\u1ec5 d\u00e0ng tr\u00ean kho\u1ea3ng c\u00e1ch d\u00e0i:",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          88.751953125,
+          586.265625
+        ],
+        [
+          337.8785705566406,
+          584.71875
+        ],
+        [
+          337.8785705566406,
+          602.1487731933594
+        ],
+        [
+          88.751953125,
+          602.1487731933594
+        ]
+      ]
+    },
+    {
+      "title": "2. Cung c\u1ea5p n\u0103ng l\u01b0\u1ee3ng cho \u0111\u1ed9ng c\u01a1 \u0111i\u1ec7n:",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          88.453125,
+          647.75390625
+        ],
+        [
+          328.2492980957031,
+          646.20703125
+        ],
+        [
+          328.2492980957031,
+          661.9087677001953
+        ],
+        [
+          88.453125,
+          662.44921875
+        ]
+      ]
+    },
+    {
+      "title": "2.5 \u0110i\u1ec7n \u00e1p hi\u1ec7u d\u1ee5ng (RMS Voltage)",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.822265625,
+          146.1796875
+        ],
+        [
+          288.344482421875,
+          144.6328125
+        ],
+        [
+          288.344482421875,
+          159.38885498046875
+        ],
+        [
+          69.626953125,
+          160.1015625
+        ]
+      ]
+    },
+    {
+      "title": "2.6 C\u00f4ng su\u1ea5t AC (AC Power)",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.5234375,
+          363.90234375
+        ],
+        [
+          247.53294372558594,
+          362.35546875
+        ],
+        [
+          247.53294372558594,
+          378.41876220703125
+        ],
+        [
+          70.5234375,
+          378.59765625
+        ]
+      ]
+    },
+    {
+      "title": "C\u00f4ng su\u1ea5t t\u1ee9c th\u1eddi:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.822265625,
+          394.83984375
+        ],
+        [
+          178.89215087890625,
+          393.29296875
+        ],
+        [
+          178.89215087890625,
+          408.7787780761719
+        ],
+        [
+          70.822265625,
+          409.53515625
+        ]
+      ]
+    },
+    {
+      "title": "2.7 So s\u00e1nh DC v\u00e0 AC",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          70.224609375,
+          503.89453125
+        ],
+        [
+          203.4929656982422,
+          502.34765625
+        ],
+        [
+          203.4929656982422,
+          517.2787780761719
+        ],
+        [
+          70.224609375,
+          517.2787780761719
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          123
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "TableCell",
+          5
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          152
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "Text",
+          16
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          176
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "ListItem",
+          13
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "TableCell",
+          5
+        ],
+        [
+          "ListGroup",
+          4
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          98
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public032"
+}

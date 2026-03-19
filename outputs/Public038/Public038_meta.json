@@ -1,0 +1,510 @@
+{
+  "table_of_contents": [
+    {
+      "title": "VIETTEL AI RACE TD038\nSEQ2SEQ V\u00c0 C\u01a0 CH\u1ebe ATTENTION L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          159.3800048828125,
+          61.669921875
+        ],
+        [
+          507.822265625,
+          60.025390625
+        ],
+        [
+          506.658203125,
+          114.294921875
+        ],
+        [
+          159.3800048828125,
+          115.939453125
+        ]
+      ]
+    },
+    {
+      "title": "1. Gi\u1edbi thi\u1ec7u",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          55.875,
+          146.7744140625
+        ],
+        [
+          140.54576110839844,
+          145.1298828125
+        ],
+        [
+          140.54576110839844,
+          160.30877685546875
+        ],
+        [
+          55.875,
+          160.7529296875
+        ]
+      ]
+    },
+    {
+      "title": "2. M\u00f4 h\u00ecnh seq2seq",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          54.419921875,
+          610.12109375
+        ],
+        [
+          177.835693359375,
+          608.4765625
+        ],
+        [
+          177.835693359375,
+          623.7987823486328
+        ],
+        [
+          54.419921875,
+          624.921875
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD038\nSEQ2SEQ V\u00c0 C\u01a0 CH\u1ebe ATTENTION L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          149.873046875,
+          61.669921875
+        ],
+        [
+          506.658203125,
+          61.669921875
+        ],
+        [
+          505.494140625,
+          120.873046875
+        ],
+        [
+          148.708984375,
+          120.873046875
+        ]
+      ]
+    },
+    {
+      "title": "3. C\u01a1 ch\u1ebf attention",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          56.400001525878906,
+          497.470703125
+        ],
+        [
+          176.35546875,
+          495.826171875
+        ],
+        [
+          176.35546875,
+          510.7587585449219
+        ],
+        [
+          56.400001525878906,
+          510.7587585449219
+        ]
+      ]
+    },
+    {
+      "title": "3.1 Motivation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          54.7109375,
+          526.2388000488281
+        ],
+        [
+          146.05775451660156,
+          525.427734375
+        ],
+        [
+          146.05775451660156,
+          539.1987915039062
+        ],
+        [
+          54.7109375,
+          539.1987915039062
+        ]
+      ]
+    },
+    {
+      "title": "3.2 C\u00e1ch ho\u1ea1t \u0111\u1ed9ng",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          55.001953125,
+          141.3487548828125
+        ],
+        [
+          171.990234375,
+          139.78515625
+        ],
+        [
+          171.97999572753906,
+          154.30877685546875
+        ],
+        [
+          53.837890625,
+          154.5859375
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD038",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          205.45703125,
+          64.13671875
+        ],
+        [
+          453.40234375,
+          62.4921875
+        ],
+        [
+          453.40234375,
+          79.6488037109375
+        ],
+        [
+          205.45703125,
+          80.58203125
+        ]
+      ]
+    },
+    {
+      "title": "SEQ2SEQ V\u00c0 C\u01a0 CH\u1ebe ATTENTION L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          158.3125,
+          94.9716796875
+        ],
+        [
+          496.8580017089844,
+          93.3271484375
+        ],
+        [
+          496.8580017089844,
+          110.268798828125
+        ],
+        [
+          157.1484375,
+          110.5947265625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          74
+        ],
+        [
+          "Line",
+          25
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          52
+        ],
+        [
+          "Line",
+          20
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "Caption",
+          3
+        ],
+        [
+          "PictureGroup",
+          3
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          62
+        ],
+        [
+          "Line",
+          25
+        ],
+        [
+          "TableCell",
+          20
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          74
+        ],
+        [
+          "Line",
+          14
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          81
+        ],
+        [
+          "TableCell",
+          20
+        ],
+        [
+          "Line",
+          13
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          33
+        ],
+        [
+          "Line",
+          14
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public038"
+}

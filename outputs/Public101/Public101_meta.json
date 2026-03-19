@@ -1,0 +1,754 @@
+{
+  "table_of_contents": [
+    {
+      "title": "VIETTEL AI RACE Public 101",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          228.15625,
+          37.4130859375
+        ],
+        [
+          497.6257629394531,
+          35.7685546875
+        ],
+        [
+          497.6257629394531,
+          50.72882080078125
+        ],
+        [
+          228.15625,
+          50.72882080078125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          435.650390625,
+          37.001953125
+        ],
+        [
+          495.599609375,
+          35.357421875
+        ],
+        [
+          494.435546875,
+          46.869140625
+        ],
+        [
+          434.486328125,
+          48.513671875
+        ]
+      ]
+    },
+    {
+      "title": "T\u1ed0I \u01afU H\u00d3A THU\u1eacT TO\u00c1N \nSTOCHASTIC GRADIENT DESCENT (SGD) \nTRONG M\u00d4I TR\u01af\u1edcNG PH\u00c2N T\u00c1N",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          147.8359375,
+          55.9140625
+        ],
+        [
+          412.9764709472656,
+          54.26953125
+        ],
+        [
+          412.9764709472656,
+          111.1087646484375
+        ],
+        [
+          146.671875,
+          111.828125
+        ]
+      ]
+    },
+    {
+      "title": "1. Ph\u00e1t bi\u1ec3u b\u00e0i to\u00e1n",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.880859375,
+          156.6416015625
+        ],
+        [
+          191.28321838378906,
+          154.9970703125
+        ],
+        [
+          191.28321838378906,
+          171.46881103515625
+        ],
+        [
+          70.716796875,
+          171.46881103515625
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE Public 101",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          227.865234375,
+          36.5908203125
+        ],
+        [
+          497.6257629394531,
+          36.5908203125
+        ],
+        [
+          497.6257629394531,
+          50.72882080078125
+        ],
+        [
+          227.865234375,
+          50.72882080078125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          436.232421875,
+          36.5908203125
+        ],
+        [
+          493.853515625,
+          34.9462890625
+        ],
+        [
+          493.853515625,
+          47.2802734375
+        ],
+        [
+          436.232421875,
+          48.9248046875
+        ]
+      ]
+    },
+    {
+      "title": "T\u1ed0I \u01afU H\u00d3A THU\u1eacT TO\u00c1N \nSTOCHASTIC GRADIENT DESCENT (SGD) \nTRONG M\u00d4I TR\u01af\u1edcNG PH\u00c2N T\u00c1N",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          146.671875,
+          57.1474609375
+        ],
+        [
+          412.9764709472656,
+          55.5029296875
+        ],
+        [
+          412.9764709472656,
+          111.1087646484375
+        ],
+        [
+          146.671875,
+          111.1087646484375
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE Public 101",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          228.15625,
+          37.001953125
+        ],
+        [
+          497.6257629394531,
+          37.001953125
+        ],
+        [
+          497.6257629394531,
+          50.72882080078125
+        ],
+        [
+          226.9921875,
+          50.72882080078125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          434.77734375,
+          37.001953125
+        ],
+        [
+          495.30859375,
+          35.357421875
+        ],
+        [
+          495.30859375,
+          46.869140625
+        ],
+        [
+          434.77734375,
+          48.513671875
+        ]
+      ]
+    },
+    {
+      "title": "T\u1ed0I \u01afU H\u00d3A THU\u1eacT TO\u00c1N \nSTOCHASTIC GRADIENT DESCENT (SGD) \nTRONG M\u00d4I TR\u01af\u1edcNG PH\u00c2N T\u00c1N",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          147.8359375,
+          55.9140625
+        ],
+        [
+          412.9764709472656,
+          54.26953125
+        ],
+        [
+          412.9764709472656,
+          111.1087646484375
+        ],
+        [
+          146.671875,
+          111.828125
+        ]
+      ]
+    },
+    {
+      "title": "2. Thu\u1eadt To\u00e1n Song Song",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          71.298828125,
+          151.7080078125
+        ],
+        [
+          217.42111206054688,
+          150.0634765625
+        ],
+        [
+          217.42111206054688,
+          165.46881103515625
+        ],
+        [
+          70.134765625,
+          165.6865234375
+        ]
+      ]
+    },
+    {
+      "title": "2.1. Thi\u1ebft k\u1ebf t\u1eadp trung (Centralized Design)",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.716796875,
+          260.658203125
+        ],
+        [
+          319.2910461425781,
+          259.013671875
+        ],
+        [
+          319.2910461425781,
+          274.69879150390625
+        ],
+        [
+          70.716796875,
+          275.458984375
+        ]
+      ]
+    },
+    {
+      "title": "Lu\u1ed3ng ho\u1ea1t \u0111\u1ed9ng:",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          89.90399932861328,
+          446.9013671875
+        ],
+        [
+          188.76991271972656,
+          445.2568359375
+        ],
+        [
+          188.76991271972656,
+          461.55877685546875
+        ],
+        [
+          89.90399932861328,
+          462.5244140625
+        ]
+      ]
+    },
+    {
+      "title": "M\u00e3 gi\u1ea3:",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.716796875,
+          602.720703125
+        ],
+        [
+          114.14288330078125,
+          601.076171875
+        ],
+        [
+          114.14288330078125,
+          617.5587768554688
+        ],
+        [
+          70.716796875,
+          617.5587768554688
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE Public 101",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          229.029296875,
+          36.5908203125
+        ],
+        [
+          497.6257629394531,
+          36.5908203125
+        ],
+        [
+          497.6257629394531,
+          50.72882080078125
+        ],
+        [
+          229.029296875,
+          50.72882080078125
+        ]
+      ]
+    },
+    {
+      "title": "T\u1ed0I \u01afU H\u00d3A THU\u1eacT TO\u00c1N \nSTOCHASTIC GRADIENT DESCENT (SGD) \nTRONG M\u00d4I TR\u01af\u1edcNG PH\u00c2N T\u00c1N",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          148.10000610351562,
+          59.203125
+        ],
+        [
+          412.9764709472656,
+          57.55859375
+        ],
+        [
+          412.9764709472656,
+          111.1087646484375
+        ],
+        [
+          148.10000610351562,
+          111.1087646484375
+        ]
+      ]
+    },
+    {
+      "title": "Master Node:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          71.58984375,
+          150.9263916015625
+        ],
+        [
+          165.60000610351562,
+          150.474609375
+        ],
+        [
+          165.60000610351562,
+          163.8863525390625
+        ],
+        [
+          70.42578125,
+          163.8863525390625
+        ]
+      ]
+    },
+    {
+      "title": "Worker Node:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          71.880859375,
+          316.9833984375
+        ],
+        [
+          165.60000610351562,
+          316.9833984375
+        ],
+        [
+          165.60000610351562,
+          330.476318359375
+        ],
+        [
+          71.880859375,
+          330.476318359375
+        ]
+      ]
+    },
+    {
+      "title": "2.2. Thi\u1ebft k\u1ebf ph\u00e2n t\u00e1n (Decentralized Design)",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          69.84375,
+          557.0849609375
+        ],
+        [
+          328.03472900390625,
+          555.4404296875
+        ],
+        [
+          328.03472900390625,
+          572.7987670898438
+        ],
+        [
+          69.84375,
+          572.7987670898438
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE Public 101",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          228.15625,
+          36.5908203125
+        ],
+        [
+          497.6257629394531,
+          36.5908203125
+        ],
+        [
+          497.6257629394531,
+          50.72882080078125
+        ],
+        [
+          228.15625,
+          50.72882080078125
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          435.94140625,
+          36.5908203125
+        ],
+        [
+          494.14453125,
+          34.9462890625
+        ],
+        [
+          494.14453125,
+          47.2802734375
+        ],
+        [
+          435.94140625,
+          48.9248046875
+        ]
+      ]
+    },
+    {
+      "title": "T\u1ed0I \u01afU H\u00d3A THU\u1eacT TO\u00c1N \nSTOCHASTIC GRADIENT DESCENT (SGD) \nTRONG M\u00d4I TR\u01af\u1edcNG PH\u00c2N T\u00c1N",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          147.25390625,
+          55.9140625
+        ],
+        [
+          412.9764709472656,
+          54.26953125
+        ],
+        [
+          412.9764709472656,
+          111.1087646484375
+        ],
+        [
+          147.25390625,
+          111.828125
+        ]
+      ]
+    },
+    {
+      "title": "M\u00e3 gi\u1ea3:",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          71.0078125,
+          288.615234375
+        ],
+        [
+          114.14288330078125,
+          286.970703125
+        ],
+        [
+          114.14288330078125,
+          301.69879150390625
+        ],
+        [
+          71.0078125,
+          301.771484375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          257
+        ],
+        [
+          "Line",
+          34
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "ListItem",
+          8
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          256
+        ],
+        [
+          "Line",
+          26
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "Picture",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Code",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          339
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          311
+        ],
+        [
+          "Line",
+          37
+        ],
+        [
+          "ListItem",
+          14
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          260
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "ListItem",
+          12
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Code",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public101"
+}

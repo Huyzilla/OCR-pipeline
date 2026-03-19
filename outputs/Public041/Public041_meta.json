@@ -1,0 +1,579 @@
+{
+  "table_of_contents": [
+    {
+      "title": "VIETTEL AI RACE TD040\nLOGISTIC REGRESSION L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          190.97000122070312,
+          79.3486328125
+        ],
+        [
+          507.822265625,
+          77.7041015625
+        ],
+        [
+          506.658203125,
+          126.2177734375
+        ],
+        [
+          190.97000122070312,
+          127.8623046875
+        ]
+      ]
+    },
+    {
+      "title": "1. B\u00e0i to\u00e1n",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          56.166015625,
+          161.5087890625
+        ],
+        [
+          131.1623992919922,
+          159.9306640625
+        ],
+        [
+          131.1623992919922,
+          174.46881103515625
+        ],
+        [
+          56.166015625,
+          174.46881103515625
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD040\nLOGISTIC REGRESSION L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          169.953125,
+          79.3486328125
+        ],
+        [
+          508.6953125,
+          77.7041015625
+        ],
+        [
+          507.53125,
+          134.4404296875
+        ],
+        [
+          168.7890625,
+          136.0849609375
+        ]
+      ]
+    },
+    {
+      "title": "2. X\u00e1c su\u1ea5t",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          54.419921875,
+          578.4638671875
+        ],
+        [
+          132.994140625,
+          576.8193359375
+        ],
+        [
+          132.994140625,
+          593.3187866210938
+        ],
+        [
+          54.419921875,
+          593.3187866210938
+        ]
+      ]
+    },
+    {
+      "title": "Nh\u1eadn x\u00e9t:",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          90.796875,
+          730.171875
+        ],
+        [
+          138.45599365234375,
+          730.171875
+        ],
+        [
+          138.45599365234375,
+          742.9214630126953
+        ],
+        [
+          90.796875,
+          742.9214630126953
+        ]
+      ]
+    },
+    {
+      "title": "3. H\u00e0m sigmoid",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          55.29296875,
+          297.66015625
+        ],
+        [
+          158.75856018066406,
+          296.015625
+        ],
+        [
+          158.75856018066406,
+          310.69879150390625
+        ],
+        [
+          54.12890625,
+          310.81640625
+        ]
+      ]
+    },
+    {
+      "title": "4. Thi\u1ebft l\u1eadp b\u00e0i to\u00e1n",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          55.29296875,
+          679.6025390625
+        ],
+        [
+          183.24002075195312,
+          677.9580078125
+        ],
+        [
+          183.24002075195312,
+          693.7887878417969
+        ],
+        [
+          55.29296875,
+          695.2255859375
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE\nTD040\nLOGISTIC REGRESSION\nL\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          187.705078125,
+          79.759765625
+        ],
+        [
+          508.404296875,
+          79.759765625
+        ],
+        [
+          507.240234375,
+          134.029296875
+        ],
+        [
+          186.541015625,
+          134.029296875
+        ]
+      ]
+    },
+    {
+      "title": "1.1\nModel",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          55.54659949622166,
+          233.5234375
+        ],
+        [
+          121.60201511335012,
+          231.87890625
+        ],
+        [
+          121.60201511335012,
+          245.17720391807657
+        ],
+        [
+          55.54659949622166,
+          245.17720391807657
+        ]
+      ]
+    },
+    {
+      "title": "Loss function",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          54.7109375,
+          462.5244140625
+        ],
+        [
+          159.88413098236776,
+          460.8798828125
+        ],
+        [
+          159.88413098236776,
+          473.1095280498664
+        ],
+        [
+          54.7109375,
+          473.2138671875
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD040",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          203.12890625,
+          79.3486328125
+        ],
+        [
+          455.73046875,
+          77.7041015625
+        ],
+        [
+          454.56640625,
+          103.1943359375
+        ],
+        [
+          201.96484375,
+          104.8388671875
+        ]
+      ]
+    },
+    {
+      "title": "LOGISTIC REGRESSION L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          187.705078125,
+          109.361328125
+        ],
+        [
+          496.8580017089844,
+          109.361328125
+        ],
+        [
+          496.8580017089844,
+          125.02880859375
+        ],
+        [
+          187.705078125,
+          125.02880859375
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          90
+        ],
+        [
+          "TableCell",
+          30
+        ],
+        [
+          "Line",
+          23
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          56
+        ],
+        [
+          "Line",
+          24
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          67
+        ],
+        [
+          "Line",
+          24
+        ],
+        [
+          "ListItem",
+          6
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "surya",
+      "block_counts": [
+        [
+          "Span",
+          56
+        ],
+        [
+          "Line",
+          35
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          55
+        ],
+        [
+          "Line",
+          10
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          98
+        ],
+        [
+          "Line",
+          22
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "TableGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public041"
+}

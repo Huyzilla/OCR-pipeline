@@ -1,0 +1,440 @@
+{
+  "table_of_contents": [
+    {
+      "title": "1. KH\u00c1I NI\u1ec6M CHUNG",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          72.017578125,
+          106.34765625
+        ],
+        [
+          225.615234375,
+          104.80078125
+        ],
+        [
+          225.231689453125,
+          121.46881103515625
+        ],
+        [
+          70.822265625,
+          122.58984375
+        ]
+      ]
+    },
+    {
+      "title": "2. PH\u00c2N LO\u1ea0I V\u1eacT LI\u1ec6U D\u1ec6T",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          70.5234375,
+          670.5703125
+        ],
+        [
+          269.2143249511719,
+          669.0234375
+        ],
+        [
+          269.2143249511719,
+          685.5487747192383
+        ],
+        [
+          70.5234375,
+          686.0390625
+        ]
+      ]
+    },
+    {
+      "title": "2.1 X\u01a0 D\u1ec6T",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          71.12109375,
+          262.58203125
+        ],
+        [
+          149.66432189941406,
+          261.03515625
+        ],
+        [
+          149.66432189941406,
+          277.018798828125
+        ],
+        [
+          71.12109375,
+          277.27734375
+        ]
+      ]
+    },
+    {
+      "title": "Kh\u00e1i ni\u1ec7m",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          98.61328125,
+          286.498779296875
+        ],
+        [
+          201.97569274902344,
+          285.01171875
+        ],
+        [
+          201.97569274902344,
+          299.4587707519531
+        ],
+        [
+          97.41796875,
+          299.70703125
+        ]
+      ]
+    },
+    {
+      "title": "Ph\u00e2n lo\u1ea1i",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          98.912109375,
+          360.80859375
+        ],
+        [
+          196.22288513183594,
+          359.26171875
+        ],
+        [
+          196.22288513183594,
+          373.8587646484375
+        ],
+        [
+          98.912109375,
+          373.95703125
+        ]
+      ]
+    },
+    {
+      "title": "C\u00e1c lo\u1ea1i x\u01a1:",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          72.02399444580078,
+          448.20703125
+        ],
+        [
+          138.268310546875,
+          446.66015625
+        ],
+        [
+          138.268310546875,
+          463.0387878417969
+        ],
+        [
+          72.02399444580078,
+          463.0387878417969
+        ]
+      ]
+    },
+    {
+      "title": "X\u01a1 thi\u00ean nhi\u00ean chia th\u00e0nh:",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          70.822265625,
+          553.39453125
+        ],
+        [
+          220.67520141601562,
+          551.84765625
+        ],
+        [
+          220.67520141601562,
+          566.7187805175781
+        ],
+        [
+          70.822265625,
+          566.7187805175781
+        ]
+      ]
+    },
+    {
+      "title": "2.2 S\u1ee2I D\u1ec6T",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          70.822265625,
+          296.2265625
+        ],
+        [
+          152.66432189941406,
+          294.6796875
+        ],
+        [
+          152.66432189941406,
+          309.7787780761719
+        ],
+        [
+          70.822265625,
+          310.1484375
+        ]
+      ]
+    },
+    {
+      "title": "Ph\u00e2n lo\u1ea1i theo c\u1ea5u tr\u00fac",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          99.509765625,
+          368.9296875
+        ],
+        [
+          272.54937744140625,
+          367.3828125
+        ],
+        [
+          272.54937744140625,
+          384.05877685546875
+        ],
+        [
+          99.509765625,
+          384.3984375
+        ]
+      ]
+    },
+    {
+      "title": "Ph\u00e2n lo\u1ea1i theo nguy\u00ean li\u1ec7u v\u00e0 thi\u1ebft b\u1ecb k\u00e9o s\u1ee3i",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          98.61328125,
+          575.05078125
+        ],
+        [
+          391.39288330078125,
+          573.50390625
+        ],
+        [
+          391.39288330078125,
+          589.0687866210938
+        ],
+        [
+          98.61328125,
+          589.74609375
+        ]
+      ]
+    },
+    {
+      "title": "Ph\u00e2n lo\u1ea1i theo qu\u00e1 tr\u00ecnh s\u1ea3n xu\u1ea5t v\u00e0 s\u1eed d\u1ee5ng",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          98.912109375,
+          101.3203125
+        ],
+        [
+          392.70977783203125,
+          99.7734375
+        ],
+        [
+          392.70977783203125,
+          115.46881103515625
+        ],
+        [
+          98.912109375,
+          116.7890625
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          110
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "TableCell",
+          15
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "Table",
+          2
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          115
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "ListItem",
+          9
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          195
+        ],
+        [
+          "Line",
+          34
+        ],
+        [
+          "ListItem",
+          15
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          51
+        ],
+        [
+          "Line",
+          9
+        ],
+        [
+          "TableCell",
+          4
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Table",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public026"
+}

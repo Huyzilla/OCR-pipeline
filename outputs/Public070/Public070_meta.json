@@ -1,0 +1,720 @@
+{
+  "table_of_contents": [
+    {
+      "title": "VIETTEL AI RACE TD070",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          230.775390625,
+          37.869140625
+        ],
+        [
+          460.4200134277344,
+          37.869140625
+        ],
+        [
+          460.4200134277344,
+          52.20880126953125
+        ],
+        [
+          229.611328125,
+          52.20880126953125
+        ]
+      ]
+    },
+    {
+      "title": "1. Ki\u1ebfn Tr\u00fac M\u1ea1ng 5G v\u00e0 Th\u00e0nh Ph\u1ea7n C\u1ed1t L\u00f5i",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          98.654296875,
+          286.89990234375
+        ],
+        [
+          374.5765686035156,
+          285.25341796875
+        ],
+        [
+          374.5765686035156,
+          302.93878173828125
+        ],
+        [
+          98.654296875,
+          302.93878173828125
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 M\u1ea1ng truy nh\u1eadp v\u00f4 tuy\u1ebfn (RAN \u2013 Radio Access Network)",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          116.40625,
+          341.6455078125
+        ],
+        [
+          454.7212219238281,
+          339.9990234375
+        ],
+        [
+          454.7212219238281,
+          356.8187561035156
+        ],
+        [
+          115.2421875,
+          356.8187561035156
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 M\u1ea1ng l\u00f5i (5GC \u2013 5G Core)",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          116.98828125,
+          464.30859375
+        ],
+        [
+          282.8578186035156,
+          462.662109375
+        ],
+        [
+          282.8578186035156,
+          477.91876220703125
+        ],
+        [
+          115.82421875,
+          479.126953125
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Edge Computing",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          115.82421875,
+          607.14111328125
+        ],
+        [
+          229.90234375,
+          605.49462890625
+        ],
+        [
+          229.90234375,
+          621.5887908935547
+        ],
+        [
+          115.82421875,
+          622.78271484375
+        ]
+      ]
+    },
+    {
+      "title": "2. Ph\u01b0\u01a1ng Ph\u00e1p Quy Ho\u1ea1ch v\u00e0 Tri\u1ec3n Khai H\u1ea1 T\u1ea7ng",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          98.36328125,
+          707.57666015625
+        ],
+        [
+          403.34765625,
+          705.93017578125
+        ],
+        [
+          403.34765625,
+          723.2287750244141
+        ],
+        [
+          98.36328125,
+          723.2287750244141
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Tri\u1ec3n khai gNodeB",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          116.40625,
+          192.22705078125
+        ],
+        [
+          241.31600952148438,
+          190.58056640625
+        ],
+        [
+          241.31600952148438,
+          207.268798828125
+        ],
+        [
+          115.2421875,
+          207.86865234375
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 \u0110i\u1ec7n to\u00e1n bi\u00ean (MEC)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          116.98828125,
+          315.3017578125
+        ],
+        [
+          258.3468933105469,
+          313.6552734375
+        ],
+        [
+          258.3468933105469,
+          328.37884521484375
+        ],
+        [
+          115.82421875,
+          328.4736328125
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 T\u00edch h\u1ee3p Cloud-Native",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          116.40625,
+          436.318359375
+        ],
+        [
+          263.0765686035156,
+          434.671875
+        ],
+        [
+          263.0765686035156,
+          449.4787902832031
+        ],
+        [
+          115.2421875,
+          449.490234375
+        ]
+      ]
+    },
+    {
+      "title": "3. Qu\u1ea3n L\u00fd Ch\u1ea5t L\u01b0\u1ee3ng D\u1ecbch V\u1ee5 v\u00e0 B\u1ea3o M\u1eadt",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          99.26399230957031,
+          535.51904296875
+        ],
+        [
+          365.224609375,
+          533.87255859375
+        ],
+        [
+          364.9856872558594,
+          551.23876953125
+        ],
+        [
+          99.236328125,
+          551.23876953125
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 \u0110\u1ea3m b\u1ea3o QoS (Quality of Service)",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          115.82421875,
+          565.15576171875
+        ],
+        [
+          323.975341796875,
+          563.50927734375
+        ],
+        [
+          323.975341796875,
+          579.6788024902344
+        ],
+        [
+          115.82421875,
+          579.6788024902344
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 B\u1ea3o m\u1eadt \u0111a l\u1edbp",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          116.697265625,
+          738.7047805786133
+        ],
+        [
+          220.01576232910156,
+          738.4482421875
+        ],
+        [
+          220.01576232910156,
+          751.6647796630859
+        ],
+        [
+          116.697265625,
+          751.6647796630859
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD070",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          232.521484375,
+          38.28076171875
+        ],
+        [
+          460.4200134277344,
+          36.63427734375
+        ],
+        [
+          460.4200134277344,
+          52.20880126953125
+        ],
+        [
+          231.357421875,
+          52.27587890625
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Gi\u00e1m s\u00e1t v\u00e0 ph\u00e2n t\u00edch",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          116.697265625,
+          193.87353515625
+        ],
+        [
+          257.1617431640625,
+          192.22705078125
+        ],
+        [
+          257.1617431640625,
+          207.268798828125
+        ],
+        [
+          115.533203125,
+          207.86865234375
+        ]
+      ]
+    },
+    {
+      "title": "4. T\u1ed1i \u01afu Hi\u1ec7u N\u0103ng v\u00e0 Chi Ph\u00ed V\u1eadn H\u00e0nh",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          98.9453125,
+          319.00634765625
+        ],
+        [
+          352.3738098144531,
+          317.35986328125
+        ],
+        [
+          352.3738098144531,
+          334.3787841796875
+        ],
+        [
+          97.78125,
+          334.64794921875
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 T\u1ef1 \u0111\u1ed9ng h\u00f3a O-RAN",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          116.115234375,
+          349.0546875
+        ],
+        [
+          251.68711853027344,
+          347.408203125
+        ],
+        [
+          251.68711853027344,
+          362.8187561035156
+        ],
+        [
+          116.115234375,
+          362.8187561035156
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 N\u0103ng l\u01b0\u1ee3ng v\u00e0 b\u1ec1n v\u1eefng",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          116.697265625,
+          445.78564453125
+        ],
+        [
+          271.4900207519531,
+          444.13916015625
+        ],
+        [
+          271.4900207519531,
+          461.5987854003906
+        ],
+        [
+          115.533203125,
+          461.5987854003906
+        ]
+      ]
+    },
+    {
+      "title": "\u2022 Kh\u1ea3 n\u0103ng m\u1edf r\u1ed9ng",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          116.115234375,
+          568.037109375
+        ],
+        [
+          240.2899932861328,
+          566.390625
+        ],
+        [
+          240.2899932861328,
+          582.6788024902344
+        ],
+        [
+          116.115234375,
+          582.6788024902344
+        ]
+      ]
+    },
+    {
+      "title": "5. \u1ee8ng D\u1ee5ng C\u00f4ng Nghi\u1ec7p v\u00e0 D\u00e2n D\u1ee5ng",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          97.19921875,
+          718.27880859375
+        ],
+        [
+          337.269775390625,
+          714.98583984375
+        ],
+        [
+          337.269775390625,
+          732.2287750244141
+        ],
+        [
+          97.19921875,
+          733.92041015625
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD070",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          233.4499969482422,
+          38.28076171875
+        ],
+        [
+          460.4200134277344,
+          36.63427734375
+        ],
+        [
+          460.4200134277344,
+          52.20880126953125
+        ],
+        [
+          233.39453125,
+          52.20880126953125
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD070",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          231.06640625,
+          37.869140625
+        ],
+        [
+          460.4200134277344,
+          37.869140625
+        ],
+        [
+          460.4200134277344,
+          52.20880126953125
+        ],
+        [
+          229.90234375,
+          52.20880126953125
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          353
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "Text",
+          8
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "ListItem",
+          4
+        ],
+        [
+          "ListGroup",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          280
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "SectionHeader",
+          6
+        ],
+        [
+          "ListGroup",
+          4
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          280
+        ],
+        [
+          "Line",
+          27
+        ],
+        [
+          "ListItem",
+          10
+        ],
+        [
+          "SectionHeader",
+          7
+        ],
+        [
+          "ListGroup",
+          5
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          371
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "ListItem",
+          13
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          213
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "ListItem",
+          7
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "SectionHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public070"
+}

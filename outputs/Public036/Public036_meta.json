@@ -1,0 +1,551 @@
+{
+  "table_of_contents": [
+    {
+      "title": "1. B\u00e0i to\u00e1n Image segmentation",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          55.875,
+          147.3487548828125
+        ],
+        [
+          246.0080108642578,
+          146.36328125
+        ],
+        [
+          246.0080108642578,
+          160.30877685546875
+        ],
+        [
+          54.7109375,
+          161.1640625
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          173.154296875,
+          272.9921875
+        ],
+        [
+          257.548828125,
+          271.34765625
+        ],
+        [
+          256.384765625,
+          310.81640625
+        ],
+        [
+          171.990234375,
+          312.4609375
+        ]
+      ]
+    },
+    {
+      "title": "",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          318.953125,
+          270.1142578125
+        ],
+        [
+          440.015625,
+          268.4697265625
+        ],
+        [
+          438.8515625,
+          308.7607421875
+        ],
+        [
+          317.7890625,
+          310.4052734375
+        ]
+      ]
+    },
+    {
+      "title": "VIETTEL AI RACE TD036\nPH\u00c2N V\u00d9NG H\u00ccNH \u1ea2NH V\u1edaI U-NET L\u1ea7n ban h\u00e0nh: 1",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          136.486328125,
+          61.669921875
+        ],
+        [
+          506.076171875,
+          60.025390625
+        ],
+        [
+          506.076171875,
+          120.873046875
+        ],
+        [
+          136.486328125,
+          122.517578125
+        ]
+      ]
+    },
+    {
+      "title": "1.1 Ph\u00e2n lo\u1ea1i b\u00e0i to\u00e1n image segmentation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          56.166015625,
+          141.3487548828125
+        ],
+        [
+          298.644775390625,
+          139.78515625
+        ],
+        [
+          298.644775390625,
+          154.30877685546875
+        ],
+        [
+          55.001953125,
+          154.5859375
+        ]
+      ]
+    },
+    {
+      "title": "1.2 \u1ee8ng d\u1ee5ng b\u00e0i to\u00e1n segmentation",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          55.583984375,
+          449.3681640625
+        ],
+        [
+          265.40240478515625,
+          447.7236328125
+        ],
+        [
+          265.40240478515625,
+          464.79876708984375
+        ],
+        [
+          54.419921875,
+          464.9912109375
+        ]
+      ]
+    },
+    {
+      "title": "\u00d4 t\u00f4 t\u1ef1 l\u00e1i",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          84.685546875,
+          470.7470703125
+        ],
+        [
+          184.79598999023438,
+          469.1025390625
+        ],
+        [
+          184.79598999023438,
+          487.23876953125
+        ],
+        [
+          84.685546875,
+          487.23876953125
+        ]
+      ]
+    },
+    {
+      "title": "Ch\u1ea9n \u0111o\u00e1n trong y h\u1ecdc",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          83.23046875,
+          138.962890625
+        ],
+        [
+          255.51171875,
+          138.962890625
+        ],
+        [
+          255.51171875,
+          154.30877685546875
+        ],
+        [
+          83.23046875,
+          154.30877685546875
+        ]
+      ]
+    },
+    {
+      "title": "2. M\u1ea1ng U-Net v\u1edbi b\u00e0i to\u00e1n semantic segmentation",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          56.400001525878906,
+          371.6640625
+        ],
+        [
+          352.12890625,
+          370.01953125
+        ],
+        [
+          351.8746643066406,
+          384.9787902832031
+        ],
+        [
+          55.29296875,
+          384.9787902832031
+        ]
+      ]
+    },
+    {
+      "title": "2.1 Ki\u1ebfn tr\u00fac m\u1ea1ng U-Net",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          56.400001525878906,
+          506.9267578125
+        ],
+        [
+          208.5936737060547,
+          505.2822265625
+        ],
+        [
+          208.5936737060547,
+          522.0387878417969
+        ],
+        [
+          56.400001525878906,
+          522.0387878417969
+        ]
+      ]
+    },
+    {
+      "title": "H\u00ecnh 15.5: M\u1ea1ng U-Net [20]",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          229.611328125,
+          463.6514587402344
+        ],
+        [
+          370.53399658203125,
+          463.6514587402344
+        ],
+        [
+          370.53399658203125,
+          475.6514587402344
+        ],
+        [
+          229.611328125,
+          475.6514587402344
+        ]
+      ]
+    },
+    {
+      "title": "Nh\u1eadn x\u00e9t:",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          89.923828125,
+          478.9697265625
+        ],
+        [
+          139.396484375,
+          477.3251953125
+        ],
+        [
+          139.396484375,
+          495.45147705078125
+        ],
+        [
+          89.923828125,
+          495.45147705078125
+        ]
+      ]
+    },
+    {
+      "title": "2.2 Loss function",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          55.001953125,
+          631.9887847900391
+        ],
+        [
+          159.354736328125,
+          631.9111328125
+        ],
+        [
+          159.354736328125,
+          644.9487762451172
+        ],
+        [
+          55.001953125,
+          644.9487762451172
+        ]
+      ]
+    },
+    {
+      "title": "2.3 Transposed convolution",
+      "heading_level": null,
+      "page_id": 3,
+      "polygon": [
+        [
+          56.166015625,
+          682.0287933349609
+        ],
+        [
+          217.90802001953125,
+          681.658203125
+        ],
+        [
+          217.90802001953125,
+          694.9887847900391
+        ],
+        [
+          56.166015625,
+          694.9887847900391
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          41
+        ],
+        [
+          "Line",
+          16
+        ],
+        [
+          "TableCell",
+          6
+        ],
+        [
+          "Picture",
+          4
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "PictureGroup",
+          2
+        ],
+        [
+          "Table",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          55
+        ],
+        [
+          "Line",
+          17
+        ],
+        [
+          "Picture",
+          5
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "Caption",
+          4
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          51
+        ],
+        [
+          "Line",
+          15
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "PictureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          58
+        ],
+        [
+          "Line",
+          20
+        ],
+        [
+          "SectionHeader",
+          4
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          16
+        ],
+        [
+          "Line",
+          6
+        ],
+        [
+          "Text",
+          3
+        ],
+        [
+          "Picture",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public036"
+}
