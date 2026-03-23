@@ -6,7 +6,6 @@ import sys
 import time
 from pathlib import Path
 
-
 def ensure_marker_single() -> Path:
     marker_single = Path(sys.executable).parent / "marker_single"
     if marker_single.exists():
