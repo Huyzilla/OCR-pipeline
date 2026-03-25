@@ -1,0 +1,724 @@
+{
+  "table_of_contents": [
+    {
+      "title": "1. N\u1ed9i dung ch\u00ednh",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          72.02399444580078,
+          213.018798828125
+        ],
+        [
+          185.87109375,
+          211.9482421875
+        ],
+        [
+          185.52609252929688,
+          225.97879028320312
+        ],
+        [
+          71.12109375,
+          226.7509765625
+        ]
+      ]
+    },
+    {
+      "title": "1.1 \u0110\u1eb7t v\u1ea5n \u0111\u1ec1",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          71.419921875,
+          238.8623046875
+        ],
+        [
+          160.470703125,
+          237.5166015625
+        ],
+        [
+          160.470703125,
+          254.41876220703125
+        ],
+        [
+          71.419921875,
+          254.41876220703125
+        ]
+      ]
+    },
+    {
+      "title": "1.2 C\u01a1 s\u1edf l\u00fd thuy\u1ebft v\u1ec1 c\u00f4ng ngh\u1ec7 nh\u1eadn d\u1ea1ng k\u00fd t\u1ef1 quang h\u1ecdc",
+      "heading_level": null,
+      "page_id": 2,
+      "polygon": [
+        [
+          72.02399444580078,
+          275.869140625
+        ],
+        [
+          414.2441711425781,
+          274.5234375
+        ],
+        [
+          414.2441711425781,
+          290.41876220703125
+        ],
+        [
+          72.02399444580078,
+          290.671875
+        ]
+      ]
+    },
+    {
+      "title": "1.3 K\u1ebft qu\u1ea3 th\u1eed nghi\u1ec7m c\u00f4ng ngh\u1ec7 nh\u1eadn d\u1ea1ng k\u00fd t\u1ef1 quang h\u1ecdc cho s\u1ed1 h\u00f3a t\u00e0i li\u1ec7u t\u1ea1i \nH\u1ecdc vi\u1ec7n Ng\u00e2n h\u00e0ng",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          70.224609375,
+          262.07568359375
+        ],
+        [
+          543.1182861328125,
+          260.72998046875
+        ],
+        [
+          543.1182861328125,
+          294.0187683105469
+        ],
+        [
+          70.224609375,
+          294.0187683105469
+        ]
+      ]
+    },
+    {
+      "title": "1.3.1 C\u00e1c gi\u1ea3i ph\u00e1p nh\u1eadn d\u1ea1ng k\u00fd t\u1ef1 quang h\u1ecdc t\u1ea1i Vi\u1ec7t Nam",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          100.34000396728516,
+          303.11962890625
+        ],
+        [
+          449.5821838378906,
+          301.77392578125
+        ],
+        [
+          449.5821838378906,
+          316.4587707519531
+        ],
+        [
+          99.509765625,
+          316.4587707519531
+        ]
+      ]
+    },
+    {
+      "title": "1.3.1.1. FPT.AI Reader",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          114.6199951171875,
+          320.9501953125
+        ],
+        [
+          262.5665588378906,
+          320.9501953125
+        ],
+        [
+          262.5665588378906,
+          334.9587707519531
+        ],
+        [
+          114.6199951171875,
+          334.9587707519531
+        ]
+      ]
+    },
+    {
+      "title": "1.3.1.2. Viettel OCR",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          112.658203125,
+          460.9033203125
+        ],
+        [
+          246.36367797851562,
+          459.5576171875
+        ],
+        [
+          246.36367797851562,
+          474.51878356933594
+        ],
+        [
+          112.658203125,
+          474.51878356933594
+        ]
+      ]
+    },
+    {
+      "title": "1.3.1.3. Google Vision AI",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          114.6199951171875,
+          56.85595703125
+        ],
+        [
+          270.73828125,
+          55.51025390625
+        ],
+        [
+          270.13519287109375,
+          71.268798828125
+        ],
+        [
+          114.15234375,
+          71.268798828125
+        ]
+      ]
+    },
+    {
+      "title": "1.3.1.4. L\u1ef1a ch\u1ecdn gi\u1ea3i ph\u00e1p",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          114.451171875,
+          256.02001953125
+        ],
+        [
+          282.0022888183594,
+          254.67431640625
+        ],
+        [
+          282.0022888183594,
+          269.6587829589844
+        ],
+        [
+          114.451171875,
+          270.14990234375
+        ]
+      ]
+    },
+    {
+      "title": "1.3.2 Th\u1eed nghi\u1ec7m v\u1edbi t\u00e0i li\u1ec7u t\u1ea1i H\u1ecdc vi\u1ec7n Ng\u00e2n h\u00e0ng",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          100.34000396728516,
+          519.4287872314453
+        ],
+        [
+          408.796875,
+          518.7685546875
+        ],
+        [
+          407.6015625,
+          532.3887786865234
+        ],
+        [
+          100.34000396728516,
+          533.5712890625
+        ]
+      ]
+    },
+    {
+      "title": "1.3.2.1. Thu th\u1eadp t\u00e0i li\u1ec7u",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          114.15234375,
+          537.6083984375
+        ],
+        [
+          266.1118469238281,
+          536.2626953125
+        ],
+        [
+          266.1118469238281,
+          550.8687744140625
+        ],
+        [
+          114.15234375,
+          551.0654296875
+        ]
+      ]
+    },
+    {
+      "title": "1.3.2.2. C\u00e0i \u0111\u1eb7t gi\u1ea3i ph\u00e1p",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          112.95703125,
+          74.013671875
+        ],
+        [
+          271.1893310546875,
+          74.013671875
+        ],
+        [
+          271.1893310546875,
+          88.4288330078125
+        ],
+        [
+          112.95703125,
+          88.4288330078125
+        ]
+      ]
+    },
+    {
+      "title": "1.3.2.3. Ph\u01b0\u01a1ng ph\u00e1p \u0111\u00e1nh gi\u00e1",
+      "heading_level": null,
+      "page_id": 6,
+      "polygon": [
+        [
+          114.6199951171875,
+          544.00048828125
+        ],
+        [
+          303.0752258300781,
+          542.65478515625
+        ],
+        [
+          303.0752258300781,
+          557.5887908935547
+        ],
+        [
+          114.6199951171875,
+          558.13037109375
+        ]
+      ]
+    },
+    {
+      "title": "1.4 K\u1ebft lu\u1eadn v\u00e0 h\u01b0\u1edbng ph\u00e1t tri\u1ec3n",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          71.419921875,
+          10.765625
+        ],
+        [
+          265.658203125,
+          9.419921875
+        ],
+        [
+          265.658203125,
+          26.86883544921875
+        ],
+        [
+          71.419921875,
+          26.86883544921875
+        ]
+      ]
+    },
+    {
+      "title": "1.4.1 K\u1ebft lu\u1eadn",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          100.34000396728516,
+          33.97900390625
+        ],
+        [
+          191.8870391845703,
+          32.63330078125
+        ],
+        [
+          191.8870391845703,
+          49.30877685546875
+        ],
+        [
+          100.107421875,
+          49.30877685546875
+        ]
+      ]
+    },
+    {
+      "title": "1.4.2 H\u01b0\u1edbng ph\u00e1t tri\u1ec3n",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          100.34000396728516,
+          428.27001953125
+        ],
+        [
+          241.18113708496094,
+          426.92431640625
+        ],
+        [
+          241.18113708496094,
+          442.47877502441406
+        ],
+        [
+          100.34000396728516,
+          442.47877502441406
+        ]
+      ]
+    },
+    {
+      "title": "2. T\u00c0I LI\u1ec6U THAM KH\u1ea2O",
+      "heading_level": null,
+      "page_id": 8,
+      "polygon": [
+        [
+          70.5234375,
+          540.97265625
+        ],
+        [
+          245.02545166015625,
+          539.626953125
+        ],
+        [
+          245.02545166015625,
+          554.8287811279297
+        ],
+        [
+          70.5234375,
+          554.8287811279297
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          79
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          2
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          73
+        ],
+        [
+          "Line",
+          32
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "ListItem",
+          3
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          65
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "Text",
+          6
+        ],
+        [
+          "SectionHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          81
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "Text",
+          4
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          85
+        ],
+        [
+          "Line",
+          33
+        ],
+        [
+          "Text",
+          4
+        ],
+        [
+          "SectionHeader",
+          4
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          70
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          78
+        ],
+        [
+          "Line",
+          31
+        ],
+        [
+          "Text",
+          5
+        ],
+        [
+          "ListItem",
+          5
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "ListGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 7,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          68
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "Text",
+          11
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 8,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          69
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          4
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 9,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          84
+        ],
+        [
+          "Line",
+          30
+        ],
+        [
+          "Text",
+          10
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 10,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          44
+        ],
+        [
+          "Line",
+          18
+        ],
+        [
+          "Text",
+          10
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data/Public005_cropped"
+}
