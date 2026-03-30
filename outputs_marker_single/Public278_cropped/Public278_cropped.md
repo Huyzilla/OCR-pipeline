@@ -1,13 +1,10 @@
-# **1. Tổng quan**
-
-#### **1.1 Mục đích**
-
+# 1. Tổng quan
+## 1.1 Mục đích
 Tài liệu trình bày tổng quan giải pháp và quy trình nghiệp vụ đáp ứng cho bài toán tích hợp đối tác kinh doanh tại Tổng công ty cổ phần Bưu chính Viettel.
 
 Thiết kế, mô tả các quy trình nghiệp vụ của Hệ thống đảm bảo cung cấp giải pháp hoàn chỉnh, xuyên suốt quá trình khai báo và phê duyệt mã KH chi COD
 
-#### **1.2 Phạm vi**
-
+## 1.2 Phạm vi
 | STT | Nghiệp vụ                                 | Phạm vi áp dụng                                                                                                                                                                                                                                                                                    |  |  |
 |-----|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|
 | 1.  | Khai báo cấu hình                         | -<br>Khai báo cấu hình sản lượng doanh thu theo địa<br>bàn<br>-<br>Khai báo mã KH cấu hình chi COD                                                                                                                                                                                                 |  |  |
@@ -38,15 +35,15 @@ Thiết kế, mô tả các quy trình nghiệp vụ của Hệ thống đảm b
 
 # 3. Chi tiết chức năng Quản lý CusID và khai báo KH thanh toán hàng ngày trên FICO
 
-# 3.1 SCR1: Màn hình Quản lý khách hàng CusID
+## 3.1 SCR1: Màn hình Quản lý khách hàng CusID
 
-#### 3.1.1 Màn hình
+### 3.1.1 Màn hình
 
 ![](_page_3_Figure_3.jpeg)
 
 Phân quyền: User được phân quyền theo quy định của TTDVCP
 
-#### 3.1.2 Mô tả màn hình
+### 3.1.2 Mô tả màn hình
 
 | -   | 3.1.2 Mio ta man mini |                 |                       |                            |                                                                                                                                                                                                                                      |  |  |  |
 |-----|-----------------------|-----------------|-----------------------|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|
@@ -85,13 +82,12 @@ Phân quyền: User được phân quyền theo quy định của TTDVCP
 | 8  | Ngày lấy<br>cấn trừ  | Text            | No                    | Read-<br>only              | Hiển thị ngày lấy cấn trừ<br>Không có để trống.                                                                                                                                                                                                                                                                                                                                 |
 | 9  | Kết xuất<br>excel    | Button          | Yes                   | Editable                   | <ul> <li>Khi click thì thực hiện kết xuất danh sách excel trên grid.</li> <li>Quy Tắc Kết Xuất:</li> <li>Nếu kết quả tìm kiếm không có dữ liệu thì hệ thống hiển thị thông báo "Không tồn tại kết quả".</li> <li>Nếu kết quả tìm kiếm có dữ liệu thì hệ thống thực hiện kết xuất toán bộ dữ liệu trên grid.</li> <li>Tên file: Danh sách KH EVTP mã cusID {Mã cusid}</li> </ul> |
 
-# 3.2 SCR2: Màn hình Khai báo mã khách hàng
+## 3.2 SCR2: Màn hình Khai báo mã khách hàng
 
-#### **3.2.1 Màn hình**
-
+### 3.2.1 Màn hình
 ![](_page_6_Figure_1.jpeg)
 
-#### 3.2.2 Mô tả Màn hình
+### 3.2.2 Mô tả Màn hình
 
 |      |                    |                 |                       | ·                      |                                                                                                                                                                                                                                      |  |  |  |
 |------|--------------------|-----------------|-----------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|
@@ -123,8 +119,7 @@ Phân quyền: User được phân quyền theo quy định của TTDVCP
 | 17 | Thời gian cập<br>nhật | Datetime        | No                    | Read-only              | Hiển thị<br>thời gian cập nhật (thời gian xác<br>thực, hủy)                                                                                                                                                                                                                                                                                                                                                                                     |
 | 18 | Thao tác              | Button          | Yes                   | Editable               | Cho phép thao tác gửi lại yêu cầu xác thực<br>và xóa cấu hình.<br>Click Button Gửi yêu cầu xác thực →<br>-<br>chỉ<br>hiển thị<br>với trạng thái Xác thực thất bại và<br>Không hoạt động.<br>-<br>Click Xóa →Chỉ<br>hiển thị<br>với trạng thái<br>Chờ<br>xác thực và Xác thực thất bại Hiển thị<br>thông báo Xác nhận xóa khai báo cấu<br>hình.<br>Hiển thị<br>tooltip khi Hower chuột "Gửi<br>yêu cầu xác thực" và "Xóa"                        |
 
-#### **SCR3. Màn hình Khai báo thông tin mã KH**
-
+#### SCR3. Màn hình Khai báo thông tin mã KH
 ![](_page_8_Figure_2.jpeg)
 
 | No | Field Name                 | Control<br>Type | Mandatory<br>(Yes/No) | Editable/<br>Read-only | Description/Note                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -146,7 +141,7 @@ Phân quyền: User được phân quyền theo quy định của TTDVCP
 | 12 | Đóng                           | Button          | Yes                   | Editable               | Click "Đóng" để tắt nội dung thay đổi                                                                                         |
 | 13 | Thêm dòng                      | Button          | Yes                   | Editable               | Cho phép user thêm dòng để nhập mã<br>KH khai báo                                                                             |
 
-#### 3.3 Yêu cầu nghiệp vụ chi tiết
+## 3.3 Yêu cầu nghiệp vụ chi tiết
 
 KH được xác thực thanh công sẽ có Kỳ thanh toán hàng ngày → hệ thống tự động cập nhật toàn bộ mã KH EVTP của mã CusID về kỳ thanh toán của cus
 
@@ -160,14 +155,12 @@ Kỳ thanh toán sẽ thay đổi nếu KH thực hiện Ký PL thay đổi hìn
 
 # 4. Chi tiết chức năng Xác thực OTP trên app KH
 
-### 4.1 SCR1: Màn hình yêu cầu xác thực
+## 4.1 SCR1: Màn hình yêu cầu xác thực
 
-#### **Màn hình**
-
+#### Màn hình
 ![](_page_11_Figure_1.jpeg)
 
-#### **Mô tả màn hình**
-
+#### Mô tả màn hình
 - Hiển thị thông báo "Khách hàng có 1 yêu cầu xác thực thay đổi ngày thanh toán COD. Xác thực ngay." → click thông báo hiển thị màn hình MH02: Xác nhận cập nhật ngày thanh toán → click Xác nhận → hiển thị màn hình MH03: nhập mã xác thực OTP → Xác thực thành công hiển thị màn hình MH04: thông báo cập nhật thành công,
 - MH01: Chi tiết tài khoản → Hiển thị cảnh báo "Khách hàng có 1 yêu cầu xác thực thay đổi ngày thanh toán COD. Xác thực ngay." → Click Xác thực ngay → Chuyển sang màn MH02.
 - MH02: Xác nhận cập nhật ngày thanh toán.
