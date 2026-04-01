@@ -267,14 +267,33 @@ def process_folder(
     html_tables: bool = True,
 ) -> None:
     """Xử lý tất cả file PDF trong folder với timing chi tiết."""
-    pdf_files = sorted(input_dir.glob("*.pdf"))
-    if not pdf_files:
+    all_pdf_files = sorted(input_dir.glob("*.pdf"))
+    if not all_pdf_files:
         raise FileNotFoundError(f"Không tìm thấy file PDF trong: {input_dir}")
+
+    # Resume mode: skip files that already have outputs/<PublicXXX>/main.md
+    pdf_files: list[Path] = []
+    skipped_files = 0
+    for pdf_path in all_pdf_files:
+        folder_name = extract_pdf_folder_name(pdf_path)
+        done_md = out_root / folder_name / "main.md"
+        if done_md.exists() and done_md.stat().st_size > 0:
+            skipped_files += 1
+            continue
+        pdf_files.append(pdf_path)
 
     print(f"📁 Input:  {input_dir}")
     print(f"📁 Output: {out_root}")
     print(f"📊 Table format: {'HTML' if html_tables else 'Markdown'}")
-    print(f"📄 Tìm thấy {len(pdf_files)} file PDF\n")
+    print(f"📄 Tìm thấy {len(all_pdf_files)} file PDF")
+    print(f"⏭️  Bỏ qua {skipped_files} file đã xử lý")
+    print(f"▶️  Cần chạy {len(pdf_files)} file\n")
+
+    if not pdf_files:
+        print("✅ Không còn file cần xử lý. Batch đã hoàn tất.")
+        return
+
+    print(f"🚀 Bắt đầu từ file: {pdf_files[0].name}\n")
     
     success = 0
     failed = 0
