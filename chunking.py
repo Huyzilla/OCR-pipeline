@@ -15,6 +15,39 @@ def normalize_ocr_text(text):
     text = re.sub(r'^-\s+([0-9]+\.)', r'\1', text, flags=re.MULTILINE) # Bỏ dấu - trước các danh sách đánh số 
     return text
 
+def extract_heading_positions(text):
+    positions = []
+    for match in re.finditer(r'^#{1,6}\s+(.+)$', text, flags=re.MULTILINE):
+        heading = match.group(1).strip()
+        positions.append((match.start(), heading))
+    return positions
+
+def nearest_heading(heading_positions, start_idx):
+    hint = None
+    for pos, heading in heading_positions:
+        if pos <= start_idx:
+            hint = heading
+        else:
+            break
+    return hint
+
+def enrich_chunk_metadata(chunks, doc_id):
+    """Attach ordering and linkage metadata for retrieval pipelines."""
+    chunks.sort(key=lambda c: (c["metadata"].get("start_index", 0), c["metadata"].get("chunk_type", "text") != "text"))
+
+    for idx, chunk in enumerate(chunks):
+        meta = chunk["metadata"]
+        chunk_id = f"{doc_id}::chunk::{idx}"
+        section_hint = meta.get("section_hint") or "unknown"
+
+        meta["chunk_index"] = idx
+        meta["chunk_id"] = chunk_id
+        meta["parent_id"] = f"{doc_id}::section::{section_hint}"
+        meta["prev_chunk_id"] = f"{doc_id}::chunk::{idx - 1}" if idx > 0 else None
+        meta["next_chunk_id"] = f"{doc_id}::chunk::{idx + 1}" if idx < len(chunks) - 1 else None
+
+    return chunks
+
 def apply_row_window(header, rows, doc_id, table_id, row_window, row_overlap, max_chars, join_str, suffix):
     chunks = []
     i = 0
@@ -75,13 +108,24 @@ def process_document(text, doc_id, config):
     html_tables = re.findall(html_table_pattern, text, re.DOTALL)
 
     text_without_tables = text
+    table_section_hints = {}
     for i, table in enumerate(html_tables):
-        text_without_tables = text_without_tables.replace(table, f'\n\n[TABLE_{i}]\n\n') # Thay bảng bằng placeholder 
+        placeholder = f'\n\n[TABLE_{i}]\n\n'
+        text_without_tables = text_without_tables.replace(table, placeholder, 1) # Thay bảng bằng placeholder
+
+    heading_positions = extract_heading_positions(text_without_tables)
+    table_marker_positions = {}
+    for i in range(len(html_tables)):
+        marker = f'[TABLE_{i}]'
+        marker_idx = text_without_tables.find(marker)
+        table_marker_positions[i] = marker_idx
+        table_section_hints[i] = nearest_heading(heading_positions, marker_idx) if marker_idx >= 0 else None
 
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=config['text']['chunk_size'],
         chunk_overlap=config['text']['overlap'],
-        separators=config['text']['separators']
+        separators=config['text']['separators'],
+        add_start_index=True,
     )
 
     raw_text_chunks = text_splitter.create_documents([text_without_tables])
@@ -90,24 +134,33 @@ def process_document(text, doc_id, config):
     for tc in raw_text_chunks: # Lọc từng chunk text 
         content = re.sub(r'\[TABLE_\d+\]', '', tc.page_content).strip()
         if len(content) >= config['text']['drop_too_short_chunk_size']:
+            start_index = tc.metadata.get('start_index', 0)
+            section_hint = nearest_heading(heading_positions, start_index)
             final_chunks.append({
                 "page_content": content,
                 "metadata": {
                     "doc_id": doc_id,
-                    "chunk_type": "text"
+                    "chunk_type": "text",
+                    "section_hint": section_hint,
+                    "start_index": start_index,
                 }
             })
         
     table_id_counter = 1
-    for html_tb in html_tables:
+    for i, html_tb in enumerate(html_tables):
         tb_chunks = chunk_html_table(
             html_tb, doc_id, table_id_counter, 
             config['table']['row_window'], 
             config['table']['row_overlap'], 
             config['table']['max_chunk_chars']
         )
+        section_hint = table_section_hints.get(i)
+        for tb_idx, tb in enumerate(tb_chunks):
+            tb["metadata"]["section_hint"] = section_hint
+            tb["metadata"]["start_index"] = table_marker_positions.get(i, 0)
+            tb["metadata"]["table_chunk_index"] = tb_idx
         final_chunks.extend(tb_chunks)
         table_id_counter += 1
 
-    return final_chunks
+    return enrich_chunk_metadata(final_chunks, doc_id)
 

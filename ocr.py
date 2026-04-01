@@ -118,6 +118,63 @@ def merge_continued_html_tables(markdown_text: str) -> tuple[str, int]:
     return "".join(pieces), merged_count
 
 
+def extract_pdf_folder_name(pdf_path: Path) -> str:
+    """
+    Extract folder name from PDF path with special handling:
+    - Removes '_cropped' suffix if present
+    - Converts filename to header format (e.g., Public283 → Public_283)
+    
+    Args:
+        pdf_path: Path to PDF file
+    
+    Returns:
+        Folder name suitable for output (e.g., 'Public283' or 'Public283_cropped' → 'Public283')
+    """
+    base_name = pdf_path.stem
+    # Remove _cropped suffix if present
+    if base_name.endswith("_cropped"):
+        base_name = base_name[:-len("_cropped")]
+    return base_name
+
+
+def format_pdf_header(folder_name: str) -> str:
+    """
+    Convert folder name to markdown header format.
+    E.g., 'Public283' → '# Public_283'
+    """
+    # Insert underscore before numbers at the end if not already present
+    match = re.match(r"^([A-Za-z]+)(\d+)$", folder_name)
+    if match:
+        prefix, number = match.groups()
+        return f"# {prefix}_{number}"
+    return f"# {folder_name}"
+
+
+def replace_image_placeholders(md_text: str, image_count: int) -> str:
+    """
+    Replace image placeholders with correct format: ![](images/imageX.jpg)
+    Assumes images are numbered sequentially from 1.
+    
+    Args:
+        md_text: Original markdown text
+        image_count: Number of images to generate placeholders for
+    
+    Returns:
+        Markdown with image placeholders
+    """
+    # Find all image-like patterns in markdown and replace them
+    # This is a simple approach: if markdown has ![...](...)  patterns,
+    # we'll replace them with sequential image references
+    image_pattern = r"!\[.*?\]\(.*?\)"
+    images = re.findall(image_pattern, md_text)
+    
+    # Replace found images with correct format
+    for i, _ in enumerate(images[:image_count], 1):
+        md_text = md_text.replace(images[i-1], f"![](images/image{i}.jpg)", 1)
+    
+    return md_text
+
+
 def run_marker_convert(
     pdf_path: Path,
     out_root: Path,
@@ -142,7 +199,18 @@ def run_marker_convert(
     from marker.config.parser import ConfigParser
     from marker.output import text_from_rendered
     
-    # Config marker
+    # Manage GPU memory to avoid OOM
+    import os
+    os.environ["TORCH_CUDA_EMPTY_CACHE"] = "1"
+    try:
+        import torch
+        torch.cuda.empty_cache()
+        # Reduce to CPU-only if memory issues persist
+        # os.environ["CUDA_VISIBLE_DEVICES"] = ""
+    except:
+        pass
+    
+    # Config marker with memory optimization
     config = {
         "output_format": "markdown",
         "html_tables_in_markdown": html_tables,
@@ -168,16 +236,29 @@ def run_marker_convert(
 
     elapsed = time.time() - start
     
-    # Save markdown
-    base_name = pdf_path.stem
-    pdf_output_dir = out_root / base_name
+    # Extract folder name (remove _cropped if present)
+    folder_name = extract_pdf_folder_name(pdf_path)
+    pdf_output_dir = out_root / folder_name
+    
+    # Create directory structure
     pdf_output_dir.mkdir(parents=True, exist_ok=True)
-    md_path = pdf_output_dir / f"{base_name}.md"
+    images_dir = pdf_output_dir / "images"
+    images_dir.mkdir(exist_ok=True)
     
+    # Count existing images and prepare header
+    header = format_pdf_header(folder_name)
+    
+    # Process markdown: add header and fix image references
+    image_count = len(re.findall(r"!\[.*?\]\(.*?\)", md_text))
+    md_text = replace_image_placeholders(md_text, image_count)
+    final_md = f"{header}\n\n{md_text}"
+    
+    # Save main.md
+    md_path = pdf_output_dir / "main.md"
     with open(md_path, "w", encoding="utf-8") as f:
-        f.write(md_text)
+        f.write(final_md)
     
-    return elapsed, md_path, md_text
+    return elapsed, md_path, final_md
 
 
 def process_folder(
@@ -185,34 +266,62 @@ def process_folder(
     out_root: Path,
     html_tables: bool = True,
 ) -> None:
-    """Xử lý tất cả file PDF trong folder."""
+    """Xử lý tất cả file PDF trong folder với timing chi tiết."""
     pdf_files = sorted(input_dir.glob("*.pdf"))
     if not pdf_files:
         raise FileNotFoundError(f"Không tìm thấy file PDF trong: {input_dir}")
 
-    print(f"Tìm thấy {len(pdf_files)} file PDF trong {input_dir}")
-    print(f"Format bảng: {'HTML' if html_tables else 'Markdown'}")
+    print(f"📁 Input:  {input_dir}")
+    print(f"📁 Output: {out_root}")
+    print(f"📊 Table format: {'HTML' if html_tables else 'Markdown'}")
+    print(f"📄 Tìm thấy {len(pdf_files)} file PDF\n")
+    
     success = 0
     failed = 0
+    times: list[float] = []
+    batch_start = time.time()
 
     for i, pdf_path in enumerate(pdf_files, 1):
-        print(f"\n[{i}/{len(pdf_files)}] Đang OCR: {pdf_path.name}")
+        print(f"[{i:03d}/{len(pdf_files):03d}] {pdf_path.name[:40]:40s}", end=" ... ", flush=True)
         try:
             elapsed, md_path, md_text = run_marker_convert(
                 pdf_path=pdf_path,
                 out_root=out_root,
                 html_tables=html_tables,
             )
-            print(f"  ✓ Thành công | Thời gian: {elapsed:.1f}s | {len(md_text)} ký tự")
-            print(f"    Output: {md_path}")
+            times.append(elapsed)
+            
+            # Calculate stats
+            avg_time = sum(times) / len(times)
+            remaining = len(pdf_files) - i
+            eta_sec = avg_time * remaining
+            
+            print(f"✅ {elapsed:6.1f}s", end="")
+            if len(times) > 1:
+                print(f" | avg:{avg_time:6.1f}s | ETA: {int(eta_sec//60):3d}m {int(eta_sec%60):02d}s")
+            else:
+                print()
+            
             success += 1
         except Exception as e:
-            print(f"  ✗ Thất bại: {e}")
+            error_msg = str(e)[:50]
+            print(f"❌ ERROR: {error_msg}")
             failed += 1
 
-    print("\n=== OCR SUMMARY ===")
-    print(f"Thành công: {success}")
-    print(f"Thất bại  : {failed}")
+    batch_elapsed = time.time() - batch_start
+    
+    print("\n" + "="*80)
+    print(f"📊 OCR BATCH SUMMARY")
+    print("="*80)
+    print(f"✅ Thành công: {success}/{len(pdf_files)}")
+    print(f"❌ Thất bại:   {failed}/{len(pdf_files)}")
+    print(f"⏱️  Tổng thời gian: {int(batch_elapsed//60):3d}m {int(batch_elapsed%60):02d}s")
+    
+    if times:
+        print(f"⏱️  Avg/file:       {sum(times)/len(times):6.1f}s")
+        print(f"⏱️  Min/Max:        {min(times):6.1f}s / {max(times):6.1f}s")
+    
+    print("="*80)
 
 
 def main() -> None:
@@ -223,8 +332,8 @@ def main() -> None:
 
     parser.add_argument(
         "--output_dir",
-        default="/media/data3/users/huytq/huy/outputs_marker_single",
-        help="Thư mục lưu kết quả",
+        default="/media/data3/users/huytq/huy/outputs",
+        help="Thư mục lưu kết quả (mặc định: outputs/)",
     )
     parser.add_argument(
         "--table_format",
@@ -253,14 +362,10 @@ def main() -> None:
                 out_root=out_root,
                 html_tables=html_tables,
             )
-            print(f"✓ Thành công!")
-            print(f"  Thời gian: {elapsed:.1f}s")
-            print(f"  Kích thước: {len(md_text)} ký tự")
-            print(f"  Output: {md_path}")
-            print(f"\n--- Preview 1500 ký tự đầu ---")
-            print(md_text[:1500])
+            print(f"Thành công!")
+            print(f"Thời gian: {elapsed:.1f}s")
         except Exception as e:
-            print(f"✗ Thất bại: {e}")
+            print(f"Thất bại: {e}")
             raise
     else:
         input_dir = Path(args.input_dir)

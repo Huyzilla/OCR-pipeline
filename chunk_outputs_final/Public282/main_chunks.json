@@ -1,0 +1,212 @@
+[
+  {
+    "page_content": "# Public_282\n\n# 1. Giới thiệu\n## 1.1 Mục đích\n- Giới thiệu về dự án: Mục đích và ý nghĩa của dự án\n- Lập kế hoạch cho toàn bộ dự án\n- Ước lượng thời gian của dự án Mô tả về dự án: Bối cảnh phát triển của dự án, các yêu cầu về môi trường vận hành và các ràng buộc dự án\n- Phân tích các yêu cầu nghiệp vụ của hệ thống thông tin quản lý và phân bố giảng đường\n- Tài liệu được xây dựng dựa trên quá trình khảo sát, phỏng vấn các đối tượng có liên quan và nghiên cứu các tài liệu có liên quan tới nghiệp vụ của hệ thống\n- - Các chức năng của hệ thống được sửa đổi và bổ sung so với phiên bản trước\n\n## 1.2 Các tiêu chuẩn\nTài liệu được viết theo font chữ Time New Roman, cỡ chữ 13, khổ giấy A4\n\n## 1.3 Đối tượng độc giả\nCác đối tượng tham gia vào dự án, có thể đọc và sử dụng tài liệu này như: Ngườiquản lý dự án, lập trình viên, tester,...\n\n## 1.4 Phạm vi dự án\n- Phần mềm thuộc quyền quản lý của khoa Công nghệ thông tin trường Đại học Sư phạm Hà Nội\n- Quản lý trang thiết bị\n- Quản lý giảng đường\n- Quản lý quá trình mượn và trả trang thiết bị phục vụ cho việc giảng dạy và các côngviệc khác\n- Quản lý các sự cố và tình huống rủi ro xảy ra trong giảng đường",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_282",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_282",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "## 1.5 Tài liệu tham khảo\n|                                             | Tiêu đề                                                           | Tác giả                       | Số<br>phiên bản   |\n|---------------------------------------------|-------------------------------------------------------------------|-------------------------------|-------------------|\n| Hướng dẫn thiết kế<br>giao diện             | Principles of User<br>Interface Design                            | Ben Shneiderman               | 2nd Edition       |\n| Hợp đồng                                    | Software<br>Development<br>Contract Template                      | N/a                           |                   |\n| Các tiêu chuẩn về<br>phát triển phần<br>mềm | IEEE Standard for<br>Software and<br>System Test<br>Documentation | IEEE Standards<br>Association | IEEE Std 829-2008 |\n| Tài liệu yêu cầu                            | Software<br>Requirements<br>Specification (SRS)                   | Karl Wiegers và<br>Joy Beatty | 3rd Edition       |",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.5 Tài liệu tham khảo",
+      "start_index": 1156,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1.5 Tài liệu tham khảo",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "| Tài liệu yêu cầu                            | Software<br>Requirements<br>Specification (SRS)                   | Karl Wiegers và<br>Joy Beatty | 3rd Edition       |\n| Tài liệu đặc tả<br>use<br>case              | Writing Effective<br>Use Cases                                    | Alistair Cockburn             | 1st Edition       |",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.5 Tài liệu tham khảo",
+      "start_index": 2022,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1.5 Tài liệu tham khảo",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "## 2.1 Tổng quan về sản phẩm\nHiện nay, sự tiến bộ trong công nghệ và phương tiện truyền thông đã tác động lớnđến hệ thống thông tin quản lý và phân bố giảng đường của các trường đại học. Công nghệthông tin và Internet đã mở ra cơ hội cho việc tạo ra môi trường học tập trực tuyến và cảithiện quản lý học phần, khóa học và thông tin sinh viên.Sự phổ biến của học tập từ xa và học trực tuyến đã thúc đẩy các trường đại học phải xâydựng hệ thống thông tin quản lý và phân bố giảng đường linh hoạt, cho phép sinh viên vàgiảng viên tương tác và tiếp cận nội dung giảng dạy từ xa.Sự tăng số lượng sinh viên và khó khăn trong việc quản lý thông tin đã thúc đẩy các trường đại học phải xây dựng các hệ thống thông tin quản lý và phân bố giảng đường. Điều này giúp tăng cường khả năng quản lý thông tin học phần, khóa học, sinh viên và giảng viênmột cách hiệu quả.Việc quản lý giảng đường, phân bổ giảng đường theo lịch học là một việc làm khá vất vảđối với nhà trường. Ngoài thời gian được bố trí theo thời khóa biểu, các giảng đường cũngcó thể được sinh viên, giáo viên đăng ký sử dụng cho các công việc đột xuất. Người quản lýcũng cần kiểm soát được các thiết bị, đồ dùng của từng giảng đường.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1 Tổng quan về sản phẩm",
+      "start_index": 2376,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2.1 Tổng quan về sản phẩm",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "## 2.2 Các chức năng chính của sản phẩm (Product Functions)\nCác chức năng chính của hệ thống thông tin quản lý và phân bố giảng đường:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.2 Các chức năng chính của sản phẩm (Product Functions)",
+      "start_index": 3565,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::2.2 Các chức năng chính của sản phẩm (Product Functions)",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "- Lịch sử dụng giảng đường: Hệ thống cho phép Phòng đào tạo nhập thông tin về thời khóa biểu và thay đổi lịch sử dụng giảng đường. Giảng viên và sinh viên có thể truy cập vào hệ thống để xem lịch trình sử dụng giảng đường của mình.\n- Quản lý mượn giảng đường: Hệ thống cung cấp cơ chế đặt lịch và đăng ký mượn giảng đường cho các công việc đột xuất. Giáo viên hoặc sinh viên có thể yêu cầu mượn giảng đường trong trường hợp cần sử dụng ngoài lịch trình đã thiết lập. Quá trình đăng ký và xác nhận mượn giảng đường được thực hiện thông qua hệ thống.\n- Quản lý trang thiết bị của giảng đường: Hệ thống cho phép quản lý thông tin về trang thiết bị có sẵn trong từng giảng đường. Các thông tin này bao gồm danh sách trang thiết bị, tình trạng, ngày mua và thông tin bảo trì. Người dùng có thể tra cứu thông tin trang thiết bị và kiểm tra tình trạng sẵn có trước khi sử dụng giảng đường.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.2 Các chức năng chính của sản phẩm (Product Functions)",
+      "start_index": 3701,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::2.2 Các chức năng chính của sản phẩm (Product Functions)",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "- Báo cáo sự cố và thống kê tình trạng giảng đường: Hệ thống cung cấp chức năng cho phép người dùng báo cáo các sự cố mất, hỏng liên quan đến giảng đường; thống kê và báo cáo về tình hình sử dụng giảng đường và trang thiết bị. Người dùng có thể ghi lại thông tin chi tiết về sự cố và gửi báo cáo từ hệ thống. Quản lý có thể xem và xử lý những sự cố này để đảm bảo giảng đường hoạt động trơn tru.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.2 Các chức năng chính của sản phẩm (Product Functions)",
+      "start_index": 4584,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::2.2 Các chức năng chính của sản phẩm (Product Functions)",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "## 2.3 Phân loại người dùng\nNgười dùng hệ thống được chia làm 4 loại:\n\n- Quản lý hệ thống: Bao gồm các quản lý hệ thống, nhân viên phòng đào tạo hoặc nhân viên quản lý tài sản. Họ có quyền truy cập và quản lý toàn bộ hệ thống, bao gồm thiết lập lịch trình sử dụng giảng đường, quản lý trang thiết bị, xử lý báo cáo sự cố và tạo báo cáo thống kê.\n- Giảng viên: Sử dụng hệ thống để xem lịch trình sử dụng giảng đường của mình, đặt lịch và xác nhận mượn giảng đường cho các công việc đột xuất, và báo cáo sự cố liên quan đến giảng đường.\n- Sinh viên: Sử dụng hệ thống để xem lịch trình sử dụng giảng đường, đặt lịch và xác nhận mượn giảng đường cho các công việc đột xuất. Họ cũng có thể báo cáo sự cố liên quan đến giảng đường.\n\n- Quản lý sự kiện: Nhóm này bao gồm các nhân viên quản lý sự kiện, tổ chức hội thảo hoặc các hoạt động ngoại khóa. Họ sử dụng hệ thống để đặt lịch và quản lý sự kiện diễn ra trong giảng đường.\n\n## 2.4 Môi trường hoạt động\nHệ thống hoạt động trên nền tảng các Web hoặc ứng dụng trên máy tính cá nhân.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.3 Phân loại người dùng",
+      "start_index": 4981,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::2.3 Phân loại người dùng",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "## 2.4 Môi trường hoạt động\nHệ thống hoạt động trên nền tảng các Web hoặc ứng dụng trên máy tính cá nhân.\n\n## 2.5 Các ràng buộc thiết kế và cài đặt\n- Hệ thống sử dụng các công cụ công nghệ:\n- Ngôn ngữ lập trình backend: Java\n- Framework: Spring để giảm thời gian phát triển và tăng tính bảo mật.\n- Cơ sở dữ liệu: Sử dụng hệ quản trị cơ sở dữ liệu PostgreSQL để lưu trữ dữ liệu liên quan đến lịch trình, trang thiết bị, sự cố và người dùng.\n- UI/UX: Sử dụng React kết hợp cùng Ant design\n- Hệ thống chạy trên môi trường website.\n\n## 2.6 Tài liệu người dùng (User Documentation)\n### Hướng dẫn sử dụng:\nTài liệu hướng dẫn sử dụng cung cấp hướng dẫn chi tiết về cách sử dụng các tính năng và chức năng của hệ thống. Nó có thể bao gồm hướng dẫn đăng nhập, đặt lịch sử dụng giảng đường, quản lý thông tin giảng đường, tạo báo cáo, vv.\n\n## Tài liệu hỗ trợ kỹ thuật:\nTài liệu hỗ trợ kỹ thuật cung cấp thông tin về cách cài đặt, cấu hình, và bảo trì hệ thống. Nó có thể bao gồm hướng dẫn về cách triển khai hệ thống, cách sao lưu và khôi phục dữ liệu, và các vấn đề kỹ thuật phổ biến khác.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.4 Môi trường hoạt động",
+      "start_index": 5902,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::2.4 Môi trường hoạt động",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "## Tài liệu hỗ trợ kỹ thuật:\nTài liệu hỗ trợ kỹ thuật cung cấp thông tin về cách cài đặt, cấu hình, và bảo trì hệ thống. Nó có thể bao gồm hướng dẫn về cách triển khai hệ thống, cách sao lưu và khôi phục dữ liệu, và các vấn đề kỹ thuật phổ biến khác.\n\n### Tài liệu API:\nNếu hệ thống cung cấp API cho việc tích hợp với các ứng dụng hoặc dịch vụ khác, tài liệu API sẽ cung cấp thông tin về cách sử dụng API, các yêu cầu và phản hồi được hỗ trợ, và các ví dụ về cách tích hợp.\n\n## Tài liệu quản trị hệ thống:\nTài liệu quản trị hệ thống cung cấp thông tin về cách quản lý người dùng, quyền truy cập, và cấu hình hệ thống. Nó có thể bao gồm hướng dẫn về cách tạo và quản lý tài khoản người dùng, quản lý nhóm người dùng, và cấu hình cài đặt hệ thống.\n\n# Hỗ trợ trực tuyến:\nCung cấp một kênh để người dùng có thể tìm kiếm trợ giúp hoặc yêu cầu hỗ trợ trực tuyến từ nhóm hỗ trợ kỹ thuật. Điều này có thể bao gồm diễn đàn hỗ trợ trực tuyến, trang web hỗ trợ, hoặc hệ thống ticket hỗ trợ.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tài liệu hỗ trợ kỹ thuật:",
+      "start_index": 6732,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::Tài liệu hỗ trợ kỹ thuật:",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "# Hỗ trợ trực tuyến:\nCung cấp một kênh để người dùng có thể tìm kiếm trợ giúp hoặc yêu cầu hỗ trợ trực tuyến từ nhóm hỗ trợ kỹ thuật. Điều này có thể bao gồm diễn đàn hỗ trợ trực tuyến, trang web hỗ trợ, hoặc hệ thống ticket hỗ trợ.\n\n### Tài liệu đào tạo:\nTài liệu đào tạo cung cấp tài liệu hoặc tài nguyên giáo trình để đào tạo người dùng về cách sử dụng hệ thống một cách hiệu quả. Điều này có thể bao gồm tài liệu học trực tuyến, video hướng dẫn, hoặc các tài liệu đào tạo in ấn.\n\n## 2.7 Các mặc định và phụ thuộc khác (Assumptions and Dependencies)\n- Danh sách sinh viên đang học tại trường và được cập nhật theo mỗi kỳ học từ phòng Quản lý sinh viên\n- Danh sách cán bộ, giảng viên đang làm việc tại trường\n- Hệ thống phải tuân thủ các quy định về bảo vệ dữ liệu cá nhân và quyền riêng tư theo các\n\nquy định pháp luật hiện hành.\n\n# 3. Yêu cầu về giao tiếp\n## 3.1 Giao tiếp với người dùng (User Interfaces)\nMô tả các đặc tính của mỗi giao diện sử dụng trong hệ thống quản lý và phân bổ giảng đường bao gồm:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Hỗ trợ trực tuyến:",
+      "start_index": 7479,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::Hỗ trợ trực tuyến:",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "quy định pháp luật hiện hành.\n\n# 3. Yêu cầu về giao tiếp\n## 3.1 Giao tiếp với người dùng (User Interfaces)\nMô tả các đặc tính của mỗi giao diện sử dụng trong hệ thống quản lý và phân bổ giảng đường bao gồm:\n\n## Hình ảnh màn hình:\n- Cung cấp các hình ảnh minh họa chi tiết về các giao diện người dùng, bao gồm các trang, các màn hình và các thành phần giao diện khác nhau.\n- Đảm bảo rằng hình ảnh màn hình được hiển thị rõ ràng và có thể giải thích được các chức năng và tính năng của hệ thống.\n\n## Chuẩn thiết kế giao diện:\n- Áp dụng các chuẩn thiết kế giao diện như Material Design, Bootstrap, hoặc các chuẩn thiết kế nội bộ của tổ chức để đảm bảo tính nhất quán và trải nghiệm người dùng tốt.\n- Đảm bảo rằng giao diện sử dụng các yếu tố thiết kế như màu sắc, font chữ, kích thước và bố trí phù hợp để tạo ra giao diện hấp dẫn và dễ sử dụng.\n\n# Hướng dẫn thiết kế sản phẩm:\n- Cung cấp hướng dẫn chi tiết về cách sử dụng giao diện người dùng, bao gồm các hướng dẫn sử dụng các tính năng, thực hiện các thao tác và truy cập vào các chức năng khác nhau của hệ thống.\n- Đảm bảo rằng hướng dẫn thiết kế sản phẩm là dễ hiểu và dễ truy cập để người dùng có thể tận dụng tối đa các tính năng của hệ thống.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.7 Các mặc định và phụ thuộc khác (Assumptions and Dependencies)",
+      "start_index": 8282,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::2.7 Các mặc định và phụ thuộc khác (Assumptions and Dependencies)",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "# Tiêu chuẩn về giao diện:\n- Tuân thủ các tiêu chuẩn về giao diện của hệ thống như độ phản hồi, tương thích với các thiết bị di động, trình duyệt web, và các chuẩn định dạng dữ liệu như JSON hoặc XML\n- Đảm bảo rằng giao diện người dùng đáp ứng đúng các tiêu chuẩn và chuẩn mực về giao diện để tối ưu hóa trải nghiệm người dùng.\n\n#### Vào ra dữ liệu:\n- Cung cấp các giao diện dễ sử dụng để nhập liệu từ người dùng, bao gồm các biểu mẫu, trường dữ liệu, và các điều khiển nhập liệu khác nhau.\n- Đảm bảo rằng các giao diện nhập liệu hỗ trợ kiểm tra lỗi và cung cấp thông báo rõ ràng khi người dùng nhập liệu không hợp lệ.\n\n# Thông báo lỗi:\n- Hiển thị thông báo lỗi một cách rõ ràng và dễ hiểu khi xảy ra lỗi trong quá trình sử dụng hệ thống.\n- Cung cấp các thông báo lỗi đầy đủ thông tin và hướng dẫn để người dùng có thể sửa lỗi hoặc liên hệ với hỗ trợ kỹ thuật nếu cần\n\n## 3.2 Giao tiếp với phần cứng (Hardware Interfaces)\nMô tả các đặc điểm logic và vật lý của giao diện giao tiếp giữa phần mềm và các thiết bị phần cứng của hệ thống quản lý và phân bổ giảng đường bao gồm:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tiêu chuẩn về giao diện:",
+      "start_index": 9482,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::Tiêu chuẩn về giao diện:",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "## 3.2 Giao tiếp với phần cứng (Hardware Interfaces)\nMô tả các đặc điểm logic và vật lý của giao diện giao tiếp giữa phần mềm và các thiết bị phần cứng của hệ thống quản lý và phân bổ giảng đường bao gồm:\n\n## Kiểu thiết bị:\n- Máy tính cá nhân và thiết bị di động: Hệ thống quản lý và phân bổ giảng đường thường tương tác với máy tính cá nhân, laptop, tablet và điện thoại di động thông qua giao diện người dùng web hoặc ứng dụng di động.\n- Máy chủ: Hệ thống cũng có thể tương tác với các máy chủ để lưu trữ dữ liệu, xử lý yêu cầu và cung cấp dịch vụ.\n\n# Loại tương tác dữ liệu và điều khiển:\n- Người dùng nhập liệu: Người dùng có thể tương tác với hệ thống bằng cách sử dụng chuột và bàn phím để nhập liệu thông qua các biểu mẫu trên giao diệnngười dùng, chẳng hạn như điền thông tin đặt lịch sử dụng giảng đường.\n- Truy vấn và cập nhật dữ liệu: Hệ thống cũng có thể tương tác với cơ sở dữ liệu để truy vấn và cập nhật thông tin về giảng đường, lịch sử đặt lịch, người dùng, vv.\n- Giao diện với thiết bị ngoại vi: Hệ thống có thể giao tiếp với các thiết bị ngoại vi khác như máy in, máy quét mã vạch hoặc thiết bị đo lường thông qua các giao diện tương thích.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.2 Giao tiếp với phần cứng (Hardware Interfaces)",
+      "start_index": 10351,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::3.2 Giao tiếp với phần cứng (Hardware Interfaces)",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "# Giao thức truyền thông:\n- HTTP/HTTPS: Giao thức HTTP/HTTPS thường được sử dụng cho việc truyền tải dữ liệu giữa máy tính cá nhân và máy chủ thông qua giao diện người dùng web.\n- SQL: Giao thức SQL thường được sử dụng cho việc truy vấn và cập nhật cơ sở dữ liệu.\n- APIs: Giao thức RESTful hoặc SOAP thường được sử dụng cho việc tương tác giữa hệ thống và các ứng dụng hoặc dịch vụ bên ngoài.\n\n# Đặc điểm vật lý:\n- Kết nối mạng: Hệ thống cần kết nối mạng Internet LAN hoặc WLAN để tương tác với người dùng và dịch vụ trên mạng.\n- Thiết bị lưu trữ: Các dữ liệu cần được lưu trữ trên máy chủ hoặc hệ thống lưu trữ đám mây.\n- Thiết bị người dùng: Người dùng cần sử dụng các thiết bị như máy tính, điện thoại di động hoặc máy tính bảng để truy cập và tương tác với hệ thống",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giao thức truyền thông:",
+      "start_index": 11512,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::Giao thức truyền thông:",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": null
+    }
+  }
+]
