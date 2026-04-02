@@ -1,27 +1,0 @@
-2026-03-31 15:22:45.982773: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
-WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-E0000 00:00:1774945366.602253 1098218 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-E0000 00:00:1774945366.981218 1098218 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-W0000 00:00:1774945368.388599 1098218 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1774945368.388632 1098218 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1774945368.388634 1098218 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-W0000 00:00:1774945368.388636 1098218 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
-2026-03-31 15:22:48.495956: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-📁 Input:  input
-📁 Output: outputs
-📊 Table format: HTML
-
-📄 Found 202 PDFs
-
-[001/202] Processing: Public001.pdf ... Recognizing Layout:   0%|          | 0/12 [00:00<?, ?it/s]Recognizing Layout:   0%|          | 0/12 [00:04<?, ?it/s]
-❌ ERROR: CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has 
-[002/202] Processing: Public002.pdf ... Recognizing Layout:   0%|          | 0/10 [00:00<?, ?it/s]Recognizing Layout:   0%|          | 0/10 [00:00<?, ?it/s]
-❌ ERROR: CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has 
-[003/202] Processing: Public003.pdf ... Recognizing Layout:   0%|          | 0/10 [00:00<?, ?it/s]Recognizing Layout:   0%|          | 0/10 [00:00<?, ?it/s]
-❌ ERROR: CUDA out of memory. Tried to allocate 176.00 MiB. GPU 0 has 
-[004/202] Processing: Public004.pdf ... Recognizing Layout:   0%|          | 0/7 [00:00<?, ?it/s]Recognizing Layout:   0%|          | 0/7 [00:00<?, ?it/s]
-❌ ERROR: CUDA out of memory. Tried to allocate 156.00 MiB. GPU 0 has 
-[005/202] Processing: Public005.pdf ... Recognizing Layout:   0%|          | 0/11 [00:00<?, ?it/s]Recognizing Layout:   0%|          | 0/11 [00:00<?, ?it/s]
-❌ ERROR: CUDA out of memory. Tried to allocate 180.00 MiB. GPU 0 has 
-[006/202] Processing: Public006.pdf ... 

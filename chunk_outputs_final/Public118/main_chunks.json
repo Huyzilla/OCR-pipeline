@@ -1,0 +1,30 @@
+[
+  {
+    "page_content": "# Public_118\n\n# 1. Giới thiệu\nDimensionality Reduction (giảm chiều dữ liệu) là một kỹ thuật quan trọng trong Machine Learning. Dữ liệu thực tế có thể có số chiều rất lớn (hàng nghìn). Việc giảm chiều giúp tiết kiệm lưu trữ, tăng tốc tính toán và có thể coi như nén dữ liệu. Một phương pháp tuyến tính cơ bản là Principal Component Analysis (PCA).\n\n# 2. Một chút toán\n### 2.1 Norm 2 của ma trận\n$$||A||_2 = \\max_x ||Ax||_2 / ||x||_2$$\n (1)  \n $||A||_2 = \\max_{\\{||x||_2 = 1\\}} ||Ax||_2$  (2)\n\nGiải bằng nhân tử Lagrange cho thấy norm 2 của ma trận chính là singular value lớn nhất của A.\n\nVector tương ứng là right-singular vector của A.\n\n# 2.2 Biểu diễn vector trong các hệ cơ sở khác nhau\n$$x = Uy, y = U^{-1}x$$\n (7)\n\nNếu U trực giao: U^{-1}=U^T, do đó y = U^T x.\n\n### 2.3 Trace\nMột số tính chất:\n\n- trace(A) = trace(A^T)\n- trace(kA) = k trace(A)\n- trace(AB) = trace(BA)\n- ||A||\\_F^2 = trace(A^T A)\n- trace(A) = tổng các trị riêng của A\n\n### 2.4 Kỳ vọng và ma trận hiệp phương sai\nMột chiều: x̄ = (1/N) Σ x\\_n, σ^2 = (1/N) Σ (x\\_n − x̄)^2\n\nĐa chiều: x̄ = (1/N) Σ x\\_n, S = (1/N) (X − x̄1^T)(X − x̄1^T)^T",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_118",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_118",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "### 2.4 Kỳ vọng và ma trận hiệp phương sai\nMột chiều: x̄ = (1/N) Σ x\\_n, σ^2 = (1/N) Σ (x\\_n − x̄)^2\n\nĐa chiều: x̄ = (1/N) Σ x\\_n, S = (1/N) (X − x̄1^T)(X − x̄1^T)^T\n\n# 3. Principal Component Analysis (PCA)\nMục tiêu: Tìm hệ cơ sở trực chuẩn sao cho phương sai dữ liệu tập trung ở K thành phần đầu.\n\nDữ liệu chuẩn hoá: Ẋ = X − x̄1^T\n\nMa trận hiệp phương sai: S = (1/N)ẊẊ^T\n\nHàm mất mát:  $J = \\Sigma_{i=K+1}^D u_i^T S u_i$ Tối ưu tương đương chọn K vector riêng ứng với K trị riêng lớn nhất của S.\n\n#### 4. Các bước PCA\n\n- Tính kỳ vọng x\n- Chuẩn hoá dữ liêu:  $\\dot{X} = X \\bar{x}1^{T}$\n- Tính ma trận hiệp phương sai S\n- Tính trị riêng & vector riêng, sắp xếp λ giảm dần\n- Chọn K vector riêng lớn nhất  $\\rightarrow$  U\\_K\n- Tính toạ độ mới:  $Z = U K^T \\dot{X}$\n- Xấp xỉ khôi phục:  $x \\approx U K z + \\bar{x}$\n\n17.48.02\\_AI Race\n\n2025-09-28 17.48.02 AI Race\n\n2025-09-28 17.48.02\\_AI Race\n\n201,5:00",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.4 Kỳ vọng và ma trận hiệp phương sai",
+      "start_index": 940,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::2.4 Kỳ vọng và ma trận hiệp phương sai",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": null
+    }
+  }
+]

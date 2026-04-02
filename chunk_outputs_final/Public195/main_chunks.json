@@ -1,0 +1,338 @@
+[
+  {
+    "page_content": "# Public_195\n\n# 1. Đặt vấn đề\n#### 1.1 Trí tuệ nhân tạo trong giáo dục: Xu thế không thể đảo ngược\nDù có lịch sử phát triển hơn 100 năm, từ những năm 1920 (xem Hình 1), sự có mặt của trí tuệ nhân tạo (AI) trong lĩnh vực giáo dục chỉ được biết tới mạnh mẽ nhất từ tháng 3 năm 1965, khi báo cáo UNESCO Courier giới thiệu về học máy (learning machines) - Bộ chương trình được phát triển ở Mĩ để hỗ trợ học sinh học tập [1], [2], [3], [4], [5], [6]. Trong suốt 60 năm vừa qua, quá trình phát triển vượt bậc của những công cụ AI trong giáo dục gắn liền với sự thay đổi về đặc điểm và yêu cầu kinh tế - xã hội, về nhu cầu và điều kiện giáo dục và quan trọng nhất, về quan niệm dạy và học của từng quốc gia trên thế giới.\n\n![](images/image1.jpg)\n\nTừ những năm 1950 đến 1990",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_195",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_195",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "![](images/image1.jpg)\n\nTừ những năm 1950 đến 1990\n\nTrong giai đoạn này, sự phát triển của AI chủ yếu xoay quanh việc sử dụng máy tính để cải thiện kết quả và trải nghiệm dạy và học. Cụ thể, từ những năm 1960, ý tưởng về việc sử dụng máy tính và công nghệ trong giáo dục bắt đầu xuất hiện với khái niệm về dạy và học máy (teaching and learning machines) được đề cập trong các trích dẫn của các nhà giáo dục có tiếng [7]. Một ví dụ điển hình của học máy kể tới PLATO (Programmed Logic for Automatic Teaching Operations) - một hệ thống dạy học hỗ trợ máy tính, tiên phong cho nền dạy học trực tuyến ngày nay. Những năm 1970 chứng kiến tính ứng dụng cao của AI trong giáo dục, trong đó xuất hiện những thử nghiệm đầu tiên về việc tích hợp công nghệ trong giáo dục (Educational technology tools) nhằm nâng cao hiệu quả học tập. Một số hệ thống AI sớm (Early artificial intelligence systems) như AutoTutor (Hệ thống hỏi đáp hỗ trợ học sinh học ngôn ngữ), LEGO Mindstorms (Sản phẩm giáo dục sử dụng chương trình và cảm biến để giúp học sinh hiểu về lập trình, kĩ thuật và cơ bản của robot) cũng được phát triển trong giai đoạn này [7].\n\n#### Từ những năm 1980 đến 1990",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.1 Trí tuệ nhân tạo trong giáo dục: Xu thế không thể đảo ngược",
+      "start_index": 716,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1.1 Trí tuệ nhân tạo trong giáo dục: Xu thế không thể đảo ngược",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "#### Từ những năm 1980 đến 1990\n\nKhi cơ sở hạ tầng công nghệ được cải thiện đáng kể, những công cụ AI trong giáo dục ra đời ngoài mục đích nâng cao thành tích còn gia tăng trải nghiệm học tập thích thú và tích cực cho học sinh đối với tất cả các môn học. Một số công cụ nổi bật kể tới là sự ra đời của những môi trường giáo dục ảo (Virtual learning environments), các phần mềm và ứng dụng học tập tự động và cá nhân hóa (Ví dụ: Cognitive Tutor dạy và học Toán, Programming by Example dạy và học Lập trình, Jupiter Learning dạy và học Điện và Kĩ thuật) [8].\n\n### Từ năm 2000 đến nay\n\n![](images/image2.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Từ những năm 1980 đến 1990",
+      "start_index": 1847,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::Từ những năm 1980 đến 1990",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "### Từ năm 2000 đến nay\n\n![](images/image2.jpg)\n\nSự bùng nổ của các công cụ AI trong giáo dục bắt đầu trở nên mạnh mẽ từ những năm 2000 và hoàn toàn thay đổi cục diện giáo dục thế giới vào năm 2020, với sự tác động lớn của đại dịch COVID-19. Cụ thể, từ những năm 2000, các nền tảng giáo dục trực tuyến kết hợp các tính năng tự động của AI trở nên phổ biến, cho phép người học được tự tiếp cận kiến thức thông qua các nền tảng trực tuyến, tự xây dựng lộ trình học tập linh hoạt phù hợp với nhu cầu cá nhân [8]. Ví dụ, nền tảng Khan Academy thành lập năm 2006 đã xây dựng hơn 6000 video bài giảng miễn phí và hệ thống đánh giá kết quả tự động, giúp học sinh tự đánh giá năng lực\n\n2\n\nbản thân và đưa ra định hướng học tập phù hợp nhất. Một nền tảng đáng chú ý khác là Knewton, xuất hiện từ năm 2008, sử dụng thuật toán và dữ liệu để tối ưu hóa trải nghiệm học tập [9].\n\nTừ những năm 2010",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Từ năm 2000 đến nay",
+      "start_index": 2405,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::Từ năm 2000 đến nay",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "2\n\nbản thân và đưa ra định hướng học tập phù hợp nhất. Một nền tảng đáng chú ý khác là Knewton, xuất hiện từ năm 2008, sử dụng thuật toán và dữ liệu để tối ưu hóa trải nghiệm học tập [9].\n\nTừ những năm 2010\n\nSự xuất hiện của Chatbots - công cụ AI cho phép con người giao tiếp với máy tính để tiếp cận kiến thức và giải đáp thắc mắc đã bắt đầu thay đổi quan niệm của các nhà nghiên cứu và nhà giáo dục về tiềm năng còn tiềm ẩn của các công cụ AI trong lĩnh vực giáo dục [7]. Cùng với đó, công nghệ thực tế ảo (VR - Virtual Reality) và thực tế ảo tăng cường (AR - Augmented Reality) cũng được tích hợp trong giảng dạy, mang lại trải nghiệm học tập hoàn toàn khác biệt so với giáo dục truyền thống. Ví dụ, Google Expeditions sử dụng thực tế ảo tăng cường để đưa học sinh vào các hành trình thực tế ảo, mở rộng không gian giáo dục đến những nơi học sinh chưa từng đặt chân.\n\nHình 1: Cột mốc phát triển của AI dựa trên khả năng giải quyết vấn đề [10]",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Từ năm 2000 đến nay",
+      "start_index": 3083,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::Từ năm 2000 đến nay",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "Hình 1: Cột mốc phát triển của AI dựa trên khả năng giải quyết vấn đề [10]\n\nTừ Hình 1 ta thấy được rằng, khả năng giải quyết vấn đề và xử lý thông tin của AI phát triển một cách đáng chú ý từ năm 2010, đánh dấu giai đoạn vàng của kỉ nguyên AI. Nếu năm 2015, AI có thể thực hiện những thao tác mang tính nhận diện và thông hiểu như nhận diện khuôn mặt và thông hiểu văn bản, thì năm 2023, với sự ra đời của AI tạo sinh, các công cụ AI có thể vận dụng kiến thức từ dữ liệu, phân tích hiện tượng như một con người và đưa ra những đánh giá hiện trạng nhằm sáng tạo ra những ý tưởng mới [10]. Nhìn từ góc độ phát triển tư duy, AI đã đạt tới được cấp độ sáng tạo - cấp độ cao nhất trong thang đo tư duy Bloom.\n\nTác động của đại dịch COVID-19",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Từ năm 2000 đến nay",
+      "start_index": 3954,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::Từ năm 2000 đến nay",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Tác động của đại dịch COVID-19\n\nNgoài quá trình phát triển vốn có của AI, tác động của đại dịch COVID-19 tới quá trình dạy và học tạo ra một cú hích lớn cho nhận thức toàn cầu về tầm quan trọng của công nghệ trong giáo dục. Theo World Bank, chỉ trong hai năm đại dịch, việc học tập của hơn 1.6 tỉ học sinh bị gián đoạn ở nhiều mức độ khác nhau, từ học trực tuyến tới nghỉ học hoàn toàn (2023). Trong hai năm này, các nền tảng học tập trực tuyến, các ứng dụng công nghệ giáo dục và các ứng dụng AI thông minh trở thành giải pháp tối ưu để cải thiện việc tiếp cận giáo dục ở nhiều quốc gia trên toàn thế giới [11], đóng vai trò như cầu nối giữa người học và tri thức, không chỉ cung cấp nền tảng để trao đổi tri thức mà còn cung cấp trải nghiệm học tập hấp dẫn [12].",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Từ năm 2000 đến nay",
+      "start_index": 4659,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Từ năm 2000 đến nay",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "Vì vậy, UNESCO (2021) nhấn mạnh rằng, việc sử dụng công nghệ không chỉ giúp duy trì quá trình giảng dạy và học tập trong tình huống khẩn cấp như đại dịch mà còn tạo ra cơ hội cho sự sáng tạo trong giáo dục, hướng tới một nền giáo dục tiên tiến và chất lượng hơn [13]. Hơn nữa, các giải pháp công nghệ có thể được phát triển dựa trên cơ sở hạ tầng và tài nguyên hiện có. Do đó, việc thúc đẩy tính bền vững giáo dục có tiềm năng đạt được bằng cách trang bị cho học sinh các kĩ năng cần thiết, bao gồm kĩ năng số để điều hướng và định vị bản thân trong một thế giới đang tiến triển không ngừng. Từ đó trở đi, nhận thức và thói quen sử dụng công nghệ của nhà trường, giáo viên và học sinh toàn cầu cũng có sự chuyển biến rõ rệt. Xu hướng sử dụng AI để giải quyết các thách thức hiện nay trong giáo dục trở nên phổ biến - một bình thường mới, một xu thế không thể đảo ngược [1], [2], [3], [4], [5], [6]",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Từ năm 2000 đến nay",
+      "start_index": 5425,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Từ năm 2000 đến nay",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": ". Xu hướng sử dụng AI để giải quyết các thách thức hiện nay trong giáo dục trở nên phổ biến - một bình thường mới, một xu thế không thể đảo ngược [1], [2], [3], [4], [5], [6]. Ví dụ, có thể kể đến những ứng dụng trò chơi tích hợp AI nhằm tăng tương tác học tập (Quizlet, Quizziz, Padlet…), những nền tảng học tập như Coursera sử dụng AI để cung cấp trải nghiệm học tập cá nhân hóa hiện nay đã trở thành một phần không thể thiếu trong giáo dục chính quy và trong suốt hành trình học tập suốt đời.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Từ năm 2000 đến nay",
+      "start_index": 6148,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::Từ năm 2000 đến nay",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "## 1.2 Từ vô địch cờ vua tới vô địch Olympics: Cuộc đua AI chưa có hồi kết\nNhìn từ góc độ kĩ thuật, trong lịch sử gần 100 năm hình thành và phát triển, có thể nói rằng, cuộc đua về trí thông minh của AI vẫn chưa có hồi kết. Bắt đầu với một sự kiện chấn động thế giới vào năm 1997 khi Deep Blue - một siêu máy tính sử dụng trí tuệ nhân tạo phát triển bởi IBM đánh bại kì thủ cờ vua thế giới nổi tiếng Garry Kasparov, thể hiện khả năng tư duy chiến lược vượt qua trí tuệ con người [14]. Chiến thắng này được coi là một bước ngoặt mang tính cách mạng trong quá trình phát triển của AI, chỉ ra tiềm năng vượt bậc của công cụ này trong việc giải quyết các nhiệm vụ phức tạp yêu cầu nhiều bước thực hiện phân tích dữ liệu tức thì. Trong ba thập kỉ tiếp theo, sự tiến bộ của AI trong việc giải quyết các vấn đề đa lĩnh vực diễn ra theo ba giai đoạn chính, tạm thời dừng chân với một phát minh mới nhất của các nhà khoa học về một công cụ AI vượt qua những học sinh ưu tú nhất, giành giải vô địch Olympics Toán học thế giới.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.2 Từ vô địch cờ vua tới vô địch Olympics: Cuộc đua AI chưa có hồi kết",
+      "start_index": 6645,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::1.2 Từ vô địch cờ vua tới vô địch Olympics: Cuộc đua AI chưa có hồi kết",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "Dù hành trình từ chiến thắng cờ vua tới chiến thắng Olympics chứng minh được tiềm năng của các công cụ AI trong việc không ngừng đẩy lùi ranh giới của những gì trước đây được coi là không thể, cuộc đua AI vẫn rất quyết liệt và chưa có hồi kết. Đối mặt với hiện tượng này, các quốc gia trên thế giới dần đón nhận tiềm năng của AI, đồng thời đối mặt với những thách thức liên quan đến quyền riêng tư, các yếu tố về đạo đức nhằm đảm bảo rằng, những lợi ích của AI trong giáo dục được khai thác công bằng và hướng tới tiến bộ chung của xã hội. Các quốc gia cũng nhận thức rõ hơn về sự cần thiết để chuẩn bị công dân đáp ứng yêu cầu của thời đại số, bắt đầu tích hợp AI vào chiến lược giáo dục quốc gia của mình. Báo cáo Giám sát Giáo dục toàn cầu của UNESCO (2021) là một minh chứng cho xu hướng toàn cầu này với sự tập trung vào việc nâng cao tính tiện ích, tính bao quát và chất lượng của giáo dục thông qua công nghệ mới.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.2 Từ vô địch cờ vua tới vô địch Olympics: Cuộc đua AI chưa có hồi kết",
+      "start_index": 7663,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::1.2 Từ vô địch cờ vua tới vô địch Olympics: Cuộc đua AI chưa có hồi kết",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "#### 2. Nội dung nghiên cứu\n## 2.1 Nghiên cứu về tác động của AI trong hệ thống giáo dục toàn cầu\n#### 2.1.1 AI tạo sinh và sự tái định nghĩa quá trình dạy và học\nTrong số các cột mốc phát triển của AI đã kể trên, giai đoạn hai với sự ra đời của AI tạo sinh (Generative AI), cụ thể là công cụ AI ChatGPT, được cho là sẽ cách mạng hóa phương pháp giảng dạy và học tập truyền thống. Báo cáo UNESCO Courier (2023) đã chỉ ra rằng, AI tạo sinh đã mở ra một chương mới trong lĩnh vực giáo dục toàn cầu, trong đó Trợ lí Tổng Giám đốc UNESCO về Giáo dục Stefania Giannini bày tỏ sự quan ngại sâu sắc về tốc độ tích hợp \"khủng khiếp\" các công nghệ AI tạo sinh vào hệ thống giáo dục mà chưa có sự kiểm soát và quy định cụ thể của từng quốc gia. Số liệu cho thấy, đến tháng 12 năm 2023, ứng dụng ChatGPT của OpenAI có 180.5 triệu người dùng hàng tháng với 1.6 tỉ lượt sử dụng, chưa kể các công cụ tạo sinh khác như Bard/Gemini phát triển bởi Google, Bing/Copilot phát triển bởi Microsoft [17].",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Nội dung nghiên cứu",
+      "start_index": 8585,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::2. Nội dung nghiên cứu",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "Báo cáo Giám sát Giáo dục toàn cầu của UNESCO (2023) cũng nêu rõ rằng, các công cụ trí tuệ nhân tạo mới hoàn toàn có khả năng tái định nghĩa về dạy và học. Với việc các công cụ AI trở nên ngày một thông minh và được sử dụng mọi lúc mọi nơi để giải đáp thắc mắc, giáo viên không còn là người truyền đạt kiến thức duy nhất mà học sinh có thể chủ động tìm hiểu kiến thức và xây dựng trải nghiệm học tập với sự trợ giúp từ công cụ trợ lí thông minh như ChatGPT [18]. Sự gia tăng tiếp cận tới kiến thức này đang đánh dấu một thời kì mới về học tập suốt đời, cho phép cá nhân tiếp thu kiến thức và phát triển kĩ năng mà không phụ thuộc vào lớp học truyền thống hoặc giáo viên [19].\n\n5\n\n## 2.1.2 Lợi ích và nguy cơ của AI đối với hệ thống giáo dục toàn cầu\n# 2.1.2.1. Lợi ích của AI đối với hệ thống giáo dục toàn cầu\n## \\*\\*Trao cơ hội tiếp cận giáo dục:\\*\\*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1.1 AI tạo sinh và sự tái định nghĩa quá trình dạy và học",
+      "start_index": 9569,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::2.1.1 AI tạo sinh và sự tái định nghĩa quá trình dạy và học",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "Lợi ích lớn nhất mà công nghệ giáo dục nói chung và công cụ AI nói riêng mang lại cho giáo dục phải kể tới việc trao cơ hội tiếp cận giáo dục [11], [20]. Điều này đặc biệt quan trọng đối với học sinh có nhu cầu học tập chuyên biệt (giáo dục đặc biệt), học sinh ở vùng sâu vùng xa gặp khó khăn trong tiếp cận kiến thức. Cụ thể, AI được sử dụng để tạo ra các khóa học trực tuyến hoặc các chương trình giáo dục từ xa phù hợp với từng nhóm trình độ và cấp học khác nhau. Điều này giúp thu hẹp khoảng cách giáo dục, đặc biệt là ở các nước đang phát triển, hướng tới Mục tiêu Phát triển bền vững 04 (SDG4) của Liên Hợp Quốc, trong đó bảo đảm phổ cập tiếp cận giáo dục chất lượng vào năm 2030 [21]. Theo báo cáo của UNESCO (2021), khoảng 250 triệu trẻ em trên thế giới không được tiếp cận với giáo dục và dự đoán tới năm 2030, con số này sẽ là 84 triệu trẻ em. AI có thể đóng một vai trò quan trọng trong việc cung cấp giáo dục cho những trẻ em này, giúp các em có cơ hội tiếp cận với giáo dục và phát triển bản thân một cách chủ động chỉ với một thiết bị máy tính.\n\n#### \\*\\*Thúc đẩy giáo dục cá nhân hóa:\\*\\*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Trao cơ hội tiếp cận giáo dục:\\*\\*",
+      "start_index": 10423,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::\\*\\*Trao cơ hội tiếp cận giáo dục:\\*\\*",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "#### \\*\\*Thúc đẩy giáo dục cá nhân hóa:\\*\\*\n\nTrong nhiều năm qua, việc cá nhân hóa trải nghiệm và lộ trình học tập của học sinh vẫn luôn là một chủ đề thảo luận nóng giữa các cộng đồng giáo dục. Câu hỏi được đặt ra xoay quanh những giải pháp dạy học giúp phát huy kiến thức nền tảng, năng lực, sở thích, kĩ năng và tính cách của từng học sinh trong lớp [18], [22]. Vai trò của AI được thể hiện mạnh mẽ trong quá trình này, thông qua khả năng sáng tạo các nội dung học tập cá nhân hóa theo dữ liệu được cung cấp của từng học sinh. Cụ thể, công cụ ChatGPT có thể hỗ trợ giáo viên trong việc soạn giáo án phân hóa, tạo các phiếu bài tập cá nhân hóa cho học sinh trong lớp theo phân luồng năng lực, phân tích và đánh giá năng lực học sinh dựa trên điểm số được chấm tự động, từ đó đưa ra gợi ý thực hành giúp học sinh phát huy điểm mạnh và cải thiện điểm yếu [23], [24].\n\n## \\*\\*Xây dựng thói quen học tập suốt đời:\\*\\*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Thúc đẩy giáo dục cá nhân hóa:\\*\\*",
+      "start_index": 11483,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::\\*\\*Thúc đẩy giáo dục cá nhân hóa:\\*\\*",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": "main::chunk::15"
+    }
+  },
+  {
+    "page_content": "## \\*\\*Xây dựng thói quen học tập suốt đời:\\*\\*\n\nVới sự cá nhân hóa trải nghiệm học tập, sự tiện ích và thân thiện với người dùng như một gia sư, người bạn đồng hành, các công cụ AI, đặc biệt là công cụ AI hội thoại (conversational AI), cho phép người học được liên tục tương tác và học hỏi, giúp người học xây dựng thói quen học tập và trau dồi kiến thức mọi lúc mọi nơi, hướng tới việc học tập suốt đời [25]. Ngoài ra, các công cụ AI khác, ngoài AI tạo sinh, giúp người học nâng cao trải nghiệm học tập, rút ngắn quy trình công việc, đặc biệt là những việc lặp, từ đó tạo cảm hứng và môi trường thân thiện để người học trau dồi kiến thức mới [26].\n\n## \\*\\*Thúc đẩy đổi mới và tăng cường hiệu quả giảng dạy:\\*\\*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Xây dựng thói quen học tập suốt đời:\\*\\*",
+      "start_index": 12351,
+      "chunk_index": 15,
+      "chunk_id": "main::chunk::15",
+      "parent_id": "main::section::\\*\\*Xây dựng thói quen học tập suốt đời:\\*\\*",
+      "prev_chunk_id": "main::chunk::14",
+      "next_chunk_id": "main::chunk::16"
+    }
+  },
+  {
+    "page_content": "Một trong những lợi ích lớn của các công cụ AI phải kể tới việc thúc đẩy sự đổi mới sáng tạo, từ đó tăng cường hiệu quả dạy và học cho cả giáo viên và học sinh. Nói cách khác, các ứng dụng AI tạo sinh với khả năng sáng tạo nội dung dựa trên bộ dữ liệu sẵn có, sẽ trở thành một công cụ vô cùng hữu ích trong quá trình đưa ra những ý tưởng mới trong giảng dạy và trong quá trình học tập, nghiên cứu [27]. Cụ thể, ChatGPT đã đóng vai trò như đồng tác giả trong quá trình thực hiện nghiên cứu khoa học giáo dục, trong đó ChatGPT thực hiện phần lớn giai đoạn xây dựng khung nghiên cứu và ý tưởng, phân tích và thảo luận [28]; tác giả chính sửa và sắp xếp lại ý tưởng một cách phù hợp hơn [29], [30]. Đối với giáo viên, các ứng dụng AI hỗ trợ soạn bài, tài liệu và đánh giá học sinh, từ đó tiết kiệm thời gian, giải phóng năng lượng, tạo động lực cho giáo viên dành nhiều thời gian hơn vào việc tối ưu hóa nội dung, hoạt động và phương pháp để nâng cao chất lượng giảng dạy. Tuy nhiên, những cơ hội này luôn đi kèm với thách thức",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Thúc đẩy đổi mới và tăng cường hiệu quả giảng dạy:\\*\\*",
+      "start_index": 13065,
+      "chunk_index": 16,
+      "chunk_id": "main::chunk::16",
+      "parent_id": "main::section::\\*\\*Thúc đẩy đổi mới và tăng cường hiệu quả giảng dạy:\\*\\*",
+      "prev_chunk_id": "main::chunk::15",
+      "next_chunk_id": "main::chunk::17"
+    }
+  },
+  {
+    "page_content": ". Tuy nhiên, những cơ hội này luôn đi kèm với thách thức. Nhiều nghiên cứu đã chỉ ra rằng, để xây dựng được hệ thống giáo dục thúc đẩy bằng công nghệ một cách bền vững, các vấn đề liên quan đến khoảng cách số, đạo đức trong môi trường số, bảo mật dữ liệu, tính chính xác và trung thực của nội dung cần được xem xét một cách cẩn trọng.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Thúc đẩy đổi mới và tăng cường hiệu quả giảng dạy:\\*\\*",
+      "start_index": 14032,
+      "chunk_index": 17,
+      "chunk_id": "main::chunk::17",
+      "parent_id": "main::section::\\*\\*Thúc đẩy đổi mới và tăng cường hiệu quả giảng dạy:\\*\\*",
+      "prev_chunk_id": "main::chunk::16",
+      "next_chunk_id": "main::chunk::18"
+    }
+  },
+  {
+    "page_content": "## 2.1.2.2. Thách thức từ AI mà hệ thống giáo dục toàn cầu đang đối mặt\n### \\*\\*Khoảng cách số:\\*\\*\n\nMột số ý kiến đã chỉ ra rằng, chính sự xuất hiện của AI đã gia tăng khoảng cách số trong giáo dục [31]. Cụ thể, những công cụ AI tăng cường khoảng cách kinh tế xã hội giữa các quốc gia phát triển và đang phát triển, giữa khu vực thành thị và nông thôn, giữa những người có đặc quyền và những người thiếu đặc quyền trong xã hội. Nói cách khác, những người có đủ nguồn lực và điều kiện kinh tế thường có ưu thế cạnh tranh, bộ kĩ năng và tốc độ tăng trưởng kinh tế, trình độ cao hơn do sở hữu các công cụ AI tiên tiến bậc nhất, trong khi nhóm người yếu thế, dù có thể tiếp cận, hiện trạng chỉ ra rằng, họ thường không có khả năng chi trả cho những công cụ này [1], [2], [3], [4], [5], [6], [31], [32]. Khoảng cách số được định nghĩa ở bốn cấp độ, từ thiếu quyền truy cập vào công nghệ AI tới việc sử dụng AI một cách có ý nghĩa và hiệu quả.\n\n\\*\\*Vấn đề về đạo đức trong môi trường AI:\\*\\*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1.2.2. Thách thức từ AI mà hệ thống giáo dục toàn cầu đang đối mặt",
+      "start_index": 14368,
+      "chunk_index": 18,
+      "chunk_id": "main::chunk::18",
+      "parent_id": "main::section::2.1.2.2. Thách thức từ AI mà hệ thống giáo dục toàn cầu đang đối mặt",
+      "prev_chunk_id": "main::chunk::17",
+      "next_chunk_id": "main::chunk::19"
+    }
+  },
+  {
+    "page_content": "\\*\\*Vấn đề về đạo đức trong môi trường AI:\\*\\*\n\nCác vấn đề liên quan tới đạo đức và ứng xử từ phía người dùng và phía công nghệ trong môi trường AI cũng là những thách thức đáng lo ngại cần được đặc biệt quan tâm. Cụ thể, về phía công nghệ, hiện trạng đã chỉ ra rằng, quy trình thu thập dữ liệu, kiểm chứng, sàng lọc và cung cấp thông tin của các công cụ AI thông minh như AI tạo sinh đều bị can thiệp bởi công ty mẹ. Do đó, nguồn thông tin có thể bị chi phối cho mục đích của cá nhân và tổ chức [1], [2], [3], [4], [5], [6]. Ngoài ra, các công cụ AI tạo sinh \"học\" và trở nên thông minh từ chính các câu hỏi và phản hồi của người dùng, bao gồm các kiến thức chuyên sâu trong một lĩnh vực. Do đó, các nội dung được cung cấp có thể vướng vào các vấn đề về pháp lí hay vi phạm bản quyền sử dụng nội dung [27]. Đến nay, phần lớn các công cụ AI tạo sinh khi đưa ra thông tin mang tính chuyên môn cao cũng không cung cấp trích nguồn, hoặc cung cấp trích nguồn không chính xác.\n\n#### \\*\\*Thu thập, bảo mật và quản lí dữ liệu:\\*\\*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Khoảng cách số:\\*\\*",
+      "start_index": 15308,
+      "chunk_index": 19,
+      "chunk_id": "main::chunk::19",
+      "parent_id": "main::section::\\*\\*Khoảng cách số:\\*\\*",
+      "prev_chunk_id": "main::chunk::18",
+      "next_chunk_id": "main::chunk::20"
+    }
+  },
+  {
+    "page_content": "Cơ chế hoạt động của các công cụ AI đều dựa trên quy tắc sử dụng nguồn dữ liệu khổng lồ (Big data), giúp AI có đủ thông tin để đưa ra những đánh giá và phân tích tự động một cách chính xác. Thách thức đầu tiên trong lĩnh vực dữ liệu phải kể tới quá trình thu thập dữ liệu giáo dục, khi quá trình thu thập phải đảm bảo được tính đại diện về nhân khẩu học (độ tuổi, giới tính, nền tảng xã hội) nhằm cho ra những kết quả phân tích đầy đủ về các nhóm yếu thế, dễ bị tổn thương. Thách thức thứ hai liên quan tới việc bảo mật hàng trăm triệu thông tin cá nhân và thói quen sử dụng công nghệ của người dùng. Trong Hội thảo Toàn cầu AIS2S, OECD (2023) đã chỉ ra rằng, hiện nay lượng lớn dữ liệu cá nhân, bao gồm cả \"dữ liệu nhạy cảm\", đã được sử dụng để huấn luyện và phát triển các ứng dụng AI [33]. Nguồn dữ liệu này đến từ các trang web công khai, thông qua những người buôn bán dữ liệu và bản thân cá nhân, trong đó nhiều cá nhân chưa hiểu rõ về hậu quả của việc chia sẻ những thông tin này. Thách thức thứ ba liên quan đến dữ liệu là những nguy cơ trong quá trình quản lí nguồn dữ liệu",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Thu thập, bảo mật và quản lí dữ liệu:\\*\\*",
+      "start_index": 16333,
+      "chunk_index": 20,
+      "chunk_id": "main::chunk::20",
+      "parent_id": "main::section::\\*\\*Thu thập, bảo mật và quản lí dữ liệu:\\*\\*",
+      "prev_chunk_id": "main::chunk::19",
+      "next_chunk_id": "main::chunk::21"
+    }
+  },
+  {
+    "page_content": ". Nguồn dữ liệu này đến từ các trang web công khai, thông qua những người buôn bán dữ liệu và bản thân cá nhân, trong đó nhiều cá nhân chưa hiểu rõ về hậu quả của việc chia sẻ những thông tin này. Thách thức thứ ba liên quan đến dữ liệu là những nguy cơ trong quá trình quản lí nguồn dữ liệu. UNESCO (2023) đã đưa ra khuyến cáo về việc các nguồn dữ liệu có thể bị tấn công và xâm nhập, hoặc được sử dụng trái phép để tạo ra các phần mềm độc hại, cho phép kẻ tấn công tự động hóa các hành vi phá hoại xã hội.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Thu thập, bảo mật và quản lí dữ liệu:\\*\\*",
+      "start_index": 17124,
+      "chunk_index": 21,
+      "chunk_id": "main::chunk::21",
+      "parent_id": "main::section::\\*\\*Thu thập, bảo mật và quản lí dữ liệu:\\*\\*",
+      "prev_chunk_id": "main::chunk::20",
+      "next_chunk_id": "main::chunk::22"
+    }
+  },
+  {
+    "page_content": "#### \\*\\*Tính chính xác và trung thực của nội dung:\\*\\*\n\nThách thức đáng lo ngại cuối cùng cũng là quan trọng nhất, liên quan tới việc sử dụng AI trong môi trường giáo dục tập trung vào tính đáng tin cậy và chính xác của những nội dung do AI cung cấp. Nhiều nghiên cứu đã chỉ ra rằng, các ứng dụng AI tạo sinh như ChatGPT (Open AI), Bard (Google), Copilot (Microsoft) được đào tạo trên một lượng lớn dữ liệu từ tài liệu, văn bản, trang web mà trong đó có thể chứa các nội dung, quan điểm không chính thức, còn thiếu chính xác hoặc đang được thảo luận. Do đó, thực tế đã đưa ra các nội dung không chính xác trong các vấn đề mang tính khoa học và các quan điểm có phần thiên vị trong các vấn đề xã hội [34]. Hậu quả của việc liên tục nhận các thông tin sai lệch có thể gây \"ô nhiễm\" cho các tư liệu giáo dục, đòi hỏi sự nỗ lực và thời gian đáng kể để cải thiện, kiểm chứng những thông tin này.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "\\*\\*Tính chính xác và trung thực của nội dung:\\*\\*",
+      "start_index": 17633,
+      "chunk_index": 22,
+      "chunk_id": "main::chunk::22",
+      "parent_id": "main::section::\\*\\*Tính chính xác và trung thực của nội dung:\\*\\*",
+      "prev_chunk_id": "main::chunk::21",
+      "next_chunk_id": "main::chunk::23"
+    }
+  },
+  {
+    "page_content": "## 2.1.3 Chính sách về quản lí AI trong giáo dục\nVới những lợi ích và nguy cơ mà AI mang lại cho giáo dục toàn cầu, trước khi đại dịch COVID-19 và cơn bão AI tạo sinh xuất hiện, nhiều tổ chức trên thế giới, bao gồm UNESCO và các nhà nghiên cứu cũng đã sớm nhận ra tầm quan trọng của việc xây dựng chính sách về quản lí AI trong giáo dục, từ đó chuẩn bị hành trang về kĩ năng cho giáo viên và học sinh trong viễn cảnh công nghệ đang thay đổi nhanh chóng [18]. Với sự ra đời của AI tạo sinh, UNESCO đặc biệt xây dựng Báo cáo hướng dẫn sử dụng AI tạo sinh trong giáo dục (2023) để đưa ra những khuyến nghị khẩn cấp cho các chính phủ, nhà hoạch định chính sách, trường đại học và các cơ sở giáo dục toàn cầu nhằm quản lí việc sử dụng AI tạo sinh một cách hiệu quả. UNESCO (2023) cho rằng, đến thời điểm này, việc xây dựng các biện pháp bảo vệ và quy định chặt chẽ đối với những rủi ro của việc sử dụng AI trong giáo dục rất quan trọng để định hình tương lai của giáo dục toàn cầu dưới sự ảnh hưởng ngày càng lớn của trí tuệ nhân tạo. Chỉ thông qua những bước tiến cẩn thận và có trách nhiệm, giáo dục toàn cầu mới hòa nhập và tận dụng được những cơ hội mà trí tuệ nhân tạo mang lại.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1.3 Chính sách về quản lí AI trong giáo dục",
+      "start_index": 18526,
+      "chunk_index": 23,
+      "chunk_id": "main::chunk::23",
+      "parent_id": "main::section::2.1.3 Chính sách về quản lí AI trong giáo dục",
+      "prev_chunk_id": "main::chunk::22",
+      "next_chunk_id": null
+    }
+  }
+]

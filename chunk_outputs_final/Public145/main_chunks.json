@@ -1,0 +1,478 @@
+[
+  {
+    "page_content": "# Public_145\n\nĐiện trường đã được nghiên cứu về phương diện tác dụng lực trong các chương trước. Trong chương này, điện trường sẽ được khảo sát ở khía cạnh năng lượng. Bằng cách tiếp cận theo hướng năng lượng, các bài toán có thể được giải theo hướng không cần đến việc sử dụng lực. Khái niệm về thế năng có giá trị lớn trong\n\ncác nghiên cứu về điện. Do lực tĩnh điện là lực bảo toàn, hiện tượng tĩnh điện có thể được mô tả một cách dễ dàng dưới dạng năng lượng điện thế.\n\n#### 25.1 Điện thế và hiệu điện thế\n\nKhi một điện tích q đặt trong điện trường  $\\overrightarrow{E}$ , nó sẽ chịu tác dụng một lực bằng  $\\overrightarrow{F} = q \\overrightarrow{E}$ . Đây là lực bảo toàn bởi vì theo bản chất, các tương tác đều tuân theo định luật Coulomb. Hãy xem xét dưới góc độ một hệ kín các điện tích, khi điện tích q chuyển động chỉ dưới tác dụng của các điện tích còn lại. Với một chuyển dời vô cùng bé  $\\overrightarrow{ds}$ , trường lực thế Coulomb sinh một công bằng  $\\overrightarrow{F} \\cdot \\overrightarrow{ds}$ . Trong cơ học ta biết rằng, công do trường lực thế sinh ra bằng đúng độ suy giảm thế năng, cho nên:\n\n$$-dU = \\overrightarrow{F} \\cdot \\overrightarrow{ds}$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_145",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_145",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "$$-dU = \\overrightarrow{F} \\cdot \\overrightarrow{ds}$$\n\nKhi điện tích q di chuyển từ vị trí A đến vị trí B trong điện trường, độ biến thiên thế năng bằng:\n\n$$\\Delta U = -\\int_{(A)}^{(B)} \\overrightarrow{F} \\cdot \\overrightarrow{ds} = -q \\int_{(A)}^{(B)} \\overrightarrow{E} \\cdot \\overrightarrow{ds}$$\n (25.1)\n\n $\\mathring{\\text{O}}$  đây tích phân đường tính dọc theo quỹ đạo di chuyển của điện tích q từ A đến B. Tuy nhiên vì trường lực bảo toàn nên dù đi theo con đường nào, giá trị của tích phân này cũng không thay đổi.\n\nKhi đã có biểu thức tính độ biến thiên thế năng, chỉ cần chọn một điểm O nào đó làm gốc thế năng (U=0), ta đã có thể tính **thế năng** của điện tích đặt trong điện trường:\n\n$$U = -q \\int_{(0)}^{(P)} \\vec{E} \\cdot d\\vec{s} = q \\int_{(P)}^{(O)} \\vec{E} \\cdot d\\vec{s}$$\n\nThế năng của điện tích q tại vị trí P bất kì trong điện trường có trị số bằng công của lực điện trường làm di chuyển điện tích q đó từ P về gốc thế năng.\n\nThế năng tại vị trí P của một đơn vị điện tích trong điện trường  $\\vec{E}$  được gọi là **điện thế** tại điểm đó:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.1 Điện thế và hiệu điện thế",
+      "start_index": 1115,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::25.1 Điện thế và hiệu điện thế",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Thế năng của điện tích q tại vị trí P bất kì trong điện trường có trị số bằng công của lực điện trường làm di chuyển điện tích q đó từ P về gốc thế năng.\n\nThế năng tại vị trí P của một đơn vị điện tích trong điện trường  $\\vec{E}$  được gọi là **điện thế** tại điểm đó:\n\n$$V = \\frac{U}{q} = -\\int_{(0)}^{(P)} \\overrightarrow{E} \\cdot \\overrightarrow{ds} = \\int_{(P)}^{(O)} \\overrightarrow{E} \\cdot \\overrightarrow{ds}$$\n (25.2)\n\nĐiện thế tại vị trí P bất kì trong điện trường có trị số bằng công của lực điện trường làm di chuyển điện tích 1 Coulomb từ P về gốc điện thế (gốc thế năng).\n\nTương tự như độ biến thiên thế năng  $\\Delta U$  ta cũng có khái niệm **hiệu điện thế** giữa hai điểm B và A:\n\n$$\\Delta V = V_B - V_A = -\\int_{(A)}^{(B)} \\overrightarrow{E} \\cdot \\overrightarrow{ds}$$\n (25.3)\n\nTừ (25.1) và (25.3), ta có mối liên hệ giữa độ biến thiên thế năng và hiệu điện thế:\n\n$$\\Delta U = q\\Delta V \\tag{25.4}$$\n\nTheo định luật bảo toàn năng lượng:  $\\Delta U + \\Delta K = 0$ , suy ra động năng mà điện tích q thu được khi di chuyển từ điểm A đến điểm B nói trên bằng độ suy giảm của thế năng:\n\n$$\\Delta K = -\\Delta U = -q\\Delta V = q(V_A - V_B)$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.1 Điện thế và hiệu điện thế",
+      "start_index": 1909,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::25.1 Điện thế và hiệu điện thế",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "$$\\Delta U = q\\Delta V \\tag{25.4}$$\n\nTheo định luật bảo toàn năng lượng:  $\\Delta U + \\Delta K = 0$ , suy ra động năng mà điện tích q thu được khi di chuyển từ điểm A đến điểm B nói trên bằng độ suy giảm của thế năng:\n\n$$\\Delta K = -\\Delta U = -q\\Delta V = q(V_A - V_B)$$\n\nĐiện thế và hiệu điện thế có thứ nguyên của năng lượng trên một đơn vị điện tích, được gán cho một đơn vị đặc biệt trong hệ SI - Volt: 1V = 1J/C.\n\nMối liên hệ (25.2), (25.3) cũng cho ta một đơn vị khác của cường độ điện trường là V/m: 1N/C = 1V/m.\n\nKhi một electron mang điện tích nguyên tố -e chuyển động dưới tác dụng của điện trường, đi qua đoạn đường có hiệu điện thế bằng 1V, ta nói rằng electron đã thu được thêm động năng bằng 1 *electron-volt*:\n\n$$1eV = 1,6 \\times 10^{-19} C \\cdot 1V = 1,6 \\times 10^{-19} J$$\n (25.5)\n\n*Câu hỏi 25.1:* Hai điểm A và B nằm trong một điện trường như hình 25.1. (i) Hiệu điện thế  $\\Delta V = V_B - V_A$  có giá trị như thế nào? (a) dương (b) âm (c) bằng không. (ii) Một điện tích âm ban đầu nằm tại A, sau đó di chuyển đến vị trí B. Sự biến thiên của thế năng  $\\Delta U$  có giá trị như thế nào? Lựa chọn trong các khả năng như phần trước.\n\n![](images/image1.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.1 Điện thế và hiệu điện thế",
+      "start_index": 2793,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::25.1 Điện thế và hiệu điện thế",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "![](images/image1.jpg)\n\nHình 25.1: Hai điện tích điểm trong điện trường\n\n#### 25.2 Hiệu điện thế trong điện trường đều\n\nTa tiến hành khảo sát một điện trường đều, theo đó các đường sức điện trường hướng song song và đều đặn như miêu tả trên hình 25.2a. Từ phương trình (25.3) suy ra được hiệu điện thế giữa hai điểm A và B nằm trên cùng một đường sức điện trường:\n\n![](images/image2.jpg)\n\nHình 25.2: (a) Hạt mang điện tích q chuyển động dọc theo đường sức điện trường đều (b) Hạt khối lượng m rơi trong trường trọng lực đều.\n\n$$\\Delta V = V - V = -\\int_{(A)}^{(B)} \\vec{E} \\cdot d\\vec{s} = -\\int_{(A)}^{(B)} E \\cdot ds \\cdot \\cos(0^{0}) = -\\int_{(A)}^{(B)} E \\cdot ds$$\n\nTrong điện trường đều E có độ lớn không đổi nên có thể đưa ra ngoài dấu tích phân:\n\n$$\\Delta V = -E \\int_{(A)}^{(B)} ds$$\n\n$$\\Delta V = -Ed \\tag{25.6}$$\n\nDấu \"-\" ở đây nói rằng, điện thế tại B thấp hơn điện thế tại A:  $V_B < V_A$ . Như vậy, *các đường* sức điện trường luôn hướng theo chiều suy giảm của điện thế.\n\nKhi một điện tích q di chuyển từ A đến B, thế năng của hạt trong điện trường thay đổi một lượng bằng\n\n$$\\Delta U = q\\Delta V = -qEd \\tag{25.7}$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.1 Điện thế và hiệu điện thế",
+      "start_index": 3948,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::25.1 Điện thế và hiệu điện thế",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "Khi một điện tích q di chuyển từ A đến B, thế năng của hạt trong điện trường thay đổi một lượng bằng\n\n$$\\Delta U = q\\Delta V = -qEd \\tag{25.7}$$\n\nCó nghĩa nếu hạt mang điện tích dương: q>0, thế năng sẽ giảm:  $\\Delta U<0$ . Nói cách khác,\n\nkhi một điện tích dương di chuyển xuôi theo chiều của đường sức điện trường, thế năng của nó sẽ giảm. Như hình 25.2a miêu tả, nếu ban đầu hạt mang điện tích dương q thả tự do từ trạng thái đứng yên, nó sẽ chịu tác dụng một lực  $\\overrightarrow{F} = q \\overrightarrow{E}$  hướng xuống dưới, bắt đầu đi xuống và tăng tốc. Hạt dần thu động năng từ chính sự suy giảm của thế năng. Đó là minh chứng rõ ràng cho định luật bảo toàn năng lượng.\n\nHình 25.2b miêu tả hình ảnh tương tự, khi một hạt khối lượng m rơi tự do trong trường\n\nhấp dẫn gần mặt đất. Hạt cũng chịu tác dụng của trọng lực hướng xuống và tăng tốc. Động năng tích luỹ tự sự suy giảm của thế năng trọng trường.\n\nPhép so sánh nói trên giữa hạt mang điện tích dương trong điện trường với hạt chuyển động dưới trường trọng lực rất hữu ích cho việc hình dung về các hiện tượng tĩnh điện. Chỉ\n\nmột điểm lưu ý rằng: khối lượng thì luôn dương, nhưng điện tích có thể dương, cũng có thể âm.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.2 Hiệu điện thế trong điện trường đều",
+      "start_index": 4935,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::25.2 Hiệu điện thế trong điện trường đều",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Phép so sánh nói trên giữa hạt mang điện tích dương trong điện trường với hạt chuyển động dưới trường trọng lực rất hữu ích cho việc hình dung về các hiện tượng tĩnh điện. Chỉ\n\nmột điểm lưu ý rằng: khối lượng thì luôn dương, nhưng điện tích có thể dương, cũng có thể âm.\n\nVới trường hợp điện tích âm, khi hạt di chuyển theo chiều của đường sức điện trường, thế năng của hạt sẽ tăng, thay vì giảm. Nếu ban đầu hạt đứng yên, nó sẽ tăng tốc về phía ngược chiều của đường sức.\n\nTa khảo sát trường hợp tổng quát hơn, khi hạt mang điện tích di chuyển từ vị trí A đến vị trí B trong điện trường đều, nhưng không nằm trên cùng một đường sức như hình 25.3. Lúc này hiệu điện thế giữa A và B bằng:\n\n$$\\Delta V = V_B - V_A = -\\int_{(A)}^{(B)} \\vec{E} \\cdot \\vec{ds} = -\\vec{E} \\cdot \\int_{(A)}^{(B)} \\vec{ds} = -\\vec{E} \\cdot \\vec{s}$$\n (25.8)\n\n $\\mathring{\\text{O}}$  đây vector  $\\overrightarrow{E}$  của điện trường đều có thể đưa ra ngoài dấu tích phân. Độ biến thiên của thế năng:\n\n$$\\Delta U = q\\Delta V = -q\\vec{E} \\cdot \\vec{s} \\tag{25.9}$$\n\nTích vô hướng (25.8) có thể tính qua hình học:\n\n$$\\Delta V = V_B - V_A = -Ed$$\n\nMặt khác hiệu điện thế giữa hai điểm A và C nằm trên cùng một đường sức:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.2 Hiệu điện thế trong điện trường đều",
+      "start_index": 5846,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::25.2 Hiệu điện thế trong điện trường đều",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "$$\\Delta U = q\\Delta V = -q\\vec{E} \\cdot \\vec{s} \\tag{25.9}$$\n\nTích vô hướng (25.8) có thể tính qua hình học:\n\n$$\\Delta V = V_B - V_A = -Ed$$\n\nMặt khác hiệu điện thế giữa hai điểm A và C nằm trên cùng một đường sức:\n\n$$V - V = -Ed$$\n\n$$C$$\n A\n\nHình 25.3: Hạt mang điện tích chuyển động không song với đường sức\n\nHai điểm B và C có\n\ncùng điện thế\n\nĐiểm B có điện thế thấp hơn điểm A\n\n $\\vec{\\mathbf{E}}$ \n\n**B** \n\n• (C)\n\ncủa điện trường đều\n\nTừ đây suy ra rằng  $V_B = V_C$ . Tổng quát lên có thể thấy rằng,\n\nmọi điểm nằm trên cùng một mặt phẳng vuông góc với đường sức điện trường đều có cùng một điện thế. Ta gọi mặt phẳng chứa tất cả các điểm có cùng điện thế như vậy là một **mặt** đẳng thế. Đối với điện trường đều, họ các mặt đẳng thế cấu thành từ những mặt phẳng song song với nhau và cùng vuông góc với các đường sức điện trường.\n\n![](images/image3.jpg)\n\nHình 25.4: Các mặt đẳng thế\n\n![](images/image4.jpg)\n\n*Câu hỏi 25.2:* Các điểm được đánh dấu trên hình 25.4 nằm trên các mặt đẳng thế. Hãy sắp xếp công thực hiện của điện trường lên một điện tích dương theo thứ tự giảm dần, khi điện tích này di chuyển từ A sang B, từ B sang C, từ C sang D và từ D sang E.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.2 Hiệu điện thế trong điện trường đều",
+      "start_index": 6822,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::25.2 Hiệu điện thế trong điện trường đều",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "![](images/image4.jpg)\n\n*Câu hỏi 25.2:* Các điểm được đánh dấu trên hình 25.4 nằm trên các mặt đẳng thế. Hãy sắp xếp công thực hiện của điện trường lên một điện tích dương theo thứ tự giảm dần, khi điện tích này di chuyển từ A sang B, từ B sang C, từ C sang D và từ D sang E.\n\n## Bài tập mẫu 25.1: Điện trường giữa hai bản phẳng song song tích điện trái dấu\n\nMột ắc-quy hiệu điện thế 12V mắc vào hai bản phẳng đặt song song như hình 25.5. Khoảng cách giữa hai bản d=0,3cm, đủ nhỏ để xem rằng điện trường giữa hai bản là đều. Tính cường độ điện trường giữa hai bản phẳng.\n\n# $\\Delta V = 12 \\text{ V}$\n\nHình 25.5: Hai bản phẳng song song nối vào nguồn điện\n\n#### Giải:\n\nDùng công thức (25.6), có thể tính cường độ điện trường giữa hai bản phẳng song song:\n\n$$E = \\frac{|V_B - V_A|}{d} = \\frac{12V}{0.3 \\times 10^{-2} \\, m} = 4 \\times 10^3 \\, V \\, / \\, m$$\n\n#### Bài tập mẫu 25.2: Chuyển động của hạt proton trong điện trường đều",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.2 Hiệu điện thế trong điện trường đều",
+      "start_index": 7713,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::25.2 Hiệu điện thế trong điện trường đều",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "#### Giải:\n\nDùng công thức (25.6), có thể tính cường độ điện trường giữa hai bản phẳng song song:\n\n$$E = \\frac{|V_B - V_A|}{d} = \\frac{12V}{0.3 \\times 10^{-2} \\, m} = 4 \\times 10^3 \\, V \\, / \\, m$$\n\n#### Bài tập mẫu 25.2: Chuyển động của hạt proton trong điện trường đều\n\nMột proton được thả ra từ trạng thái đứng yên tại vị trí A trong một điện trường đều có độ lớn  $8.0\\times10^4\\,\\mathrm{V/m}$  (hình 25.6). Proton di chuyển đến điểm B cách đó một đoạn  $d=0.50\\,\\mathrm{m}$  dọc theo hướng của điện trường  $\\vec{E}$ . Tìm tốc độ của proton sau đoạn đường đó.\n\n#### Giải:\n\n**Khái niệm.** Hình dung rằng hạt proton rơi xuống tựa như đang ở trong một trường trọng lực. Trong bài tập này, hạt cũng chịu tác dụng một gia tốc không đổi bởi lực điện trường.\n\n**Phân loại.** Do hệ không tương tác với bên ngoài nên ta có thể quy vấn đề về chủ đề bảo toàn năng lượng.\n\n![](images/image5.jpg)\n\nHình 25.6: Proton tăng tốc theo hướng của điện trường\n\n**Phân tích.** Áp dụng định luật bảo toàn năng lượng cho điểm A và điểm B:  $\\Delta K + \\Delta U = 0$ \n\nThế biểu thức của động năng và thế năng tại A và B tương ứng:\n\n$$\\left( \\frac{1}{2} m v^2 - 0 \\right) + e \\Delta V = 0$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 8369,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "Hình 25.6: Proton tăng tốc theo hướng của điện trường\n\n**Phân tích.** Áp dụng định luật bảo toàn năng lượng cho điểm A và điểm B:  $\\Delta K + \\Delta U = 0$ \n\nThế biểu thức của động năng và thế năng tại A và B tương ứng:\n\n$$\\left( \\frac{1}{2} m v^2 - 0 \\right) + e \\Delta V = 0$$\n\nTừ đó suy ra vận tốc v đồng thời tính  $\\Delta V$  theo công thức (25.6):\n\n$$v = \\sqrt{\\frac{-2e\\Delta V}{m}} = \\sqrt{\\frac{-2e(-Ed)}{m}} = \\sqrt{\\frac{2eEd}{m}}$$\n\n$$= \\sqrt{\\frac{2(1,6\\times10^{-19}C)(8,0\\times10^{4} \\text{ V})(0,50m)}{1,67\\times10^{27}kg}}$$\n\n$$= 2,8\\times10^{6} \\text{ m/s}$$\nNhân định, Diân thấ giảm thay chiầu ch\n\n**Nhận định.** Điện thế giảm theo chiều chuyển động của proton,  $\\Delta V < 0$ , kéo theo sự suy giảm của thế năng:  $\\Delta U < 0$ . Để cân bằng sự suy giảm này, proton lại tích luỹ động năng trong chuyển động có gia tốc, tuân theo định luật bảo toàn năng lượng.\n\n#### 25.3 Điện thế và thế năng tạo bởi điện tích điểm\n\nTừ trình bày ở chương 23, ta đã biết rằng một điện tích điểm q>0 tạo ra trong không gian xung quanh một điện trường đối xứng xuyên tâm với những đường sức hướng ra ngoài. Hiệu điện thế giữa hai điểm A và B bất kì (hình 25.7) có thể tính theo công thức (25.3):",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 9259,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "Từ trình bày ở chương 23, ta đã biết rằng một điện tích điểm q>0 tạo ra trong không gian xung quanh một điện trường đối xứng xuyên tâm với những đường sức hướng ra ngoài. Hiệu điện thế giữa hai điểm A và B bất kì (hình 25.7) có thể tính theo công thức (25.3):\n\n$$V_B - V_A = -\\int_{(A)}^{(B)} \\overrightarrow{E} \\cdot \\overrightarrow{ds}$$\n\nVector cường độ điện trường  $\\overrightarrow{E}$  đối với điện trường của điện tích điểm có dạng\n\n$$\\vec{E} = \\frac{k_e q}{r^3} \\vec{r}$$\n\nThế vào thu được\n\n$$V_B - V_A = -\\int_{(A)}^{(B)} \\frac{k_e q}{r^3} \\vec{r} \\cdot \\vec{ds}$$\n\n![](images/image6.jpg)\n\nHình 25.7: Tính hiệu điện thế giữa hai điểm bất kì trong điện trường đối xứng xuyên tâm\n\nLưu ý rằng gốc thế năng lấy ở trạng thái hai điện tích cách xa nhau vô cùng. Nếu  $q_1,q_2$  cùng dấu, chúng có sức mạnh đẩy nhau ra xa nhất có thể, chứng tỏ hệ có mang năng lượng U>0. Ngược lại nếu  $q_1,q_2$  trái dấu, cần phải bổ sung một năng lượng nhờ một lực bên ngoài mới tách chúng ra xa được, chứng tỏ hệ mang năng lượng âm. Nếu biện luận theo hướng cho rằng điện tích  $q_1$  nằm trong điện trường do  $q_2$  tạo ra, ta cũng đi đến kết quả như (25.13).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "25.3 Điện thế và thế năng tạo bởi điện tích điểm",
+      "start_index": 10198,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::25.3 Điện thế và thế năng tạo bởi điện tích điểm",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "#### Mối liên hệ giữa điện trường và điện thế\nCông thức (25.3) viết lại dưới dạng vi phân\n\n$$dV = -\\vec{E} \\cdot \\vec{ds} \\tag{25.15}$$\n\ncho ta giá trị của hiệu điện thế nếu biết trước điện trường *E* tại các điểm trong không gian.\n\nCó nghĩa *thành phần E<sup>x</sup> của vector cường độ điện trường bằng đạo hàm riêng của điện thế theo biến x đảo dấu*. Ta cũng thu được kết luận tương tự đối với thành phần theo *y* và *z*, viết thành bộ đầy đủ:\n\n$$E_{x} = -\\frac{\\partial V}{\\partial x}, E_{y} = -\\frac{\\partial V}{\\partial y}, E_{z} = -\\frac{\\partial V}{\\partial z}$$\n (25.16)\n\nHình chiếu của vector tự như thế: theo hướng của vector *l* bất kì cũng được tính theo cách tương *E*\n\n$$E_{l} = -\\frac{dV}{dl}$$\n\nXét hai điểm lân cận nằm trên cùng một mặt đẳng thế, hiệu điện thế giữa hai điểm này: *dV* = 0. Do vậy, hình chiếu của vector theo phương tiếp tuyến với mặt đẳng thế cũng bằng *E E*\n\nkhông. Nói cách khác, *vector cường độ điện trường thế*. *luôn hướng vuông góc với mặt đẳng*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Mối liên hệ giữa điện trường và điện thế",
+      "start_index": 11350,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::Mối liên hệ giữa điện trường và điện thế",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "Xét hai điểm lân cận nằm trên cùng một mặt đẳng thế, hiệu điện thế giữa hai điểm này: *dV* = 0. Do vậy, hình chiếu của vector theo phương tiếp tuyến với mặt đẳng thế cũng bằng *E E*\n\nkhông. Nói cách khác, *vector cường độ điện trường thế*. *luôn hướng vuông góc với mặt đẳng*\n\nHình 25.11 miêu tả họ các mặt đẳng thế trong các trường hợp khác nhau: điện trường đều, điện trường sinh ra bởi điện tích điểm và điện trường tạo bởi lưỡng cực điện. Trong tất cả các trường hợp, các mặt đẳng thế luôn vuông góc với những đường sức điện trường tại giao điểm:\n\n- Trên mục 25.2 ta đã phân tích được rằng, họ các mặt đẳng thế trong điện trường đều là những mặt phẳng song song, cố nhiên vuông góc với đường sức điện trường.\n- Ở mục 25.3 ta cũng làm sáng tỏ rằng, điện thế tạo bởi điện tích điểm chỉ phụ thuộc vào khoảng cách đến điện tích điểm, nên họ các mặt đẳng thế là những mặt cầu, giao nhau vuông góc với đường sức đối xứng xuyên tâm.\n\n![](images/image7.jpg)\n\n*Hình 25.11: Họ các mặt đẳng thế trong các trường hợp: (a) điện trường đều (b) điện trường của điện tích điểm (c) điện trường tạo bởi lưỡng cực điện*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Mối liên hệ giữa điện trường và điện thế",
+      "start_index": 12062,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::Mối liên hệ giữa điện trường và điện thế",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "![](images/image7.jpg)\n\n*Hình 25.11: Họ các mặt đẳng thế trong các trường hợp: (a) điện trường đều (b) điện trường của điện tích điểm (c) điện trường tạo bởi lưỡng cực điện*\n\nHãy thử suy vector  $\\vec{E}$  của điện trường tạo bởi điện tích điểm từ biểu thức của điện thế (25.11):\n\n#### 25.5 Điện thế sinh ra bởi sự phân bố điện tích liên tục\n\nỞ mục 25.3, chúng ta tính được điện thế sinh ra bởi tập hợp các điện tích điểm rời rạc. Mục này trình bày phương pháp tính điện thế sinh ra bởi sự phân bố điện tích liên tục, tức vật tích điện có kích thước đáng kể. Có hai phương pháp tiến hành: phương pháp chia nhỏ và phương pháp dùng định lý Gauss.\n\n#### Phương pháp chia nhỏ\n\nTa chia vật tích điện có kích thước lớn nói trên thành những phần rất nhỏ, nhỏ đến mức có thể xem mỗi phần như thế là một điện tích điểm. Đối với mỗi điện tích điểm vừa cắt ra ấy, ta đã có thể áp dụng công thức (25.11) để tính điện thế dV do nó tạo ra tại điểm P cần khảo sát:\n\n![](images/image8.jpg)\n\nHình 25.12: Tính điện thế sinh ra bởi sự phân bố\n\n$$dV = k_e \\frac{dq}{r}$$\n (25.18)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Mối liên hệ giữa điện trường và điện thế",
+      "start_index": 12993,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::Mối liên hệ giữa điện trường và điện thế",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": "main::chunk::15"
+    }
+  },
+  {
+    "page_content": "![](images/image8.jpg)\n\nHình 25.12: Tính điện thế sinh ra bởi sự phân bố\n\n$$dV = k_e \\frac{dq}{r}$$\n (25.18)\n\ntrong đó r là khoảng cách từ phần nhỏ đang xét đến điểm P. Điện thế do vật sinh ra tại điểm P là sự tổng hợp của tất cả các phần nhỏ trên toàn bộ vật tích điện:\n\n$$V = \\sum dV = \\int dV = k_e \\int \\frac{dq}{r}$$\n (25.19)\n\nCần lưu ý ở phương pháp này rằng: gốc lấy điện thế (V=0) nằm ở xa vô cùng  $(\\infty)$ .\n\n#### Phương pháp dùng định lý Gauss\n\nĐối với những hệ tích điện mang tính đối xứng, ta có thể dùng định lý Gauss để tính điện trường  $\\vec{E}$  trước. Sau đó dùng công thức () để tính điện thế:\n\n![](images/image9.jpg)\n\n$$V = \\int_{(P)}^{(O)} \\vec{E} \\cdot \\vec{ds}$$\n\ntrong đó gốc lấy điện thế (*V* = 0) có thể quy ước tại một điểm O nào đó.\n\n#### Bài tập mẫu 25.4: Điện thế tạo bởi vành tròn tích điện đều\n(A) Tìm biểu thức của điện thế tại điểm P nằm trên trục đối xứng của một vành tròn bán kính *a* với điện tích *Q* phân bố đều, cách tâm vành tròn một đoạn *x*.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Phương pháp chia nhỏ",
+      "start_index": 13944,
+      "chunk_index": 15,
+      "chunk_id": "main::chunk::15",
+      "parent_id": "main::section::Phương pháp chia nhỏ",
+      "prev_chunk_id": "main::chunk::14",
+      "next_chunk_id": "main::chunk::16"
+    }
+  },
+  {
+    "page_content": "trong đó gốc lấy điện thế (*V* = 0) có thể quy ước tại một điểm O nào đó.\n\n#### Bài tập mẫu 25.4: Điện thế tạo bởi vành tròn tích điện đều\n(A) Tìm biểu thức của điện thế tại điểm P nằm trên trục đối xứng của một vành tròn bán kính *a* với điện tích *Q* phân bố đều, cách tâm vành tròn một đoạn *x*.\n\n#### Hình 25.13: Tính điện thế tại điểm nằm trên trục của vành tròn tích điện đều\n#### Giải:\nChia vành tròn ra rất nhiều phần nhỏ, mỗi phần có điện tích *dq* nhỏ đến mức có thể xem như điện tích điểm. Áp dụng công thức (20.20), ta có thể tính điện thế tại điểm P:\n\n$$V = k_e \\int \\frac{dq}{r}$$\n\nĐể ý rằng điểm P nằm cách đều tất cả các phần của vành tròn, do vậy tích phân trên dễ dàng chuyển thành:\n\n$$V = \\frac{k_e}{r} \\int dq$$\n\nTích phân trên thể hiện tổng toàn bộ điện tích chứa trên vành. Còn khoảng cách *r* có thể biểu diễn thành *r* = *a* <sup>2</sup> + *x* 2\n\n$$V = \\frac{k_e Q}{\\sqrt{a^2 + x^2}}$$\n\n(B) Tìm biểu thức của cường độ điện trường tại P.\n\n#### Giải:\nDo tính chất đối xứng, có thể kết luận rằng vector cường độ điện trường tại điểm P *E*\n\nphải hướng dọc theo trục x. Nói cách khác *E* chỉ có thành phần theo (25.16) giữa cường độ điện trường và thế năng: *x*. Từ mối liên hệ",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Phương pháp dùng định lý Gauss",
+      "start_index": 14634,
+      "chunk_index": 16,
+      "chunk_id": "main::chunk::16",
+      "parent_id": "main::section::Phương pháp dùng định lý Gauss",
+      "prev_chunk_id": "main::chunk::15",
+      "next_chunk_id": "main::chunk::17"
+    }
+  },
+  {
+    "page_content": "(B) Tìm biểu thức của cường độ điện trường tại P.\n\n#### Giải:\nDo tính chất đối xứng, có thể kết luận rằng vector cường độ điện trường tại điểm P *E*\n\nphải hướng dọc theo trục x. Nói cách khác *E* chỉ có thành phần theo (25.16) giữa cường độ điện trường và thế năng: *x*. Từ mối liên hệ\n\n$$E = -\\frac{dV}{dx} = -k Q \\frac{d}{dx} \\left( \\frac{1}{\\sqrt{a^2 + x^2}} \\right) = k_e x \\qquad Q$$\n\n![](images/image10.jpg)\n\n![](images/image11.jpg)\n\n$$\\int \\frac{dx}{\\left(a^2+x^2\\right)^{3/2}}$$\n\nAl Race\n\n2025-09-28 20:00.42 AI Race\n\n2025-09-28 20.00.42\\_Al Race\n\n#### Bài tập mẫu 25.5: Điện thế tạo bởi thanh tích điện đều\nMột thanh có chiều dài *l* đặt dọc theo trục *x* như hình vẽ. Thanh có điện tích *Q* phân bố đều với mật độ dài .Tính điện thế tại điểm P nằm trên trục *y* cách đầu thanh một đoạn bằng *a*.\n\n#### Giải:\nĐiện thế tại P được tạo bởi các phần điện tích phân bố khắp chiều dài thanh. Xét một đoạn *dx* rất nhỏ trên thanh, mang điện tích *dq* = *dx* đủ nhỏ để có thể xem như điện tích điểm.\n\nĐiện thế do điện tích điểm *dq* nói trên tạo ra tại P:\n\n$$dV = k_e \\frac{dq}{r} = k_e \\frac{\\lambda dx}{\\sqrt{a^2 + x^2}}$$\n\n![](images/image12.jpg)\n\n*Hình 25.14: Tính điện thế tạo bởi thanh tích*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 15545,
+      "chunk_index": 17,
+      "chunk_id": "main::chunk::17",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::16",
+      "next_chunk_id": "main::chunk::18"
+    }
+  },
+  {
+    "page_content": "Điện thế do điện tích điểm *dq* nói trên tạo ra tại P:\n\n$$dV = k_e \\frac{dq}{r} = k_e \\frac{\\lambda dx}{\\sqrt{a^2 + x^2}}$$\n\n![](images/image12.jpg)\n\n*Hình 25.14: Tính điện thế tạo bởi thanh tích*\n\n*dx điện đều*\n\nĐiện thế do rất nhiều điện tích điểm như thế trên toàn bộ thanh tạo ra tại P là tích phân:\n\n$$V = \\int_0^l k_e \\, \\frac{\\lambda dx}{\\sqrt{a^2 + x^2}}$$\n\nTheo đó cận tích phân lấy từ *x* = 0 cho đến *x* = *l*.\n\nĐể ý rằng *k<sup>e</sup>* và = *Q* / *l* là những số không đổi, có thể cho ra ngoài dấu tích phân:\n\n$$V = k_e \\lambda \\int_0^1 \\frac{dx}{\\sqrt{a^2 + x^2}} = k_e \\frac{1}{l} \\ln(x + \\frac{1}{a^2 + x^2}) \\int_0^1 \\frac{dx}{\\sqrt{a^2 + x^2}} dx$$\n\n$$= k_e \\frac{Q}{l} \\ln \\left( \\frac{l + \\sqrt{a^2 + l^2}}{a} \\right)$$\n\n#### Điện thế tạo bởi vật dẫn tích điện\nTừ chương 24, ta biết rằng đối với *vật dẫn điện ở trạng thái cân bằng, điện tích chỉ phân bố trên bề mặt vật dẫn*. Ngoài ra ta cũng biết rằng, *điện trường chỉ tồn tại bên ngoài vật dẫn và vuông góc với bề mặt vật dẫn. Bên trong vật dẫn điện trường hoàn toàn bị triệt tiêu*.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 16547,
+      "chunk_index": 18,
+      "chunk_id": "main::chunk::18",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::17",
+      "next_chunk_id": "main::chunk::19"
+    }
+  },
+  {
+    "page_content": "Chương này ta tiếp tục bàn đến vật dẫn điện về phương diện điện thế. Áp dụng công thức (25.3) cho hai điểm A và B bất kì nằm trong hoặc trên bề mặt vật dẫn, ta có:\n\n$$\\overrightarrow{E} \\cdot \\overrightarrow{ds} = 0$$\n\n![](images/image13.jpg)\n\n$$V_B - V_A = -\\int_{(A)}$$\n\nNhư vậy *mọi điểm thuộc vật dẫn đều có điện thế bằng nhau*.\n\nHình 25.15 miêu tả điện thế tại các điểm bên trong và bên ngoài quả cầu làm bằng vật liệu dẫn điện. Theo trình bày ở chương 24, việc áp dụng định lý Gauss cho ra kết quả rằng: điện trường bên ngoài quả cầu tích điện có dạng y hệt như điện trường tạo bởi điện tích điểm:\n\n$$E = k_e \\frac{q}{r^2}$$\n\nDo đó điện thế tại một điểm bất kì nằm ngoài quả cầu cũng sẽ có dạng như điện thế sinh ra bởi điện tích điểm đặt tại tâm quả cầu:\n\n$$V = k_e \\frac{q}{r}$$\n\nTừ đó suy ra điện thế ngay trên bề mặt quả cầu tích điện:\n\n$$V = k_e \\frac{q}{R} \\tag{25.20}$$\n\n![](images/image14.jpg)\n\nvới *R* là bán kính quả cầu. Trong trường hợp quả cầu làm bằng vật liệu dẫn điện, biểu thức (25.20) cũng chính là điện thế tại mọi điểm thuộc quả cầu. Hình 25.15b diễn tả điều đó bằng đoạn nằm ngang tương ứng với các điểm bên trong quả cầu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Điện thế tạo bởi vật dẫn tích điện",
+      "start_index": 17605,
+      "chunk_index": 19,
+      "chunk_id": "main::chunk::19",
+      "parent_id": "main::section::Điện thế tạo bởi vật dẫn tích điện",
+      "prev_chunk_id": "main::chunk::18",
+      "next_chunk_id": "main::chunk::20"
+    }
+  },
+  {
+    "page_content": "![](images/image14.jpg)\n\nvới *R* là bán kính quả cầu. Trong trường hợp quả cầu làm bằng vật liệu dẫn điện, biểu thức (25.20) cũng chính là điện thế tại mọi điểm thuộc quả cầu. Hình 25.15b diễn tả điều đó bằng đoạn nằm ngang tương ứng với các điểm bên trong quả cầu.\n\n*Hình 25.15: (a) vật dẫn hình cầu (b) điện thế (c) điện trường*\n\n#### Bài tập mẫu 25.6: Hai quả cầu tích điện nối nhau\nHai vật dẫn hình cầu có bán kính lần lượt bằng *r*<sup>1</sup> và *r*<sup>2</sup> ban đầu đặt cách xa nhau. Sau đó chúng được nối với nhau nhờ sợi dây dẫn điện như hình 25.16. Khi hệ cân bằng, điện tích trên mỗi quả cầu lần lượt bằng *q*<sup>1</sup> và *q*<sup>2</sup> , phân bố đều trên mỗi bề mặt. Tìm tỉ số của cường độ điện trường trên bề mặt của hai quả cầu này.\n\n#### Giải:\nDo hai quả cầu đặt cách nhau đủ xa, sự ảnh hưởng lẫn nhau về điện trường là không đáng kể, dẫn đến điện tích mỗi bên vẫn phân bố đều trên mỗi bề mặt và điện trường trên mỗi quả cầu vẫn giữ được nguyên tính đối xứng.\n\nViệc nối hai quả cầu bằng dây dẫn làm cho điện thế cả hai bằng nhau:\n\n$$V = k_e \\frac{q_1}{r_1} = k_e \\frac{q_2}{r_2}$$\n\n![](images/image15.jpg)\n\n*Hình 25.16: Hai quả cầu dẫn điện nối với nhau*\n\nhay:\n\nAIRace",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Điện thế tạo bởi vật dẫn tích điện",
+      "start_index": 18489,
+      "chunk_index": 20,
+      "chunk_id": "main::chunk::20",
+      "parent_id": "main::section::Điện thế tạo bởi vật dẫn tích điện",
+      "prev_chunk_id": "main::chunk::19",
+      "next_chunk_id": "main::chunk::21"
+    }
+  },
+  {
+    "page_content": "Việc nối hai quả cầu bằng dây dẫn làm cho điện thế cả hai bằng nhau:\n\n$$V = k_e \\frac{q_1}{r_1} = k_e \\frac{q_2}{r_2}$$\n\n![](images/image15.jpg)\n\n*Hình 25.16: Hai quả cầu dẫn điện nối với nhau*\n\nhay:\n\nAIRace\n\n2025-09-28 20.00.42 AI Race\n\n2025-09-28 20.00.42\\_Al Race\n\n$$\\frac{q_1}{q_2} = \\frac{r_1}{r_2}$$\n (1)\n\n $\\frac{q_1}{q_2} = \\frac{r_1}{r_2} (1)$ Cường độ điện trường trên bề mặt mỗi quả cầu có độ lớn:  $E_1 = k_e \\frac{q_1}{r^2}, E_2 = k_e \\frac{q_2}{r^2}$   $= \\frac{1}{2}$ Lấy tỉ số của cường độ điện trường:  $E_1 = \\frac{q_1}{r_2}$ \n\n$$E_1 = k_e \\frac{q_1}{r^2}, E_2 = k_e \\frac{q_2}{r^2}$$\n\n$$\\frac{E_{1}}{E_{2}} = \\frac{q_{1}r_{2}^{2}}{q_{2}r_{1}^{2}}$$\n\n$$\\frac{E_{1}}{E_{2}} = \\frac{q_{1}r_{2}^{2}}{q_{2}r_{1}^{2}}$$\nThé (1) vào thu được:\n$$\\frac{E}{E_{1}^{1}} = \\frac{r_{1}r_{2}^{2}}{r_{1}r_{2}^{2}} = \\frac{r_{2}}{r_{1}}$$\n\nTừ kết quả thu được có thể thấy rằng, khi hai quả cầu nối nhau bằng dây dẫn điện, điện trường trên bề mặt của quả cầu nhỏ thì lớn hơn điện trường trên bề mặt quả cầu lớn.\n\n#### Vật dẫn rỗng ruột",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 19472,
+      "chunk_index": 21,
+      "chunk_id": "main::chunk::21",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::20",
+      "next_chunk_id": "main::chunk::22"
+    }
+  },
+  {
+    "page_content": "Từ kết quả thu được có thể thấy rằng, khi hai quả cầu nối nhau bằng dây dẫn điện, điện trường trên bề mặt của quả cầu nhỏ thì lớn hơn điện trường trên bề mặt quả cầu lớn.\n\n#### Vật dẫn rỗng ruột\n\nVật dẫn rỗng ruột có thể miêu tả như hình 25.17. Với loại vật dẫn hết sức đặc biệt này, ta sẽ chứng minh rằng điện trường bên trong phần rỗng của vật dẫn phải luôn luôn bằng không, dù điện trường bên ngoài có thay đổi thế nào đi nữa! Thực vậy, xét hai điểm A và B bất kì thuộc thành bên trong sát phần rỗng, theo (25.3) ta có:\n\n$$V_B - V_A = -\\int_{(A)}^{(B)} \\vec{E} \\cdot \\vec{ds}$$\n\nNhưng đối với vật dẫn bất kì ta cũng đã chứng minh rằng điện thế tại mọi điểm trong nó đều bằng nhau:  $V_A = V_B$ . Nên vector cường độ điện trường bu Ec phải bằng không.\n\nVật dẫn rỗng ruột dưới dạng những hộp có vỏ bằng kim loại có nhiều ứng dụng trong việc cách ly các vật bên trong khỏi ảnh hưởng của điên trường ngoài.\n\nĐiện trường bên trong ốc vật dẫn bi triệt tiêu, cho dù vật dẫn vẫn có mang điện tích\n\n![](images/image16.jpg)\n\nHình 25.17: Vật dẫn rỗng ruột\n\n#### Tia lửa điện",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 20314,
+      "chunk_index": 22,
+      "chunk_id": "main::chunk::22",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::21",
+      "next_chunk_id": "main::chunk::23"
+    }
+  },
+  {
+    "page_content": "Điện trường bên trong ốc vật dẫn bi triệt tiêu, cho dù vật dẫn vẫn có mang điện tích\n\n![](images/image16.jpg)\n\nHình 25.17: Vật dẫn rỗng ruột\n\n#### Tia lửa điện\n\nTia lửa điện thường quan sát thấy ở gần vật dẫn điện cao thế. Khi điện trường gần vật dẫn đủ lớn, các electron tự do, vốn phát sinh do sự ion hoá ngẫu nhiên của phân tử khí, sẽ được gia tốc và bị đẩy xa khỏi phân tử mẹ. Chúng chuyển động nhanh và va chạm với nhiều\n\nphân tử khí xung quanh, làm phát sinh thêm rất nhiều sự ion hoá thứ cấp, kéo theo sự xuất hiện càng lúc càng nhiều electron tự do khác. Các electron này sau đó tái kết hợp với những ion phân tử, di chuyển từ trạng thái tự do sang trạng thái liên kết ở mức năng lượng thấp hơn làm phát ra năng lượng dưới dạng ánh sáng. Đó chính là tia lửa điện.\n\nỞ những phần nhọn của vật dẫn, điện tích tập trung nhiều hơn và sinh ra điện trường lớn hơn so với những phần khác. Do đó tia lửa điện thường hay xuất hiện ở những điểm nhọn này.\n\nTia lửa điện có thể được quan sát rõ hơn nhờ máy quay tử ngoại\n\n#### Thí nghiệm giọt dầu Millikan\n![](images/image17.jpg)\n\n*Hình 25.18: Thí nghiệm giọt dầu Millikan*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Vật dẫn rỗng ruột",
+      "start_index": 21221,
+      "chunk_index": 23,
+      "chunk_id": "main::chunk::23",
+      "parent_id": "main::section::Vật dẫn rỗng ruột",
+      "prev_chunk_id": "main::chunk::22",
+      "next_chunk_id": "main::chunk::24"
+    }
+  },
+  {
+    "page_content": "Tia lửa điện có thể được quan sát rõ hơn nhờ máy quay tử ngoại\n\n#### Thí nghiệm giọt dầu Millikan\n![](images/image17.jpg)\n\n*Hình 25.18: Thí nghiệm giọt dầu Millikan*\n\nTrong giai đoạn 1909-1913, Robert Millikan đã tiến hành phép đo điện tích của electron, xác định giá trị của điện tích nguyên tố *e*. Thiết bị thí nghiệm được mô tả như hình 25.18. Bộ phận chính của thiết bị gồm hai đĩa kim loại đặt song song, đấu vào hai cực của ắc quy để tạo ra điện trường giữa chúng. Millikan dùng bình phun sương phun những giọt dầu li ti vào khoảng trống giữa hai đĩa, đồng thời rọi x-quang làm ion hoá không khí, khiến cho các electron được giải phóng và dính vào những giọt dầu. Những giọt dầu được chiếu sáng, hiện giữa ống kính quan sát như những ngôi sao hiện giữa trời đêm.\n\n20\n\nHiệu điện thế giữa hai điểm A và B trong điện trường *E* được định nghĩa qua công thức:\n\n$$\\Delta V \\equiv \\frac{\\Delta U}{q} = -\\int_{(A)}^{(B)} \\vec{E} \\cdot \\vec{ds}$$\n\ntrong đó *U* - độ chênh lệch thế năng. Điện thế *V* = *U* / *q* là một đại lượng vô hướng, có đơn vị Volt (V): 1V = 1J/C",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tia lửa điện",
+      "start_index": 22174,
+      "chunk_index": 24,
+      "chunk_id": "main::chunk::24",
+      "parent_id": "main::section::Tia lửa điện",
+      "prev_chunk_id": "main::chunk::23",
+      "next_chunk_id": "main::chunk::25"
+    }
+  },
+  {
+    "page_content": "20\n\nHiệu điện thế giữa hai điểm A và B trong điện trường *E* được định nghĩa qua công thức:\n\n$$\\Delta V \\equiv \\frac{\\Delta U}{q} = -\\int_{(A)}^{(B)} \\vec{E} \\cdot \\vec{ds}$$\n\ntrong đó *U* - độ chênh lệch thế năng. Điện thế *V* = *U* / *q* là một đại lượng vô hướng, có đơn vị Volt (V): 1V = 1J/C\n\n#### Khái niệm và nguyên lý\nKhi một điện tích dương *q* di chuyển từ vị trí A sang vị trí B trong điện trường *E*, thế năng thay đổi một lượng bằng:\n\n$$\\Delta U = -q \\int_{(A)}^{(B)} \\vec{E} \\cdot \\vec{ds}$$\n\nHiệu điện thế giữa hai điểm nằm trên cùng một đường sức của điện trường đều và cách nhau một đoạn *d* bằng\n\n$$\\Delta V = -Ed$$\n\nNếu chọn *V* = 0 tại *r* = , điện thế tạo ra bởi một điện tích điểm tại vị trí cách nó đoạn *r* bằng\n\n$$V = k_e \\frac{q}{r}$$\n\nĐiện thế do nhiều điện tích điểm tạo thành là sự tổng hợp các thế năng của từng điện tích điểm riêng rẽ.\n\nThế năng của hệ tạo bởi hai điện tích điểm nằm cách nhau một khoảng *r*<sup>12</sup>\n\n$$U = k_e \\frac{q_1 q_2}{r_{12}}$$\n\nThế năng của hệ cấu thành từ nhiều điện tích điểm có thể tính được bằng cách lấy tổng thế năng từ mỗi cặp trong hệ theo cách như trên.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Thí nghiệm giọt dầu Millikan",
+      "start_index": 22945,
+      "chunk_index": 25,
+      "chunk_id": "main::chunk::25",
+      "parent_id": "main::section::Thí nghiệm giọt dầu Millikan",
+      "prev_chunk_id": "main::chunk::24",
+      "next_chunk_id": "main::chunk::26"
+    }
+  },
+  {
+    "page_content": "Thế năng của hệ tạo bởi hai điện tích điểm nằm cách nhau một khoảng *r*<sup>12</sup>\n\n$$U = k_e \\frac{q_1 q_2}{r_{12}}$$\n\nThế năng của hệ cấu thành từ nhiều điện tích điểm có thể tính được bằng cách lấy tổng thế năng từ mỗi cặp trong hệ theo cách như trên.\n\nNếu điện thế được cho dưới dạng một hàm số phụ thuộc vào toạ độ *V* =*V*(*x*, *y*,*z*), các thành phần của vector cường độ điện trường *E* có thể tính được bằng cách lấy đạo hàm của điện thế theo toạ độ:\n\n$$E_x = -\\frac{dV}{dx}, E_y = -\\frac{dV}{dy}, E_z = -\\frac{dV}{dz}$$\n\nĐiện thế tạo ra bởi sự phân bố liên tục các điện tích được tính bằng\n\n$$V = k_e \\int \\frac{dq}{r_{s}}$$\n\nĐối với vật dẫn điện ở trạng thái cân bằng, mọi điểm nằm trong vật dẫn và trên bề mặt vật dẫn đều có cùng một điện thế.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Khái niệm và nguyên lý",
+      "start_index": 23813,
+      "chunk_index": 26,
+      "chunk_id": "main::chunk::26",
+      "parent_id": "main::section::Khái niệm và nguyên lý",
+      "prev_chunk_id": "main::chunk::25",
+      "next_chunk_id": "main::chunk::27"
+    }
+  },
+  {
+    "page_content": "$$E_x = -\\frac{dV}{dx}, E_y = -\\frac{dV}{dy}, E_z = -\\frac{dV}{dz}$$\n\nĐiện thế tạo ra bởi sự phân bố liên tục các điện tích được tính bằng\n\n$$V = k_e \\int \\frac{dq}{r_{s}}$$\n\nĐối với vật dẫn điện ở trạng thái cân bằng, mọi điểm nằm trong vật dẫn và trên bề mặt vật dẫn đều có cùng một điện thế.\n\n### Câu hỏi lý thuyết chương 25\n1. Phân biệt hai khái niệm điện thế và thế năng.\n2. Hãy mô tả mặt đẳng thế trong điện trường tạo bởi một dây tích điện dài vô hạn và của một mặt cầu tích điện đều.\n3. Khi hai hạt mang điện tích điểm đặt xa nhau vô cùng, thế năng của hệ được quy ước bằng không. Khi đưa các hạt tiến lại gần nhau, thế năng của hệ mang giá trị dương nếu hai điện tích cùng dấu, mang giá trị âm nếu hai điện tích trái dấu. Hãy giải thích tại sao như vậy.\n\n#### Bài tập chương 25\n1. Hai bản phẳng đặt song song cách nhau 5,33 mm, đặt dưới hiệu điện thế 600 V.\n  - (a) Tính cường độ điện trường giữa hai bản phẳng.\n  - (b) Tìm lực tác dụng lên một electron đang nằm trong điện trường này.\n  - (c) Để di chuyển một electron từ vị trí cách bản dương 2,90 mm đến bản âm cần thực hiện một công bằng bao nhiêu?",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Khái niệm và nguyên lý",
+      "start_index": 24276,
+      "chunk_index": 27,
+      "chunk_id": "main::chunk::27",
+      "parent_id": "main::section::Khái niệm và nguyên lý",
+      "prev_chunk_id": "main::chunk::26",
+      "next_chunk_id": "main::chunk::28"
+    }
+  },
+  {
+    "page_content": "ĐS: (a) \n$$1,13\\times10^5$$\n N/C (b)  $1,8\\times10^{-14}$  N (c)  $4,37\\times10^{-17}$  J\n\n2. Một proton được gia tốc từ trạng thái đứng yên bằng hiệu điện thế 120 V. Tính tốc độ mà nó thu được sau khi gia tốc.\n\n$$DS: 1,52 \\times 10^5 \\,\\text{m/s}$$\n\n3. Một điện trường đều có cường độ 325 V/m hướng theo chiều âm của trục *y* như hình vẽ. Tính hiệu điện thế *V<sup>B</sup>* −*V<sup>A</sup>* giữa hai điểm A(-0,2 ;-0,3) và B(0,4 ;0,5). Gợi ý: lấy tích phân đường theo đường đứt nét như hình vẽ.\n\nĐS: +260 V\n\n4. Khi một electron chuyển động song song theo trục *x* từ vị trí *x* = 0 đến vị trí *x* = 2cm, tốc độ của nó suy giảm từ\n\n![](images/image18.jpg)\n\n- 3,710<sup>6</sup> m/s xuống còn 1,410<sup>5</sup>m/s.\n- (a) Tính hiệu điện thế giữa hai điểm nói trên\n- (b) Điểm nào có điện thế lớn hơn?\n\nĐS: (a) -38,9 V\n\n![](images/image19.jpg)\n\n5. Hai điện tích điểm được bố trí cách nhau *d* = 2cm như hình vẽ. Tính điện thế tại điểm A cách đều các điện tích một khoảng *d* và tại điểm B nằm chính giữa hai điện tích.\n\nĐS: *V<sup>A</sup>* = 5,39 kV, *V<sup>A</sup>* =10,8kV\n\n![](images/image20.jpg)\n\n*Hình bài 5*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập chương 25",
+      "start_index": 25389,
+      "chunk_index": 28,
+      "chunk_id": "main::chunk::28",
+      "parent_id": "main::section::Bài tập chương 25",
+      "prev_chunk_id": "main::chunk::27",
+      "next_chunk_id": "main::chunk::29"
+    }
+  },
+  {
+    "page_content": "![](images/image19.jpg)\n\n5. Hai điện tích điểm được bố trí cách nhau *d* = 2cm như hình vẽ. Tính điện thế tại điểm A cách đều các điện tích một khoảng *d* và tại điểm B nằm chính giữa hai điện tích.\n\nĐS: *V<sup>A</sup>* = 5,39 kV, *V<sup>A</sup>* =10,8kV\n\n![](images/image20.jpg)\n\n*Hình bài 5*\n\n6. Ba điện tích điểm có giá trị lần lượt bằng 20 nC, 10 nC và 20 nC được gắn cố định trên một trục thẳng đứng như hình vẽ.\n  - (a) Tính thế năng của hệ ba điện tích gắn cố định nói trên.\n  - (b) Đặt thêm hạt có điện tích 40 nC và khối lượng 210<sup>−</sup><sup>13</sup>\n\nkg vào vị trí như hình vẽ. Hạt này bị đẩy và chuyển động ra xa do tương tác với ba điện tích cố định. Tính vận tốc của hạt khi nó bị đẩy tới xa vô cùng.\n\nĐS: (a) −4,510<sup>−</sup><sup>5</sup> J (b) 3,4610<sup>4</sup> m/s\n\n![](images/image21.jpg)\n\n7. Hai điện tích điểm đặt cách nhau biết *Q* = 5 nC. Hãy tính: *d* = 2cm như hình vẽ. Cho\n  - (a) Điện thế tại A.\n  - (b) Điện thế tại B.\n  - (c) Hiệu điện thế giữa B và A.\n\n![](images/image22.jpg)\n\n*Hình bài 6*\n\nHình bài 7 BS: (a) \n$$V_A = 5{,}43 \\text{ kV}$$\n (b)  $V_B = 6{,}08 \\text{ kV}$  (c)\n\n5\n\nAl Race\n\n2025-09-28 20.00.42 AI Race\n\n2025-09-28 20.00.42\\_AI Race",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập chương 25",
+      "start_index": 26203,
+      "chunk_index": 29,
+      "chunk_id": "main::chunk::29",
+      "parent_id": "main::section::Bài tập chương 25",
+      "prev_chunk_id": "main::chunk::28",
+      "next_chunk_id": "main::chunk::30"
+    }
+  },
+  {
+    "page_content": "![](images/image22.jpg)\n\n*Hình bài 6*\n\nHình bài 7 BS: (a) \n$$V_A = 5{,}43 \\text{ kV}$$\n (b)  $V_B = 6{,}08 \\text{ kV}$  (c)\n\n5\n\nAl Race\n\n2025-09-28 20.00.42 AI Race\n\n2025-09-28 20.00.42\\_AI Race\n\n8. Tại một vị trí P nào đó gần điện tích điểm có cường độ điện trường bằng 500 V/m và điện thế -3 kV. Hãy tính :\n  - (a) Khoảng cách giữa điểm P và điện tích điểm.\n  - (b) Độ lớn của điện tích điểm.\n\nĐS: (a) 6 m (b) -2 µC\n\n9. Bốn hạt có cùng điện tích *Q* đặt trên bốn góc của hình vuông có cạnh bằng *a*. Hãy tính:\n  - (a) Điện thế ở tâm của hình vuông.\n  - (b) Công cần thực hiện để đưa một hạt điện tích *q* từ xa vô cùng về tâm của hình vuông.\n\n$$DS: (a) \\ 4\\sqrt{2}k_e \\frac{Q}{a} (b) \\ 4\\sqrt{2}k_e \\frac{qQ}{a}$$\n\n10. Năm 1911, Rutherford cùng hai trợ lý Geiger và Marsden đã tiến hành thí nghiệm tán xạ tia alpha trên nguyên tử vàng. Mỗi hạt alpha có điện tích bằng +2*e* và khối lượng 6,64 10<sup>−</sup><sup>27</sup> kg. Kết quả thí nghiệm chỉ ra rằng, hầu hết khối lượng của nguyên tử gần như tập trung vào hạt nhân với kích thước rất nhỏ, được bao quanh bởi các quỹ đạo electron.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập chương 25",
+      "start_index": 27191,
+      "chunk_index": 30,
+      "chunk_id": "main::chunk::30",
+      "parent_id": "main::section::Bài tập chương 25",
+      "prev_chunk_id": "main::chunk::29",
+      "next_chunk_id": "main::chunk::31"
+    }
+  },
+  {
+    "page_content": "Bắn một hạt alpha từ khoảng cách xa hướng thẳng tới hạt nhân vàng với điện tích +79*e*. Tốc độ ban đầu của alpha bằng 2,0010<sup>7</sup> m/s. Hạt alpha có khả năng tiến lại gần nhất so với hạt nhân vàng một khoảng bằng bao nhiêu? Cho rằng hạt nhân vàng luôn nằm cố định.\n\nĐS: 2,7410<sup>−</sup><sup>14</sup> m\n\n11. Dựa vào độ thị sự phụ thuộc của điện thế vào toạ độ *V* (*x*), hãy vẽ đồ thị sự phụ thuộc của thành phần *x* của cường độ điện trường theo toạ độ *E<sup>x</sup>* (*x*).\n\n![](images/image23.jpg)\n\n12. Trong phạm vi từ *x* = 0 đến *x* = 6,00m, điện thế có dạng hàm số *V* = *a* + *bx*, với *a* =10,0V và *b* = 7,00 V/m. Hãy xác định :\n  - (a) Điện thế tại *x* = 0, *x* = 3,00 và *x* = 6,00m.\n  - (b) Độ lớn và hướng của điện trường tại *x* = 0, *x* = 3,00 và *x* = 6,00m.\n\nĐS: (a) 10V, -11V và -32V (b) 7 N/C tại mọi điểm *x* 0\n\n13. Trên một vùng không gian nhất định nào đó, điện thế có dạng hàm số  $V = 5x - 3x^2y + 2yz^2.$ \n  - điện trường  $\\overline{E}$ .\n\n![](images/image24.jpg)\n\n![](images/image25.jpg)\n\nDS: (a)  $\\vec{E} = (-5 + 6xv) \\cdot \\vec{i} + (3x^2 - 2z^2) \\cdot \\vec{i} - 4vz \\cdot \\vec{k}$  (b) 7.07 N/C",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập chương 25",
+      "start_index": 28280,
+      "chunk_index": 31,
+      "chunk_id": "main::chunk::31",
+      "parent_id": "main::section::Bài tập chương 25",
+      "prev_chunk_id": "main::chunk::30",
+      "next_chunk_id": "main::chunk::32"
+    }
+  },
+  {
+    "page_content": "13. Trên một vùng không gian nhất định nào đó, điện thế có dạng hàm số  $V = 5x - 3x^2y + 2yz^2.$ \n  - điện trường  $\\overline{E}$ .\n\n![](images/image24.jpg)\n\n![](images/image25.jpg)\n\nDS: (a)  $\\vec{E} = (-5 + 6xv) \\cdot \\vec{i} + (3x^2 - 2z^2) \\cdot \\vec{i} - 4vz \\cdot \\vec{k}$  (b) 7.07 N/C\n\n14. Một thanh tích điện đều dài 14 cm được uốn cong thành nửa cung tròn như hình vẽ. Tổng điện tích trên thanh bằng -7,5 μC. Tính điện thế tại tâm O của cung tròn.\n\nHình bài 14\n\n $DS: -1.51 \\times 10^6 V$ \n\n15. Một dây tích điện đều với mật độ điện dài λ được uốn thành dạng như hình vẽ. Hãy tính điện thế tai điểm O.\n\n![](images/image26.jpg)\n\nHình bài 15\n\n $DS: k_e \\lambda(\\pi + 2\\ln 3)$ \n\n16. Một vật dẫn hình cầu có bán kính 14 cm và điện tích 26 μC. Tính cường đô điện trường và điện thế tại điểm cách tâm vật dẫn:\n  - (a) r = 10 cm\n  - (b)  $r = 20 \\, \\text{cm}$\n  - (c) r = 14 cm\n\nBS: (a) \n$$1,67 \\times 10^6 \\text{ V}$$\n (b)  $1,17 \\times 10^6 \\text{ V}$  (c)  $1,67 \\times 10^6 \\text{ V}$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập chương 25",
+      "start_index": 29121,
+      "chunk_index": 32,
+      "chunk_id": "main::chunk::32",
+      "parent_id": "main::section::Bài tập chương 25",
+      "prev_chunk_id": "main::chunk::31",
+      "next_chunk_id": "main::chunk::33"
+    }
+  },
+  {
+    "page_content": "BS: (a) \n$$1,67 \\times 10^6 \\text{ V}$$\n (b)  $1,17 \\times 10^6 \\text{ V}$  (c)  $1,67 \\times 10^6 \\text{ V}$ \n\n17. Ông Geiger-Mueller có cấu tạo gồm anode và cathode từ hai ống kim loại hình trụ lồng vào nhau như hình vẽ. Anode có bán kính  $r_{B}$  và tích điện với mật độ dài  $\\lambda$ . Cathode có bán kính  $r_A$  và tích điện với mật độ dài  $-\\lambda$ .\n\n![](images/image27.jpg)\n\n![](images/image28.jpg)\n\n![](images/image29.jpg)\n\nCathode\n\n(b) Chứng tỏ rằng cường độ điện trường phụ thuộc vào khoảng cách *r* đến trục đối xứng theo biểu thức:\n\n$$E = \\frac{\\Delta V}{\\ln(r_A / r_B)} \\frac{1}{r}$$\n\n![](images/image30.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập chương 25",
+      "start_index": 30004,
+      "chunk_index": 33,
+      "chunk_id": "main::chunk::33",
+      "parent_id": "main::section::Bài tập chương 25",
+      "prev_chunk_id": "main::chunk::32",
+      "next_chunk_id": null
+    }
+  }
+]

@@ -1,0 +1,646 @@
+[
+  {
+    "page_content": "# Public_150\n\nTrong chương 37 chúng ta đã định nghĩa nhiễu xạ một cách không mấy chặt chẽ là sự loe ra của ánh sáng xuất\n\nphát từ một khe hẹp. Tuy nhiên, không đơn giản chỉ là loe ra vì ánh sáng còn tạo nên một bức tranh giao thoa gọi là vân nhiễu xạ. Thí dụ, ánh sáng đơn sắc từ một nguồn ở xa vô cực (hay một lazer) đi qua một khe hẹp và sau đó được hứng bằng một màn quan sát, chúng sẽ tạo nên một bức tranh nhiễu xạ trên màn như trong hình 38.1. Bức tranh này bao gồm một dải sáng trung tâm mạnh, rộng (gọi là cực đại trung tâm) được bao quanh bởi một dải hẹp và yếu hơn (gọi là cực đại thứ cấp) và một loạt các dải tối xen kẽ.\n\n![](images/image1.jpg)\n\n*Hình 38.1:* Hình ảnh nhiễu xạ hiện trên một màn quan sát khi ánh sáng đến màn, sau khi đi qua một khe hẹp dọc. Quá trình nhiễu xạ làm cho ánh sáng loe ra vuông góc với chiều dài của khe.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_150",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_150",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "![](images/image1.jpg)\n\n*Hình 38.1:* Hình ảnh nhiễu xạ hiện trên một màn quan sát khi ánh sáng đến màn, sau khi đi qua một khe hẹp dọc. Quá trình nhiễu xạ làm cho ánh sáng loe ra vuông góc với chiều dài của khe.\n\n# 38.1 Nhiễu xạ ánh sáng\nSự nhiễu xạ ánh sáng không giới hạn trong trường hợp khi ánh sáng đi qua một khoảng trống hẹp mà nó còn xảy ra khi ánh sáng đi qua một cạnh (mép) của đối tượng, chẳng hạn như hình 38.2. Chú ý rằng, các đường cực đại và cực tiểu chạy dọc gần như song song với nhau để tạo nên bức tranh dọc theo mép trái. Một lần nữa, chúng ta thấy hình ảnh các vân sáng và tối, giống như hình ảnh giao thoa trong chương 37.\n\n![](images/image2.jpg)\n\n*Hình 38.2:* Ảnh nhiễu xạ qua cạnh của một vật.\n\nÁnh sáng có bước sóng tương đương hoặc lớn hơn chiều rộng của một khe hẹp sẽ lan truyền mọi hướng trước khi đi qua khe. Hiện tượng này gọi là nhiễu xạ ánh sáng. Điều này\n\nAl Race\n\n2025-09-2821.19.18\\_AIRace\n\n2025-09-28 21.19.18\\_AI Race\n\nchỉ ra rằng ánh sáng lan truyền hướng qua khe hẹp đến được cả những khu vực đáng ra tạo thành vùng tối nếu như ánh sáng truyền thẳng.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_150",
+      "start_index": 633,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::Public_150",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Al Race\n\n2025-09-2821.19.18\\_AIRace\n\n2025-09-28 21.19.18\\_AI Race\n\nchỉ ra rằng ánh sáng lan truyền hướng qua khe hẹp đến được cả những khu vực đáng ra tạo thành vùng tối nếu như ánh sáng truyền thẳng.\n\n*Phân loại:* Gọi L, d là khoảng cách từ vân nhiễu xạ đến màn quan sát và nguồn sáng. Ta có hai loại nhiễu xạ:\n\n- Nếu L, d là hữu hạn thì sóng phát ra từ S là sóng cầu: nhiễu xạ của sóng cầu được gọi là nhiễu xạ Fresnel\n- Nếu L, d là vô hạn thì sóng phát ra từ S là sóng phẳng: nhiễu xạ của sóng phẳng được gọi là nhiễu xạ Fraunhofer.\n\n# 38.1.1 Chấm sáng Fresnel\nHình 38.3 cho thấy một mẫu nhiễu xạ kết hợp với bóng của một đồng xu. Một điểm sáng xuất hiện ở trung tâm, và các đường viền hình tròn mở rộng ra ngoài từ mép của bóng đồng xu. Chúng ta có thể giải thích điểm sáng trung tâm bằng cách sử dụng lý thuyết sóng ánh sáng và dự đoán xuất hiện cực đại giao thoa tại vị trí này. Từ quan điểm của tia quang học (trong đó ánh sáng được xem là tia di chuyển theo đường thẳng), chúng ta dự đoán tại tâm của ảnh nhiễu xạ là một bóng tối vì màn quan sát được che chắn hoàn toàn bởi đồng xu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.1 Nhiễu xạ ánh sáng",
+      "start_index": 1523,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::38.1 Nhiễu xạ ánh sáng",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "Quan điểm của Newton là quan điểm thịnh hành trong giới khoa học Pháp thời bấy giờ. Sau đó mới đến Fresnel, một kỹ sư quân đội trẻ theo đuổi sự đam mê của mình đối với quang học đến nỗi sao nhãng cả nhiệm vụ quân đội. Fresnel tin tưởng vào thuyết sóng ánh sáng và gửi một bài báo cho Viện Hàn Lâm khoa học để mô tả những thí nghiệm của mình và cách giải thích những thí nghiệm ấy bằng thuyết sóng.\n\n![](images/image3.jpg)\n\n*Hình 38.3:* Ảnh nhiễu xạ của một đồng xu. Chú ý đến những vòng nhiễu xạ đồng tâm và chấm sáng Fresnel tại tâm của ảnh nhiễu xạ.\n\nNăm 1819 Viện Hàn Lâm mà đa số những người ủng hộ Newton nghĩ rằng để thách thức quan điểm sóng đã tổ chức một cuộc thi tranh giải về đề tài nhiễu xạ, Fresnel đã thắng. Tuy nhiên, những người ủng hộ Newton vẫn không chịu nghe theo mà cũng không chịu im lặng. Một trong những người ấy là Poisson, nếu lý thuyết Fresnel đúng thì sóng sáng sẽ nhiễu xạ vào vùng bóng tối của quả cầu khi chúng đi qua mép của quả cầu và tạo thành một chấm\n\nsáng tại tâm điểm của bóng tối đó. Trước sự ngạc nhiên của Poisson, vị trí này đã được quan sát bởi Dominique Arago ngay sau đó. Do đó, dự đoán của Poisson đã củng cố lý thuyết sóng hơn là bác bỏ nó.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.1.1 Chấm sáng Fresnel",
+      "start_index": 2615,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::38.1.1 Chấm sáng Fresnel",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "sáng tại tâm điểm của bóng tối đó. Trước sự ngạc nhiên của Poisson, vị trí này đã được quan sát bởi Dominique Arago ngay sau đó. Do đó, dự đoán của Poisson đã củng cố lý thuyết sóng hơn là bác bỏ nó.\n\n#### 38.1.2 Nhiễu xạ Fraunhofer\nGiả sử màn quan sát được đặt rất xa khe hẹp và các tia sáng tới khe là song song nhau (hình 38.4). Trong mô hình này, hình ảnh thu được trên màn quan sát được gọi là mẫu nhiễu xạ Fraunhofer.\n\nNhiễu xạ ám chỉ tới hoạt động chung của sóng khi chúng đi qua một khe hẹp. Trên thực tế, ảnh được thấy trên màn quan sát thực sự là ảnh giao thoa. Sự giao thoa giữa các phần của ánh sáng tới chiếu lên các khu vực khác nhau của khe. Một vân sáng được quan sát dọc theo trục chính (θ = 0), các vân sáng và tối được quan sát xen kẽ hai bên của vân sáng trung tâm.\n\n![](images/image4.jpg)\n\n*Hình 38.4:* (a) Hình học để phân tích nhiễu xạ Fraunhofer qua một khe, (b) Ảnh nhiễu xạ Fraunhofer.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.1.1 Chấm sáng Fresnel",
+      "start_index": 3603,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::38.1.1 Chấm sáng Fresnel",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "![](images/image4.jpg)\n\n*Hình 38.4:* (a) Hình học để phân tích nhiễu xạ Fraunhofer qua một khe, (b) Ảnh nhiễu xạ Fraunhofer.\n\n#### 38.1.3 Nhiễu xạ qua một khe hẹp\nĐộ rộng hữu hạn của khe là điều kiện cho nhiễu xạ Fraunhofer. Theo nguyên lý Huygens, từng phần của khe hẹp đóng vai trò như một nguồn của sóng ánh sáng. Do đó, ánh sáng từ một phần của khe có thể giao thoa với ánh sáng từ một phần khác. Cường độ sáng sau cùng quan sát trên màn hình tùy thuộc vào hướng θ. Dựa vào những phân tích trên, hình ảnh nhiễu xạ thực sự là một ảnh giao thoa, trong đó các nguồn sáng khác nhau là các phần khác nhau của cùng một khe.\n\nĐể phân tích hình ảnh nhiễu xạ, chúng ta chia khe thành hai đới có độ rộng bằng nhau a 2 , như hình 38.5. Lưu ý rằng tất cả các sóng rời khỏi khe đều cùng pha, xét các tia 1 và 3. Tuy nhiên, tất cả sóng tới cùng pha khi chúng ló ra khỏi khe hẹp thì sóng 1 lan truyền xa hơn\n\nsóng 3 một đoạn bằng với hiệu quang lộ:  $\\frac{a}{2}\\sin\\theta$ , trong đó: a là độ rộng của khe. Tương tự,  $\\frac{a}{2}$  chúng ta có thể lặp lại cách phân tích trên cho từng cặp tia xuất phát từ những điểm tương ứng\n\n![](images/image5.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.1.2 Nhiễu xạ Fraunhofer",
+      "start_index": 4390,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::38.1.2 Nhiễu xạ Fraunhofer",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "sóng 3 một đoạn bằng với hiệu quang lộ:  $\\frac{a}{2}\\sin\\theta$ , trong đó: a là độ rộng của khe. Tương tự,  $\\frac{a}{2}$  chúng ta có thể lặp lại cách phân tích trên cho từng cặp tia xuất phát từ những điểm tương ứng\n\n![](images/image5.jpg)\n\n*Hình 38.5:* Nhiễu xạ qua một khe hẹp, khi  $L\\gg$  a chúng ta có thể xem gần đúng các tia 1, 2, 3, 4, 5 song song với nhau, làm một góc  $\\theta$  với trục chính giữa.\n\nBiết trước độ rộng khe a và bước sóng  $\\lambda$ , phương trình (38.1) cho chúng ta góc  $\\theta$  ứng với vân tối thứ nhất nằm trên và dưới trục chính giữa.\n\nBây giờ chúng ta chia khe thành bốn đới bằng nhau có độ rộng a/4. Hiệu lộ trình giữa mỗi cặp tia xuất phát từ những điểm tương ứng trong hai đới kề nhau bằng  $a \\sin \\theta$ . Trong trường hợp như vậy hiệu quang lộ bằng  $a \\cos \\lambda = 1$ 0 nên chúng ta có:\n\n$$\\frac{a}{4}\\sin\\theta = \\pm\\frac{\\lambda}{2} \\rightarrow \\sin\\theta = \\pm2\\frac{\\lambda}{a}$$\n\nTương tự, khi chia khe thành sáu đới bằng nhau có độ rộng a/6 thì vân tối xuất hiện\n\nAl Race\n\ntrên màn quan sát khi:\n\n$$\\sin\\theta = \\pm 3\\frac{\\lambda}{a}$$\n\n#### Giải:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.1.3 Nhiễu xạ qua một khe hẹp",
+      "start_index": 5288,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::38.1.3 Nhiễu xạ qua một khe hẹp",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "$$\\frac{a}{4}\\sin\\theta = \\pm\\frac{\\lambda}{2} \\rightarrow \\sin\\theta = \\pm2\\frac{\\lambda}{a}$$\n\nTương tự, khi chia khe thành sáu đới bằng nhau có độ rộng a/6 thì vân tối xuất hiện\n\nAl Race\n\ntrên màn quan sát khi:\n\n$$\\sin\\theta = \\pm 3\\frac{\\lambda}{a}$$\n\n#### Giải:\n\nDựa vào phương trình (38.1), độ lớn của góc nhiễu xạ  $\\theta$  ứng với các cực tiểu nhiễu xạ sẽ giảm khi tăng độ rộng của khe, do đó ảnh nhiễu xạ sẽ bị thu hẹp lại.\n\n$$2|y_1| = 2|\\text{Lsin }\\theta_{t\\delta i}| = 2\\left|\\pm \\frac{\\lambda}{a}\\right| = 2L\\frac{\\lambda}{a} = 2.2.\\frac{580.10^{-9}}{3.10^{-3}} = 7,73.10^{-4} \\text{ m} = 0,773 \\text{ mm}$$\n\nCần chú ý rằng giá trị này lớn hơn nhiều lần so với độ rộng của khe.\n\n# Sự phân bố cường độ ảnh nhiễu xạ qua một khe\n\nKhi chú ý đến những hiệu ứng nhiễu xạ, sự biến thiên cường độ ảnh giao thoa qua một khe được tính theo công thức:\n\n$$I = I_{\\text{max}} \\left[ \\frac{\\sin(\\pi a \\sin \\theta / \\lambda)}{\\pi a \\sin \\theta / \\lambda} \\right]^{2}$$\n\n$$(38.2)$$\n\ntrong đó,  $I_{max}$  là giá trị lớn nhất của cường độ tại tâm của bức tranh nhiễu xạ tương ứng với  $\\theta = 0, \\lambda$  là bước sóng của ánh sáng chiếu đến khe hẹp. Từ điều kiện cường độ cực tiểu:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.1.3 Nhiễu xạ qua một khe hẹp",
+      "start_index": 6125,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::38.1.3 Nhiễu xạ qua một khe hẹp",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "$$(38.2)$$\n\ntrong đó,  $I_{max}$  là giá trị lớn nhất của cường độ tại tâm của bức tranh nhiễu xạ tương ứng với  $\\theta = 0, \\lambda$  là bước sóng của ánh sáng chiếu đến khe hẹp. Từ điều kiện cường độ cực tiểu:\n\n$$\\frac{\\pi a \\, \\text{sin} \\theta_{\\text{tői}}}{\\lambda} = m \\pi$$\n\n$$\\sin\\theta_{t\\delta i} = m\\frac{\\lambda}{a}$$\n, với  $m = \\pm 1, \\pm 2, \\pm 3 \\cdots$ \n\n2025-19-2821.19.18 AI Race\n\n2025-09-28 21.19.18\\_AI Race\n\n![](images/image6.jpg)\n\n*Hình 38.6:* (a) Đồ thị biểu diễn sự phụ thuộc cường độ sáng I so với ( )a sin cho nhiễu xạ Fraunhofer qua một khe, (b) Ảnh nhiễu xạ Fraunhofer.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Sự phân bố cường độ ảnh nhiễu xạ qua một khe",
+      "start_index": 7094,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::Sự phân bố cường độ ảnh nhiễu xạ qua một khe",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "2025-19-2821.19.18 AI Race\n\n2025-09-28 21.19.18\\_AI Race\n\n![](images/image6.jpg)\n\n*Hình 38.6:* (a) Đồ thị biểu diễn sự phụ thuộc cường độ sáng I so với ( )a sin cho nhiễu xạ Fraunhofer qua một khe, (b) Ảnh nhiễu xạ Fraunhofer.\n\n# 38.1.4 Nhiễu xạ qua hai khe\nTrong những thí nghiệm hai khe của chương 37, chúng ta đã cho rằng các khe rất hẹp so với bước sóng của ánh sáng dọi đến hai khe ( a ). Với những khe hẹp như thes cực đại chính giữa của ảnh nhiễu xạ của từng khe bao phủ toàn bộ màn quan sát. Hơn nữa sự giao thoa của áng sáng từ hai khe tạo nên những vân có cường độ xấp xỉ bằng nhau. Tuy nhiên, trong thực tế với ánh sáng khả kiến điều kiện ( a ) không phải bao giờ cũng thỏa mãn. Với những khe tương đối rộng, sự giao thoa của áng sáng từ hai khe tạo nên những vân sáng mà cường độ không phải tất cả đều bằng nhau. Thực tế là cường độ của chúng bị thay đổi do nhiễu xạ của ánh sáng qua mỗi khe.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Sự phân bố cường độ ảnh nhiễu xạ qua một khe",
+      "start_index": 7467,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::Sự phân bố cường độ ảnh nhiễu xạ qua một khe",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "# Phương trình biểu diễn cường độ của ảnh nhiễu xạ qua hai khe hẹp Sự phân bố cường độ ảnh nhiễu xạ qua hai khe\nẢnh nhiễu xạ của hai khe, mô tả bởi phương trình (38.3) và được thể hiện trong hình 38.7. Đường màu xanh nét đứt là ảnh nhiễu xạ qua một khe hẹp. Đường cong màu nâu là do giao thoa qua hai khe hẹp, thành phần này sẽ tạo ra tất cả các đỉnh cùng độ cao (cường độ). Chiều cao các đỉnh không đồng đều do thành phần nhiễu xạ qua mỗi khe (thừa số trong dấu ngoặc vuông).\n\nPhương trình (37.2) cho biết điều kiện để xảy ra cực đại giao thoa là: dsin = m , trong đó: d là khoảng cách giữa hai khe. Phương trình (38.1) cho biết cực tiểu nhiễu xạ đầu tiên xảy ra khi asin = , trong đó a là độ rộng của mỗi khe. Chia phương trình (37.2) cho phương trình (38.1) (với m =1) cho phép chúng ta xác định cực đại giao thoa đầu tiên trùng với cực tiểu nhiễu xạ đầu tiên:\n\n![](images/image7.jpg)\n\n$$\\frac{\\mathrm{dsin}\\,\\theta}{\\mathrm{asin}\\,\\theta} = \\frac{\\mathrm{m}\\lambda}{\\lambda} \\implies a = \\mathrm{m} \\tag{38.4}$$\n\n- Điều kiện cho cực đại giao thoa: dsin = m\n- Điều kiện cho cực tiểu nhiễu xạ đầu tiên: a sin =",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Phương trình biểu diễn cường độ của ảnh nhiễu xạ qua hai khe hẹp Sự phân bố cường độ ảnh nhiễu xạ qua hai khe",
+      "start_index": 8373,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::Phương trình biểu diễn cường độ của ảnh nhiễu xạ qua hai khe hẹp Sự phân bố cường độ ảnh nhiễu xạ qua hai khe",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "![](images/image7.jpg)\n\n$$\\frac{\\mathrm{dsin}\\,\\theta}{\\mathrm{asin}\\,\\theta} = \\frac{\\mathrm{m}\\lambda}{\\lambda} \\implies a = \\mathrm{m} \\tag{38.4}$$\n\n- Điều kiện cho cực đại giao thoa: dsin = m\n- Điều kiện cho cực tiểu nhiễu xạ đầu tiên: a sin =\n\nNhư vậy, cường độ sáng ở cực đại thứ 1, 2, 3… rất nhỏ hơn so với cường độ sáng của cực đại chính giữa nên trong trường hợp nhiễu xạ qua nhiều khe ta chỉ xét trong vân giữa nhiễu xạ.\n\n![](images/image8.jpg)\n\n*Hình 38.7:* Cường độ sáng của ảnh nhiễu xạ qua nhiều khe hẹp.\n\n## 38.1.5 Năng suất phân giải\nKhả năng của các hệ thống quang học để phân biệt giữa các nguồn ở gần nhau bị giới hạn do bản chất sóng của ánh sáng. Thực chất, các ảnh qua thấu kính đều là ảnh nhiễu xạ, điều này rất quan trọng khi chúng ta muốn phân biệt hai nguồn điểm ở xa mà khoảng cách góc giữa chúng rất nhỏ. Hình 38.8 cho thấy hai nguồn sáng cách xa một khe hẹp có độ rộng là a. Nếu hai nguồn sáng đủ xa để giữ cho các cực đại trung tâm không chồng lấn lên nhau thì ảnh có thể phân biệt được (hình 38.8a). Ngược lại, nếu hai nguồn sáng ở gần nhau thì hai cực đại trung tâm chồng lấn lên nhau và ảnh không phân giải được vì nhiễu xạ (hình 38.8b).\n\n![](images/image9.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Phương trình biểu diễn cường độ của ảnh nhiễu xạ qua hai khe hẹp Sự phân bố cường độ ảnh nhiễu xạ qua hai khe",
+      "start_index": 9238,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::Phương trình biểu diễn cường độ của ảnh nhiễu xạ qua hai khe hẹp Sự phân bố cường độ ảnh nhiễu xạ qua hai khe",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "![](images/image9.jpg)\n\n*Hình 38.8:* Hai nguồn điểm cách xa một khe hẹp tạo ra hình ảnh nhiễu xạ: (a) Ảnh phân giải được, (b) Ảnh không phân giải được.\n\n# Tiêu chuẩn Rayleigh\nTrong hình 38.9 cho thấy khoảng cách góc của hai nguồn điểm có giá trị sao cho cực đại chính giữa của ảnh nhiễu xạ của nguồn này rơi đúng vào cực tiểu thứ nhất của bức tranh nhiễu xạ của nguồn kia. Điều kiện giới hạn này được gọi là tiêu chuẩn Rayleigh về khả năng phân giải.\n\nTheo tiêu chuẩn Rayleigh, chúng ta có thể xác định sự tách biệt góc tối thiểu min giữa hai nguồn sáng tại khe trong hình 38.8 (hình ảnh đã được phân giải). Phương trình 38.1 chỉ ra rằng cực tiểu đầu tiên của ảnh nhiễu xạ một khe thỏa điều kiện:\n\n$$\\sin \\theta = \\frac{\\lambda}{a}$$\n\nKhi ảnh được phân giải thì khoảng cách góc giữa các nguồn lớn hơn min , chúng ta sẽ có thể phân ly hai nguồn ấy, còn nếu nó nhỏ hơn quá nhiều thì không thể phân ly được. Các nguồn cũng phải có độ sáng tương đối bằng nhau thì mới có thể dùng tiêu chuẩn Rayleigh. Thêm vào đó chúng ta thừa nhận điều kiện nhìn phải lý tưởng.\n\n![](images/image10.jpg)\n\n![](images/image11.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.1.5 Năng suất phân giải",
+      "start_index": 10410,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::38.1.5 Năng suất phân giải",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "![](images/image10.jpg)\n\n![](images/image11.jpg)\n\n*Hình 38.9:* Hình ảnh nhiễu xạ của hai nguồn (đường nét liền) và ảnh tổng hợp (đường nét đứt) khi thay đổi khoảng cách góc giữa các nguồn khi ánh sáng truyền qua một khẩu độ tròn. Đường nét đứt là tổng hợp từ hai đường cong nét liền.\n\nKhi các nguồn sáng ở xa nhau thì ảnh được phân giải tốt. Các đường cong liền nét là các ảnh nhiễu xạ riêng biệt còn các đường đứt nét là ảnh sau cùng (hình 38.9a).\n\nCác nguồn sáng chia cách nhau bởi một góc thỏa mãn tiêu chuẩn Rayleigh thì ảnh được phân giải. Các đường cong liền nét là ảnh nhiễu xạ riêng biệt. Các đường đứt nét là ảnh sau cùng (hình 38.9b).\n\nCác nguồn sáng gần nhau thì ảnh không được phân giải. Các đường liền nét là ảnh nhiễu xạ riêng biệt. Các đường đứt nét là ảnh sau cùng và ảnh trông giống như một nguồn duy nhất (hình 38.8c).\n\nHình ảnh sao Diêm Vương và Mặt trăng Charon như trên hình 38.11 là một ví dụ về độ phân giải. Nếu như dùng kính thiên văn Trái đất thì sẽ không phân biệt được mà phải cần dùng đến kính viễn vọng Hubble mới có thể phân giải rõ ràng hai vật.\n\n![](images/image12.jpg)\n\n![](images/image13.jpg)\n\n*Hình 38.11:* Hình ảnh sao Diêm Vương và Mặt Trăng Charon.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tiêu chuẩn Rayleigh",
+      "start_index": 11469,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::Tiêu chuẩn Rayleigh",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "#### 38.2.1 Nhiễu xạ qua cách tử\nCách tử nhiễu xạ, một dụng cụ dùng cho việc phân tích các nguồn sáng, là hệ thống gồm N khe hẹp giống hệt nhau với độ rộng của mỗi khe là a, khoảng cách giữa hai khe liền kề là d, được đặt cách đều nhau với khoảng cách giữa hai khe liên tiếp là (chu kỳ của cách tử). Cách tử có cấu tạo rất tinh vi, trên mỗi milimet chiều dài có đến hàng trăm khe. Một cách tử truyền qua có thể được tạo ra bằng cách cắt các rãnh (khe) song song trên một tấm kính bằng máy khắc có độ chính xác cao. Khoảng cách giữa các rãnh trong suốt đối với ánh sáng vì vậy đóng vai trò như các khe riêng biệt. Một cách tử phản xạ có thể được tạo ra bằng cách cắt các rãnh song song trên bề mặt của một vật liệu phản xạ. Sự phản xạ của ánh sáng từ các khoảng không gian giữa các rãnh rõ hơn là sự phản xạ từ các rãnh được khắc vào bên trong vật liệu. Vì vậy, các khoảng không gian giữa các rãnh đóng vai trò giống như là các nguồn sáng phản xạ song song giống như các khe trong một cách tử truyền qua. Công nghệ hiện nay có thể sản xuất các cách tử có các khe rất nhỏ. Ví dụ: một cách tử điển hình được khắc với 5000 khe/cm có độ rộng mỗi khe d = (1/ 5000)cm = 2.10<sup>−</sup><sup>4</sup> cm.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.2.1 Nhiễu xạ qua cách tử",
+      "start_index": 12682,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::38.2.1 Nhiễu xạ qua cách tử",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": "main::chunk::15"
+    }
+  },
+  {
+    "page_content": "Một phần của một cách tử nhiễu xạ được minh họa trong hình 38.12. Một sóng phẳng tới từ bên trái, vuông góc với mặt phẳng cách tử. Hình dạng thu được trên màn nằm bên phải mặt cách tử là kết quả của các hiệu ứng giao thoa và nhiễu xạ được kết hợp.\n\n*Chú ý:* Cách tử nhiễu xạ là một cách tử giao thoa. Giống với dạng nhiễu xạ, cách tử nhiễu xạ là một thuật ngữ sai nhưng được dùng nhiều trong ngôn ngữ vật lý. Cách tử nhiễu xạ phụ thuộc vào sự nhiễu xạ trên cùng phương khi hai khe lan truyền ánh sáng rộng ra để ánh sáng từ các khe khác nhau có thể giao thoa. Sẽ là chính xác hơn nếu gọi thiết bị này là cách tử giao thoa, nhưng cách tử nhiễu xạ lại là tên được sử dụng.\n\n![](images/image14.jpg)\n\n*Hình 38.12:* Nhiễu xạ qua cách tử. Khoảng cách giữa các khe là d, hiệu quang lộ của hai tia sáng từ hai khe liền kề là dsin .",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.2.1 Nhiễu xạ qua cách tử",
+      "start_index": 13879,
+      "chunk_index": 15,
+      "chunk_id": "main::chunk::15",
+      "parent_id": "main::section::38.2.1 Nhiễu xạ qua cách tử",
+      "prev_chunk_id": "main::chunk::14",
+      "next_chunk_id": "main::chunk::16"
+    }
+  },
+  {
+    "page_content": "![](images/image14.jpg)\n\n*Hình 38.12:* Nhiễu xạ qua cách tử. Khoảng cách giữa các khe là d, hiệu quang lộ của hai tia sáng từ hai khe liền kề là dsin .\n\nsáng Sóng từ tất cả các khe đồng pha nhau khi chúng ra khỏi các khe. Đối với một hướng bất kỳ θ được xác định từ phương ngang, tuy nhiên, các sóng di chuyển những quãng đường khác nhau trước khi đập vào màn. Cần chú ý trên hình 38.12 rằng hiệu lộ trình giữa các tia từ hai khe kề nhau bất kỳ bằng dsin . Nếu sự khác nhau của quãng đường di chuyển này bằng với một bước sóng hoặc một số nguyên lần bước sóng thì sóng từ tất cả các khe sẽ đồng pha nhau tại màn và sẽ tạo thành một vân sáng. Vì vậy, điều kiện để đạt được cực đại trong hình dạng giao thoa tại góc là\n\n$$d\\sin\\theta_{\\text{sáng}} = m\\lambda, \\text{ với } m = 0, \\pm 1, \\pm 2, \\pm 3...$$\n (38.7)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.2.1 Nhiễu xạ qua cách tử",
+      "start_index": 14551,
+      "chunk_index": 16,
+      "chunk_id": "main::chunk::16",
+      "parent_id": "main::section::38.2.1 Nhiễu xạ qua cách tử",
+      "prev_chunk_id": "main::chunk::15",
+      "next_chunk_id": "main::chunk::17"
+    }
+  },
+  {
+    "page_content": "$$d\\sin\\theta_{\\text{sáng}} = m\\lambda, \\text{ với } m = 0, \\pm 1, \\pm 2, \\pm 3...$$\n (38.7)\n\nsáng sáng sáng Công thức này có thể được sử dụng để tính bước sóng nếu biết được độ rộng khe d và góc . Nếu bức xạ tới bao gồm nhiều bước sóng thì cực đại bậc m đối với mỗi bước sóng xảy ra tại một góc xác định. Tất cả các bước sóng tại = 0 , tương ứng với m = 0 là cực đại bậc 0 (cực đại trung tâm). Cực đại bậc nhất (m = 1) được xác định tại góc thoả mãn mối liên hệ sin = d , cực đại bậc hai (m = 2) được xác định tại một góc lớn hơn và tương tự cho các cực đại bậc cao hơn. Khi các giá trị d nhỏ điển hình trong một cách tử nhiễu xạ thì góc sáng lớn, giống như ví dụ 38.5.\n\n## 38.2.2 Sự phân bố cường độ qua cách tử nhiễu xạ\nSự phân bố cường độ đối với một cách tử nhiễu xạ đạt được khi sử dụng một nguồn đơn sắc được chỉ ra trong hình 38.13. Chú ý độ sắc nét của cực đại trung tâm và độ rộng của các vùng tối được so sánh với các vân sáng rộng đặc trưng của dạng giao thoa hai khe (xem",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.2.1 Nhiễu xạ qua cách tử",
+      "start_index": 15269,
+      "chunk_index": 17,
+      "chunk_id": "main::chunk::17",
+      "parent_id": "main::section::38.2.1 Nhiễu xạ qua cách tử",
+      "prev_chunk_id": "main::chunk::16",
+      "next_chunk_id": "main::chunk::18"
+    }
+  },
+  {
+    "page_content": "hình 37.6). Bên cạnh đó cũng có thể tham khảo hình 37.7 để thấy rằng độ rộng của cực đại cường độ giảm khi số khe tăng lên. Bởi vì cực đại bậc trung tâm rất sắc nét, chúng sáng hơn nhiều cực đại giao thoa hai khe.\n\n![](images/image15.jpg)\n\n*Hình 38.13:* Đồ thị biểu diễn sự phụ thuộc của cường độ theo sinθ của cách tử nhiễu xạ. Cực đại trung tâm, bậc một, bậc hai được biểu diễn.\n\nĐặc điểm của quang phổ cách tử:\n\n- Quang phổ của cách tử chỉ có một vài giá trị.\n- Trong quang phổ của lăng kính thì tia tím bị lệch ít nhất, tia đỏ bị lệch nhiều nhất.\n- So với quang phổ của lăng kính thì quang phổ của cách tử có các vệt vào phân bố đều đặn hơn.\n\n của *Câu hỏi 38.1:* Ánh sáng cực tím có bước sóng 350 nm đập vào một cách tử nhiễu xạ có độ rộng khe d và hình thành một dạng giao thoa trên màn ở khoảng cách L. Các góc sáng\n\ncực đại giao thoa có giá trị lớn. Các vị trí của vân sáng được đánh dấu trên màn. Bây giờ ánh sáng đỏ có bước sóng 700 nm được sử dụng với một cách tử nhiễu xạ để tạo thành một dạng nhiễu xạ khác trên màn. Các vân sáng của dạng nhiễu xạ này sẽ được cố định tại các vị trí đánh dấu trên màn hay không nếu:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.2.2 Sự phân bố cường độ qua cách tử nhiễu xạ",
+      "start_index": 16255,
+      "chunk_index": 18,
+      "chunk_id": "main::chunk::18",
+      "parent_id": "main::section::38.2.2 Sự phân bố cường độ qua cách tử nhiễu xạ",
+      "prev_chunk_id": "main::chunk::17",
+      "next_chunk_id": "main::chunk::19"
+    }
+  },
+  {
+    "page_content": "- **(a)** Màn được di chuyển tới khoảng cách 2L từ cách tử nhiễu xạ.\n- (b) Màn được di chuyển tới khoảng cách L/2 từ cách tử nhiễu xạ.\n- **(c)** Cách tử nhiễu xạ được thay thế bằng một khe có độ rộng 2d.\n- **(d)** Cách tử nhiễu xạ được thay thế bằng một khe có độ rộng d/2.\n- **(e)** Không gì thay đổi?\n\n*Câu hỏi 38.2:* Đĩa compact là một cách tử nhiễu xạ. Ánh sáng phản xạ từ bề mặt của một đĩa compact bao gồm nhiều màu như trên hình 38.14. Các màu và cường độ của chúng phụ thuộc vào hướng của CD so với mắt và so với nguồn sáng. Giải thích hiện tượng này.\n\n#### Trả lời:\nBề mặt của một CD có một rãnh hình xoắn ốc (các rãnh kề nhau có khoảng cách là 1 μm). Vì vậy, bề mặt đĩa đóng vai trò như một cách tử nhiễu xạ. Ánh sáng phản xạ từ các vùng giữa các khe hẹp này chỉ giao thoa chồng\n\n![](images/image16.jpg)\n\nđĩa CD đóng vai trò như cách tử nhiễu xạ đối với ánh sáng trắng và truyền đi các màu khác nhau, theo\n\n*Hình 38.14:* Các vạch rất mảnh, mỗi vạch có độ rộng 1 μm, trên đĩa compact laser tác dụng như một cách tử nhiễu xạ",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.2.2 Sự phân bố cường độ qua cách tử nhiễu xạ",
+      "start_index": 17385,
+      "chunk_index": 19,
+      "chunk_id": "main::chunk::19",
+      "parent_id": "main::section::38.2.2 Sự phân bố cường độ qua cách tử nhiễu xạ",
+      "prev_chunk_id": "main::chunk::18",
+      "next_chunk_id": "main::chunk::20"
+    }
+  },
+  {
+    "page_content": "![](images/image16.jpg)\n\nđĩa CD đóng vai trò như cách tử nhiễu xạ đối với ánh sáng trắng và truyền đi các màu khác nhau, theo\n\n*Hình 38.14:* Các vạch rất mảnh, mỗi vạch có độ rộng 1 μm, trên đĩa compact laser tác dụng như một cách tử nhiễu xạ\n\nkhác nhau. Các màu khác nhau được nhìn thấy trên một phần nào đó của đĩa sẽ thay đổi khi nguồn sáng, trong trường hợp này là CD, hoặc khi thay đổi hướng nhìn. Sự thay đổi hướng nhìn làm cho góc tới hay góc của ánh sáng nhiễu xạ bị thay đổi.\n\n# Bài tập mẫu 38.2:\nÁnh sáng đơn sắc từ một laser heli-neon ( = 632,8 nm) chiếu vuông góc vào một cách tử nhiễu xạ có 6000 khe trên một centimet. Tìm các góc ứng với cực đại bậc nhất và bậc hai.\n\n## Giải:\nQuan sát hình 38.12 và tưởng tượng rằng ánh sáng tới từ bên trái phát ra từ laser helineon. Chúng ta hãy xác định các giá trị thích hợp của góc θ đối với cực đại giao thoa.\n\nKhoảng cách giữa các khe là nghịch đảo của số khe trên mỗi centimet:\n\n$$d = \\frac{1}{6000} \\text{cm} = 1,667.10^{-4} \\text{cm} = 1667 \\text{ nm}$$\n\nGiải phương trình (38.7) đối với sinθ và cực địa bậc nhất ứng với m = 1 để tìm giá trị của góc θ1:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Trả lời:",
+      "start_index": 18175,
+      "chunk_index": 20,
+      "chunk_id": "main::chunk::20",
+      "parent_id": "main::section::Trả lời:",
+      "prev_chunk_id": "main::chunk::19",
+      "next_chunk_id": "main::chunk::21"
+    }
+  },
+  {
+    "page_content": "Khoảng cách giữa các khe là nghịch đảo của số khe trên mỗi centimet:\n\n$$d = \\frac{1}{6000} \\text{cm} = 1,667.10^{-4} \\text{cm} = 1667 \\text{ nm}$$\n\nGiải phương trình (38.7) đối với sinθ và cực địa bậc nhất ứng với m = 1 để tìm giá trị của góc θ1:\n\n$$\\sin \\theta_1 = \\frac{1.\\lambda}{d} = \\frac{632.8 \\text{ nm}}{1667 \\text{ nm}} \\Rightarrow \\theta_1 = 22.31^0$$\n\nLặp lại đối với cực đại bậc hai (m = 2):\n\n$$\\sin \\theta_2 = \\frac{2.\\lambda}{d} = \\frac{2.632,8 \\text{ nm}}{1667 \\text{ nm}} \\Rightarrow \\theta_2 = 49,41^0$$\n\n*Mở rộng:* Điều gì sẽ thay đổi nếu cực đại bậc ba cần được xác định? Có thể xác định được không?\n\n*Trả lời:* Với m = 3 thì sin<sup>3</sup> =1,139. Vì sinθ luôn nhỏ hơn 1, kết quả này không phải là một kết quả hợp lí. Vì vậy, chỉ các cực đại trung tâm, bậc nhất và bậc hai có thể được xác định trong trường hợp này.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 19040,
+      "chunk_index": 21,
+      "chunk_id": "main::chunk::21",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::20",
+      "next_chunk_id": "main::chunk::22"
+    }
+  },
+  {
+    "page_content": "*Trả lời:* Với m = 3 thì sin<sup>3</sup> =1,139. Vì sinθ luôn nhỏ hơn 1, kết quả này không phải là một kết quả hợp lí. Vì vậy, chỉ các cực đại trung tâm, bậc nhất và bậc hai có thể được xác định trong trường hợp này.\n\n# 38.2.3 Một số ứng dụng của cách tử nhiễu xạ\n#### a. Phổ kế cách tử nhiễu xạ\nHình vẽ của một thiết bị đơn giản được sử dụng để đo các góc trong một dạng nhiễu xạ được chỉ ra trên hình 38.15. Thiết bị này là một phổ kế cách tử nhiễu xạ. Ánh sáng di chuyển qua một khe, và một chùm ánh sáng được chuẩn trực chiếu vào cách tử. Ánh sáng nhiễu xạ rời khỏi cách tử tại các góc thoả mãn phương trình (38.7) và một kính viễn vọng\n\nđược sử dụng để quan sát ảnh của khe. Bước sóng có thể được xác định bằng việc đo lường các góc chính xác tại đó ảnh của khe xuất hiện tại các góc khác nhau.\n\nPhổ kế này là một thiết bị được sử dụng trong phổ kế nguyên tử, trong đó ánh sáng từ một nguyên tử được phân tích để tìm các thành phần bước sóng. Các thành phần bước sóng\n\ncó thể được sử dụng nhận dạng nguyên tử. Các phổ nguyên tử sẽ được khảo sát trong chương 42 của phần mở rộng của giáo trình này.\n\n![](images/image17.jpg)\n\n*Hình 38.15:* Quang phổ kế cách tử nhiễu xạ.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 19660,
+      "chunk_index": 22,
+      "chunk_id": "main::chunk::22",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::21",
+      "next_chunk_id": "main::chunk::23"
+    }
+  },
+  {
+    "page_content": "có thể được sử dụng nhận dạng nguyên tử. Các phổ nguyên tử sẽ được khảo sát trong chương 42 của phần mở rộng của giáo trình này.\n\n![](images/image17.jpg)\n\n*Hình 38.15:* Quang phổ kế cách tử nhiễu xạ.\n\n# b. Van cách tử nhiễu xạ\nỨng dụng khác của các cách tử nhiễu xạ là van ánh sáng cách tử − grating light valve (GLV), thiết bị này cạnh tranh với các thiết bị micromirror số (DMDs). GLV là một microchip silicon được lắp vào một dãy băng silicon nitride song song được phủ một lớp bạc mỏng (hình 38.16). Mỗi dãy dài xấp xỉ 20 μm, rộng 5 μm và được tách biệt với lớp silicon bởi một lớp không khí có độ dày là bậc của 100 nm . Khi không có điện thế, tất cả các dãy ở cùng mức nhau. Trong trường hợp này, dãy băng đóng vai trò như một bề mặt phẳng, phản xạ ánh sáng tới.\n\n![](images/image18.jpg)\n\n**Hình 38.16:** Một phần nhỏ của van ánh sáng cách tử. Băng phản chiếu xen kẽ ở các mức hoạt động khác nhau như một cách tử nhiễu xạ, cung cấp khả năng điều khiển tốc độ rất cao của hướng ánh sáng đến một thiết bị kỹ thuật số.\n\nKhi có điện thế áp vào giữa một dãy băng và điện cực trên lớp silicon, một lực điện",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "a. Phổ kế cách tử nhiễu xạ",
+      "start_index": 20634,
+      "chunk_index": 23,
+      "chunk_id": "main::chunk::23",
+      "parent_id": "main::section::a. Phổ kế cách tử nhiễu xạ",
+      "prev_chunk_id": "main::chunk::22",
+      "next_chunk_id": "main::chunk::24"
+    }
+  },
+  {
+    "page_content": "Khi có điện thế áp vào giữa một dãy băng và điện cực trên lớp silicon, một lực điện\n\nxuất hiện kéo dãy băng hạ xuống, gần hơn với lớp silicon. Các dãy băng có thể được luân phiên kéo xuống trong khi các khoảng không gian giữa chúng được nâng cao. Vì vậy, các dãy băng đóng vai trò như một cách tử nhiễu xạ mà ở đó sự giao thoa tăng cường đối với một bước sóng ánh sáng cụ thể có thể được hướng vào một màn hoặc các hệ hiển thị quang học\n\nkhác. Nếu ba thiết bị − một cho ánh sáng đỏ, một cho ánh sáng xanh da trời, và một cho ánh sáng xanh lá cây – được sử dụng thì việc hiển thị toàn màu có thể thực hiện.\n\nBên cạnh việc sử dụng trong hiển thị video, GLV còn được ứng dụng trong công nghệ cảm biến điều hướng quang học laser, việc in thương mại từ máy tính thành tấm, và các loại thiết bị chụp ảnh khác.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "b. Van cách tử nhiễu xạ",
+      "start_index": 21657,
+      "chunk_index": 24,
+      "chunk_id": "main::chunk::24",
+      "parent_id": "main::section::b. Van cách tử nhiễu xạ",
+      "prev_chunk_id": "main::chunk::23",
+      "next_chunk_id": "main::chunk::25"
+    }
+  },
+  {
+    "page_content": "Bên cạnh việc sử dụng trong hiển thị video, GLV còn được ứng dụng trong công nghệ cảm biến điều hướng quang học laser, việc in thương mại từ máy tính thành tấm, và các loại thiết bị chụp ảnh khác.\n\n#### c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer\nMột ứng dụng thú vị khác của cách tử nhiễu xạ là phương pháp toàn ảnh (holography), sử dụng trong việc tạo ảnh ba chiều của vật. Nguyên lý vật lý của phương pháp toàn ảnh được phát triển bởi Dennis Gabor (1900-1979) vào năm 1948 và giúp ông giành giải Nobel Vật lý vào năm 1971. Sự yêu cầu về ánh sáng kết hợp cho phương pháp toàn ảnh đã trì hoãn thành phương pháp tạo ảnh của Gabor cho đến khi laser được phát triển vào những năm 1960. Hình 38.17 cho thấy một ảnh toàn ký (ảnh ba chiều – hologram) nhìn từ hai vị trí khác nhau và đặc tính ba chiều của ảnh. Lưu ý sự khác nhau khi nhìn ảnh thông qua kính khuếch đại trong các hình 38.17a và 38.17b.\n\n![](images/image19.jpg)\n\n![](images/image20.jpg)\n\n**Hình 38.17:** Bảng mạch được hiển thị ở hai chế độ xem khác nhau.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "b. Van cách tử nhiễu xạ",
+      "start_index": 22264,
+      "chunk_index": 25,
+      "chunk_id": "main::chunk::25",
+      "parent_id": "main::section::b. Van cách tử nhiễu xạ",
+      "prev_chunk_id": "main::chunk::24",
+      "next_chunk_id": "main::chunk::26"
+    }
+  },
+  {
+    "page_content": "![](images/image19.jpg)\n\n![](images/image20.jpg)\n\n**Hình 38.17:** Bảng mạch được hiển thị ở hai chế độ xem khác nhau.\n\nHình 38.18 cho thấy cách mà một hologram được tạo ra. Ánh sáng từ nguồn laser được tách thành hai phần bởi một gương mạ bạc tại B. Một phần của chùm tia phản xạ từ vật được chụp ảnh và đập vào một phim ảnh. Phần còn lại của chùm tia bị phân kỳ bởi kính L2, phản xạ từ các gương M<sup>1</sup> và M2, và cuối cùng đập vào phim. Hai chùm tia chồng chập lên nhau để tạo thành một dạng giao thoa cực kỳ phức tạp trên phim. Dạng giao thoa này có thể được tạo ra chỉ khi mối quan hệ về pha của hai sóng là hằng số thông qua sự phơi sáng của phim. Điều kiện này đạt được bằng việc chiếu vào màn hình chùm ánh sáng thông qua một pinhole hoặc sử dụng bức xạ laser kết hợp. Hologram thu nhận không chỉ cường độ của ánh sáng tán xạ từ vật (giống như trong phương pháp chụp ảnh truyền thống), mà còn ghi nhận sự khác biệt về pha giữa chùm tia tham chiếu (reference light) và chùm tia tán xạ từ vật. Do bởi sự khác nhau\n\nvề pha này, một dạng giao thoa được hình thành và tạo thành ảnh mà trong đó tất cả thông tin ba chiều được bảo toàn.\n\nAl Race\n\n2025-09-28 21.19.18 AI Race",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "start_index": 23169,
+      "chunk_index": 26,
+      "chunk_id": "main::chunk::26",
+      "parent_id": "main::section::c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "prev_chunk_id": "main::chunk::25",
+      "next_chunk_id": "main::chunk::27"
+    }
+  },
+  {
+    "page_content": "về pha này, một dạng giao thoa được hình thành và tạo thành ảnh mà trong đó tất cả thông tin ba chiều được bảo toàn.\n\nAl Race\n\n2025-09-28 21.19.18 AI Race\n\n2025-09-28 21.19.18\\_AI Race\n\n![](images/image21.jpg)\n\n*Hình 38.18:* Phương pháp chụp ảnh Hologram.\n\nTrong một ảnh được chụp bằng phương pháp bình thường, môt kính được sử dụng để hội tụ ảnh để mỗi điểm trên vật tương ứng với một điểm trên ảnh. Chú ý rằng kính không được sử dụng trong hình 38.18 để hội tụ ánh sáng lên phim. Vì vậy, ánh sáng từ mỗi điểm trên vật sẽ xuất hiện tại tất cả các điểm trên phim. Vì vậy, mỗi vùng của phim trong đó hologram được ghi nhận sẽ chứa đựng thông tin về tất cả các điểm được chiếu trên vật, điều này sẽ đưa đến một kết quả đáng chú ý: nếu một vùng nhỏ của hologram được cắt ra từ phim, ảnh hoàn chỉnh của vật có thể được tạo ra từ phần nhỏ này. (Chất lượng của ảnh bị giảm xuống nhưng một ảnh hoàn chỉnh được tạo thành).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "start_index": 24195,
+      "chunk_index": 27,
+      "chunk_id": "main::chunk::27",
+      "parent_id": "main::section::c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "prev_chunk_id": "main::chunk::26",
+      "next_chunk_id": "main::chunk::28"
+    }
+  },
+  {
+    "page_content": "Một hologram được quan sát tốt nhất bằng việc cho chùm ánh sáng kết hợp di chuyển qua một tấm phim giống như quan sát ngược lại dọc theo hướng từ đó chùm ánh sáng được phát ra. Hình ảnh giao thoa trên phim đóng vai trò như là một cách tử nhiễu xạ. Hình 38.19 cho thấy 2 tia sáng đập vào và di chuyển qua phim. Đối với mỗi tia, các tia m = 0 và m = 1 trên hình ảnh nhiễu xạ cho thấy xuất hiện từ bên phải của phim. Các tia m = +1 hội tụ để tạo thành một ảnh thực của màn và đây không phải là được quan sát một cách bình thường. Bằng việc mở rộng các tia sáng tương ứng với m = −1 về phía sau phim, sẽ xuất hiện một ảnh ảo tại đó và ánh sáng tới từ đó sẽ giống với ánh sáng tới từ vật thật khi phim được phơi sáng. Ảnh này là ảnh được nhìn thấy khi quan sát thông qua phim toàn ảnh (holographic film).\n\nPhương pháp toàn ảnh có một vài ứng dụng. Chúng ta có thể có một hologram trên thẻ tín dụng. Loại hologram đặc biệt này được gọi là *rainbow hologram* và được thiết kế để được quan sát trong ánh sáng trắng được phản xạ.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "start_index": 25111,
+      "chunk_index": 28,
+      "chunk_id": "main::chunk::28",
+      "parent_id": "main::section::c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "prev_chunk_id": "main::chunk::27",
+      "next_chunk_id": "main::chunk::29"
+    }
+  },
+  {
+    "page_content": "Phương pháp toàn ảnh có một vài ứng dụng. Chúng ta có thể có một hologram trên thẻ tín dụng. Loại hologram đặc biệt này được gọi là *rainbow hologram* và được thiết kế để được quan sát trong ánh sáng trắng được phản xạ.\n\n# d. Nhiễu xạ của tia X bởi các tinh thể\nVề nguyên tắc, bước sóng của bất kỳ sóng điện từ có thể được xác định nếu có một cách tử thích hợp (các rãnh được chia nhỏ ở mức độ bước sóng). Tia X, được khám phá bởi",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "start_index": 25912,
+      "chunk_index": 29,
+      "chunk_id": "main::chunk::29",
+      "parent_id": "main::section::c. Hologram** − **Kỹ thuật chụp ảnh giao thoa Lazer",
+      "prev_chunk_id": "main::chunk::28",
+      "next_chunk_id": "main::chunk::30"
+    }
+  },
+  {
+    "page_content": "# d. Nhiễu xạ của tia X bởi các tinh thể\nVề nguyên tắc, bước sóng của bất kỳ sóng điện từ có thể được xác định nếu có một cách tử thích hợp (các rãnh được chia nhỏ ở mức độ bước sóng). Tia X, được khám phá bởi\n\nWilhelm Roentgen (1845−1923) vào năm 1895, là sóng điện từ có bước sóng rất ngắn (ở mức 0,1 nm). Sẽ không thể tạo một cách tử có khoảng cách giữa các khe nhỏ đến mức đó bằng quá trình cắt được miêu tả ở phần mở đầu của phần 38.4. Tuy nhiên, khoảng cách ở mức độ nguyên tử trong vật rắn lại vào khoảng 0,1 nm. Năm 1913, Max von Laue (1879−1960) đề nghị rằng mạng nguyên tử bình thường trong tinh thể có thể đóng vai trò như một cách tử nhiễu xạ ba chiều đối với tia X. Những thí nghiệm sau đó đã chứng minh dự đoán này. Hình dạng nhiễu xạ từ tinh thể trông phức tạp do bởi tính chất ba chiều của cấu trúc tinh thể. Tuy nhiên, sự nhiễu xạ tia X đã chứng minh là một phương pháp hiệu quả trong việc giải thích các cấu trúc này và trong việc nghiên cứu cấu trúc vật chất.\n\n![](images/image22.jpg)\n\n*Hình 38.20:* Nhiễu xạ tia X qua tinh thể.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "d. Nhiễu xạ của tia X bởi các tinh thể",
+      "start_index": 26133,
+      "chunk_index": 30,
+      "chunk_id": "main::chunk::30",
+      "parent_id": "main::section::d. Nhiễu xạ của tia X bởi các tinh thể",
+      "prev_chunk_id": "main::chunk::29",
+      "next_chunk_id": "main::chunk::31"
+    }
+  },
+  {
+    "page_content": "![](images/image22.jpg)\n\n*Hình 38.20:* Nhiễu xạ tia X qua tinh thể.\n\nHình 38.20 cho thấy một bố trí thực nghiệm trong việc quan sát nhiễu xạ tia X từ một tinh thể. Một chùm tia X đơn sắc được chuẩn trực chiếu vào một tinh thể. Các chùm tia nhiễu xạ có cường độ mạnh trong các hướng xác định, tương ứng với sự giao thoa tăng cường từ các sóng phản xạ từ các lớp của nguyên tử trong tinh thể. Các chùm tia nhiễu xạ, có thể được ghi nhận bằng một tấm phim, tạo thành một mảng các vết được gọi là hình dạng Laue giống như trên hình 38.21a. Cấu trúc tinh thể có thể được xác định bằng việc phân tích vị trí và cường độ của các vết khác nhau trên hình ảnh nhiễu xạ này. Hình 38.21b cho thấy hình ảnh Laue từ tinh thể enzyme, sử dụng một phạm vi rộng lớn các bước sóng để hình ảnh này được tạo ra.\n\n![](images/image23.jpg)\n\n*Hình 38.21:* (a) Ảnh Laue tinh thể đơn của nguyên tố Be, (b) Ảnh Laue của enzym Rubisco.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "d. Nhiễu xạ của tia X bởi các tinh thể",
+      "start_index": 27113,
+      "chunk_index": 31,
+      "chunk_id": "main::chunk::31",
+      "parent_id": "main::section::d. Nhiễu xạ của tia X bởi các tinh thể",
+      "prev_chunk_id": "main::chunk::30",
+      "next_chunk_id": "main::chunk::32"
+    }
+  },
+  {
+    "page_content": "![](images/image23.jpg)\n\n*Hình 38.21:* (a) Ảnh Laue tinh thể đơn của nguyên tố Be, (b) Ảnh Laue của enzym Rubisco.\n\nSự sắp xếp của các nguyên tử trong một tinh thể muối natriclorua (NaCl) được chỉ ra trên hình 38.22. Mỗi ô đơn vị (khối hình học lặp lại trong tinh thể) là một hình lập phương có độ dài cạnh là a. Một sự khảo sát cẩn thận cấu trúc NaCl cho thấy rằng các ion nằm trên các mặt phằng rời rạc (phần được bôi đen trên hình 38.22). Bây giờ giả sử rằng chùm tia X tới hợp thành một góc θ với một trong các mặt phẳng được chỉ ra trên hình 38.23. Chùm tia có thể được phản xạ từ cả mặt phẳng trên và mặt phẳng dưới nhưng chùm tia phản xạ từ mặt phẳng dưới di chuyển xa hơn chùm tia phản xạ từ mặt phẳng trên. Sự khác nhau của quãng đường hiệu dụng là 2dsin . Hai chùm tia giao thoa tăng cường nhau khi sự khác nhau của quãng đường bằng với số nguyên lần bước sóng . Kết quả giống như vậy vẫn đúng khi ánh sáng phản xạ từ một tập hợp toàn bộ các mặt\n\n*Hình 38.22:* Cấu trúc lập thể của NaCl.\n\nphẳng song song. Vì vậy, điều kiện để có giao thoa tăng cường (cực đại trên chùm tia phản xạ) là\n\n$$2 d \\sin \\theta = m \\lambda$$\n, với m = 1,2,3 ... (38.8)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "d. Nhiễu xạ của tia X bởi các tinh thể",
+      "start_index": 27905,
+      "chunk_index": 32,
+      "chunk_id": "main::chunk::32",
+      "parent_id": "main::section::d. Nhiễu xạ của tia X bởi các tinh thể",
+      "prev_chunk_id": "main::chunk::31",
+      "next_chunk_id": "main::chunk::33"
+    }
+  },
+  {
+    "page_content": "*Hình 38.22:* Cấu trúc lập thể của NaCl.\n\nphẳng song song. Vì vậy, điều kiện để có giao thoa tăng cường (cực đại trên chùm tia phản xạ) là\n\n$$2 d \\sin \\theta = m \\lambda$$\n, với m = 1,2,3 ... (38.8)\n\nĐiều kiện này còn gọi là **định luật Bragg,** được đặt theo tên W. L. Bragg (1890−1971), người đầu tiên rút ra được mối liên hệ này. Nếu bước sóng và góc nhiễu xạ được đo, phương trình (38.8) có thể được sử dụng để tính khoảng các giữa các mặt phẳng nguyên tử.\n\n![](images/image24.jpg)\n\nHình 38.23: Một chùm tia X tới chịu sự nhiễu xạ bởi cấu trúc trong tinh thể.\n\nAl Race\n\n2025-09-2821.19.18\\_AIRace\n\n2025-09-28 21.19.18\\_AI Race\n\n## 38.3 Sự phân cực của sóng ánh sáng\n# 38.3.1 Ánh sáng không phân cực\nTrong chương 34, chúng ta đã miêu tả tính chất theo phương ngang của ánh sáng và tất cả các sóng điện từ. Sự phân cực, được thảo luận trong phần này, là bằng chứng cho tính chất ngang của sóng ánh sáng.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "d. Nhiễu xạ của tia X bởi các tinh thể",
+      "start_index": 28862,
+      "chunk_index": 33,
+      "chunk_id": "main::chunk::33",
+      "parent_id": "main::section::d. Nhiễu xạ của tia X bởi các tinh thể",
+      "prev_chunk_id": "main::chunk::32",
+      "next_chunk_id": "main::chunk::34"
+    }
+  },
+  {
+    "page_content": "## 38.3 Sự phân cực của sóng ánh sáng\n# 38.3.1 Ánh sáng không phân cực\nTrong chương 34, chúng ta đã miêu tả tính chất theo phương ngang của ánh sáng và tất cả các sóng điện từ. Sự phân cực, được thảo luận trong phần này, là bằng chứng cho tính chất ngang của sóng ánh sáng.\n\nMột chùm ánh sáng bình thường chứa đựng một số lượng lớn các sóng được phát ra bởi các nguyên tử của nguồn sáng. Mỗi nguyên tử tạo ra một sóng có hướng cụ thể của vector điện trường E , tương ứng với hướng của sự dao động nguyên tử. Hướng của sự phân cực của mỗi sóng riêng lẻ được định nghĩa là hướng mà theo đó điện trường đang dao động. Trong hình *Hình 38.24:* Sự phân cực của sóng ánh sáng.\n\n![](images/image25.jpg)\n\n38.24, hướng này nằm dọc theo trục y*.* Tất cả các sóng điện từ riêng lẻ chuyển động dọc theo phương x có vector song song với mặt phẳng yz*,* nhưng vector này có thể hợp thành",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3 Sự phân cực của sóng ánh sáng",
+      "start_index": 29494,
+      "chunk_index": 34,
+      "chunk_id": "main::chunk::34",
+      "parent_id": "main::section::38.3 Sự phân cực của sóng ánh sáng",
+      "prev_chunk_id": "main::chunk::33",
+      "next_chunk_id": "main::chunk::35"
+    }
+  },
+  {
+    "page_content": "![](images/image25.jpg)\n\n38.24, hướng này nằm dọc theo trục y*.* Tất cả các sóng điện từ riêng lẻ chuyển động dọc theo phương x có vector song song với mặt phẳng yz*,* nhưng vector này có thể hợp thành\n\nmột góc bất kỳ so với trục y*.* Bởi vì sự dao động xảy ra theo tất cả các hướng, vì vậy sóng điện từ sau cùng là chồng chập của sóng dao động từ nhiều hướng. Kết quả là một chùm sáng không phân cực, được chỉ ra trên hình 38.25a. Hướng lan truyền của sóng trong hình này vuông góc với mặt phẳng của trang giấy. Các mũi tên cho thấy một số hướng của vector điện trường của các sóng riêng lẻ tạo thành sóng tổng hợp. Tại một điểm bất kỳ và trong một thời gian ngắn, tất cả các vector điện trường riêng lẻ này sẽ tổng hợp lại để tạo thành vector điện trường tổng.\n\n![](images/image26.jpg)\n\n![](images/image27.jpg)\n\n*Hình 38.25:* (a) Ánh sáng không phân cực được biểu\n\ndiễn theo hướng truyền. Điện trường ngang dao động theo mọi hướng có xác suất bằng nhau, (b) Một chùm ánh sáng phân cực ban đầu với điện trường dao động theo phương thẳng đứng.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.1 Ánh sáng không phân cực",
+      "start_index": 30166,
+      "chunk_index": 35,
+      "chunk_id": "main::chunk::35",
+      "parent_id": "main::section::38.3.1 Ánh sáng không phân cực",
+      "prev_chunk_id": "main::chunk::34",
+      "next_chunk_id": "main::chunk::36"
+    }
+  },
+  {
+    "page_content": "![](images/image26.jpg)\n\n![](images/image27.jpg)\n\n*Hình 38.25:* (a) Ánh sáng không phân cực được biểu\n\ndiễn theo hướng truyền. Điện trường ngang dao động theo mọi hướng có xác suất bằng nhau, (b) Một chùm ánh sáng phân cực ban đầu với điện trường dao động theo phương thẳng đứng.\n\nNhư được chú ý trong mục 34.3, một sóng được xem là phân cực tuyến tính nếu như vector điện trường được tao thành dao động theo cùng hướng tại một điểm bất kỳ tại mọi lúc như được chỉ ra trên hình 38.25b. (Ngoài ra, vector này còn được miêu tả như bị phân cực phẳng hoặc đơn giản chỉ là bị phân cực). Mặt phẳng được tạo thành bởi và hướng lan truyền được gọi là mặt phẳng lan truyền của sóng. Nếu sóng trong hình 38.24 đại diện cho sóng được tạo thành từ tất cả các sóng đơn, mặt phẳng phân cực là mặt phẳng xy*.*\n\nMột chùm tia phân cực tuyến tính có thể đạt được từ một chùm tia không phân cực bằng việc bỏ đi tất cả các sóng từ chùm tia ngoại trừ các sóng có vector điện trường dao động trong một mặt phẳng đơn. Bây giờ, chúng ta sẽ thảo luận bốn quá trình được sử dụng để tạo ra ánh sáng phân cực từ ánh sáng không phân cực.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.1 Ánh sáng không phân cực",
+      "start_index": 30930,
+      "chunk_index": 36,
+      "chunk_id": "main::chunk::36",
+      "parent_id": "main::section::38.3.1 Ánh sáng không phân cực",
+      "prev_chunk_id": "main::chunk::35",
+      "next_chunk_id": "main::chunk::37"
+    }
+  },
+  {
+    "page_content": "# 38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc\nKỹ thuật thông thường nhất dùng để tạo ra ánh sáng phân cực là sử dụng một vật liệu có tính truyền sóng. Điện trường của sóng truyền qua này dao động trong một mặt phẳng song song với một hướng xác định. Bên cạnh đó, vật liệu được sử dụng này sẽ hấp thụ sóng có điện trường dao động theo các hướng khác.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "start_index": 32040,
+      "chunk_index": 37,
+      "chunk_id": "main::chunk::37",
+      "parent_id": "main::section::38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "prev_chunk_id": "main::chunk::36",
+      "next_chunk_id": "main::chunk::38"
+    }
+  },
+  {
+    "page_content": "Năm 1938, E. H. Land (1909−1991) đã phát hiện một loại vật liệu mà sau đó ông ấy gọi là *Polaroid*. Vật liệu này phân cực ánh sáng thông qua sự hấp thụ có chọn lọc. Vật liệu này được chế tạo thành các tấm hydrocarbon chuỗi dài và mỏng. Các tấm này được kéo căng trong suốt quá trình sản xuất để các phân tử chuỗi dài được căng chỉnh thẳng hàng. Sau khi nhúng các tấm hydrocarbon này vào dung dịch chứa iốt, các phân tử trở thành các vật dẫn điện tốt. Sự dẫn điện xảy ra chủ yếu dọc theo các chuỗi hydrocarbon bởi vì các electron có thể di chuyển một cách dễ dàng dọc theo các chuỗi. Nếu ánh sáng có vector điện trường song song với các chuỗi chiếu vào vật liệu, điện trường gia tốc các electron dọc theo các chuỗi và năng lương được hấp thụ từ bức xạ. Vì vậy, ánh sáng không truyền qua vật liệu. Ánh sáng có vector điện trường vuông góc với các chuỗi truyền qua vật liệu bởi vì các electron không thể di chuyển từ phân tử này tới phân tử khác. Vì vậy, khi ánh sáng không phân cực chiếu vào vật liệu, ánh sáng thoát ra bị phân cực vuông góc với các chuỗi phân tử.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "start_index": 32394,
+      "chunk_index": 38,
+      "chunk_id": "main::chunk::38",
+      "parent_id": "main::section::38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "prev_chunk_id": "main::chunk::37",
+      "next_chunk_id": "main::chunk::39"
+    }
+  },
+  {
+    "page_content": "Thông thường hướng vuông góc với các chuỗi phân tử được xem như là trục truyền qua. Trong một kính phân cực lý tưởng, tất cả ánh sáng với song song với trục truyền qua thì được truyền qua và tất cả ánh sáng với vuông góc với trục truyền qua thì bị hấp thụ.\n\n![](images/image28.jpg)\n\n*Hình 38.26:* Phân cực ánh sáng bằng phương pháp hấp thụ chọn lọc.\n\nHình 38.26 thể hiện một chùm ánh sáng không phân cực chiếu vào một tấm phân cực đầu tiên, gọi là kính phân cực. Bởi vì trục truyền qua được định hướng theo phương thẳng đứng trong hình, ánh sáng truyền qua tấm phân cực này sẽ bị phân cực thoe phương thẳng đứng. Tấm phân cực thứ hai, được gọi là thiết bị phân tích, chắn chùm tia. Trong hình 38.26, trục truyền qua của thiết bị phân tích được đặt tại một góc θ so với trục phân cực. Vector điện trường của chùm tia truyền qua đầu tiên là E0 . Thành phần vuông góc với trục phân tích\n\nsẽ bị hấp thụ hoàn toàn. Thành phần song song với trục phân tích, truyền qua thiết bị phân tích, là E<sup>0</sup> cos. Bởi vì cường độ của chùm tia truyền qua thay đổi như là bình phương của biên độ nên có thể kết luận rằng cường độ I của chùm tia phân cực truyền qua thiết bị phân tích thay đổi như sau,",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "start_index": 33458,
+      "chunk_index": 39,
+      "chunk_id": "main::chunk::39",
+      "parent_id": "main::section::38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "prev_chunk_id": "main::chunk::38",
+      "next_chunk_id": "main::chunk::40"
+    }
+  },
+  {
+    "page_content": "$$I = I_{\\text{max}} \\cos^2 \\theta \\tag{38.9}$$\n\nở đây, Imax là cường độ của chùm tia phân cực chiếu vào thiết bị phân tích. Công thức này,\n\nđược biết đến là quy luật Malus, áp dụng đối với hai vật liệu phân cực bất kỳ có các trục truyền qua hợp với nhau thành một góc θ. Công thức này cho thấy rằng cường độ của chùm tia truyền qua đạt cực đại khi các trục truyền qua song song ( = 0 hoÆc 180<sup>0</sup> ) và bằng không (hấp thụ hoàn toàn bởi thiết bị phân tích) khi các trục truyền qua vuông góc với nhau. Sự thay đổi trong cường độ truyền qua này thông qua một cặp các tấm phân cực được minh hoạ trong hình 38.27. Bởi vì giá trị trung bình của cos<sup>2</sup> =1 2 , cường độ của ánh sáng không phân cực ban đầu bị giảm bởi một hệ số của 1/2 khi ánh sáng truyền qua một kính phân cực lý tưởng.\n\n![](images/image29.jpg)\n\n![](images/image30.jpg)\n\n*Hình 38.27:* Cường độ ánh sáng truyền qua hai bản phân cực phụ thuộc vào tính định hướng tương đối của các trục lan truyền. Mũi tên màu đỏ biểu thị trục truyền của các bản phân cực.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "start_index": 34649,
+      "chunk_index": 40,
+      "chunk_id": "main::chunk::40",
+      "parent_id": "main::section::38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "prev_chunk_id": "main::chunk::39",
+      "next_chunk_id": "main::chunk::41"
+    }
+  },
+  {
+    "page_content": "![](images/image29.jpg)\n\n![](images/image30.jpg)\n\n*Hình 38.27:* Cường độ ánh sáng truyền qua hai bản phân cực phụ thuộc vào tính định hướng tương đối của các trục lan truyền. Mũi tên màu đỏ biểu thị trục truyền của các bản phân cực.\n\n## 38.3.3 Sự phân cực bằng sự phản xạ\nKhi một chùm ánh sáng không phân cực bị phản xạ từ một bề mặt, sự phân cực của ánh sáng phản xạ phụ thuộc vào góc tới. Nếu góc tới là 0<sup>0</sup> thì chùm tia phản xạ không phân cực. Đối với các góc tới khác ánh sáng phản xạ sẽ bị phân cực đến một mức độ nào đó, và đối với một góc tới cụ thể, ánh sáng phản xạ sẽ bị phân cực hoàn toàn. Chúng ta hãy khảo sát sự phản xạ tại góc đặc biệt đó.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "start_index": 35448,
+      "chunk_index": 41,
+      "chunk_id": "main::chunk::41",
+      "parent_id": "main::section::38.3.2 Sự phân cực bằng sự hấp thụ có chọn lọc",
+      "prev_chunk_id": "main::chunk::40",
+      "next_chunk_id": "main::chunk::42"
+    }
+  },
+  {
+    "page_content": "Giả sử một chùm sáng không phân cực chiếu vào một bề mặt như minh hoạ trong hình 38.28a. Mỗi vector điện trường có thể được phân tích thành hai thành phần: một song song với bề mặt (và vuông góc với trang giấy như trong hình 38.28, được thể hiện bởi các chấm) và phần còn lại (được minh hoạ bởi các mũi tên màu cam) vuông góc với cả thành phần đầu tiên và với hướng lan truyền sóng. Vì vậy, sự phân cực của toàn bộ chùm tia có thể được diễn tả bởi hai thành phần điện trường theo các hướng này. Thành phần song song được minh hoạ bởi các chấm, phản xạ mạnh hơn nhiều so với thành phần còn lại được thể hiện bởi các dấu mũi tên, tạo ra một chùm tia phản xạ phân cực không hoàn toàn. Hơn nữa, chùm tia khúc xạ cũng bị phân cực không hoàn toàn.\n\nBây giờ giả sử rằng góc tới θ<sup>1</sup> thay đổi đến khi góc giữa chùm tia phản xạ và chùm tia khúc xạ là 90<sup>0</sup> như được minh hoạ trên hình 38.28b. Tại góc tới này, chùm tia phản xạ bị phân cực hoàn toàn (với vector điện trường song song với bề mặt) và chùm tia khúc xạ vẫn bị phân cực không hoàn toàn. Góc tới tại đó sự phân cực này xảy ra được gọi là góc phân cực θp.\n\n![](images/image31.jpg)\n\n![](images/image32.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.3 Sự phân cực bằng sự phản xạ",
+      "start_index": 36114,
+      "chunk_index": 42,
+      "chunk_id": "main::chunk::42",
+      "parent_id": "main::section::38.3.3 Sự phân cực bằng sự phản xạ",
+      "prev_chunk_id": "main::chunk::41",
+      "next_chunk_id": "main::chunk::43"
+    }
+  },
+  {
+    "page_content": "![](images/image31.jpg)\n\n![](images/image32.jpg)\n\n*Hình 38.28:* (a) Phân cực một phần, (b) Phân cực toàn phần.\n\n# Tóm tắt chương 38\n*Nhiễu xạ* là độ lệch hướng của ánh sáng từ một đường thẳng khi ánh sáng đi qua một khẩu độ hoặc xung quanh một chướng ngại vật. Nhiễu xạ là do bản chất sóng tự nhiên của ánh sáng.\n\nMô hình *nhiễu xạ Fraunhofer* được tạo ra bởi một khe có chiều rộng là a và đặt cách màn một khoảng không đổi, cường độ sáng của các cực đại và cực tiểu rất nhỏ hơn so với cường độ sáng của cực đại chính giữa. Các góc mà tại đó hình ảnh nhiễu xạ có cường độ bằng tối không, tương ứng với cực tiểu nhiễu xạ, được xác định bởi:\n\n$$\\sin \\theta_{t\\acute{0}i} = m \\frac{\\lambda}{a}, \\text{ v\\'oi } m = \\pm 1, \\pm 2, \\pm 3...$$\n (38.1)\n\n*Tiêu chuẩn Rayleigh*, điều kiện giới hạn về độ phân giải, cho biết hai ảnh được tạo thành bởi một khẩu độ chỉ có thể phân biệt được nếu cực đại trung tâm của ảnh nhiễu xạ này rơi đúng vào cực tiểu thứ nhất của ảnh nhiễu xạ kia. Góc giới hạn của độ phân giải tối thiểu qua khe có độ rộng a là:\n\n$$\\theta_{min} = \\frac{\\lambda}{a}$$\n\nGóc giới hạn của độ phân giải cho khẩu độ tròn là:\n\n6\n\nAl Race\n\n2025-09-2821.19.18\\_AIRace\n\n2025-09-28 21.19.18\\_AI Race",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "38.3.3 Sự phân cực bằng sự phản xạ",
+      "start_index": 37239,
+      "chunk_index": 43,
+      "chunk_id": "main::chunk::43",
+      "parent_id": "main::section::38.3.3 Sự phân cực bằng sự phản xạ",
+      "prev_chunk_id": "main::chunk::42",
+      "next_chunk_id": "main::chunk::44"
+    }
+  },
+  {
+    "page_content": "$$\\theta_{min} = \\frac{\\lambda}{a}$$\n\nGóc giới hạn của độ phân giải cho khẩu độ tròn là:\n\n6\n\nAl Race\n\n2025-09-2821.19.18\\_AIRace\n\n2025-09-28 21.19.18\\_AI Race\n\n$$\\theta_{\\min} = 1,22 \\frac{\\lambda}{D} \\tag{38.6}$$\n\nvới D là đường kính của khẩu độ.\n\n*Cách tử nhiễu xạ*, bao gồm một hệ thống gồm N khe hẹp giống hệt nhau với độ rộng của mỗi khe là a, khoảng cách giữa hai khe liền kề là d, được đặt cách đều nhau với khoảng cách giữa hai khe liên tiếp là (chu kỳ của cách tử). Cách tử có cấu tạo rất tinh vi, trên mỗi milimet chiều dài có đến hàng trăm khe. Điều kiện để đạt cường độ cực đại trong ảnh giao thoa qua cách tử nhiễu xạ là:\n\n$$d\\sin\\theta_{sáng} = m\\lambda, \\text{ với } m = 0, \\pm 1, \\pm 2, \\pm 3...$$\n (38.7)\n\nKhi ánh sáng bị phân cực có cường độ cực đại Imax được phát ra bởi bộ phân cực và sau đó đến bộ phân tích, ánh sáng truyền qua bộ phân tích có cường độ I giữa trục phân cực và trục truyền phân tích. cos , trong đó là góc",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tóm tắt chương 38",
+      "start_index": 38279,
+      "chunk_index": 44,
+      "chunk_id": "main::chunk::44",
+      "parent_id": "main::section::Tóm tắt chương 38",
+      "prev_chunk_id": "main::chunk::43",
+      "next_chunk_id": "main::chunk::45"
+    }
+  },
+  {
+    "page_content": "Khi ánh sáng bị phân cực có cường độ cực đại Imax được phát ra bởi bộ phân cực và sau đó đến bộ phân tích, ánh sáng truyền qua bộ phân tích có cường độ I giữa trục phân cực và trục truyền phân tích. cos , trong đó là góc\n\nNhìn chung, ánh sáng phản xạ bị phân cực một phần. Tuy nhiên, ánh sáng phản xạ bị phân cực hoàn toàn khi góc tới tới (góc hợp bởi chùm tia khúc xạ và phản xạ) là 90<sup>0</sup> . Góc tới này được gọi là *góc phân cực θ<sup>p</sup>* khi nó thỏa mãn *quy luật Brewster*:\n\n$$\\tan \\theta_{p} = \\frac{n_2}{n_1} \\tag{38.10}$$\n\ntrong đó, n<sup>1</sup> là chiếc suất khúc xạ của môi trường ánh sáng tới, n<sup>2</sup> là chiết suất khúc xạ của môi trường phản xạ.\n\n![](images/image33.jpg)\n\n![](images/image34.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tóm tắt chương 38",
+      "start_index": 39002,
+      "chunk_index": 45,
+      "chunk_id": "main::chunk::45",
+      "parent_id": "main::section::Tóm tắt chương 38",
+      "prev_chunk_id": "main::chunk::44",
+      "next_chunk_id": null
+    }
+  }
+]

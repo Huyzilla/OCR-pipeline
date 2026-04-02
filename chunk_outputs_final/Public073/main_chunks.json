@@ -1,0 +1,86 @@
+[
+  {
+    "page_content": "# Public_073\n\n## 1. Bối cảnh và động lực\nTrong ngành y tế, việc ứng dụng trí tuệ nhân tạo (AI) vào chẩn đoán, dự đoán và phân tích dữ liệu bệnh nhân ngày càng phổ biến. Tuy nhiên, dữ liệu y tế thường chứa thông tin cá nhân cực kỳ nhạy cảm (hồ sơ bệnh án, hình ảnh y khoa, kết quả xét nghiệm), chịu ràng buộc bởi các quy định nghiêm ngặt như HIPAA (Mỹ), GDPR (châu Âu) và các tiêu chuẩn bảo mật dữ liệu quốc gia.\n\nVấn đề: Các bệnh viện, phòng khám và tổ chức nghiên cứu muốn hợp tác để xây dựng mô hình AI có độ chính xác cao, nhưng không thể chia sẻ dữ liệu thô do rào cản pháp lý và đạo đức.\n\nGiải pháp: Học Liên Kết (Federated Learning – FL) cho phép huấn luyện mô hình chung trên nhiều nguồn dữ liệu phân tán mà không cần chuyển dữ liệu ra khỏi cơ sở lưu trữ cục bộ.\n\n#### 2. Federated learning là gì?\nFederated Learning là một phương pháp nhằm đào tạo các mô hình AI mà không cần bất kỳ ai nhìn thấy hoặc tác động vào dữ liệu của bạn. Điều này giúp bạn có thể sử dụng thông tin mà không cần chia sẻ dữ liệu thật sự, để phục vụ cho các ứng dụng AI mới.\n\n#### 3. Nguyên lý hoạt động của Federated Learning\nFederated Learning được triển khai theo mô hình \"huấn luyện phân tán – tổng hợp tập trung\":",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_073",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_073",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "#### 3. Nguyên lý hoạt động của Federated Learning\nFederated Learning được triển khai theo mô hình \"huấn luyện phân tán – tổng hợp tập trung\":\n\n1. Khởi tạo mô hình toàn cục (Global Model): Máy chủ trung tâm (server) gửi mô hình khởi tạo đến từng máy khách (client).\n2. Huấn luyện cục bộ (Local Training): Mỗi cơ sở y tế huấn luyện mô hình trên dữ liệu của riêng mình.\n\n3. Gửi trọng số (Model Updates): Chỉ các thông số/gradient đã cập nhật được gửi về máy chủ, không truyền dữ liệu thô.\n4. Tổng hợp (Aggregation): Máy chủ dùng thuật toán như *Federated Averaging* để hợp nhất các trọng số, tạo ra mô hình toàn cục mới.\n5. Lặp lại: Quá trình này tiếp tục cho đến khi mô hình hội tụ.\n\n### 4. Lợi ích trong y tế\n- Bảo mật và quyền riêng tư: Dữ liệu bệnh nhân không bao giờ rời khỏi bệnh viện, giảm nguy cơ rò rỉ.\n- Đa dạng dữ liệu: Mô hình được huấn luyện trên dữ liệu phong phú từ nhiều vùng miền, nâng cao khả năng tổng quát hóa.\n- Tuân thủ pháp lý: Đáp ứng các quy định bảo mật nghiêm ngặt mà vẫn hợp tác được giữa nhiều tổ chức.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Nguyên lý hoạt động của Federated Learning",
+      "start_index": 1057,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::3. Nguyên lý hoạt động của Federated Learning",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "#### 5. Kiến trúc và thành phần chính\n- Central Server (Máy chủ trung tâm): Quản lý mô hình toàn cục, điều phối việc tổng hợp trọng số.\n- Clients (Máy khách): Bệnh viện, phòng thí nghiệm hoặc thiết bị y tế thông minh.\n- Secure Communication Layer: Giao thức truyền thông bảo mật (SSL/TLS) để gửi thông số mô hình.\n- Aggregation Algorithm: Thuật toán như *FedAvg*, *FedProx* để cân bằng chênh lệch dữ liệu giữa các khách.\n\n#### 6. Các phương pháp bảo mật nâng cao\n1. Differential Privacy (DP): Thêm nhiễu vào gradient hoặc trọng số trước khi gửi về server, che giấu thông tin cá nhân.\n2. Secure Multi-Party Computation (SMPC): Cho phép nhiều bên tính toán chung mà không tiết lộ dữ liệu riêng.\n3. Homomorphic Encryption: Mã hóa dữ liệu sao cho vẫn có thể tính toán trực tiếp trên dữ liệu mã hóa.\n4. Trusted Execution Environment (TEE): Sử dụng phần cứng bảo mật để đảm bảo chỉ các quá trình được phép mới có thể truy cập thông tin.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5. Kiến trúc và thành phần chính",
+      "start_index": 2088,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::5. Kiến trúc và thành phần chính",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "#### 7. Ứng dụng thực tiễn\n- Chẩn đoán hình ảnh y khoa: Huấn luyện mô hình phân tích MRI, CT từ nhiều bệnh viện để phát hiện ung thư sớm.\n- Dự đoán nguy cơ bệnh mãn tính: Kết hợp dữ liệu hồ sơ bệnh án điện tử từ nhiều cơ sở để dự đoán tiểu đường, tim mạch.\n- Theo dõi thiết bị đeo y tế: Đồng bộ dữ liệu cảm biến từ hàng nghìn thiết bị đeo để phát hiện sớm rối loạn tim.\n\n#### 8. Thách thức kỹ thuật\n• Dữ liệu không đồng nhất (Non-IID): Mỗi bệnh viện có đặc điểm dân số, thiết bị và quy trình thu thập dữ liệu khác nhau.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "7. Ứng dụng thực tiễn",
+      "start_index": 3020,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::7. Ứng dụng thực tiễn",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "#### 8. Thách thức kỹ thuật\n• Dữ liệu không đồng nhất (Non-IID): Mỗi bệnh viện có đặc điểm dân số, thiết bị và quy trình thu thập dữ liệu khác nhau.\n\n- Kết nối mạng: Cần đường truyền ổn định và bảo mật.\n- Chi phí tính toán cục bộ: Một số cơ sở y tế có hạ tầng hạn chế, khó chạy mô hình lớn.\n- Cân bằng quyền lực giữa các bên: Đảm bảo công bằng giữa các bệnh viện lớn nhỏ khi đóng góp dữ liệu.\n- Kết nối mạng: Cần đường truyền ổn định và bảo mật.\n- Chi phí tính toán cục bộ: Một số cơ sở y tế có hạ tầng hạn chế, khó chạy mô hình lớn.\n- Cân bằng quyền lực giữa các bên: Đảm bảo công bằng giữa các bệnh viện lớn nhỏ khi đóng góp dữ liệu.\n- Kết nối mạng: Cần đường truyền ổn định và bảo mật.\n- Chi phí tính toán cục bộ: Một số cơ sở y tế có hạ tầng hạn chế, khó chạy mô hình lớn.\n- Cân bằng quyền lực giữa các bên: Đảm bảo công bằng giữa các bệnh viện lớn nhỏ khi đóng góp dữ liệu.\n\n# 9. Hướng phát triển tương lai\n- Federated Learning kết hợp Edge Computing: Đưa FL xuống thiết bị di động, thiết bị đeo y tế để huấn luyện trực tiếp trên biên mạng.\n- Hybrid Federated + Transfer Learning: Dùng transfer learning để giảm số vòng huấn luyện liên kết.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "8. Thách thức kỹ thuật",
+      "start_index": 3391,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::8. Thách thức kỹ thuật",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "# 9. Hướng phát triển tương lai\n- Federated Learning kết hợp Edge Computing: Đưa FL xuống thiết bị di động, thiết bị đeo y tế để huấn luyện trực tiếp trên biên mạng.\n- Hybrid Federated + Transfer Learning: Dùng transfer learning để giảm số vòng huấn luyện liên kết.\n\n- Tích hợp Blockchain: Đảm bảo tính minh bạch, bất biến trong ghi nhận quá trình huấn luyện và cập nhật mô hình.\n- Mô hình lượng tử hóa: Giảm kích thước trọng số để tiết kiệm băng thông và thời gian truyền.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "9. Hướng phát triển tương lai",
+      "start_index": 4271,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::9. Hướng phát triển tương lai",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": null
+    }
+  }
+]

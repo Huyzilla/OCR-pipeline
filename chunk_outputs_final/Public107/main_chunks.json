@@ -1,0 +1,282 @@
+[
+  {
+    "page_content": "# Public_107\n\n## 1. Giới thiệu:\nTrong Machine Learning nói riêng và Toán Tối Ưu nói chung, chúng ta thường xuyên phải tìm giá trị nhỏ nhất (hoặc đôi khi là lớn nhất) của một hàm số nào đó. Ví dụ như các hàm mất mát trong hai bài [Linear Regression](https://machinelearningcoban.com/2016/12/28/linearregression/) và [K-means](https://machinelearningcoban.com/2017/01/01/kmeans/)  [Clustering.](https://machinelearningcoban.com/2017/01/01/kmeans/) Nhìn chung, việc tìm global minimum của các hàm mất mát trong Machine Learning là rất phức tạp, thậm chí là bất khả thi. Thay vào đó, người ta thường cố gắng tìm các điểm local minimum, và ở một mức độ nào đó, coi đó là nghiệm cần tìm của bài toán.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_107",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_107",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Các điểm local minimum là nghiệm của phương trình đạo hàm bằng 0. Nếu bằng một cách nào đó có thể tìm được toàn bộ (hữu hạn) các điểm cực tiểu, ta chỉ cần thay từng điểm local minimum đó vào hàm số rồi tìm điểm làm cho hàm có giá trị nhỏ nhất (*đoạn này nghe rất quen thuộc, đúng không?*). Tuy nhiên, trong hầu hết các trường hợp, việc giải phương trình đạo hàm bằng 0 là bất khả thi. Nguyên nhân có thể đến từ sự phức tạp của dạng của đạo hàm, từ việc các điểm dữ liệu có số chiều lớn, hoặc từ việc có quá nhiều điểm dữ liệu.\n\nHướng tiếp cận phổ biến nhất là xuất phát từ một điểm mà chúng ta coi là *gần* với nghiệm của bài toán, sau đó dùng một phép toán lặp để *tiến dần* đến điểm cần tìm, tức đến khi đạo hàm gần với 0. Gradient Descent (viết gọn là GD) và các biến thể của nó là một trong những phương pháp được dùng nhiều nhất.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Giới thiệu:",
+      "start_index": 696,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Giới thiệu:",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Vì kiến thức về GD khá rộng nên tôi xin phép được chia thành hai phần. Phần 1 này giới thiệu ý tưởng phía sau thuật toán GD và một vài ví dụ đơn giản giúp các bạn làm quen với thuật toán này và vài khái niệm mới. Phần 2 sẽ nói về các phương pháp cải tiến GD và các biến thể của GD trong các bài toán mà số chiều và số điểm dữ liệu lớn. Những bài toán như vậy được gọi là *large-scale*.\n\n# 2. Gradient Descent cho hàm 1 biến\nQuay trở lại hình vẽ ban đầu và một vài quan sát tôi đã nêu. Giả sử xt là điểm ta tìm được sau vòng lặp thứ t. Ta cần tìm một thuật toán để đưa xt về càng gần x∗ càng tốt.\n\nTrong hình đầu tiên, chúng ta lại có thêm hai quan sát nữa:\n\n- Nếu đạo hàm của hàm số tại xt: f′(xt)>0 thì xt nằm về bên phải so với x∗ (và ngược lại). Để điểm tiếp theo xt+1 gần với x∗ hơn, chúng ta cần di chuyển xt về phía bên trái, tức về phía *âm*. Nói các khác, **chúng ta cần di chuyển ngược dấu với đạo hàm**:xt+1=xt+ΔTrong đó Δ là một đại lượng ngược dấu với đạo hàm f′(xt).\n- xt càng xa x∗ về phía bên phải thì f′(xt) càng lớn hơn 0 (và ngược lại). Vậy, lượng di chuyển Δ, một cách trực quan nhất, là tỉ lệ thuận với −f′(xt).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Giới thiệu:",
+      "start_index": 1532,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1. Giới thiệu:",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "Hai nhận xét phía trên cho chúng ta một cách cập nhật đơn giản là: xt+1=xt−ηf′(xt)\n\nTrong đó η (đọc là *eta*) là một số dương được gọi là *learning rate* (tốc độ học). Dấu trừ thể hiện việc chúng ta phải *đi ngược* với đạo hàm (Đây cũng chính là lý do phương pháp này được gọi là Gradient Descent - *descent* nghĩa là *đi ngược*). Các quan sát đơn giản phía trên, mặc dù không phải đúng cho tất cả các bài toán, là nền tảng cho rất nhiều phương pháp tối ưu nói chung và thuật toán Machine Learning nói riêng.\n\nVí dụ đơn giản với Python\n\nXét hàm số f(x)=x2+5sin(x) với đạo hàm f′(x)=2x+5cos(x) (một lý do tôi chọn hàm này vì nó không dễ tìm nghiệm của đạo hàm bằng 0 như hàm phía trên). Giả sử bắt đầu từ một điểm x0 nào đó, tại vòng lặp thứ t, chúng ta sẽ cập nhật như sau:xt+1=xt−η(2xt+5cos(xt))\n\nNhư thường lệ, tôi khai báo vài thư viện quen thuộc\n\n*# To support both python 2 and python 3*\n\n**from** \\_\\_future\\_\\_ **import** division, print\\_function, unicode\\_literals\n\n**import** math\n\n**import** numpy **as** np\n\n**import** matplotlib.pyplot **as** plt\n\nTiếp theo, tôi viết các hàm số :\n\n- grad để tính đạo hàm",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Gradient Descent cho hàm 1 biến",
+      "start_index": 2665,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2. Gradient Descent cho hàm 1 biến",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "*# To support both python 2 and python 3*\n\n**from** \\_\\_future\\_\\_ **import** division, print\\_function, unicode\\_literals\n\n**import** math\n\n**import** numpy **as** np\n\n**import** matplotlib.pyplot **as** plt\n\nTiếp theo, tôi viết các hàm số :\n\n- grad để tính đạo hàm\n\n- cost để tính giá trị của hàm số. Hàm này không sử dụng trong thuật toán nhưng thường được dùng để kiểm tra việc tính đạo hàm của đúng không hoặc để xem giá trị của hàm số có giảm theo mỗi vòng lặp hay không.\n- myGD1 là phần chính thực hiện thuật toán Gradient Desent nêu phía trên. Đầu vào của hàm số này là learning rate và điểm bắt đầu. Thuật toán dừng lại khi đạo hàm có độ lớn đủ nhỏ.\n\n``` def grad(x):\n return 2*x+ 5*np.cos(x) def cost(x):\n return x**2 + 5*np.sin(x)\n```\n\n**def myGD1**(eta, x0):\n\n$$\\mathbf{x} = [\\mathbf{x}0]$$\n\n**for** it **in** range(100):\n\n```\n x_new = x[-1] - eta*grad(x[-1])\n if abs(grad(x_new)) < 1e-3:\n```\n\n**break**\n\nx.append(x\\_new)\n\n**return** (x, it)\n\nĐiểm khởi tạo khác nhau\n\nSau khi có các hàm cần thiết, tôi thử tìm nghiệm với các điểm khởi tạo khác nhau là x0=−5 và x0=5.\n\n$$(x1, it1) = myGD1(.1, -5)$$\n  \n $(x2, it2) = myGD1(.1, 5)$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Gradient Descent cho hàm 1 biến",
+      "start_index": 3516,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::2. Gradient Descent cho hàm 1 biến",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "**break**\n\nx.append(x\\_new)\n\n**return** (x, it)\n\nĐiểm khởi tạo khác nhau\n\nSau khi có các hàm cần thiết, tôi thử tìm nghiệm với các điểm khởi tạo khác nhau là x0=−5 và x0=5.\n\n$$(x1, it1) = myGD1(.1, -5)$$\n  \n $(x2, it2) = myGD1(.1, 5)$ \n\n**print**('Solution x1 = %f, cost = %f, obtained after %d iterations'**%**(x1[**-**1], cost(x1[**-**1]), it1))\n\n**print**('Solution x2 = %f, cost = %f, obtained after %d iterations'**%**(x2[**-**1], cost(x2[**-**1]), it2))\n\nSolution x1 = -1.110667, cost = -3.246394, obtained after 11 iterations\n\nSolution x2 = -1.110341, cost = -3.246394, obtained after 29 iterations\n\nVậy là với các điểm ban đầu khác nhau, thuật toán của chúng ta tìm được nghiệm gần giống nhau, mặc dù với tốc độ hội tụ khác nhau. Dưới đây là hình ảnh minh họa thuật toán GD cho bài toán này (*xem tốt trên Desktop ở chế độ full màn hình*).\n\n![](images/image1.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Gradient Descent cho hàm 1 biến",
+      "start_index": 4422,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::2. Gradient Descent cho hàm 1 biến",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Vậy là với các điểm ban đầu khác nhau, thuật toán của chúng ta tìm được nghiệm gần giống nhau, mặc dù với tốc độ hội tụ khác nhau. Dưới đây là hình ảnh minh họa thuật toán GD cho bài toán này (*xem tốt trên Desktop ở chế độ full màn hình*).\n\n![](images/image1.jpg)\n\nTừ hình minh họa trên ta thấy rằng ở hình bên trái, tương ứng với x0=−5, nghiệm hội tụ nhanh hơn, vì điểm ban đầu x0 gần với nghiệm x∗≈−1 hơn. Hơn nữa, với x0=5 ở hình bên phải, *đường đi* của nghiệm có chứa một khu vực có đạo hàm khá nhỏ gần điểm có hoành độ bằng 2. Điều này khiến cho thuật toán *la cà* ở đây khá lâu. Khi vượt qua được điểm này thì mọi việc diễn ra rất tốt đẹp.\n\nLearning rate khác nhau\n\nTốc độ hội tụ của GD không những phụ thuộc vào điểm khởi tạo ban đầu mà còn phụ thuộc vào *learning rate*. Dưới đây là một ví dụ với cùng điểm khởi tạo x0=−5 nhưng learning rate khác nhau:\n\n![](images/image2.jpg)\n\nTa quan sát thấy hai điều:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Gradient Descent cho hàm 1 biến",
+      "start_index": 5029,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::2. Gradient Descent cho hàm 1 biến",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "Learning rate khác nhau\n\nTốc độ hội tụ của GD không những phụ thuộc vào điểm khởi tạo ban đầu mà còn phụ thuộc vào *learning rate*. Dưới đây là một ví dụ với cùng điểm khởi tạo x0=−5 nhưng learning rate khác nhau:\n\n![](images/image2.jpg)\n\nTa quan sát thấy hai điều:\n\n1. Với *learning rate* nhỏ η=0.01, tốc độ hội tụ rất chậm. Trong ví dụ này tôi chọn tối đa 100 vòng lặp nên thuật toán dừng lại trước khi tới *đích*, mặc dù đã rất gần. Trong thực tế, khi việc tính toán trở nên phức tạp, *learning rate* quá thấp sẽ ảnh hưởng tới tốc độ của thuật toán rất nhiều, thậm chí không bao giờ tới được đích.\n\n2. Với *learning rate* lớn η=0.5, thuật toán tiến rất nhanh tới *gần đích* sau vài vòng lặp. Tuy nhiên, thuật toán không hội tụ được vì *bước nhảy* quá lớn, khiến nó cứ *quẩn quanh* ở đích.\n\nViệc lựa chọn *learning rate* rất quan trọng trong các bài toán thực tế. Việc lựa chọn giá trị này phụ thuộc nhiều vào từng bài toán và phải làm một vài thí nghiệm để chọn ra giá trị tốt nhất. Ngoài ra, tùy vào một số bài toán, GD có thể làm việc hiệu quả hơn bằng cách chọn ra *learning rate* phù hợp hoặc chọn *learning rate* khác nhau ở mỗi vòng lặp. Tôi sẽ quay lại vấn đề này ở phần 2.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Gradient Descent cho hàm 1 biến",
+      "start_index": 5678,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::2. Gradient Descent cho hàm 1 biến",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "## 3. Gradient Descent cho hàm nhiều biến\nGiả sử ta cần tìm global minimum cho hàm f(θ) trong đó θ (*theta*) là một vector, thường được dùng để ký hiệu tập hợp các tham số của một mô hình cần tối ưu (trong Linear Regression thì các tham số chính là hệ số w). Đạo hàm của hàm số đó tại một điểm θ bất kỳ được ký hiệu là ∇θf(θ) (hình tam giác ngược đọc là *nabla*). Tương tự như hàm 1 biến, thuật toán GD cho hàm nhiều biến cũng bắt đầu bằng một điểm dự đoán θ0, sau đó, ở vòng lặp thứ t, quy tắc cập nhật là:\n\n$$\\theta t + 1 = \\theta t - \\eta \\nabla \\theta f(\\theta t)$$\n\nHoặc viết dưới dạng đơn giản hơn: θ=θ−η∇θf(θ).\n\nQuy tắc cần nhớ: **luôn luôn đi ngược hướng với đạo hàm**.\n\nViệc tính toán đạo hàm của các hàm nhiều biến là một kỹ năng cần thiết. Một vài đạo hàm đơn giản có thể được [tìm thấy ở](https://machinelearningcoban.com/math/#bang-cac-dao-ham-co-ban) đây.\n\nQuay lại với bài toán Linear Regression\n\nTrong mục này, chúng ta quay lại với bài toán [Linear Regression](https://machinelearningcoban.com/2016/12/28/linearregression/) và thử tối ưu hàm mất mát của nó bằng thuật toán GD.\n\nHàm mất mát của Linear Regression là:L(w)=12N||y−¯Xw||22",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Gradient Descent cho hàm nhiều biến",
+      "start_index": 6863,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::3. Gradient Descent cho hàm nhiều biến",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "Quay lại với bài toán Linear Regression\n\nTrong mục này, chúng ta quay lại với bài toán [Linear Regression](https://machinelearningcoban.com/2016/12/28/linearregression/) và thử tối ưu hàm mất mát của nó bằng thuật toán GD.\n\nHàm mất mát của Linear Regression là:L(w)=12N||y−¯Xw||22\n\n**Chú ý**: hàm này có khác một chút so với hàm tôi nêu trong bài [Linear Regression.](https://machinelearningcoban.com/2016/12/28/linearregression/) Mẫu số có thêm N là số lượng dữ liệu trong training set. Việc lấy trung bình cộng của lỗi này nhằm giúp tránh trường hợp hàm mất mát và đạo hàm có giá trị là một số rất lớn, ảnh hưởng tới độ chính xác của các phép toán khi thực hiện trên máy tính. Về mặt toán học, nghiệm của hai bài toán là như nhau.\n\nĐạo hàm của hàm mất mát là:∇wL(w)=1N¯XT(¯Xw−y) (1)\n\nSau đây là ví dụ trên Python và một vài lưu ý khi lập trình\n\nLoad thư viện\n\n*# To support both python 2 and python 3*\n\n**from** \\_\\_future\\_\\_ **import** division, print\\_function, unicode\\_literals\n\n**import** numpy **as** np\n\n**import** matplotlib\n\n**import** matplotlib.pyplot **as** plt\n\nnp.random.seed(2)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Gradient Descent cho hàm nhiều biến",
+      "start_index": 7734,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::3. Gradient Descent cho hàm nhiều biến",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "Load thư viện\n\n*# To support both python 2 and python 3*\n\n**from** \\_\\_future\\_\\_ **import** division, print\\_function, unicode\\_literals\n\n**import** numpy **as** np\n\n**import** matplotlib\n\n**import** matplotlib.pyplot **as** plt\n\nnp.random.seed(2)\n\nTiếp theo, chúng ta tạo 1000 điểm dữ liệu được chọn *gần* với đường thẳng y=4+3x, hiển thị chúng và tìm nghiệm theo công thức:\n\nX **=** np.random.rand(1000, 1)\n\ny **=** 4 **+** 3 **\\*** X **+** .2**\\***np.random.randn(1000, 1) *# noise added*\n\n*# Building Xbar* \n\none **=** np.ones((X.shape[0],1))\n\nXbar **=** np.concatenate((one, X), axis **=** 1)\n\nA **=** np.dot(Xbar.T, Xbar)\n\nb **=** np.dot(Xbar.T, y)\n\n``` w lr = np.dot(np.linalg.pinv(A), b) print('Solution found by formula: w = ',w_lr.T)\n# Display result w = w lr w = 0 = w[0][0] w_1 = w[1][0] x0 = np.linspace(0, 1, 2, endpoint=True) y0 = w \\ 0 + w \\ 1*x0\n# Draw the fitting line plt.plot(X.T, y.T, 'b.')\n                       # data plt.plot(x0, y0, 'y', linewidth = 2) # the fitting line plt.axis([0, 1, 0, 10]) plt.show()\n```\n\n025-09-28 1\n\n2025-09-28 17.44.53\\_AIRace\n\nSolution found by formula:  $w = [[4.00305242 \\ 2.99862665]]$ \n\n2025-09-28 17.44.53\\_AIR\n\n![](images/image3.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Gradient Descent cho hàm nhiều biến",
+      "start_index": 8581,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::3. Gradient Descent cho hàm nhiều biến",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "025-09-28 1\n\n2025-09-28 17.44.53\\_AIRace\n\nSolution found by formula:  $w = [[4.00305242 \\ 2.99862665]]$ \n\n2025-09-28 17.44.53\\_AIR\n\n![](images/image3.jpg)\n\nĐường thẳng tìm được là đường có màu vàng có phương trình y≈4+2.998x.\n\nTiếp theo ta viết đạo hàm và hàm mất mát:\n\n#### def grad**(w):\nN **=** Xbar.shape[0]\n\n**return** 1**/**N **\\*** Xbar.T.dot(Xbar.dot(w) **-** y)\n\n**def cost**(w):\n\nN **=** Xbar.shape[0]\n\n**return** .5**/**N**\\***np.linalg.norm(y **-** Xbar.dot(w), 2)**\\*\\***2;\n\nKiểm tra đạo hàm\n\nViệc tính đạo hàm của hàm nhiều biến thông thường khá phức tạp và rất dễ mắc lỗi, nếu chúng ta tính sai đạo hàm thì thuật toán GD không thể chạy đúng được. Trong thực nghiệm, có một cách để kiểm tra liệu đạo hàm tính được có chính xác không. Cách này dựa trên định nghĩa của đạo hàm (cho hàm 1 biến):f′(x)=limε→0f(x+ε)−f(x)ε\n\nMột cách thường được sử dụng là lấy một giá trị ε rất nhỏ, ví dụ 10−6, và sử dụng công thức:f′(x)≈f(x+ε)−f(x−ε)2ε (2)\n\nCách tính này được gọi là *numerical gradient*.\n\n**Câu hỏi: Tại sao công thức xấp xỉ hai phía trên đây lại được sử dụng rộng rãi, sao không sử dụng công thức xấp xỉ đạo hàm bên phải hoặc bên trái?**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Draw the fitting line plt.plot(X.T, y.T, 'b.')",
+      "start_index": 9620,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::Draw the fitting line plt.plot(X.T, y.T, 'b.')",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "Cách tính này được gọi là *numerical gradient*.\n\n**Câu hỏi: Tại sao công thức xấp xỉ hai phía trên đây lại được sử dụng rộng rãi, sao không sử dụng công thức xấp xỉ đạo hàm bên phải hoặc bên trái?**\n\nCó hai các giải thích cho vấn đề này, một bằng hình học, một bằng giải tích.\n\nGiải thích bằng hình học\n\nQuan sát hình dưới đây:\n\n$$f(x_0+\\varepsilon)-f(x_0-\\varepsilon)$$\n \n$$f(x_0+\\varepsilon)-f(x_0-\\varepsilon)$$\n\nTrong hình, vector màu đỏ là đạo hàm *chính xác* của hàm số tại điểm có hoành độ bằng x0. Vector màu xanh lam (có vẻ là hơi tím sau khi convert từ .pdf sang .png) thể hiện cách xấp xỉ đạo hàm phía phải. Vector màu xanh lục thể hiện cách xấp xỉ đạo hàm phía trái. Vector màu nâu thể hiện cách xấp xỉ đạo hàm hai phía. Trong ba vector xấp xỉ đó, vector xấp xỉ hai phía màu nâu là gần với vector đỏ nhất nếu xét theo hướng.\n\nSự khác biệt giữa các cách xấp xỉ còn lớn hơn nữa nếu tại điểm x, hàm số bị *bẻ cong* mạnh hơn. Khi đó, xấp xỉ trái và phải sẽ khác nhau rất nhiều. Xấp xỉ hai bên sẽ *ổn định* hơn.\n\nGiải thích bằng giải tích",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "def grad**(w):",
+      "start_index": 10571,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::def grad**(w):",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "Sự khác biệt giữa các cách xấp xỉ còn lớn hơn nữa nếu tại điểm x, hàm số bị *bẻ cong* mạnh hơn. Khi đó, xấp xỉ trái và phải sẽ khác nhau rất nhiều. Xấp xỉ hai bên sẽ *ổn định* hơn.\n\nGiải thích bằng giải tích\n\nChúng ta cùng quay lại một chút với Giải tích I năm thứ nhất đại học: [Khai triển](http://mathworld.wolfram.com/TaylorSeries.html)  [Taylor.](http://mathworld.wolfram.com/TaylorSeries.html)\n\nVới ε rất nhỏ, ta có hai xấp xỉ sau:\n\n$$f(x+\\epsilon)\\approx f(x)+f'(x)\\epsilon+f''(x)2\\epsilon 2+\\dots$$\n\n$$v\\grave{a}:f(x-\\epsilon)\\approx f(x)-f'(x)\\epsilon+f''(x)2\\epsilon 2-\\dots$$\n\n$$T\\grave{u} d\\acute{o} ta c\\acute{o}:f(x+\\epsilon)-f(x)\\epsilon\\approx f'(x)+f''(x)2\\epsilon+\\dots=f'(x)+O(\\epsilon) \\quad (3)$$\n\n$$f(x+\\epsilon)-f(x-\\epsilon)2\\epsilon\\approx f'(x)+f(3)(x)6\\epsilon 2+\\dots=f'(x)+O(\\epsilon 2) \\quad (4)$$\n\nTừ đó, nếu xấp xỉ đạo hàm bằng công thức (3) (xấp xỉ đạo hàm phải), sai số sẽ là O(ε). Trong khi đó, nếu xấp xỉ đạo hàm bằng công thức (4) (xấp xỉ đạo hàm hai phía), sai số sẽ là O(ε2)≪O(ε) nếu ε nhỏ.\n\nCả hai cách giải thích trên đây đều cho chúng ta thấy rằng, xấp xỉ đạo hàm hai phía là xấp xỉ tốt hơn.\n\nVới hàm nhiều biến",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "def grad**(w):",
+      "start_index": 11409,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::def grad**(w):",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "Cả hai cách giải thích trên đây đều cho chúng ta thấy rằng, xấp xỉ đạo hàm hai phía là xấp xỉ tốt hơn.\n\nVới hàm nhiều biến\n\nVới hàm nhiều biến, công thức (2) được áp dụng cho từng biến khi các biến khác cố định. Cách tính này thường cho giá trị khá chính xác. Tuy nhiên, cách này không được sử dụng để tính đạo hàm vì độ phức tạp quá cao so với cách tính trực tiếp. Khi so sánh đạo hàm này với đạo hàm chính xác tính theo công thức, người ta thường giảm số chiều dữ liệu và giảm số điểm dữ liệu để thuận tiện cho tính toán. Một khi đạo hàm tính được rất gần với *numerical gradient*, chúng ta có thể tự tin rằng đạo hàm tính được là chính xác.\n\nDưới đây là một đoạn code đơn giản để kiểm tra đạo hàm và có thể áp dụng với một hàm số (của một vector) bất kỳ với cost và grad đã tính ở phía trên.\n\n**def numerical\\_grad**(w, cost):\n\n```\n eps = 1e-4\n g = np.zeros_like(w)\n for i in range(len(w)):\n```\n\n```\n w_p = w.copy()\n w_n = w.copy()\n w_p[i] += eps \n w_n[i] -= eps\n g[i] = (cost(w_p) - cost(w_n))/(2*eps)\n return g  def check_grad(w, cost, grad):\n w = np.random.rand(w.shape[0], w.shape[1])\n grad1 = grad(w)\n grad2 = numerical_grad(w, cost)\n```",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "def grad**(w):",
+      "start_index": 12439,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::def grad**(w):",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": "main::chunk::15"
+    }
+  },
+  {
+    "page_content": "```\n w_p = w.copy()\n w_n = w.copy()\n w_p[i] += eps \n w_n[i] -= eps\n g[i] = (cost(w_p) - cost(w_n))/(2*eps)\n return g  def check_grad(w, cost, grad):\n w = np.random.rand(w.shape[0], w.shape[1])\n grad1 = grad(w)\n grad2 = numerical_grad(w, cost)\n```\n\n**return** True **if** np.linalg.norm(grad1 **-** grad2) **<** 1e-6 **else** False\n\n**print**( 'Checking gradient...', check\\_grad(np.random.rand(2, 1), cost, grad))\n\nChecking gradient... True\n\n(*Với các hàm số khác, bạn đọc chỉ cần viết lại hàm grad và cost ở phần trên rồi áp dụng đoạn code này để kiểm tra đạo hàm. Nếu hàm số là hàm của một ma trận thì chúng ta thay đổi một chút trong hàm numerical\\_grad, tôi hy vọng không quá phức tạp*).\n\nVới bài toán Linear Regression, cách tính đạo hàm như trong (1) phía trên được coi là đúng vì sai số giữa hai cách tính là rất nhỏ (nhỏ hơn 10−6). Sau khi có được đạo hàm chính xác, chúng ta viết hàm cho GD:\n\n**def myGD**(w\\_init, grad, eta):\n\n$$w = [w_init]$$\n\n**for** it **in** range(100):",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "def grad**(w):",
+      "start_index": 13338,
+      "chunk_index": 15,
+      "chunk_id": "main::chunk::15",
+      "parent_id": "main::section::def grad**(w):",
+      "prev_chunk_id": "main::chunk::14",
+      "next_chunk_id": "main::chunk::16"
+    }
+  },
+  {
+    "page_content": "Với bài toán Linear Regression, cách tính đạo hàm như trong (1) phía trên được coi là đúng vì sai số giữa hai cách tính là rất nhỏ (nhỏ hơn 10−6). Sau khi có được đạo hàm chính xác, chúng ta viết hàm cho GD:\n\n**def myGD**(w\\_init, grad, eta):\n\n$$w = [w_init]$$\n\n**for** it **in** range(100):\n\n```\n w_new = w[-1] - eta*grad(w[-1])\n if np.linalg.norm(grad(w_new))/len(w_new) < 1e-3:\n break\n w.append(w_new)\n return (w, it)  w_init = np.array([[2], [1]])\n(w1, it1) = myGD(w_init, grad, 1) print('Solution found by GD: w = ', w1[-1].T, ',\\nafter %d iterations.' %(it1+1))\nSolution found by GD: w = [[ 4.01780793 2.97133693]] , after 49 iterations.\nSau 49 vòng lặp, thuật toán đã hội tụ với một nghiệm khá gần với nghiệm tìm được  theo công thức.\n```\n\nDưới đây là hình động minh họa thuật toán GD.\n\n![](images/image4.jpg)\n\nTrong hình bên trái, các đường thẳng màu đỏ là nghiệm tìm được sau mỗi vòng lặp.\n\nTrong hình bên phải, tôi xin giới thiệu một thuật ngữ mới: *đường đồng mức*.\n\nĐường đồng mức (level sets)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "def grad**(w):",
+      "start_index": 14031,
+      "chunk_index": 16,
+      "chunk_id": "main::chunk::16",
+      "parent_id": "main::section::def grad**(w):",
+      "prev_chunk_id": "main::chunk::15",
+      "next_chunk_id": "main::chunk::17"
+    }
+  },
+  {
+    "page_content": "Dưới đây là hình động minh họa thuật toán GD.\n\n![](images/image4.jpg)\n\nTrong hình bên trái, các đường thẳng màu đỏ là nghiệm tìm được sau mỗi vòng lặp.\n\nTrong hình bên phải, tôi xin giới thiệu một thuật ngữ mới: *đường đồng mức*.\n\nĐường đồng mức (level sets)\n\nVới đồ thị của một hàm số với hai biến đầu vào cần được vẽ trong không gian ba chiều, nhều khi chúng ta khó nhìn được nghiệm có khoảng tọa độ bao nhiêu. Trong toán tối ưu, người ta thường dùng một cách vẽ sử dụng khái niệm *đường đồng mức* (level sets).\n\nNếu các bạn để ý trong các bản độ tự nhiên, để miêu tả độ cao của các dãy núi, người ta dùng nhiều đường cong kín bao quanh nhau như sau:\n\nVí dụ về đường đồng mức trong các bản đồ tự nhiên. (Nguồn: [Địa lý 6: Đường](http://vforum.vn/diendan/showthread.php?90166-Dia-ly-6-Duong-dong-muc-la-nhung-duong-nhu-the-nao-)  [đồng mức là những đường như thế](http://vforum.vn/diendan/showthread.php?90166-Dia-ly-6-Duong-dong-muc-la-nhung-duong-nhu-the-nao-) nào?)\n\nCác vòng nhỏ màu đỏ hơn thể hiện các điểm ở trên cao hơn.\n\nTrong toán tối ưu, người ta cũng dùng phương pháp này để thể hiện các bề mặt trong không gian hai chiều.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "def grad**(w):",
+      "start_index": 14778,
+      "chunk_index": 17,
+      "chunk_id": "main::chunk::17",
+      "parent_id": "main::section::def grad**(w):",
+      "prev_chunk_id": "main::chunk::16",
+      "next_chunk_id": "main::chunk::18"
+    }
+  },
+  {
+    "page_content": "Các vòng nhỏ màu đỏ hơn thể hiện các điểm ở trên cao hơn.\n\nTrong toán tối ưu, người ta cũng dùng phương pháp này để thể hiện các bề mặt trong không gian hai chiều.\n\nQuay trở lại với hình minh họa thuật toán GD cho bài toán Liner Regression bên trên, hình bên phải là hình biểu diễn các level sets. Tức là tại các điểm trên cùng một vòng, hàm mất mát có giá trị như nhau. Trong ví dụ này, tôi hiển thị giá trị của hàm số tại một số vòng. Các vòng màu xanh có giá trị thấp, các vòng tròn màu đỏ phía ngoài có giá trị cao hơn. Điểm này khác một chút so với đường đồng mức trong tự nhiên là các vòng bên trong thường thể hiện một thung lũng hơn là một đỉnh núi (vì chúng ta đang đi tìm giá trị nhỏ nhất).\n\nTôi thử với *learning rate* nhỏ hơn, kết quả như sau:\n\n![](images/image5.jpg)\n\nTốc độ hội tụ đã chậm đi nhiều, thậm chí sau 99 vòng lặp, GD vẫn chưa tới gần được nghiệm tốt nhất. Trong các bài toán thực tế, chúng ta cần nhiều vòng lặp hơn 99 rất nhiều, vì số chiều và số điểm dữ liệu thường là rất lớn.\n\n#### 4. Một ví dụ khác\nĐể kết thúc phần 1 của Gradient Descent, tôi xin nêu thêm một ví dụ khác.\n\n![](images/image6.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "def grad**(w):",
+      "start_index": 15749,
+      "chunk_index": 18,
+      "chunk_id": "main::chunk::18",
+      "parent_id": "main::section::def grad**(w):",
+      "prev_chunk_id": "main::chunk::17",
+      "next_chunk_id": "main::chunk::19"
+    }
+  },
+  {
+    "page_content": "#### 4. Một ví dụ khác\nĐể kết thúc phần 1 của Gradient Descent, tôi xin nêu thêm một ví dụ khác.\n\n![](images/image6.jpg)\n\nHàm số f(x,y)=(x2+y−7)2+(x−y+1)2 có hai điểm local minimum màu xanh lục tại (2,3) và (−3,−2), và chúng cũng là hai điểm global minimum. Trong ví dụ này, tùy vào điểm khởi tạo mà chúng ta thu được các nghiệm cuối cùng khác nhau.\n\n#### 5. Thảo luận\nDựa trên GD, có rất nhiều thuật toán phức tạp và hiệu quả hơn được thiết kế cho những loại bài toán khác nhau. Vì bài này đã đủ dài, tôi xin phép dừng lại ở đây. Mời các bạn đón đọc bài Gradient Descent phần 2 với nhiều kỹ thuật nâng cao hơn.\n\n## 6. Tài liệu tham khảo\n1. [An overview of gradient descent optimization algorithms](http://sebastianruder.com/optimizing-gradient-descent/)\n2. [An Interactive Tutorial on Numerical Optimization](http://www.benfrederickson.com/numerical-optimization/)\n3. [Gradient Descent by Andrew NG](https://www.youtube.com/watch?v=eikJboPQDT0)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Một ví dụ khác",
+      "start_index": 16755,
+      "chunk_index": 19,
+      "chunk_id": "main::chunk::19",
+      "parent_id": "main::section::4. Một ví dụ khác",
+      "prev_chunk_id": "main::chunk::18",
+      "next_chunk_id": null
+    }
+  }
+]

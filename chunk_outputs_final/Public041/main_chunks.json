@@ -1,0 +1,118 @@
+[
+  {
+    "page_content": "# Public_041\n\n### 1. Bài toán\nNgân hàng bạn đang làm có chương trình cho vay ưu đãi cho các đối tượng mua chung cư. Tuy nhiên gần đây có một vài chung cư rất hấp dẫn (giá tốt, vị trí đẹp,...) nên lượng hồ sơ người nộp cho chương trình ưu đãi tăng đáng kể. Bình thường bạn có thể duyệt 10-20 hồ sơ một ngày để quyết định hồ sơ có được cho vay hay không, tuy nhiên gần đây bạn nhận được 1000-2000 hồ sơ mỗi ngày. Bạn không thể xử lý hết hồ sơ và bạn cần có một giải pháp để có thể dự đoán hồ sơ mới là có nên cho vay hay không.\n\nSau khi phân tích thì bạn nhận thấy là hai yếu tố chính quyết định đến việc được vay tiền đó là mức lương và thời gian công tác. Đây là dữ liệu bạn có từ trước đến nay:\n\n\n\n\n\n\n\nKhi có dữ liệu bạn visualize dữ liệu lên như hình 4.1\n\nVề mặt logic, giờ ta cần tìm đường thẳng phân chia giữa các điểm cho vay và từ chối. Rồi quyết định hồ sơ mới có nên có vay hay không từ đường đấy như hình 4.2\n\n![](images/image1.jpg)\n\n![](images/image2.jpg)\n\nHình 4.2: Đường phân chia và dự đoán điểm dữ liệu mới\n\nVí dụ đường xanh là đường phân chia. Dự đoán cho hồ sơ của người có mức lương 6 triệu và 1 năm kinh nghiệm là không cho vay.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_041",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_041",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "<table>\n\n<tbody>\n<tr><th>Lương</th><th>Thời gian làm việc</th><th>Cho vay</th></tr>\n<tr><td>10</td><td>1</td><td>1</td></tr>\n<tr><td>9</td><td>0.5</td><td>1</td></tr>\n<tr><td>5</td><td>2</td><td>1</td></tr>\n<tr><td></td><td></td><td></td></tr>\n<tr><td>8</td><td>0.1</td><td>0</td></tr>\n<tr><td>6</td><td>0.3</td><td>0</td></tr>\n<tr><td>7</td><td>0.15</td><td>0</td></tr>\n<tr><td></td><td></td><td></td></tr>\n</tbody>\n</table>",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "table",
+      "table_id": 1,
+      "row_start": 0,
+      "row_end": 8,
+      "section_hint": "1. Bài toán",
+      "start_index": 699,
+      "table_chunk_index": 0,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Bài toán",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "![](images/image1.jpg)\n\n![](images/image2.jpg)\n\nHình 4.2: Đường phân chia và dự đoán điểm dữ liệu mới\n\nVí dụ đường xanh là đường phân chia. Dự đoán cho hồ sơ của người có mức lương 6 triệu và 1 năm kinh nghiệm là không cho vay.\n\nTuy nhiên, do ngân hàng đang trong thời kỳ khó khăn nên việc cho vay bị thắt lại, chỉ những hồ sơ nào chắc chắn trên 80% mới được vay.\n\nVậy nên bây giờ bạn không những tìm là hồ sơ ấy cho vay hay không cho vay mà cần tìm xác suất nên cho hồ sơ ấy vay là bao nhiêu.\n\nHay trong nhiều trường hợp khác trong bài toán phân loại người ta quan tâm hơn đến xác suất hay vì chỉ 1 hay 0. Ví dụ: bác sĩ sẽ thông báo ca mổ này 80% thành công cho người nhà bệnh nhân.\n\n# 2. Xác suất\nBạn được học xác suất từ cấp hai, cấp ba rồi đến toán cao cấp, nhưng có bao giờ bạn hỏi tại sao lại có xác suất không? Vì trong cuộc sống này có những sự việc không chắc chắn, ví dụ ngày mai trời có mưa không. Vậy nên xác suất ra đời để đo lường sự không chắc chắn ấy.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Bài toán",
+      "start_index": 928,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1. Bài toán",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "# 2. Xác suất\nBạn được học xác suất từ cấp hai, cấp ba rồi đến toán cao cấp, nhưng có bao giờ bạn hỏi tại sao lại có xác suất không? Vì trong cuộc sống này có những sự việc không chắc chắn, ví dụ ngày mai trời có mưa không. Vậy nên xác suất ra đời để đo lường sự không chắc chắn ấy.\n\nVậy xác suất là gì? \"Các nhà toán học coi xác suất là các số trong khoảng [0,1], được gán tương ứng với một biến cố mà khả năng xảy ra hoặc không xảy ra là ngẫu nhiên\" [28]. Ví dụ bạn tung đồng xu có 2 mặt, thì xác suất bạn tung được mặt ngửa là 50% ( = 50/100 = 0.5).\n\nNhận xét:\n\n● Xác suất của 1 sự kiện trong khoảng [0,1]\n\n![](images/image3.jpg)\n\n- Sự kiện bạn càng chắc chắn xảy ra thì xác suất càng cao. Ví dụ bạn lương cao và còn đi làm lâu lăm thì xác suất bạn được vay mua chung cư là cao.\n- Tổng xác suất của sự kiện A và sự kiện phủ định của A là 100% (hay 1). Ví dụ sự kiện A: tung đồng xu mặt ngửa, xác suất 50%; phủ định của sự kiện A: tung đồng xu mặt sấp, xác suất 50% => tổng 100%.\n\nBạn sẽ thấy xác suất quan trọng hơn là chỉ 0 hay 1, ví dụ trước mỗi ca mổ khó, bác sĩ không thể chắc chắn là sẽ thất bại hay thành công mà chỉ có thể nói xác suất thành công là bao nhiêu (ví dụ 80%).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Xác suất",
+      "start_index": 1613,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2. Xác suất",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Bạn sẽ thấy xác suất quan trọng hơn là chỉ 0 hay 1, ví dụ trước mỗi ca mổ khó, bác sĩ không thể chắc chắn là sẽ thất bại hay thành công mà chỉ có thể nói xác suất thành công là bao nhiêu (ví dụ 80%).\n\n## 3. Hàm sigmoid\nGiờ ta cần tìm xác suất của hồ sơ mới nên cho vay. Hay giá trị của hàm cần trong khoảng [0,1]. Rõ ràng là giá trị của phương trình đường thẳng như bài trước có thể ra ngoài khoảng [0,1] nên cần một hàm mới luôn có giá trị trong khoảng [0,1]. Đó là hàm sigmoid.\n\n![](images/image4.jpg)\n\nHình 4.3: Đồ thị hàm sigmoid\n\nNhận xét:\n\n- Hàm số liên tục, nhận giá trị thực trong khoảng (0,1).\n- Hàm có đạo hàm tại mọi điểm (để áp dụng gradient descent).\n\n### 4. Thiết lập bài toán\nMọi người có để ý các bước trong bài linear regression không nhỉ, các bước bao gồm:\n\n1. Visualize dữ liệu\n2. Thiết lập model\n\n![](images/image5.jpg)\n\n- Thiết lập loss function 3.\n- Tìm tham số bằng việc tối ưu loss function 4.\n- Dư đoán dữ liệu mới bằng model vừa tìm được 5.\n\nĐây là mô hình chung cho bài toán trong Deep Learning.\n\n#### 1.1 Model\n\nVới dòng thứ i trong bảng dữ liệu, gọi  $x_1$  là lương và  $x_2$  là thời gian làm việc của hồ sơ thứ i.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Xác suất",
+      "start_index": 2596,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::2. Xác suất",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "Đây là mô hình chung cho bài toán trong Deep Learning.\n\n#### 1.1 Model\n\nVới dòng thứ i trong bảng dữ liệu, gọi  $x_1$  là lương và  $x_2$  là thời gian làm việc của hồ sơ thứ i.\n\n $p(x^{(i)} = 1) = \\hat{y}_i$  là xác suất mà model dư đoán hồ sơ thứ i được cho vay.\n\n $p(x^{(i)} = 0) = 1 - \\hat{y}_i$  là xác suất mà model dự đoán hồ sơ thứ i không được cho vay.\n\nNhư bài trước công thức của linear regression là:  $\\hat{y}_i = w_0 + w_1 x_1 + w_2 x_2$  thì giờ công thức của logistic regression là:\n\n$$\\hat{y}_i = \\sigma(w_0 + w_1 x_1^{(i)} + w_2 x_2^{(i)}) = \\frac{1}{1 + e^{-(w_0 + w_1 x_1^{(i)} + w_2 x_2^{(i)})}}$$\n\nỞ phần cuối mọi người sẽ thấy được quan hệ giữa xác suất và đường thẳng.\n\n#### Loss function 1.2\n\nGiờ cũng cần một hàm để đánh giá độ tốt của model. Như bài trước là y<sup>2</sup> càng gần y càng tốt, giờ cũng vậy:\n\n- Nếu hồ sơ thứ i là cho vay, tức  $v_i = 1$  thì ta cũng mong muốn  $\\hat{v}_i$  càng gần 1 càng tốt hay model dự đoán xác suất người thứ i được vay vốn càng cao càng tốt.\n- Nếu hồ sơ thứ i không được vay, tức  $v_i = 0$  thì ta cũng mong muốn  $\\hat{v}_i$ càng gần 0 càng tốt hay model dự đoán xác suất người thứ i được vay vốn càng thấp càng tốt.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Thiết lập bài toán",
+      "start_index": 3564,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::4. Thiết lập bài toán",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Với mỗi điểm  $(x^{(i)}, y_i)$ , gọi hàm loss function  $L = -(y_i \\log \\log \\hat{y}_i + (1 - y_i))$  $log log (1 - \\hat{y}_i)$ ), loss function này có tên gọi là binary crossentropy\n\nMặc định trong machine learning nói chung hay deep learning thì viết log hiểu là 2025-09-23 22.39.50\\_Al ln\n\nThử đánh giá hàm L nhé. Nếu  $y_i = 1 \\implies L = -log(\\hat{y_i})$ \n\n![](images/image6.jpg)\n\n![](images/image7.jpg)\n\nHình 4.4: Đồ thị hàm loss function trong trường hợp *yi* = 1\n\n#### Nhận xét:\n\n- Hàm L giảm dần từ 0 đến 1.\n- Khi model dự đoán *y*ˆ*i* gần 1, tức giá trị dự đoán gần với giá trị thật *yi* thì L nhỏ, xấp xỉ 0\n- Khi model dự đoán *y*ˆ*i* gần 0, tức giá trị dự đoán ngược lại giá trị thật *yi* thì L rất lớn\n\nNgược lại, nếu *yi* = 0 => L = −*log*(1−*y*ˆ*i*)\n\n![](images/image8.jpg)\n\nHình 4.5: Đồ thị hàm loss function trong trường hợp *yi* = 0\n\nNhận xét:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Loss function 1.2",
+      "start_index": 4751,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Loss function 1.2",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "Ngược lại, nếu *yi* = 0 => L = −*log*(1−*y*ˆ*i*)\n\n![](images/image8.jpg)\n\nHình 4.5: Đồ thị hàm loss function trong trường hợp *yi* = 0\n\nNhận xét:\n\n- Hàm L tăng dần từ 0 đến 1\n- Khi model dự đoán *y*ˆ*i* gần 0, tức giá trị dự đoán gần với giá trị thật *yi* thì L nhỏ, xấp xỉ 0\n- Khi model dự đoán *y*ˆ*i* gần 1, tức giá trị dự đoán ngược lại giá trị thật *yi* thì L rất lớn => Hàm L nhỏ khi giá trị model dự đoán gần với giá trị thật và rất lớn khi model dự đoán sai, hay nói cách khác L càng nhỏ thì model dự đoán càng gần với giá trị thật. => Bài toán tìm model trở thành tìm giá trị nhỏ nhất của L\n\nHàm loss function trên toàn bộ dữ liệu = − 1 ∑ =1 ( ̂ + (1 − ) (1 − ̂ ) )\n\n![](images/image9.jpg)\n\n![](images/image10.jpg)\n\n![](images/image11.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Nhận xét:",
+      "start_index": 5468,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Nhận xét:",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": null
+    }
+  }
+]

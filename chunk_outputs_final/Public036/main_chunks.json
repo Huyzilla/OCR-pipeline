@@ -1,0 +1,72 @@
+[
+  {
+    "page_content": "# Public_036\n\n#### 1. Bài toán Image segmentation\nBài trước bạn đã được giới thiệu về object detection, đi tìm các bounding box quanh các đối tượng trong ảnh và sau đó phân loại các bounding box. Tuy nhiên là các bounding box thì không biểu thị được đúng hình dạng của đối tượng và có nhiều nhiễu ở trong bounding box đấy ví dụ như trong bounding box màu đỏ có cả một phần của cây thông cũng như cái gối => Image segmentation ra đời để chia ảnh thành nhiều vùng khác nhau hay tìm được đúng hình dạng của các đối tượng.\n\n![](images/image1.jpg)\n\n![](images/image2.jpg)\n\nHình 15.1: So sánh object detection và segmentation [4]\n\nCùng thử lấy ví dụ tại sao cần image segmentation nhé. Ung thư là một căn bệnh hiểm nghèo và cần được phát hiện sớm để điều trị. Vì hình dạng của các tế bào ung thư là một trong những yếu tố quyết định độ ác tính của bệnh, nên ta cần image segmentation để biết được chính xác hình dạng của các tế bào ung thư để có các chẩn đoán xác định. Rõ ràng object detection ở đây không giải quyết được vấn đề.\n\n![](images/image3.jpg)\n\nHình 15.2: Ví dụ về segmentation [15]\n\n#### 1.1 Phân loại bài toán image segmentation\nBài toán image segmentation được chia ra làm 2 loại:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_036",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_036",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "![](images/image3.jpg)\n\nHình 15.2: Ví dụ về segmentation [15]\n\n#### 1.1 Phân loại bài toán image segmentation\nBài toán image segmentation được chia ra làm 2 loại:\n\n- **Semantic segmentation**: Thực hiện segment với từng lớp khác nhau, ví dụ: tất cả người là 1 lớp, tất cả ô tô là 1 lớp.\n- **Instance segmentation**: Thực hiện segment với từng đối tượng trong một lớp. Ví dụ có 3 người trong ảnh thì sẽ có 3 vùng segment khác nhau cho mỗi người.\n\n![](images/image4.jpg)\n\nHình 15.3: Phân loại semantic segmentation và instance segmentation [27]\n\nCần áp dụng kiểu segmentation nào thì phụ thuộc vào bài toán. Ví dụ: cần segment người trên đường cho ô tô tự lái, thì có thể dùng semantic segmentation vì không cần thiết phải phân biệt ai với ai, nhưng nếu cần theo dõi mọi hành vi của mọi người trên đường thì cần instance segmentation thì cần phân biệt mọi người với nhau.\n\n## 1.2 Ứng dụng bài toán segmentation\n### Ô tô tự lái\nSegmentation dùng để xác định đường, các xe ô tô, người đi bộ,... để hỗ trợ cho ô tô tự lái\n\n![](images/image5.jpg)\n\n# Chẩn đoán trong y học\nSegmentation được ứng dụng rất nhiều trong y học để hỗ trợ việc chẩn đoán bệnh. Ví dụ phân tích ảnh X-quang.\n\n![](images/image6.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Bài toán Image segmentation",
+      "start_index": 1026,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Bài toán Image segmentation",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "![](images/image5.jpg)\n\n# Chẩn đoán trong y học\nSegmentation được ứng dụng rất nhiều trong y học để hỗ trợ việc chẩn đoán bệnh. Ví dụ phân tích ảnh X-quang.\n\n![](images/image6.jpg)\n\nHình 15.4: Ứng dụng segmentation [16]\n\n#### 2. Mạng U-Net với bài toán semantic segmentation\nNhư trong bài xử lý ảnh ta đã biết thì ảnh bản chất là một ma trận của các pixel. Trong bài toán image segmentation, ta cần phân loại mỗi pixel trong ảnh. Ví dụ như trong hình trên với semantic segmentation, với mỗi pixel trong ảnh ta cần xác định xem nó là background hay là người. Thêm nữa là ảnh input và output có cùng kích thước.\n\nU-Net được phát triển bởi Olaf Ronneberger et al. để dùng cho image segmentation trong y học. Kiến trúc có 2 phần đối xứng nhau được gọi là encoder (phần bên trái) và decoder (phần bên phải).\n\n### 2.1 Kiến trúc mạng U-Net\n![](images/image7.jpg)\n\n![](images/image8.jpg)\n\n#### Hình 15.5: Mạng U-Net [20]\n\n# Nhận xét:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Ô tô tự lái",
+      "start_index": 2044,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::Ô tô tự lái",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "### 2.1 Kiến trúc mạng U-Net\n![](images/image7.jpg)\n\n![](images/image8.jpg)\n\n#### Hình 15.5: Mạng U-Net [20]\n\n# Nhận xét:\n\n- Thực ra phần encoder chỉ là ConvNet bình thường (conv, max pool) với quy tắc quen thuộc từ bài VGG, các layer sau thì width, height giảm nhưng depth tăng.\n- Phần decoder có mục đích là khôi phục lại kích thước của ảnh gốc, ta thấy có up-conv lạ. Conv với stride > 1 thì để giảm kích thước của ảnh giống như max pool, thì up-conv dùng để tăng kích thước của ảnh.\n- Bạn thấy các đường màu xám, nó nối layer trước với layer hiện tại được dùng rất phổ biến trong các CNN ngày nay như DenseNet để tránh vanishing gradient cũng như mang được các thông tin cần thiết từ layer trước tới layer sau.\n\n#### 2.2 Loss function\nVì bài toán là phân loại cho mỗi pixel nên loss function sẽ là tổng cross-entropy loss cho mỗi pixel trong toàn bộ bức ảnh.\n\n#### 2.3 Transposed convolution\nHình ở trên có kích thước là 6\\*6, hình ở dưới có kích thước là 4\\*4, kernel có kích thước 3\\*3.\n\nNếu ta thực hiện phép tính convolution với input là hình ở trên, padding = 0, stride = 1 và kernel 3\\*3 thì output sẽ là hình ở dưới.\n\n![](images/image9.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1 Kiến trúc mạng U-Net",
+      "start_index": 2848,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2.1 Kiến trúc mạng U-Net",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "#### 2.3 Transposed convolution\nHình ở trên có kích thước là 6\\*6, hình ở dưới có kích thước là 4\\*4, kernel có kích thước 3\\*3.\n\nNếu ta thực hiện phép tính convolution với input là hình ở trên, padding = 0, stride = 1 và kernel 3\\*3 thì output sẽ là hình ở dưới.\n\n![](images/image9.jpg)\n\nPhép tính transposed convolution thì sẽ ngược lại, input là hình ở dưới, padding = 0, stride = 1 và kernel 3\\*3 thì output sẽ là hình ở trên. Các ô vuông ở hình trên bị đè lên nhau thì sẽ được cộng dồn. Các quy tắc về stride và padding thì tương tự với convolution.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.3 Transposed convolution",
+      "start_index": 3712,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::2.3 Transposed convolution",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": null
+    }
+  }
+]

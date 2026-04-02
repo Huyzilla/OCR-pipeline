@@ -1,0 +1,62 @@
+[
+  {
+    "chunk_id": "main::chunk::0",
+    "chunk_index": 0,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Public_204",
+    "section_hint": "Public_204",
+    "page_content": "# Public_204\n\n### 1. Bản mạch in (PCB).\nPCB (viết tắt từ Printed Circuit Board) là một bản mạch có các đường nối dẫn điện liên kết các linh kiện với nhau theo nguyên lý. Mối hàn kim loại tạo mối liên kết điện giữa bề mặt PCB với các linh kiện gắn trên nó.\n\nTrước khi mạch in PCB ra đời, mạch điện được đấu với nhau bằng dây điện nối điểm điểm rất mất thời gian. Và đó cũng là nguyên nhân dẫn đến nhiều hư hỏng, ngắn mạch, đứt mạch.\n\nMột tấm PCB được cấu thành từ nhiều lớp, mỗi lớp là một loại vật liệu khác nhau được kết dính bằng vật liệu kết dính và ép nhiệt để trở thành 1 bản mạch duy nhất.\n\n![](images/image1.jpg)\n\n# Vật liệu nền (Substrate)\nVật liệu nền, thường là sợi thủy tinh (FR4), ngoài ra còn có các vật liệu khác như nhựa Bakelit (FR1), eposi kết hợp sợi thủy tinh (CEM) ... Sợi thủy tinh có rất nhiều ưu điểm, nên hầu hết các thiết kế người ta sử dụng FR-4. Ngoài ra, đối với các loại PCB dẻo còn sử dụng loại nhựa chịu nhiệt cao để làm vật liệu nền (Kapton hoặc tương đương).\n\nCó rất nhiều độ dày khác nhau cho PCB, chủ yếu và phổ biến là 1.6mm, ngoài ra còn có 0.16mm, 0.5mm, 0.8mm, 1.0mm, 1.2mm, 2.0mm ...",
+    "start_index": 0,
+    "prev_chunk_id": null,
+    "next_chunk_id": "main::chunk::1"
+  },
+  {
+    "chunk_id": "main::chunk::1",
+    "chunk_index": 1,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Vật liệu nền (Substrate)",
+    "section_hint": "Vật liệu nền (Substrate)",
+    "page_content": "Có rất nhiều độ dày khác nhau cho PCB, chủ yếu và phổ biến là 1.6mm, ngoài ra còn có 0.16mm, 0.5mm, 0.8mm, 1.0mm, 1.2mm, 2.0mm ...\n\nCác loại nền mạch rẻ tiền như Eposi, Phenol được sử dụng trong các sản phẩm điện tử cần giá thành thấp có độ bền kém hơn FR-4, có những đặc tính không dễ chịu như có mùi khét khi hàn, nếu đặt nhiệt độ quá cao hay hàn quá lâu bản mạch sẽ bị phân hủy, phát sinh khói.\n\n## Đường đồng (Copper)\n![](images/image2.jpg)\n\nLớp tiếp theo là lớp đồng mỏng, được ép dính bằng keo kết dính và nhiệt trên vật liệu nền. Thông thường, đối với mạch 2 lớp, thì đồng được ép trên cả 2 mặt, đối với mạch 1 lớp, thì đồng chỉ được ép trên 1 mặt. Độ dày của lớp đồng khác nhau và được đo bằng trọng lượng, ounce/foot vuông. Đa số PCB có độ dày 1 ounce/foot vuông (độ dày của lớp đồng khoảng 35 micromet).\n\n# Lớp phủ (Soldermask).\nLớp phía trên lớp đồng là lớp phủ, hay còn gọi là mặt nạ mở phủ, phổ biến có màu xanh lá, ngoài ra có màu đỏ, đen, trắng, xanh dương. Nó được phủ lên lớp đồng để ngăn cách các đường đồng tiếp xúc ngẫu nhiên đối với kim loại, mối hàn, hoặc dây dẫn. Ngoài ra nó còn hữu ích để hàn chính xác, ngăn chặn lem hàn.\n\n![](images/image3.jpg)",
+    "start_index": 993,
+    "prev_chunk_id": "main::chunk::0",
+    "next_chunk_id": "main::chunk::2"
+  },
+  {
+    "chunk_id": "main::chunk::2",
+    "chunk_index": 2,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Lớp phủ (Soldermask).",
+    "section_hint": "Lớp phủ (Soldermask).",
+    "page_content": "![](images/image3.jpg)\n\nTrên hình, lớp phủ màu xanh lá được sử dụng phổ biến cho các loại PCB, phủ qua hết các đừờng mạch tuy nhiên vẫn chừa ra những chỗ màu trắng để hàn linh kiện.\n\n# Lớp in linh kiện (Silkscreen)\n![](images/image4.jpg)\n\nLớp in linh kiện màu trắng là lớp trên cùng PCB, trên cả lớp phủ xanh. Ở lớp này có thể thêm những ký tự, số, ký hiệu của các linh kiện để dễ dàng nhận biết và lắp ráp linh kiện lên PCB. Thông thường lớp in linh kiện có màu trắng, tuy nhiên có những màu khác nữa như màu đen, mầu xám, nhưng tùy thuộc vào màu của lớp phủ để sử dụng màu của lớp in linh kiện sao cho nổi bật nhất. Ví dụ phủ đen thì in linh kiện trắng, còn phủ trắng thì in linh kiện đen.\n\n# 2. Tổ chức linh kiện trên bản mạch.\nViệc bố trí linh kiện trên bo mạch cho đúng và hợp lý phụ thuộc vào rất nhiều yếu tố. Tuy nhiên trong thiết kế mạch phải đảm bảo các nguyên tắc sau.\n\n- Có không gian đủ lớn cho các linh kiện công suất.\n- Hạn chế tối thiểu các đoạn dây nối chồng chéo.\n\n# 3. Dụng cụ, thiết bị cầm tay nghề điện tử.\n#### 3.1 Mỏ hàn.\n### Mỏ hàn nhiệt\n![](images/image5.jpg)",
+    "start_index": 2142,
+    "prev_chunk_id": "main::chunk::1",
+    "next_chunk_id": "main::chunk::3"
+  },
+  {
+    "chunk_id": "main::chunk::3",
+    "chunk_index": 3,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2. Tổ chức linh kiện trên bản mạch.",
+    "section_hint": "2. Tổ chức linh kiện trên bản mạch.",
+    "page_content": "- Có không gian đủ lớn cho các linh kiện công suất.\n- Hạn chế tối thiểu các đoạn dây nối chồng chéo.\n\n# 3. Dụng cụ, thiết bị cầm tay nghề điện tử.\n#### 3.1 Mỏ hàn.\n### Mỏ hàn nhiệt\n![](images/image5.jpg)\n\nPhần chính của mỏ hàn thường là bộ phận gia nhiệt. Trên một ống sứ hình trụ rỗng, mặt ngoài tạo rãnh theo đường xoắn ốc, trên rãnh người ta đặt dây điện trở nhiệt, giữa ruột của ống sứ là mỏ hàn bằng đồng đỏ.\n\nĐầu dây ra của điện trở nhiệt được bao phủ bởi các vòng (khoen) sứ nhỏ chịu nhiệt và cách điện tốt, xuyên qua cần hàn rồi đấu vào dây dẫn điện để dẫn điện vào mỏ hàn.\n\n![](images/image6.jpg)\n\n*Cấu tạo bên trong mỏ hàn thường*\n\nKhi mỏ hàn được cấp nguồn sẽ xuất hiện dòng điện chạy qua cuộn dây điện trở nhiệt (1) cuốn trên ống sứ (3), làm cho cuộn dây (4) nóng dần lên sinh ra nhiệt. Nhiệt lượng này truyền qua ống sứ cách điện sang đầu mỏ hàn (5) (đầu mỏ hàn nằm trong ống sứ và cuộn dây). Đầu mỏ hàn được làm bằng lim loại nên hấp thụ nhiệt. Nhiệt lượng do đầu mỏ hàn toả ra nóng hơn nhiệt độ nóng chảy của thiếc nên khi ta đưa đầu mỏ hàn vào thiếc sẽ làm cho thiếc bị nóng chảy. Vậy mỏ hàn đã sinh nhiệt.",
+    "start_index": 3023,
+    "prev_chunk_id": "main::chunk::2",
+    "next_chunk_id": "main::chunk::4"
+  },
+  {
+    "chunk_id": "main::chunk::4",
+    "chunk_index": 4,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Mỏ hàn xung",
+    "section_hint": "Mỏ hàn xung",
+    "page_content": "### Mỏ hàn xung\nMỏ hàn xung thường được sử dụng ở mạng điện lưới 110V hay 220V, mỏ hàn xung được chế tạo gồm nhiều loại công suất khác nhau : 45W, 60W, 75W và 100W, 200W, tuỳ theo đối tượng hàn mà ta chọn loại mỏ hàn xung nào cho phù hợp.\n\n![](images/image7.jpg)\n\n*Hình dạng bên ngoài mỏ hàn xung*\n\nBộ phận tạo nhiệt cho mỏ hàn xung chính là phần dây dẫn làm mỏ hàn, dòng điện làm nóng mỏ hàn được lấy từ cuộn thứ cấp (cuộn thứ cấp có hai cuộn: cuộn chính cấp dòng cho mỏ hàn ; cuộn phụ cấp dòng cho đèn báo của biến áp hàn). Biến áp hàn có cuộn sơ cấp nối tiếp với nút ấn (công tắc nguồn) và dây dẫn điện cùng phích cắm để lấy điện xoay chiều vào.",
+    "start_index": 4147,
+    "prev_chunk_id": "main::chunk::3",
+    "next_chunk_id": null
+  }
+]

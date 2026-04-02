@@ -1,0 +1,296 @@
+[
+  {
+    "page_content": "# Public_111\n\nTrong các phần trước ta đã làm quen với vấn đề suy diễn xác suất, trong đó cho trước một số bằng chứng *E*1, …, *En*, cần tính xác suất điều kiện *P* (*Q* | *E*1, …, *En*) để kết luận về câu truy vấn *Q*.\n\nXác suất điều kiện trên có thể tính được nếu biết toàn bộ xác suất đồng thời của các biến ngẫu nhiên. Tuy nhiên, trên thực tế, các bài toán thường có số lượng biến ngẫu nhiên lớn, dẫn tới số lượng xác suất đồng thời tăng theo hàm mũ. Do vậy, liệt kê và sử dụng bảng xác suất đồng thời đầy đủ để suy diễn là không thực tế.\n\nĐể khắc phục khó khăn trên, trong phần này ta sẽ xem xét cách sử dụng mạng Bayes như một mô hình biểu diễn xác suất rút gọn và cách thực hiện suy diễn xác suất trên mạng Bayes.\n\n#### 1.Khái niệm mạng Bayes\nĐể tiện cho việc trình bày khái niệm mạng Bayes, xét một ví dụ sau<sup>3</sup> .\n\n*Một người đi làm về và muốn dự đoán xem ở nhà có người không thông qua một số dấu hiệu có thể quan sát được. Cho biết một số dữ kiện sau:*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_111",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_111",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "#### 1.Khái niệm mạng Bayes\nĐể tiện cho việc trình bày khái niệm mạng Bayes, xét một ví dụ sau<sup>3</sup> .\n\n*Một người đi làm về và muốn dự đoán xem ở nhà có người không thông qua một số dấu hiệu có thể quan sát được. Cho biết một số dữ kiện sau:*\n\n- *Nếu cả nhà đi vắng thì thường bật đèn ngoài sân. Tuy nhiên, đèn ngoài sân có thể được cả trong một số trường hợp có người ở nhà, ví dụ khi có khách đến chơi.* - *Nếu cả nhà đi vắng thì thường buộc chó ở sân sau.*\n- *Tuy nhiên chó có thể được buộc ở sân sau cả khi có người ở nhà nếu như chó bị đau bụng.*\n- *Nếu chó buộc ở ngoài thì có thể nghe tiếng sủa, tuy nhiên có thể nghe tiếng sủa (của chó hàng xóm) cả khi chó không buộc ở ngoài.*\n\nĐể thực hiện suy diễn xác suất cho bài toán trên, trước tiên cần xây dựng mô hình xác suất. Ta sẽ sử dụng năm biến ngẫu nhiên sau để thể hiện các dữ kiện liên quan tới bài toán.\n\nO: không ai ở nhà\n\nL: đèn sáng\n\nD: chó ở ngoài\n\nB: chó bị ốm.\n\nH: nghe thấy tiếng sủa.\n\nViệc phân tích bài toán cho thấy:\n\n- Nếu biết D thì H không phụ thuộc vào O, L, B.\n\n- Nếu biết B thì D độc lập với O.\n- O và B độc lập với nhau",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.Khái niệm mạng Bayes",
+      "start_index": 721,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1.Khái niệm mạng Bayes",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "O: không ai ở nhà\n\nL: đèn sáng\n\nD: chó ở ngoài\n\nB: chó bị ốm.\n\nH: nghe thấy tiếng sủa.\n\nViệc phân tích bài toán cho thấy:\n\n- Nếu biết D thì H không phụ thuộc vào O, L, B.\n\n- Nếu biết B thì D độc lập với O.\n- O và B độc lập với nhau\n\nTiếp theo, ta xây dựng một đồ thị, trong đó mỗi biến ngẫu nhiên ở trên được biểu diễn bởi một nút như trên hình vẽ dưới đây (hình 4.1). Các nút được nối với nhau bằng những cung có hướng sao cho hai hai nút có quan hệ phụ thuộc được nối bởi một cung và hướng của cung thể hiện chiều tác động của nút gốc tới nút đích. Với đồ thị có hướng, ta có thể xác định quan hệ giữa các nút như sau: nếu tồn tại cung có hướng từ nút A tới nút B thì nút A được gọi là nút cha (mẹ) và nút B là nút con.\n\n![](images/image1.jpg)\n\nHình 4.1: Một ví dụ mạng Bayes\n\nSau khi có đồ thị, ta thêm vào *bảng xác suất điều kiện*. Bảng xác suất điều kiện thể hiện xác suất của biến khi biết giá trị cụ thể của các biến ở các nút cha mẹ. Trong trường hợp nút không có cha mẹ, xác suất trở thành xác suất tiền nghiệm. Để thuận tiện, bảng xác suất điều kiện được thể hiện ngay trên hình vẽ cùng với đồ thị.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.Khái niệm mạng Bayes",
+      "start_index": 1594,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1.Khái niệm mạng Bayes",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "Đồ thị vừa xây dựng cùng với các bảng xác suất điều kiện tạo thành mạng Bayes cho bài toán trong ví dụ trên.\n\n*Định nghĩa:* Mạng Bayes là một mô hình xác suất bao gồm 2 phần\n\n- Phần thứ nhất là một đồ thị có hướng không chứa chu trình, trong đó mỗi nút tương ứng với một biến ngẫu nhiên, các cung thể hiện mối quan hệ phụ thuộc giữa các biến.\n- Phần thứ hai là các bảng xác suất điều kiện: mỗi nút có một bảng xác suất điều kiện cho biết xác suất các giá trị của biến khi biết giá trị các nút cha mẹ.\n\nCấu trúc của đồ thị trong mạng Bayes thể hiện mối quan hệ phụ thuộc hoặc độc lập giữa các biến ngẫu nhiên của bài toán. Hai nút được nối với nhau bởi một cung khi giữa hai nút có quan hệ trực tiếp với nhau, trong đó giá trị nút gốc ảnh hưởng tới giá trị nút đích.\n\nLưu ý rằng trong cấu trúc của mạng Bayes không cho phép có chu trình. Hạn chế này ảnh hưởng tới khả năng mô hình hóa của mạng Bayes trong một số trường hợp tuy nhiên cho phép đơn giản hóa việc xây dựng và suy diễn trên mạng Bayes.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.Khái niệm mạng Bayes",
+      "start_index": 2705,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::1.Khái niệm mạng Bayes",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Lưu ý rằng trong cấu trúc của mạng Bayes không cho phép có chu trình. Hạn chế này ảnh hưởng tới khả năng mô hình hóa của mạng Bayes trong một số trường hợp tuy nhiên cho phép đơn giản hóa việc xây dựng và suy diễn trên mạng Bayes.\n\nBảng xác suất điều kiện xác định cụ thể ảnh hưởng của các nút cha mẹ tới giá trị nút con. Ở đây ta chỉ xét trường hợp biến ngẫu nhiên có thể nhận giá trị rời rạc và bảng xác suất điều kiện được cho theo tổ hợp giá trị của các nút cha mẹ. Mỗi d ng trong bảng tương ứng với một điều kiện cụ thể, thực chất là một tổ hợp giá trị các nút cha. Ví dụ, trong mạng Bayes của ví dụ trên, d ng thứ nhất trong bảng xác suất của nút D ứng với điều kiện trong đó O = True và B = True. Nếu nút không có cha mẹ thì bảng xác suất chỉ gồm một d ng duy nhất như trường hợp với nút O và nút B.\n\n## 2. Tính độc lập xác suất trong mạng Bayes\nMạng Bayes thể hiện hai thông tin chính.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.Khái niệm mạng Bayes",
+      "start_index": 3472,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::1.Khái niệm mạng Bayes",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "## 2. Tính độc lập xác suất trong mạng Bayes\nMạng Bayes thể hiện hai thông tin chính.\n\n*Thứ nhất*, đây là biểu diễn rút gọn của toàn bộ xác suất đồng thời. Trong ví dụ trên ta chỉ cần 10 xác suất thay vì 2<sup>5</sup> -1 xác suất đồng thời. Tùy theo kích thước và đặc điểm cụ thể của bài toán, hiệu quả của việc rút gọn số lượng xác suất có thể lớn hơn rất nhiều. Chẳng hạn, với mạng gồm 30 nút nhị phân, mỗi nút có 5 nút cha, ta cần tất cả 960 xác suất điều kiện cho mạng Bayes, trong khi bảng xác suất đồng thời cho 30 biến như vậy phải có 2<sup>30</sup> -1, tức là hơn một tỷ dòng.\n\n*Thứ hai*, mạng Bayes cho thấy sự phụ thuộc hoặc độc lập xác suất có điều kiện giữa các biến. Về thực chất, chính việc độc lập về xác suất dẫn tới khả năng biểu diễn rút gọn các xác suất đồng thời.\n\nTính độc lập xác suất trong mạng Bayes thể hiện qua tính chất sau.\n\n# Tính chất:\n- Mỗi nút trên mạng Bayes độc lập có điều kiện với tất cả các nút không phải là hậu duệ của nút đó nếu biết giá trị các nút cha.\n- Mỗi nút độc lập có điều kiện với tất cả các nút khác trên mạng nếu biết giá trị tất cả nút cha, nút con và nút cha của các nút con.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Tính độc lập xác suất trong mạng Bayes",
+      "start_index": 4280,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::2. Tính độc lập xác suất trong mạng Bayes",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "# Tính chất:\n- Mỗi nút trên mạng Bayes độc lập có điều kiện với tất cả các nút không phải là hậu duệ của nút đó nếu biết giá trị các nút cha.\n- Mỗi nút độc lập có điều kiện với tất cả các nút khác trên mạng nếu biết giá trị tất cả nút cha, nút con và nút cha của các nút con.\n\nVí dụ: Theo mạng Bayes trong ví dụ trên H độc lập với O, L, B nếu biết giá trị của D.\n\n### Tính các xác suất đồng thời\nSử dụng tính độc lập xác suất vừa phát biểu ở trên, có thể tính xác suất đồng thời của tất cả các biến. Xét ví dụ sau\n\n**Ví dụ:** cần tính \n$$P(H, D, L, \\neg O, B)$$\n\nTheo công thức chuỗi:\n\n$$P(H, D, L, \\neg O, B) = P(H|D, L, \\neg O, B) *P(D|L, \\neg O, B) *P(L|\\neg O, B) *P(\\neg O|B)$$\n  \n\\*  $P(B)$  Do tính độc lập xác suất (có điều kiện):\n\n$$P(H|B, D, \\neg O, L) = P(H|D)$$\n\n$$P(D|L, \\neg O, B) = P(D|\\neg O, B)$$\n  \n $P(L|\\neg O, B) = P(L|\\neg O)$   \n $P(\\neg O|B) = P(O)$ \n\ndo vậy,\n\n$$P(H, D, L, \\neg O, B) = P(H|D, L, \\neg O, B) * P(D|L, \\neg O, B) * P(L|\\neg O, B) * P(\\neg O|B)$$\n\n$$* P(B) = P(H|\\neg O) * P(D|\\neg O, B) * P(L|\\neg O) * P(\\neg O) * P(B)$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tính chất:",
+      "start_index": 5133,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Tính chất:",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "$$P(D|L, \\neg O, B) = P(D|\\neg O, B)$$\n  \n $P(L|\\neg O, B) = P(L|\\neg O)$   \n $P(\\neg O|B) = P(O)$ \n\ndo vậy,\n\n$$P(H, D, L, \\neg O, B) = P(H|D, L, \\neg O, B) * P(D|L, \\neg O, B) * P(L|\\neg O, B) * P(\\neg O|B)$$\n\n$$* P(B) = P(H|\\neg O) * P(D|\\neg O, B) * P(L|\\neg O) * P(\\neg O) * P(B)$$\n\nMột cách tổng quát, giả sử mạng có n nút tương ứng với n biến ngẫu nhiên *X*1, …, *X<sup>n</sup>* của bài toán đang xét. Từ thông tin của mạng, có thể tính mọi xác suất đồng thời của n biến, trong đó mỗi xác suất đồng thời có dạng *P* (*X*<sup>1</sup> = *x*<sup>1</sup> ∧ *X*<sup>2</sup> = *x*<sup>2</sup> ∧…∧ *X<sup>n</sup>* = *xn*) hay viết gọn là *P*(*x*1, …,*xn*). Xác suất đồng thời được tính theo công thức tổng quát sau:\n\n$$P(X_1 = x_1, ..., X_n = x_n) = \\prod_{i=1}^{n} P(X_i = x_i | cha_me(X_i))$$\n\nhay viết gọn là\n\n$$P(x_1,...,x_n) = \\prod_{i=1}^{n} P(x_i | cha \\_me(X_i))$$\n\ntrong đó *cha\\_me*(*Xi*) là giá trị cụ thể các nút cha mẹ của nút *Xi*.\n\nĐể minh họa cho công thức trên, ta sẽ tính xác suất xẩy ra tình huống ở nhà có người, chó bị ốm và được buộc ngoài sân, đồng thời đèn không sáng và nghe tiếng chó sủa. Xác suất tình huống này chính là *P(B, ¬O, D, ¬L, H)* và được tính như sau:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tính các xác suất đồng thời",
+      "start_index": 5908,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Tính các xác suất đồng thời",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "Để minh họa cho công thức trên, ta sẽ tính xác suất xẩy ra tình huống ở nhà có người, chó bị ốm và được buộc ngoài sân, đồng thời đèn không sáng và nghe tiếng chó sủa. Xác suất tình huống này chính là *P(B, ¬O, D, ¬L, H)* và được tính như sau:\n\n$$P(B, \\neg O, D, \\neg L, H) = P(B) * P(\\neg O) * P(D|\\neg O, B) * P(H|D) * P(\\neg L|\\neg O)$$\n  \n= 0,3 \\* 0,4 \\* 0,05 \\* 0,7 \\* 0,3  \n= 0,00126\n\nTrong một phần trên ta đã thấy rằng nếu có mọi xác suất đồng thời thì có thể thực hiện suy diễn xác suất cho mọi dạng câu truy vấn. Như vậy, với mạng Bayes ta có thể suy diễn bằng cách trước tiên tính ra mọi xác suất đồng thời cần thiết. Tuy nhiên, cách này đòi hỏi tính toán nhiều và vì vậy trên thực tế thường sử dụng một số phương pháp suy diễn khác hiệu quả hơn. Vấn đề này sẽ được nhắc tới trong một phần sau.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Tính các xác suất đồng thời",
+      "start_index": 6854,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::Tính các xác suất đồng thời",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "#### 3. Cách xây dựng mạng Bayes\nĐể có thể sử dụng, trước tiên cần xây dựng ra mạng Bayes. Quá trình xây dựng mạng Bayes bao gồm việc xác định tất cả các biến ngẫu nhiên liên quan, xác định cấu trúc đồ thị của mạng, và cuối cùng là xác định giá trị cho các bảng xác suất điều kiện. Trong phần này, ta sẽ coi như đã có biến ngẫu nhiên, việc xây dựng mạng chỉ bao gồm xác định cấu trúc và bảng xác suất điều kiện.\n\nCó hai cách tiếp cận chính để xây dựng mạng Bayes.\n\n- Cách thứ nhất do con người (chuyên gia) thực hiện dựa trên hiểu biết của mình về bài toán đang xét. Việc xây dựng mạng được chia thành hai bước: xác định cấu trúc đồ thị và điền giá trị cho bảng xác suất điều kiện.\n- Cách thứ hai là tự động xác định cấu trúc và xác suất điều kiện từ dữ liệu. Ở đây, dữ liệu có dạng giá trị các biến ghi nhận được trong quá khứ, ví dụ ta có thể ghi lại tổ hợp cá giá trị của năm biến trong ví dụ trên trong thời gian vài năm. Quá trình xây dựng mạng khi đó bao gồm xác định cấu trúc của đồ thị và bảng xác suất điều kiện sao cho phân bố xác suất do mạng thể hiện phù hợp nhất với tần suất xuất hiện các giá trị trong tập dữ liệu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Cách xây dựng mạng Bayes",
+      "start_index": 7661,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::3. Cách xây dựng mạng Bayes",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "Phần này chỉ xem xét cách xây dựng mạng do con người thực hiện và mô tả một quy trình cụ thể cho việc xây dựng mạng.\n\nCác bước xây dựng mạng được thực hiện như trên hình 4.2. Sau khi đã có cấu trúc mạng, chuyên gia sẽ xác định giá trị cho các bảng xác suất điều kiện. Thông thường, việc xác định giá trị xác suất điều kiện khó hơn nhiều so với việc xác định cấu trúc mạng, tức là xác định quan hệ giữa các nút.\n\n**B1:** Xác định các biến ngẫu nhiên cho phép mô tả miền của bài toán.\n\n**B2:** Sắp xếp các biến theo một thứ tự nào đó. Ví dụ theo thứ tự sau: X1, X<sup>2</sup> …\n\nXn.\n\n**B3:** *For i = 1 to n do*\n\n- *a. Thêm một nút mới X<sup>i</sup> vào mạng*\n- *b. Xác định tập Cha\\_Mẹ(Xi) là tập nhỏ nhất các nút đã có trước đó sao cho X<sup>i</sup> độc lập có điều kiện với tất cả nút còn lại khi biết bố mẹ của Xi.*\n- *c. Với mỗi nút thuộc tập Cha\\_Mẹ(Xi). Ta thêm một cạnh có hướng từ nút đó tới Xi.*\n- *d. Xác định bảng xác suất điều kiện cho X<sup>i</sup> the các giá trị của bố mẹ hoặc bằng xác suất tiền nghiệm nếu X<sup>i</sup> không có bố mẹ.*\n\nHình 3.1**:** Phương pháp xây dựng mạng Bayes",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Cách xây dựng mạng Bayes",
+      "start_index": 8792,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::3. Cách xây dựng mạng Bayes",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "Hình 3.1**:** Phương pháp xây dựng mạng Bayes\n\nĐể minh họa, xét ví dụ sau. Một người vừa lắp hệ thống báo động chống trộm ở nhà. Hệ thống sẽ phát tiếng động khi có trộm. Tuy nhiên, hệ thống có thể báo động (sai) nếu có chấn động do động đất. Trong trường hợp nghe thấy hệ thống báo động, hai người hàng xóm tên làm Nam và Việt sẽ gọi điện cho chủ nhà. Do nhiều nguyên nhân khác nhau, Nam và Việt có thể thông báo sai, chẳng hạn do ồn nên không nghe thấy chuông báo động hoặc ngược lại, nhầm âm thanh khác là tiếng chuông.\n\nTheo phương pháp trên, các bước xây dựng mạng được thực hiện như sau.\n\n- B1: lựa chọn biến: sử dụng 5 biến sau T (có trộm), Đ (động đất), B (chuông báo động), N (Nam gọi điện), V (Việt gọi điện)\n- B2: các biến được sắp xếp theo thứ tự T, Đ, B, N, V\n- B3: thực hiện như các bước ở hình vẽ, ta xây dựng được mạng thể hiện trên hình sau (để đơn giản, trên hình vẽ chỉ thể hiện cấu trúc và không có bảng xác suất điều kiện).\n\n![](images/image2.jpg)\n\nHình 3.2.: Kết quả xây dựng mạng Bayes cho ví dụ chuông báo trộm",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Cách xây dựng mạng Bayes",
+      "start_index": 9846,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::3. Cách xây dựng mạng Bayes",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "![](images/image2.jpg)\n\nHình 3.2.: Kết quả xây dựng mạng Bayes cho ví dụ chuông báo trộm\n\n## Ảnh hướng của việc sắp xếp các nút tới kết quả xây dựng mạng**.\nTrên thực tế, việc xây dựng mạng Bayes không đơn giản, đặc biệt trong việc chọn thứ tự các nút đúng để từ đây chọn được tập nút cha có kích thước nhỏ. Để làm rõ điểm này, ta giả sử trong ví dụ trên, các biến được xếp theo thứ tự khác: N, V, C, T, Đ.\n\nCác bước thêm nút sẽ thực hiện như sau:\n\n- Thêm nút N: không có nút cha\n- Thêm nút V: nếu Nam gọi điện, xác suất Việt gọi điện sẽ tăng lên do sự kiện Nam gọi điện nhiều khả năng do có báo động và do vậy xác suất Việt nghe thấy chuông và gọi điện tăng theo. Do vậy N có ảnh hướng tới V và được thêm vào tập cha của V.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Cách xây dựng mạng Bayes",
+      "start_index": 10791,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::3. Cách xây dựng mạng Bayes",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "- Thêm nút N: không có nút cha\n- Thêm nút V: nếu Nam gọi điện, xác suất Việt gọi điện sẽ tăng lên do sự kiện Nam gọi điện nhiều khả năng do có báo động và do vậy xác suất Việt nghe thấy chuông và gọi điện tăng theo. Do vậy N có ảnh hướng tới V và được thêm vào tập cha của V.\n\n- Thêm C: Nếu Nam và Việt cùng gọi thì khả năng có chuông cao hơn, do vậy cần thêm cả N và V vào tập cha của C.\n- Thêm T: Nếu đã biết trạng thái của chuông thì không cần quan tâm tới Nam và Việt nữa, do vậy chỉ có C là cha của T.\n- Thêm Đ: nếu có chuông, khả năng động đất tăng lên. Tuy nhiên, nếu đồng thời ta biết có trộm thì việc có trộm giải thích phần nào nguyên nhân chuông kêu. Như vậy, cả chuông và có trộm ảnh hướng tới xác suất động đất, tức là C và T đều là cha của Đ.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Ảnh hướng của việc sắp xếp các nút tới kết quả xây dựng mạng**.",
+      "start_index": 11240,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::Ảnh hướng của việc sắp xếp các nút tới kết quả xây dựng mạng**.",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "Kết quả của mạng Bayes xây dựng theo thứ tự mới được thể hiện trên hình dưới. So sánh với kết quả ở trên, mạng Bayes mới phức tạp hơn, theo nghĩa có nhiều cung hơn hay trung bình các nút có nhiều nút cha hơn. Ngoài ra, ý nghĩa một số quan hệ trên mạng rất không trực quan và khó giải thích, chẳng hạn việc xác suất động đất phục thuộc vào chuông báo động và có trộm. Như vậy, mặc dù cả hai mạng Bayes xây dựng ở trên đều đúng theo nghĩa đảm bảo các ràng buộc về xác suất và đều cho phép tính ra các xác suất đồng thời, việc lựa chọn không đúng thứ tự nút sẽ làm mạng khó hiểu và phức tạp hơn.\n\n![](images/image3.jpg)\n\nHình 3.3: Kết quả xây dựng mạng Bayes khi sử dụng thứ tự các nút khác\n\nTừ ví dụ trên ta có thể đưa ra một số nhận xét về kết quả xây dựng mạng Bayes.\n\n### Nhận xét:\n- Cùng một tập hợp biến có thể xây dựng nhiều mạng Bayes khác nhau.\n- Thứ tự sắp xếp có ảnh hưởng tới mạng Bayes. Nên sắp xếp sao cho các nút đóng vai tr nguyên nhân đứng trước nút hệ quả.\n\n- Tất cả các mạng được xây dựng như trên đều hợp lệ, theo nghĩa không vi phạm các ràng buộc về xác suất và đều cho phép thực hiện suy diễn.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Ảnh hướng của việc sắp xếp các nút tới kết quả xây dựng mạng**.",
+      "start_index": 11998,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::Ảnh hướng của việc sắp xếp các nút tới kết quả xây dựng mạng**.",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": "main::chunk::15"
+    }
+  },
+  {
+    "page_content": "- Tất cả các mạng được xây dựng như trên đều hợp lệ, theo nghĩa không vi phạm các ràng buộc về xác suất và đều cho phép thực hiện suy diễn.\n\n# 4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách\nTrong phần trước, ta đã xem xét khả năng biểu diễn tính độc lập xác suất của mạng Bayes, ví dụ, mỗi *x* nút độc lập với các nút không phải hậu duệ nếu biết giá trị tất cả nút cha của *x*. Tuy nhiên, đây mới là các trường hợp riêng, trong trường hợp tổng quát cần có khả năng xác định liệu một tập hợp các nút *X* có độc lập với tập hợp các nút *Y* khi biết các nút *E* không. Các tính chất độc lập xác suất đã trình bầy trong phần trước không cho phép trả lời tất cả các câu hỏi tổng quát dạng này. Chẳng hạn, trong ví dụ mạng Bayes trên hình 4.1 dưới đây, nếu không biết giá trị của nút C thì theo tính chất của mạng Bayes, N và V độc lập (không điều kiện) với nhau do V không phải hậu duệ của N và N không có cha. Tuy nhiên, nếu đã biết giá trị của C thì N và V còn độc lập với nhau không? Hai tính chất trình bày trong phần trước không cho phép trả lời câu hỏi này.\n\n![](images/image4.jpg)\n\nHình 4.1. Ví dụ mạng Bayes",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Nhận xét:",
+      "start_index": 12971,
+      "chunk_index": 15,
+      "chunk_id": "main::chunk::15",
+      "parent_id": "main::section::Nhận xét:",
+      "prev_chunk_id": "main::chunk::14",
+      "next_chunk_id": "main::chunk::16"
+    }
+  },
+  {
+    "page_content": "![](images/image4.jpg)\n\nHình 4.1. Ví dụ mạng Bayes\n\nTrong phần này, ta sẽ xem xét cách trả lời câu hỏi về tính độc lập của tập các nút X với tập nút Y khi biết tập nút E trên một mạng Bayes bằng cách sử dụng khái niệm *d*-*phân cách* (*d*-separation).\n\nNguyên lý chung của *d*-phân cách là gắn khái niệm phụ thuộc xác suất với tính kết nối (tức là có đường đi giữa các nút), và khái niệm độc lập xác suất với tính không kết nối, hay chia cắt, trên đồ thị có hướng khi ta biết giá trị một số nút *E*. Chữ \"*d* \" ở đây là viết tắt của từ \"directional\" tức là \"có hướng\". Theo đó, các nút *X* và các nút *Y* là *d*-kết nối với nhau nếu chúng không bị *d*-phân cách. *Nếu các nút X và các nút Y bị dphân cách bởi các nút E thì X và Y là độc lập xác suất với nhau khi biết E*.\n\nĐể xác định tính *d*-phân cách của tập X và Y, trước tiên ta cần xác định tính *d*phân cách giữa hai nút đơn *x* thuộc *X* và *y* thuộc *Y*. Từ đây, hai tập nút sẽ độc lập với nhau nếu mỗi nút trong tập này độc lập với tất cả các nút trong tập kia. Sau đây là các quy tắc cho phép xác định tính *d*-phân cách hay tính độc lập xác suất của hai biến *x* và *y*.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "start_index": 14048,
+      "chunk_index": 16,
+      "chunk_id": "main::chunk::16",
+      "parent_id": "main::section::4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "prev_chunk_id": "main::chunk::15",
+      "next_chunk_id": "main::chunk::17"
+    }
+  },
+  {
+    "page_content": "**Quy tắc 1**: nút *x* và *y* được gọi là *d*-kết nối nếu tồn tại đường đi không bị phong tỏa giữa hai nút. Ngược lại, nếu không tồn tại đường đi như vậy thì *x* và *y* là *d*-phân cách.\n\nTrong quy tắc này, đường đi là một chuỗi các cung nằm liền nhau, không tính tới hướng của các cung đó. Đường đi không bị phong tỏa là đường đi mà trên đó không có hai cung liền kề hướng vào nhau. Trong trường hợp tồn tại hai cung như vậy thì thông tin sẽ không thể đi qua được và do vậy các nút không thể kết nối với nhau. Nút có hai cung hướng vào như vậy gọi là *nút xung đột*.\n\nVí dụ, trong trường hợp sau:\n\n$$x \\longrightarrow r \\longrightarrow s \\longrightarrow t \\longleftarrow u \\longleftarrow v \\longrightarrow y$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "start_index": 15182,
+      "chunk_index": 17,
+      "chunk_id": "main::chunk::17",
+      "parent_id": "main::section::4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "prev_chunk_id": "main::chunk::16",
+      "next_chunk_id": "main::chunk::18"
+    }
+  },
+  {
+    "page_content": "Ví dụ, trong trường hợp sau:\n\n$$x \\longrightarrow r \\longrightarrow s \\longrightarrow t \\longleftarrow u \\longleftarrow v \\longrightarrow y$$\n\ngiữa *x* và *y* tồn tại đường đi *x* - *r* - *s* - *t* - *u* - *v* - *y*, tuy nhiên *t* là nút xung đột do hai cung *st* và *ut* hướng vào nhau. Đường đi *x* - *r* - *s* - *t* và *t* - *u* - *v* - *y* là các đường đi không bị phong tỏa, do vậy *x* và *t* là d-kết nối, *t* và *y* cũng vậy. Tuy vậy, *x* và *y* không phải là *d*-kết nối do không tồn tại đường đi nào không qua nút xung đột *t*. Như vậy, *x* và *y* là *d*-phân cách trên mạng này và do vậy độc lập xác suất (không điều kiện) với nhau.\n\nTính kết nối và phân cách xác định theo quy tắc 1 là không điều kiện và do vậy tính độc lập xác suất được xác định theo quy tắc 1 là *độc lập không điều kiện*.\n\n**Quy tắc 2**: nút *x* và *y* là *d*-kết nối có điều kiện khi biết tập nút *E* nếu tồn tại đường đi không bị phong tỏa (không chứa nút xung đột) và không đi qua bất cứ nút nào thuộc *E*. Ngược lại, nếu không tồn tại đường đi như vậy thì ta nói rằng *x* và *y* là *d*-phân cách bởi *E*. Nói cách khác, mọi đường đi giữa *x* và *y* (nếu có) đều bị *E* phong tỏa.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "start_index": 15751,
+      "chunk_index": 18,
+      "chunk_id": "main::chunk::18",
+      "parent_id": "main::section::4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "prev_chunk_id": "main::chunk::17",
+      "next_chunk_id": "main::chunk::19"
+    }
+  },
+  {
+    "page_content": "Quy tắc 2 là cần thiết do khi ta biết giá trị một số nút (tập nút *E*), tính chất độc lập hay phụ thuộc giữa các nút c n lại có thể thay đổi: một số nút độc lập trở nên phụ thuộc, và ngược lại, một ss nút phụ thuộc trở thành độc lập. Tính độc lập hay phụ thuộc trong trường hợp này được gọi là *d*-phân cách có điều kiện theo tập biến *E*.\n\nVí dụ: trên hình sau, giả sử tập *E* gồm hai nút *r* và *v* được khoanh tr n. Theo quy tắc 2, không tồn tại đường đi không bị phong tỏa nào giữa *x* và *y* mà không đi qua *E*, do đó *x* và *y* là *d*-phân cách khi biết *E*. Tương tự như vậy: *x* và *s*, *u* và *y*, *s* và *u* là *d*-phân cách khi biết *E* do đường đi *s* – *r* – *t* đi qua nút *r* thuộc *E*, đường đi *y* – *v* – *s* đi qua nút *v* thuộc *E*, c n đường đi *s* – *t* – *u* là đường đi bị phong tỏa tại nút xung đột *t* theo quy tắc 1. Chỉ có các cặp nút *s* và *t*, *t* và *u* là không bị phong tỏa bởi *E*.\n\n$$x \\longrightarrow r \\longrightarrow s \\longrightarrow t \\longleftarrow u \\longleftarrow v \\longrightarrow y$$\n\n**Quy tắc 3**: nếu một nút xung đột là thành viên của tập *E*, hoặc có hậu duệ thuộc tập *E*, thì nút đó không c n phong tỏa các đường đi qua nó nữa.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "start_index": 16918,
+      "chunk_index": 19,
+      "chunk_id": "main::chunk::19",
+      "parent_id": "main::section::4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "prev_chunk_id": "main::chunk::18",
+      "next_chunk_id": "main::chunk::20"
+    }
+  },
+  {
+    "page_content": "$$x \\longrightarrow r \\longrightarrow s \\longrightarrow t \\longleftarrow u \\longleftarrow v \\longrightarrow y$$\n\n**Quy tắc 3**: nếu một nút xung đột là thành viên của tập *E*, hoặc có hậu duệ thuộc tập *E*, thì nút đó không c n phong tỏa các đường đi qua nó nữa.\n\nQuy tắc này được sử dụng cho trường hợp ta biết một sự kiện được gây ra bởi hai hay nhiều nguyên nhân. Khi ta đã biết một nguyên nhân là đúng thì xác suất những nguyên nhân c n lại giảm đi, và ngược lại nếu ta biết một nguyên nhân là sai thì xác suất những nguyên nhân c n lại tăng lên. Chẳng hạn, xẩy ra tai nạn máy bay với hai nguyên nhân là trục trặc kỹ thuật hoặc lỗi của con người. Nếu ta đã xác định được xẩy ra trục trặc kỹ thuật thì xác suất lỗi con người sẽ bị giảm đi (mặc dù không loại trừ hoàn toàn).\n\n*Ví dụ*: trên ví dụ ở hình sau, giả sử tập E gồm các nút r và p được đánh dấu bằng cách khoanh tr n. Theo quy tắc 3, nút s và y là d-kết nối do nút xung đột t có hậu duệ là nút p thuộc E, do vậy đã giải tỏa đường đi s – t – u – v – y. Trong khi đó x và u vẫn là d-phân cách do mặc dù t đã được giải tỏa nhưng nút r vẫn bị phong tỏa theo quy tắc 2.\n\n![](images/image5.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "start_index": 17837,
+      "chunk_index": 20,
+      "chunk_id": "main::chunk::20",
+      "parent_id": "main::section::4. Tính độc lập xác suất tổng quát: khái niệm** *d***-phân cách",
+      "prev_chunk_id": "main::chunk::19",
+      "next_chunk_id": null
+    }
+  }
+]

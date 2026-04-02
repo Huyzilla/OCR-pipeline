@@ -1,0 +1,122 @@
+[
+  {
+    "chunk_id": "main::chunk::0",
+    "chunk_index": 0,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Public_025",
+    "section_hint": "Public_025",
+    "page_content": "# Public_025\n\n### 1. Cơ sở khoa học\nChiếu xạ là một quá trình vật lý. Người ta sử dụng tia bức xạ điện từ hoặc dòng electron để tác động lên các mẫu thực phẩm. Khi thực phẩm hấp thụ năng lượng từ tia bức xạ điện từ hoặc dòng electron, sẽ xảy ra một số biến đổi có lợi cho chất lượng của sản phẩm.\n\nTia bức xạ điện từ gồm nhiều loại như tia X, tia gamma, tia beta... Hiện nay, tia gamma được sử dụng phổ biến trong sản xuất công nghiệp.",
+    "start_index": 0,
+    "prev_chunk_id": null,
+    "next_chunk_id": "main::chunk::1"
+  },
+  {
+    "chunk_id": "main::chunk::1",
+    "chunk_index": 1,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1. Cơ sở khoa học",
+    "section_hint": "1. Cơ sở khoa học",
+    "page_content": "Tia bức xạ điện từ gồm nhiều loại như tia X, tia gamma, tia beta... Hiện nay, tia gamma được sử dụng phổ biến trong sản xuất công nghiệp.\n\nỨng dụng của phương pháp chiếu xạ đã được phát hiện từ đầu thế kỷ XX. Năm 1930, nhà khoa học người Đức Wurt O. đã đăng ký bằng sáng chế tại Pháp về việc sử dụng phương pháp chiếu xạ để tiệt trùng thực phẩm. Tuy nhiên, lúc bấy giờ chiếu xạ được xem là một \"phương pháp nhạy cảm\". Người ta lo lắng không biết thực phẩm đã qua chiếu xạ có chứa các chất phóng xạ gây nguy hiểm cho sức khỏe hay không. Sau một thời gian dài nghiên cứu, các nhà khoa học nhiều nước trên thế giới kết luận: chiếu xạ là một phương pháp an toàn trong công nghiệp thực phẩm nếu sử dụng liều thích hợp tương ứng với từng loại thực phẩm. Ngày nay, nhiều quốc gia trên thế giới cho phép sử dụng chiếu xạ trong công nghiệp thực phẩm, trong đó có nhiều nước công nghiệp phát triển như Mỹ, Canada, Anh, Pháp, Đức, Hà Lan, Bỉ, Đan Mạch, Nga, Nhật, Australia... Việt Nam cũng nằm trong danh mục các nước cho phép sử dụng chiếu xạ trong công nghiệp thực phẩm.",
+    "start_index": 298,
+    "prev_chunk_id": "main::chunk::0",
+    "next_chunk_id": "main::chunk::2"
+  },
+  {
+    "chunk_id": "main::chunk::2",
+    "chunk_index": 2,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1. Cơ sở khoa học",
+    "section_hint": "1. Cơ sở khoa học",
+    "page_content": "Giá trị năng lượng mà tia bức xạ điện từ hoặc dòng electron truyền cho thực phẩm được gọi là **liều xạ** (irradiation dose). Trong hệ SI, liều xạ có đơn vị đo là **Gy (Gray)**, với:\n\n$$1 \\text{ Gy}=10-2 \\text{ kGy}=10-5 \\text{ MGy} 1 \\text{ text} \\{ \\text{ Gy} \\} = 10^{-2} \\text{ text} \\{ \\text{ kGy} \\} = 10^{-5} \\text{ text} \\{ \\text{ MGy} \\}$$\n\nCác tổ chức thế giới đã quy định liều xạ tối đa được phép sử dụng cho từng loại thực phẩm.\n\n### 2. Mục đích công nghệ và phạm vi thực hiện\n### 2.1 Bảo quản\nQuá trình chiếu xạ có thể kéo dài thời gian bảo quản một số loại thực phẩm do nhiều nguyên nhân khác nhau:\n\n• Chiếu xạ sẽ ức chế hoặc tiêu diệt một số loại côn trùng, sâu bọ và vi sinh vật. Sự hư hỏng của thực phẩm bởi các tác nhân này, đặc biệt là vi sinh vật, có thể xảy ra rất nhanh. Do đó, việc làm giảm mật độ vi sinh vật sẽ gia tăng thời hạn sử dụng sản phẩm. Quá trình chiếu xạ được sử dụng phổ biến trong công nghệ sau thu hoạch trái cây và rau tươi, ngũ cốc, thịt và thủy sản tươi. Ngoài ra, chiếu xạ còn",
+    "start_index": 1362,
+    "prev_chunk_id": "main::chunk::1",
+    "next_chunk_id": "main::chunk::3"
+  },
+  {
+    "chunk_id": "main::chunk::3",
+    "chunk_index": 3,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.1 Bảo quản",
+    "section_hint": "2.1 Bảo quản",
+    "page_content": "- được sử dụng trong sản xuất một số loại bột gia vị (tiêu bột, ớt bột...) và các loại bột trái cây, bột rau (ví dụ: bột măng tây khô).\n- Khi chiếu xạ với liều lượng thích hợp, quá trình chín sau thu hoạch và quá trình lão hóa ở một số loại trái cây sẽ bị chậm lại, ví dụ: chuối, xoài, đu đủ. Quá trình chiếu xạ làm chậm quá trình trao đổi chất trong các loại trái cây này, kéo dài thời gian bảo quản mà không phụ thuộc hoàn toàn vào việc ức chế vi sinh vật.\n- Chiếu xạ có thể gây ức chế sự nảy mầm ở một số loại thực vật như khoai tây, củ hành, tỏi, gừng. Nhờ đó, thời gian bảo quản những nguyên liệu này được kéo dài, giảm tỷ lệ tổn thất do nảy mầm.\n\n# 2.2 Chuẩn bị\nChiếu xạ có thể được xem là một quá trình chuẩn bị nguyên liệu cho các giai đoạn khai thác và chế biến:",
+    "start_index": 2382,
+    "prev_chunk_id": "main::chunk::2",
+    "next_chunk_id": "main::chunk::4"
+  },
+  {
+    "chunk_id": "main::chunk::4",
+    "chunk_index": 4,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.2 Chuẩn bị",
+    "section_hint": "2.2 Chuẩn bị",
+    "page_content": "# 2.2 Chuẩn bị\nChiếu xạ có thể được xem là một quá trình chuẩn bị nguyên liệu cho các giai đoạn khai thác và chế biến:\n\n- Khi chiếu xạ đại mạch với liều thấp (10–100 Gy), sự nảy mầm của hạt được kích thích, giúp quá trình ươm mầm diễn ra thuận lợi và nhanh hơn. Chiếu xạ được xem là bước chuẩn bị cho quá trình ươm mầm trong sản xuất malt.\n- Khi chiếu xạ nho với liều 2–7 kGy, quá trình ép thu nhận dịch nho diễn ra dễ dàng hơn, hiệu suất thu hồi chất chiết trong nước nho tăng cao so với mẫu đối chứng không qua chiếu xạ. Quá trình chiếu xạ nho được xem là bước chuẩn bị cho sản xuất nước ép trái cây hoặc rượu vang.\n\n## 2.3 Hoàn thiện\nChiếu xạ có thể cải thiện một số chỉ tiêu chất lượng sản phẩm. Ví dụ, trong công nghệ sản xuất súp ăn liền, chiếu xạ sẽ làm gãy mạch một số phân tử carbohydrate dài, nhờ đó chúng dễ hydrat hóa hơn khi pha với nước, cải thiện chất lượng súp.\n\nHiện nay, mục đích chính của chiếu xạ thực phẩm vẫn là **kéo dài thời gian bảo quản sản phẩm**.",
+    "start_index": 3035,
+    "prev_chunk_id": "main::chunk::3",
+    "next_chunk_id": "main::chunk::5"
+  },
+  {
+    "chunk_id": "main::chunk::5",
+    "chunk_index": 5,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.3 Hoàn thiện",
+    "section_hint": "2.3 Hoàn thiện",
+    "page_content": "Hiện nay, mục đích chính của chiếu xạ thực phẩm vẫn là **kéo dài thời gian bảo quản sản phẩm**.\n\n## 3. Các biến đổi của nguyên liệu\n#### 3.1 Vật lý\nKhi chiếu tia gamma hoặc dòng electron lên mẫu thực phẩm, các photon hoặc electron trong chùm chiếu sẽ tác động lên các hạt vật chất của nguyên tử. Nguyên tử gồm proton, neutron và electron. Proton và neutron nằm trong nhân, electron chuyển động quanh hạt nhân theo quỹ đạo xác định. Với liều xạ sử dụng trong công nghiệp thực phẩm, photon và electron của chùm chiếu không tác động đến proton và neutron; chúng chỉ tác động lên electron của nguyên tử.\n\n### Sử dụng tia gamma:\nKhi photon gamma chiếu vào thực phẩm, có thể xảy ra hai trường hợp:\n\n1. Photon xuyên qua mẫu, truyền một phần năng lượng.\n2. Photon bị hấp thu toàn bộ năng lượng.\n\nHai kiểu tương tác giữa photon và electron:\n\n• **Hiệu ứng quang điện (Photoelectric effect):**\n\nPhoton tác động lên electron, tách electron ra khỏi nguyên tử, photon biến mất. Nguyên tử mất electron bị ion hóa và electron thứ cấp được sinh ra. Electron thứ cấp tiếp tục gây ion hóa các electron khác.\n\n• **Hiệu ứng Compton:**",
+    "start_index": 3914,
+    "prev_chunk_id": "main::chunk::4",
+    "next_chunk_id": "main::chunk::6"
+  },
+  {
+    "chunk_id": "main::chunk::6",
+    "chunk_index": 6,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Sử dụng tia gamma:",
+    "section_hint": "Sử dụng tia gamma:",
+    "page_content": "• **Hiệu ứng quang điện (Photoelectric effect):**\n\nPhoton tác động lên electron, tách electron ra khỏi nguyên tử, photon biến mất. Nguyên tử mất electron bị ion hóa và electron thứ cấp được sinh ra. Electron thứ cấp tiếp tục gây ion hóa các electron khác.\n\n• **Hiệu ứng Compton:**\n\nPhoton tác động tách electron, nhưng photon vẫn tồn tại với năng lượng giảm và quỹ đạo thay đổi. Photon và electron thứ cấp đều có thể tiếp tục tương tác với các electron khác.\n\n**Sử dụng dòng electron:**\n\nElectron từ nguồn chiếu tác động lên electron của nguyên tử trong mẫu (tương tác Coulomb), dẫn đến:\n\n1. Tách electron ra khỏi nguyên tử → tạo electron thứ cấp, ion hóa nguyên tử.\n2. Thay đổi quỹ đạo electron → nguyên tử bị kích thích.\n\n**Lưu ý:** Khả năng xuyên qua của tia gamma cao hơn dòng electron, là lý do phổ biến trong chiếu xạ thực phẩm.\n\n### 3.2 Hóa học\n**Nước**\n\nPhân tử nước có thể biến đổi qua:\n\n- **Ion hóa:**\n- **Kích thích:**\n\nCác gốc tự do (H·, OH·) có thể phản ứng tạo ra hợp chất mới:\n\n### Polysaccharide\nCác polysaccharide như tinh bột, pectin, cellulose, hemicellulose... có thể bị gãy mạch, tạo sản phẩm phân tử thấp.",
+    "start_index": 4747,
+    "prev_chunk_id": "main::chunk::5",
+    "next_chunk_id": "main::chunk::7"
+  },
+  {
+    "chunk_id": "main::chunk::7",
+    "chunk_index": 7,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::3.2 Hóa học",
+    "section_hint": "3.2 Hóa học",
+    "page_content": "### 3.2 Hóa học\n**Nước**\n\nPhân tử nước có thể biến đổi qua:\n\n- **Ion hóa:**\n- **Kích thích:**\n\nCác gốc tự do (H·, OH·) có thể phản ứng tạo ra hợp chất mới:\n\n### Polysaccharide\nCác polysaccharide như tinh bột, pectin, cellulose, hemicellulose... có thể bị gãy mạch, tạo sản phẩm phân tử thấp.\n\n- Lợi: trong súp ăn liền, polysaccharide gãy → dễ hydrat hóa, cải thiện chất lượng.\n- Hại: chiếu xạ trái cây tươi liều cao → làm mềm trái cây, giảm giá trị cảm quan.\n\n## Protein\nVới liều xạ cho phép, protein hầu như không thay đổi về cấu trúc và tính chất hóa học. Liều thấp cũng không ảnh hưởng hàm lượng acid amin tự do.\n\n## Lipid\nTrong điều kiện có oxy, acid béo, đặc biệt là không no, dễ oxy hóa. Gốc tự do sinh ra từ phân tử nước và các hợp chất khác phản ứng với acid béo không no, tạo aldehyde, ketone, hydrogen peroxide… ảnh hưởng xấu đến giá trị dinh dưỡng và cảm quan.\n\n### Khoáng\nCác hợp chất khoáng không biến đổi đáng kể.\n\n## Vitamin\nMức độ tổn thất phụ thuộc liều xạ:\n\n- Liều 1 kGy: nhóm trái cây có múi không mất vitamin C.\n- Liều 2–4 kGy: lượng vitamin C giảm mạnh.\n\n# Acid nucleic\nBiến đổi DNA/RNA:",
+    "start_index": 5583,
+    "prev_chunk_id": "main::chunk::6",
+    "next_chunk_id": "main::chunk::8"
+  },
+  {
+    "chunk_id": "main::chunk::8",
+    "chunk_index": 8,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Khoáng",
+    "section_hint": "Khoáng",
+    "page_content": "### Khoáng\nCác hợp chất khoáng không biến đổi đáng kể.\n\n## Vitamin\nMức độ tổn thất phụ thuộc liều xạ:\n\n- Liều 1 kGy: nhóm trái cây có múi không mất vitamin C.\n- Liều 2–4 kGy: lượng vitamin C giảm mạnh.\n\n# Acid nucleic\nBiến đổi DNA/RNA:\n\n- Gãy mạch phân tử, tạo nhánh hoặc cả hai nhánh.\n- Hydroxyl hóa các base (A, T, G, C, U).\n- Phân hủy đường ribose/desoxyribose.\n- Tạo cầu nối ngẫu nhiên giữa các mạch DNA.\n\n## Các hợp chất khác\nCác hợp chất sinh học, màu, mùi… thay đổi tùy liều xạ. Ví dụ, carotenoids trong đu đủ 1,5 kGy không biến đổi đáng kể.\n\n## 3.3 Hóa lý\nChiếu xạ không ảnh hưởng trạng thái pha của thực phẩm.\n\n### 3.4 Sinh học\nChiếu xạ làm biến đổi acid nucleic → ảnh hưởng cấu trúc nhân tế bào vi sinh vật.\n\n- Tế bào vi sinh vật có hệ enzyme (ligase, exonuclease, polymerase…) sửa chữa DNA, duy trì trao đổi chất.\n- Nếu tổn thương quá lớn → tế bào chết hoặc không sinh sản được.\n- Có thể gây đột biến ở một số vi sinh vật.\n- Chiếu xạ còn tổn thương phospholipid màng tế bào, làm giảm vận chuyển chất, giảm hoạt tính trao đổi chất hoặc gây chết vi sinh vật.",
+    "start_index": 6456,
+    "prev_chunk_id": "main::chunk::7",
+    "next_chunk_id": "main::chunk::9"
+  },
+  {
+    "chunk_id": "main::chunk::9",
+    "chunk_index": 9,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::3.4 Sinh học",
+    "section_hint": "3.4 Sinh học",
+    "page_content": "Khả năng tiêu diệt vi sinh vật của tia gamma phụ thuộc loài. **Liều xạ phá hủy thập phân**: liều cần thiết để giảm số vi sinh vật xuống 10 lần.\n\n![](images/image1.jpg)",
+    "start_index": 7525,
+    "prev_chunk_id": "main::chunk::8",
+    "next_chunk_id": null
+  }
+]

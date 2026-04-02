@@ -1,0 +1,206 @@
+[
+  {
+    "page_content": "# Public_168\n\n# 1. Giới thiệu tổng quan về Tableau\nTrong kỷ nguyên số như hiện nay, dữ liệu được ví như \"vàng\" của chính doanh nghiệp. Tuy nhiên, để khai thác được giá trị tiềm ẩn đó, chúng ta cần công cụ Tableau mạnh mẽ để chuyển hóa những con số khô khan thành những hiểu biết trực quan và hành động thiết thực. Vậy, **[Tableau là gì](https://hvn.vn/tableau-la-gi/)** và tại sao nó lại trở nên quan trọng đến vậy? Trước khi tìm hiểu về hướng dẫn sử dụng Tableau hãy cùng khám phá tổng quan về công cụ đầy tiềm năng này.\n\n#### 2. Tableau là gì?\n**Tableau là một phần mềm Business Intelligence (BI) mạnh mẽ, tập trung vào khả năng trực quan hóa dữ liệu. Thay vì chỉ hiển thị dữ liệu dưới dạng bảng và số liệu nhàm chán, Tableau cho phép người dùng tạo ra các biểu đồ, đồ thị, dashboard tương tác và báo cáo trực quan sinh động.**\n\n![](images/image1.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_168",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_168",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "![](images/image1.jpg)\n\nMục tiêu chính của Tableau là giúp mọi người, từ các nhà phân tích chuyên nghiệp đến người dùng kinh doanh thông thường, có thể dễ dàng kết nối, khám phá và hiểu dữ liệu của họ một cách trực quan nhất. Với giao diện kéo thả (drag-and-drop) thân thiện, Tableau giúp đơn giản hóa quá trình phân tích phức tạp, cho phép người dùng tập trung vào việc rút ra insight thay vì loay hoay với các dòng lệnh hay công thức phức tạp.\n\n## 3. Các thành phần có trong Tableau\nHệ sinh thái Tableau bao gồm nhiều thành phần khác nhau, được thiết kế để phục vụ các nhu cầu phân tích và chia sẻ dữ liệu đa dạng:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Tableau là gì?",
+      "start_index": 831,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::2. Tableau là gì?",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "3.1 Tableau Desktop: Ứng dụng cốt lõi, được cài đặt trên máy tính cá nhân, cho phép người dùng kết nối với nhiều nguồn dữ liệu, xây dựng biểu đồ, phân tích và tạo dashboard. Tableau Desktop có hai phiên bản chính:\n  - Tableau Desktop Personal: Phù hợp cho cá nhân, có giới hạn về khả năng chia sẻ.\n  - Tableau Desktop Professional: Dành cho doanh nghiệp và nhóm làm việc, hỗ trợ đầy đủ các tính năng chia sẻ và cộng tác.\n3.2 Tableau Public: Phiên bản miễn phí của Tableau Desktop, cho phép người dùng tạo và chia sẻ các trực quan hóa dữ liệu lên nền tảng đám mây công khai của Tableau. Dữ liệu được tải lên Tableau Public là công khai và có thể được xem bởi bất kỳ ai.\n3.3 Tableau Server: Nền tảng phần mềm cho phép các tổ chức chia sẻ, cộng tác và quản lý các workbook và nguồn dữ liệu Tableau một cách an toàn trong môi trường nội bộ.\n3.4 Tableau Online: Phiên bản SaaS (Software as a Service) của Tableau Server, được Tableau quản lý hoàn toàn trên đám mây.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Các thành phần có trong Tableau",
+      "start_index": 1449,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::3. Các thành phần có trong Tableau",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "3.3 Tableau Server: Nền tảng phần mềm cho phép các tổ chức chia sẻ, cộng tác và quản lý các workbook và nguồn dữ liệu Tableau một cách an toàn trong môi trường nội bộ.\n3.4 Tableau Online: Phiên bản SaaS (Software as a Service) của Tableau Server, được Tableau quản lý hoàn toàn trên đám mây.\n3.5 Tableau Prep: Công cụ được thiết kế để chuẩn bị và làm sạch dữ liệu trước khi phân tích trong Tableau Desktop. Tableau Prep giúp người dùng dễ dàng thực hiện các tác vụ như kết hợp dữ liệu, định hình lại cấu trúc, lọc và làm sạch dữ liệu một cách trực quan.\n3.6 Tableau Reader: Ứng dụng miễn phí cho phép người dùng xem và tương tác với các workbook Tableau đã được chia sẻ, nhưng không thể chỉnh sửa hoặc tạo mới.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Các thành phần có trong Tableau",
+      "start_index": 2118,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::3. Các thành phần có trong Tableau",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "## 4. Cách thức hoạt động đặc biệt của Tableau\nHướng dẫn sử dụng Tableau được xây dựng dựa trên quy trình làm việc cơ bản của thường bao gồm các bước sau:\n\n4.1 Kết nối dữ liệu: Tableau có khả năng kết nối với rất nhiều nguồn dữ liệu khác nhau, từ các tệp tin (Excel, CSV, Text), cơ sở dữ liệu (SQL Server, PostgreSQL, MySQL,…), dịch vụ đám mây (Google Sheets, Salesforce,…) đến các nền tảng Big Data.\n4.2 Chuẩn bị dữ liệu (tùy chọn): Sử dụng Tableau Prep hoặc các công cụ khác để làm sạch, định hình và kết hợp dữ liệu nếu cần thiết.\n4.3 Xây dựng trực quan hóa: Trong Tableau Desktop, người dùng sử dụng giao diện kéo thả để chọn các trường dữ liệu (Dimensions và Measures) và tạo ra các biểu đồ, đồ thị phù hợp để khám phá các mối quan hệ và xu hướng trong dữ liệu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Cách thức hoạt động đặc biệt của Tableau",
+      "start_index": 2830,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::4. Cách thức hoạt động đặc biệt của Tableau",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "4.4 Phân tích và khám phá: Tương tác với các biểu đồ, sử dụng bộ lọc, sắp xếp, nhóm và các công cụ phân tích khác để đi sâu vào dữ liệu và tìm ra những insight quan trọng.\n4.5 Tạo Dashboard: Tập hợp nhiều biểu đồ và các đối tượng trực quan khác trên một trang duy nhất để tạo ra một cái nhìn tổng quan về dữ liệu và kể một câu chuyện mạch lạc.\n4.6 Chia sẻ và cộng tác: Xuất bản workbook lên Tableau Public, Tableau Server hoặc Tableau Online để chia sẻ kết quả phân tích và cộng tác với đồng nghiệp hoặc khách hàng.\n\n## 5. Ưu và nhược điểm của Tableau\n![](images/image2.jpg)\n\nGiống như bất kỳ công cụ nào, Tableau cũng có những ưu và nhược điểm riêng:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Cách thức hoạt động đặc biệt của Tableau",
+      "start_index": 3598,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::4. Cách thức hoạt động đặc biệt của Tableau",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "## 5. Ưu và nhược điểm của Tableau\n![](images/image2.jpg)\n\nGiống như bất kỳ công cụ nào, Tableau cũng có những ưu và nhược điểm riêng:\n\n### 5.1 Ưu điểm:\n- **Trực quan hóa mạnh mẽ:** Khả năng tạo ra các biểu đồ và dashboard tương tác trực quan, dễ hiểu và hấp dẫn.\n- **Dễ sử dụng:** Giao diện kéo thả thân thiện, không đòi hỏi kiến thức lập trình chuyên sâu.\n- **Kết nối đa dạng nguồn dữ liệu:** Hỗ trợ kết nối với nhiều loại nguồn dữ liệu khác nhau.\n- **Tốc độ phân tích nhanh:** Khả năng xử lý và trực quan hóa lượng lớn dữ liệu một cách nhanh chóng.\n- **Cộng đồng hỗ trợ lớn:** Cộng đồng người dùng Tableau rộng lớn, cung cấp nhiều tài liệu, diễn đàn và hỗ trợ.\n- **Khả năng tùy biến cao:** Cho phép người dùng tùy chỉnh sâu sắc các biểu đồ và dashboard.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5. Ưu và nhược điểm của Tableau",
+      "start_index": 4115,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::5. Ưu và nhược điểm của Tableau",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "## 5.2 Nhược điểm:\n- **Chi phí:** Chi phí bản quyền của Tableau Desktop và Server/Online có thể khá cao đối với cá nhân hoặc doanh nghiệp nhỏ.\n- **Hiệu suất với dữ liệu cực lớn:** Với những bộ dữ liệu cực kỳ lớn và phức tạp, hiệu suất có thể bị ảnh hưởng nếu không được tối ưu hóa đúng cách.\n- **Hạn chế tùy chỉnh nâng cao:** Mặc dù có khả năng tùy biến cao, nhưng đối với một số yêu cầu trực quan hóa đặc biệt phức tạp, có thể cần đến các công cụ hoặc kỹ thuật khác.\n- **Đường cong học tập cho các tính năng nâng cao:** Mặc dù giao diện cơ bản dễ sử dụng, nhưng để khai thác hết các tính năng nâng cao như tính toán phức tạp, tham số, hành động,… người dùng cần thời gian học tập và thực hành.\n\n#### 6. Lợi ích khi sử dụng Tableau\nKhi người dùng tìm hiểu về hướng dẫn sử dụng Tableau có thể ứng dụng vào quy trình làm việc mang lại nhiều lợi ích đáng kể:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5.2 Nhược điểm:",
+      "start_index": 4873,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::5.2 Nhược điểm:",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "#### 6. Lợi ích khi sử dụng Tableau\nKhi người dùng tìm hiểu về hướng dẫn sử dụng Tableau có thể ứng dụng vào quy trình làm việc mang lại nhiều lợi ích đáng kể:\n\n- **Hiểu dữ liệu sâu sắc hơn:** Trực quan hóa giúp phát hiện các xu hướng, mối quan hệ và điểm bất thường trong dữ liệu mà các bảng số liệu khó thể hiện được.\n- **Ra quyết định nhanh chóng và chính xác hơn:** Các dashboard trực quan cung cấp cái nhìn tổng quan về tình hình kinh doanh, giúp nhà quản lý đưa ra quyết định dựa trên dữ liệu thực tế.\n- **Tiết kiệm thời gian phân tích:** Giao diện kéo thả và khả năng kết nối đa dạng giúp giảm thiểu thời gian chuẩn bị và phân tích dữ liệu.\n- **Cải thiện giao tiếp và cộng tác:** Các báo cáo và dashboard trực quan dễ dàng chia sẻ và giúp mọi người trong tổ chức hiểu cùng một bức tranh về dữ liệu.\n- **Khám phá những insight mới:** Quá trình tương tác với dữ liệu trực quan có thể khơi gợi những câu hỏi mới và dẫn đến những khám phá bất ngờ.\n- **Nâng cao hiệu quả kinh doanh:** Bằng cách hiểu rõ hơn về khách hàng, thị trường và hiệu suất hoạt động, doanh nghiệp có thể đưa ra các chiến lược hiệu quả hơn.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "6. Lợi ích khi sử dụng Tableau",
+      "start_index": 5569,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::6. Lợi ích khi sử dụng Tableau",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "Tóm lại, Tableau là một công cụ mạnh mẽ và linh hoạt, mang lại nhiều lợi ích cho việc phân tích và trực quan hóa dữ liệu. Dù bạn là người mới bắt đầu hay một chuyên gia phân tích, Tableau đều có thể giúp bạn khai thác tối đa tiềm năng từ dữ liệu của mình. Tiếp đến, hãy cùng chúng tôi tìm hiểu chi tiết hơn về hướng dẫn sử dụng Tableau chi tiết ở nội dung bên dưới.\n\n**7. Hướng dẫn đăng ký phần mềm Tableau bản quyền**\n\nTrước khi tìm hiểu về cách sử dụng Tableau, người dùng cần phải tìm hiểu về các gói dịch vụ và cách thức đăng ký tài khoản bản quyền. Do đó, chúng tôi sẽ chia sẻ một vài những thông tin hữu ích như sau:\n\n## 8. Các gói đăng ký Tableau\nHiện tại, Tableau có các gói dịch vụ tương ứng với từng nhu cầu sử dụng riêng biệt của khách hàng. Chính vì vậy, chúng tôi sẽ chia sẻ một số những gói phần mềm phổ biến nhất để bạn có thể nắm được như sau:\n\n\n\n\n\n\n\nVới các gói đăng ký trên, bạn có thể cân nhắc lựa chọn tùy thuộc vào nhu cầu sử dụng riêng biệt. Tiếp đến, nếu người dùng muốn đăng ký sử dụng Tableau bản quyền thì có thể tham khảo 02 cách được chúng tôi chia sẻ bên dưới đây.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "6. Lợi ích khi sử dụng Tableau",
+      "start_index": 6685,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::6. Lợi ích khi sử dụng Tableau",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "Với các gói đăng ký trên, bạn có thể cân nhắc lựa chọn tùy thuộc vào nhu cầu sử dụng riêng biệt. Tiếp đến, nếu người dùng muốn đăng ký sử dụng Tableau bản quyền thì có thể tham khảo 02 cách được chúng tôi chia sẻ bên dưới đây.\n\n## 9. Đăng ký Tableau trực tiếp với hãng\nMột trong những phương thức đăng ký phần mềm Tableau được nhiều khách hàng lựa chọn nhất chính là thông qua hãng. Để lựa chọn phương thức này, bạn chỉ cần thao tác với các bước được chúng tôi hướng dẫn chi tiết như sau:\n\n- **Bước 1**: Truy cập địa chỉ **<https://buy.tableau.com/en-us/>** của hãng trên trình duyệt web của bạn.\n- **Bước 2**: Click chọn gói phần mềm phù hợp kèm với số lượng tương ứng > tiếp đến chọn **BUY TABLEAU**.\n\n![](images/image3.jpg)\n\n• **Bước 3**: Nhập đầy đủ thông tin mà hệ thống yêu cầu sau đó click chọn **NEXT: PAYMENT**.\n\n![](images/image4.jpg)\n\n• **Bước 4**: Nhập thông tin thanh toán > tích chọn đồng ý với chính sách và điều khoản > tiếp đến chọn **COMPLETE** > **YOUR PURCHASE**.\n\n![](images/image5.jpg)\n\n• **Bước 5**: Hoàn thành.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "8. Các gói đăng ký Tableau",
+      "start_index": 7548,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::8. Các gói đăng ký Tableau",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "<table>\n\n<tbody>\n<tr><th>Tên<br/>gói<br/>phần<br/>mềm</th><th>Chi tiết</th></tr>\n<tr><td>1.<br/>Tableau</td><td>Gói phần mềm toàn diện giúp bạn tập trung nhiều hơn vào dữ<br/>liệu. Hiện<br/>có sẵn trên phiên bản Tableau Cloud và Tableau Server.</td></tr>\n<tr><td>1.1.<br/>Tableau<br/>Creator</td><td>Tableau Desktop, Tableau Prep Builder, một giấy phép Creator trên<br/>Tableau Cloud hoặc Server và Tableau Pulse (chỉ<br/>có trên Tableau<br/>Cloud).</td></tr>\n<tr><td>1.2.<br/>Tableau<br/>Explorer</td><td>Một giấy phép Explorer trên Tableau Cloud hoặc Server và Tableau<br/>Pulse (chỉ<br/>khả<br/>dụng trên Tableau Cloud).</td></tr>\n<tr><td>1.3.<br/>Tableau<br/>Viewer</td><td>Một giấy phép Viewer trên Tableau Cloud hoặc Server và Tableau Pulse<br/>(chỉ<br/>khả<br/>dụng trên Tableau Cloud).</td></tr>\n<tr><td>2. Enterprise</td><td>Gói phần mềm tiên tiến giúp bạn khám phá và quản lý dữ<br/>liệu nhanh<br/>hơn. Có sẵn trên Tableau Cloud và Tableau Server.</td></tr>\n<tr><td>2.1.<br/>Enterprise<br/>Creator</td><td>Tableau Desktop, Tableau Prep Builder và một giấy phép Creator trên<br/>Tableau Cloud hoặc Server với tính năng hỗ<br/>trợ<br/>Quản lý nâng cao và<br/>Quản lý dữ<br/>liệu, Tableau Pulse (chỉ<br/>có trên phiên bản Tableau Cloud) và<br/>một năm truy cập vào eLearning dành cho Creators.</td></tr>\n<tr><td>2.2.<br/>Enterprise<br/>Explorer</td><td>Một giấy phép Explorer trên phiên bảnTableau Cloud hoặc Server với<br/>tính năng hỗ<br/>trợ<br/>Quản lý nâng cao và Quản lý dữ<br/>liệu, Tableau Pulse<br/>(chỉ<br/>có trên Tableau Cloud) và một năm truy cập vào eLearning dành<br/>cho Explorers.</td></tr>\n</tbody>\n</table>",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "table",
+      "table_id": 1,
+      "row_start": 0,
+      "row_end": 7,
+      "section_hint": "8. Các gói đăng ký Tableau",
+      "start_index": 7548,
+      "table_chunk_index": 0,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::8. Các gói đăng ký Tableau",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "<table>\n\n<tbody>\n<tr><td>2.1.<br/>Enterprise<br/>Creator</td><td>Tableau Desktop, Tableau Prep Builder và một giấy phép Creator trên<br/>Tableau Cloud hoặc Server với tính năng hỗ<br/>trợ<br/>Quản lý nâng cao và<br/>Quản lý dữ<br/>liệu, Tableau Pulse (chỉ<br/>có trên phiên bản Tableau Cloud) và<br/>một năm truy cập vào eLearning dành cho Creators.</td></tr>\n<tr><td>2.2.<br/>Enterprise<br/>Explorer</td><td>Một giấy phép Explorer trên phiên bảnTableau Cloud hoặc Server với<br/>tính năng hỗ<br/>trợ<br/>Quản lý nâng cao và Quản lý dữ<br/>liệu, Tableau Pulse<br/>(chỉ<br/>có trên Tableau Cloud) và một năm truy cập vào eLearning dành<br/>cho Explorers.</td></tr>\n<tr><td>2.3.<br/>Enterprise<br/>Viewer</td><td>Giấy phép One Viewer trên Tableau Cloud hoặc Server với Quản lý<br/>nâng cao và Quản lý dữ<br/>liệu, và Tableau Pulse (chỉ<br/>khả<br/>dụng trên<br/>Tableau Cloud).</td></tr>\n<tr><th>3. Tableau +</th><th>Gói cao cấp hỗ<br/>trợ<br/>phân tích AI và chỉ<br/>khả<br/>dụng trên Tableau AI.</th></tr>\n</tbody>\n</table>",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "table",
+      "table_id": 1,
+      "row_start": 6,
+      "row_end": 9,
+      "section_hint": "8. Các gói đăng ký Tableau",
+      "start_index": 7548,
+      "table_chunk_index": 1,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::8. Các gói đăng ký Tableau",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "![](images/image4.jpg)\n\n• **Bước 4**: Nhập thông tin thanh toán > tích chọn đồng ý với chính sách và điều khoản > tiếp đến chọn **COMPLETE** > **YOUR PURCHASE**.\n\n![](images/image5.jpg)\n\n• **Bước 5**: Hoàn thành.\n\nNhư vậy, chỉ với 05 bước hướng dẫn như trên, bạn đã đăng ký thành công phần mềm Tableau trực tiếp với hàng. Tuy nhiên, khi bạn lựa chọn hình thức đăng ký này sẽ gặp phải một số những rào cản liên quan đến ngôn ngữ, hỗ trợ kỹ thuật và nhiều bước triển khai khó khăn hơn. Do đó, chúng tôi sẽ chia sẻ thêm với bạn cách thức đăng ký và nhận hướng dẫn sử dụng Tableau thông qua đại lý ủy quyền chính thức tại Việt Nam.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "9. Đăng ký Tableau trực tiếp với hãng",
+      "start_index": 8383,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::9. Đăng ký Tableau trực tiếp với hãng",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": null
+    }
+  }
+]

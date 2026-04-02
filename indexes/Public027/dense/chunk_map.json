@@ -1,0 +1,74 @@
+[
+  {
+    "chunk_id": "main::chunk::0",
+    "chunk_index": 0,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Public_027",
+    "section_hint": "Public_027",
+    "page_content": "# Public_027\n\n# 1. 1. TÍNH CHẤT LÝ HÓA CỦA SỢI DỆT\n#### 1.1 Xơ xenlulô (Cotton)\n**Xenlulô** là polyme chính của các loại xơ gốc thực vật (bông, lanh, gai…).\n\n**Công thức hóa học:** (C6H10O5)n(C\\_6H\\_{10}O\\_5)\\_n\n\n**Khối lượng riêng:** 1,52 – 1,56 g/cm³\n\n**Các tính chất chủ yếu của xơ xenlulô (xơ bông)**\n\n#### Ảnh hưởng của nước\n- Xenlulô không tan trong nước, cồn, benzen, axit loãng… Để hòa tan xenlulô thường dùng dung dịch amôniac đồng [Cu(NH3)4](OH)2[Cu(NH\\_3)\\_4](OH)\\_2.\n- Trong nước, xơ bông bị trương nở, diện tích mặt cắt ngang tăng 22–34%, chiều dài chỉ tăng ~1%.\n\n# Ảnh hưởng của ánh sáng mặt trời\n- Dưới tác dụng ánh sáng mặt trời và khí quyển, đặc biệt tia tử ngoại, các phần tử xenlulô bị oxy hóa, làm giảm độ bền. Chiếu trực tiếp trong 900–1000 giờ có thể làm giảm độ bền một nửa.\n- Khí quyển cũng gây lão hóa, giảm độ bền cơ học, giảm độ dãn nở, tăng độ cứng. Quá trình mạnh hơn khi nhiệt độ và độ ẩm cao.",
+    "start_index": 0,
+    "prev_chunk_id": null,
+    "next_chunk_id": "main::chunk::1"
+  },
+  {
+    "chunk_id": "main::chunk::1",
+    "chunk_index": 1,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Ảnh hưởng của nhiệt độ",
+    "section_hint": "Ảnh hưởng của nhiệt độ",
+    "page_content": "#### Ảnh hưởng của nhiệt độ\n- Đốt nóng xơ xenlulô ở 120–130°C vài giờ không gây thay đổi đáng kể.\n- Trên 160°C, quá trình phá hủy bắt đầu nhanh hơn; 180°C phá hủy mạnh các phần tử xenlulô.\n- Nếu đốt trong trạng thái khô, xenlulô tạo than (~40% khối lượng), nước, CO₂ và các chất khác.\n- Với quần áo bằng cotton, không nên sử dụng nhiệt độ quá 100°C.\n\n#### Ảnh hưởng của axit\n- Axit vô cơ phá hủy đại phân tử xenlulô, cắt liên kết glucôzit → thủy phân thành glucose:\n- Axit hữu cơ tác dụng yếu hơn.\n- Xenlulô tác dụng với HNO₃ tạo nitrat xenlulô (10,5–12% N), dùng làm nguyên liệu xơ nhân tạo đầu tiên.\n- Axetyl xenlulô (este của axit axetic) dùng sản xuất xơ axetat và triacetat.\n\n# Ảnh hưởng của chất oxy hóa\n- Với Na₂S₂O₃, tính chất xơ không thay đổi → dùng tẩy trắng an toàn.\n- Bột tẩy trắng, muối Na, K… có thể làm giảm độ bền hoặc phá hủy xơ.\n\n# Ảnh hưởng của kiềm\n- Xenlulô bền với kiềm, NaOH không phá vỡ liên kết glucôzit nhưng có thể oxy hóa khi có O₂ → xenlulô kiềm:\n- Ứng dụng: làm tăng độ bền khi kéo sợi, bề mặt sợi tròn hơn, nhẵn hơn, phản chiếu ánh sáng tốt.\n- Quá trình NaOH quá mạnh hoặc kéo căng → phá hủy hoàn toàn xơ.",
+    "start_index": 925,
+    "prev_chunk_id": "main::chunk::0",
+    "next_chunk_id": "main::chunk::2"
+  },
+  {
+    "chunk_id": "main::chunk::2",
+    "chunk_index": 2,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Ảnh hưởng của kiềm",
+    "section_hint": "Ảnh hưởng của kiềm",
+    "page_content": "# Ảnh hưởng của kiềm\n- Xenlulô bền với kiềm, NaOH không phá vỡ liên kết glucôzit nhưng có thể oxy hóa khi có O₂ → xenlulô kiềm:\n- Ứng dụng: làm tăng độ bền khi kéo sợi, bề mặt sợi tròn hơn, nhẵn hơn, phản chiếu ánh sáng tốt.\n- Quá trình NaOH quá mạnh hoặc kéo căng → phá hủy hoàn toàn xơ.\n\n#### Ảnh hưởng của vi sinh vật\n• Xơ ẩm lâu trong không khí ẩm → vi khuẩn, nấm mốc phát triển → thủy phân xenlulô, phá hủy cấu trúc phân tử.\n\n#### Ứng dụng\n- Dùng may quần áo mùa hè, trang phục trẻ em, người già, người bệnh, lao động, quân đội.\n- Vải cotton thích hợp cho đồ dùng sinh hoạt hút ẩm tốt: áo gối, chăn mền, khăn tay, khăn tắm, khăn bàn, giày vải…\n- Giặt bằng xà phòng kiềm, phơi nơi khô ráo, tránh nắng trực tiếp.\n- **Ưu điểm:** hút ẩm cao, ít tĩnh điện, thích hợp may mặc.\n- **Nhược điểm:** dễ hỏng do vi sinh vật, không chịu được axit mạnh.\n\n**1.2 Xơ protein (Len, Tơ tằm)**\n\n#### Tơ tằm\n- Tơ tằm là sợi tự nhiên, chiếm >90% sản lượng tơ. Tằm ăn lá dâu → chất lỏng tiết ra → đông cứng thành sợi tơ.\n- Việt Nam: nuôi tằm ở Hà Tây, Hòa Bình, Nam Hà, Thái Bình, Nghệ Tĩnh, Phú Thọ, Lâm Đồng.\n- Chu kỳ sinh trưởng: trứng → tằm → kéo kén → nhộng → ngài (bướm).",
+    "start_index": 1774,
+    "prev_chunk_id": "main::chunk::1",
+    "next_chunk_id": "main::chunk::3"
+  },
+  {
+    "chunk_id": "main::chunk::3",
+    "chunk_index": 3,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Tơ tằm",
+    "section_hint": "Tơ tằm",
+    "page_content": "#### Tơ tằm\n- Tơ tằm là sợi tự nhiên, chiếm >90% sản lượng tơ. Tằm ăn lá dâu → chất lỏng tiết ra → đông cứng thành sợi tơ.\n- Việt Nam: nuôi tằm ở Hà Tây, Hòa Bình, Nam Hà, Thái Bình, Nghệ Tĩnh, Phú Thọ, Lâm Đồng.\n- Chu kỳ sinh trưởng: trứng → tằm → kéo kén → nhộng → ngài (bướm).\n\n# Cấu tạo kén tằm:\n- Lớp ngoài: sợi cứng, nhiều keo, dùng dệt lụa gốc hoặc đan lưới.\n- Lớp giữa: sợi mềm mịn, dùng dệt lụa.\n- Lớp trong: không ươm tơ, dùng kéo sợi đũi.\n\n# Tính chất cơ lý:\n- Fibroin: 75% thành phần tơ.\n- Khối lượng riêng: 1,37 g/cm³.\n- Độ dài: 300–1500 m/kén.\n- Độ mảnh, độ bền: cao hơn xơ bông.\n\n# Ảnh hưởng của nước, nhiệt độ, ánh sáng, axit, kiềm và chất oxy hóa:\n- Nước: trương nở 16–20% chiều ngang, chiều dài tăng 1–2%.\n- Nhiệt độ: 130–140°C không thay đổi tính chất; trên 170°C phá hủy tơ.\n- Ánh sáng: tia tử ngoại làm oxy hóa → giảm độ bền 50% sau 200 giờ.\n- Axit: axit mạnh và nhiệt độ cao phá hủy nhanh.\n- Kiềm: phá hủy tùy nhiệt độ và nồng độ dung dịch.\n- Chất oxy hóa: H₂O₂, Na₂O₂ phá hủy màu, làm trắng.\n\n#### Ứng dụng:\n- Dệt vải mỏng, may quần áo, sản xuất phế phẩm sợi, chỉ khâu, chỉ thêu.\n- Giặt bằng xà phòng trung tính, tránh ánh sáng trực tiếp, là ở 140–150°C.",
+    "start_index": 2654,
+    "prev_chunk_id": "main::chunk::2",
+    "next_chunk_id": "main::chunk::4"
+  },
+  {
+    "chunk_id": "main::chunk::4",
+    "chunk_index": 4,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Ứng dụng:",
+    "section_hint": "Ứng dụng:",
+    "page_content": "#### Ứng dụng:\n- Dệt vải mỏng, may quần áo, sản xuất phế phẩm sợi, chỉ khâu, chỉ thêu.\n- Giặt bằng xà phòng trung tính, tránh ánh sáng trực tiếp, là ở 140–150°C.\n\n#### Len\n- Len lấy từ lông phủ của cừu, thỏ, dê, lạc đà. Lông cừu chiếm 96–97%, dê 2%, lạc đà 1%.\n- Thành phần cơ bản: keratin 50–90%.\n\n#### Phân loại:\n- Len mịn: đồng nhất, lông cừu mịn (Merino) hoặc cừu lai.\n- Len nửa mịn: lông tơ kích thước 25–31 µm.\n- Len nửa thô: hỗn hợp lông tơ, lông thô, 31–40 µm.\n- Len thô: hỗn hợp lông tơ, lông thô, lông chết, >34 µm.\n\n#### Tính chất cơ lý:\n- Khối lượng riêng: 1,3 g/cm³.\n- Độ bền: kém hơn tơ tằm.\n\n# Ảnh hưởng của hơi nước, nhiệt độ, ánh sáng, axit, kiềm và chất oxy hóa:\n- Hơi nước 25°C: diện tích mặt cắt tăng 26%, chiều dài tăng 1,2%.\n- Hơi nước 100°C: giảm độ bền đáng kể (3h giảm 18%, 6h giảm 23%, 60h giảm 74%).\n- Nhiệt độ 130–140°C ngắn: không thay đổi. 80–100°C lâu: cứng, giòn, giảm độ bền và màu. 170–200°C: phá hủy.\n- Ánh sáng: chiếu trực tiếp 1120h giảm độ bền 50%.\n- Axit: axit trung bình ít ảnh hưởng, axit mạnh + nhiệt độ cao → phá hủy.\n- Kiềm: phá hủy nhanh, phụ thuộc nhiệt độ và nồng độ.\n- Oxy hóa: H₂O₂, Na₂O₂ phá hủy màu, làm trắng.",
+    "start_index": 3670,
+    "prev_chunk_id": "main::chunk::3",
+    "next_chunk_id": "main::chunk::5"
+  },
+  {
+    "chunk_id": "main::chunk::5",
+    "chunk_index": 5,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Ứng dụng:",
+    "section_hint": "Ứng dụng:",
+    "page_content": "# Ứng dụng:\n- Sử dụng nguyên chất hoặc pha với xơ hóa học, kéo sợi, dệt kim, may khăn, bít tất, giày, lót, đệm…\n- Quần áo mùa đông: manteau, áo khoác…\n- Giặt: xà phòng trung tính, giặt khô cho hàng cao cấp.\n- Bảo quản: nơi khô ráo, tránh côn trùng.\n\n![](images/image1.jpg)",
+    "start_index": 4833,
+    "prev_chunk_id": "main::chunk::4",
+    "next_chunk_id": null
+  }
+]

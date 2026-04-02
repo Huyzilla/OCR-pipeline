@@ -1,0 +1,142 @@
+[
+  {
+    "page_content": "# Public_117\n\n## 1. Random variables\nMột biến ngẫu nhiên (random variable) x là một đại lượng dùng để đo những đại lượng không xác định. Biến này có thể ký hiệu kết quả/đầu ra (outcome) của một thí nghiệm (ví dụ như tung đồng xu) hoặc một đại lượng biến đổi trong tự nhiên (ví dụ như nhiệt độ trong ngày). Nếu chúng ta quan sát rất nhiều đầu ra {x\\_i}\\_{i=1}^I của các thí nghiệm này, ta có thể nhận được những giá trị khác nhau ở mỗi thí nghiệm. Tuy nhiên, sẽ có những giá trị xảy ra nhiều lần hơn những giá trị khác. Thông tin về đầu ra được đo bởi phân phối xác suất (probability distribution) p(x) của biến ngẫu nhiên.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_117",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_117",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Một biến ngẫu nhiên có thể là rời rạc (discrete) hoặc liên tục (continuous). Một biến ngẫu nhiên rời rạc sẽ lấy giá trị trong một tập hợp cho trước. Ví dụ tung đồng xu thì có hai khả năng là head và tail (tên gọi này bắt nguồn từ đồng xu Mỹ, một mặt có hình mặt người, được gọi là head, trái ngược với mặt này được gọi là mặt tail, cách gọi này hay hơn cách gọi xấp ngửa vì ta không có quy định rõ ràng thế nào là xấp ngay ngửa). Tập các giá trị này có thể là có thứ tự (khi tung xúc xắc) hoặc không có thứ tự (unordered), ví dụ khi đầu ra là các giá trị nắng, mưa, bão, etc. Mỗi đầu ra có một giá trị xác suất tương ứng với nó. Các giá trị xác suất này không âm và có tổng bằng một:\n\n*if x is discrete:*\n\n$$\\sum_{x} p(x) = 1 \\quad (1)$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Random variables",
+      "start_index": 624,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Random variables",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "*if x is discrete:*\n\n$$\\sum_{x} p(x) = 1 \\quad (1)$$\n\nBiến ngẫu nhiên liên tục lấy các giá trị là tập con của các số thực. Những giá trị này có thể là hữu hạn, ví dụ thời gian làm bài của mỗi thí sinh trong một bài thi 180 phút, hoặc vô hạn, ví dụ thời gian để chiếc xe bus tiếp theo tới. Không như biến ngẫu nhiên rời rạc, xác suất để đầu ra bằng chính xác một giá trị nào đó, theo lý thuyết, là bằng 0. Thay vào đó, ta có thể hình dung xác suất để đầu ra nằm trong một khoảng giá trị nào đó; và việc này được mô tả bởi hàm mật độ xác suất (probability density function - pdf). Hàm mật độ xác suất luôn cho giá trị dương, và tích phân của nó trên toàn miền possible outcome phải bằng 1.\n\n*if x is continuous:*\n\n$$\\int p(x) dx = 1 \\quad (2)$$\n\nĐể giảm thiểu ký hiệu, hàm mật độ xác suất của một biến ngẫu nhiên liên tục x cũng được ký hiệu là p(x).\n\nChú ý: Nếu x là biến ngẫu nhiên rời rạc, p(x) luôn luôn nhỏ hơn hoặc bằng 1. Trong khi đó, nếu x là biến ngẫu nhiên liên tục, p(x) có thể nhận giá trị dương bất kỳ, điều này vẫn đảm bảo là tích phân của hàm mật độ xác suất theo toàn bộ giá trị có thể có của x bằng 1. Với biến ngẫu nhiên rời rạc, p(x) được hiểu là mật độ xác suất tại x.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Random variables",
+      "start_index": 1309,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1. Random variables",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "## 2. Joint probability\nXét hai biến ngẫu nhiên x và y. Nếu ta quan sát rất nhiều cặp đầu ra của x và y, thì có những tổ hợp hai đầu ra xảy ra thường xuyên hơn những tổ hợp khác. Thông tin này được biểu diễn bằng một phân phối được gọi là joint probability của x và y, và được viết là p(x, y). Dấu phẩy trong p(x, y) có thể đọc là và, vậy p(x, y) là xác suất của x và y. x và y có thể là hai biến ngẫu nhiên rời rạc, liên tục, hoặc một rời rạc, một liên tục. Luôn nhớ rằng tổng các xác suất trên mọi cặp giá trị có thể xảy ra (x, y) bằng 1.\n\nboth are discrete: ∑\\_{x,y} p(x, y) = 1\n\nboth are continuous: ∫∫ p(x, y) dx dy = 1\n\nx is discrete, y is continuous: ∑\\_x ∫ p(x, y) dy = ∫ (∑\\_x p(x, y)) dy = 1",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Joint probability",
+      "start_index": 2498,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2. Joint probability",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "both are discrete: ∑\\_{x,y} p(x, y) = 1\n\nboth are continuous: ∫∫ p(x, y) dx dy = 1\n\nx is discrete, y is continuous: ∑\\_x ∫ p(x, y) dy = ∫ (∑\\_x p(x, y)) dy = 1\n\nThông thường, chúng ta sẽ làm việc với các bài toán ở đó joint probability xác định trên nhiều hơn 2 biến ngẫu nhiên. Chẳng hạn, p(x, y, z) thể hiện joint probability của 3 biến ngẫu nhiên x, y và z. Khi có nhiều biến ngẫu nhiên, ta có thể viết chúng dưới dạng vector. Ta có thể viết p(x) để thể hiện joint probability của biến ngẫu nhiên nhiều chiều x = [x1, x2, …, xn]^T. Khi có nhiều tập các biến ngẫu nhiên, ví dụ x và y, ta có thể viết p(x, y) để thể hiện joint probability của tất cả các thành phần trong hai biến ngẫu nhiên nhiều chiều này.\n\n## 3. Marginalization\nNếu biết joint probability của nhiều biến ngẫu nhiên, ta cũng có thể xác định được phân bố xác suất của từng biến bằng cách lấy tổng (rời rạc) hoặc tích phân (liên tục) theo tất cả các biến còn lại:\n\n$$p(x) = \\sum_{x} y p(x, y) \\quad (3)$$\n\n$$p(y) = \\sum_{x} p(x, y) \\quad (4)$$\n\nVà với biến liên tục:\n\n$$p(x) = \\int p(x, y) \\, dy \\quad (5)$$\n\n$$p(y) = \\int p(x, y) dx \\quad (6)$$\n\nVới nhiều biến hơn, chẳng hạn 4 biến rời rạc x, y, z, w:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Joint probability",
+      "start_index": 3040,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::2. Joint probability",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "$$p(x) = \\sum_{x} y p(x, y) \\quad (3)$$\n\n$$p(y) = \\sum_{x} p(x, y) \\quad (4)$$\n\nVà với biến liên tục:\n\n$$p(x) = \\int p(x, y) \\, dy \\quad (5)$$\n\n$$p(y) = \\int p(x, y) dx \\quad (6)$$\n\nVới nhiều biến hơn, chẳng hạn 4 biến rời rạc x, y, z, w:\n\n$$p(x) = \\sum_{x} \\{y,z,w\\} p(x, y, z, w)$$\n (7)\n\n$$p(x, y) = \\sum_{x} \\{z, w\\} p(x, y, z, w)$$\n (8)\n\nTừ đây trở đi, nếu không nói gì thêm, tôi sẽ dùng ký hiệu ∑ để chỉ chung cho cả hai loại biến. Nếu biến ngẫu nhiên là liên tục, bạn đọc ngầm hiểu rằng dấu ∑ cần được thay bằng dấu tích phân ∫, biến lấy vi phân chính là biến được viết dưới dấu ∑.\n\n# 4. Conditional probability\nXác suất có điều kiện (conditional probability) của một biến ngẫu nhiên x biết rằng biến ngẫu nhiên y có giá trị y\\* được ký hiệu là p(x | y = y\\*). Conditional probability p(x | y = y\\*) có thể được tính dựa trên joint probability p(x, y).\n\n$$p(x \\mid y = y^*) = p(x, y = y^*) / \\sum_{x \\in Y} p(x, y = y^*) = p(x, y = y^*) / p(y = y^*)$$\n(9)\n\nThông thường, viết gọn: p(x | y) = p(x, y) / p(y) (10)\n\nTương tự: p(y | x) = p(y, x) / p(x)\n\nQuan hệ: p(x, y) = p(x | y) p(y) = p(y | x) p(x) (11)\n\nKhi có nhiều hơn hai biến:\n\n$$p(x, y, z, w) = p(x, y, z \\mid w) p(w)$$\n (12)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Marginalization",
+      "start_index": 3972,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::3. Marginalization",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Thông thường, viết gọn: p(x | y) = p(x, y) / p(y) (10)\n\nTương tự: p(y | x) = p(y, x) / p(x)\n\nQuan hệ: p(x, y) = p(x | y) p(y) = p(y | x) p(x) (11)\n\nKhi có nhiều hơn hai biến:\n\n$$p(x, y, z, w) = p(x, y, z \\mid w) p(w)$$\n (12)\n\n$$= p(x, y \\mid z, w) p(z, w) = p(x, y \\mid z, w) p(z \\mid w) p(w)$$\n (13)\n\n= \n$$p(x | y, z, w) p(y | z, w) p(z | w) p(w)$$\n (14)\n\n## 5. Quy tắc Bayes\n$$T\\dot{u}(11): p(y \\mid x) p(x) = p(x \\mid y) p(y) \\Rightarrow p(y \\mid x) = p(x \\mid y) p(y) / p(x) \\quad (15)$$\n\n$$= p(x | y) p(y) / \\sum_{x} y p(x, y)$$\n (16)\n\n$$= p(x | y) p(y) / \\sum_{y} p(x | y) p(y)$$\n (17)\n\nBa công thức (15)–(17) thường được gọi là Quy tắc Bayes (Bayes' rule).\n\n# 6. Independence\nNếu x và y độc lập: \n$$p(x | y) = p(x)$$\n (18),  $p(y | x) = p(y)$  (19)\n\nKhi đó: \n$$p(x, y) = p(x) p(y)$$\n (20)\n\n# 7. Kỳ vọng\nKỳ vong (expectation) của một biến ngẫu nhiên:\n\n$$E[x] = \\sum_{x} x p(x)$$\n nếu x rời rạc (21)\n\n$$E[x] = \\int x p(x) dx$$\n nếu x liên tục (22)\n\nVới hàm \n$$f(.)$$\n:  $E[f(x)] = \\sum_{x} f(x) p(x)$  (23)\n\nVới joint probability: \n$$E[f(x, y)] = \\sum_{x,y} f(x, y) p(x, y)$$\n (24)\n\nBa quy tắc:\n\n$$E[\\alpha] = \\alpha$$\n (25)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Conditional probability",
+      "start_index": 4935,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::4. Conditional probability",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "$$E[x] = \\sum_{x} x p(x)$$\n nếu x rời rạc (21)\n\n$$E[x] = \\int x p(x) dx$$\n nếu x liên tục (22)\n\nVới hàm \n$$f(.)$$\n:  $E[f(x)] = \\sum_{x} f(x) p(x)$  (23)\n\nVới joint probability: \n$$E[f(x, y)] = \\sum_{x,y} f(x, y) p(x, y)$$\n (24)\n\nBa quy tắc:\n\n$$E[\\alpha] = \\alpha$$\n (25)\n\n$$E[\\alpha x] = \\alpha E[x]$$\n (26);  $E[f(x) + g(x)] = E[f(x)] + E[g(x)]$  (27)\n\nNếu x, y độc lập: \n$$E[f(x)|g(y)] = E[f(x)]|E[g(y)]|$$\n (28)\n\n#### Một vài phân phối thường gặp 8.\n\n### 8.1 Bernoulli distribution\n\nBernoulli distribution:  $x \\in \\{0,1\\}$ , tham số  $\\lambda \\in [0,1]$  là xác suất để x=1.\n\n$$p(x=1) = \\lambda$$\n,  $p(x=0) = 1 - \\lambda$ \n\n$$p(x=1) = \\lambda, \\quad p(x=0) = 1 - \\lambda$$\n\n$$Vi\\acute{\\text{et}} \\text{ gon: } p(x) = \\lambda^{\\lambda} x (1 - \\lambda)^{\\lambda} \\{1 - x\\} \\quad (29)$$\n\n$$K\\acute{\\text{v}} \\text{ hiệu: } p(x) = \\text{Bern } x[\\lambda] \\quad (30)$$\n\nKý hiệu: \n$$p(x) = Bern_x[\\lambda]$$\n (30)\n\n## 8.2 Categorical distribution\n\nCategorical distribution với K lớp, tham số  $\\lambda = [\\lambda 1, ..., \\lambda K], \\sum_{k} k \\lambda k = 1$ .\n\n$$p(x = k) = \\lambda_k$$\n; viết gọn:  $p(x) = Cat_x[\\lambda]$ \n\nBiểu diễn one-hot:  $x \\in \\{e1, ..., eK\\}$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "7. Kỳ vọng",
+      "start_index": 5793,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::7. Kỳ vọng",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "## 8.2 Categorical distribution\n\nCategorical distribution với K lớp, tham số  $\\lambda = [\\lambda 1, ..., \\lambda K], \\sum_{k} k \\lambda k = 1$ .\n\n$$p(x = k) = \\lambda_k$$\n; viết gọn:  $p(x) = Cat_x[\\lambda]$ \n\nBiểu diễn one-hot:  $x \\in \\{e1, ..., eK\\}$ \n\n$$p(x = e \\ k) = \\prod \\{j=1\\}^{K} \\lambda \\ j^{K} \\lambda \\ j^{K} \\} = \\lambda k$$\n (31)\n\n## 8.3 Univariate normal distribution\n\n$$p(x) = 1 / \\sqrt{(2\\pi\\sigma^2)} \\cdot \\exp(-(x - \\mu)^2 / (2\\sigma^2))$$\n (32)\n\nKý hiệu: \n$$p(x) = Norm x[\\mu, \\sigma^2]$$\n\n## 8.4 Multivariate normal distribution\n\n$$p(x) = 1 / ((2\\pi)^{D/2} |\\Sigma|^{1/2}) \\cdot exp(-1/2 (x-\\mu)^T \\Sigma^{-1} (x-\\mu))$$\n (33)  \nKý hiệu:  $p(x) = Norm_x[\\mu, \\Sigma]$ \n\nKý hiệu: \n$$p(x) = Norm x[μ, Σ]$$\n\n# 8.5 Beta distribution\n\n$$p(\\lambda) = \\Gamma(\\alpha + \\beta) / (\\Gamma(\\alpha) \\Gamma(\\beta)) \\cdot \\lambda^{\\wedge} \\{\\alpha - 1\\} (1 - \\lambda)^{\\wedge} \\{\\beta - 1\\}$$\n (34)\n\nTrong đó  $\\Gamma(z) = \\int 0^{\\infty} t^{z-1} \\exp(-t) dt$ , và  $\\Gamma[z] = (z-1)!$  nếu z là số tư nhiên.\n\nKý hiệu: \n$$p(\\lambda) = \\text{Beta } \\lambda[\\alpha, \\beta]$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "8.2 Categorical distribution",
+      "start_index": 6708,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::8.2 Categorical distribution",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "Trong đó  $\\Gamma(z) = \\int 0^{\\infty} t^{z-1} \\exp(-t) dt$ , và  $\\Gamma[z] = (z-1)!$  nếu z là số tư nhiên.\n\nKý hiệu: \n$$p(\\lambda) = \\text{Beta } \\lambda[\\alpha, \\beta]$$\n\n## 8.6 Dirichlet distribution\n$$\\begin{split} p(\\lambda 1, \\ ..., \\ \\lambda K) &= \\Gamma(\\sum_{k=1}^{k=1}^{K} \\ \\alpha_k) \\ / \\ \\prod_{k=1}^{K} \\ \\Gamma(\\alpha_k) \\ \\cdot \\ \\prod_{k=1}^{K} \\ \\lambda_k^{\\alpha_k-1} \\quad (35) \\\\ \\text{K\\'y hiệu: } p(\\lambda 1, \\ ..., \\lambda K) &= \\text{Dir}_{\\lambda 1, \\ ..., \\lambda K}[\\alpha 1, \\ ..., \\alpha K] \\end{split}$$\n\n## 9. Thảo luận\nVề Xác suất thống kê, còn rất nhiều điều cần lưu ý. Tạm thời, phần này ôn tập lại các kiến thức xác suất cơ bản để phục vụ cho các bài viết tiếp theo. Khi nào có phần nào cần nhắc lại, sẽ tiếp tục ôn tập bổ sung.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "8.5 Beta distribution",
+      "start_index": 7618,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::8.5 Beta distribution",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": null
+    }
+  }
+]

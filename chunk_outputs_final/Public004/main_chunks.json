@@ -14,7 +14,7 @@
     }
   },
   {
-    "page_content": "# 1. Nội dung chính\n## 1.1 GIỚI THIỆU\nNhững thách thức trong ngành xây dựng hiện nay như tốc độ xây dựng chậm, quá trình thi công xây dựng gồm nhiều bước, mỗi bước đều tốn nhiều thời gian và công sức, công nghệ thi công hiện nay đang sử dụng nhiều nhân công lao động và tình trạng mất an toàn lao động là rất đáng quan ngại, ngoài ra các phương pháp thi công xây dựng và vật liệu xây dựng hiện tại không thân thiện với môi trường. Toàn bộ quá trình xây dựng, bao gồm sản xuất chế tạo sẵn, vận chuyển vật liệu, thi công xây dựng trên công trường đã thải ra một lượng lớn khí nhà kính và tiêu thụ một lượng lớn năng lượng, gây ô nhiễm môi trường. Do đó vấn đề đặt ra là phải áp dụng những công nghệ tiên tiến trong ngành xây dựng, trong đó công nghệ in bê tông 3D đang cho thấy những ưu điểm rõ rệt.",
+    "page_content": "### 1. Nội dung chính\n## 1.1 GIỚI THIỆU\nNhững thách thức trong ngành xây dựng hiện nay như tốc độ xây dựng chậm, quá trình thi công xây dựng gồm nhiều bước, mỗi bước đều tốn nhiều thời gian và công sức, công nghệ thi công hiện nay đang sử dụng nhiều nhân công lao động và tình trạng mất an toàn lao động là rất đáng quan ngại, ngoài ra các phương pháp thi công xây dựng và vật liệu xây dựng hiện tại không thân thiện với môi trường. Toàn bộ quá trình xây dựng, bao gồm sản xuất chế tạo sẵn, vận chuyển vật liệu, thi công xây dựng trên công trường đã thải ra một lượng lớn khí nhà kính và tiêu thụ một lượng lớn năng lượng, gây ô nhiễm môi trường. Do đó vấn đề đặt ra là phải áp dụng những công nghệ tiên tiến trong ngành xây dựng, trong đó công nghệ in bê tông 3D đang cho thấy những ưu điểm rõ rệt.",
     "metadata": {
       "doc_id": "main",
       "chunk_type": "text",
@@ -33,7 +33,7 @@
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.1 GIỚI THIỆU",
-      "start_index": 1773,
+      "start_index": 1775,
       "chunk_index": 2,
       "chunk_id": "main::chunk::2",
       "parent_id": "main::section::1.1 GIỚI THIỆU",
@@ -47,7 +47,7 @@
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.1 GIỚI THIỆU",
-      "start_index": 2706,
+      "start_index": 2708,
       "chunk_index": 3,
       "chunk_id": "main::chunk::3",
       "parent_id": "main::section::1.1 GIỚI THIỆU",
@@ -61,7 +61,7 @@
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.1 GIỚI THIỆU",
-      "start_index": 3335,
+      "start_index": 3337,
       "chunk_index": 4,
       "chunk_id": "main::chunk::4",
       "parent_id": "main::section::1.1 GIỚI THIỆU",
@@ -70,12 +70,12 @@
     }
   },
   {
-    "page_content": "## 1.2 TỔNG QUAN\nỨng dụng của công nghệ in bê tông 3D trong ngành xây dựng là để chế tạo các cấu kiện kiến trúc, xây dựng. Mặc dù việc ứng dụng công nghệ in bê tông 3D vẫn còn ở giai đoạn đầu, tuy nhiên những nỗ lực nhằm đưa công nghệ này ứng dụng có hiệu quả hơn trong ngành xây dựng đã và đang được thực hiện trên toàn thế giới. Công nghệ in bê tông 3D là một công nghệ mới, nhằm mục đích giảm thiểu thời gian của quá trình xây dựng bằng cách loại bỏ một số quy trình tốn thời gian của phương pháp truyền thống, giảm các chi phí thông qua việc giảm thiểu khối lượng phát sinh, giảm nhân công lao động, đồng thời dễ dàng tạo ra những cấu kiện có hình dạng phức tạp với độ chính xác cao mà khó có thể thực hiện được bằng phương pháp truyền thống, cải thiện tác động tiêu cực của ngành xây dựng lên môi trường. Công nghệ in bê tông 3D có khả năng chế tạo cấu kiện kiến trúc, xây dựng được thiết kế trước bằng cách liên kết các lớp vật liệu chồng lên nhau theo một quy tắc nhất định.",
+    "page_content": "### 1.2 TỔNG QUAN\nỨng dụng của công nghệ in bê tông 3D trong ngành xây dựng là để chế tạo các cấu kiện kiến trúc, xây dựng. Mặc dù việc ứng dụng công nghệ in bê tông 3D vẫn còn ở giai đoạn đầu, tuy nhiên những nỗ lực nhằm đưa công nghệ này ứng dụng có hiệu quả hơn trong ngành xây dựng đã và đang được thực hiện trên toàn thế giới. Công nghệ in bê tông 3D là một công nghệ mới, nhằm mục đích giảm thiểu thời gian của quá trình xây dựng bằng cách loại bỏ một số quy trình tốn thời gian của phương pháp truyền thống, giảm các chi phí thông qua việc giảm thiểu khối lượng phát sinh, giảm nhân công lao động, đồng thời dễ dàng tạo ra những cấu kiện có hình dạng phức tạp với độ chính xác cao mà khó có thể thực hiện được bằng phương pháp truyền thống, cải thiện tác động tiêu cực của ngành xây dựng lên môi trường. Công nghệ in bê tông 3D có khả năng chế tạo cấu kiện kiến trúc, xây dựng được thiết kế trước bằng cách liên kết các lớp vật liệu chồng lên nhau theo một quy tắc nhất định.",
     "metadata": {
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.2 TỔNG QUAN",
-      "start_index": 3955,
+      "start_index": 3957,
       "chunk_index": 5,
       "chunk_id": "main::chunk::5",
       "parent_id": "main::section::1.2 TỔNG QUAN",
@@ -89,7 +89,7 @@
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.2 TỔNG QUAN",
-      "start_index": 4938,
+      "start_index": 4941,
       "chunk_index": 6,
       "chunk_id": "main::chunk::6",
       "parent_id": "main::section::1.2 TỔNG QUAN",
@@ -103,7 +103,7 @@
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.2 TỔNG QUAN",
-      "start_index": 6136,
+      "start_index": 6139,
       "chunk_index": 7,
       "chunk_id": "main::chunk::7",
       "parent_id": "main::section::1.2 TỔNG QUAN",
@@ -112,12 +112,12 @@
     }
   },
   {
-    "page_content": "Nhìn chung, các nghiên cứu trên đã chỉ ra một số phạm vi áp dụng, lợi ích, khả năng áp dụng cũng như rào cản của công nghệ in bê tông 3D trong ngành xây dựng trên thế giới.\n\n## 1.3 CÁC CÔNG NGHỆ IN BÊ TÔNG 3D\nTrong những năm qua, nhiều công nghệ in bê tông 3D khác nhau đã được phát triển để ứng dụng trong ngành xây dựng. Những công nghệ in bê tông 3D này chủ yếu dựa trên hai kỹ thuật chính, đó là kỹ thuật ép đùn (Extrusion-Based Technique) và kỹ thuật lắng đọng bột (Powder-Based Technique).\n\n#### Công nghệ in bê tông 3D dựa trên kỹ thuật ép đùn\nCông nghệ in bê tông 3D dựa trên kỹ thuật ép đùn tương tự như phương pháp nóng chảy lắng đọng FDM (Fused Deposition Modelling). Theo đó, vật liệu in sẽ đi qua từ một đầu in được gắn trên cần trục hoặc cánh tay robot để in một đối tượng theo từng lớp vật liệu. Các công nghệ in bê tông 3D dựa trên kỹ thuật này tiêu biểu như:",
+    "page_content": "Nhìn chung, các nghiên cứu trên đã chỉ ra một số phạm vi áp dụng, lợi ích, khả năng áp dụng cũng như rào cản của công nghệ in bê tông 3D trong ngành xây dựng trên thế giới.\n\n### 1.3 CÁC CÔNG NGHỆ IN BÊ TÔNG 3D\nTrong những năm qua, nhiều công nghệ in bê tông 3D khác nhau đã được phát triển để ứng dụng trong ngành xây dựng. Những công nghệ in bê tông 3D này chủ yếu dựa trên hai kỹ thuật chính, đó là kỹ thuật ép đùn (Extrusion-Based Technique) và kỹ thuật lắng đọng bột (Powder-Based Technique).\n\n#### Công nghệ in bê tông 3D dựa trên kỹ thuật ép đùn\nCông nghệ in bê tông 3D dựa trên kỹ thuật ép đùn tương tự như phương pháp nóng chảy lắng đọng FDM (Fused Deposition Modelling). Theo đó, vật liệu in sẽ đi qua từ một đầu in được gắn trên cần trục hoặc cánh tay robot để in một đối tượng theo từng lớp vật liệu. Các công nghệ in bê tông 3D dựa trên kỹ thuật này tiêu biểu như:",
     "metadata": {
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.2 TỔNG QUAN",
-      "start_index": 6967,
+      "start_index": 6970,
       "chunk_index": 8,
       "chunk_id": "main::chunk::8",
       "parent_id": "main::section::1.2 TỔNG QUAN",
@@ -126,12 +126,12 @@
     }
   },
   {
-    "page_content": "#### 1.3.1.1. \\* Công nghệ Contour Crafting\nContour Crafting là một phương pháp của quy trình sản xuất nhiều lớp sử dụng polymer, bùn gốm, bê tông, và một loạt các vật liệu và hỗn hợp khác để xây dựng các vật thể quy mô lớn với bề mặt mịn. Những ưu điểm chính của công nghệ này là tốc độ chế tạo nhanh hơn và khả năng tích hợp với các phương pháp khác để lắp đặt các bộ phận như đường ống, dây điện và cốt thép. Công nghệ Contour Crafting cho ra sản phẩm có bề mặt hoàn thiện vượt trội và tốc độ sản xuất được tăng cường đáng kể.\n\n#### 1.3.1.2. \\* Công nghệ Concrete Printing\nCông nghệ Concrete Printing đã được nghiên cứu và phát triển tại Đại học Loughborough ở Vương quốc Anh. Công nghệ này cũng sử dụng kỹ thuật dựa trên ép đùn và ở một mức độ nào đó tương tự như công nghệ Contour Crafting. Tuy nhiên, công nghệ Concrete Printing đã được phát triển cho phép kiểm soát tốt hơn cấu trúc của sản phẩm in. Ngoài ra, vật liệu được sử dụng trong in bê tông là bê tông cốt liệu sợi tổng hợp cường độ cao nên tính chất của vật liệu vượt trội so với các vật liệu được sử dụng trong công nghệ Contour Crafting [2].",
+    "page_content": "### 1.3.1.1. \\* Công nghệ Contour Crafting\nContour Crafting là một phương pháp của quy trình sản xuất nhiều lớp sử dụng polymer, bùn gốm, bê tông, và một loạt các vật liệu và hỗn hợp khác để xây dựng các vật thể quy mô lớn với bề mặt mịn. Những ưu điểm chính của công nghệ này là tốc độ chế tạo nhanh hơn và khả năng tích hợp với các phương pháp khác để lắp đặt các bộ phận như đường ống, dây điện và cốt thép. Công nghệ Contour Crafting cho ra sản phẩm có bề mặt hoàn thiện vượt trội và tốc độ sản xuất được tăng cường đáng kể.\n\n## 1.3.1.2. \\* Công nghệ Concrete Printing\nCông nghệ Concrete Printing đã được nghiên cứu và phát triển tại Đại học Loughborough ở Vương quốc Anh. Công nghệ này cũng sử dụng kỹ thuật dựa trên ép đùn và ở một mức độ nào đó tương tự như công nghệ Contour Crafting. Tuy nhiên, công nghệ Concrete Printing đã được phát triển cho phép kiểm soát tốt hơn cấu trúc của sản phẩm in. Ngoài ra, vật liệu được sử dụng trong in bê tông là bê tông cốt liệu sợi tổng hợp cường độ cao nên tính chất của vật liệu vượt trội so với các vật liệu được sử dụng trong công nghệ Contour Crafting [2].",
     "metadata": {
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.3.1.1. \\* Công nghệ Contour Crafting",
-      "start_index": 7844,
+      "start_index": 7848,
       "chunk_index": 9,
       "chunk_id": "main::chunk::9",
       "parent_id": "main::section::1.3.1.1. \\* Công nghệ Contour Crafting",
@@ -140,12 +140,12 @@
     }
   },
   {
-    "page_content": "#### 1.3.1.3. \\* Công nghệ Concrete On-Site 3D Printing\nCông nghệ Contour Crafting và Concrete Printing ngoài những ưu điểm so với các công nghệ truyền thống thì vẫn tồn tại một số hạn chế như sự cần thiết phải sử dụng máy móc mới và tiên tiến, kích thước cốt liệu nhỏ (thường sử dụng vữa tổng hợp thay vì bê tông thông thường) và kích thước hạn chế của sản phẩm in (tức là kích thước của máy in 3D phải lớn hơn kích thước của phần tử được in). Để khắc phục những hạn chế này, một công nghệ mới là công nghệ Concrete On-Site 3D Printing, được phát triển tại TU Dresden, Đức. Ưu điểm chính của công nghệ này là tính linh hoạt hình học cao và ít phụ thuộc vào nhân công lành nghề [7].\n\nMột trong những ưu điểm của công nghệ in bê tông 3D tại chỗ không chỉ là phát triển quy trình xây dựng tiên tiến hiệu quả về thời gian, lao động và tài nguyên mà còn làm cho quy trình mới có hiệu quả kinh tế trong khi đạt được sự chấp nhận rộng rãi hơn trong ngành xây dựng. Điều này đạt được bằng cách sử dụng các kỹ thuật sản xuất và xây dựng hiện có càng nhiều càng tốt và bằng cách điều chỉnh quy trình mới với các hạn chế của công trường xây dựng [7].",
+    "page_content": "### 1.3.1.3. \\* Công nghệ Concrete On-Site 3D Printing\nCông nghệ Contour Crafting và Concrete Printing ngoài những ưu điểm so với các công nghệ truyền thống thì vẫn tồn tại một số hạn chế như sự cần thiết phải sử dụng máy móc mới và tiên tiến, kích thước cốt liệu nhỏ (thường sử dụng vữa tổng hợp thay vì bê tông thông thường) và kích thước hạn chế của sản phẩm in (tức là kích thước của máy in 3D phải lớn hơn kích thước của phần tử được in). Để khắc phục những hạn chế này, một công nghệ mới là công nghệ Concrete On-Site 3D Printing, được phát triển tại TU Dresden, Đức. Ưu điểm chính của công nghệ này là tính linh hoạt hình học cao và ít phụ thuộc vào nhân công lành nghề [7].\n\nMột trong những ưu điểm của công nghệ in bê tông 3D tại chỗ không chỉ là phát triển quy trình xây dựng tiên tiến hiệu quả về thời gian, lao động và tài nguyên mà còn làm cho quy trình mới có hiệu quả kinh tế trong khi đạt được sự chấp nhận rộng rãi hơn trong ngành xây dựng. Điều này đạt được bằng cách sử dụng các kỹ thuật sản xuất và xây dựng hiện có càng nhiều càng tốt và bằng cách điều chỉnh quy trình mới với các hạn chế của công trường xây dựng [7].",
     "metadata": {
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.3.1.3. \\* Công nghệ Concrete On-Site 3D Printing",
-      "start_index": 8955,
+      "start_index": 8956,
       "chunk_index": 10,
       "chunk_id": "main::chunk::10",
       "parent_id": "main::section::1.3.1.3. \\* Công nghệ Concrete On-Site 3D Printing",
@@ -168,7 +168,7 @@
     }
   },
   {
-    "page_content": "#### 1.3.2.5. \\* Công nghệ in ba chiều (D-Shape)\nCông nghệ D-Shape được phát triển bởi Enrico Dini sử dụng kỹ thuật dựa trên kỹ thuật lắng đọng bột để làm cứng một lớp vật liệu quy mô lớn. Xi măng cát và magiê oxychloride (còn được gọi là xi măng Sorel) được sử dụng làm vật liệu xây dựng và chất kết dính tương ứng [9].\n\n#### 1.3.2.6. \\* Công nghệ đối tượng mới (Emerging Objects)\nCông nghệ đối tượng mới (Emerging Objects) được phát triển ở Hoa Kỳ sử dụng kỹ thuật lắng đọng bột để làm cứng có chọn lọc một công thức hỗn hợp xi măng bằng cách lắng đọng một tác nhân liên kết.\n\n*1.3.2.7. \\* Công nghệ in bê tông 3D dựa trên kỹ thuật lắng đọng bột sử dụng Geopolymer (Powder-based 3DCP using Geopolymer)*\n\nCông nghệ in bê tông 3D dựa trên kỹ thuật lắng đọng bột sử dụng Geopolymer có khả năng sản xuất các cấu kiện xây dựng với chi tiết và hình dạng phức tạp. Công nghệ dựa trên lắng đọng bột có tiềm năng để sản xuất các cấu kiện xây dựng với độ bền cao và tốc độ hợp lý để đáp ứng nhu cầu sản xuất quy mô công nghiệp [10].",
+    "page_content": "# 1.3.2.5. \\* Công nghệ in ba chiều (D-Shape)\nCông nghệ D-Shape được phát triển bởi Enrico Dini sử dụng kỹ thuật dựa trên kỹ thuật lắng đọng bột để làm cứng một lớp vật liệu quy mô lớn. Xi măng cát và magiê oxychloride (còn được gọi là xi măng Sorel) được sử dụng làm vật liệu xây dựng và chất kết dính tương ứng [9].\n\n## 1.3.2.6. \\* Công nghệ đối tượng mới (Emerging Objects)\nCông nghệ đối tượng mới (Emerging Objects) được phát triển ở Hoa Kỳ sử dụng kỹ thuật lắng đọng bột để làm cứng có chọn lọc một công thức hỗn hợp xi măng bằng cách lắng đọng một tác nhân liên kết.\n\n*1.3.2.7. \\* Công nghệ in bê tông 3D dựa trên kỹ thuật lắng đọng bột sử dụng Geopolymer (Powder-based 3DCP using Geopolymer)*\n\nCông nghệ in bê tông 3D dựa trên kỹ thuật lắng đọng bột sử dụng Geopolymer có khả năng sản xuất các cấu kiện xây dựng với chi tiết và hình dạng phức tạp. Công nghệ dựa trên lắng đọng bột có tiềm năng để sản xuất các cấu kiện xây dựng với độ bền cao và tốc độ hợp lý để đáp ứng nhu cầu sản xuất quy mô công nghiệp [10].",
     "metadata": {
       "doc_id": "main",
       "chunk_type": "text",
@@ -182,12 +182,12 @@
     }
   },
   {
-    "page_content": "## 1.4 KẾT LUẬN\nƯu điểm chính của công nghệ in ba chiều là sản phẩm tạo ra có kết cấu chắc chắn nhưng có nhược điểm là công nghệ này tốn nhiều công sức và rắc rối. Công nghệ Contour Crafting và Concrete Printing đều dựa trên kỹ thuật ép đùn, điều này làm cho chúng rất giống nhau, lợi thế của công nghệ Contour Crafting so với công nghệ Concrete Printing là độ mịn của bề mặt sản phẩm, tuy nhiên sản phẩm được sản xuất bằng công nghệ Concrete Printing có kết cấu chắc chắn hơn so với công nghệ Contour Crafting, nhưng sản phẩm sản xuất bằng công nghệ Concrete Printing lại có kích thước hạn chế hơn.\n\nDựa trên các phân tích ở trên, mặc dù công nghệ in bê tông 3D vẫn là một công nghệ mới nổi, khả năng ứng dụng trong xây dựng còn hạn chế, đặc biệt là đối với quy mô sản xuất tại chỗ trên công trường, nhưng với phát triển nhanh chóng của công nghệ này, việc in các cấu kiện bê tông ở quy mô lớn sẽ thành hiện thực trong tương lai gần.",
+    "page_content": "#### 1.4 KẾT LUẬN\nƯu điểm chính của công nghệ in ba chiều là sản phẩm tạo ra có kết cấu chắc chắn nhưng có nhược điểm là công nghệ này tốn nhiều công sức và rắc rối. Công nghệ Contour Crafting và Concrete Printing đều dựa trên kỹ thuật ép đùn, điều này làm cho chúng rất giống nhau, lợi thế của công nghệ Contour Crafting so với công nghệ Concrete Printing là độ mịn của bề mặt sản phẩm, tuy nhiên sản phẩm được sản xuất bằng công nghệ Concrete Printing có kết cấu chắc chắn hơn so với công nghệ Contour Crafting, nhưng sản phẩm sản xuất bằng công nghệ Concrete Printing lại có kích thước hạn chế hơn.\n\nDựa trên các phân tích ở trên, mặc dù công nghệ in bê tông 3D vẫn là một công nghệ mới nổi, khả năng ứng dụng trong xây dựng còn hạn chế, đặc biệt là đối với quy mô sản xuất tại chỗ trên công trường, nhưng với phát triển nhanh chóng của công nghệ này, việc in các cấu kiện bê tông ở quy mô lớn sẽ thành hiện thực trong tương lai gần.",
     "metadata": {
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "1.4 KẾT LUẬN",
-      "start_index": 12250,
+      "start_index": 12245,
       "chunk_index": 13,
       "chunk_id": "main::chunk::13",
       "parent_id": "main::section::1.4 KẾT LUẬN",
@@ -201,7 +201,7 @@
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "2. TÀI LIỆU TRÍCH DẪN",
-      "start_index": 13186,
+      "start_index": 13183,
       "chunk_index": 14,
       "chunk_id": "main::chunk::14",
       "parent_id": "main::section::2. TÀI LIỆU TRÍCH DẪN",
@@ -215,7 +215,7 @@
       "doc_id": "main",
       "chunk_type": "text",
       "section_hint": "2. TÀI LIỆU TRÍCH DẪN",
-      "start_index": 14384,
+      "start_index": 14381,
       "chunk_index": 15,
       "chunk_id": "main::chunk::15",
       "parent_id": "main::section::2. TÀI LIỆU TRÍCH DẪN",

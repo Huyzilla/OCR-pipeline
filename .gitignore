@@ -1,5 +1,2 @@
-/data/
-/data_2/
-/debug_public253_pages/
-/outputs_hybrid/
-/outputs_ppstructurev3_md/
+__pycache__/
+.vscode/

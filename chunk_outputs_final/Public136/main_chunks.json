@@ -1,0 +1,114 @@
+[
+  {
+    "page_content": "# Public_136\n\nCân bằng tĩnh là trạng thái chuyển động đặc biệt của vật rắn. Khi đó, vật rắn có vận tốc chuyển động tịnh tiến và vận tốc chuyển động quay đều bằng 0 trong một hệ quy chiếu quán tính. Trạng thái cân bằng tĩnh này được ứng dụng rất nhiều trong kỹ thuật dân dụng, kiến trúc và cơ khí.\n\n# Mô hình phân tích: Vật rắn ở trạng thái cân bằng\nCân bằng có nghĩa là một vật chuyển động với vận tốc dài và vận tốc góc không đổi so với một quan sát viên trong một hệ quy chiếu quán tính.\n\nỞ đây ta quan tâm đến trường hợp đặc biệt mà cả hai loại vận tốc này bằng không\n\n• Trường hợp này được gọi là *cân bằng tĩnh.*\n\nCân bằng tĩnh là một tình huống thường gặp trong kỹ thuật, đặc biệt là trong xây dựng, kiến trúc và cơ khí.\n\n### Sự đàn hồi:\nChúng ta có thể thảo luận về việc các vật bị biến dạng như thế nào trong điều kiện chịu tải.\n\nMột vật đàn hồi sẽ trở lại hình dạng ban đầu khi không còn lực làm nó biến dạng.\n\nNgười ta định nghĩa nhiều hằng số đàn hồi khác nhau, tương ứng với mỗi kiểu biến dạng khác nhau.\n\nTrong *mô hình hạt ở trạng thái cân bằng* thì một hạt chuyển động với vận tốc không đổi do hợp lực tác dụng lên nó bằng không.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_136",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_136",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Người ta định nghĩa nhiều hằng số đàn hồi khác nhau, tương ứng với mỗi kiểu biến dạng khác nhau.\n\nTrong *mô hình hạt ở trạng thái cân bằng* thì một hạt chuyển động với vận tốc không đổi do hợp lực tác dụng lên nó bằng không.\n\nVới các vật thật (dạng mở rộng) thì tình huống sẽ phức tạp hơn nhiều.\n\n• Thường thì không thể xem các vật là các hạt.\n\nVới một vật thật ở trạng thái cân bằng thì cần thỏa mãn một điều kiện thứ hai:\n\n• Điều kiện này liên quan đến chuyển động quay của vật.\n\nMột vật khi ở trạng thái cân bằng tĩnh thì: tổng ngoại lực và tổng mômen ngoại lực tác dụng lên vật bằng 0.\n\nCác điều kiện này mô tả **mô hình vật rắn ở trạng thái cân bằng**.\n\n![](images/image1.jpg)\n\n![](images/image2.jpg)\n\nCác lưu ý về cân bằng:\n\nCân bằng tịnh tiến\n\nĐiều kiện thứ nhất về cân bằng là phát biểu về cân bằng tịnh tiến.\n\n- Gia tốc tịnh tiến của khối tâm của vật phải bằng không.\n- Điều này được áp dụng trong một hệ quy chiếu quán tính.\n\nCân bằng quay\n\n- Điều kiện thứ hai về cân bằng là một phát biểu về cân bằng quay.\n- Gia tốc góc của vật bằng không.\n- Điều này phải đúng với mọi trục quay.\n\n# Cân bằng động và cân bằng tĩnh\nTrong chương này, ta tập trung vào cân bằng tĩnh.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Sự đàn hồi:",
+      "start_index": 920,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::Sự đàn hồi:",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Cân bằng quay\n\n- Điều kiện thứ hai về cân bằng là một phát biểu về cân bằng quay.\n- Gia tốc góc của vật bằng không.\n- Điều này phải đúng với mọi trục quay.\n\n# Cân bằng động và cân bằng tĩnh\nTrong chương này, ta tập trung vào cân bằng tĩnh.\n\n- Vật không chuyển động.\n- vCM = 0 và = 0\n\nMômen hợp lực bằng không không có nghĩa là vật không chuyển động quay. Cân bằng động cũng có thể xảy ra.\n\n- Vật có thể quay với vận tốc góc không đổi.\n- Vật có thể chuyển động với vận tốc khối tâm không đổi.\n\n## Các phương trình trong cân bằng\nTa sẽ giới hạn các ứng dụng cho các tình huống mà các lực nằm trong mặt phẳng *xy*\n\n- Các lực này được gọi là đồng phẳng vì chúng cùng nằm trong một mặt phẳng\n- Giới hạn này dẫn đến 3 phương trình theo các trục.\n\nCác phương trình này là:\n\n- F<sup>x</sup> = 0\n- F<sup>y</sup> = 0\n- <sup>z</sup> = 0 (12.3)\n\nVị trí của trục của phương trình mômen quay được chọn bất kỳ.\n\n![](images/image3.jpg)\n\n![](images/image4.jpg)\n\n# Ví dụ về vật rắn ở trạng thái cân bằng\n**Chiến lược giải toán về cân bằng** \n\n## Khái niệm hóa\nTìm tất cả các lực tác dụng lên vật.\n\nHình dung ảnh hưởng của mỗi lực đến sự quay của vật như là chỉ có lực này tác dụng lên vật.\n\n**Phân loại**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Sự đàn hồi:",
+      "start_index": 1856,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::Sự đàn hồi:",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "![](images/image3.jpg)\n\n![](images/image4.jpg)\n\n# Ví dụ về vật rắn ở trạng thái cân bằng\n**Chiến lược giải toán về cân bằng** \n\n## Khái niệm hóa\nTìm tất cả các lực tác dụng lên vật.\n\nHình dung ảnh hưởng của mỗi lực đến sự quay của vật như là chỉ có lực này tác dụng lên vật.\n\n**Phân loại**\n\n![](images/image5.jpg)\n\n![](images/image6.jpg)\n\nKhẳng định rằng vật là một vật rắn cân bằng.\n\nVật phải có gia tốc tịnh tiến và gia tốc góc bằng không.\n\n#### Phân tích\nVẽ một sơ đồ.\n\nVẽ và đặt tên tất cả các ngoại lực tác dụng lên vật.\n\nMô hình hạt chịu tác dụng của hợp lực: có thể biểu diễn vật như là một điểm trong sơ đồ lực vì ta không quan tâm đến điểm tác động của lực lên vật.\n\nMô hình vật rắn cân bằng: Không thể biểu diễn vật bằng một điểm vì điểm tác động của các lực là quan trọng.\n\nLập một hệ tọa độ thuận tiện.\n\nTìm thành phần của các lực theo hai trục tọa độ.\n\nÁp dụng điều kiện thứ nhất về cân bằng (F=0).\n\nCẩn thận với các dấu cộng, trừ.\n\nChọn một trục thuận tiện cho việc tính mômen quay tổng hợp đối với vật rắn: Nhớ rằng việc chọn trục là tùy ý.\n\nChọn một trục sao cho các phép tính là đơn giản nhất: Lực tác dụng dọc theo đường thẳng đi qua gốc có mômen quay bằng không",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Các phương trình trong cân bằng",
+      "start_index": 2753,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::Các phương trình trong cân bằng",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Cẩn thận với các dấu cộng, trừ.\n\nChọn một trục thuận tiện cho việc tính mômen quay tổng hợp đối với vật rắn: Nhớ rằng việc chọn trục là tùy ý.\n\nChọn một trục sao cho các phép tính là đơn giản nhất: Lực tác dụng dọc theo đường thẳng đi qua gốc có mômen quay bằng không\n\nÁp dụng điều kiện thứ 2 của cân bằng.\n\nHai điều kiện cân bằng sẽ cho ta một hệ phương trình.\n\nGiải hệ phương trình.\n\n## Hoàn tất\nBảo đảm rằng các kết quả là phù hợp với sơ đồ ban đầu.\n\nNếu lời giải cho thấy một lực âm thì lực đó ngược với chiều mà ta đã vẽ trong sơ đồ.\n\nKiểm tra các kết quả để bảo đảm rằng: *<sup>F</sup><sup>x</sup>* <sup>=</sup> 0,*<sup>F</sup><sup>y</sup>* <sup>=</sup> 0,*<sup>F</sup><sup>z</sup>* <sup>=</sup> <sup>0</sup> .\n\nTrọng tâm của hệ gồm chai rượu và giá đỡ rơi đúng vào điểm đặt của giá đỡ\n\n![](images/image7.jpg)\n\n*Hình 12.1: Hệ chai rượu và giá đỡ cân bằng*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Phân tích",
+      "start_index": 3666,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::Phân tích",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "Trọng tâm của hệ gồm chai rượu và giá đỡ rơi đúng vào điểm đặt của giá đỡ\n\n![](images/image7.jpg)\n\n*Hình 12.1: Hệ chai rượu và giá đỡ cân bằng*\n\nSự cân bằng của hệ chai rượu và giá đỡ trong hình 12.1 là một ví dụ thú vị về trạng thái cân bằng tĩnh của vật rắn. Để chai rượu có thể đứng cân bằng trên giá đỡ thì cần hai điều kiện: tổng hợp lực và tổng mômen lực tác dụng lên hệ phải bằng không. Để điều kiện thứ hai được thỏa mãn thì trọng tâm của hệ gồm chai rượu và giá đỡ phải ở trên đường thẳng đứng đi qua điểm đặt của giá đỡ trên bàn.\n\n# Bài tập mẫu 12.1: Người đứng trên xà ngang:\nMột thanh xà đồng chất nằm ngang có chiều dài *l*= 8.00 m và trọng lượng *Wb*=200 N được gắn vào tường bởi một trục quay. Đầu còn lại của xà được móc vào cáp treo lập một góc =53° so với xà (hình 12.8a). Một người có trọng lượng Wp=5600 N đứng trên xà và cách tường một khoảng d=2.00 N. Tìm lực căng của cáp treo cũng như độ lớn và hướng của lực mà tường tác dụng lên xà.\n\n#### Giải:\n#### Khái niệm hóa\nThanh xà là đồng chất.\n\nTrọng tâm của xà là ở tâm hình học của xà (trung điểm của xà).\n\nNgười đứng trên xà.\n\nLực căng của cáp và lực mà tường tác dụng lên xà là gì?",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Hoàn tất",
+      "start_index": 4384,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::Hoàn tất",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "#### Giải:\n#### Khái niệm hóa\nThanh xà là đồng chất.\n\nTrọng tâm của xà là ở tâm hình học của xà (trung điểm của xà).\n\nNgười đứng trên xà.\n\nLực căng của cáp và lực mà tường tác dụng lên xà là gì?\n\n#### Phân loại\nHệ đứng yên, phân loại bài toán như là một vật rắn nằm cân bằng.\n\n#### Phân tích\nVẽ một sơ đồ lực (hình 12.8b).\n\nDùng trục quay cho trong bài toán (nằm trên tường) làm trục quay: Cách này là đơn giản nhất\n\nLưu ý là ở đây có 3 ẩn số (đại lượng cần tìm) là *T*, *R*, .\n\nCó thể phân tích các lực thành các thành phần.\n\nÁp dụng 2 điều kiện cân bằng, ta thu được 3 phương trình.\n\nGiải hệ phương trình để tìm các ẩn số.\n\n## Hoàn tất\nGiá trị của *θ* cho thấy hướng của *R* trong đồ thị là đúng.\n\n![](images/image8.jpg)\n\n![](images/image9.jpg)\n\n![](images/image10.jpg)\n\n# Bài tập mẫu 12.2: Thang dựng nghiêng\nMột cái thang đồng chất có chiều dài *l* tựa vào một cái tường nhẵn, thẳng đứng (hình 12.9a). Khối lượng của thang là *m* và hệ số ma sát giữa thang và sàn nhà là =. Tìm góc nghiêng nhỏ nhất min để thang không bị trượt.\n\n## Khái niệm hóa\nThang là đồng chất.\n\nTrọng lượng của thang đặt ở tâm hình học của nó (cũng là trọng tâm).\n\nGiữa thang và sàn nhà có ma sát nghỉ (ma sát tĩnh).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 5344,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "## Khái niệm hóa\nThang là đồng chất.\n\nTrọng lượng của thang đặt ở tâm hình học của nó (cũng là trọng tâm).\n\nGiữa thang và sàn nhà có ma sát nghỉ (ma sát tĩnh).\n\n# Phân loại\nMô hình hóa vật như là một vật rắn nằm cân bằng: do ta không muốn thang trượt\n\n#### Phân tích\nVẽ một sơ đồ chỉ ra tất cả các lực tác động lên thang.\n\nLực ma sát là ƒ<sup>s</sup> = µ<sup>s</sup> n.\n\nChọn O làm trục quay.\n\nÁp dụng các phương trình của 2 điều kiện cân bằng.\n\nGiải các phương trình.\n\n![](images/image11.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Khái niệm hóa",
+      "start_index": 6377,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Khái niệm hóa",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": null
+    }
+  }
+]

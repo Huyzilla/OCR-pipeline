@@ -1,0 +1,110 @@
+[
+  {
+    "chunk_id": "main::chunk::0",
+    "chunk_index": 0,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Public_020",
+    "section_hint": "Public_020",
+    "page_content": "# Public_020\n\n#### 1. Giới thiệu\nViệc xác định độ dày của vật liệu bảo vệ chịu lửa và các vật liệu khác được sử dụng trong thử nghiệm khả năng chịu lửa là rất quan trọng để dự đoán chính xác chiều dày lớp chống cháy yêu cầu từ kết quả thử nghiệm.\n\nDo đó, các phương pháp được sử dụng để thiết lập các đặc tính này phải nhất quán và Phụ lục này đưa ra hướng dẫn về các quy trình thích hợp được sử dụng.\n\nMọi mẫu thử được sử dụng để xác định độ dày phải phù hợp với mẫu thử cháy thực tế trong các điều kiện được mô tả trong Điều 8.\n\nCác quy trình nêu trong EN 1363-1 phải được tuân thủ cùng với các yêu cầu sau.\n\n## 1.1 Chiều dày của vật liệu bảo vệ\n## Chiều dày màng khô\nĐộ dày màng khô phải được xác định trực tiếp trên các mẫu thử nghiệm, sau khi lớp phủ được để khô hoàn toàn theo quy định của khách hàng.\n\nPhòng thử nghiệm phải đo chiều dày bằng dụng cụ sử dụng nguyên tắc cảm ứng điện từ hoặc nguyên tắc dòng điện xoáy với đường kính tiếp xúc đầu dò ít nhất là 2,5 mm.\n\n#### Vị trí đo\nSố lượng và vị trí điểm đo chiều dày (được coi là yêu cầu tối thiểu) phải như sau:\n\n### 1.1.2.1. Dầm chịu tải\nCần thực hiện số lượng tối thiểu 88 phép đo trên các mặt cắt đo được chỉ ra trong Hình 6 và Hình 13.",
+    "start_index": 0,
+    "prev_chunk_id": null,
+    "next_chunk_id": "main::chunk::1"
+  },
+  {
+    "chunk_id": "main::chunk::1",
+    "chunk_index": 1,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Vị trí đo",
+    "section_hint": "Vị trí đo",
+    "page_content": "#### Vị trí đo\nSố lượng và vị trí điểm đo chiều dày (được coi là yêu cầu tối thiểu) phải như sau:\n\n### 1.1.2.1. Dầm chịu tải\nCần thực hiện số lượng tối thiểu 88 phép đo trên các mặt cắt đo được chỉ ra trong Hình 6 và Hình 13.\n\n- Các mặt cắt đo nhiệt tại đó các phép đo nhiệt độ được thực hiện trên bề mặt của dầm thử nghiệm.\n- Vị trí thực hiện phép đo nhiệt độ ở mặt trên của bản cánh dưới dầm hoặc mặt dưới của dầm rỗng, giữa mỗi mặt cắt đo nhiệt.\n\n• Vị trí nằm giữa các mặt cắt đo nhiệt độ ngoài cùng và giữa các điểm ngoài cùng trên mặt trên của bản cánh dưới dầm hoặc mặt dưới của dầm rỗng.\n\n### 1.1.2.2. Dầm không chịu tải\nSố lượng tối thiểu là 24 phép đo tại các vị trí trên bề mặt tiếp xúc với lửa của dầm (bản bụng và bản cánh hoặc mặt của dầm rỗng; xem Hình 12) tại các vị trí gần với.\n\n• Các mặt cắt đo nhiệt (cách từ 50 mm đến 100 mm) tại đó các phép đo nhiệt độ được thực hiện trên bề mặt của dầm thử nghiệm.\n\n### 1.1.2.3. Cột cao chịu tải\nCần thực hiện số lượng tối thiểu 50 phép đo trên các mặt cắt đo nhiệt được chỉ ra trong Hình 13 đối với cấu kiện tiết diện chữ I hoặc H và Hình 14 đối với cấu kiện có tiết diện rỗng.",
+    "start_index": 974,
+    "prev_chunk_id": "main::chunk::0",
+    "next_chunk_id": "main::chunk::2"
+  },
+  {
+    "chunk_id": "main::chunk::2",
+    "chunk_index": 2,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.1.2.3. Cột cao chịu tải",
+    "section_hint": "1.1.2.3. Cột cao chịu tải",
+    "page_content": "### 1.1.2.3. Cột cao chịu tải\nCần thực hiện số lượng tối thiểu 50 phép đo trên các mặt cắt đo nhiệt được chỉ ra trong Hình 13 đối với cấu kiện tiết diện chữ I hoặc H và Hình 14 đối với cấu kiện có tiết diện rỗng.\n\n- Các mặt cắt đo nhiệt (cách từ 50 mm đến 100 mm) tại đó các phép đo nhiệt độ được thực hiện trên bề mặt của cột thử nghiệm.\n- Các vị trí nằm giữa mỗi mặt cắt đo nhiệt.\n\n# 1.1.2.4. Cột ngắn không chịu tải\nCần thực hiện số lượng tối thiểu 24 phép đo trên các mặt cắt đo nhiệt được chỉ ra trong Hình 13 đối với cấu kiện tiết diện chữ I hoặc H và Hình 14 đối với cấu kiện tiết diện rỗng.\n\n• Các mặt cắt đo nhiệt (cách từ 50 mm đến 100 mm) tại đó các phép đo nhiệt độ được thực hiện trên bề mặt của cột thử nghiệm.\n\n#### 1.2 Nhận dạng\nViệc xác định lớp phủ phải phù hợp với ETAG 018-Phần 2.\n\nCác thuộc tính của vật liệu phải được đặc trưng / nhận dạng rõ ràng (công thức).\n\n- **2. Lắp đặt đầu đo nhiệt vào cấu kiện thép và đi dây**\n- **2.1 Nguyên tắc chung**\n\n![](images/image1.jpg)",
+    "start_index": 1896,
+    "prev_chunk_id": "main::chunk::1",
+    "next_chunk_id": "main::chunk::3"
+  },
+  {
+    "chunk_id": "main::chunk::3",
+    "chunk_index": 3,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.2 Nhận dạng",
+    "section_hint": "1.2 Nhận dạng",
+    "page_content": "#### 1.2 Nhận dạng\nViệc xác định lớp phủ phải phù hợp với ETAG 018-Phần 2.\n\nCác thuộc tính của vật liệu phải được đặc trưng / nhận dạng rõ ràng (công thức).\n\n- **2. Lắp đặt đầu đo nhiệt vào cấu kiện thép và đi dây**\n- **2.1 Nguyên tắc chung**\n\n![](images/image1.jpg)\n\nViệc đo chính xác nhiệt độ thép là cơ sở cho phương pháp đánh giá. Loại đầu đo nhiệt và phương pháp gắn và lắp đặt dây dẫn, bảo vệ và kết nối với cáp nối dài hoặc phần mở rộng thích hợp phải được xem xét cẩn thận. Phụ lục này đưa ra hướng dẫn về các quy định phù hợp.\n\n#### 2.2 Kiểu đầu đo nhiệt\nMột vài loại khác nhau của đầu đo nhiệt được cho là phù hợp, bao gồm loại \"T\", \"N\", \"K\" và \"J\" như quy định trong IEC 60584-1.\n\nƯu tiên sử dụng đầu đo nhiệt nằm trong lớp vỏ bọc bằng thép không gỉ được cách nhiệt bằng sợi khoáng với đầu nóng được cách nhiệt. Đường kính tổng thể của lớp vỏ bọc ít nhất là 1,5 mm.",
+    "start_index": 2622,
+    "prev_chunk_id": "main::chunk::2",
+    "next_chunk_id": "main::chunk::4"
+  },
+  {
+    "chunk_id": "main::chunk::4",
+    "chunk_index": 4,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.2 Kiểu đầu đo nhiệt",
+    "section_hint": "2.2 Kiểu đầu đo nhiệt",
+    "page_content": "Ưu tiên sử dụng đầu đo nhiệt nằm trong lớp vỏ bọc bằng thép không gỉ được cách nhiệt bằng sợi khoáng với đầu nóng được cách nhiệt. Đường kính tổng thể của lớp vỏ bọc ít nhất là 1,5 mm.\n\nCác đầu đo nhiệt khác có thể được sử dụng với sự tham vấn giữa phòng thí nghiệm và khách hàng thử nghiệm về tính phù hợp của chúng. Các đầu đo nhiệt thích hợp phải là dạng dây đơn có đường kính tối thiểu 0,5 mm và có lớp cách nhiệt giữa 2 sợi dây và giữa mỗi sợi dây với bất kỳ vật liệu dẫn nhiệt bên ngoài sao cho không bị hỏng trong quá trình thử nghiệm.\n\n# 2.3 Lắp đặt đầu đo nhiệt\nĐầu nóng của đầu đo nhiệt cần được gắn trên cấu kiện thép bằng búa hoặc phương pháp khác mà không gây ảnh hưởng đến độ nhậy và độ chính xác của đầu đo nhiệt. Không được gắn bằng vít hoặc bu lông.\n\nVới bất kỳ phương pháp cố định nào điều cơ bản là các đầu đo nhiệt không được tiếp xúc ngoài phạm\n\nvimối nối nóng được đặt ở trong hoặc tại bề mặt thép; mối nối nóng của đầu đo nhiệt phải được lắp đặt tại vị trí gần nhất với điểm nối lạnh. Đầu đo nhiệt phải được cố định để đảm bảo rằng nó vẫn phải ở đúng vị trí.",
+    "start_index": 3314,
+    "prev_chunk_id": "main::chunk::3",
+    "next_chunk_id": "main::chunk::5"
+  },
+  {
+    "chunk_id": "main::chunk::5",
+    "chunk_index": 5,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.3 Lắp đặt đầu đo nhiệt",
+    "section_hint": "2.3 Lắp đặt đầu đo nhiệt",
+    "page_content": "vimối nối nóng được đặt ở trong hoặc tại bề mặt thép; mối nối nóng của đầu đo nhiệt phải được lắp đặt tại vị trí gần nhất với điểm nối lạnh. Đầu đo nhiệt phải được cố định để đảm bảo rằng nó vẫn phải ở đúng vị trí.\n\n## 2.4 Lắp đặt dây dẫn cho sợi dây đo nhiệt\nCần thực hiện mọi nỗ lực bất cứ khi nào có thể để đảm bảo rằng dây dẫn từ đầu nóng đi theo một đường để đến đầu lạnh mà không để nó tiếp xúc với nhiệt độ vượt quá nhiệt độ\n\nở đầu nóng. Các dây dẫn phải được luồn ra sau vật liệu chống cháy và ra khỏi lò mà không đi qua môi trường lò.\n\nCó thể cần thiết phải bảo vệ các sợi dây đo nhiệt bằng cách sử dụng các thanh thép C hoặc ống dẫn trước khi phủ lớp vật liệu bảo vệ. Nó được lắp đặt từ thanh thép nhẹ và được hàn điểm vào góc của bản bụng và bản cánh.\n\nNên xác định rằng đặc tính nhiệt độ công bố của vật liệu cách nhiệt của đầu đo nhiệt có liên quan đến đầu đo nhiệt ở trong môi trường mà các dây dẫn không được dịch chuyển hoặc có các biến dạng khác\n\nCó thể các dây đo nhiệt sẽ cần được đỡ để đảm bảo rằng phá hoại của vật liệu cách nhiệt không xảy ra.",
+    "start_index": 4181,
+    "prev_chunk_id": "main::chunk::4",
+    "next_chunk_id": "main::chunk::6"
+  },
+  {
+    "chunk_id": "main::chunk::6",
+    "chunk_index": 6,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.4 Lắp đặt dây dẫn cho sợi dây đo nhiệt",
+    "section_hint": "2.4 Lắp đặt dây dẫn cho sợi dây đo nhiệt",
+    "page_content": "Có thể các dây đo nhiệt sẽ cần được đỡ để đảm bảo rằng phá hoại của vật liệu cách nhiệt không xảy ra.\n\n# 2.5 Kết nối đầu đo nhiệt\nKhông được có mối nối giữa các dây đo nhiệt và bất kỳ phần mở rộng hoặc cáp nối dài trong bất kỳ khu vực có nhiệt độ cao.\n\nDây dẫn bù phải là loại phù hợp với dây dẫn nhiệt.\n\n# 2.6 Hỏng đầu đo nhiệt\nCác hư hỏng của đầu đo nhiệt không dễ dàng xác định được. Hỏng do đứt dây hoặc do hỏng lớp cách nhiệt giữa các dây, do đó làm chập mối nối nóng.\n\nTuy nhiên các dấu hiệu hỏng rõ ràng là:\n\n- Sự giảm đột ngột của nhiệt độ được chỉ định so với nhiệt độ đã ghi trước đó.\n- Sự gia tăng đột ngột nhiệt độ được chỉ định đến một giá trị đại diện cho phạm vi tối đa của thiết bị đo được\n- Nhiệt độ hiển thị \"thay đổi và biến động\" không phù hợp với các giá trị dự báo.\n\nMột dấu hiệu phổ biến của hỏng lớp cách nhiệt mà có thể quan sát được là giá trị nhiệt độ hiển thị không phù hợp với nhiệt độ lò thử nghiệm.",
+    "start_index": 5145,
+    "prev_chunk_id": "main::chunk::5",
+    "next_chunk_id": "main::chunk::7"
+  },
+  {
+    "chunk_id": "main::chunk::7",
+    "chunk_index": 7,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.6 Hỏng đầu đo nhiệt",
+    "section_hint": "2.6 Hỏng đầu đo nhiệt",
+    "page_content": "Một dấu hiệu phổ biến của hỏng lớp cách nhiệt mà có thể quan sát được là giá trị nhiệt độ hiển thị không phù hợp với nhiệt độ lò thử nghiệm.\n\n### 3. Phương pháp thử nghiệm đối với lửa âm ỉ (đường cong nhiệt chậm)\n#### 3.1 Giới thiệu\nCác sản phẩm bảo vệ chịu lửa được hoạt động bởi thông lượng nhiệt của đám cháy có thể được yêu cầu thử nghiệm đối với đường cong âm ỉ (đường cong nhiệt chậm được định nghĩa trong ISO 834-2), với tốc độ tăng nhiệt độ nhỏ hơn tốc độ của đường cong nhiệt độ / thời gian tiêu chuẩn.\n\nSự tiếp xúc với lửa này, áp dụng cho các vật liệu chống cháy phản ứng, chỉ được sử dụng trong những trường hợp đặc biệt, khi có thể dự kiến rằng công năng của sản phẩm khi tiếp xúc với lửa âm ỉ kém hơn đáng kể so với khi nó được tiếp xúc với đường cong nhiệt độ / thời gian tiêu chuẩn và khi thí nghiệm này được quy định trong các quy chuẩn xây dựng quốc gia.\n\nQuy định này không phải là bắt buộc đối với tất cả các vật liệu chống cháy áp dụng cho các cấu kiện thép kết cấu.\n\n## 3.2 Trang thiết bị thử nghiệm\nLò đốt và các thiết bị thử nghiệm nên được lựa chọn để các mẫu thử nghiệm tiếp xúc với sự gia nhiệt theo quy định trong F.5",
+    "start_index": 5934,
+    "prev_chunk_id": "main::chunk::6",
+    "next_chunk_id": "main::chunk::8"
+  },
+  {
+    "chunk_id": "main::chunk::8",
+    "chunk_index": 8,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::3.1 Giới thiệu",
+    "section_hint": "3.1 Giới thiệu",
+    "page_content": "Quy định này không phải là bắt buộc đối với tất cả các vật liệu chống cháy áp dụng cho các cấu kiện thép kết cấu.\n\n## 3.2 Trang thiết bị thử nghiệm\nLò đốt và các thiết bị thử nghiệm nên được lựa chọn để các mẫu thử nghiệm tiếp xúc với sự gia nhiệt theo quy định trong F.5\n\nĐường cong âm ỉ (đường cong nhiệt chậm) phải như quy định trong ISO 834-2, được cung cấp một chế độ gia nhiệt trong đó trong khoảng thời gian t = 0 phút đến 20 phút, nhiệt độ lò (T) tuân theo mối quan hệ:\n\nT \n$$154\\sqrt[4]{t}$$\n 20 (F.1)\n\nSau t = 20 phút và trong khoảng thời gian còn lại của thử nghiệm, nhiệt độ lò thử nghiệm (T) tuân theo mối quan hệ nhiệt độ - thời gian\n\n![](images/image2.jpg)\n\n![](images/image3.jpg)\n\n![](images/image4.jpg)",
+    "start_index": 6808,
+    "prev_chunk_id": "main::chunk::7",
+    "next_chunk_id": null
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "page_content": "# Public_022\n\n#### 1. Phạm vi áp dụng\nTiêu chuẩn này quy định phương pháp thử nghiệm các hệ bọc bảo vệ chịu lửa cho cấu kiện kết cấu thép được sử dụng trong công trình như dầm, cột, hoặc cấu kiện chịu kéo. Tiêu chuẩn này được biên soạn để sử dụng kết hợp với quy trình đánh giá được trình bày trong ISO 834-11. Tiêu chuẩn áp dụng cho các loại tiết diện thép (bao gồm các tiết diện rỗng) và chỉ xét đến các tiết diện không có các lỗ hở trên bản bụng. Các kết quả từ phân tích tiết diện chữ I hoặc tiết diện chữ H được áp dụng trực tiếp cho tiết diện thép góc, tiết diện chữ C và tiết diện chữ T có cùng hệ số tiết diện được sử dụng như các cấu kiện riêng lẻ, ví dụ như giằng, hoặc một phần của hệ kết cấu chế tạo sẵn như hệ giàn thép. Tiêu chuẩn này không áp dụng đối với các thanh/que đặc, hoặc tiết diện rỗng được nhồi bê tông.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_022",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_022",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Tiêu chuẩn này mô tả các quy trình thử nghiệm chịu lửa cần được thực hiện để đánh giá khả năng của hệ bọc bảo vệ để duy trì đủ sự kết dính và giữ đúng vị trí đối với một phạm vi biến dạng, nhiệt độ lò và nhiệt độ thép được xác định rõ từ trước, sao cho hiệu quả của hệ bọc bảo vệ không bị suy giảm đáng kể, và để cung cấp dữ liệu về các đặc tính nhiệt của hệ bọc bảo vệ khi chịu tác động của đường cong nhiệt độ/thời gian tiêu chuẩn được quy định trong tiêu chuẩn TCVN 9311-1.\n\nTrong các trường hợp đặc biệt được quy định trong các quy chuẩn xây dựng quốc gia, các vật liệu chống cháy dạng phản ứng có thể được yêu cầu phải chịu đường cong nhiệt chậm. Thử nghiệm và các yêu cầu cho việc sử dụng đường cong này được mô tả trong phụ lục F.\n\nTiêu chuẩn này có thể áp dụng cho cả hệ bọc bảo vệ chịu lửa dạng thụ động và dạng phản ứng như được định nghĩa trong phần thuật ngữ và định nghĩa, được lắp đặt hoặc bọc phủ sao cho chúng giữ nguyên vị trí trong khoảng thời gian dự kiến chịu lửa.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Phạm vi áp dụng",
+      "start_index": 830,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Phạm vi áp dụng",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Tiêu chuẩn này có thể áp dụng cho cả hệ bọc bảo vệ chịu lửa dạng thụ động và dạng phản ứng như được định nghĩa trong phần thuật ngữ và định nghĩa, được lắp đặt hoặc bọc phủ sao cho chúng giữ nguyên vị trí trong khoảng thời gian dự kiến chịu lửa.\n\nPhương pháp thử nghiệm chịu lửa cung cấp các quy định cho việc thu thập và diễn giải số liệu được sử dụng làm đầu vào trực tiếp của tiêu chuẩn ISO 834-11 để xác định các giới hạn áp dụng trực tiếp cho các tiết diện thép với hình dạng, kích thước và khoảng thời gian chịu lửa bất kì.\n\n### 2. Tài liệu viện dẫn\nMột phần hoặc toàn bộ các tài liệu viện dẫn sau là cần thiết cho việc sử dụng tiêu chuẩn này. Đối với các tài liệu viện dẫn ghi năm công bố thì áp dụng phiên bản được nêu. Đối với các tài liệu viện dẫn không ghi năm công bố thì áp dụng phiên bản mới nhất, bao gồm cả các sửa đổi, bổ sung (nếu có).TCVN xxxx:202x\n\nTCVN 9311-1 (ISO 834-1), Thử nghiệm chịu lửa - Các bộ phận công trình xây dựng - Phần 1: Yêu cầu chung\n\nTCVN 9311-6:2012 (ISO 834-6), Thử nghiệm chịu lửa - Các bộ phận công trình xây dựng - Phần 6:\n\nCác yêu cầu riêng đối với dầm\n\nTCVN 9311-7:2012 (ISO 834-7), Thử nghiệm chịu lửa - Các bộ phận công trình xây dựng - Phần 7:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Phạm vi áp dụng",
+      "start_index": 1569,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1. Phạm vi áp dụng",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "TCVN 9311-6:2012 (ISO 834-6), Thử nghiệm chịu lửa - Các bộ phận công trình xây dựng - Phần 6:\n\nCác yêu cầu riêng đối với dầm\n\nTCVN 9311-7:2012 (ISO 834-7), Thử nghiệm chịu lửa - Các bộ phận công trình xây dựng - Phần 7:\n\nCác yêu cầu riêng đối với cột\n\nISO 1182:2010, Thử nghiệm sản phẩm phản ứng với lửa – Phương pháp thử tính không cháy\n\nISO 1716, Thử nghiệm sản phẩm phản ứng với lửa – Xác định nhiệt lượng của quá trình đốt (giá trị nhiệt lượng).\n\nISO 8421-2, Bảo vệ chịu lửa – Từ vựng – Phần 2: Bảo vệ chịu lửa kết cấu.\n\nISO 834-11, Thử nghiệm chịu lửa – Các bộ phận công trình xây dựng – Phần 11: các yêu cầu riêng cho việc đánh giá lớp bọc bảo vệ với cấu kiện của kết cấu thép.\n\nEN 13501-1, Phân loại chịu lửa cho sản phẩm xây dựng và bộ phận công trình – Phần 1: Phân loại dữ liệu từ các thử nghiệm phản ứng với lửa.\n\nEN 1363-1, Thử nghiệm chịu lửa – Phần 1: Các quy định chung.\n\nISO 13943, An toàn cháy – Từ vựng.\n\nIEC 584-1, Đầu đo nhiệt – Phần 1: Bảng tham khảo.\n\nETAG 018, Các sản phẩm bọc bảo vệ chịu lửa.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Tài liệu viện dẫn",
+      "start_index": 2542,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2. Tài liệu viện dẫn",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "EN 1363-1, Thử nghiệm chịu lửa – Phần 1: Các quy định chung.\n\nISO 13943, An toàn cháy – Từ vựng.\n\nIEC 584-1, Đầu đo nhiệt – Phần 1: Bảng tham khảo.\n\nETAG 018, Các sản phẩm bọc bảo vệ chịu lửa.\n\n### 3. Thuật ngữ và định nghĩa\nCác thuật ngữ và định nghĩa được nêu trong TCVN 9311-1, ISO 13943, TCVN 9310-4 và những thuật ngữ, định nghĩa sau được áp dụng khi sử dụng tiêu chuẩn này.\n\n### 3.1 Nhiệt độ đặc trưng của thép (characteristic steel temperature)\nNhiệt độ của cấu kiện thép kết cấu được sử dụng để xác định hệ số hiệu chỉnh cho khả năng bám dính được tính toán bằng (nhiệt độ trung bình + nhiệt độ lớn nhất)/2\n\n# 3.2 Nhiệt độ thiết kế (design temperature)\nNhiệt độ của cấu kiện thép được sử dụng cho mục đích thiết kế kết cấu\n\n### 3.3 Bảo vệ chịu lửa\nBiện pháp bảo vệ các cấu kiện thép bằng hệ bảo vệ chịu lửa sao cho nhiệt độ của cấu kiện thép được giới hạn trong suốt thời gian tiếp xúc với lửa\n\n### 3.4 Hệ bảo vệ chịu lửa (fire protection system)\nVật liệu chống cháy cùng với hệ đỡ bao gồm lưới thép như được thử nghiệm.\n\nCHÚ THÍCH 1: Hệ vật liệu chống cháy dạng phản ứng bao gồm sơn lót và lớp sơn phủ nếu có.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Tài liệu viện dẫn",
+      "start_index": 3367,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::2. Tài liệu viện dẫn",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "### 3.4 Hệ bảo vệ chịu lửa (fire protection system)\nVật liệu chống cháy cùng với hệ đỡ bao gồm lưới thép như được thử nghiệm.\n\nCHÚ THÍCH 1: Hệ vật liệu chống cháy dạng phản ứng bao gồm sơn lót và lớp sơn phủ nếu có.\n\n# 3.5 Chiều dày lớp bảo vệ chịu lửa (fire protection thickness)\nChiều dày khô của 1 lớp trong hệ bảo vệ chịu lửa hoặc chiều dày tổng cộng của tất cả các lớp trong hệ bảo vệ chịu lửa\n\nCHÚ THÍCH 1: Chiều dày các bộ phận của hệ đỡ hoặc dải che mối nối không được tính vào chiều dày lớp bảo vệ chịu lửa\n\nCHÚ THÍCH 2: với hệ bảo vệ dạng phản ứng, chiều dày là chiều dày trung bình của lớp màng phủ khô không bao gồm sơn lót và sơn phủ nếu có\n\n## 3.6 Cấu kiện chữ H (H section)\nCấu kiện thép có chiều rộng bản cánh lớn so với chiều cao tiết diện có chức năng chính là chịu tải dọc trục, có thể kết hợp chịu uốn và chịu cắt\n\n## 3.7 Cấu kiện chữ I (I section)\nDầm phụ hoặc dầm chính bằng thép với phần bản cánh ngắn như chữ \"I\" có chức năng chính là chịu tải vuông góc với trục dọc của cấu kiện\n\nCHÚ THÍCH 1: các tải trọng trên thường gây ra uốn cho cấu kiện dầm. Các bản cánh dầm có thể song song với nhau hoặc dạng dốc",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.4 Hệ bảo vệ chịu lửa (fire protection system)",
+      "start_index": 4270,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::3.4 Hệ bảo vệ chịu lửa (fire protection system)",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "## 3.7 Cấu kiện chữ I (I section)\nDầm phụ hoặc dầm chính bằng thép với phần bản cánh ngắn như chữ \"I\" có chức năng chính là chịu tải vuông góc với trục dọc của cấu kiện\n\nCHÚ THÍCH 1: các tải trọng trên thường gây ra uốn cho cấu kiện dầm. Các bản cánh dầm có thể song song với nhau hoặc dạng dốc\n\n### 3.8 Vật liệu bảo vệ dạng thụ động (passive fire protection material)\nCác vật liệu, không thay đổi tính chất vật lý khi chịu nhiệt, cung cấp hiệu quả bảo vệ bằng các tính chất vật lý hoặc cách nhiệt của chúng.\n\n### 3.9 Vật liệu bảo vệ dạng phản ứng (reactive fire protection material)\nCác vật liệu mà thành phần của nó xảy ra phản ứng hóa học khi chịu nhiệt để làm thay đổi tính chất vật lý và do đó cung cấp hiệu quả bảo vệ chịu lửa thông qua các hiệu ứng cách nhiệt và làm mát.\n\n## 3.10 Cấu kiện tham chiếu (reference section)\nCấu kiện thép được lấy cùng chiều dài với cấu kiện tương đương mang tải\n\n# 3.11 Hệ số tiết diện (với cấu kiện không được bọc bảo vệ) (section factor- unprotected steel)\nTỷ lệ của diện tích phần chu vi tiếp xúc với lửa của cấu kiện thép, trên một đơn vị chiều dài, Am, với thể tích mặt cắt ngang trên mỗi đơn vị chiều dài, V",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.7 Cấu kiện chữ I (I section)",
+      "start_index": 5105,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::3.7 Cấu kiện chữ I (I section)",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "# 3.11 Hệ số tiết diện (với cấu kiện không được bọc bảo vệ) (section factor- unprotected steel)\nTỷ lệ của diện tích phần chu vi tiếp xúc với lửa của cấu kiện thép, trên một đơn vị chiều dài, Am, với thể tích mặt cắt ngang trên mỗi đơn vị chiều dài, V\n\n# 3.12 Hệ số tiết diện (với hệ bảo vệ dạng định hình) (section factor-profiled fire protection system)\nTỉ số giữa diện tích của chu vi bên ngoài phần tiếp xúc với lửa của bộ phận kết cấu thép không bao gồm vật liệu bảo vệ, trên một đơn vị chiều dài, Am, với thể tích của tiết diện trên một đơn vị chiều dài,\n\n# 3.13 Hệ số tiết diện (với hệ bảo vệ dạng hộp) (section factor - boxed fire protection system)\nTỉ số giữa diện tích bề mặt bên trong của vỏ bọc hình chữ nhật hoặc hình vuông nhỏ nhất được đo xung quanh cấu kiện kết cấu, Am, với thể tích trên một đơn vị chiều dài, V\n\n## 3.14 Cấu kiện thép (steel member)\nCấu kiện của công trình xây dựng, chịu tải trọng và được chế tạo từ thép CHÚ THÍCH 1: đối với mục đích của tiêu chuẩn ISO 834, thép được sử dụng trong thử nghiệm phải cùng loại.\n\n### 3.15 Nhiệt độ thép (steel temperature)\nSử dụng nhiệt độ trung bình tổng thể làm dữ liệu đầu vào cho phân tích, tính toán như sau:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.11 Hệ số tiết diện (với cấu kiện không được bọc bảo vệ) (section factor- unprotected steel)",
+      "start_index": 6006,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::3.11 Hệ số tiết diện (với cấu kiện không được bọc bảo vệ) (section factor- unprotected steel)",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "### 3.15 Nhiệt độ thép (steel temperature)\nSử dụng nhiệt độ trung bình tổng thể làm dữ liệu đầu vào cho phân tích, tính toán như sau:\n\n- Với dầm tiết diện chữ I và tiết diện chữ H, bằng nhiệt độ trung bình của bản cánh trên cộng với nhiệt độ trung bình của bản bụng cộng với nhiệt độ trung bình của bản cánh dưới , chia cho 3.\n- Với cột có tiết diện chữ I, chữ H và tiết diện rỗng, bằng tổng của nhiệt độ trung bình trên mỗi mặt cắt đo chia cho số mặt cắt đo\n- Với dầm tiết diện rỗng, bằng nhiệt độ trung bình của các mặt bên cộng với nhiệt độ trung bình của mặt dưới, chia cho 2.\n\n#### 3.16 Khả năng bám dính (stickability)\nKhả năng của hệ bảo vệ chịu lửa duy trì đủ sự kết dính và giữ đúng vị trí đối với một phạm vi biến dạng, nhiệt độ lò và nhiệt độ thép được xác định rõ từ trước, sao cho hiệu quả của hệ bọc bảo vệ không bị suy giảm đáng kể\n\n#### 3.17 Gói thử nghiệm (test package)\nTập hợp các tiết diện thép bao gồm cả mẫu ngắn và mẫu dài được thử nghiệm để xác định đầy đủ khả năng bám dính thích hợp của hệ bảo vệ chịu lửa và cung cấp dữ liệu nhiệt trong một phạm vi chiều dày bảo vệ, hệ số tiết diện, nhiệt độ thép.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.15 Nhiệt độ thép (steel temperature)",
+      "start_index": 7051,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::3.15 Nhiệt độ thép (steel temperature)",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "#### 3.17 Gói thử nghiệm (test package)\nTập hợp các tiết diện thép bao gồm cả mẫu ngắn và mẫu dài được thử nghiệm để xác định đầy đủ khả năng bám dính thích hợp của hệ bảo vệ chịu lửa và cung cấp dữ liệu nhiệt trong một phạm vi chiều dày bảo vệ, hệ số tiết diện, nhiệt độ thép.\n\n## 3.18 Mẫu thử nghiệm (test specimen)\nCấu kiện thép cùng với hệ bảo vệ chịu lửa được thử nghiệm\n\nCHÚ THÍCH 1: cấu kiện thép được thử nghiệm, đại diện cho một cấu kiện thép được xác định cho mục đích thử nghiệm, bao gồm cột hoặc dầm thép dài và ngắn.\n\n## 4. Ký hiệu và từ viết tắt\nA Diện tích (m<sup>2</sup> );\n\nAm Diện tích phần chu vi tiếp xúc với lửa của cấu kiện kết cấu thép, trên một đơn vị chiều\n\ndài (m2);\n\nAp\n\nVới hệ bảo vệ dạng định hình: là diện tích phần chu vi ngoài của cấu kiện thép kết cấu\n\nkhông bao gồm vật liệu bảo vệ, trên một đơn vị chiều dài (m2);\n\nVới hệ bảo vệ dạng hộp: diện tích bề mặt phía trong của lớp bảo vệ hình chữ nhật hoặc",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.17 Gói thử nghiệm (test package)",
+      "start_index": 7899,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::3.17 Gói thử nghiệm (test package)",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "dài (m2);\n\nAp\n\nVới hệ bảo vệ dạng định hình: là diện tích phần chu vi ngoài của cấu kiện thép kết cấu\n\nkhông bao gồm vật liệu bảo vệ, trên một đơn vị chiều dài (m2);\n\nVới hệ bảo vệ dạng hộp: diện tích bề mặt phía trong của lớp bảo vệ hình chữ nhật hoặc\n\nhình vuông mà có thể đo được xung quanh cấu kiện thép (m2); b Bề rộng của tiết diện thép (m); d Chiều dày (mm); daver dp dp(m ax) dp(m in) Chiều dày trung bình (mm); Chiều dày của vật liệu bảo vệ chịu lửa (mm); Chiều dày lớn nhất của vật liệu bảo vệ chịu lửa (mm); Chiều dày nhỏ nhất của vật liệu bảo vệ chịu lửa (mm); h Chiều cao tiết diện thép (mm); Kp Ks Lexp Lspe c Lsup Hệ số ảnh hưởng của chiều dày; Hệ số ảnh hưởng của tiết diện; Chiều dài của đoạn dầm tiếp xúc với lửa (mm); Tổng chiều dài của mẫu thử (mm); Chiều dài của dầm giữa hai gối tựa (mm); P Chu vi của phần tiết diện tiếp xúc với lửa (m);\n\nHệ số tiết diện của hệ số Ks (m-1);\n\nHệ số tiết diện lớn nhất tương ứng với hệ số Ks bằng 1 (m-1);\n\nsp\n\nsmax\n\nsmin Hệ số tiết diện nhỏ nhất tương ứng với hệ số Ks bằng 0 (m-1 );\n\ntf Chiều dày bản cánh của tiết diện (m-1 );\n\nChiều dày thành của tiết diện rỗng hoặc chiều dày bản bụng của cột tiết diện chữ I\n\ntw và\n\nchữ H (mm);",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Ký hiệu và từ viết tắt",
+      "start_index": 8582,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::4. Ký hiệu và từ viết tắt",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "Hệ số tiết diện lớn nhất tương ứng với hệ số Ks bằng 1 (m-1);\n\nsp\n\nsmax\n\nsmin Hệ số tiết diện nhỏ nhất tương ứng với hệ số Ks bằng 0 (m-1 );\n\ntf Chiều dày bản cánh của tiết diện (m-1 );\n\nChiều dày thành của tiết diện rỗng hoặc chiều dày bản bụng của cột tiết diện chữ I\n\ntw và\n\nchữ H (mm);\n\nV Thể tích của tiết diện thép trên một đơn vị chiều dài (m<sup>3</sup> /m);\n\nVp Thể tích của phần bảo vệ chịu lửa trên một đơn vị chiều dài (m3/m);\n\nLB Dầm chịu tải\n\nLC Cột chịu tải dài 3 m\n\nTC Cột cao không chịu tải (2 m)\n\nLHB Dầm rỗng chịu tải\n\nLHC Cột rỗng chịu tải\n\nSIB Dầm ngắn tiết diện chữ I\n\nSIC Cột ngắn tiết diện chữ I\n\nTCH Dầm cao hình tròn rỗng\n\nS\n\nTRH Dầm cao hình chữ nhật rỗng\n\nS\n\nSHB Dầm ngắn tiết diện rỗng\n\nSHC Cột ngắn tiết diện rỗng\n\nRB Dầm tham chiếu\n\n**TIÊU CHUẨN THỬ NGHIỆM CHỊU LỬA** Lần ban hành: 1\n\n# 5. Thiết bị thử nghiệm\n# 5.1 Yêu cầu chung\nLò thử nghiệm và các thiết bị thử nghiệm phải phù hợp với những yêu cầu được quy định trong TCVN 9311-1\n\n### 5.2 Lò thử nghiệm\nLò thử nghiệm phải được thiết kế phù hợp với kích thước của mẫu thử chịu nhiệt được quy định trong 7.2 và phải phù hợp với việc lắp đặt ở trên hoặc trong lò thử nghiệm được quy định trong mục 8.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Ký hiệu và từ viết tắt",
+      "start_index": 9481,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::4. Ký hiệu và từ viết tắt",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "### 5.2 Lò thử nghiệm\nLò thử nghiệm phải được thiết kế phù hợp với kích thước của mẫu thử chịu nhiệt được quy định trong 7.2 và phải phù hợp với việc lắp đặt ở trên hoặc trong lò thử nghiệm được quy định trong mục 8.\n\n## 5.3 Thiết bị gia tải\nTải trọng phải được tác dụng theo TCVN 9311-1 (ISO 834-1). Hệ gia tải có khả năng chất tải lên dầm theo quy định tại 6.2.2 và lên cột theo quy định tại 6.2.4\n\n# 6. Các điều kiện thử nghiệm\n## 6.1 Yêu cầu chung\nCác quy trình được đưa ra trong TCVN 9311-1 phải được tuân thủ trong quá trình thực hiện thử nghiệm trừ khi có hướng dẫn cụ thể khác được đưa ra.\n\nMột số lượng các cấu kiện thép có tiết diện chữ \"I\", tiết diện chữ \"H\", và tiết diện rỗng, được bảo vệ bằng hệ bọc bảo vệ, được gia nhiệt trong lò thử nghiệm theo cách thức được đưa ra trong tiêu chuẩn TCVN 9311-1\n\nDầm chịu tải và cột chịu tải được gia nhiệt để cung cấp các thông tin về khả năng của hệ bọc bảo vệ chịu lửa đối với việc duy trì tính nguyên vẹn và bám dính với cấu kiện của kết cấu thép. Dầm không chịu tải và cột không chịu tải được gia nhiệt để cung cấp thông tin về các đặc tính nhiệt học của hệ bọc bảo vệ.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5.2 Lò thử nghiệm",
+      "start_index": 10447,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::5.2 Lò thử nghiệm",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "#### TIÊU CHUẨN THỬ NGHIỆM CHỊU LỬA** Lần ban hành: 1\nKiến nghị các thử nghiệm được tiếp tục tiến hành cho đến khi nhiệt độ của thép đạt mức giá trị tối đa tương ứng với ứng dụng của dữ liệu.\n\nPhương pháp thử nghiệm dầm chịu tải trong phần này của phương pháp thử nghiệm được xây dựng để cung cấp giá trị chuyển vị lớn nhất (nhịp/30) dưới tác dụng của tải trọng và nhiệt độ được quy định trong tiêu chuẩn TCVN 9311-1 (ISO 834-1). Nếu không thực hiện được việc xác định này, thì tốc độ võng không được vượt quá giá trị quy định trong tiêu chuẩn TCVN 9311-1 (ISO 834-1).\n\nTrong trường hợp nhiều mẫu thử được thử nghiệm đồng thời, cần lưu ý rằng mỗi mẫu thử cần phải đảm bảo được tiếp xúc với lửa đúng với các điều kiện thử nghiệm đã quy định.\n\n# 6.2 Gối đỡ và điều kiện tải trọng\n# Yêu cầu chung\nChi tiết về các tính toán được thực hiện để xác định tải trọng thử nghiệm cần được đưa vào báo cáo thử nghiệm.\n\n# Dầm chịu tải\nĐối với mỗi mẫu thử nghiệm dầm chịu tải, cần có các quy định đối với hệ gối đỡ thích hợp, vị trí và sự căn chỉnh trong lò theo yêu cầu của tiêu chuẩn TCVN 9311-6 (ISO 834- 6), tùy thuộc vào bất kỳ yêu cầu sửa đổi nào của tiêu chuẩn này.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "TIÊU CHUẨN THỬ NGHIỆM CHỊU LỬA** Lần ban hành: 1",
+      "start_index": 11574,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::TIÊU CHUẨN THỬ NGHIỆM CHỊU LỬA** Lần ban hành: 1",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "# Dầm chịu tải\nĐối với mỗi mẫu thử nghiệm dầm chịu tải, cần có các quy định đối với hệ gối đỡ thích hợp, vị trí và sự căn chỉnh trong lò theo yêu cầu của tiêu chuẩn TCVN 9311-6 (ISO 834- 6), tùy thuộc vào bất kỳ yêu cầu sửa đổi nào của tiêu chuẩn này.\n\nCấu kiện dầm không nên được bổ sung thêm liên kết chống xoắn trừ trường hợp cần thiết nêu trong 7.2.1. Nhịp của gối đỡ đơn giản (Lsup) không nên lớn hơn chiều dài phần tiếp xúc với lửa cộng thêm 400 mm ở mỗi đầu. Chiều dài của mẫu thử nghiệm (Lspec) nên bằng chiều dài tiếp xúc với lửa cộng thêm tối đa 500 mm ở mỗi đầu.\n\nMẫu thử nghiệm là dầm chịu tải cần phải chịu tổng tải trọng đại diện cho 60 % sức kháng mô men thiết kế, được tính toán sử dụng giới hạn chảy thực tế lấy từ chứng chỉ thử nghiệm lô hoặc giá trị đo thực tế.\n\nTải trọng thực tế tác dụng lên mẫu thử là tổng tải trọng tính toán trừ đi trọng lượng bản thân của dầm, lớp bê tông đổ bù, và hệ bảo vệ chịu lửa.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Dầm chịu tải",
+      "start_index": 12480,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::Dầm chịu tải",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": null
+    }
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "page_content": "# Public_080\n\n#### 1. Giới thiệu\nPhát triển thuốc truyền thống thường kéo dài 10–15 năm và tiêu tốn hàng tỷ đô la. Quy trình bao gồm nghiên cứu cơ bản, xác định mục tiêu (target), thiết kế phân tử, thử nghiệm lâm sàng và phê duyệt. Quá trình này tốn kém do phải sàng lọc hàng triệu hợp chất để tìm ra vài phân tử tiềm năng.\n\nTrí tuệ nhân tạo tạo sinh (Generative AI) – bao gồm các mô hình như Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs) và Diffusion Models – đã mở ra khả năng tạo ra các phân tử mới đáp ứng tiêu chí dược lý mong muốn, rút ngắn đáng kể thời gian và chi phí.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_080",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_080",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Trí tuệ nhân tạo tạo sinh (Generative AI) – bao gồm các mô hình như Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs) và Diffusion Models – đã mở ra khả năng tạo ra các phân tử mới đáp ứng tiêu chí dược lý mong muốn, rút ngắn đáng kể thời gian và chi phí.\n\n#### 2. Trí tuệ nhân tạo tạo sinh là gì?\n*Trí tuệ nhân tạo tạo sinh* (Generative AI) là một lĩnh vực của trí tuệ nhân tạo tập trung vào việc tạo ra dữ liệu mới, dựa trên dữ liệu đã được học trước đó. Dữ liệu này có thể bao gồm văn bản, hình ảnh, âm thanh, video, hoặc các loại nội dung khác. Các mô hình Generative AI không chỉ nhận biết và phân loại thông tin, mà còn có khả năng sáng tạo, mô phỏng và tái hiện thông tin. Một số ví dụ phổ biến nhất của trí tuệ nhân tạo tạo sinh là ChatGPT tạo văn bản, DeepFake mô phỏng khuôn mặt người trong video. Các mô hình này thường sở hữu một số đặc điểm cơ bản là:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Giới thiệu",
+      "start_index": 325,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Giới thiệu",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "- Khả năng sáng tạo: Tạo ra nội dung mới, độc đáo dựa trên các mẫu đã học.\n- Tính thích ứng cao: Có thể áp dụng vào nhiều lĩnh vực, từ sáng tạo nội dung (viết báo, tạo hình ảnh) đến nghiên cứu khoa học (tạo mô hình phân tử).\n- Sử dụng dữ liệu huấn luyện: Chất lượng nội dung tạo ra phụ thuộc nhiều vào quy mô và độ đa dạng của tập dữ liệu đã học.\n\n- Dựa trên mô hình học sâu (Deep Learning): Thường sử dụng các kiến trúc mạng nơ-ron tiên tiến như GANs, VAEs và Transformers.\n- Hạn chế sự giải thích: Mô hình thường được xem là hộp đen, khó giải thích rõ ràng lý do tại sao nó tạo ra kết quả cụ thể.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Trí tuệ nhân tạo tạo sinh là gì?",
+      "start_index": 1213,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::2. Trí tuệ nhân tạo tạo sinh là gì?",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "- Dựa trên mô hình học sâu (Deep Learning): Thường sử dụng các kiến trúc mạng nơ-ron tiên tiến như GANs, VAEs và Transformers.\n- Hạn chế sự giải thích: Mô hình thường được xem là hộp đen, khó giải thích rõ ràng lý do tại sao nó tạo ra kết quả cụ thể.\n\n## 3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?\nViệc triển khai giải pháp trí tuệ nhân tạo tạo sinh cho mọi trường hợp sử dụng yêu cầu phải có nhiều nỗ lực từ các nhà khoa học và nhà phát triển. Đó là vì GenAI được thực hiện nhờ các bộ dữ liệu lớn và các thuật toán trí tuệ nhân tạo được đào tạo phức tạp. Công nghệ này được xây dựng và triển khai cùng với trí tuệ nhân tạo và xử lý ngôn ngữ tự nhiên (NLP), cho phép trí tuệ nhân tạo xử lý và hiểu ngôn ngữ của con người. GenAI và NLP cùng nhau có thể hiểu được lời nhắc người dùng để tạo ra phản hồi thích hợp, cho dù là văn bản, video, hình ảnh hay âm thanh.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Trí tuệ nhân tạo tạo sinh là gì?",
+      "start_index": 1561,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2. Trí tuệ nhân tạo tạo sinh là gì?",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Các giải pháp trí tuệ nhân tạo tạo sinh sử dụng các hệ thống trí tuệ nhân tạo được gọi là [các mô hình ngôn ng](https://www.intel.vn/content/www/vn/vi/learn/large-language-models.html)ữ lớn (LLM), sử dụng mạng thần kinh sâu để xử lý và tạo văn bản. Chúng được đào tạo trên lượng dữ liệu khổng lồ, tìm ra sự tương đồng giữa các loại dữ liệu và thông tin để tạo ra và cung cấp các kết quả đầu ra mới, mạch lạc.\n\nLLM dựa vào cấu trúc transformer để xử lý các chuỗi đầu vào một cách song song, giúp cải thiện hiệu năng và tốc độ so với mạng nơ-ron cổ điển. Quy trình đào tạo mô hình cũng tiếp nhận thông tin từ các nhà khoa học dữ liệu và các chuyên gia về chủ đề giúp hướng dẫn quá trình học tập của thuật toán và dẫn dắt nó đến kết quả chính xác hơn.\n\nĐể hiện thực hóa các giải pháp trí tuệ nhân tạo tạo sinh, doanh nghiệp có thể đào tạo các mô hình từ đầu hoặc chọn mô hình đã được đào tạo sẵn có thể điều chỉnh theo nhu cầu cụ thể. Ví dụ: có thể đào tạo thuật toán chatbot GenAI theo các thuộc tính cụ thể của cơ sở khách hàng và mô hình kinh doanh của tổ chức. Hoặc",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "start_index": 2432,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "một mô hình có mục đích tạo ra văn bản để tiếp thị nội dung có thể được chuyên môn hóa hoặc tinh chỉnh để tập trung vào một ngành và đối tượng cụ thể. Nhiều mô hình dành riêng cho từng lĩnh vực cũng đang nổi lên với tốc độ nhanh chóng. Các mô hình này được đào tạo trên các bộ dữ liệu nhỏ hơn, nhắm mục tiêu cụ thể hơn so với các mô hình lớn hơn. Kết quả mới đây cho thấy các mô hình nhỏ hơn này có thể tái tạo độ chính xác của các mô hình lớn hơn nếu được đào tạo dựa trên dữ liệu được chọn lọc cẩn thận.\n\nCác nhà phát triển cũng có thể sử dụng chức năng t[ạo tăng cườ](https://www.intel.vn/content/www/vn/vi/learn/what-is-rag.html)ng truy xuất [\\(RAG\\)](https://www.intel.vn/content/www/vn/vi/learn/what-is-rag.html) để bổ sung cho các mô hình được đào tạo trước với dữ liệu cập nhật, độc quyền và bí mật từ cơ sở dữ liệu vector trong quá trình suy luận. Điều này đơn giản hóa quy trình tùy chỉnh và cập nhật, cũng như cho phép gán nguồn thông tin được tạo ra.\n\nDưới đây là tổng quan tóm lược (mặc dù nâng cao về kỹ thuật) về ba loại mô hình trí tuệ nhân tạo tạo sinh phổ biến:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "start_index": 3500,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Dưới đây là tổng quan tóm lược (mặc dù nâng cao về kỹ thuật) về ba loại mô hình trí tuệ nhân tạo tạo sinh phổ biến:\n\n- **Mạng đối nghịch tạo sinh (GAN):** Các mạng này liên quan đến hai mạng thần kinh, một bộ tạo và một bộ phân biệt, được đào tạo đồng thời. Bộ tạo tạo ra các phiên bản dữ liệu mới, trong khi bộ phân biệt đánh giá chúng so với một bộ dữ liệu thực. Mục tiêu của bộ tạo là tạo ra dữ liệu không thể phân biệt được với dữ liệu thực, trong khi mục tiêu của bộ phân biệt là phân biệt chính xác giữa hai dữ liệu này. Theo thời gian, bộ tạo được cải thiện, tạo ra dữ liệu ngày càng thực tế.\n- **Bộ tự mã hóa biến thể (VAE):** VAE kết hợp các nguyên tắc từ mạng nơron và mô hình xác suất để tạo ra các phiên bản dữ liệu mới thông qua quy trình mã hóa và giải mã. Mô hình VAE bắt đầu bằng cách nén dữ liệu đầu vào thành một đại diện đơn giản hóa các đặc điểm của nó. Sau đó, nó giải mã phiên bản đơn giản hóa đó, cố gắng tái cấu trúc dữ liệu đầu vào về dạng ban đầu. Thông qua quy trình này, VAE học được các tính năng và\n\nthông số cơ bản của dữ liệu, giúp nó tạo ra các kết quả đầu ra thực tế và có thể tùy chỉnh nhiều hơn.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "start_index": 4464,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "thông số cơ bản của dữ liệu, giúp nó tạo ra các kết quả đầu ra thực tế và có thể tùy chỉnh nhiều hơn.\n\n• **Mô hình transformer:** Các mô hình như Generative Pre-trained Transformer (GPT) có thể tạo ra văn bản mạch lạc và liên quan đến bối cảnh. Các mô hình này, ban đầu được thiết kế dành cho các công việc xử lý ngôn ngữ tự nhiên, được đào tạo trên các bộ dữ liệu lớn và có thể hoàn thành các lời nhắc văn bản, dịch ngôn ngữ, trả lời các câu hỏi và thậm chí có thể tạo ra các văn bản sáng tạo.\n\nNhiều chiến lược khác nhau có thể được sử dụng trong quá trình tạo ra để cân bằng giữa tính sáng tạo và sự gắn kết trong kết quả đầu ra. Hiện có nhiều nghiên cứu nhằm mục đích làm cho các mô hình này minh bạch hơn, giảm thiên kiến và cải thiện độ chính xác thực tế. Hiện cũng đã có chuyển động hướng đến các mô hình có thể đồng thời làm việc với nhiều loại dữ liệu, chẳng hạn như văn bản, hình ảnh và âm thanh.\n\n# 4. Cách Generative AI hỗ trợ thiết kế thuốc\nGenerative AI có thể học từ cơ sở dữ liệu hóa học khổng lồ để hiểu mối quan hệ giữa cấu trúc phân tử và tính chất dược học.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "start_index": 5494,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::3. Trí tuệ nhân tạo tạo sinh hoạt động như thế nào?",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "# 4. Cách Generative AI hỗ trợ thiết kế thuốc\nGenerative AI có thể học từ cơ sở dữ liệu hóa học khổng lồ để hiểu mối quan hệ giữa cấu trúc phân tử và tính chất dược học.\n\n- Mô hình tạo ra các phân tử mới có đặc điểm tối ưu: khả năng gắn kết với protein mục tiêu, tính ổn định, và ít độc tính.\n- Sử dụng reinforcement learning để tối ưu dần các phân tử dựa trên phản hồi từ các mô phỏng sinh học.\n- Kết hợp mô phỏng động lực học phân tử (molecular dynamics) và AI tạo sinh giúp dự đoán tương tác phân tử nhanh hơn.\n\n## 5. Ứng dụng thực tế\n- Tìm hợp chất kháng virus mới: Generative AI đã được sử dụng để đề xuất phân tử ức chế protein của SARS-CoV-2 trong giai đoạn đầu dịch COVID-19.\n- Kháng sinh thế hệ mới: Tìm ra hợp chất Halicin bằng mô hình học sâu, hiệu quả chống vi khuẩn kháng thuốc.\n- Thuốc điều trị ung thư: AI gợi ý cấu trúc phân tử tương tác đặc hiệu với thụ thể tế bào ung thư, hỗ trợ thiết kế thuốc đích (targeted therapy).\n- Tối ưu hóa thuốc sẵn có: Đề xuất biến thể cấu trúc để cải thiện dược động học hoặc giảm tác dụng phụ.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Cách Generative AI hỗ trợ thiết kế thuốc",
+      "start_index": 6402,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::4. Cách Generative AI hỗ trợ thiết kế thuốc",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "# 6. Quy trình tích hợp AI trong phát triển thuốc\n- Xác định mục tiêu (Target Identification): AI phân tích dữ liệu gen và proteomics để tìm đích tác động.\n- Sinh phân tử mới (Molecule Generation): Mô hình tạo sinh đề xuất hàng nghìn cấu trúc phân tử.\n- Đánh giá in silico: Mô phỏng tính chất hóa lý, độ hòa tan, tính độc.\n- Tổng hợp và thử nghiệm: Các phân tử triển vọng được tổng hợp trong phòng thí nghiệm và thử nghiệm in vitro/in vivo.\n\n### 7. Ưu điểm nổi bật\n- Tốc độ vượt trội: Rút ngắn thời gian sàng lọc từ nhiều năm xuống vài tháng.\n- Tiết kiệm chi phí: Giảm đáng kể chi phí nghiên cứu ban đầu.\n- Khả năng khám phá không gian hóa học rộng: Khám phá hàng tỷ cấu trúc mà phương pháp truyền thống khó tiếp cận.\n- Cá nhân hóa y học: Đề xuất thuốc phù hợp với đặc điểm gen của từng nhóm bệnh nhân.\n\n### 8. Thách thức\n- Độ tin cậy của mô hình: Phân tử do AI đề xuất cần xác thực thực nghiệm.\n- Dữ liệu đào tạo: Cần cơ sở dữ liệu hóa học lớn, chuẩn hóa, chất lượng cao.\n- Vấn đề pháp lý và đạo đức: Quy định về bằng sáng chế, quyền sở hữu trí tuệ và trách nhiệm khi thuốc thất bại.\n- Khả năng giải thích: Khó hiểu tại sao mô hình chọn một cấu trúc cụ thể.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "6. Quy trình tích hợp AI trong phát triển thuốc",
+      "start_index": 7445,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::6. Quy trình tích hợp AI trong phát triển thuốc",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "# 9. Xu hướng tương lai\n- Kết hợp Generative AI và Quantum Computing: Tăng độ chính xác của mô phỏng lượng tử trong tương tác phân tử.\n- Học liên kết (Federated Learning): Cho phép nhiều viện nghiên cứu cùng huấn luyện mô hình mà không chia sẻ dữ liệu bí mật.\n- Tự động hóa phòng thí nghiệm (Lab Automation): Tích hợp robot tổng hợp hóa học với AI để khép kín quy trình thiết kế–thử nghiệm.\n- AI đa mô thức (Multimodal AI): Kết hợp dữ liệu gen, hình ảnh tế bào, và văn bản y khoa để thiết kế thuốc đa mục tiêu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "9. Xu hướng tương lai",
+      "start_index": 8605,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::9. Xu hướng tương lai",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": null
+    }
+  }
+]

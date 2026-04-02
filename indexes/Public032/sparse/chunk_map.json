@@ -1,0 +1,62 @@
+[
+  {
+    "chunk_id": "main::chunk::0",
+    "chunk_index": 0,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Public_032",
+    "section_hint": "Public_032",
+    "page_content": "# Public_032\n\n## 1. Dòng điện một chiều (Direct Current – DC)\n#### 1.1 Định nghĩa (Definition)\nDòng điện một chiều (DC) là dòng điện mà các electron chảy liên tục theo **một hướng** trong mạch kín. Loại điện áp tạo ra dòng điện này gọi là **điện áp một chiều (DC voltage)**, và dòng điện gọi là **dòng điện một chiều (DC current)**.\n\n**Các nguồn DC điển hình:** Pin, ắc quy, máy phát DC.\n\n#### 1.2 Định luật Ohm (Ohm's Law)\nCó một mối quan hệ xác định giữa ba đặc tính điện cơ bản: **dòng điện (I), điện áp (V), điện trở (R)**.\n\nĐịnh luật Ohm do nhà vật lý người Đức **Georg Simon Ohm** phát hiện vào thế kỷ 19:\n\nI=VRI = V/R\n\nTrong đó:\n\n• II: dòng điện (amps – A)\n\n• VV: điện áp (volts – V)\n\n• RR: điện trở (ohms – Ω)\n\n### Giải thích:\n- Điện áp 1 V đặt vào điện trở 1 Ω → dòng điện 1 A chảy qua.\n- Điện trở tăng → dòng điện giảm (với cùng điện áp).\n\n## Thiết bị Ohmic và Non-Ohmic:\n- **Ohmic:** Tuân theo luật Ohm (điện trở tuyến tính, ví dụ dây dẫn, điện trở thông thường).\n- **Non-Ohmic:** Không tuân theo (ví dụ transistor, diode).\n\n#### 1.3 Ví dụ minh họa\n**Ví dụ 1:** Biết V=12 VV = 12V , R=6 ΩR = 6Ω. Tìm dòng điện II:\n\nI=VR= 2A\n\n**Ví dụ thực tế:** Pin 4.2 V cấp cho tải 0.5 Ω:\n\nI= 8.4A",
+    "start_index": 0,
+    "prev_chunk_id": null,
+    "next_chunk_id": "main::chunk::1"
+  },
+  {
+    "chunk_id": "main::chunk::1",
+    "chunk_index": 1,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.3 Ví dụ minh họa",
+    "section_hint": "1.3 Ví dụ minh họa",
+    "page_content": "#### 1.3 Ví dụ minh họa\n**Ví dụ 1:** Biết V=12 VV = 12V , R=6 ΩR = 6Ω. Tìm dòng điện II:\n\nI=VR= 2A\n\n**Ví dụ thực tế:** Pin 4.2 V cấp cho tải 0.5 Ω:\n\nI= 8.4A\n\nNếu pin còn 3.7 V, dòng điện giảm:\n\nI= 7.4A\n\n**Ví dụ 2:** Biết V=24 VV = 24\\,V, I=6 AI = 6\\,A. Tìm điện trở RR:\n\n$$R = VI = 246 = 4\\Omega R = V/I = 24/6 = 4\\Omega$$\n\n**Ví dụ 3:** Biết I=5 AI = 5\\,A, R=8 ΩR = 8\\,Ω. Tìm điện áp VV:\n\n# 1.4 Công suất điện (Power Calculation)\nCông suất (P) do dòng điện tạo ra trong điện trở tính theo:\n\n$$P = V \\cdot I = V2R = I2 \\cdot RP = V \\cdot I = \\frac{V^2}{R} = I^2 \\cdot R$$\n\n**Ví dụ:** Pin 4.2 V, điện trở 0.5 Ω, dòng điện 8.4 A:\n\nP=4.2×8.4=35.3 WP = 4.2 \\times 8.4 = 35.3\\,W\n\nNhư vậy, cuộn dây 0.5 Ω với pin sạc đầy 4.2 V sẽ kéo 8.4 A và cung cấp 35.3 W. Khi điện trở tăng → dòng điện giảm → công suất giảm.\n\n# 2. Dòng điện xoay chiều (Alternating Current – AC)\n#### 2.1 Định nghĩa (Definition)\nDòng điện xoay chiều (AC) là dòng điện mà các electron **thay đổi hướng liên tục** theo thời gian. Điện áp AC buộc electron chảy theo một hướng, sau đó theo hướng ngược lại, tuần hoàn liên tục.\n\n**Nguồn AC:** Máy phát điện.\n\n**Ứng dụng:** Cung cấp điện cho hộ gia đình, nhà máy, văn phòng.",
+    "start_index": 1036,
+    "prev_chunk_id": "main::chunk::0",
+    "next_chunk_id": "main::chunk::2"
+  },
+  {
+    "chunk_id": "main::chunk::2",
+    "chunk_index": 2,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.1 Định nghĩa (Definition)",
+    "section_hint": "2.1 Định nghĩa (Definition)",
+    "page_content": "**Nguồn AC:** Máy phát điện.\n\n**Ứng dụng:** Cung cấp điện cho hộ gia đình, nhà máy, văn phòng.\n\n## 2.2 Dạng sóng (Waveform)\nAC có nhiều dạng sóng khác nhau. Khi kết nối nguồn AC với dao động kế và vẽ điện áp theo thời gian, các dạng sóng phổ biến:\n\n- **Sóng sin:** Dạng sóng chính dùng trong dân dụng và công nghiệp.\n- **Sóng vuông và sóng tam giác:** Thường dùng trong mạch điện tử và điều khiển.\n\n#### 2.3 Mô tả toán học của sóng sin AC\nSóng sin AC có thể mô tả bằng hàm toán học:\n\n$$V(t) = Vpsin(2\\pi ft + \\phi)V(t) = V_p \\setminus sin(2\\pi ft + \\phi)$$\n\nTrong đó:\n\n- V(t)V(t): điện áp theo thời gian (V)\n- VpV\\_p: biên độ (amplitude), điện áp cực đại ±Vp\n- sin(): dao động hình sin tuần hoàn\n- 2π2\\pi: hằng số chuyển đổi từ chu kỳ (Hz) sang tần số góc (rad/s)\n- ff: tần số (Hz), số dao động trong 1 giây\n- tt: thời gian (s)\n- ϕ\\phi: pha (phase), dịch chuyển sóng theo thời gian, đơn vị độ (°)\n\n**Ví dụ:** Ở Mỹ, điện áp AC cho hộ gia đình: biên độ 170 V, tần số 60 Hz, pha 0°:\n\n$$V(t) = 170 \\sin(2\\pi \\cdot 60 \\cdot t) V(t) = 170 \\sin(2\\pi \\cdot 60 \\cdot t)$$\n\n## 2.4 Ứng dụng (Applications)\nNguồn AC phổ biến trong **nhà dân, cửa hàng, văn phòng**, vì:",
+    "start_index": 2124,
+    "prev_chunk_id": "main::chunk::1",
+    "next_chunk_id": "main::chunk::3"
+  },
+  {
+    "chunk_id": "main::chunk::3",
+    "chunk_index": 3,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.3 Mô tả toán học của sóng sin AC",
+    "section_hint": "2.3 Mô tả toán học của sóng sin AC",
+    "page_content": "**Ví dụ:** Ở Mỹ, điện áp AC cho hộ gia đình: biên độ 170 V, tần số 60 Hz, pha 0°:\n\n$$V(t) = 170 \\sin(2\\pi \\cdot 60 \\cdot t) V(t) = 170 \\sin(2\\pi \\cdot 60 \\cdot t)$$\n\n## 2.4 Ứng dụng (Applications)\nNguồn AC phổ biến trong **nhà dân, cửa hàng, văn phòng**, vì:\n\n1. **Truyền tải dễ dàng trên khoảng cách dài:**\n  - o Điện áp cao (>110 kV) → dòng điện thấp → giảm tổn hao năng lượng (I²R) trên đường dây.\n  - o AC có thể biến đổi điện áp bằng **máy biến áp**, tiện lợi cho truyền tải.\n2. **Cung cấp năng lượng cho động cơ điện:**\n  - o Động cơ AC chuyển năng lượng điện thành cơ học.\n  - o Máy phát điện cũng là động cơ hoạt động ngược lại (quay trục sinh điện áp).\n\no Thiết bị sử dụng AC: máy rửa chén, tủ lạnh, máy lạnh, máy giặt, máy bơm,…\n\n## 2.5 Điện áp hiệu dụng (RMS Voltage)\nĐể tính công suất thực tế của AC, sử dụng **điện áp RMS (Root Mean Square)**:\n\n$$VRMS=Vp2V_\\text{text}\\{RMS\\} = \\text{frac}\\{V_p\\}\\{\\text{sqrt}\\{2\\}\\}$$\n\nTrong đó VpV\\_p là biên độ cực đại.\n\nVí dụ: Nguồn AC 170 V (biên độ) → điện áp RMS:\n\n$$VRMS=1702\\approx120\\ VV\\_\\text{text}\\{RMS\\}=\\text{frac}\\{170\\}\\{\\ \\ \\ 120\\ \\ \\ \\}\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\$$",
+    "start_index": 3022,
+    "prev_chunk_id": "main::chunk::2",
+    "next_chunk_id": "main::chunk::4"
+  },
+  {
+    "chunk_id": "main::chunk::4",
+    "chunk_index": 4,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.5 Điện áp hiệu dụng (RMS Voltage)",
+    "section_hint": "2.5 Điện áp hiệu dụng (RMS Voltage)",
+    "page_content": "$$VRMS=Vp2V_\\text{text}\\{RMS\\} = \\text{frac}\\{V_p\\}\\{\\text{sqrt}\\{2\\}\\}$$\n\nTrong đó VpV\\_p là biên độ cực đại.\n\nVí dụ: Nguồn AC 170 V (biên độ) → điện áp RMS:\n\n$$VRMS=1702\\approx120\\ VV\\_\\text{text}\\{RMS\\}=\\text{frac}\\{170\\}\\{\\ \\ \\ 120\\ \\ \\ \\}\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\$$\n\nĐiện áp RMS cho biết mức điện áp tương đương DC tạo ra cùng công suất trên tải điện trở.\n\n# 2.6 Công suất AC (AC Power)\n## Công suất tức thời:\n$$P(t)=V(t)\\cdot I(t)P(t)=V(t) \\cdot cdot I(t)$$\n\n**Lưu ý:** Đối với tải thuần trở, ϕ=0\\phi = 0, công suất trung bình:\n\nPavg=VRMS⋅IRMSP\\_\\text{avg} = V\\_\\text{RMS} \\cdot I\\_\\text{RMS}\n\n## 2.7 So sánh DC và AC\n**Tiêu chí DC AC**\n\nDòng chảy điện Một hướng Thay đổi luân phiên\n\nNguồn Pin, ắc quy, máy phát DC Máy phát AC, lưới điện\n\nTruyền tải Khó trên khoảng cách dài Dễ dàng qua máy biến áp\n\nỨng dụng chính Điện tử, thiết bị nhỏ Nhà dân, công nghiệp, động cơ\n\n![](images/image1.jpg)",
+    "start_index": 3880,
+    "prev_chunk_id": "main::chunk::3",
+    "next_chunk_id": null
+  }
+]

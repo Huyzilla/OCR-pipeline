@@ -1,0 +1,14 @@
+beautifulsoup4>=4.12
+marker-pdf>=1.8
+pdfplumber>=0.11
+PyMuPDF>=1.24
+numpy>=1.26
+rank-bm25>=0.2.2
+sentence-transformers>=3.0
+chromadb>=0.5
+llama-index-core>=0.11
+llama-index-llms-huggingface>=0.3
+llama-index-embeddings-huggingface>=0.3
+llama-index-vector-stores-chroma>=0.2
+llama-index-retrievers-bm25>=0.2
+llama-index-postprocessor-sbert-rerank>=0.2

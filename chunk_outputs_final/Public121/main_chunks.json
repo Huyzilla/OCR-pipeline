@@ -1,0 +1,58 @@
+[
+  {
+    "page_content": "# Public_121\n\n## 1. Phương pháp đánh giá các mô hình phân lớp đa nhãn\nĐể đánh giá các mô hình phân lớp đa nhãn MLL, khóa luận đã sử dụng phương pháp k-fold cross validation tập dữ liệu ban đầu được chia ngẫu nhiên thành k tập con (fold) có kích thước xấp xỉ nhau S1, S2 … Sk. Quá trình học và kiểm tra được thực hiện tại k lần. Tại lần lặp thứ i, Si là tập dữ liệu kiểm tra, các tập còn lại hợp thành dữ liệu huấn luyện. Có nghĩa là, đầu tiên chạy được thực hiện trên tập S2, S3 … Sk, sau đó test trên tập S1; tiếp tục quá trình dạy được thực hiện trên tập S1, S3, S4 … Sk, sau đó test trên tập S2; và cứ tiếp tục như thế.\n\nVí dụ, k = 10, thì phương pháp k-fold cross validation được minh họa như hình dưới:\n\n*Bảng minh họa phương pháp k-fold cross validation*\n\n![](images/image1.jpg)\n\nTrong đó: Là dữ liệu kiểm tra Là dữ liệu học\n\n## 2. Một số độ đo để đánh giá mô hình phân lớp đa nhãn\nĐánh giá kết quả phương pháp phân lớp đa nhãn có sự khác biệt với đơn nhãn. Khóa luận đánh giá các phương pháp phân lớp đa nhãn dựa trên một số độ đo sau: Hamming Loss [15], One-error [15], Coverage [15], Ranking Loss [15], Average Precision, Mean Average Precision.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_121",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_121",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Cho một tập S = {(x1, Y1) … (xn, Yn)} của n ví dụ kiểm tra. Cho Y\\*i = h (xi) là tập hợp nhãn dự đoán cho kiểm tra xi, khi Yi là tập nhãn cho xi.\n\n**Hamming Loss**: độ mất mát dữ liệu, được tính như sau:\n\nhloss (h) = \n$$\\frac{1}{n} \\sum_{i=1}^{n} \\frac{1}{Q} \\sum_{q=1}^{Q} (\\delta(q \\in Y *_{i} \\Lambda q \\not\\in) Yi) + \\delta (q \\not\\in Y *_{i} \\Lambda q \\in Yi)$$\n\nTrong đó, là một hàm mà đầu ra là 1 nếu một nội dung đúng và 0 trong trường hợp ngược lại. Nhỏ hơn giá trị của hloss (h), thực thi tốt hơn. Trong trường hợp lí tưởng, hloss (h) = 0.\n\n**One**-**error**: đánh giá lỗi cho nhãn xếp hạng đầu:\n\n$$one\\_error_{S(f)} = \\frac{1}{n} \\sum_{i=1}^{n} \\delta([arg \\max_{y \\in \\gamma} f(x_i, y)] \\notin Yi)$$\n\nGiá trị nhỏ hơn one\\_err (f), thực thi tốt hơn. Chú ý, vấn đề phân loại cho đơn nhãn, một lỗi chính là phân loại lỗi thường.\n\n**Coverage**: Để đánh giá hiệu suất của một hệ thống cho tất cả các nhãn của một mẫu (đếm số lượng tất cả các nhãn). Coverage được định nghĩa như khoảng cách trung bình cho tất cả các nhãn thích hợp được gán cho một ví dụ thử nghiệm:\n\n$$coverages_s(f) = \\frac{1}{n} \\sum_{i=1}^{n} \\max_{y \\in Yi} rank_f(x_i, y) - 1$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Một số độ đo để đánh giá mô hình phân lớp đa nhãn",
+      "start_index": 1156,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::2. Một số độ đo để đánh giá mô hình phân lớp đa nhãn",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "$$coverages_s(f) = \\frac{1}{n} \\sum_{i=1}^{n} \\max_{y \\in Yi} rank_f(x_i, y) - 1$$\n\n**Ranking Loss**: Tính phân bố trung bình của các cặp nhãn:\n\nrloss (f) = \n$$\\frac{1}{n} \\sum_{i=1}^{n} \\frac{1}{|Y_i| |\\overline{Y}_i|} |\\{(y_1, y_2) \\in Y_i X \\overline{Y}_i | f(x_i, y_1) \\le f(x_1, y_2)\\}$$\n\nVới ̅ là phần bù của tập nhãn Yi. Giá trị của rloss (f) càng nhỏ thì càng tốt.\n\n**Average Precision**: độ chính xác trung bình của P@K tại các mức K có đối tượng đúng. Gọi I (K) là hàm xác định đối tượng ở vị trí hạng K nếu đúng I(K) = 1 và ngược lại I(K) = 0, khi đó:\n\n$$AP = \\frac{\\sum_{K=1}^{n} P@K \\ X \\ I(K)}{\\sum_{j=1}^{n} I(j)}$$\n\nVới n là số đối tượng được xét, P@K là độ chính xác của K đối tượng đầu bảng xếp hạng. Xác định số đối tượng đúng ở K vị trí đầu tiên của xếp hạng và gọi là Match@K và ta có\n\n$$P@K = \\frac{Match@K}{K}$$\n\n**Mean Average Precision**: Độ chính xác trung bình trên N xếp hạng. (N truy vấn, mỗi truy vấn có một thứ tự xếp hạng kết quả tương ứng).\n\n$$MAP = \\frac{\\sum_{i=1}^{N} APi}{N}$$\n\nXét ví dụ:\n\nGiả sử có có 5 đối tượng được xếp hạng tương ứng là: c, a, e, b, d\n\nMột xếp hạng của đối tượng cần đánh giá là: **c, a, e**, d, b",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Một số độ đo để đánh giá mô hình phân lớp đa nhãn",
+      "start_index": 2230,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::2. Một số độ đo để đánh giá mô hình phân lớp đa nhãn",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "$$MAP = \\frac{\\sum_{i=1}^{N} APi}{N}$$\n\nXét ví dụ:\n\nGiả sử có có 5 đối tượng được xếp hạng tương ứng là: c, a, e, b, d\n\nMột xếp hạng của đối tượng cần đánh giá là: **c, a, e**, d, b\n\nKhi đó, P@1 = 1/1, P@2 = 2/2, P@3 = 3/3, P@4 = 3/4, P@5 = 3/5.\n\n$$AP = (\\frac{1}{1} + \\frac{2}{2} + \\frac{3}{3})$$\n\nMAP = \n$$\\frac{1}{3}(\\frac{1}{1} + \\frac{2}{2} + \\frac{3}{3})$$",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Một số độ đo để đánh giá mô hình phân lớp đa nhãn",
+      "start_index": 3205,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2. Một số độ đo để đánh giá mô hình phân lớp đa nhãn",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": null
+    }
+  }
+]

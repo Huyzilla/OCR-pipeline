@@ -1,0 +1,114 @@
+[
+  {
+    "page_content": "# Public_034\n\n## 1. Giới thiệu\nMột **photodiode** là một tiếp giáp **P–N** hoặc thiết bị bán dẫn tiêu thụ năng lượng ánh sáng để tạo ra dòng điện. Nó đôi khi còn được gọi là **bộ dò ánh sáng**, **bộ cảm biến ảnh** hoặc **bộ dò tìm ảnh**.\n\nPhotodiodes được thiết kế đặc biệt để hoạt động trong **điều kiện phân cực nghịch**. Phân cực nghịch có nghĩa là mặt **P** của photodiode được kết nối với cực âm của nguồn và mặt **N** được kết nối với cực dương của nguồn.\n\nPhotodiode rất nhạy với ánh sáng; khi photon rơi vào photodiode, nó chuyển đổi năng lượng ánh sáng thành dòng điện. **Tế bào năng lượng mặt trời** còn được gọi là photodiode diện tích lớn vì chúng chuyển đổi năng lượng ánh sáng mặt trời thành năng lượng điện. Tuy nhiên, pin mặt trời chỉ hoạt động với ánh sáng khả kiến.\n\nCấu tạo và hoạt động của photodiode gần như **tương tự diode nối tiếp P–N thông thường**, nhưng photodiode chủ yếu được sử dụng trong các ứng dụng **tốc độ cao**.\n\nTrong diode P–N thông thường, **điện áp** là nguồn năng lượng tạo dòng điện; trong diode quang, **cả điện áp và ánh sáng** đều được sử dụng để sinh dòng điện.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_034",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_034",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Trong diode P–N thông thường, **điện áp** là nguồn năng lượng tạo dòng điện; trong diode quang, **cả điện áp và ánh sáng** đều được sử dụng để sinh dòng điện.\n\n## 1.1 Ký hiệu Photodiode\nKý hiệu của photodiode tương tự như diode P–N thông thường, ngoại trừ có thêm **mũi tên đại diện cho ánh sáng hoặc photon**. Một photodiode có **hai đầu cuối (terminals)**: một cực âm và một cực dương.\n\n# 1.2 Mục tiêu và hạn chế của Photodiode\n- Luôn hoạt động khi phân cực nghịch.\n- Điện áp phân cực nghịch nên thấp.\n- Tạo ra tiếng ồn thấp.\n- Tốc độ phản ứng cao.\n- Độ nhạy cao với ánh sáng.\n- Độ nhạy thấp với nhiệt độ.\n- Giá thấp.\n- Kích thước nhỏ.\n- Tuổi thọ lâu dài.\n\n## 1.3 Các loại Photodiode\nHoạt động của tất cả các loại photodiode là **tương tự nhau**, nhưng các loại khác nhau được phát triển dựa trên ứng dụng cụ thể. Ví dụ, **PIN photodiode** được phát triển để tăng tốc độ đáp ứng.\n\nCác loại photodiode phổ biến:\n\n- PN photodiode\n- PIN photodiode\n- Avalanche photodiode\n\nTrong số đó, **PN junction** và **PIN photodiode** được sử dụng rộng rãi nhất.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Giới thiệu",
+      "start_index": 949,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Giới thiệu",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Các loại photodiode phổ biến:\n\n- PN photodiode\n- PIN photodiode\n- Avalanche photodiode\n\nTrong số đó, **PN junction** và **PIN photodiode** được sử dụng rộng rãi nhất.\n\n## 1.4 Ứng dụng của Photodiode\n- Máy chơi đĩa compact (CD/DVD)\n- Thiết bị báo khói\n- Ứng dụng không gian\n- Ứng dụng y tế: chụp cắt lớp vi tính, dụng cụ phân tích mẫu, đo oxy xung\n- Truyền thông quang học\n- Đo cường độ ánh sáng cực thấp\n\n#### 1.5 Phototransistor\nPhototransistor là thiết bị có thể cảm nhận mức ánh sáng và thay đổi dòng chảy giữa **emitter** và **collector** theo mức ánh sáng.\n\n- Phototransistor nhạy hơn photodiode về **độ lợi (gain)** do transistor cung cấp.\n- Ý tưởng về phototransistor được William Shockley đề xuất năm 1951, hai năm sau khi transistor thông thường được phát hiện. Phototransistor đã được sử dụng rộng rãi trong nhiều ứng dụng kể từ đó.\n\n#### 1.6 Hoạt động của Phototransistor\nPhototransistor dựa trên **khái niệm transistor cơ bản**. Nó được tạo ra bằng cách **phơi bày chất bán dẫn của transistor thông thường với ánh sáng**.\n\n- Ánh sáng chiếu vào vùng cơ sở, tạo ra các cặp **electron–lỗ**.\n- Các electron bị bơm vào bộ phát, tạo ra dòng phototransistor, được khuếch đại bởi transistor.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.3 Các loại Photodiode",
+      "start_index": 1832,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1.3 Các loại Photodiode",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "- Ánh sáng chiếu vào vùng cơ sở, tạo ra các cặp **electron–lỗ**.\n- Các electron bị bơm vào bộ phát, tạo ra dòng phototransistor, được khuếch đại bởi transistor.\n\n**So sánh:**\n\n- Một photodiode có thể cho dòng điện khoảng **1 µA** trong điều kiện phòng.\n- Một phototransistor có thể cho dòng điện khoảng **100 µA**, cho thấy hiệu suất lớn hơn.\n\n# Nhược điểm:\n- Phototransistor không đáp ứng tần số cao tốt do **điện dung lớn** kết hợp với tiếp điểm cơ sở–thu.\n- Băng thông điển hình bị giới hạn ~250 kHz, trong khi photodiode có thể hoạt động tới 1 GHz.\n\n# 1.7 Ứng dụng Phototransistor\nPhototransistor hoạt động ở hai chế độ cơ bản:\n\n- **Chế độ tuyến tính:** phản ứng tỷ lệ với kích thích ánh sáng, sử dụng trong đo lường.\n- **Chế độ chuyển mạch:** phản ứng phi tuyến, với hai trạng thái: **bật** và **tắt**.\n  - o Khi không có ánh sáng, dòng điện gần như bằng 0 (\"tắt\").\n  - o Khi ánh sáng đủ lớn, dòng điện đạt bão hòa (\"bật\").\n\nỨng dụng: phát hiện đối tượng, gửi dữ liệu, đọc bộ mã hóa, v.v.\n\n## 1.8 Các bộ ghép quang (Opto–Couplers)\n**Optocoupler (Optoisolator)** là thành phần **cách ly tín hiệu điện giữa hai mạch** bằng ánh sáng.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.6 Hoạt động của Phototransistor",
+      "start_index": 2867,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::1.6 Hoạt động của Phototransistor",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Ứng dụng: phát hiện đối tượng, gửi dữ liệu, đọc bộ mã hóa, v.v.\n\n## 1.8 Các bộ ghép quang (Opto–Couplers)\n**Optocoupler (Optoisolator)** là thành phần **cách ly tín hiệu điện giữa hai mạch** bằng ánh sáng.\n\n- Thường gồm **LED** và **phototransistor** trong cùng một gói.\n- Chủ yếu sử dụng giữa **cảm biến và PLC** để ngăn dòng điện trực tiếp có thể gây hỏng thiết bị.\n\n#### Chức năng:\n- Duy trì kết nối giữa hai thiết bị mà không có **dẫn điện trực tiếp**.\n- Đảm bảo an toàn cho PLC hoặc thiết bị điều khiển khi xảy ra lỗi mạch.\n- **2. Nguyên lý vật lý của Photodiode và Phototransistor**\n\n## 2.1 Hiệu ứng quang điện\nPhotodiode hoạt động dựa trên **hiệu ứng quang điện**, nghĩa là khi photon ánh sáng tác động vào vùng **P–N**, năng lượng của photon đủ lớn sẽ **giải phóng các electron** khỏi liên kết hóa học, tạo ra cặp electron–lỗ. Quá trình này tạo ra **dòng điện quang** trong mạch, tỷ lệ với cường độ ánh sáng chiếu vào diode.\n\n- **Photon năng lượng cao**: tạo ra nhiều cặp electron–lỗ, tăng dòng quang.\n- **Photon năng lượng thấp**: có thể không đủ năng lượng để giải phóng electron, dòng quang rất nhỏ hoặc bằng 0.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.7 Ứng dụng Phototransistor",
+      "start_index": 3797,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::1.7 Ứng dụng Phototransistor",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "- **Photon năng lượng cao**: tạo ra nhiều cặp electron–lỗ, tăng dòng quang.\n- **Photon năng lượng thấp**: có thể không đủ năng lượng để giải phóng electron, dòng quang rất nhỏ hoặc bằng 0.\n\nHiệu suất quang điện của photodiode được đo bằng **hiệu suất lượng tử (Quantum Efficiency)**, là tỷ lệ giữa số electron tạo ra và số photon chiếu vào.\n\n## 2.2 Các tham số quan trọng của Photodiode\n- **Dark Current (Dòng tối)**: dòng nhỏ chạy qua photodiode ngay cả khi không có ánh sáng.\n- **Responsivity (Độ nhạy quang)**: tỷ lệ giữa dòng điện quang tạo ra và công suất ánh sáng chiếu vào diode.\n\n$$\\circ \\quad R = IphPopt \\left[ \\frac{A}{W} \\right] R$$\n\n- o Trong đó IphI\\_{ph} là dòng quang, PoptP\\_{opt} là công suất ánh sáng.\n- **Công suất tối đa cho phép**: photodiode chỉ chịu được một mức công suất ánh sáng nhất định. Quá mức có thể làm hỏng diode.\n- **Tốc độ phản ứng (Response Time)**: thời gian để dòng điện quang đạt 63% giá trị cuối cùng khi ánh sáng thay đổi đột ngột.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1 Hiệu ứng quang điện",
+      "start_index": 4731,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::2.1 Hiệu ứng quang điện",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "## 2.3 Phân cực Photodiode\n- **Phân cực thuận**: diode dẫn điện, nhưng hiệu suất quang thấp, dòng tối cao.\n- **Phân cực nghịch**: diode hầu như không dẫn, nhưng **tăng tốc độ phản ứng** và giảm dòng tối. Đây là chế độ hoạt động chuẩn của photodiode.\n\n$$I = Iph - IDI = I_{ph} - I_D$$\n\nTrong đó:\n\n- II là dòng tổng.\n- ℎ là dòng quang.\n- là dòng dò điện (Dark Current).\n\n#### 2.4 Nguyên lý hoạt động của Phototransistor\nPhototransistor là **sự kết hợp giữa transistor và photodiode**:\n\n- Ánh sáng chiếu vào vùng cơ sở, tạo ra dòng quang nhỏ.\n- Dòng quang này được transistor **khuếch đại** ở bộ phát, tạo ra dòng lớn hơn nhiều.\n- Do transistor khuếch đại dòng, phototransistor có **độ lợi dòng cao**, nhưng **điện dung lớn** nên tốc độ phản ứng thấp hơn diode.\n\n## 2.5 Nguyên lý cách ly quang của Optocoupler\nOptocoupler truyền tín hiệu bằng ánh sáng để **cách ly điện hai mạch**:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.3 Phân cực Photodiode",
+      "start_index": 5706,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::2.3 Phân cực Photodiode",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "## 2.5 Nguyên lý cách ly quang của Optocoupler\nOptocoupler truyền tín hiệu bằng ánh sáng để **cách ly điện hai mạch**:\n\n- LED bên trong phát sáng khi có dòng vào.\n- Phototransistor bên trong nhận ánh sáng, tạo ra dòng điện trong mạch nhận.\n- Không có **kết nối điện trực tiếp**, nhờ đó mạch nhận được bảo vệ khỏi điện áp cao hoặc nhiễu điện.\n- Optocoupler thường dùng để:\n  - o Ngăn nhiễu trong truyền tín hiệu.\n  - o Bảo vệ vi điều khiển, PLC hoặc mạch điều khiển khỏi dòng cao bất ngờ.\n\n# 2.6 Các thông số quan trọng của Optocoupler\n• **CTR (Current Transfer Ratio)**: tỷ lệ giữa dòng ra của phototransistor và dòng vào LED.\n\n$$CTR = IoutIin \\times 100\\%CTR = \\frac{\\left\\{I_{\\{out\\}}\\right\\}}{\\left\\{I_{\\{in\\}}\\right\\}} \\times 100\\%$$\n\n- **Isolation Voltage**: điện áp tối đa mà hai mạch cách ly có thể chịu trước khi bị dò điện.\n- **Tốc độ phản hồi (Response Time)**: thời gian từ LED bật/tắt đến phototransistor phản hồi.\n\n![](images/image1.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.5 Nguyên lý cách ly quang của Optocoupler",
+      "start_index": 6466,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::2.5 Nguyên lý cách ly quang của Optocoupler",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": null
+    }
+  }
+]

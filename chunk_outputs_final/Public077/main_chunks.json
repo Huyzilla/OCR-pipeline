@@ -1,0 +1,72 @@
+[
+  {
+    "page_content": "# Public_077\n\n## 1. Bối cảnh và nhu cầu cấp thiết\nChuỗi cung ứng toàn cầu là mạng lưới phức tạp liên kết nhà sản xuất, nhà cung ứng nguyên liệu, kho bãi, các công ty vận tải, và nhà bán lẻ. Mỗi sản phẩm, từ dược phẩm, thực phẩm, đến linh kiện điện tử, có thể trải qua hàng chục quốc gia và hàng trăm điểm trung gian.\n\nTuy nhiên, quá trình này gặp nhiều thách thức:\n\n- Thiếu minh bạch: Khó xác định chính xác nguồn gốc, đặc biệt với thực phẩm tươi sống hoặc thuốc.\n- Nguy cơ giả mạo: Sản phẩm giả, kém chất lượng dễ dàng thâm nhập.\n- Dữ liệu phân tán: Mỗi bên lưu trữ thông tin riêng, không đồng bộ, gây chậm trễ.\n- Chi phí xác thực cao: Việc đối soát thủ công giấy tờ, chứng từ kéo dài thời gian giao hàng và tăng chi phí.\n\nBlockchain nổi lên như giải pháp tạo một \"sổ cái phân tán\" toàn cầu, minh bạch, chống chỉnh sửa, cho phép tất cả bên liên quan truy cập cùng một phiên bản dữ liệu sự thật.\n\n### 2. Nguyên lý hoạt động cốt lõi của Blockchain\n### 2.1 Cấu trúc khối (Block):\n- o Mỗi khối chứa dữ liệu giao dịch, thông tin lô hàng, thời gian, chữ ký số.\n- o Khối mới được thêm sau khi đạt đồng thuận của mạng lưới.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_077",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_077",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "### 2. Nguyên lý hoạt động cốt lõi của Blockchain\n### 2.1 Cấu trúc khối (Block):\n- o Mỗi khối chứa dữ liệu giao dịch, thông tin lô hàng, thời gian, chữ ký số.\n- o Khối mới được thêm sau khi đạt đồng thuận của mạng lưới.\n\n### 2.2 Chuỗi liên kết (Chain):\no Các khối nối với nhau bằng hàm băm (hash), đảm bảo không thể chỉnh sửa lùi.\n\n### 2.3 Cơ chế đồng thuận:\no Tùy quy mô, chuỗi cung ứng có thể dùng Proof of Stake (PoS), Practical Byzantine Fault Tolerance (PBFT) hoặc Proof of Authority (PoA) để xác nhận giao dịch nhanh, tiết kiệm năng lượng.\n\n### 2.4 Hợp đồng thông minh (Smart Contract):\n- o Các điều khoản giao dịch được lập trình sẵn.\n- o Tự động thanh toán, phát lệnh giao hàng khi điều kiện đạt chuẩn.\n\n## 3. Ứng dụng chi tiết trong chuỗi cung ứng\n## 3.1 Truy xuất nguồn gốc minh bạch\n- Mỗi lần sản phẩm di chuyển, thông tin như nhiệt độ bảo quản, địa điểm, thời gian được ghi vào blockchain.\n- Người tiêu dùng chỉ cần quét mã QR để biết toàn bộ lịch sử sản phẩm.\n- Ví dụ: IBM Food Trust giúp Walmart truy xuất nguồn gốc xoài từ nông trại đến kệ hàng chỉ trong 2,2 giây (so với 6 ngày trước đây).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Nguyên lý hoạt động cốt lõi của Blockchain",
+      "start_index": 897,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::2. Nguyên lý hoạt động cốt lõi của Blockchain",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "#### 3.2 Chống giả mạo và gian lận\n- Sản phẩm gắn mã định danh duy nhất, dữ liệu không thể sửa đổi.\n- Ngành dược phẩm: blockchain giúp đảm bảo thuốc không bị thay thế hay tráo đổi.\n\n#### 3.3 Tự động hóa thanh toán và hợp đồng\n• Khi hàng hóa đến đúng địa điểm, cảm biến IoT cập nhật dữ liệu, Smart Contract tự động giải ngân.\n\n• Giảm nhu cầu trung gian tài chính, giảm chi phí giao dịch quốc tế.\n\n## 3.4 Tối ưu vận chuyển và tồn kho\n- Dữ liệu thời gian thực giúp nhà quản lý dự báo nhu cầu, giảm hàng tồn, và điều phối xe vận chuyển hiệu quả.\n- Tích hợp với hệ thống AI để tối ưu tuyến đường, giảm phát thải carbon.\n\n### 3.5 Đảm bảo tuân thủ và kiểm toán\n- Chứng nhận an toàn thực phẩm, tiêu chuẩn môi trường, hóa đơn đều được ghi bất biến.\n- Giúp công ty đáp ứng các quy định như FDA, EU Food Law, hoặc ISO 9001.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.2 Chống giả mạo và gian lận",
+      "start_index": 2004,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::3.2 Chống giả mạo và gian lận",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "### 3.5 Đảm bảo tuân thủ và kiểm toán\n- Chứng nhận an toàn thực phẩm, tiêu chuẩn môi trường, hóa đơn đều được ghi bất biến.\n- Giúp công ty đáp ứng các quy định như FDA, EU Food Law, hoặc ISO 9001.\n\n#### 4. Lợi ích chiến lược vượt trội\n- Minh bạch toàn diện: Mọi bên tham gia truy cập cùng một nguồn dữ liệu, hạn chế tranh chấp.\n- Tốc độ xử lý nhanh: Rút ngắn thời gian thông quan từ nhiều ngày xuống vài giờ.\n- Giảm chi phí trung gian: Cắt bỏ các khâu đối soát thủ công và đơn vị trung gian tài chính.\n- Tăng niềm tin người tiêu dùng: Minh bạch nguồn gốc sản phẩm, bảo vệ thương hiệu.\n\n## 5. Thách thức triển khai\n1. Quy mô giao dịch khổng lồ:\n\no Hàng tỷ giao dịch đòi hỏi blockchain có khả năng mở rộng, cần giải pháp layer 2 hoặc sidechain.\n\n## 2. Bảo mật dữ liệu nhạy cảm:\n\no Phải kết hợp mã hóa, quyền truy cập theo vai trò, và kênh truyền riêng tư để bảo vệ bí mật thương mại.\n\n# 3. Chi phí và chuẩn hóa:\n\no Cần chuẩn giao tiếp chung giữa các quốc gia, doanh nghiệp và nền tảng.\n\n# 4. Tích hợp hệ thống hiện hữu:\n\no Đòi hỏi API linh hoạt và chiến lược chuyển đổi dần để tránh gián đoạn hoạt động.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.5 Đảm bảo tuân thủ và kiểm toán",
+      "start_index": 2620,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::3.5 Đảm bảo tuân thủ và kiểm toán",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "# 3. Chi phí và chuẩn hóa:\n\no Cần chuẩn giao tiếp chung giữa các quốc gia, doanh nghiệp và nền tảng.\n\n# 4. Tích hợp hệ thống hiện hữu:\n\no Đòi hỏi API linh hoạt và chiến lược chuyển đổi dần để tránh gián đoạn hoạt động.\n\n## 6. Trường hợp điển hình\n• TradeLens (Maersk & IBM): Hơn 100 nhà khai thác cảng và hải quan toàn cầu tham gia, giúp giảm 40% thời gian thông quan.\n\n• De Beers: Theo dõi từng viên kim cương từ mỏ đến cửa hàng, ngăn chặn \"kim cương xung đột\".\n\n• Walmart – IBM Food Trust: Đảm bảo thực phẩm tươi an toàn, truy xuất nguồn gốc trong vài giây.\n\n### 7. Tương lai và xu hướng\n• Kết hợp IoT: Cảm biến tự động ghi dữ liệu nhiệt độ, độ ẩm, vị trí vào blockchain theo thời gian thực.\n\n- Blockchain liên chuỗi (Interoperability): Cho phép nhiều blockchain (Hyperledger, Ethereum, Corda) tương tác liền mạch.\n- AI + Blockchain: Phân tích dữ liệu chuỗi cung ứng để dự báo nhu cầu, nhận diện rủi ro.\n- Tính bền vững: Sử dụng blockchain để chứng minh sản phẩm thân thiện môi trường và giảm phát thải",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Chi phí và chuẩn hóa:",
+      "start_index": 3503,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::3. Chi phí và chuẩn hóa:",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": null
+    }
+  }
+]

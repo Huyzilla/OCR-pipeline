@@ -1,0 +1,8 @@
+{
+  "size": 14,
+  "tokenizer": "regex_unicode_word",
+  "files": {
+    "bm25": "bm25.pkl",
+    "chunk_map": "chunk_map.json"
+  }
+}

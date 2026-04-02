@@ -1,0 +1,122 @@
+[
+  {
+    "chunk_id": "main::chunk::0",
+    "chunk_index": 0,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::Public_183",
+    "section_hint": "Public_183",
+    "page_content": "# Public_183\n\n**Trong trường hợp sau khi thực hiện xong business logic và persist data xuống database thành công nhưng publish message fail thì cần xử lý thế nào (application crash hoặc lost connection)?**\n\n![](images/image1.jpg)\n\n### 1. Transactional outbox pattern?\nMình sẽ lấy ví dụ bài trước để những bạn chưa đọc cũng có thể hiểu được. Tuy nhiên mình khuyến khích nếu những ai chưa đọc hoặc chưa hiểu về SAGA pattern thì nên đọc trước khi tiếp tục nhé.\n\nThảo hiện tại là Solution Architect của team IT thuộc chuỗi cửa hàng Pizza và những con bug không thể fix. Thời buổi dịch bệnh khó khăn, chủ doanh nghiệp muốn Thảo thiết kế hệ thống bán hàng online để tăng doanh số. Vì đã có thâm niên chục năm vén váy.. à nhầm.. vén tay áo.. nên Thảo rất nhanh apply ngay Microservices Architecture với 4 service chính và sử dụng SAGA pattern để handle distributed transaction:\n\n- Order service.\n- Payment service.\n- Restaurant service.\n- Delivery service.",
+    "start_index": 0,
+    "prev_chunk_id": null,
+    "next_chunk_id": "main::chunk::1"
+  },
+  {
+    "chunk_id": "main::chunk::1",
+    "chunk_index": 1,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1. Transactional outbox pattern?",
+    "section_hint": "1. Transactional outbox pattern?",
+    "page_content": "- Order service.\n- Payment service.\n- Restaurant service.\n- Delivery service.\n\nSau khi Order service tạo order thành công, publish event ORDER\\_CREATED và Payment service consume event này để xử lý tiếp. Payment service thực hiện business logic, commit transaction xuống database và thực hiện publish event ORDER\\_PAID. Tuy nhiên đúng lúc publish event thì... toạch. Application crash, và thế là mất toi message, order tắc ở đấy và khách hàng chờ dài cổ vẫn chưa thấy pizza đâu.\n\n#### 1.1 Problem\nTrước khi đi tìm giải pháp thì cần hiểu chính xác vấn đề cần giải quyết là gì:\n\n- Mất connection đến Message broker dẫn đến việc không publish được event.\n- Có thể mất message nếu application crash/restart.\n- Cần đảm bảo tính atomic và consistent với 2 method persist() và publish(). Hiểu nôm na là nếu persist() thành công thì việc publish cũng phải thành công (thành công được hiểu là event được publish đến Message broker). Nếu không publish được, hay nói cách khác là lost event thì persist() cần được rollback.",
+    "start_index": 872,
+    "prev_chunk_id": "main::chunk::0",
+    "next_chunk_id": "main::chunk::2"
+  },
+  {
+    "chunk_id": "main::chunk::2",
+    "chunk_index": 2,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.2 Solution",
+    "section_hint": "1.2 Solution",
+    "page_content": "#### 1.2 Solution\n- Nếu mất connection và không publish được event thì một cách đơn giản có thể nghĩ đến là retry. Những thứ cần quan tâm là retry trong bao lâu, bao nhiêu lần?\n- Cần store message ở đâu để đảm bảo nếu application crash/restart thì vẫn có message để retry: file, database, distributed storage?\n- Nếu để đảm bảo vừa atomic mà vừa consistent thì chỉ có nhồi vào chung transaction thôi. Có nghĩa là message/event cần được lưu và database và xử lý chung một transaction với business logic?\n\nTừ những idea trên, liệu bạn đã mường tượng ra tổng thể solution cần thực hiện là như thế nào chưa? Đi từng bước một nhé.\n\n#### 1.3 Create new table in database\nBước đầu tiên, tạo một table mới đặt tên là **outbox\\_table**. Khi xử lý business logic, bên cạnh việc update các table liên quan, ta insert thêm một record vào table **outbox\\_table**, đương nhiên record này chứa những thông tin cần thiết để publish event (order\\_id, state) thậm chí có thể lưu luôn event message.\n\n![](images/image2.jpg)\n\nNhư vậy vấn đề về **atomic** và **consistent** đã được giải quyết một cách triệt để và đơn giản bằng cách sử dụng local transaction.",
+    "start_index": 1886,
+    "prev_chunk_id": "main::chunk::1",
+    "next_chunk_id": "main::chunk::3"
+  },
+  {
+    "chunk_id": "main::chunk::3",
+    "chunk_index": 3,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.3 Create new table in database",
+    "section_hint": "1.3 Create new table in database",
+    "page_content": "![](images/image2.jpg)\n\nNhư vậy vấn đề về **atomic** và **consistent** đã được giải quyết một cách triệt để và đơn giản bằng cách sử dụng local transaction.\n\n#### 1.4 Create relay publisher\nNhư vậy các event được lưu trữ tại database, đảm bảo đầy đủ các tính chất quan trọng:\n\n- **Consistency**: nếu store business data thành công thì mới có event, và ngược lại.\n- **Durability**: một khi transaction commit thành công thì không thể lost message.\n- **Message ordering**: message lưu trữ tại database theo thứ tự rõ ràng để đảm bảo khi publish message không có chuyện message đến sau lại publish trước.\n\nBây giờ đã một đống message đang chờ để publish, thì tất nhiên phải có publisher làm nhiệm vụ check xem đang có message nào không, nếu có thì publish. Tất nhiên vẫn không thể tránh trường hợp lost connection đến Message broker, vậy nên việc publish cần có cơ chế retry, và update message state sau khi publish thành công để tránh publish nhiều lần.\n\nPattern này là polling publisher. Đại khái publisher sẽ query liên tục (theo chu kì) đến outbox\\_table để tìm event và publish.\n\n3\n\n![](images/image3.jpg)",
+    "start_index": 2867,
+    "prev_chunk_id": "main::chunk::2",
+    "next_chunk_id": "main::chunk::4"
+  },
+  {
+    "chunk_id": "main::chunk::4",
+    "chunk_index": 4,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.4 Create relay publisher",
+    "section_hint": "1.4 Create relay publisher",
+    "page_content": "Pattern này là polling publisher. Đại khái publisher sẽ query liên tục (theo chu kì) đến outbox\\_table để tìm event và publish.\n\n3\n\n![](images/image3.jpg)\n\nMột câu hỏi được đặt ra, vậy publisher này nên là một service độc lập hay là một service (class) nằm trong payment-service? Vì sẽ có tình huống paymentservice crash còn nhiều event trong outbox\\_table đang chờ được publish. Nếu relay-publisher thuộc payment-service thì lúc này message không được publish. Nhưng nếu relay-publisher là service độc lập thì nó cần access vào outbox\\_table của payment-service, có vẻ không hợp lý?\n\nVà đương nhiên, solution này là chính là **transactional outbox pattern**.\n\n#### 1.5 Alternative solution\nVề cơ bản solution trên đã giải quyết được problem đưa ra ở đầu bài nếu sử dụng SQL (RDBMS). Tất nhiên, nó cũng có những nhược điểm cần chú ý:\n\n- Nếu application sử dụng NoSQL thì cần cẩn thận vì không phải NoSQL nào cũng có thể support pattern này (do không đảm bảo tính chất quan trọng của transaction).\n- Extra call đến database để check có event nào cần publish không.",
+    "start_index": 3820,
+    "prev_chunk_id": "main::chunk::3",
+    "next_chunk_id": "main::chunk::5"
+  },
+  {
+    "chunk_id": "main::chunk::5",
+    "chunk_index": 5,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.5 Alternative solution",
+    "section_hint": "1.5 Alternative solution",
+    "page_content": "- Nếu application sử dụng NoSQL thì cần cẩn thận vì không phải NoSQL nào cũng có thể support pattern này (do không đảm bảo tính chất quan trọng của transaction).\n- Extra call đến database để check có event nào cần publish không.\n\nQuay lại vấn đề ban đầu, mấu chốt quan trọng nhất để giải quyết bài toán ở chỗ cần biết chính xác transaction cho business logic đã được commit thành công chưa để thực hiện việc publish event. Việc build event message hoàn toàn có thể thực hiện dựa trên business data... nhưng tất nhiên chẳng ai làm thế cả .\n\nVì vậy có một biến thể khác để implement relay publisher, và cũng để giải quyết 2 vấn đề trên là apply transaction log tailing pattern.\n\nNếu bạn đã làm việc MySQL thì chắc hẳn đã nghe đến binlog, hoặc nếu quen thuộc với [Postgres](https://viblo.asia/s/OVlYq8oal8W) là WAL. Có thể hiểu đơn giản rằng transaction log giống như hộp đen của máy bay, lưu trữ tất cả lịch sử thay đổi dữ liệu của database. Khi dữ liệu bị thay đổi thì database cần lưu trữ các thay đổi đó vào log file. Và việc đọc log file này có thể giúp chúng ta biết transaction nào được commit, data nào được thay đổi. Từ có có thể build event để publish đến Message broker.",
+    "start_index": 4655,
+    "prev_chunk_id": "main::chunk::4",
+    "next_chunk_id": "main::chunk::6"
+  },
+  {
+    "chunk_id": "main::chunk::6",
+    "chunk_index": 6,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::1.5 Alternative solution",
+    "section_hint": "1.5 Alternative solution",
+    "page_content": "![](images/image4.jpg)\n\n## 2. Case study: Notification service\n### 2.1 Design & Flow\nViệc cần làm là tạo ra Notification platform với mục đích chuyên để gửi thông báo đến người dùng thông qua các kênh khác nhau. Và một điều quan trọng là chỉ gửi đến những người đăng kí nhận thông báo.\n\nNhư vậy có thể tạm hình dung ra 3 components chính trong bài toán này:\n\n- Application: tất nhiên là notification-serivce rồi.\n- Database: MySQL, Postgres... để thực hiện được transactional outbox pattern.\n- Subscriber: khách hàng muốn nhận thông báo.\n\n![](images/image5.jpg)\n\nĐọc tiếp flow bên dưới kết hợp với hình bên trên để hiểu hơn flow nhé:",
+    "start_index": 5835,
+    "prev_chunk_id": "main::chunk::5",
+    "next_chunk_id": "main::chunk::7"
+  },
+  {
+    "chunk_id": "main::chunk::7",
+    "chunk_index": 7,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.1 Design & Flow",
+    "section_hint": "2.1 Design & Flow",
+    "page_content": "- Application: tất nhiên là notification-serivce rồi.\n- Database: MySQL, Postgres... để thực hiện được transactional outbox pattern.\n- Subscriber: khách hàng muốn nhận thông báo.\n\n![](images/image5.jpg)\n\nĐọc tiếp flow bên dưới kết hợp với hình bên trên để hiểu hơn flow nhé:\n\n- o Đầu tiên, khi client order sẽ có checkbox để lựa chọn việc có nhận thông báo hay không, nhận qua hình thức nào. Nếu có thì sau đó order-service sẽ gửi request tới notification-service để đăng kí nhận thông báo. Ví dụ thông qua HTTP POST /subscribe.\n- o Sau đó điều hướng đến SubscriptionService (class) để thực hiện business logic. Store thông tin vào subscription\\_table, có thể là một hoặc nhiều table khác, mình chỉ vẽ đại diện một table.\n- o Sau khi nhà bếp nhận thực đơn, hệ thống muốn gửi thông báo trạng thái order đến người dùng. Lúc này order-service hoặc restaurantservice gửi message đến notification-service. Notificationservice apply transactional outbox pattern như hình trên, store business data vào notification table và outbox message vào notify\\_outbox table.",
+    "start_index": 6194,
+    "prev_chunk_id": "main::chunk::6",
+    "next_chunk_id": "main::chunk::8"
+  },
+  {
+    "chunk_id": "main::chunk::8",
+    "chunk_index": 8,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::2.1 Design & Flow",
+    "section_hint": "2.1 Design & Flow",
+    "page_content": "Tiếp theo và việc publish notification đến người dùng, hiện thời có 3 channel là sms, email, voice call tương ứng với 3 relay publisher. Mỗi publisher sẽ chủ động monitor message của riêng mình để publish đến địa chỉ đích.\n\n6\n\n![](images/image6.jpg)\n\n![](images/image7.jpg)\n\nVới design này có thể dễ dàng thêm các publisher một cách độc lập, dễ dàng scale. Client cũng dễ dàng trong việc lựa chọn việc nhận thông báo, và nhận qua hình thức nào.\n\n#### 3. Limitation\nTransactional outbox pattern cũng bá đạo thật đấy nhưng vẫn có nhược điểm nhất định mà ta cần nắm rõ để xử lý bài toán cho tốt, cho triệt để.\n\nDuplicate event: rất khó để đảm bảo việc message delivery là exactly once. Vấn đề publish message thành công và chưa kịp update lại vào database (application crash) là chuyện hết sức bình thường. Do vậy đầu consume cần đảm bảo được việc có thể xử lý duplicate message. Hay nói cách khác là cần implement idempotent consumer.\n\nNear real-time: chắc chắn là rất khó để đạt đến trạng thái real-time application. Vấn đề là ta có chấp nhận có độ trễ không và độ trễ là bao nhiêu thì chấp nhận được.",
+    "start_index": 7253,
+    "prev_chunk_id": "main::chunk::7",
+    "next_chunk_id": "main::chunk::9"
+  },
+  {
+    "chunk_id": "main::chunk::9",
+    "chunk_index": 9,
+    "doc_id": "main",
+    "chunk_type": "text",
+    "parent_id": "main::section::3. Limitation",
+    "section_hint": "3. Limitation",
+    "page_content": "Near real-time: chắc chắn là rất khó để đạt đến trạng thái real-time application. Vấn đề là ta có chấp nhận có độ trễ không và độ trễ là bao nhiêu thì chấp nhận được.\n\n# 4. Cuối cùng\nQuay lại câu hỏi ở phần đầu publisher nên là một service độc lập hay là một inner-service?\n\nTheo quan điểm cá nhân, nó sẽ phụ thuộc vào bài toán cần giải quyết là gì, vấn đề có phức tạp hay không, yêu cầu letancy thế nào, có cần mở rộng trong tương lai không?\n\nVí dụ về **notification-service** phía trên, chắc chắn là việc chia thành các service độc lập là hiệu quả hơn. Trong trường hợp thêm một channel mới ta chỉ\n\nviệc implement service mới mà không cần sửa code cũ. Nó giúp việc scale dễ dàng và bớt tốn kém. Chỉ có thêm vấn đề nho nhỏ là cần monitor thêm chính service đó. Và như mình nói, vấn đề nho nhỏ nên có thể coi là không thành vấn đề.",
+    "start_index": 8187,
+    "prev_chunk_id": "main::chunk::8",
+    "next_chunk_id": null
+  }
+]

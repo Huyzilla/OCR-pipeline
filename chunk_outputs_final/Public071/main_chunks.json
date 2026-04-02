@@ -1,0 +1,86 @@
+[
+  {
+    "page_content": "# Public_071\n\nInternet vạn vật (IoT) đang mở rộng với tốc độ chưa từng có, kết nối hàng chục tỷ thiết bị từ cảm biến công nghiệp, thiết bị y tế đến phương tiện giao thông và hạ tầng thành phố thông minh. Việc quản lý và bảo mật mạng lưới IoT quy mô lớn đòi hỏi phương pháp kỹ thuật toàn diện, kết hợp từ khâu thiết kế kiến trúc đến giám sát, phản ứng sự cố. Dưới đây là nội dung chuyên sâu, được mở rộng chi tiết nhằm cung cấp cái nhìn đầy đủ cho việc xây dựng và vận hành một hệ thống IoT bền vững, đủ dài cho tài liệu khoảng 10 trang Word.\n\n# 1. Kiến Trúc Hệ Thống và Phương Pháp Triển Khai\nĐể phục vụ hàng triệu thiết bị kết nối đồng thời, kiến trúc IoT cần đảm bảo **tính phân cấp**, **khả năng mở rộng**, và **độ tin cậy cao**.\n\n## • **Lớp thiết bị (Device Layer)**\n\n- o Bao gồm cảm biến, bộ truyền động, thiết bị đeo, phương tiện, camera giám sát.\n- o Thiết bị phải hỗ trợ giao thức nhẹ (MQTT, CoAP) và cơ chế bảo mật phần cứng như TPM hoặc Secure Element.\n- o Quản lý nguồn điện: thiết kế tối ưu năng lượng, chế độ ngủ sâu (deep sleep) để kéo dài tuổi thọ pin.\n\n## • **Lớp mạng (Network Layer)**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_071",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_071",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "## • **Lớp mạng (Network Layer)**\n\n- o Hỗ trợ đa dạng giao thức: Wi-Fi 6, 5G, LPWAN (LoRaWAN, NB-IoT) tùy ứng dụng.\n- o Áp dụng định tuyến động và tự phục hồi khi có nút hỏng (mesh network).\n- o Tích hợp SDN (Software Defined Networking) để điều khiển luồng dữ liệu linh hoạt.\n\n#### • **Lớp xử lý và ứng dụng (Edge/Cloud Layer)**\n\no Edge computing giảm độ trễ, xử lý sơ bộ dữ liệu tại thiết bị biên.\n\n- o Cloud IoT platform (AWS IoT, Azure IoT Hub, Google IoT Core) lưu trữ và phân tích dữ liệu ở quy mô petabyte.\n- o Hỗ trợ microservices và container để dễ mở rộng, cập nhật dịch vụ mà không gây gián đoạn.\n\n## 2. Phương Pháp Quản Lý Thiết Bị Ở Quy Mô Hàng Triệu Node\nViệc vận hành một mạng IoT khổng lồ cần hệ thống quản lý tập trung nhưng linh hoạt:\n\n## • **Đăng ký và cung cấp (Provisioning)**\n\n- o Tự động cấp chứng chỉ số cho thiết bị mới.\n- o Xác minh danh tính thiết bị qua PKI (Public Key Infrastructure).\n\n### • **Giám sát từ xa**\n\n- o Theo dõi tình trạng pin, chất lượng kết nối, tình trạng cảm biến.\n- o Cảnh báo khi thiết bị ngắt kết nối hoặc gửi dữ liệu bất thường.\n\n## • **Quản lý cấu hình và cập nhật (OTA – Over-the-Air)**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "• **Lớp mạng (Network Layer)**",
+      "start_index": 1069,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::• **Lớp mạng (Network Layer)**",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "### • **Giám sát từ xa**\n\n- o Theo dõi tình trạng pin, chất lượng kết nối, tình trạng cảm biến.\n- o Cảnh báo khi thiết bị ngắt kết nối hoặc gửi dữ liệu bất thường.\n\n## • **Quản lý cấu hình và cập nhật (OTA – Over-the-Air)**\n\n- o Cập nhật firmware đồng loạt mà không cần tiếp cận vật lý.\n- o Hỗ trợ cập nhật vi sai (delta update) để tiết kiệm băng thông.\n\n#### • **Phân nhóm và ưu tiên**\n\n- o Phân loại thiết bị theo vị trí địa lý, loại dịch vụ, hoặc mức độ quan trọng.\n- o Cho phép triển khai bản vá trước cho nhóm thiết bị trọng yếu.\n\n#### 3. Bảo Mật Đa Lớp Cho Mạng IoT\nVới số lượng thiết bị khổng lồ, bảo mật trở thành ưu tiên hàng đầu:\n\n## • **Bảo mật thiết bị đầu cuối**\n\no Khởi động an toàn (secure boot) đảm bảo chỉ phần mềm đáng tin cậy được chạy.\n\n![](images/image1.jpg)\n\n2\n\no Mã hóa lưu trữ nội bộ để bảo vệ dữ liệu khi thiết bị bị đánh cắp.\n\n# • **Bảo mật truyền thông**\n\n- o Giao thức TLS/DTLS cho kết nối TCP/UDP.\n- o Xác thực hai chiều giữa thiết bị và máy chủ.\n\n## • **Phát hiện và phản ứng sự cố**\n\n- o Hệ thống IDS/IPS chuyên cho IoT, sử dụng học máy để phát hiện hành vi bất thường.\n- o Cơ chế cách ly thiết bị nghi ngờ bị tấn công để ngăn lan truyền.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "• **Giám sát từ xa**",
+      "start_index": 1985,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::• **Giám sát từ xa**",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "- o Giao thức TLS/DTLS cho kết nối TCP/UDP.\n- o Xác thực hai chiều giữa thiết bị và máy chủ.\n\n## • **Phát hiện và phản ứng sự cố**\n\n- o Hệ thống IDS/IPS chuyên cho IoT, sử dụng học máy để phát hiện hành vi bất thường.\n- o Cơ chế cách ly thiết bị nghi ngờ bị tấn công để ngăn lan truyền.\n\n#### • **Quản lý khóa và chứng chỉ**\n\n- o Tự động luân chuyển khóa định kỳ.\n- o Hủy chứng chỉ ngay khi phát hiện thiết bị bị xâm nhập.\n\n#### 4. Giám Sát Hoạt Động và Phân Tích Dữ Liệu Lớn\nKhi số lượng thiết bị lên đến hàng triệu, lượng dữ liệu thu thập mỗi ngày có thể đạt đến hàng trăm terabyte:\n\n#### • **Thu thập và lưu trữ dữ liệu**\n\n- o Sử dụng cơ sở dữ liệu time-series như InfluxDB hoặc TimescaleDB cho dữ liệu cảm biến.\n- o Hệ thống lưu trữ phân tán (HDFS, Object Storage) cho dữ liệu phi cấu trúc như video.\n\n#### • **Thu thập và lưu trữ dữ liệu**\n\no Sử dụng cơ sở dữ liệu time-series như InfluxDB hoặc TimescaleDB cho dữ liệu cảm biến.\n\no Hệ thống lưu trữ phân tán (HDFS, Object Storage) cho dữ liệu phi cấu trúc như video.\n\n#### • **Thu thập và lưu trữ dữ liệu**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "• **Bảo mật truyền thông**",
+      "start_index": 2868,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::• **Bảo mật truyền thông**",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "#### • **Thu thập và lưu trữ dữ liệu**\n\no Sử dụng cơ sở dữ liệu time-series như InfluxDB hoặc TimescaleDB cho dữ liệu cảm biến.\n\no Hệ thống lưu trữ phân tán (HDFS, Object Storage) cho dữ liệu phi cấu trúc như video.\n\n#### • **Thu thập và lưu trữ dữ liệu**\n\n- o Sử dụng cơ sở dữ liệu time-series như InfluxDB hoặc TimescaleDB cho dữ liệu cảm biến.\n- o Hệ thống lưu trữ phân tán (HDFS, Object Storage) cho dữ liệu phi cấu trúc như video.\n\n#### • **Phân tích và trực quan hóa**\n\n- o Dùng Apache Spark hoặc Flink để xử lý luồng dữ liệu thời gian thực.\n- o Dashboard Grafana, Kibana cho phép giám sát theo thời gian thực và lịch sử.\n\n### • **Phát hiện bất thường bằng AI**\n\n- o Huấn luyện mô hình học máy để dự đoán lỗi thiết bị.\n- o Cảnh báo sớm giúp giảm thời gian gián đoạn dịch vụ.\n\n## 5. Chiến Lược Bền Vững và Tuân Thủ Quy Định\n#### • **Quy định và tiêu chuẩn**\n\n- o Tuân thủ các tiêu chuẩn quốc tế như ISO/IEC 27001, GDPR cho quyền riêng tư.\n- o Đảm bảo thiết bị đạt chứng nhận CE, FCC trước khi thương mại hóa.\n\n#### • **Tối ưu chi phí vận hành**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "• **Thu thập và lưu trữ dữ liệu**",
+      "start_index": 3674,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::• **Thu thập và lưu trữ dữ liệu**",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "## 5. Chiến Lược Bền Vững và Tuân Thủ Quy Định\n#### • **Quy định và tiêu chuẩn**\n\n- o Tuân thủ các tiêu chuẩn quốc tế như ISO/IEC 27001, GDPR cho quyền riêng tư.\n- o Đảm bảo thiết bị đạt chứng nhận CE, FCC trước khi thương mại hóa.\n\n#### • **Tối ưu chi phí vận hành**\n\n- o Mô hình \"IoT as a Service\" cho phép doanh nghiệp chỉ trả tiền theo mức sử dụng.\n- o Tận dụng nguồn năng lượng tái tạo và pin mặt trời cho thiết bị ở vùng xa.\n\n#### • **Kế hoạch phục hồi thảm họa**\n\no Sao lưu dữ liệu ở nhiều khu vực địa lý.\n\n Kịch bản khôi phục nhanh khi xảy ra mất điện, cháy nổ hoặc tấn công mạng quy mô lớn.\n\n22.37.11\\_AI Race\n\n2025-09-23 22.37.11 AI Race\n\n2025-09-23 22.37.11\\_AI Race\n\n201,200",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5. Chiến Lược Bền Vững và Tuân Thủ Quy Định",
+      "start_index": 4456,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::5. Chiến Lược Bền Vững và Tuân Thủ Quy Định",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": null
+    }
+  }
+]

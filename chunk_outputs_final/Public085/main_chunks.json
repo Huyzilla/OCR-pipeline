@@ -1,0 +1,156 @@
+[
+  {
+    "page_content": "# Public_085\n\n#### 1. Giới thiệu\nNhà máy thông minh – nền tảng của Công nghiệp 4.0 – đòi hỏi mức độ tự động hóa và linh hoạt cao hơn bao giờ hết. Trong môi trường sản xuất hiện đại, dây chuyền phải thích ứng nhanh với thay đổi sản phẩm, khối lượng và yêu cầu chất lượng. Robot công nghiệp tự học chính là giải pháp: thay vì lập trình cứng, robot có khả năng học hỏi từ dữ liệu, tự tối ưu hành động và cộng tác an toàn với con người, tạo nên một thế hệ robot linh hoạt, thông minh và hiệu quả.\n\n# 2. Các loại thuật toán được sử dụng trong robot truyền thống\n## 2.1 Bất kỳ lúc nào A \\* Thuật toán\nThuật toán A \\* là một thuật toán tìm kiếm đường đi được sử dụng để tìm đường đi tối ưu nhất giữa hai điểm, tức là với chi phí nhỏ nhất.\n\nBất cứ lúc nào A \\* Algorithm có chi phí thời gian linh hoạt và có thể trả về đường đi ngắn nhất ngay cả khi nó bị gián đoạn vì nó tạo ra một giải pháp không tối ưu trước và sau đó tối ưu hóa nó.\n\nĐiều này cho phép ra quyết định nhanh hơn vì robot có thể xây dựng dựa trên các tính toán trước đó thay vì bắt đầu từ đầu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_085",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_085",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Điều này cho phép ra quyết định nhanh hơn vì robot có thể xây dựng dựa trên các tính toán trước đó thay vì bắt đầu từ đầu.\n\n## Cách sử dụng?\nNó thực hiện điều này bằng cách hình thành một 'cây' kéo dài từ nút bắt đầu cho đến khi các tiêu chí kết thúc được kích hoạt, có nghĩa là có sẵn một con đường ít tốn kém hơn.\n\nLưới 2D được tạo ra với các chướng ngại vật và ô bắt đầu và ô mục tiêu được thiết kế theo chiều nhọn.\n\nThuật toán xác định 'giá trị' của một nút bằng f là tổng các tham số g (chi phí di chuyển từ nút bắt đầu đến nút được đề cập) và h (chi phí di chuyển từ nút được đề cập đến nút đích).\n\n## Ứng dụng\nRất nhiều trò chơi và bản đồ dựa trên web sử dụng thuật toán này để tìm đường đi ngắn nhất một cách hiệu quả. Nó cũng có thể được sử dụng cho rô bốt di động.\n\nBạn cũng có thể giải quyết các vấn đề phức tạp như Newton – [Raphson](https://www.sciencedirect.com/topics/mathematics/newton-raphson-method) phép lặp được áp dụng để tìm căn bậc hai của một số.\n\nNó cũng được sử dụng trong các bài toán về quỹ đạo để dự đoán chuyển động và va chạm của một vật thể trong không gian.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1 Bất kỳ lúc nào A \\* Thuật toán",
+      "start_index": 930,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::2.1 Bất kỳ lúc nào A \\* Thuật toán",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Nó cũng được sử dụng trong các bài toán về quỹ đạo để dự đoán chuyển động và va chạm của một vật thể trong không gian.\n\n#### 2.2 Thuật toán D \\\nD \\*, D \\* và D \\* Lite tiêu điểm là các thuật toán tìm kiếm tăng dần để tìm đường đi ngắn nhất giữa hai điểm.\n\nTuy nhiên, chúng là sự kết hợp của các thuật toán A \\* và những khám phá mới cho phép họ thêm thông tin vào bản đồ của mình cho những chướng ngại vật chưa biết.\n\nSau đó, họ có thể tính toán lại một tuyến đường dựa trên thông tin mới, giống như Mars Rover.\n\n![](images/image1.jpg)\n\n#### Cách sử dụng?\nHoạt động của D \\* Algorithm tương tự như A \\*, đầu tiên thuật toán xác định f, h và tạo một danh sách mở và đóng.\n\nSau đó, Thuật toán D \\* xác định giá trị g của nút hiện tại bằng cách sử dụng giá trị g của các nút lân cận của nó.\n\nMỗi nút lân cận đưa ra phỏng đoán về giá trị g hiện tại của một nút và giá trị g ngắn nhất được điều chỉnh thành giá trị g mới.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Ứng dụng",
+      "start_index": 1902,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::Ứng dụng",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "Sau đó, Thuật toán D \\* xác định giá trị g của nút hiện tại bằng cách sử dụng giá trị g của các nút lân cận của nó.\n\nMỗi nút lân cận đưa ra phỏng đoán về giá trị g hiện tại của một nút và giá trị g ngắn nhất được điều chỉnh thành giá trị g mới.\n\n#### Ứng dụng\nD \\* và các biến thể của nó được sử dụng rộng rãi cho rô bốt di động và [xe t](https://hashdork.com/vi/thi%E1%BA%BFt-k%E1%BA%BF-h%E1%BB%87-th%E1%BB%91ng-xe-t%E1%BB%B1-h%C3%A0nh/)ự [tr](https://hashdork.com/vi/thi%E1%BA%BFt-k%E1%BA%BF-h%E1%BB%87-th%E1%BB%91ng-xe-t%E1%BB%B1-h%C3%A0nh/)ị dẫn đường.\n\nCác hệ thống định vị như vậy bao gồm một hệ thống nguyên mẫu được thử nghiệm trên tàu Mars rovers Cơ hội và Tinh thần và hệ thống định vị đã giành được Thách thức đô thị [DARPA.](https://www.darpa.mil/about-us/timeline/darpa-urban-challenge)\n\n#### 2.3 Thuật toán PRM\nPRM, hay lộ trình xác suất, là một đồ thị mạng lưới các đường đi có thể có dựa trên các không gian trống và bị chiếm dụng trên một bản đồ nhất định.\n\nChúng được sử dụng trong các hệ thống lập kế hoạch phức tạp và cũng để tìm ra các con đường chi phí thấp xung quanh các chướng ngại vật.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Cách sử dụng?",
+      "start_index": 2574,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::Cách sử dụng?",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Chúng được sử dụng trong các hệ thống lập kế hoạch phức tạp và cũng để tìm ra các con đường chi phí thấp xung quanh các chướng ngại vật.\n\nPRM sử dụng một mẫu ngẫu nhiên các điểm trên bản đồ của họ nơi thiết bị rô bốt có thể di chuyển và sau đó tính toán đường đi ngắn nhất.\n\n![](images/image2.jpg)\n\n## Cách sử dụng?\nPRM bao gồm giai đoạn xây dựng và truy vấn.\n\nTrong giai đoạn đầu, một lộ trình được vẽ biểu đồ gần đúng với các chuyển động có thể có trong một môi trường. Một cấu hình ngẫu nhiên sau đó được tạo và kết nối với một số hàng xóm.\n\nCấu hình bắt đầu và mục tiêu được kết nối với biểu đồ trong giai đoạn truy vấn. Đường dẫn sau đó thu được bởi một Con đường ngắn nhất củ[a Dijkstra](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/) truy vấn.\n\n## Ứng dụng\nPRM được sử dụng trong các nhà lập kế hoạch cục bộ, trong đó thuật toán tính toán một đường thẳng giữa hai điểm, cụ thể là điểm ban đầu và điểm mục tiêu.\n\nThuật toán cũng có thể được sử dụng để cải thiện các ứng dụng lập kế hoạch đường đi và phát hiện va chạm.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.3 Thuật toán PRM",
+      "start_index": 3549,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::2.3 Thuật toán PRM",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "## Ứng dụng\nPRM được sử dụng trong các nhà lập kế hoạch cục bộ, trong đó thuật toán tính toán một đường thẳng giữa hai điểm, cụ thể là điểm ban đầu và điểm mục tiêu.\n\nThuật toán cũng có thể được sử dụng để cải thiện các ứng dụng lập kế hoạch đường đi và phát hiện va chạm.\n\n## 2.4 Thuật toán Zero Moment Point (ZMP)\nZero Moment Point (kỹ thuật ZMP) là một thuật toán được sử dụng bởi robot để giữ cho tổng quán tính ngược với phản lực của sàn.\n\nThuật toán này sử dụng khái niệm tính toán ZMP và áp dụng nó để cân bằng robot hai chân. Sử dụng thuật toán này trên bề mặt sàn nhẵn dường như cho phép robot đi lại như thể không có giây phút nào.\n\nCác công ty sản xuất như ASIMO (Honda) sử dụng kỹ thuật này.\n\n![](images/image3.jpg)\n\n#### Cách sử dụng?\nChuyển động của rô bốt đi bộ được lập kế hoạch bằng cách sử dụng phương trình mômen động lượng. Nó đảm bảo rằng chuyển động khớp được tạo ra đảm bảo sự ổn định tư thế động học của robot.\n\nĐộ ổn định này được định lượng bằng khoảng cách của điểm không mô men (được tính toán bằng thuật toán) trong ranh giới của vùng ổn định được xác định trước.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Ứng dụng",
+      "start_index": 4334,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::Ứng dụng",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Độ ổn định này được định lượng bằng khoảng cách của điểm không mô men (được tính toán bằng thuật toán) trong ranh giới của vùng ổn định được xác định trước.\n\n### Ứng dụng\nĐiểm zero moment có thể được sử dụng làm thước đo để đánh giá độ ổn định chống lại sự cố lật của robot như iRobot PackBot khi điều hướng đường dốc và chướng ngại vật.\n\n#### 2.5 Thuật toán điều khiển vi phân tích phân tỷ lệ (PID)\nĐiều khiển vi sai tích phân tỷ lệ hoặc PID, tạo một vòng phản hồi cảm biến để điều chỉnh cài đặt cho các thành phần cơ khí bằng cách tính toán giá trị lỗi.\n\nCác thuật toán này kết hợp cả ba hệ số cơ bản, tức là tỷ lệ, tích phân và đạo hàm để tạo ra tín hiệu điều khiển.\n\nNó hoạt động trong thời gian thực và áp dụng các chỉnh sửa khi cần thiết. Điều này có thể được nhìn thấy trong [xe t](https://hashdork.com/vi/tesla-fsd-%E2%80%8B%E2%80%8Bbeta-v10/)ự lái.\n\n![](images/image4.jpg)\n\n#### Cách sử dụng?\nBộ điều khiển PID sử dụng ba thuật ngữ điều khiển là ảnh hưởng tỷ lệ, tích phân và đạo hàm trên đầu ra của nó để áp dụng điều khiển chính xác và tối ưu.\n\nBộ điều khiển này liên tục tính toán một giá trị lỗi là sự khác biệt giữa điểm đặt mong muốn và một biến quá trình đo được.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Cách sử dụng?",
+      "start_index": 5270,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Cách sử dụng?",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "#### Cách sử dụng?\nBộ điều khiển PID sử dụng ba thuật ngữ điều khiển là ảnh hưởng tỷ lệ, tích phân và đạo hàm trên đầu ra của nó để áp dụng điều khiển chính xác và tối ưu.\n\nBộ điều khiển này liên tục tính toán một giá trị lỗi là sự khác biệt giữa điểm đặt mong muốn và một biến quá trình đo được.\n\nSau đó, nó áp dụng một hiệu chỉnh để giảm thiểu lỗi theo thời gian bằng cách điều chỉnh biến điều khiển.\n\n## 3. Đặc trưng của robot tự học\n- Khả năng học tăng cường (Reinforcement Learning): Robot khám phá hành động mới, nhận phản hồi từ môi trường để cải thiện chiến lược điều khiển.\n- Học chuyển giao (Transfer Learning): Kỹ năng học được ở một nhiệm vụ (ví dụ lắp ráp linh kiện) có thể chuyển sang nhiệm vụ tương tự khác, rút ngắn thời gian đào tạo.\n- Thị giác máy tính tích hợp: Camera 3D và cảm biến độ sâu giúp robot nhận diện vật thể, vị trí và hướng, cho phép gắp nhặt vật liệu không định hình.\n- Cảm biến xúc giác và lực: Giúp điều chỉnh lực cầm nắm, giảm nguy cơ hư hỏng sản phẩm.\n- Điện toán biên (Edge AI): Xử lý dữ liệu và ra quyết định trực tiếp tại robot, giảm độ trễ so với gửi dữ liệu lên đám mây.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Cách sử dụng?",
+      "start_index": 6153,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Cách sử dụng?",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "## 4. Ứng dụng trong nhà máy thông minh\n- Lắp ráp linh kiện phức tạp: Robot học từ mẫu và tự điều chỉnh quỹ đạo khi vị trí linh kiện thay đổi.\n- Hàn và sơn tự động: Học cách tối ưu đường hàn/sơn cho các sản phẩm có hình dạng khác nhau.\n- Đóng gói và phân loại: Sử dụng thị giác để phân loại hàng hóa theo kích thước, màu sắc, tình trạng bề mặt.\n- Bảo trì và kiểm tra: Robot tự di chuyển, quét cảm biến, phát hiện hỏng hóc trong dây chuyền.\n- Cộng tác người máy (Cobots): Làm việc an toàn cùng công nhân, học cách phối hợp và chia sẻ nhiệm vụ.\n\n## 5. Lợi ích nổi bật\n- Linh hoạt sản xuất: Dễ dàng thích nghi khi thay đổi mẫu mã, số lượng sản phẩm.\n- Tăng năng suất: Giảm thời gian ngừng máy và sai sót do con người.\n- Tiết kiệm chi phí dài hạn: Dù đầu tư ban đầu cao, nhưng giảm chi phí bảo trì, đào tạo và lập trình về sau.\n- Cải thiện an toàn: Robot xử lý các nhiệm vụ nguy hiểm, giảm tai nạn lao động.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Ứng dụng trong nhà máy thông minh",
+      "start_index": 7267,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::4. Ứng dụng trong nhà máy thông minh",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "### 6. Công nghệ nền tảng\n- Mạng nơ-ron sâu (Deep Neural Networks): Giúp robot nhận diện vật thể và lập kế hoạch đường đi tối ưu.\n- Học tự giám sát (Self-Supervised Learning): Cho phép robot tận dụng dữ liệu chưa gắn nhãn để học cách cầm nắm và di chuyển.\n- Mô phỏng thực tế ảo (Simulation-to-Real Transfer): Huấn luyện robot trong môi trường ảo rồi chuyển kỹ năng sang thế giới thực, giảm chi phí thử nghiệm.\n- Kết nối IoT công nghiệp: Robot liên tục trao đổi dữ liệu với hệ thống quản lý sản xuất (MES) và kho dữ liệu lớn.\n\n#### 7. Thách thức\n• Độ tin cậy và an toàn: Robot phải bảo đảm an toàn tuyệt đối khi làm việc chung với con người.\n\n6\n\n![](images/image5.jpg)\n\n- Chi phí đầu tư ban đầu: Phần cứng, cảm biến và hệ thống AI chất lượng cao đòi hỏi vốn lớn.\n- Quản lý dữ liệu khổng lồ: Cần hạ tầng lưu trữ và xử lý dữ liệu mạnh mẽ.\n- Chuẩn hóa và tích hợp: Phải tương thích với nhiều hệ thống điều khiển và phần mềm nhà máy khác nhau.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "6. Công nghệ nền tảng",
+      "start_index": 8172,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::6. Công nghệ nền tảng",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "6\n\n![](images/image5.jpg)\n\n- Chi phí đầu tư ban đầu: Phần cứng, cảm biến và hệ thống AI chất lượng cao đòi hỏi vốn lớn.\n- Quản lý dữ liệu khổng lồ: Cần hạ tầng lưu trữ và xử lý dữ liệu mạnh mẽ.\n- Chuẩn hóa và tích hợp: Phải tương thích với nhiều hệ thống điều khiển và phần mềm nhà máy khác nhau.\n\n## 8. Tác động kinh tế – xã hội\n- Tái cấu trúc lực lượng lao động: Giảm công việc lặp lại nguy hiểm, nhưng đòi hỏi đào tạo lại nhân sự cho các vị trí quản lý và giám sát robot.\n- Tăng sức cạnh tranh toàn cầu: Doanh nghiệp có thể sản xuất với tốc độ cao, chất lượng ổn định, giảm chi phí xuất khẩu.\n- Hỗ trợ sản xuất bền vững: Robot tối ưu năng lượng, giảm lãng phí nguyên liệu.\n\n### 9. Xu hướng tương lai\n- Robot tự học đa kỹ năng: Chuyển đổi giữa nhiều tác vụ mà không cần lập trình lại.\n- Kết hợp với trí tuệ nhân tạo tạo sinh: Robot có thể tự đề xuất cách sắp xếp dây chuyền mới hoặc thiết kế công cụ tùy biến.\n- Liên kết đám mây biên: Mô hình huấn luyện lớn trên đám mây, suy luận nhanh tại robot.\n- Cộng tác liên robot: Nhiều robot giao tiếp và học lẫn nhau, tối ưu toàn bộ quy trình sản xuất\n\n![](images/image6.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "7. Thách thức",
+      "start_index": 8814,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::7. Thách thức",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": null
+    }
+  }
+]

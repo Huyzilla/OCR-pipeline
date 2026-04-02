@@ -1,0 +1,228 @@
+[
+  {
+    "page_content": "# Public_130\n\n## Chuyển động tròn không đều\nỞ chương 4, chúng ta đã khảo sát chuyển động trên một đoạn đường tròn với tốc độ thay đổi thì ngoài gia tốc hướng tâm sẽ có thêm thành phần gia tốc tiếp tuyến. Điều đó, có nghĩa là lực tác dụng lên chất điểm cũng có thể phân tích ra thành phần hướng tâm và thành phần tiếp tuyến.\n\nBởi vì, gia tốc tổng cộng có dạng: *a* = *a<sup>r</sup>* + *a<sup>t</sup>* nên tổng hợp lực tác dụng lên chất điểm được biểu diễn là:\n\nVectơ là lực hướng tâm, có chiều vào tâm của quỹ\n\n![](images/image1.jpg)\n\n*Hình 6.5: chuyển động tròn không đều*\n\nđạo tròn là lực gây ra gia tốc hướng tâm, còn vectơ tiếp tuyến với đường tròn, là lực gây ra gia tốc tiếp tuyến làm thay đổi tốc độ của chất điểm theo thời gian.\n\n*Câu hỏi 6.1:* Một hạt gỗ đục lỗ trượt dọc theo sợi dây có dạng như hình 6.6: a) Hãy vẽ các vectơ lực tác dụng lên hạt gỗ tại các vị trí A, B và C . b) Giả sử rằng hạt gỗ được tăng tốc với gia tốc tiếp tuyến không đổi khi chuyển động hướng sang phải. Hãy vẽ các vectơ lực tác dụng lên hạt gỗ tại các điểm A, B và C.\n\n![](images/image2.jpg)\n\n*Hình 6.6: một hạt gỗ chuyển động dọc theo sợi dây*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_130",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_130",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "![](images/image2.jpg)\n\n*Hình 6.6: một hạt gỗ chuyển động dọc theo sợi dây*\n\n#### Bài tập mẫu 6.5: Chuyển động tròn không đều theo phương thẳng đứng\n\nMột quả cầu nhỏ khối lương m được gắn vào đầu một sơi dây có chiều dài R và đang quay theo phương thẳng đứng quanh điểm O cố định như hình vẽ. Hãy xác định gia tốc tiếp tuyến của quả cầu và lực căng dây khi vận tốc của quả cầu là v và sợi dây tạo một với phương thẳng đứng một góc  $\\theta$ .\n\n#### Giải:\n\n**Khái niệm:** So sánh chuyển đông của quả cầu ở hình 6.7 và những đứa trẻ ở hình 6.4 thì thấy rằng cả hai đều chuyển động theo quỹ đạo tròn, nhưng điều khác ở đây là quả cầu chuyển động không đều, do đó, ở tại hầu hết các điểm trên quỹ đạo chuyển động của quả cầu, thành phần gia tốc tiếp tuyến được đóng góp bởi lực hấp dẫn.\n\n**Phân loại:** Bài toán này sẽ sử dung mô hình *chất* điểm chuyển đông dưới tổng hợp lực, và chiu tác dụng của lực hấp dẫn trong toàn bộ quá trình chuyển động.\n\nPhân tích: Từ hình 6.7, các lực tác dụng lên quả cầu chỉ có 2 lực: lực hấp dẫn của Trái Đất tác dụng lên quả cầu  $\\overrightarrow{F_q} = m.\\overrightarrow{g}$  và  $\\overrightarrow{T}$  lực căng dây.\n\nTrong lực  $F_a$  sẽ được phân tích thành 2 thành",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Chuyển động tròn không đều",
+      "start_index": 1054,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::Chuyển động tròn không đều",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Phân tích: Từ hình 6.7, các lực tác dụng lên quả cầu chỉ có 2 lực: lực hấp dẫn của Trái Đất tác dụng lên quả cầu  $\\overrightarrow{F_q} = m.\\overrightarrow{g}$  và  $\\overrightarrow{T}$  lực căng dây.\n\nTrong lực  $F_a$  sẽ được phân tích thành 2 thành\n\n![](images/image3.jpg)\n\nHình 6.7: Một quả cầu được gắn vào môt sơi dây và quay theo phương\n\nthẳng đứng.\n\nphần, theo phương tiếp tuyến là  $mgsin\\theta$  và theo phương hướng tấm là  $mgcos\\theta$ . Áp dụng định luật 2 Newton theo phương tiếp tuyến:\n\n$$\\sum F_t = mg \\sin\\theta = ma_t \\rightarrow a_t = g \\sin\\theta$$\n\nÁp dụng định luật 2 Newton theo phương hướng tâm: \n$$\\frac{mv^2}{\\sum F_r} = T - mg\\cos\\theta = ma_r = \\frac{T}{R}$$\n\nDo đó, đối với chuyển động tròn không đều. Lực căng dây được tính theo công thức:\n\n$$T = mg \\left( \\frac{v^2}{Rg} + \\cos\\theta \\right) \\tag{6.6}$$\n\nXét điểm trên cùng và dưới cùng của đường tròn. Ta thấy:\n\nLực căng tại điểm dưới cùng là lớn nhất:\n\n$$T = mg \\left( \\frac{v^2}{\\frac{bot}{r}} + 1 \\right)$$\n\n$$\\left( Rg \\right)$$\n\n$$T = mg \\left( \\frac{v_{top}}{Rg} - 1 \\right)$$\n  \nNếu lực căng tại điểm trên cùng  $T_{top} = 0$ , thì  $v_{top} = \\sqrt{gR}$ \n\n![](images/image4.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 1999,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "Lực căng tại điểm dưới cùng là lớn nhất:\n\n$$T = mg \\left( \\frac{v^2}{\\frac{bot}{r}} + 1 \\right)$$\n\n$$\\left( Rg \\right)$$\n\n$$T = mg \\left( \\frac{v_{top}}{Rg} - 1 \\right)$$\n  \nNếu lực căng tại điểm trên cùng  $T_{top} = 0$ , thì  $v_{top} = \\sqrt{gR}$ \n\n![](images/image4.jpg)\n\nLực quán tính là kết quả khi chúng ta xét chuyển động trong một hệ quy chiếu không (phi) quán tính.\n\nLực quán tính xuất hiện và tác dụng lên vật giống như một lực thực, tuy nhiên chúng ta không thể phát hiện vật thứ hai nào gây ra lực quán tính đó. Nên nhớ rằng lực thực luôn gây ra bởi tương tác giữa hai vật nào đó.\n\nLực quán tính dễ thấy nhất khi các vật chuyển động thẳng có gia tốc.\n\n#### 6.3.1 Lực ly tâm\n\nĐối với hệ quy chiếu gắn với hành khách (trên hình 6.8b), một lực xuất hiện đẩy cô ta nghiêng khỏi ghế về phía bên phải.\n\nĐối với hệ quy chiếu gắn với Trái Đất, chiếc xe hơi tác dụng một lực về bên trái vào hành khách (hình 6.8c).\n\nLực đẩy hành khách ra ngoài được gọi là lực ly tâm. Nó là lực quán tính do xuất hiện gia tốc hướng tâm khi xe chuyển hướng.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Giải:",
+      "start_index": 2894,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::Giải:",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Đối với hệ quy chiếu gắn với Trái Đất, chiếc xe hơi tác dụng một lực về bên trái vào hành khách (hình 6.8c).\n\nLực đẩy hành khách ra ngoài được gọi là lực ly tâm. Nó là lực quán tính do xuất hiện gia tốc hướng tâm khi xe chuyển hướng.\n\nCòn trên thực tế, lực ma sát chính là lực giữ cho hành khách chuyển động cùng với chiếc xe. Do đó, nếu lực ma sát không đủ lớn, hành khách sẽ tiếp tục chuyển động thẳng theo phương ban đầu theo định luật 1 Newton.\n\n#### 6.3.2 Luc Coriolis\n\nĐây là lực xuất hiện bởi sự thay đổi bán kính quỹ đạo của một vật trong một hệ quy chiếu đang quay.\n\nTrong hình vẽ 6.9, kết quả của chuyển động quay của vòng xoay là đường cong của quả bóng ném.\n\nĐối với người bắt bóng, một lực theo phương ngang tác dụng vào làm quả bóng chuyển động cong.\n\n![](images/image5.jpg)\n\n![](images/image6.jpg)\n\n![](images/image7.jpg)\n\nHình 6.8: a. Khi chiếc xe đi vào đoạn đường rẽ sang trái thì hành khách bị nghiêng sang phải, lực tác dụng: b. đối với hành khách. c. đối với Trái Đất\n\n![](images/image8.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "6.3.1 Lực ly tâm",
+      "start_index": 3704,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::6.3.1 Lực ly tâm",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "![](images/image5.jpg)\n\n![](images/image6.jpg)\n\n![](images/image7.jpg)\n\nHình 6.8: a. Khi chiếc xe đi vào đoạn đường rẽ sang trái thì hành khách bị nghiêng sang phải, lực tác dụng: b. đối với hành khách. c. đối với Trái Đất\n\n![](images/image8.jpg)\n\n*Hình 6.9: Khi 2 người bạn đứng trên một vòng xoay lớn, bạn cố gắng ném bóng thẳng về phía bạn mình. a. đối với người quan sát đứng dưới mặt đất. b. đối với người quan sát đứng cùng trên vòng quay.*\n\n#### Ví dụ về lực quán tính:\nMặc dù lực quán tính không phải lực thực, nhưng nó lại gây ra những tác động thực. Ví dụ:\n\n- Những vật trên xe hơi thường bị trượt đi.\n- Bạn cảm giác như bị đẩy ra ngoài khi ngồi trên một bề mặt đang quay.\n- Lực Coriolis chịu trách nhiệm cho chuyển động quay trong hệ thống thời tiết, bao gồm cả bão, và các dòng hải lưu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "6.3.2 Luc Coriolis",
+      "start_index": 4470,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::6.3.2 Luc Coriolis",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "- Những vật trên xe hơi thường bị trượt đi.\n- Bạn cảm giác như bị đẩy ra ngoài khi ngồi trên một bề mặt đang quay.\n- Lực Coriolis chịu trách nhiệm cho chuyển động quay trong hệ thống thời tiết, bao gồm cả bão, và các dòng hải lưu.\n\n*Câu hỏi 6.2:* Một hành khách ngồi trên xe đang rẽ trái như hình 6.8. Chọn phát biểu đúng về lực theo phương nằm ngang nếu hành khách ấy đặt tay lên cửa sổ: a) Hành khách ấy ở trạng thái cân bằng bởi lực thực tác dụng sang bên phải và lực thực tác dụng sang bên trái. b) Hành khách chịu tác dụng của lực chỉ tác dụng sang bên phải. c) Hành khách chỉ bị lực thực tác dụng sang bên trái. d) Không có phát biểu nào ở trên đúng.\n\n### 6.3.3 Lực quán tính trong chuyển động thẳng\nĐối với quan sát viên ở ngoài xe (hình a), gia tốc của quả cầu do thành phần nằm ngang của lực căng dây gây ra. Còn vật ở trạng thái cân bằng theo phương thẳng đứng\n\n$$\\sum F_x = T \\sin\\theta = ma$$\n$$\\sum F_y = T \\cos\\theta - mg = 0$$\n\n\n\n\n\n\n\n![](images/image9.jpg)\n\n*Hình 6.10: Một quả cầu nhỏ được treo trên một sợi dây cột trên trần một toa tàu. Các lực tác dụng lên quả cầu đối với: ass. hệ quy chiếu quán tính. b. hệ quy chiếu phi quán tính*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Ví dụ về lực quán tính:",
+      "start_index": 5038,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Ví dụ về lực quán tính:",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "$$\\sum F_x = T \\sin\\theta = ma$$\n$$\\sum F_y = T \\cos\\theta - mg = 0$$\n\n\n\n\n\n\n\n![](images/image9.jpg)\n\n*Hình 6.10: Một quả cầu nhỏ được treo trên một sợi dây cột trên trần một toa tàu. Các lực tác dụng lên quả cầu đối với: ass. hệ quy chiếu quán tính. b. hệ quy chiếu phi quán tính*\n\n$$\\sum F'_{x} = T \\sin \\theta - F_{fictitious} = ma$$\n$$\\sum F'_{y} = T \\cos \\theta - mg = 0$$\n\nVà hai phương trình ở hai hệ quy chiếu sẽ thỏa mãn khi:\n\n$$F_{fictiitous} = ma$$\n (6.7)\n\n# Chuyển động với lực cản\n*R* Chuyển động của một vật có thể trong một môi trường nào đó như chất lỏng, hoặc chất khí. Và môi trường sẽ tác dụng lên vật một lực cản khi vật chuyển động trong nó.\n\n*R* Độ lớn của lực cản phụ thuộc vào nhiều yếu tố như: bản chất môi trường, tốc độ của vật, hình dạng và kích thước của vật.\n\nHướng của lực cản luôn ngược với hướng chuyển động của vật so với môi trường.\n\ngần như luôn tăng cùng với sự tăng của tốc độ. Độ lớn của lực cản phức tạp vào tốc độ. Chúng ta chỉ khảo sát hai trường hợp: phụ thuộc rất *R R*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "6.3.3 Lực quán tính trong chuyển động thẳng",
+      "start_index": 5910,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::6.3.3 Lực quán tính trong chuyển động thẳng",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "<table>\n\n<tbody>\n<tr><th colspan=\"6\">Đối<br/>với<br/>quan<br/>sát<br/>viên<br/>trên<br/>xe<br/>(hình<br/>b),<br/>tổng<br/>hợp<br/>lực<br/>tác<br/>dụng<br/>lên<br/>quả<br/>cầu<br/>bằng<br/>0<br/>và<br/>vật<br/>ở<br/>trạng thái cân bằng theo cả hai phương</th></tr>\n<tr><th></th></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n</tbody>\n</table>",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "table",
+      "table_id": 1,
+      "row_start": 0,
+      "row_end": 9,
+      "section_hint": "6.3.3 Lực quán tính trong chuyển động thẳng",
+      "start_index": 5983,
+      "table_chunk_index": 0,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::6.3.3 Lực quán tính trong chuyển động thẳng",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "<table>\n\n<tbody>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n</tbody>\n</table>",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "table",
+      "table_id": 1,
+      "row_start": 8,
+      "row_end": 17,
+      "section_hint": "6.3.3 Lực quán tính trong chuyển động thẳng",
+      "start_index": 5983,
+      "table_chunk_index": 1,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::6.3.3 Lực quán tính trong chuyển động thẳng",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "<table>\n\n<tbody>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n<tr><td></td></tr>\n</tbody>\n</table>",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "table",
+      "table_id": 1,
+      "row_start": 16,
+      "row_end": 20,
+      "section_hint": "6.3.3 Lực quán tính trong chuyển động thẳng",
+      "start_index": 5983,
+      "table_chunk_index": 2,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::6.3.3 Lực quán tính trong chuyển động thẳng",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "Hướng của lực cản luôn ngược với hướng chuyển động của vật so với môi trường.\n\ngần như luôn tăng cùng với sự tăng của tốc độ. Độ lớn của lực cản phức tạp vào tốc độ. Chúng ta chỉ khảo sát hai trường hợp: phụ thuộc rất *R R*\n\n- *R* • tỉ lệ với tốc độ (*v*): *đối với* các trường hợp vật chuyển động với tốc độ nhỏ và các vật có kích thước nhỏ (ví dụ như các hạt bụi chuyển động trong không khí).\n- *R* • tỉ lệ với bình phương tốc độ ( *v* 2 ): trong trường hợp vật có kích thước lớn (ví dụ như người nhảy dù).\n\n### 6.4.1 Lực cản tỉ lệ với tốc độ\n\nLực cản có thể cho bởi công thức:\n\n$$\\vec{R} = -\\vec{bv} \\qquad (6.8)$$\n\nVới b phụ thuộc vào tính chất của môi trường và hình dáng, kích thước của vật.  $\\vec{v}$  là vận tốc của vật đối với môi trường. Dấu trừ trong công thức thể hiện lực cản ngược hướng với chiều chuyển động.\n\n## Bài tập mẫu 6.6:\n\nXét một quả cầu nhỏ có khối lượng m đang rơi trong chất lỏng từ trang thái nghỉ.\n\nNhững lực tác dụng lên vật:\n\n- Lưc cản\n- Lực hấp dẫn\n\nKết quả của chuyển động là:\n\n$$mg - bv = ma = m \\frac{dv}{dt}$$\n\n$$a = \\frac{dv}{dt} = g - \\frac{b}{m}v$$\n\nLực cản tỉ lệ với tốc độ:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Chuyển động với lực cản",
+      "start_index": 6708,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::Chuyển động với lực cản",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "## Bài tập mẫu 6.6:\n\nXét một quả cầu nhỏ có khối lượng m đang rơi trong chất lỏng từ trang thái nghỉ.\n\nNhững lực tác dụng lên vật:\n\n- Lưc cản\n- Lực hấp dẫn\n\nKết quả của chuyển động là:\n\n$$mg - bv = ma = m \\frac{dv}{dt}$$\n\n$$a = \\frac{dv}{dt} = g - \\frac{b}{m}v$$\n\nLực cản tỉ lệ với tốc độ:\n\n- Tại thời điểm ban đầu, v = 0 và dv/dt = g\n- Theo thời gian, *lực cản R tăng, còn gia tốc giảm dần*.\n\nGia tốc của vật bằng 0 khi R = mg\n\nLúc này, tốc độ v đạt đến tốc độ tốc giới hạn và không thay đổi nữa.\n\nVận tốc giới hạn\n\nĐể tìm vận tốc giới hạn, ta có a = 0\n\n$$v_T = \\frac{mg}{b}$$\n\nGiải phương trình vi phân, ta được:\n\n$$v = \\frac{mg}{b} (1 - e^{-bt/m}) = v_{\\tau} (1 - e^{-t/\\tau})$$\n\n![](images/image10.jpg)\n\n![](images/image11.jpg)\n\n![](images/image12.jpg)\n\n![](images/image13.jpg)\n\nHình 6.11: Chuyển động của một vật rơi trong chất lỏng a.,b. và đồ thị tốc độ phụ thuộc thời gian của vật đó c.\n\n2.32\\_Al Race\n\nVới *τ* là hằng số thời gian, có độ lớn: = *m b*\n\n## 6.4.2 Lực cản tỉ lệ thuận với bình phương tốc độ\n\nNhững vật chuyển động với tốc độ lớn trong không khí, lực cản của không khí sẽ tỉ lê với bình phương vân tốc:\n\n$$R = \\frac{1}{2} D\\rho A v^2$$\n (6.9)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập mẫu 6.6:",
+      "start_index": 7534,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::Bài tập mẫu 6.6:",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "2.32\\_Al Race\n\nVới *τ* là hằng số thời gian, có độ lớn: = *m b*\n\n## 6.4.2 Lực cản tỉ lệ thuận với bình phương tốc độ\n\nNhững vật chuyển động với tốc độ lớn trong không khí, lực cản của không khí sẽ tỉ lê với bình phương vân tốc:\n\n$$R = \\frac{1}{2} D\\rho A v^2$$\n (6.9)\n\nVới D là một đại lượng không thứ nguyên được gọi là hê số cản, ρ là mật đô của không khí, A là diện tích tiết diên vuông góc với vân tốc của vât, v là tốc đô của vât.\n\nKhảo sát một vật rơi trong không khí khi tính đến lực cản của không khí:\n\n$$\\sum F = mg - \\frac{1}{2}D\\rho Av^2 = ma \\ a = g - \\left(\\frac{D\\rho A}{2m}\\right)v^2$$\n\nVận tốc giới hạn sẽ đạt được khi gia tốc tiến tới 0.\n\nGiải các phương trình trên ta sẽ được: \n$$V_T = \\sqrt{\\frac{2mg}{D\\rho A}}$$\n\n![](images/image14.jpg)\n\nHình 6.12: Chuyển động của một vật rơi trong chất lỏng.\n\n(6.10)\n\nBảng 6.1: Một vài tốc đô giới han\n\n\n\n\n\n\n\n0\n\n2.32\\_AI Race\n\n2025-09-28 18.22.32 AIRace\n\n2025-09-28 18.22.32\\_Al Race",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Bài tập mẫu 6.6:",
+      "start_index": 8430,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::Bài tập mẫu 6.6:",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": "main::chunk::14"
+    }
+  },
+  {
+    "page_content": "<table>\n\n<tbody>\n<tr><th>Vật thể</th><th>Khối<br/>lượng (kg)</th><th>Diện tích mặt<br/>cắt (m²)</th><th>Vận tốc giới<br/>hạn (m/s)</th></tr>\n<tr><td>Người nhảy dù</td><td>75</td><td>0,7</td><td>60</td></tr>\n<tr><td>Quả bóng chày (bán kính 3,7 cm)</td><td>0,145</td><td>4,2.10<sup>-3</sup></td><td>43</td></tr>\n<tr><td>Quả golf (bán kính 2,1 cm)</td><td>0,046</td><td>1,4.10-3</td><td>44</td></tr>\n<tr><td>Hạt mưa đá (bán kính 0,5 cm)</td><td>4,8.10-4</td><td>7,9.10<sup>-5</sup></td><td>14</td></tr>\n<tr><td>Giọt mưa (bán kính 0,2 cm)</td><td>3,4.10-5</td><td>1,3.10<sup>-5</sup></td><td>9</td></tr>\n<tr><td>2025-09-28 18.22.32</td><td colspan=\"3\">2025-09-28 18.22.32_AI Ran</td></tr>\n</tbody>\n</table>",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "table",
+      "table_id": 2,
+      "row_start": 0,
+      "row_end": 6,
+      "section_hint": "6.4.2 Lực cản tỉ lệ thuận với bình phương tốc độ",
+      "start_index": 9291,
+      "table_chunk_index": 0,
+      "chunk_index": 14,
+      "chunk_id": "main::chunk::14",
+      "parent_id": "main::section::6.4.2 Lực cản tỉ lệ thuận với bình phương tốc độ",
+      "prev_chunk_id": "main::chunk::13",
+      "next_chunk_id": null
+    }
+  }
+]

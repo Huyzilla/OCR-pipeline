@@ -1,0 +1,184 @@
+[
+  {
+    "page_content": "# Public_079\n\n#### 1. Giới thiệu\nPhân tích ảnh y tế là một trong những ứng dụng quan trọng nhất của trí tuệ nhân tạo trong y học hiện đại. Các kỹ thuật truyền thống dựa trên đặc trưng thủ công (hand-crafted features) thường thiếu chính xác và khó tổng quát hóa cho các loại bệnh khác nhau. Mạng Thần Kinh Tích Chập (CNN) đã mở ra kỷ nguyên mới cho thị giác máy tính trong y tế, với khả năng học trực tiếp các đặc trưng từ dữ liệu hình ảnh lớn, từ đó hỗ trợ bác sĩ chẩn đoán nhanh và chính xác hơn.\n\nCNN được áp dụng trong nhiều dạng dữ liệu y khoa: ảnh X-quang, MRI (Magnetic Resonance Imaging), CT (Computed Tomography), ảnh siêu âm, và ảnh hiển vi tế bào. Nhờ khả năng tự động trích xuất đặc trưng, CNN đã trở thành nền tảng của nhiều hệ thống hỗ trợ quyết định y khoa (Clinical Decision Support Systems).\n\n#### 2. Nguyên lý hoạt động\nCNN hoạt động dựa trên các lớp tích chập (convolutional layers) và lớp gộp (pooling layers) nhằm phát hiện các mẫu không gian trong hình ảnh.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_079",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_079",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "#### 2. Nguyên lý hoạt động\nCNN hoạt động dựa trên các lớp tích chập (convolutional layers) và lớp gộp (pooling layers) nhằm phát hiện các mẫu không gian trong hình ảnh.\n\n- Lớp tích chập (Convolutional Layer): Sử dụng bộ lọc (kernel) để phát hiện đặc trưng cục bộ như cạnh, đường viền, hình dạng.\n- Lớp gộp (Pooling Layer): Giảm chiều dữ liệu, giữ lại thông tin quan trọng, tăng tính bất biến với dịch chuyển.\n- Lớp kết nối đầy đủ (Fully Connected Layer): Kết hợp các đặc trưng đã học để phân loại bệnh lý.\n- Hàm kích hoạt phi tuyến (ReLU, Sigmoid, Softmax): Giúp mô hình học được các quan hệ phức tạp.\n\nĐiểm mạnh của CNN trong y tế là khả năng học đặc trưng phù hợp từ chính dữ liệu bệnh án, thay vì phụ thuộc vào chuyên gia thiết kế đặc trưng thủ công.\n\n### 3. Cấu trúc mạng CNN\nMạng CNN là một tập hợp các lớp Convolution chồng lên nhau và sử dụng các hàm nonlinear activation như ReLU và tanh để kích hoạt các trọng số trong các node. Mỗi một lớp sau khi thông qua các hàm kích hoạt sẽ tạo ra các thông tin trừu tượng hơn cho các lớp tiếp theo.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Nguyên lý hoạt động",
+      "start_index": 809,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::2. Nguyên lý hoạt động",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "### 3. Cấu trúc mạng CNN\nMạng CNN là một tập hợp các lớp Convolution chồng lên nhau và sử dụng các hàm nonlinear activation như ReLU và tanh để kích hoạt các trọng số trong các node. Mỗi một lớp sau khi thông qua các hàm kích hoạt sẽ tạo ra các thông tin trừu tượng hơn cho các lớp tiếp theo.\n\nMỗi một lớp sau khi thông qua các hàm kích hoạt sẽ tạo ra các thông tin trừu tượng hơn cho các lớp tiếp theo. Trong mô hình mạng truyền ngược (feedforward neural network) thì mỗi neural đầu vào (input node) cho mỗi neural đầu ra trong các lớp tiếp theo.\n\nMô hình này gọi là mạng kết nối đầy đủ (fully connected layer) hay mạng toàn vẹn (affine layer). Còn trong mô hình CNNs thì ngược lại. Các layer liên kết được với nhau thông qua cơ chế convolution.\n\nLayer tiếp theo là kết quả convolution từ layer trước đó, nhờ vậy mà ta có được các kết nối cục bộ. Như vậy mỗi neuron ở lớp kế tiếp sinh ra từ kết quả của filter áp đặt lên một vùng ảnh cục bộ của neuron trước đó.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Cấu trúc mạng CNN",
+      "start_index": 1565,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::3. Cấu trúc mạng CNN",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "Layer tiếp theo là kết quả convolution từ layer trước đó, nhờ vậy mà ta có được các kết nối cục bộ. Như vậy mỗi neuron ở lớp kế tiếp sinh ra từ kết quả của filter áp đặt lên một vùng ảnh cục bộ của neuron trước đó.\n\nMỗi một lớp được sử dụng các filter khác nhau thông thường có hàng trăm hàng nghìn filter như vậy và kết hợp kết quả của chúng lại. Ngoài ra có một số layer khác như pooling/subsampling layer dùng để chắt lọc lại các thông tin hữu ích hơn (loại bỏ các thông tin nhiễu).\n\nTrong quá trình huấn luyện mạng (traning) CNN tự động học các giá trị qua các lớp filter dựa vào cách thức mà bạn thực hiện. Ví dụ trong tác vụ phân lớp ảnh, CNNs sẽ cố gắng tìm ra thông số tối ưu cho các filter tương ứng theo thứ tự raw pixel > edges > shapes > facial > high-level features. Layer cuối cùng được dùng để phân lớp ảnh.\n\n![](images/image1.jpg)\n\nTrong mô hình CNN có 2 khía cạnh cần quan tâm là **tính bất biến** (Location Invariance) và **tính kết hợp** (Compositionality). Với cùng một đối tượng, nếu đối tượng này được chiếu theo các gốc độ khác nhau (translation, rotation, scaling) thì độ chính xác của thuật toán sẽ bị ảnh hưởng đáng kể.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Cấu trúc mạng CNN",
+      "start_index": 2313,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::3. Cấu trúc mạng CNN",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Trong mô hình CNN có 2 khía cạnh cần quan tâm là **tính bất biến** (Location Invariance) và **tính kết hợp** (Compositionality). Với cùng một đối tượng, nếu đối tượng này được chiếu theo các gốc độ khác nhau (translation, rotation, scaling) thì độ chính xác của thuật toán sẽ bị ảnh hưởng đáng kể.\n\nPooling layer sẽ cho bạn tính bất biến đối với phép dịch chuyển (translation), phép quay (rotation) và phép co giãn (scaling). Tính kết hợp cục bộ cho ta các cấp độ biểu diễn thông tin từ mức độ thấp đến mức độ cao và trừu tượng hơn thông qua convolution từ các filter.\n\nĐó là lý do tại sao CNNs cho ra mô hình với độ chính xác rất cao. Cũng giống như cách con người nhận biết các vật thể trong tự nhiên.\n\nMạng CNN sử dụng 3 ý tưởng cơ bản:\n\n- **các trường tiếp nhận cục bộ** (local receptive field)\n- **trọng số chia sẻ** (shared weights)\n\n• **tổng hợp** (pooling).\n\n## 3.1 Trường tiếp nhận cục bộ (local receptive field)\nĐầu vào của mạng CNN là một ảnh. Ví dụ như ảnh có kích thước 28×28 thì tương ứng đầu vào là một ma trận có 28×28 và giá trị mỗi điểm ảnh là một ô trong ma trận. Trong mô hình mạng ANN truyền thống thì chúng ta sẽ kết nối các neuron đầu vào vào tầng ảnh.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Cấu trúc mạng CNN",
+      "start_index": 3161,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::3. Cấu trúc mạng CNN",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "Tuy nhiên trong CNN chúng ta không làm như vậy mà chúng ta chỉ kết nối trong một vùng nhỏ của các neuron đầu vào như một filter có kích thước 5×5 tương ứng (28- 5 + 1) 24 điểm ảnh đầu vào. Mỗi một kết nối sẽ học một trọng số và mỗi neuron ẩn sẽ học một bias. Mỗi một vùng 5×5 đấy gọi là một trường tiếp nhận cục bộ.\n\n![](images/image2.jpg)\n\nMột cách tổng quan, ta có thể tóm tắt các bước tạo ra 1 hidden layer bằng các cách sau:\n\n![](images/image3.jpg)\n\n# 1. **Tạo ra neuron ẩn đầu tiên trong lớp ẩn 1**\n\n![](images/image4.jpg)\n\n## 2. **Dịch filter qua bên phải một cột sẽ tạo được neuron ẩn thứ 2.**\n\n![](images/image5.jpg)\n\nvới bài toán nhận dạng ảnh người ta thường gọi ma trận lớp đầu vào là feature map, trọng số xác định các đặc trương là shared weight và độ lệch xác định một feature map là shared bias. Như vậy đơn giản nhất là qua các bước trên chúng ta chỉ có 1 feature map. Tuy nhiên trong nhận dạng ảnh chúng ta cần nhiều hơn một\n\n4\n\nfeature map.\n\n![](images/image6.jpg)\n\nNhư vậy, local receptive field thích hợp cho việc phân tách dữ liệu ảnh, giúp chọn ra những vùng ảnh có giá trị nhất cho việc đánh giá phân lớp.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.1 Trường tiếp nhận cục bộ (local receptive field)",
+      "start_index": 4338,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::3.1 Trường tiếp nhận cục bộ (local receptive field)",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "4\n\nfeature map.\n\n![](images/image6.jpg)\n\nNhư vậy, local receptive field thích hợp cho việc phân tách dữ liệu ảnh, giúp chọn ra những vùng ảnh có giá trị nhất cho việc đánh giá phân lớp.\n\n### 3.2 Trọng số chia sẻ (shared weight and bias)\nĐầu tiên, các trọng số cho mỗi filter (kernel) phải giống nhau. Tất cả các nơ-ron trong lớp ẩn đầu sẽ phát hiện chính xác feature tương tự chỉ ở các vị trí khác nhau trong hình ảnh đầu vào. Chúng ta gọi việc map từ input layer sang hidden layer là một feature map. Vậy mối quan hệ giữa số lượng Feature map với số lượng tham số là gì?",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. **Dịch filter qua bên phải một cột sẽ tạo được neuron ẩn thứ 2.**",
+      "start_index": 5281,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::2. **Dịch filter qua bên phải một cột sẽ tạo được neuron ẩn thứ 2.**",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "*Chúng ta thấy mỗi fearture map cần 25 = 5×5 shared weight và 1 shared bias. Như vậy mỗi feature map cần 5×5+1 = 26 tham số. Như vậy nếu có 10 feature map thì có 10×26 = 260 tham số. Chúng ta xét lại nếu layer đầu tiên có kết nối đầy đủ nghĩa là chúng ta có 28×28=784 neuron đầu vào như vậy ta chỉ có 30 neuron ẩn. Như vậy ta cần 28x28x30 shared weight và 30 shared bias. Tổng số tham số là 28x28x30+30 tham số lớn hơn nhiều so với CNN. Ví dụ vừa rồi chỉ mô tả để thấy được sự ước lượng số lượng tham số chứ chúng ta không so sánh được trực tiếp vì 2 mô hình khác nhau. Nhưng điều chắc chắn là nếu mô hình có số lượng tham số ít hơn thì nó sẽ chạy nhanh hơn.*\n\nXem tiếp...\n\nTóm lại, một convolutional layer bao gồm các feature map khác nhau. Mỗi một feature map giúp detect một vài feature trong bức ảnh. Lợi ích lớn nhất của trọng số chia sẻ là giảm tối đa số lượng tham số trong mạng CNN.\n\n### 3.3 Lớp tổng hợp (pooling layer)\nLớp pooling thường được sử dụng ngay sau lớp convulational để đơn giản hóa thông tin đầu ra để giảm bớt số lượng neuron.\n\n![](images/image7.jpg)\n\nThủ tục pooling phổ biến là max-pooling, thủ tục này chọn giá trị lớn nhất trong\n\n![](images/image8.jpg)\n\nvùng đầu vào 2×2.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.2 Trọng số chia sẻ (shared weight and bias)",
+      "start_index": 5854,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::3.2 Trọng số chia sẻ (shared weight and bias)",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "![](images/image7.jpg)\n\nThủ tục pooling phổ biến là max-pooling, thủ tục này chọn giá trị lớn nhất trong\n\n![](images/image8.jpg)\n\nvùng đầu vào 2×2.\n\nNhư vậy qua lớp Max Pooling thì số lượng neuron giảm đi phân nửa. Trong một mạng CNN có nhiều Feature Map nên mỗi Feature Map chúng ta sẽ cho mỗi Max Pooling khác nhau. Chúng ta có thể thấy rằng Max Pooling là cách hỏi xem trong các đặc trưng này thì đặc trưng nào là đặc trưng nhất. Ngoài Max Pooling còn có L2 Pooling.\n\nCuối cùng ta đặt tất cả các lớp lại với nhau thành một CNN với đầu ra gồm các neuron với số lượng tùy bài toán.\n\n6\n\n![](images/image9.jpg)\n\n2 lớp cuối cùng của các kết nối trong mạng là một lớp đầy đủ kết nối (fully connected layer) . Lớp này nối mọi nơron từ lớp max pooled tới mọi nơron của tầng ra.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.3 Lớp tổng hợp (pooling layer)",
+      "start_index": 6905,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::3.3 Lớp tổng hợp (pooling layer)",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "6\n\n![](images/image9.jpg)\n\n2 lớp cuối cùng của các kết nối trong mạng là một lớp đầy đủ kết nối (fully connected layer) . Lớp này nối mọi nơron từ lớp max pooled tới mọi nơron của tầng ra.\n\n# 4. Ứng dụng trong phân tích ảnh y tế\n- Chẩn đoán bệnh phổi từ ảnh X-quang: CNN có thể phát hiện viêm phổi, lao, hoặc COVID-19 với độ chính xác cao.\n- Phát hiện khối u từ MRI và CT: Hỗ trợ xác định kích thước, vị trí, và giai đoạn của khối u não, gan, hoặc phổi.\n- Phân đoạn polyp và tổn thương nội soi: CNN giúp phát hiện polyp ruột kết sớm, hỗ trợ phòng ngừa ung thư.\n- Nhận diện tế bào bất thường từ ảnh hiển vi: Ứng dụng trong xét nghiệm máu hoặc tế bào học (cytology).\n- Hỗ trợ phẫu thuật thông minh: Kết hợp CNN với hình ảnh thời gian thực từ camera nội soi để dẫn hướng phẫu thuật.\n\n### 5. Kiến trúc CNN phổ biến trong y tế\n- LeNet và AlexNet: Các mô hình khởi đầu, thường dùng cho dữ liệu ít phức tạp.\n- VGGNet, ResNet, DenseNet: Khả năng học sâu, xử lý dữ liệu ảnh y tế có độ phân giải cao.\n- U-Net: Chuyên biệt cho bài toán phân đoạn ảnh y tế, nổi bật trong phân đoạn MRI, CT và ảnh nội soi.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3.3 Lớp tổng hợp (pooling layer)",
+      "start_index": 7489,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::3.3 Lớp tổng hợp (pooling layer)",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "• EfficientNet: Cân bằng hiệu quả giữa độ chính xác và tốc độ tính toán, phù hợp cho hệ thống y tế thời gian thực.\n\nNgoài ra, các mô hình mới như Vision Transformer (ViT) đang dần kết hợp với CNN để nâng cao khả năng xử lý hình ảnh y tế phức tạp.\n\n## 6. Lợi ích trong y tế\n- Chẩn đoán nhanh hơn: CNN phân tích hàng nghìn hình ảnh chỉ trong vài phút, hỗ trợ bác sĩ tiết kiệm thời gian.\n- Độ chính xác cao: Phát hiện những chi tiết tinh vi mà mắt thường có thể bỏ sót.\n- Hỗ trợ quyết định lâm sàng: Giúp bác sĩ có thêm bằng chứng trong quá trình chẩn đoán.\n- Giảm chi phí: Tự động hóa quy trình đọc phim, giảm tải cho nhân lực y tế.\n- Cá nhân hóa điều trị: Kết hợp CNN với dữ liệu bệnh nhân để dự đoán đáp ứng thuốc hoặc kết quả điều trị.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5. Kiến trúc CNN phổ biến trong y tế",
+      "start_index": 8583,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::5. Kiến trúc CNN phổ biến trong y tế",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "# 7. Thách thức và hạn chế\n- Thiếu dữ liệu gắn nhãn: Dữ liệu y tế lớn nhưng việc gắn nhãn yêu cầu bác sĩ, tốn kém thời gian.\n- Chênh lệch dữ liệu (Data Shift): Mô hình huấn luyện trên dữ liệu bệnh viện này có thể hoạt động kém trên bệnh viện khác.\n- Giải thích mô hình (Explainability): CNN thường bị coi là \"hộp đen\", khó giải thích kết quả cho bác sĩ.\n- Vấn đề đạo đức và pháp lý: Liên quan đến bảo mật dữ liệu bệnh nhân và trách nhiệm pháp lý khi AI chẩn đoán sai.\n- Yêu cầu tính toán cao: Đào tạo CNN cần GPU/TPU mạnh, khó triển khai tại bệnh viện nhỏ.\n\n#### 8. Xu hướng tương lai\n- CNN kết hợp với Explainable AI (XAI): Tạo bản đồ nhiệt (heatmap) hiển thị vùng ảnh mà mô hình tập trung, giúp bác sĩ hiểu và tin tưởng hơn.\n- Học chuyển giao (Transfer Learning): Sử dụng mô hình tiền huấn luyện từ tập dữ liệu lớn để áp dụng vào lĩnh vực y tế, giảm nhu cầu dữ liệu nhãn.\n- Liên kết với Federated Learning: Nhiều bệnh viện cùng huấn luyện mô hình CNN mà không cần chia sẻ dữ liệu bệnh nhân, đảm bảo quyền riêng tư.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "7. Thách thức và hạn chế",
+      "start_index": 9321,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::7. Thách thức và hạn chế",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "- Ứng dụng mô hình nhẹ (Lightweight CNN): Tối ưu để chạy trên thiết bị cầm tay, máy siêu âm di động hoặc edge device trong bệnh viện.\n- Kết hợp CNN và Transformer: Tận dụng khả năng trích xuất đặc trưng cục bộ (CNN) và quan hệ toàn cục (Transformer) để nâng cao độ chính xác.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "8. Xu hướng tương lai",
+      "start_index": 10339,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::8. Xu hướng tương lai",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": null
+    }
+  }
+]

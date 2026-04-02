@@ -1,0 +1,114 @@
+[
+  {
+    "page_content": "# Public_011\n\n# 1. Lịch sử phát triển của mạng máy tính\n*Khái niệm mạng máy tính:*\n\n*Mạng máy tính* hay *mạng* (*computer network, network*) là một tập hợp gồm nhiều máy tính hoặc thiết bị xử lý thông tin được kết nối với nhau qua các đường truyền và có sự trao đổi dữ liệu với nhau.\n\nNhờ có mạng máy tính, thông tin từ một máy tính có thể được truyền sang máy tính khác. Có thể ví mạng máy tính như một hệ thống giao thông vận tải mà hàng hoá trên mạng là dữ liệu, máy tính là nhà máy lưu trữ xử lý dữ liệu, hệ thống đường truyền như là hệ thống đường sá giao thông.\n\n*Ví dụ về mạng*:\n\n- Mạng tại Trung tâm Máy tính, Khoa CNTT, Trường ĐHBK Hà Nội\n- Mạng của Tổng cục thuế\n- Mạng Internet\n\n*Lịch sử phát triển của mạng:*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_011",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_011",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "*Ví dụ về mạng*:\n\n- Mạng tại Trung tâm Máy tính, Khoa CNTT, Trường ĐHBK Hà Nội\n- Mạng của Tổng cục thuế\n- Mạng Internet\n\n*Lịch sử phát triển của mạng:*\n\n- Máy tính ra đời từ những năm 1950. Đến đầu những năm 1960 mạng máy tính bắt đầu xuất hiện. Lúc đầu mạng có dạng là một máy tính lớn nối với nhiều trạm cuối (*terminal*). Đến đầu những năm 1970 mạng máy tính là các máy tính độc lập được nối với nhau. Qui mô và mức độ phức tạp của mạng ngày càng tăng.\n- Hiện nay mạng máy tính phát triển rất mạnh ở mọi lĩnh vực mọi nơi. Ngày càng hiếm các máy tính đơn lẻ, không nối mạng. Ngay các máy tính cá nhân ở gia đình cũng được kết nối Internet qua đường điện thoại. Mạng trở thành một yếu tố không thể thiếu của công nghệ thông tin nói riêng, cũng như đời sống nói chung.\n\n#### 2. Phân loại mạng máy tính\nCó nhiều cách phân loại mạng máy tính. Sau đây là một số cách phân loại thông dụng.\n\n*Cách 1.* Theo mối quan hệ giữa các máy trong mạng",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Lịch sử phát triển của mạng máy tính",
+      "start_index": 569,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Lịch sử phát triển của mạng máy tính",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "#### 2. Phân loại mạng máy tính\nCó nhiều cách phân loại mạng máy tính. Sau đây là một số cách phân loại thông dụng.\n\n*Cách 1.* Theo mối quan hệ giữa các máy trong mạng\n\n- *Mạng bình đẳng (peer-to-peer)* các máy có quan hệ ngang hàng, một máy có thể yêu cầu một máy khác phục vụ.\n- *Mạng khách/chủ* (*client/server*). Một số máy là server (máy chủ) chuyên phục vụ các máy khác gọi là máy khách (client) hay máy trạm (workstation) khi có yêu cầu. Các dịch vụ có thể là cung cấp thông tin, tính toán hay các dịch vụ Internet.\n\n- *Cách 2.* Theo qui mô địa lý. Tuỳ theo qui mô địa lý, có thể phân ra ba loại chính là:\n  - *LAN* (*Local Area Network)* mạng cục bộ ở trong phạm vi nhỏ, ví dụ bán kính 500m, số lượng máy tính không quá nhiều, mạng không quá phức tạp.\n  - *WAN (Wide Area Network)* mạng diện rộng, các máy tính có thể ở các thành phố khác nhau. Bán kính có thể 100-200 km. Ví dụ mạng của Tổng cục thuế.\n  - *GAN (Global Area Network)* mạng toàn cầu, máy tính ở nhiều nước khác nhau. Thường mạng toàn cầu là kết hợp của nhiều mạng con. Ví dụ mạng Internet.\n\n# 3. Các thành phần cơ bản của một mạng máy tính\nMột mạng máy tính có thể có các thành phần sau:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2. Phân loại mạng máy tính",
+      "start_index": 1339,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::2. Phân loại mạng máy tính",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "# 3. Các thành phần cơ bản của một mạng máy tính\nMột mạng máy tính có thể có các thành phần sau:\n\n- *Các máy tính*\n  - o Để xử lý, lưu trữ và trao đổi thông tin. Ta cũng thường gọi mỗi máy tính trong mạng máy tính là một *nút* của mạng.\n- *Vỉ mạng*\n  - o Vỉ mạng (Network Interface Card, NIC) cho mỗi máy tính có chức năng giao tiếp giữa máy tính và đường truyền.\n- *Đường truyền*\n  - o Đường truyền, chính xác hơn còn gọi là đường truyền vật lý, là phương tiện (media) truyền tải thông tin dữ liệu, là nơi trên đó thông tin dữ liệu được truyền đi. Ta có thể chia đường truyền thành hai loại là *hữu tuyến* và *vô tuyến*.\n- *Các thiết bị kết nối mạng*\n  - o Để liên kết các máy tính và các mạng với nhau như HUB, SWITCH, ROUTER, …\n- *Các thiết bị đầu cuối (terminal). Ví dụ:…?*\n- *Các phụ kiện mạng*\n  - o Các phụ kiện mạng khác gồm giắc cắm, ổ cắm, ….\n- *Hệ điều hành mạng*\n  - o Hệ điều hành mạng là một phần mềm điều khiển sự hoạt động của mạng.\n- C*ác phần mềm mạng cho máy tính*",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Các thành phần cơ bản của một mạng máy tính",
+      "start_index": 2404,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::3. Các thành phần cơ bản của một mạng máy tính",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "- o Hiện nay nói chung các hệ điều hành đều sẵn có khả năng kết nối mạng. Trong trường hợp hệ điều hành của máy tính không có sẵn khả năng kết nối mạng thì các phần mềm này là cần thiết.\n- *Các ứng dụng trên mạng.*\n  - o Ví dụ như Email, hệ quản trị cơ sở dữ liệu.\n- *Kiến trúc mạng máy tính*\n  - o *Kiến trúc mạng máy tính* (network architecture) thể hiện cách kết nối máy tính với nhau và qui ước truyền dữ liệu giữa các máy tính như thế nào. Cách nối các máy tính với nhau gọi là *hình trạng* (*topology*) của mạng. Tập các qui ước truyền thông gọi là *giao thức* (*protocol).*\n- Có hai kiểu nối mạng chủ yếu là *điểm-điểm* (point to point) và *quảng bá* (broadcast).\n- Trong kiểu điểm-điểm các đường truyền nối các nút thành từng cặp. Như vậy một nút sẽ gửi dữ liệu đến nút lân cận nó (nút được nối trực tiếp với nó). Nút lân cận sẽ chuyển tiếp dữ liệu như vậy cho đến khi dữ liệu đến đích.\n\nKiểu nối mạng điểm- điểm có ba dạng chính là : hình sao (*star*), chu trình (*loop*), cây (*tree*) và đầy đủ (*complete*).\n\n![](images/image1.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Các thành phần cơ bản của một mạng máy tính",
+      "start_index": 3389,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::3. Các thành phần cơ bản của một mạng máy tính",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "Kiểu nối mạng điểm- điểm có ba dạng chính là : hình sao (*star*), chu trình (*loop*), cây (*tree*) và đầy đủ (*complete*).\n\n![](images/image1.jpg)\n\nTrong kiểu quảng bá các nút nối vào đường truyền chung. Như vậy khi một nút gửi dữ liệu các nút còn lại đều nhận được. Do đó dữ liệu gửi đi cần có địa chỉ đích. Khi một nút nhận được dữ liệu nó sẽ kiểm tra địa chỉ đích xem có phải gửi cho mình không.\n\n![](images/image2.jpg)\n\n### 4. Mạng Internet\n# Khái niệm về Internet\n*Internet* là một mạng máy tính có qui mô toàn cầu (GAN), gồm rất nhiều mạng con và máy tính nối với nhau bằng nhiều loại phương tiện truyền. Internet không thuộc sở hữu của ai cả. Chỉ có các uỷ ban điều phối và kỹ thuật giúp điều hành Internet.\n\nBan đầu là mạng của Bộ Quốc phòng Mỹ (DoD) dùng để đảm bảo liên lạc giữa các đơn vị quân đội. Sau đó phát triển thành mạng cho các trường đại học và viện nghiên cứu. Cuối cùng mạng có qui mô toàn cầu và trở thành mạng Internet.\n\n*Các dịch vụ chính của Internet*\n\nTa có thể dùng Internet để thực hiện nhiều dịch vụ mạng. Các dịch vụ thông dụng nhất trên\n\nInternet hiện nay là:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "3. Các thành phần cơ bản của một mạng máy tính",
+      "start_index": 4285,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::3. Các thành phần cơ bản của một mạng máy tính",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "*Các dịch vụ chính của Internet*\n\nTa có thể dùng Internet để thực hiện nhiều dịch vụ mạng. Các dịch vụ thông dụng nhất trên\n\nInternet hiện nay là:\n\n- Truyền thông tin (FTP, File Transfer Protocol)\n- Truy nhập máy tính từ xa (telnet)\n- Web (WWW) để tìm kiếm và khai thác thông tin trên mạng\n- Thư điện tử (E-mail)\n- Tán gẫu (Chat) trên mạng…\n\n### Lợi ích của Internet\nTrong thời đại của công nghệ thông tin hiện nay Internet có nhiều lợi ích như truyền tin, phổ biến tin, thu thập tin, trao đổi tin một cách nhanh chóng thuận tiện rẻ tiền hơn so với các phương tiện khác như điện thoại, fax. Internet ảnh hưởng đến toàn bộ thế giới đến mọi ngành, mọi lĩnh vực xã hội. Hiện nay Internet thành một yếu tố quan trọng không thiếu được trong thời đại hiện nay, có mặt ở mọi nơi, mọi lĩnh vực, mọi ngành.\n\n*Làm sao để có được các dịch vụ Internet*\n\nĐể kết nối được Internet ta cần :",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Khái niệm về Internet",
+      "start_index": 5230,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Khái niệm về Internet",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "*Làm sao để có được các dịch vụ Internet*\n\nĐể kết nối được Internet ta cần :\n\n- Máy tính có Modem (Dial-up, ADSL) hoặc card mạng.\n- Có thuê bao kết nối với Internet: qua mạng, qua đường điện thoại, đường thuê riêng của bưu điện. Thông thường hiện nay kết nối qua điện thoại hoặc qua ADSL\n- Có tài khoản Internet ở trên mạng hay ở một nhà cung cấp dịch vụ Internet (Internet Service Provider, ISP), ví dụ như VNN, FPT.\n\n• Có phần mềm Internet thông dụng như Web browser để xem trang web, ví dụ IE, FireFox, phần mềm để xem thư hay chat như Outlook, Messenger.\n\n2025-09-23 22.58.33\\_AI Race\n\n2025-09-23 22.58.33 AI Race\n\n2025-09-23 22.58.33",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Lợi ích của Internet",
+      "start_index": 6029,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Lợi ích của Internet",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": null
+    }
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "page_content": "# Public_190\n\n# 1. CƠ SỞ LÝ THUYẾT\n# 1.1 Tổng quan về cơ sở dữ liệu Oracle\nOracle Database là một trong những hệ thống quản lý cơ sở dữ liệu quan hệ (RDBMS – Relational Database Management System) hàng đầu trên thị trường. Theo xếp hạng của [DB-Engines,](https://db-engines.com/en/ranking/relational+dbms) Oracle Database đứng đầu trong số 380 hệ thống cơ sở dữ liệu phổ biến nhất, ngay sau đó là MySQL và Microsoft SQL Server.\n\nOracle Database là sản phẩm độc quyền của Oracle – nhà cung cấp các sản phẩm và dịch vụ công nghệ đa dạng hàng đầu thế giới. Phiên bản Oracle Database đầu tiên được tung ra thị trường vào năm 1979. Hiện tại, phiên bản dài hạn Oracle Database 19c và phiên bản phát triển Oracle Database 21c là 2 phiên bản phổ biến, có sẵn cho người dùng cài đặt và vẫn tiếp tục được hỗ trợ bởi Oracle.\n\nOracle Database được sử dụng phổ biến nhờ cách tổ chức và trình bày dữ liệu một cách trực quan và hiệu quả. Ngoài ra, các công ty có thể sử dụng Oracle Database trong môi trường trên nền tảng cục bộ (on-premise) hoặc điện toán đám mây (cloud computing).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_190",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_190",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "Oracle Database được sử dụng phổ biến nhờ cách tổ chức và trình bày dữ liệu một cách trực quan và hiệu quả. Ngoài ra, các công ty có thể sử dụng Oracle Database trong môi trường trên nền tảng cục bộ (on-premise) hoặc điện toán đám mây (cloud computing).\n\n### 1.2 Các tính năng của Oracle\n#### Quản lý\nOracle Database cung cấp các công cụ mạnh mẽ để quản lý dữ liệu, bao gồm lưu trữ, chỉnh sửa, truy xuất và phân quyền. Phần mềm cũng hỗ trợ các loại dữ liệu khác nhau, bao gồm dữ liệu có cấu trúc và phi cấu trúc, đồng thời cung cấp các công cụ để quản lý lượng dữ liệu lớn.\n\n# Tối ưu hiệu suất\nOracle Database bao gồm các kỹ thuật hỗ trợ gia tăng hiệu suất và xử lý dữ liệu nhanh chóng như: Thuật toán tối ưu truy vấn, tạo chỉ mục, phân vùng bảng và xử lý song song.\n\n### Khả năng mở rộng\nOracle Database có thể xử lý các khối lượng dữ liệu lớn và mở rộng khi nhu cầu sử dụng của người dùng phát triển. Phần mềm hỗ trợ mở rộng theo chiều ngang (thêm máy tính vào mạng) và theo chiều dọc (thêm công suất vào máy tính hiện có).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.1 Tổng quan về cơ sở dữ liệu Oracle",
+      "start_index": 815,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1.1 Tổng quan về cơ sở dữ liệu Oracle",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "### Khả năng mở rộng\nOracle Database có thể xử lý các khối lượng dữ liệu lớn và mở rộng khi nhu cầu sử dụng của người dùng phát triển. Phần mềm hỗ trợ mở rộng theo chiều ngang (thêm máy tính vào mạng) và theo chiều dọc (thêm công suất vào máy tính hiện có).\n\n## Bảo mật\nOracle Database cung cấp các tính năng bảo mật mạnh mẽ để bảo vệ dữ liệu của người dùng khỏi bị truy cập trái phép và các mối đe dọa số khác. Các tính năng này bao gồm mã hóa dữ liệu, xác thực người dùng, kiểm soát truy cập và dễ dàng truy nguồn.\n\n# Duy trì hoạt động ổn định\nOracle Database cung cấp các tính năng để đảm bảo rằng cơ sở dữ liệu luôn có thể truy cập và vận hành ổn định bao gồm: sao lưu trên nhiều máy và phục hồi dữ liệu khi cần, khả năng chuyển đổi hệ thống khi gặp sự cố.\n\n# Tích hợp\nOracle Database có thể tích hợp với các sản phẩm Oracle khác và các ứng dụng của bên thứ ba, cung cấp một giải pháp quản lý dữ liệu toàn diện mạnh mẽ và thống nhất.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Khả năng mở rộng",
+      "start_index": 1583,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::Khả năng mở rộng",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "#### 1.3 Các phiên bản khác của Oracle\n1. Oracle Database Standard Edition: Phiên bản này cung cấp các tính năng cơ bản để quản lý dữ liệu dành cho doanh nghiệp SMEs vừa và nhỏ. Oracle Database Standard Edition sở hữu các tính năng quản lý dữ liệu, cùng tính sẵn có và khả năng bảo mật cao.\n2. Oracle Database Enterprise Edition: Phiên bản này cung cấp các tính năng tiên tiến để quản lý dữ liệu trong các doanh nghiệp lớn. Oracle Database Enterprise Edition bao gồm tất cả các tính năng của phiên bản Standard Edition, cộng thêm các tính năng bổ sung dành cho việc tối ưu hóa hiệu suất, cùng khả năng mở rộng, quản lý dữ liệu (data warehousing) và phân tích.\n3. Oracle Database Express Edition (XE): Đây là một phiên bản miễn phí của Oracle Database dành cho mục đích học và luyện tập phát triển phần mềm. Oracle Database Express Edition có những hạn chế về chức năng và dung lượng lưu trữ.\n4. Oracle Database Personal Edition: Phiên bản này được thiết kế cho môi trường sử dụng đơn người dùng. Oracle Database Personal Edition bao gồm tất cả các tính năng của phiên bản Enterprise Edition nhưng được cấp phép cho duy nhất 1 người sử dụng.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.3 Các phiên bản khác của Oracle",
+      "start_index": 2522,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::1.3 Các phiên bản khác của Oracle",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "# 1.4 Những điểm nổi bật của hệ điều hành Ubuntu\nƯu điểm và hạn chế của Oracle Database phụ thuộc chủ yếu vào nhu cầu sử dụng của người dùng cũng như chi phí, năng lực kỹ thuật và kỹ năng lập trình.\n\n#### Ưu điểm của Oracle Database\n1. Tính tương thích cao với tất cả các nền tảng và ứng dụng\n2. Oracle Database là mô hình Database-as-a-Service tùy chọn, cho phép các cơ sở dữ liệu quan hệ được lưu trữ và quản lý trong Oracle Cloud, giúp đảm bảo sử dụng tối ưu CPU, phần cứng và dung lượng lưu trữ, cũng như việc outsourcing các nhiệm vụ quản lý cơ sở dữ liệu quản trị.\n3. Được hỗ trợ bởi tất cả các nhà cung cấp phần mềm và phần cứng lớn trên thế giới\n\n![](images/image1.jpg)\n\n4. Cung cấp các phiên bản khác nhau đa dạng, từ miễn phí cho nhu cầu cá nhân đến trả phí cho nhu cầu doanh nghiệp\n5. Cộng đồng Oracle khá lớn và sẵn sàng hỗ trợ lẫn nhau\n6. Cung cấp các tính năng bảo mật và quyền riêng tư mạnh mẽ (Ví dụ: tính năng xác thực và phê duyệt quyền truy cập, tính năng mã hóa dữ liệu và mạng,…)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.4 Những điểm nổi bật của hệ điều hành Ubuntu",
+      "start_index": 3664,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::1.4 Những điểm nổi bật của hệ điều hành Ubuntu",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "# Hạn chế của Oracle Database\n1. Kiến thức SQL và kinh nghiệm quản lý cơ sở dữ liệu là điều kiện tiên quyết để lập trình viên có thể sử dụng phiên bản trên máy chủ cục bộ của Oracle\n2. Giấy phép Oracle có chi phí khá đắt đỏ (phiên bản Standard Edition yêu cầu chi phí khoảng 17.000 USD, phiên bản Enterprise Edition yêu cầu chi phí khoảng 40.000 USD)\n3. Oracle Database có yêu cầu về tiêu chuẩn phần cứng cao cho phiên bản trên máy chủ cục bộ vận hành tại chỗ (on-premise)\n\n#### 1.5 Các công cụ cơ bản của Oracle Database\n# SQL\\*Plus\nPhần mềm editor dành cho việc quản lý cơ sở dữ liệu, cho phép nhập lệnh, truy vấn dữ liệu và thực hiện thay đổi hoặc xóa các tập tin trong cơ sở dữ liệu.\n\n### Oracle SQL Developer\nPhần mềm Java miễn phí có giao diện đồ họa giúp tạo hoặc chỉnh sửa code, quản lý SQL scripts, phân tích dữ liệu, tạo hoặc sửa lỗi các procedure (Procedure – thủ tục trong SQL là một tập hợp các câu lệnh SQL được gán tên và lưu trữ trong hệ thống quản lý cơ sở dữ liệu quan hệ, giúp giảm thời gian thực thi bằng cách cho phép gọi lại lệnh nhiều lần, đồng thời không bị ràng buộc với bất kì ứng dụng cụ thể nào).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Hạn chế của Oracle Database",
+      "start_index": 4666,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::Hạn chế của Oracle Database",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "#### Oracle Data Modeler\nPhần mềm miễn phí để thiết kế cơ sở dữ liệu, bao gồm các công cụ thiết kế các mô hình quan hệ, tạo các khóa ngoại và khoá chính. Phần mềm giúp trực quan hoá các quan hệ phức tạp trong bộ dữ liệu, tương tác bằng kéo và thả dễ dàng, tương thích với Oracle SQL Developer để xuất dữ liệu.\n\n### Oracle Enterprise Manager Database Control\nPhần mềm quản lý cơ sở dữ liệu trên web cung cấp giao diện người dùng.\n\n# Oracle Enterprise Manager Grid Control\nPhần mềm quản lý môi trường và hệ thống trên web, với giao diện người dùng có thể được sử dụng để quản lý nhiều cơ sở dữ liệu, các cụm máy chủ, cũng như các hệ thống dự phòng.\n\n3\n\n### Oracle JDeveloper\nPhần mềm phát triển sản phẩm tích hợp Oracle và Java giúp phát triển các ứng dụng cơ sở dữ liệu.\n\nVậy Oracle SQL là gì?\n\nOracle SQL là một hệ thống quản lý cơ sở dữ liệu cho phép người dùng lưu trữ và quản lý dữ liệu theo khối lượng lớn",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Oracle Data Modeler",
+      "start_index": 5792,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Oracle Data Modeler",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "3\n\n### Oracle JDeveloper\nPhần mềm phát triển sản phẩm tích hợp Oracle và Java giúp phát triển các ứng dụng cơ sở dữ liệu.\n\nVậy Oracle SQL là gì?\n\nOracle SQL là một hệ thống quản lý cơ sở dữ liệu cho phép người dùng lưu trữ và quản lý dữ liệu theo khối lượng lớn\n\nNgười dùng tương tác với cơ sở dữ liệu Oracle thông qua các lệnh Ngôn ngữ truy vấn có cấu trúc (SQL) để tạo, sửa đổi và xóa bảng, cũng như truy xuất dữ liệu. Oracle SQL cung cấp một bộ công cụ toàn diện để quản lý cơ sở dữ liệu, bao gồm các tính năng giúp quản lý người dùng, gán quyền hạn và tạo sao lưu của cơ sở dữ liệu.\n\nHệ thống cũng bao gồm các tính năng tiên tiến như phân vùng, nhóm và nén để tối ưu hóa lưu trữ và truy xuất dữ liệu, cũng như các công cụ để tạo báo cáo, biểu đồ và đồ thị tùy chỉnh.\n\n# 1.6 Các thành phần chính của Oracle SQL\nNhững yếu tố cơ bản trong Oracle SQL là những khối hộp cấu thành nên nền tảng của các câu lệnh SQL. Do đó, trước khi sử dụng các câu lệnh SQL trong cơ sở dữ liệu Oracle, lập trình viên nên làm quen với các khái niệm sau đây:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Oracle Enterprise Manager Grid Control",
+      "start_index": 6440,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Oracle Enterprise Manager Grid Control",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": "main::chunk::8"
+    }
+  },
+  {
+    "page_content": "1. Kiểu dữ liệu (Data Types): Định nghĩa loại dữ liệu của mỗi cột trong bảng, bao gồm số nguyên, số thực, ký tự, ngày tháng, và các loại dữ liệu đặc biệt khác.\n2. Quy tắc so sánh kiểu dữ liệu (Data Type Comparison Rules): Quy định cách so sánh các kiểu dữ liệu khác nhau trong câu lệnh SQL.\n3. Hằng số (Literals): Các giá trị cố định được sử dụng trong các câu lệnh SQL, như chuỗi ký tự, số nguyên, số thực, ngày tháng,…\n4. Mô hình định dạng (Format Models): Xác định cách hiển thị dữ liệu khi truy vấn từ cơ sở dữ liệu, ví dụ như định dạng ngày tháng hoặc số tiền.\n5. Giá trị rỗng (Nulls): Đại diện cho giá trị không tồn tại hoặc không xác định trong cơ sở dữ liệu.\n6. Chú thích (Comments): Ghi chú để giải thích ý nghĩa của các phần trong câu lệnh SQL.\n7. Đối tượng cơ sở dữ liệu (Database Objects): Bao gồm các thành phần như bảng, chỉ mục, khóa ngoại, thủ tục lưu trữ, hàm, trigger,…\n8. Tên đối tượng cơ sở dữ liệu và bộ lọc (Database Object Names and Qualifiers): Cách định danh và phân loại các đối tượng trong cơ sở dữ liệu, bao gồm cả tên bảng, tên cột, tên hàm,…",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.6 Các thành phần chính của Oracle SQL",
+      "start_index": 7480,
+      "chunk_index": 8,
+      "chunk_id": "main::chunk::8",
+      "parent_id": "main::section::1.6 Các thành phần chính của Oracle SQL",
+      "prev_chunk_id": "main::chunk::7",
+      "next_chunk_id": "main::chunk::9"
+    }
+  },
+  {
+    "page_content": "8. Tên đối tượng cơ sở dữ liệu và bộ lọc (Database Object Names and Qualifiers): Cách định danh và phân loại các đối tượng trong cơ sở dữ liệu, bao gồm cả tên bảng, tên cột, tên hàm,…\n9. Cú pháp cho các đối tượng schema và các phần trong câu lệnh SQL: Quy định cách sử dụng cú pháp để tham chiếu và thao tác trên",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.6 Các thành phần chính của Oracle SQL",
+      "start_index": 8368,
+      "chunk_index": 9,
+      "chunk_id": "main::chunk::9",
+      "parent_id": "main::section::1.6 Các thành phần chính của Oracle SQL",
+      "prev_chunk_id": "main::chunk::8",
+      "next_chunk_id": "main::chunk::10"
+    }
+  },
+  {
+    "page_content": "các đối tượng trong cơ sở dữ liệu, đồng thời phân biệt rõ ràng giữa các phần của câu lệnh SQL.\n\n# 2. 11 CÂU LỆNH ORACLE SQL THÔNG DỤNG\nCú pháp cơ bản của một câu lệnh Oracle SQL bao gồm các từ khóa, các định danh, các hằng số và các toán tử.\n\n- Từ khóa là các từ được xác định trước có ý nghĩa đặc biệt trong Oracle SQL, như SELECT, INSERT, hoặc UPDATE.\n- Định danh là các tên do người dùng tự xác định cho các đối tượng cơ sở dữ liệu như bảng và cột.\n- Hằng số đại diện cho các giá trị hằng số.\n- Toán tử là các ký hiệu được sử dụng để thực hiện các phép toán trên dữ liệu.\n- 3 phân loại và 11 lệnh Oracle SQL thông dụng mà lập trình viên có thể áp dụng ngay bao gồm:\n\n### 2.1 Data Definition Language (DDL) – Ngôn ngữ định nghĩa dữ liệu\n#### Lệnh Create table (DDL)\nCâu lệnh CREATE TABLE được sử dụng để tạo một bảng mới trong cơ sở dữ liệu. Cú pháp để tạo bảng như sau:\n\nĐây là ví dụ về cách tạo một bảng nhân viên đơn giản:\n\n#### Lệnh Alter table (DDL)\nCâu lệnh ALTER TABLE được sử dụng để sửa đổi một bảng hiện có, chẳng hạn như thêm, sửa hoặc xóa các cột. Cú pháp để thay đổi bảng như sau:\n\nVí dụ: để thêm một cột mới có tên là 'bộ phận' vào bảng nhân viên:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.6 Các thành phần chính của Oracle SQL",
+      "start_index": 8682,
+      "chunk_index": 10,
+      "chunk_id": "main::chunk::10",
+      "parent_id": "main::section::1.6 Các thành phần chính của Oracle SQL",
+      "prev_chunk_id": "main::chunk::9",
+      "next_chunk_id": "main::chunk::11"
+    }
+  },
+  {
+    "page_content": "Đây là ví dụ về cách tạo một bảng nhân viên đơn giản:\n\n#### Lệnh Alter table (DDL)\nCâu lệnh ALTER TABLE được sử dụng để sửa đổi một bảng hiện có, chẳng hạn như thêm, sửa hoặc xóa các cột. Cú pháp để thay đổi bảng như sau:\n\nVí dụ: để thêm một cột mới có tên là 'bộ phận' vào bảng nhân viên:\n\n### Lệnh Drop Table (DDL)\nCâu lệnh DROP TABLE được sử dụng để xóa một bảng hiện có và tất cả dữ liệu của bảng đó. Cú pháp xóa bảng như sau:\n\nVí dụ: để xóa bảng nhân viên:\n\n# 2.2 Data Manipultation Language (DML) – Ngôn ngữ thao tác dữ liệu\n# Lênh Insert into (DML)\nCâu lệnh INSERT INTO được sử dụng để chèn thêm các hàng trong một bảng. Cú pháp chèn dữ liệu như sau:\n\nVí dụ, để chèn một thông tin nhân viên mới vào bảng nhân viên:\n\n### Lệnh Update (DML)\nCâu lệnh UPDATE được sử dụng để cập nhật các hàng hiện có trong bảng. Câu lệnh để cập nhật dữ liệu như sau:\n\nVí dụ: để cập nhật mức lương của nhân viên có id bằng 1:\n\n### Lệnh Delete (DML)\nCâu lệnh DELETE được sử dụng để xóa các hàng khỏi bảng. Cú pháp xóa dữ liệu như sau:\n\nVí dụ: để xóa thông tin một nhân viên có id bằng 1:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Lệnh Create table (DDL)",
+      "start_index": 9556,
+      "chunk_index": 11,
+      "chunk_id": "main::chunk::11",
+      "parent_id": "main::section::Lệnh Create table (DDL)",
+      "prev_chunk_id": "main::chunk::10",
+      "next_chunk_id": "main::chunk::12"
+    }
+  },
+  {
+    "page_content": "Ví dụ: để cập nhật mức lương của nhân viên có id bằng 1:\n\n### Lệnh Delete (DML)\nCâu lệnh DELETE được sử dụng để xóa các hàng khỏi bảng. Cú pháp xóa dữ liệu như sau:\n\nVí dụ: để xóa thông tin một nhân viên có id bằng 1:\n\n# 2.3 Data Query Language (DQL) – Ngôn ngữ truy vấn dữ liệu\n# Lệnh Select\nCâu lệnh SELECT được sử dụng để lấy dữ liệu từ một hoặc nhiều bảng. Cú pháp cơ bản để chọn dữ liệu như sau:\n\n```\nSELECT column1, column2, ...\nFROM table_name\nWHERE condition;\n```\n\n# 2.3.2 Mệnh đề Select Distinct (DQL)\n\nĐể truy xuất các giá trị duy nhất từ một cột cụ thể, hãy sử dụng mệnh đề SELECT DISTINCT:\n\nSELECT DISTINCT department FROM employees;\n\n# 2.3.3 Mệnh đề WHERE và AND/OR\n\nMệnh đề WHERE được sử dụng để lọc dữ liệu được trả về bởi câu lệnh SELECT. Bạn có thể kết hợp nhiều điều kiện bằng toán tử AND và OR:\n\n21.41.11\\_AI Race\n\nSELECT \\* FROM employees\n\nWHERE department = 'IT' AND salary > 50000000;\n\n# 2.3.4 Mệnh đề Group BY và HAVING\n\nMệnh đề GROUP BY được sử dụng để nhóm các hàng có cùng giá trị trong các cột được chỉ định. Mệnh đề HAVING được sử dụng để lọc kết quả của GROUP BY:\n\nSELECT department, COUNT(\\*) AS num\\_employees, AVG(salary) AS avg\\_salary\n\nFROM employees",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Lệnh Update (DML)",
+      "start_index": 10410,
+      "chunk_index": 12,
+      "chunk_id": "main::chunk::12",
+      "parent_id": "main::section::Lệnh Update (DML)",
+      "prev_chunk_id": "main::chunk::11",
+      "next_chunk_id": "main::chunk::13"
+    }
+  },
+  {
+    "page_content": "# 2.3.4 Mệnh đề Group BY và HAVING\n\nMệnh đề GROUP BY được sử dụng để nhóm các hàng có cùng giá trị trong các cột được chỉ định. Mệnh đề HAVING được sử dụng để lọc kết quả của GROUP BY:\n\nSELECT department, COUNT(\\*) AS num\\_employees, AVG(salary) AS avg\\_salary\n\nFROM employees\n\nGROUP BY department\n\nHAVING COUNT(\\*) > 1\n\nORDER BY avg\\_salary DESC;\n\n2025-09-20 -\n\n2025-09-28.7.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.3.4 Mệnh đề Group BY và HAVING",
+      "start_index": 11318,
+      "chunk_index": 13,
+      "chunk_id": "main::chunk::13",
+      "parent_id": "main::section::2.3.4 Mệnh đề Group BY và HAVING",
+      "prev_chunk_id": "main::chunk::12",
+      "next_chunk_id": null
+    }
+  }
+]

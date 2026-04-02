@@ -1,0 +1,114 @@
+[
+  {
+    "page_content": "# Public_029\n\n# 1. Chất bán dẫn (Semiconductor)\nChất bán dẫn là những vật liệu có khả năng dẫn điện trung gian giữa chất dẫn điện tốt (kim loại) và chất cách điện. Các vật liệu bán dẫn phổ biến gồm **silic (Si)**, **germanium (Ge)** và **gallium arsenide (GaAs)**. Chúng không phải là chất dẫn điện tốt nhưng cũng không phải là chất cách điện hoàn hảo, do đó chúng được gọi là **\"bán dẫn\"**.\n\nChất bán dẫn tinh khiết có rất ít **electron tự do** vì các nguyên tử của chúng được sắp xếp trong một **mạng tinh thể**. Tuy nhiên, dưới một số điều kiện nhất định hoặc khi được thêm các tạp chất thích hợp, các electron có thể di chuyển và dẫn điện.\n\nKhả năng dẫn điện của chất bán dẫn có thể được **cải thiện đáng kể** bằng cách **thêm các nguyên tử tạp chất** vào mạng tinh thể. Các nguyên tử này có thể cung cấp thêm electron hoặc tạo ra nhiều lỗ trống (hole), từ đó thay đổi tính chất dẫn điện của vật liệu. Quá trình này được gọi là **doping**.\n\n# 1.1 Bán dẫn thuần khiết (Pure Semiconducting)\nChất bán dẫn thuần khiết như **Silicon (Si)** và **Germanium (Ge)** về mặt hóa học không chứa tạp chất.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_029",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_029",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "# 1.1 Bán dẫn thuần khiết (Pure Semiconducting)\nChất bán dẫn thuần khiết như **Silicon (Si)** và **Germanium (Ge)** về mặt hóa học không chứa tạp chất.\n\n- Mỗi nguyên tử **silicon** có **4 electron hóa trị** trong lớp vỏ ngoài cùng.\n- Các nguyên tử silicon chia sẻ electron với các nguyên tử lân cận để tạo ra **liên kết cộng hóa trị bền vững**, giúp mỗi nguyên tử silicon đạt được **8 electron ở lớp vỏ ngoài**.\n\nTrong silicon tinh khiết, có rất ít electron tự do để di chuyển quanh mạng tinh thể. Vì vậy, **silicon tinh khiết hoặc germanium tinh khiết** hoạt động giống như chất cách điện, có điện trở cao.\n\nĐể silicon có thể dẫn điện, cần tạo ra **cực dương (+) và cực âm (-)** thông qua việc **doping silicon với một số tạp chất nhất định**.\n\n#### 1.2 Bán dẫn loại N (N-type Semiconductor)\nĐể tạo **bán dẫn loại N**, các nguyên tử tạp chất có **5 electron hóa trị** (pentavalent) như **Phốt pho (P)**, **Arsenic (As)** hoặc **Antimon (Sb)** được thêm vào tinh thể silicon.\n\n• 4 trong 5 electron hóa trị của nguyên tử tạp chất sẽ tạo liên kết cộng hóa trị với các nguyên tử silicon lân cận.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.1 Bán dẫn thuần khiết (Pure Semiconducting)",
+      "start_index": 945,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1.1 Bán dẫn thuần khiết (Pure Semiconducting)",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "• 4 trong 5 electron hóa trị của nguyên tử tạp chất sẽ tạo liên kết cộng hóa trị với các nguyên tử silicon lân cận.\n\n• Electron thứ 5 còn dư trở thành **electron tự do**, có thể di chuyển trong mạng tinh thể khi có điện áp, trở thành **hạt mang điện**.\n\nCác nguyên tử pentavalent được gọi là **chất cho (donor)** vì chúng cung cấp electron tự do.\n\n- **Vật liệu loại N** có **điện tích âm dư thừa** do electron tự do chiếm ưu thế so với các lỗ trống.\n- **Hạt dẫn đa số** là electron, **hạt dẫn thiểu số** là lỗ trống.\n\nKhi bị kích thích bởi nguồn điện hoặc nhiệt, electron tự do từ các nguyên tử tạp chất này dễ dàng di chuyển, tạo ra dòng điện trong silicon loại N.\n\n#### 1.3 Bán dẫn loại P (P-type Semiconductor)\nNgược lại, để tạo **bán dẫn loại P**, các nguyên tử tạp chất **3 electron hóa trị** (trivalents) như **Nhôm (Al)** hoặc **Bo (B)** được thêm vào silicon.\n\n- Mỗi nguyên tử tạp chất loại P tạo ra một **lỗ trống** trong mạng tinh thể, nơi electron có thể di chuyển để lấp vào.\n- **Hạt dẫn đa số** là **lỗ trống**, **hạt dẫn thiểu số** là electron.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.2 Bán dẫn loại N (N-type Semiconductor)",
+      "start_index": 1922,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1.2 Bán dẫn loại N (N-type Semiconductor)",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "- Mỗi nguyên tử tạp chất loại P tạo ra một **lỗ trống** trong mạng tinh thể, nơi electron có thể di chuyển để lấp vào.\n- **Hạt dẫn đa số** là **lỗ trống**, **hạt dẫn thiểu số** là electron.\n\n# Dòng điện trong chất bán dẫn loại P\n- Khi có điện áp, các **electron tự do** di chuyển đến cực dương (+) để lấp vào các lỗ trống.\n- Khi electron lấp vào lỗ trống, lỗ mới lại xuất hiện ở vị trí khác.\n- Quá trình này lặp lại, tạo ra **dòng chuyển động của lỗ trống về phía cực âm (-)**, đồng thời electron di chuyển về phía cực dương (+).\n\nNhư vậy, trong chất bán dẫn loại P, **electron thực sự di chuyển về cực dương**, còn **lỗ trống** di chuyển theo hướng ngược lại, tạo ra dòng điện.\n\n# 1.4 Chuyển động của electron và lỗ trống trong chất bán dẫn\n- **Electron** là hạt mang điện thực sự đang di chuyển trong mạng tinh thể.\n- **Lỗ trống** xuất hiện như một hạt tích điện dương, di chuyển ngược chiều electron.\n\nNhờ cơ chế này, cả chất bán dẫn loại P và loại N đều dẫn điện, nhưng không tốt bằng kim loại. **Điểm đặc biệt của chất bán dẫn** là khả năng **kiểm soát dòng điện** bằng cách thay đổi điều kiện điện áp, nhiệt độ, hoặc ánh sáng, thông qua việc sử dụng **mối nối P-N**.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.3 Bán dẫn loại P (P-type Semiconductor)",
+      "start_index": 2791,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::1.3 Bán dẫn loại P (P-type Semiconductor)",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "Nhờ cơ chế này, cả chất bán dẫn loại P và loại N đều dẫn điện, nhưng không tốt bằng kim loại. **Điểm đặc biệt của chất bán dẫn** là khả năng **kiểm soát dòng điện** bằng cách thay đổi điều kiện điện áp, nhiệt độ, hoặc ánh sáng, thông qua việc sử dụng **mối nối P-N**.\n\n# 1.5 Mối nối P-N (P-N Junction)\nMối nối P-N được tạo ra khi **bán dẫn loại P** được ghép với **bán dẫn loại N**:\n\n- **Diode P-N** là thiết bị cơ bản xuất phát từ mối nối P-N, cho phép dòng điện đi theo một hướng nhất định.\n- Khi **P nối cực dương (+)** và **N nối cực âm (-)**:\n  - o Các **electron** từ N di chuyển vào P.\n  - o Các **lỗ trống** từ P di chuyển vào N.\n\nQuá trình tái hợp tại mối nối\n\n- Khi electron gặp lỗ trống, chúng **tái hợp** và bị loại bỏ.\n- Các electron mới từ lớp N tiếp tục di chuyển vào lớp P, và các lỗ trống mới xuất hiện ở lớp P, duy trì dòng điện liên tục.\n\nMối nối P-N cho phép **dòng điện đi theo một hướng**, tạo cơ sở cho các thiết bị điện tử như **diode, transistor, LED, và IC**.\n\n# Cấu trúc mối nối P-N\nMối nối P-N hình thành khi **bán dẫn loại P** (có lỗ trống là hạt dẫn đa số) được ghép với **bán dẫn loại N** (có electron tự do là hạt dẫn đa số). Khi hai loại bán dẫn này tiếp xúc:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1.4 Chuyển động của electron và lỗ trống trong chất bán dẫn",
+      "start_index": 3696,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::1.4 Chuyển động của electron và lỗ trống trong chất bán dẫn",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "# Cấu trúc mối nối P-N\nMối nối P-N hình thành khi **bán dẫn loại P** (có lỗ trống là hạt dẫn đa số) được ghép với **bán dẫn loại N** (có electron tự do là hạt dẫn đa số). Khi hai loại bán dẫn này tiếp xúc:\n\n- **Electron** từ vùng N di chuyển sang vùng P để lấp vào các lỗ trống.\n- **Lỗ trống** từ vùng P di chuyển sang vùng N, nhưng thực tế các lỗ này không phải là vật chất, mà là sự \"khuyết thiếu\" electron, giúp dòng điện được hình dung.\n\nKhi quá trình này diễn ra, tại **giao diện P-N**, một **vùng nghèo (depletion region)** hình thành.\n\n#### Vùng nghèo (Depletion Region)\n- Vùng nghèo là **khu vực gần mối nối** nơi các electron và lỗ trống đã tái hợp và bị loại bỏ, do đó **không còn hạt dẫn tự do**.\n- Trong vùng này tồn tại **các ion dương cố định** ở lớp N và **các ion âm cố định** ở lớp P.\n- Các ion này tạo ra một **điện trường nội** (internal electric field) hướng từ N → P, cản trở sự di chuyển của electron từ N sang P và lỗ từ P sang N.\n\nVùng nghèo là yếu tố quan trọng, vì nó xác định **điện áp chặn** và **điện áp phân cực thuận** của diode.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Cấu trúc mối nối P-N",
+      "start_index": 4683,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::Cấu trúc mối nối P-N",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "Vùng nghèo là yếu tố quan trọng, vì nó xác định **điện áp chặn** và **điện áp phân cực thuận** của diode.\n\n#### Phân cực thuận (Forward Bias)\n- Khi **cực dương (+)** của nguồn nối vào **vùng P** và **cực âm (-)** nối vào **vùng N**:\n  - o Điện áp ngoài **giảm bớt rào cản của vùng nghèo**, làm electron và lỗ dễ dàng vượt qua mối nối.\n  - o Kết quả là **dòng điện lớn** chạy qua diode theo hướng thuận.\n- Trong phân cực thuận:\n  - o Electron từ N đi vào P, lấp vào các lỗ trống.\n  - o Lỗ từ P đi vào N, tạo dòng chuyển động ngược hướng electron.\n  - o Quá trình tái hợp liên tục, cho phép dòng điện duy trì ổn định.\n\nĐiện áp cần thiết để diode bắt đầu dẫn điện thuận thường gọi là **điện áp ngưỡng** (~0,7 V đối với silicon và ~0,3 V đối với germanium).",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Vùng nghèo (Depletion Region)",
+      "start_index": 5638,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Vùng nghèo (Depletion Region)",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": "main::chunk::7"
+    }
+  },
+  {
+    "page_content": "Điện áp cần thiết để diode bắt đầu dẫn điện thuận thường gọi là **điện áp ngưỡng** (~0,7 V đối với silicon và ~0,3 V đối với germanium).\n\n#### Phân cực ngược (Reverse Bias)\n- Khi **cực dương (+)** của nguồn nối vào **vùng N** và **cực âm (-)** nối vào **vùng P**:\n  - o Điện áp ngoài **tăng rào cản vùng nghèo**, làm electron và lỗ khó di chuyển qua mối nối.\n  - o Kết quả là **dòng điện rất nhỏ**, gần như bằng 0, gọi là **dòng rò ngược** (leakage current).\n- Điện trường nội cùng với điện áp ngược ngăn cản dòng electron từ N sang P, và lỗ từ P sang N.\n- Khi điện áp ngược đủ lớn, vùng nghèo có thể bị phá vỡ (breakdown), tạo ra **dòng điện lớn đột ngột**, cơ sở cho các thiết bị như **zener diode**.\n\n## Tóm tắt hoạt động\n**Điều kiện phân cực Vùng nghèo Dòng điện Điện áp điển hình** Thuận (Forward) Thu hẹp Dẫn điện lớn ~0,7 V (Si), 0,3 V (Ge) Ngược (Reverse) Mở rộng Dòng rò nhỏ Tùy vật liệu Phá vỡ (Breakdown) Bị phá hủy Dòng lớn đột ngột Zener: ~tùy chọn",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Phân cực thuận (Forward Bias)",
+      "start_index": 6255,
+      "chunk_index": 7,
+      "chunk_id": "main::chunk::7",
+      "parent_id": "main::section::Phân cực thuận (Forward Bias)",
+      "prev_chunk_id": "main::chunk::6",
+      "next_chunk_id": null
+    }
+  }
+]

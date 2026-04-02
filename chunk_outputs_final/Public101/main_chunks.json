@@ -1,0 +1,100 @@
+[
+  {
+    "page_content": "# Public_101\n\n# 1. Phát biểu bài toán\nTrong học sâu, một bài toán cơ bản là huấn luyện mô hình mạng nơ-ron sâu để tối ưu hóa tham số mô hình nhằm giảm thiểu hàm mất mát (loss function). Bài toán này được biểu diễn như sau:\n\n$$\\theta^* = \\arg\\min_{\\theta} L(\\theta)$$\n\nTrong đó:\n\n- o : Là các tham số của mô hình\n- o (): Là hàm mất mát đo lường độ chênh lệch giữa dự đoán của mô hình và nhãn thực tế.\n\nThuật toán Stochastic Gradient Descent (SGD) thường được sử dụng để giải quyết bài toán trên bằng cách cập nhật các tham số dựa trên gradient của hàm mất mát theo công thức:\n\n$$\\theta \\leftarrow \\theta - \\eta \\cdot \\nabla L(\\theta)$$\n\nTrong đó:\n\n- o η: Tốc độ học (learning rate).\n- o ∇L(θ): Gradient của hàm mất mát.\n\nThuật toán SGD (tuần tự) hoạt động theo các bước sau:\n\n*Bước 1: Khởi tạo tham số ban đầu với giá trị ngẫu nhiên.*\n\n*Bước 2: Lặp lại qua các epoch:*\n\n- *Chia tập dữ liệu thành các batch nhỏ.*\n- *Lặp qua từng batch:*\n  - *+ Tính gradient trên batch.*\n  - *+ Cập nhật*\n\n*Bước 3: Kết thúc khi số epoch đạt ngưỡng hoặc hàm mất mát không còn cải thiện.*\n\nMã giả:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_101",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_101",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "*Bước 2: Lặp lại qua các epoch:*\n\n- *Chia tập dữ liệu thành các batch nhỏ.*\n- *Lặp qua từng batch:*\n  - *+ Tính gradient trên batch.*\n  - *+ Cập nhật*\n\n*Bước 3: Kết thúc khi số epoch đạt ngưỡng hoặc hàm mất mát không còn cải thiện.*\n\nMã giả:\n\n```\nInitialize parameters θ\nFor epoch in range(max_epochs):\n For batch in dataset:\n Compute gradient: grad = ∇L(θ)\n Update parameters: θ = θ - η * grad\n End For\nEnd For\n```\n\nKhi áp dụng thuật toán Stochastic Gradient Descent (SGD) để huấn luyện mô hình học sâu, việc tính toán gradient trên từng mini-batch giúp giảm tải so với Gradient Descent toàn bộ dữ liệu, nhưng vẫn đòi hỏi tài nguyên tính toán đáng kể. Đặc biệt, với các tập dữ liệu lớn và mô hình phức tạp, quá trình huấn luyện kéo dài do số lượng phép tính gradient tăng lên, làm chậm quá trình hội tụ và ảnh hưởng đến hiệu suất tổng thể.\n\nMột máy tính đơn lẻ khó có thể đáp ứng được yêu cầu tính toán cao trong thời gian hợp lý, do hạn chế về năng lực xử lý và khả năng khai thác tài nguyên phần cứng. Do đó, cần có phương pháp song song hóa SGD để phân chia khối lượng công việc giữa nhiều tiến trình hoặc máy tính, tận dụng hiệu quả tài nguyên tính toán và giảm thời gian huấn luyện.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Phát biểu bài toán",
+      "start_index": 835,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::1. Phát biểu bài toán",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "Báo cáo này tập trung nghiên cứu hai thiết kế song song chính trong song song hóa dữ liệu (Data Parallelism)—thiết kế tập trung và thiết kế phân tán. Mục tiêu là đánh giá hiệu suất huấn luyện, độ chính xác mô hình và khả năng mở rộng trong môi trường tính toán hiệu năng cao (HPC), từ đó cung cấp cái nhìn chi tiết về hai cách tiếp cận này.\n\n### 2. Thuật Toán Song Song\nĐể tối ưu hóa thuật toán Stochastic Gradient Descent (SGD) trong môi trường phân tán, hai thiết kế song song chính được triển khai: Thiết kế tập trung (Centralized Design) và Thiết kế phân tán (Decentralized Design). Cả hai phương pháp nhằm mục tiêu giảm thời gian huấn luyện và đảm bảo độ chính xác mô hình.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "1. Phát biểu bài toán",
+      "start_index": 2025,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::1. Phát biểu bài toán",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "## 2.1. Thiết kế tập trung (Centralized Design)\nThiết kế tập trung dựa trên việc sử dụng một tiến trình trung tâm (master node) để quản lý toàn bộ quá trình huấn luyện. Master chịu trách nhiệm khởi tạo và điều phối các tham số mô hình, đồng thời nhận kết quả từ các tiến trình còn lại (worker nodes). Các worker thực hiện tính toán gradient cục bộ dựa trên phần dữ liệu được phân công, sau đó gửi kết quả này về master. Master sẽ tổng hợp thông tin từ các worker, cập nhật tham số mô hình, và phát truyền lại tham số đã cập nhật để tiếp tục vòng huấn luyện. Cách tiếp cận này giúp duy trì tính nhất quán của mô hình và đảm bảo quy trình huấn luyện được đồng bộ hóa.\n\n# Luồng hoạt động:\n- Master khởi tạo các tham số mô hình và phát truyền chúng đến các worker.\n- Mỗi worker huấn luyện trên dữ liệu của mình, tính toán gradient cục bộ và gửi kết quả về master.\n- Master tổng hợp gradient từ các worker, cập nhật tham số mô hình và truyền lại cho các worker.\n  - Quá trình lặp lại cho đến khi hoàn tất số lượng epoch hoặc đạt điều kiện dừng.\n\n## Mã giả**:\n#### Master Node:",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.1. Thiết kế tập trung (Centralized Design)",
+      "start_index": 2705,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::2.1. Thiết kế tập trung (Centralized Design)",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "## Mã giả**:\n#### Master Node:\n\n1. Initialize model parameters θ.\n2. Broadcast θ to all worker nodes.\n3. Repeat for each epoch:\n- a. Gather gradients {∇L(θ)\\_i} from all worker nodes.\n- b. Compute weighted average of gradients:\n\n$$\\nabla L(\\Theta) = \\Sigma(w i * \\nabla L(\\Theta) i) / \\Sigma(w i)$$\n\n- c. Update parameters: θ = θ η \\* ∇L(θ).\n- d. Broadcast updated θ to all worker nodes.\n4. Output final model θ.\n\n#### Worker Node:\n\n1. Receive initial model parameters θ from master.\n2. Repeat for each epoch:\n- a. Compute gradient ∇L(θ)\\_i on local dataset.\n- b. Send ∇L(θ)\\_i to master.\n- c. Receive updated θ from master.\n3. Terminate.\n\nThiết kế tập trung có ưu điểm lớn ở tính quản lý tập trung, giúp dễ triển khai và theo dõi trạng thái của toàn bộ hệ thống. Đây là phương pháp phù hợp khi số lượng worker nhỏ, do việc xử lý và tổng hợp thông tin ở master không gây quá tải. Tuy nhiên, nhược điểm chính là master dễ trở thành điểm cổ chai (bottleneck) khi số lượng worker lớn, dẫn đến hiệu suất giảm. Đồng thời, chi phí truyền thông giữa master và các worker tăng đáng kể khi số lượng tiến trình tăng, gây ảnh hưởng đến khả năng mở rộng của hệ thống.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Mã giả**:",
+      "start_index": 3746,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::Mã giả**:",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "## 2.2. Thiết kế phân tán (Decentralized Design)\nThiết kế phân tán (Decentralized Design) loại bỏ hoàn toàn vai trò của master node, đảm bảo tất cả các tiến trình (nodes) tham gia bình đẳng vào quá trình tính toán và tổng hợp thông tin. Các nodes khởi tạo tham số mô hình giống nhau và thực hiện huấn luyện trên dữ liệu cục bộ. Thông qua cơ chế Allgather, các nodes chia sẻ gradient hoặc trọng số với nhau, sau đó mỗi node tính toán giá trị trung bình từ thông tin thu thập được để cập nhật tham số mô hình. Cách tiếp cận này tạo ra một quy trình đồng đẳng, trong đó các tiến trình hoạt động độc lập nhưng vẫn duy trì tính nhất quán của mô hình.\n\n## Luồng hoạt động**:\n1. Tất cả các nodes khởi tạo tham số mô hình giống nhau.\n2. Mỗi node huấn luyện trên tập dữ liệu cục bộ, tính toán gradient.\n3. Các nodes sử dụng Allgather để chia sẻ gradient hoặc trọng số.\n4. Mỗi node cập nhật tham số mô hình dựa trên giá trị trung bình thu thập được.\n5. Quá trình lặp lại cho đến khi hoàn tất.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "2.2. Thiết kế phân tán (Decentralized Design)",
+      "start_index": 4903,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::2.2. Thiết kế phân tán (Decentralized Design)",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "### Mã giả**:\n```\nAll Nodes:\n1. Initialize model parameters θ.\n2. Repeat for each epoch:\n a. Compute gradient ∇L(θ)_i on local dataset.\n b. Share gradients using Allgather.\n c. Compute average gradient: \n                 ∇L(θ) = Σ(∇L(θ)_i) / N \n                 (where N is the number of nodes).\n d. Update parameters: θ = θ - η * ∇L(θ).\n3. Output final model θ.\n```\n\nThiết kế phân tán có ưu điểm vượt trội trong việc loại bỏ điểm cổ chai (bottleneck) thường gặp ở master node, giúp cải thiện khả năng mở rộng khi số lượng nodes tăng. Các nodes hoạt động đồng đẳng, không phụ thuộc vào một trung tâm, từ đó tăng tính linh hoạt và khả năng chịu lỗi của hệ thống. Tuy nhiên, nhược điểm lớn nhất của thiết kế này là chi phí truyền thông cao hơn, do tất cả các nodes đều phải chia sẻ thông tin với nhau. Đồng thời, việc triển khai và đồng bộ hóa các nodes cũng phức tạp hơn, đặc biệt trong các hệ thống lớn và đa dạng về tài nguyên.\n\n![](images/image1.jpg)\n\n![](images/image2.jpg)\n\n![](images/image3.jpg)",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Mã giả**:",
+      "start_index": 5887,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::Mã giả**:",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": null
+    }
+  }
+]

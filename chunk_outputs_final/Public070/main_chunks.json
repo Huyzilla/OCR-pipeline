@@ -1,0 +1,100 @@
+[
+  {
+    "page_content": "# Public_070\n\nCông nghệ 5G không chỉ là thế hệ tiếp theo của mạng di động mà còn là nền tảng cho một hệ sinh thái kết nối khổng lồ, hỗ trợ từ truyền thông siêu tốc đến Internet vạn vật (IoT) công nghiệp. Việc triển khai 5G đòi hỏi phương pháp kỹ thuật và quản lý chặt chẽ để bảo đảm hiệu năng, bảo mật và khả năng mở rộng lâu dài. Phần dưới đây trình bày chi tiết các phương pháp và nguyên tắc giúp xây dựng và vận hành hệ thống 5G toàn diện.\n\n# 1. Kiến Trúc Mạng 5G và Thành Phần Cốt Lõi\nMạng 5G được thiết kế với cấu trúc mở và linh hoạt hơn hẳn 4G, bao gồm:\n\n- **Mạng truy nhập vô tuyến (RAN – Radio Access Network)**\n  - o Sử dụng các trạm gNodeB với công nghệ Massive MIMO, beamforming để tăng tốc độ và độ phủ sóng.\n  - o Hỗ trợ băng tần đa dạng: dưới 6 GHz (Sub-6) và mmWave (24–100 GHz) cho các yêu cầu băng thông cực cao.\n- **Mạng lõi (5GC – 5G Core)**\n  - o Thiết kế hoàn toàn theo hướng dịch vụ (Service-Based Architecture – SBA).\n  - o Cho phép **network slicing**, tách mạng thành nhiều \"lát\" phục vụ từng ứng dụng: IoT băng hẹp, dịch vụ băng thông cao, hay truyền thông siêu tin cậy (URLLC).\n\n# • **Edge Computing**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "Public_070",
+      "start_index": 0,
+      "chunk_index": 0,
+      "chunk_id": "main::chunk::0",
+      "parent_id": "main::section::Public_070",
+      "prev_chunk_id": null,
+      "next_chunk_id": "main::chunk::1"
+    }
+  },
+  {
+    "page_content": "# • **Edge Computing**\n\no Đưa xử lý dữ liệu tới gần người dùng, giảm độ trễ xuống dưới 1 ms, hỗ trợ các ứng dụng như xe tự lái hoặc phẫu thuật từ xa.\n\n## 2. Phương Pháp Quy Hoạch và Triển Khai Hạ Tầng\n• **Khảo sát và lập kế hoạch tần số**\n\n- o Đánh giá môi trường địa hình, mật độ dân cư, nhu cầu dịch vụ để xác định dải tần phù hợp.\n- o Phân tích nhiễu sóng, lập sơ đồ phủ sóng tối ưu.\n\n## • **Triển khai gNodeB**\n\n- o Sử dụng mô hình small cell dày đặc để tận dụng băng tần cao, đặc biệt với mmWave.\n- o Tích hợp công nghệ beamforming để tập trung tín hiệu, giảm tiêu thụ năng lượng.\n\n#### • **Điện toán biên (MEC)**\n\n- o Xây dựng trung tâm xử lý tại các điểm nút mạng để giảm băng thông đường trục.\n- o Hỗ trợ các ứng dụng đòi hỏi độ trễ thấp như AR/VR, game thời gian thực.\n\n### • **Tích hợp Cloud-Native**\n\no Sử dụng container (Docker/Kubernetes) để triển khai 5G Core, dễ dàng mở rộng hoặc cập nhật dịch vụ.\n\n## 3. Quản Lý Chất Lượng Dịch Vụ và Bảo Mật\n## • **Đảm bảo QoS (Quality of Service)**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "• **Edge Computing**",
+      "start_index": 1107,
+      "chunk_index": 1,
+      "chunk_id": "main::chunk::1",
+      "parent_id": "main::section::• **Edge Computing**",
+      "prev_chunk_id": "main::chunk::0",
+      "next_chunk_id": "main::chunk::2"
+    }
+  },
+  {
+    "page_content": "### • **Tích hợp Cloud-Native**\n\no Sử dụng container (Docker/Kubernetes) để triển khai 5G Core, dễ dàng mở rộng hoặc cập nhật dịch vụ.\n\n## 3. Quản Lý Chất Lượng Dịch Vụ và Bảo Mật\n## • **Đảm bảo QoS (Quality of Service)**\n\n- o Phân chia network slicing cho từng loại dịch vụ:\n  - eMBB (Enhanced Mobile Broadband) cho video 8K, VR.\n  - URLLC (Ultra-Reliable Low Latency Communications) cho xe tự lái, điều khiển robot.\n  - mMTC (massive Machine Type Communications) cho hàng triệu cảm biến IoT.\n\n## • **Bảo mật đa lớp**\n\no Mã hóa đầu cuối giữa thiết bị và mạng lõi.\n\n![](images/image1.jpg)\n\n- o Hệ thống phát hiện xâm nhập thời gian thực, kiểm soát truy cập theo vai trò.\n- o Quản lý chứng chỉ cho hàng tỷ thiết bị IoT kết nối.\n\n### • **Giám sát và phân tích**\n\n- o Dùng AI/ML để phát hiện bất thường trong lưu lượng.\n- o Cảnh báo sớm khi có dấu hiệu tấn công DDoS hoặc suy giảm hiệu năng.\n\n# 4. Tối Ưu Hiệu Năng và Chi Phí Vận Hành\n#### • **Tự động hóa O-RAN**\n\n- o Kiến trúc Open RAN cho phép nhiều nhà cung cấp thiết bị cùng tham gia, giảm chi phí đầu tư.\n- o AI hỗ trợ tự điều chỉnh thông số mạng dựa trên nhu cầu thực tế.\n\n# • **Năng lượng và bền vững**",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "• **Tích hợp Cloud-Native**",
+      "start_index": 1886,
+      "chunk_index": 2,
+      "chunk_id": "main::chunk::2",
+      "parent_id": "main::section::• **Tích hợp Cloud-Native**",
+      "prev_chunk_id": "main::chunk::1",
+      "next_chunk_id": "main::chunk::3"
+    }
+  },
+  {
+    "page_content": "# 4. Tối Ưu Hiệu Năng và Chi Phí Vận Hành\n#### • **Tự động hóa O-RAN**\n\n- o Kiến trúc Open RAN cho phép nhiều nhà cung cấp thiết bị cùng tham gia, giảm chi phí đầu tư.\n- o AI hỗ trợ tự điều chỉnh thông số mạng dựa trên nhu cầu thực tế.\n\n# • **Năng lượng và bền vững**\n\n- o Tích hợp năng lượng tái tạo (mặt trời, gió) cho các trạm gốc ở vùng xa.\n- o Chế độ ngủ động (sleep mode) cho cell khi không có lưu lượng để tiết kiệm điện.\n\n## • **Khả năng mở rộng**\n\n- o Hỗ trợ từ mạng thành phố đến mạng chuyên dụng cho nhà máy, bệnh viện, khu công nghiệp.\n- o Mô hình \"Network-as-a-Service\" cho phép doanh nghiệp thuê hạ tầng 5G theo nhu cầu.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "4. Tối Ưu Hiệu Năng và Chi Phí Vận Hành",
+      "start_index": 2776,
+      "chunk_index": 3,
+      "chunk_id": "main::chunk::3",
+      "parent_id": "main::section::4. Tối Ưu Hiệu Năng và Chi Phí Vận Hành",
+      "prev_chunk_id": "main::chunk::2",
+      "next_chunk_id": "main::chunk::4"
+    }
+  },
+  {
+    "page_content": "## 5. Ứng Dụng Công Nghiệp và Dân Dụng\n- **Công nghiệp thông minh**: Kết hợp 5G và IoT để điều khiển robot, giám sát sản xuất theo thời gian thực.\n- **Y tế từ xa**: Hỗ trợ phẫu thuật và tư vấn chuyên khoa với độ trễ gần như bằng không.\n- **Giao thông thông minh**: Kết nối xe tự lái, chia sẻ dữ liệu giữa các phương tiện và hạ tầng đường bộ.\n- **Giải trí và truyền thông**: Truyền trực tiếp 8K, AR/VR tương tác thời gian thực.\n- **Công nghiệp thông minh**: Kết hợp 5G và IoT để điều khiển robot, giám sát sản xuất theo thời gian thực.\n- **Y tế từ xa**: Hỗ trợ phẫu thuật và tư vấn chuyên khoa với độ trễ gần như bằng không.\n- **Giao thông thông minh**: Kết nối xe tự lái, chia sẻ dữ liệu giữa các phương tiện và hạ tầng đường bộ.\n- **Giải trí và truyền thông**: Truyền trực tiếp 8K, AR/VR tương tác thời gian thực.\n- **Công nghiệp thông minh**: Kết hợp 5G và IoT để điều khiển robot, giám sát sản xuất theo thời gian thực.\n- **Y tế từ xa**: Hỗ trợ phẫu thuật và tư vấn chuyên khoa với độ trễ gần như bằng không.\n- **Giao thông thông minh**: Kết nối xe tự lái, chia sẻ dữ liệu giữa các phương tiện và hạ tầng đường bộ.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5. Ứng Dụng Công Nghiệp và Dân Dụng",
+      "start_index": 3412,
+      "chunk_index": 4,
+      "chunk_id": "main::chunk::4",
+      "parent_id": "main::section::5. Ứng Dụng Công Nghiệp và Dân Dụng",
+      "prev_chunk_id": "main::chunk::3",
+      "next_chunk_id": "main::chunk::5"
+    }
+  },
+  {
+    "page_content": "- **Y tế từ xa**: Hỗ trợ phẫu thuật và tư vấn chuyên khoa với độ trễ gần như bằng không.\n- **Giao thông thông minh**: Kết nối xe tự lái, chia sẻ dữ liệu giữa các phương tiện và hạ tầng đường bộ.\n- **Giải trí và truyền thông**: Truyền trực tiếp 8K, AR/VR tương tác thời gian thực.\n- **Công nghiệp thông minh**: Kết hợp 5G và IoT để điều khiển robot, giám sát sản xuất theo thời gian thực.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5. Ứng Dụng Công Nghiệp và Dân Dụng",
+      "start_index": 4335,
+      "chunk_index": 5,
+      "chunk_id": "main::chunk::5",
+      "parent_id": "main::section::5. Ứng Dụng Công Nghiệp và Dân Dụng",
+      "prev_chunk_id": "main::chunk::4",
+      "next_chunk_id": "main::chunk::6"
+    }
+  },
+  {
+    "page_content": "- **Y tế từ xa**: Hỗ trợ phẫu thuật và tư vấn chuyên khoa với độ trễ gần như bằng không.\n- **Giao thông thông minh**: Kết nối xe tự lái, chia sẻ dữ liệu giữa các phương tiện và hạ tầng đường bộ.\n- **Giải trí và truyền thông**: Truyền trực tiếp 8K, AR/VR tương tác thời gian thực.\n- **Công nghiệp thông minh**: Kết hợp 5G và IoT để điều khiển robot, giám sát sản xuất theo thời gian thực.\n- **Y tế từ xa**: Hỗ trợ phẫu thuật và tư vấn chuyên khoa với độ trễ gần như bằng không.\n- **Giao thông thông minh**: Kết nối xe tự lái, chia sẻ dữ liệu giữa các phương tiện và hạ tầng đường bộ.\n- **Giải trí và truyền thông**: Truyền trực tiếp 8K, AR/VR tương tác thời gian thực.",
+    "metadata": {
+      "doc_id": "main",
+      "chunk_type": "text",
+      "section_hint": "5. Ứng Dụng Công Nghiệp và Dân Dụng",
+      "start_index": 4724,
+      "chunk_index": 6,
+      "chunk_id": "main::chunk::6",
+      "parent_id": "main::section::5. Ứng Dụng Công Nghiệp và Dân Dụng",
+      "prev_chunk_id": "main::chunk::5",
+      "next_chunk_id": null
+    }
+  }
+]
