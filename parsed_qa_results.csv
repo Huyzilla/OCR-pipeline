@@ -1,0 +1,1068 @@
+question_index,question,llm_answer,gt_answer,is_correct,context_tokens
+0,"Trong mô hình nhà thông minh, IoT chủ yếu đóng vai trò gì?",B,B,✓,388
+1,"Năm 2010, công nghệ nào thường được sử dụng trong kiểm soát ra vào ngôi nhà thông minh?",B,B,✓,257
+2,Bộ cảm biến trong nhà thông minh thực hiện chức năng gì và bộ truyền động có vai trò gì?,C,C,✓,309
+3,Nội dung chính của bài báo nghiên cứu Public_001 về IoT trong xây dựng nhà thông minh là gì?,C,C,✓,608
+4,"Dựa vào thông tin trong tài liệu Public_001, hãy tính số bài báo trung bình mỗi lớp trong nghiên cứu được đề cập.",B,B,✓,122
+5,"Dựa trên tài liệu Public_002, mô tả học phần Cơ sở dữ liệu nâng cao, hãy liệt kê các loại CSDL không được đề cập trong nội dung học phần này.",D,D,✓,202
+6,Nhóm môn học trong tài liệu Public_002 tập trung cung cấp cho sinh viên kiến thức tổng quan về lĩnh vực nào?,B,B,✓,568
+7,"Trong tài liệu Public_002, đối với đoạn liệt kê các học phần từ số 47 đến 81, nếu các học phần này được trải đều trên 7 trang, trung bình mỗi trang mô tả bao nhiêu học phần?",A,A,✓,161
+8,Điểm BLEU được dùng để đánh giá chất lượng bản dịch trong tài liệu Public_003 là gì?,C,C,✓,226
+9,Công cụ nào được nhóm tác giả của tài liệu Public_003 sử dụng để huấn luyện các hệ dịch nơ ron?,B,B,✓,225
+10,Điểm BLEU và công cụ huấn luyện hệ dịch nơ ron trong nghiên cứu này là gì?,C,C,✓,297
+11,Nội dung chính của tài liệu Public_003 là gì?,B,B,✓,584
+12,"Theo kết quả thử nghiệm, hệ dịch Adapt_System cải thiện bao nhiêu điểm BLEU so với Baseline_G trong miền pháp lý?",D,D,✓,45
+13,Công nghệ in bê tông 3D được thực hiện theo quy trình nào?,C,C,✓,490
+14,Công nghệ nào được phát triển tại Đại học Loughborough (Anh)?,B,B,✓,105
+15,"Công nghệ in bê tông 3D nào vừa cho phép kiểm soát tốt cấu trúc sản phẩm, vừa sử dụng bê tông cốt liệu sợi tổng hợp cường độ cao?",B,B,✓,266
+16,Nội dung chính của bài báo Public_004 là gì?,B,B,✓,428
+17,"Trong tài liệu, ưu điểm của công nghệ Contour Crafting so với Concrete Printing là gì?",A,A,✓,297
+18,OCR là viết tắt của gì trong bài báo này?,A,A,✓,141
+19,"Giải pháp thử nghiệm tại Học viện Ngân hàng được lựa chọn là gì, theo tài liệu Public_005?",B,B,✓,233
+20,"Công nghệ nào vừa cho phép máy tính tự động nhận biết ký tự trên hình ảnh, vừa có khả năng đọc hiểu dữ liệu chữ viết tay và chữ in?",B,B,✓,497
+21,Nội dung chính của bài báo là gì?,B,B,✓,406
+22,"Theo tài liệu Public_005, tỷ lệ sai số theo đơn vị từ của FPT.AI Reader trong thử nghiệm là bao nhiêu?",C,C,✓,101
+23,"Theo tài liệu Public_006, các nhiệm vụ và quyền hạn của các thiết chế quản trị đại học ở Việt Nam được quy định trong luật nào?",B,B,✓,181
+24,"Theo tài liệu Public_006, cơ quan nào có thẩm quyền cao nhất trong trường đại học?",A,A,✓,136
+25,"Làm thế nào để ứng dụng công nghệ số trong quản trị đại học có thể bao quát toàn bộ hoạt động của nhà trường kịp thời và hỗ trợ ra quyết sách quản lý, điều hành hiệu quả?",B,B,✓,614
+26,Nội dung chính của bài báo Public_006 là gì?,B,B,✓,554
+27,"Theo số liệu trong tài liệu, đến nay ngành giáo dục đã số hóa dữ liệu của khoảng bao nhiêu giáo viên và học sinh?",D,D,✓,140
+28,ISO 15189:2022 áp dụng cho đối tượng nào?,B,B,✓,160
+29,"Theo tiêu chuẩn trong tài liệu Public_007, “khiếu nại” được định nghĩa như thế nào?",C,C,✓,114
+30,"Trong các tiêu chuẩn ISO/IEC liên quan đến đo lường và đánh giá sự phù hợp, tiêu chuẩn nào cung cấp từ vựng quốc tế về đo lường và định nghĩa thuật ngữ độ chệch?",B,B,✓,198
+31,Nội dung chính của tiêu chuẩn ISO 15189:2022 là gì?,B,B,✓,493
+32,"Theo Public_007, “khoảng tham chiếu sinh học” thường được định nghĩa ở mức bao nhiêu phần trăm giá trị tập trung?",A,A,✓,82
+33,Giám đốc phòng xét nghiệm theo ISO 15189:2022 có thể ủy quyền nhiệm vụ cho ai?,B,B,✓,229
+34,ISO 15189:2022 yêu cầu thiết lập và theo dõi những chỉ số chất lượng nào?,C,C,✓,313
+35,"Theo tài liệu Public_008, các yêu cầu đúng khi lựa chọn, vận hành và bảo dưỡng thiết bị phòng xét nghiệm là gì?",A,A,✓,517
+36,Nội dung chính của phần tiêu chuẩn trong tài liệu là gì?,B,B,✓,501
+37,"Nếu phòng xét nghiệm có 500 mẫu xét nghiệm trong tháng, trong đó có 25 mẫu bị từ chối, tỷ lệ từ chối mẫu là bao nhiêu?",A,A,✓,116
+38,Học phần Những nguyên lý cơ bản của Chủ nghĩa Mác – Lênin thuộc khối kiến thức nào?,A,A,✓,141
+39,Học phần Nhập môn ngành CNTT trang bị cho sinh viên những kỹ năng nào ngoài kiến thức chuyên ngành?,C,C,✓,376
+40,"Học phần nào vừa giúp sinh viên năm nhất làm quen với môi trường đại học và kiến thức cơ bản ngành CNTT, vừa rèn luyện các kỹ năng mềm và chuẩn mực đạo đức cần thiết để trở thành kỹ sư công nghệ thông tin?",C,C,✓,226
+41,Nội dung chính của tài liệu Public_009 là gì?,B,B,✓,670
+42,"Theo quy định tại tài liệu Public_009, nếu một học phần có cấu trúc 3(2:1:6) thì số tiết lý thuyết, thực hành và tự học lần lượt là bao nhiêu?",C,C,✓,112
+43,"Theo tiêu chuẩn ISO 15189:2022, việc lưu giữ hồ sơ phòng xét nghiệm nhằm mục đích chính nào?",C,C,✓,292
+44,"Khi xảy ra sự không phù hợp, hành động đầu tiên mà phòng xét nghiệm phải thực hiện theo ISO 15189:2022 là gì?",A,A,✓,350
+45,"Theo hướng dẫn về kiểm soát hồ sơ, phòng xét nghiệm phải đảm bảo điều gì khi sửa đổi hồ sơ?",A,A,✓,190
+46,Nội dung chính của phần 8 trong tiêu chuẩn ISO 15189:2022 là gì?,C,C,✓,448
+47,Mạng GAN (Global Area Network) là gì?,C,C,✓,468
+48,Thành phần nào có chức năng giao tiếp giữa máy tính và đường truyền trong mạng máy tính?,B,B,✓,174
+49,Mạng máy tính được phân loại theo những tiêu chí nào và Internet ban đầu ra đời từ mục đích gì?,A,A,✓,386
+50,Nội dung chính của tài liệu Public_011 là gì?,B,B,✓,593
+51,"Với một mạng kết nối 200 máy tính và có bán kính hoạt động 500m trong một tòa nhà, phân loại mạng chính xác nhất của nó là gì?",A,A,✓,137
+52,Hệ điều hành có nhiệm vụ gì?,B,B,✓,357
+53,"Theo tài liệu, ký hiệu đại diện * trong tên tệp có ý nghĩa gì?",C,C,✓,146
+54,Hệ điều hành có những nhiệm vụ chính nào và phiên bản Windows nào cho phép đặt tên tệp dài tới 255 ký tự?,A,A,✓,244
+55,Nội dung chính của tài liệu là gì?,D,B,✗,545
+56,"Nếu Windows XP quản lý cho phép đặt tên tập tin dài tối đa 255 ký tự, còn MS-DOS chỉ cho phép tối đa 8 ký tự, thì Windows XP dài hơn bao nhiêu ký tự?",C,C,✓,86
+57,Thế hệ máy tính điện tử nào sử dụng bóng đèn điện tử chân không?,A,A,✓,105
+58,Thuật ngữ “Tin học” (Informatics) lần đầu tiên được đề xuất bởi ai?,B,B,✓,124
+59,Thông tin khác dữ liệu ở điểm nào và quá trình xử lý thông tin theo máy tính gồm những bước nào?,A,A,✓,656
+60,Nội dung chính của tài liệu là gì?,A,B,✗,445
+61,"Nếu một máy tính thế hệ 2 có tốc độ trung bình 50.000 phép tính/giây, thì nó nhanh gấp bao nhiêu lần so với máy thế hệ 1 tốc độ trung bình 1.000 phép tính/giây?",C,C,✓,181
+62,Bit là viết tắt của từ gì?,A,A,✓,93
+63,"Trong hệ đếm thập lục phân, ký tự “F” biểu diễn giá trị thập phân nào?",C,C,✓,125
+64,"Trong máy tính, mọi dữ liệu được biểu diễn dưới dạng gì và đơn vị thông tin nhỏ nhất là gì?",B,B,✓,204
+65,Nội dung chính của tài liệu là gì?,"A,C",B,✗,646
+66,"Nếu dùng 8 bit để biểu diễn số nguyên không dấu, giá trị lớn nhất có thể biểu diễn là bao nhiêu?",C,C,✓,182
+67,Khối nào trong CPU có nhiệm vụ thực hiện các phép tính số học và logic?,B,B,✓,232
+68,Bộ nhớ nào lưu trữ chương trình hệ thống và không bị mất dữ liệu khi tắt máy?,A,A,✓,165
+69,CPU gồm những bộ phận chính nào và bộ nhớ chính của máy tính được chia thành những loại nào?,B,B,✓,401
+70,Nội dung chính của tài liệu là gì?,C,B,✗,680
+71,"Nếu một CPU có 36 bit địa chỉ, dung lượng tối đa của bộ nhớ chính mà nó quản lý được là bao nhiêu?",C,C,✓,121
+72,Tiêu chuẩn TCVN 9395:2012 áp dụng cho loại cọc nào?,B,B,✓,77
+73,Dung dịch khoan bentonite có vai trò chính gì trong thi công cọc khoan nhồi?,A,A,✓,385
+74,"Theo TCVN 9395:2012, tiêu chuẩn này áp dụng cho loại cọc nào và từ đường kính bao nhiêu trở lên?",B,B,✓,76
+75,Nội dung chính của tiêu chuẩn TCVN 9395:2012 là gì?,C,C,✓,529
+76,"Nếu trong quá trình khoan, cao độ dung dịch khoan phải luôn cao hơn mực nước ngầm ít nhất 1,5 m, giả sử mực nước ngầm ở -10 m thì cao độ dung dịch khoan tối thiểu phải đạt bao nhiêu?",B,B,✓,138
+77,"Theo TCVN 5574:2018, tính toán kết cấu bê tông và bê tông cốt thép cần được thực hiện dựa trên những trạng thái giới hạn nào?",B,B,✓,308
+78,Các loại bê tông nào được phép sử dụng khi thiết kế kết cấu theo TCVN 5574:2018?,D,"A,B,C,D",✗,224
+79,"Theo TCVN 9379:2012, tính toán kết cấu bê tông và bê tông cốt thép cần được thực hiện theo những trạng thái giới hạn nào và phải đảm bảo điều gì trong suốt thời hạn sử dụng công trình?",A,A,✓,472
+80,Nội dung chính của tiêu chuẩn TCVN 5574:2018 là gì?,B,B,✓,424
+81,"Nếu một dầm bê tông cốt thép có nhịp 6 m, theo TCVN 5574:2018 độ võng tối đa cho phép là 1/150 nhịp, giá trị võng lớn nhất cho phép là bao nhiêu?",C,C,✓,133
+82,Tiêu chuẩn TCVN 5574:2018 áp dụng cho những loại bê tông nào?,C,"A,B,C,D",✗,385
+83,Tiêu chuẩn TCVN 5574:2018 không áp dụng để thiết kế loại kết cấu nào sau đây?,C,C,✓,332
+84,"Theo TCVN 9379:2012, tính toán kết cấu bê tông và bê tông cốt thép cần được tiến hành theo những trạng thái giới hạn nào và phải đảm bảo điều gì trong suốt thời hạn sử dụng công trình?",A,A,✓,428
+85,Nội dung chính của phần yêu cầu chung đối với kết cấu bê tông và bê tông cốt thép trong TCVN 5574:2018 là gì?,B,B,✓,484
+86,"Nếu một cấu kiện bê tông làm việc trong môi trường xâm thực, theo TCVN 5574:2018, cần đảm bảo thêm yêu cầu gì ngoài an toàn và sử dụng bình thường?",C,C,✓,441
+87,Bộ phận nào trong hệ thống chống sét có nhiệm vụ thu sét trực tiếp?,A,A,✓,117
+88,Quốc gia nào là nước đầu tiên công bố Kế hoạch chiến lược trí tuệ nhân tạo quốc gia và vào năm nào?,B,B,✓,82
+89,Nội dung chính của TCVN 9385:2012 là gì?,B,B,✓,516
+90,"Một công trình cao 30 m cần bảo vệ chống sét trực tiếp. Theo bán kính bảo vệ của kim thu sét (r = 1,5h), bán kính bảo vệ tối đa là bao nhiêu?",C,"C,D",✗,110
+91,Chiều dày màng khô của lớp phủ chống cháy được xác định bằng cách nào?,B,B,✓,360
+92,Loại đầu đo nhiệt nào được ưu tiên sử dụng trong thử nghiệm cấu kiện thép?,C,C,✓,304
+93,"Theo quy định, chiều dày màng khô của vật liệu bảo vệ được đo bằng nguyên tắc nào và loại đầu đo nhiệt nào được ưu tiên sử dụng khi thử nghiệm trên cấu kiện thép?",C,C,✓,256
+94,Nội dung chính của tài liệu là gì?,"A,C,D",B,✗,582
+95,"Theo quy định, cần bao nhiêu phép đo chiều dày tối thiểu trên dầm chịu tải?",C,C,✓,64
+96,Bộ mã chuẩn nào đã được chọn cho tiếng Việt trong CNTT?,C,B,✗,154
+97,"Trong xử lý ngôn ngữ, bài toán nào có mục tiêu chuyển văn bản thành tiếng nói?",C,C,✓,188
+98,"Theo tài liệu Public_021, khi đo chiều dày màng khô của vật liệu bảo vệ, nguyên tắc nào được áp dụng và liệu có yêu cầu về đường kính vỏ bọc tối thiểu ưu tiên của đầu đo nhiệt liên quan đến quy trình này không?",C,C,✓,134
+99,Nội dung chính của tài liệu là gì?,A,B,✗,469
+100,"Theo đánh giá, hiện có bao nhiêu phần trăm dữ liệu không cấu trúc trong tổng lượng dữ liệu của loài người?",C,C,✓,129
+101,Chiều dày lớp bảo vệ chịu lửa được định nghĩa như thế nào?,C,C,✓,373
+102,"Theo tài liệu Public_022, các thử nghiệm chịu lửa được áp dụng cho những loại tiết diện thép nào và không áp dụng cho loại nào?",C,C,✓,238
+103,Nội dung chính của tiêu chuẩn TCVN xxxx:202x là gì?,"A,B,C",B,✗,468
+104,"Theo quy định, mẫu thử nghiệm dầm chịu tải phải chịu tải trọng bằng bao nhiêu phần trăm sức kháng mô men thiết kế?",C,C,✓,112
+105,Chiều dày vật liệu bọc bảo vệ dạng bản hoặc tấm được phép sai lệch tối đa bao nhiêu % so với giá trị trung bình?,B,B,✓,122
+106,"Đối với lớp phủ dạng phản ứng, độ dày trung bình được xác định như thế nào?",C,C,✓,230
+107,Hệ điều hành có những nhiệm vụ chính nào và phiên bản Windows nào cho phép đặt tên tệp dài tới 255 ký tự?,A,A,✓,248
+108,Nội dung chính của tài liệu Public_023 là gì?,B,B,✓,636
+109,Khối lượng riêng của vật liệu bảo vệ dạng thụ động được phép sai lệch tối đa bao nhiêu % so với giá trị trung bình?,C,C,✓,169
+110,"Theo tài liệu Public_024, thực phẩm được định nghĩa là gì?",B,B,✓,310
+111,Thực phẩm giàu protein thường có trong nhóm nguyên liệu nào?,C,C,✓,133
+112,Thực phẩm là gì? Thực phẩm chức năng dùng chủ yếu để làm gì?,B,B,✓,365
+113,Nội dung chính của phần “Khái quát về thực phẩm và công nghệ thực phẩm” là gì?,A,A,✓,505
+114,"Nếu một người tiêu dùng mua 100g bánh mì (giàu glucid ~50%) và 100g cá (giàu protein ~20%), thì lượng glucid và protein người đó nạp vào lần lượt là bao nhiêu gam?",C,C,✓,145
+115,Định nghĩa của chiếu xạ thực phẩm trong tài liệu Public_025 là gì?,B,B,✓,312
+116,Tia bức xạ nào hiện nay được sử dụng phổ biến trong công nghiệp thực phẩm?,C,C,✓,396
+117,Chiếu xạ thực phẩm về mặt cơ sở khoa học là gì? Và mục đích công nghệ chủ yếu hiện nay của chiếu xạ thực phẩm là gì?,A,A,✓,414
+118,Nội dung chính của phần “Chiếu xạ trong công nghiệp thực phẩm” là gì?,A,A,✓,449
+119,"Nếu một loại trái cây được xử lý bằng liều chiếu xạ 2 kGy, trong khi mức 1 kGy không làm mất vitamin C còn mức 2–4 kGy làm giảm mạnh vitamin C, thì loại trái cây đó có nguy cơ bị giảm giá trị dinh dưỡng như thế nào?",C,C,✓,245
+120,Xơ dệt được phân loại theo nguồn gốc thành mấy nhóm chính?,B,B,✓,185
+121,"Theo tài liệu Public_026, thành phần chính của xơ len là gì?",C,C,✓,56
+122,Nội dung chính của chương 1 trong tài liệu `Public_026` là gì?,B,B,✓,649
+123,Nếu một sợi có chiều dài 1000 m và khối lượng 20 g thì chỉ số Tex của sợi đó bằng bao nhiêu?,C,C,✓,88
+124,Thành phần chính của xơ bông là gì?,B,B,✓,226
+125,Nhiệt độ chuyển mềm của len thường nằm trong khoảng nào?,D,C,✗,181
+126,Nội dung chính của tài liệu Public_027 là gì?,B,B,✓,506
+127,"Nếu sợi bông có độ ẩm hoàn toàn khô là 8 g, khi hút ẩm đạt khối lượng 8,8 g thì độ ẩm tương đối của sợi là bao nhiêu?",C,C,✓,125
+128,Ai là những nhà khoa học được ghi nhận phát minh ra transistor lưỡng cực vào năm 1947?,C,C,✓,74
+129,Transistor NPN có các cực được sắp xếp như thế nào?,B,B,✓,137
+130,Transistor được tạo thành từ mấy lớp bán dẫn và ba người nào được ghi nhận là những nhà phát minh ra nó?,A,A,✓,122
+131,Nội dung chính của tài liệu Public_028 là gì?,B,B,✓,406
+132,"Nếu bộ phát (Emitter) bị pha tạp nặng, Base pha tạp nhẹ và Collector pha tạp vừa phải, thì vùng nghèo kiệt sẽ mở rộng nhiều hơn về phía nào?",C,C,✓,346
+133,Vật liệu nào phổ biến nhất được sử dụng làm chất bán dẫn cơ bản?,A,A,✓,172
+134,Quá trình thêm tạp chất vào chất bán dẫn để cải thiện tính dẫn điện gọi là gì?,B,B,✓,334
+135,Chất bán dẫn tinh khiết là gì và hiện tượng pha tạp (doping) có tác dụng gì?,A,A,✓,334
+136,Nội dung chính của tài liệu là gì?,D,B,✗,608
+137,"Nếu một tinh thể silicon có tỷ lệ doping là 1 nguyên tử tạp chất trên 10 triệu nguyên tử Si, thì khi thêm 100 nguyên tử tạp chất, số nguyên tử Si xấp xỉ bao nhiêu?",C,C,✓,246
+138,Đơn vị đo điện dung của tụ điện là gì?,A,A,✓,194
+139,Hằng số điện môi ε₀ trong chân không có giá trị bao nhiêu?,B,B,✓,57
+140,Tụ điện là gì và điện dung của tụ được tính theo công thức nào?,A,A,✓,450
+141,Nội dung chính của tài liệu Public_030 là gì?,B,B,✓,545
+142,"Một tụ điện phẳng có A = 10 m², d = 5 m, điện môi là không khí (εr = 1). Hãy tính điện dung C.",D,D,✓,294
+143,Đơn vị đo điện trở là gì?,A,A,✓,286
+144,Ký hiệu điện trở theo tiêu chuẩn IEC có dạng nào?,B,B,✓,94
+145,Điện trở là gì và tại sao được gọi là linh kiện thụ động?,B,B,✓,440
+146,Nội dung chính của tài liệu Public_031 là gì?,B,B,✓,566
+147,"Một mạch nối tiếp gồm R1 = 2Ω, R2 = 4Ω, R3 = 6Ω, dòng điện I = 4A. Hãy tính điện áp toàn mạch.",C,C,✓,186
+148,Nguồn điện nào thường tạo ra điện áp một chiều (DC)?,A,A,✓,121
+149,Định luật Ohm được phát biểu như thế nào?,B,B,✓,256
+150,Dòng điện một chiều (DC) là gì và định luật Ohm liên quan như thế nào?,B,B,✓,361
+151,Nội dung chính của tài liệu là gì?,B,B,✓,480
+152,Một mạch có điện áp 12V và điện trở 6Ω. Hãy tính dòng điện chạy qua mạch theo định luật Ohm.,A,A,✓,128
+153,Ai là người phát minh ra pin điện đầu tiên vào năm 1800?,B,B,✓,44
+154,Dòng điện tử trong thực tế chảy theo chiều nào?,C,C,✓,149
+155,Nguồn gốc dòng điện và hai giả thuyết về chiều dòng điện là gì?,B,B,✓,318
+156,Nội dung chính của phần “Giới thiệu về điện” trong tài liệu Public_033 là gì?,B,B,✓,296
+157,"Nếu một dầm dây dẫn có dòng điện 2000 mA chạy qua, giá trị này tương ứng với bao nhiêu ampe?",C,C,✓,150
+158,"Theo tài liệu Public_034, photodiode hoạt động hiệu quả nhất khi được phân cực như thế nào?",A,A,✓,180
+159,Ai là người đầu tiên đề xuất ý tưởng về phototransistor?,C,C,✓,82
+160,Photodiode hoạt động như thế nào và khác gì với phototransistor?,A,A,✓,421
+161,Nội dung chính của tài liệu Public_034 là gì?,B,B,✓,502
+162,Một photodiode PIN cho dòng điện 1 µA trong điều kiện chiếu sáng phòng. Một phototransistor cùng điều kiện có dòng lớn hơn khoảng bao nhiêu lần?,D,D,✓,165
+163,MAE loss còn có tên khác là gì,A,A,✓,125
+164,"Theo tài liệu Public_035, điều gì xảy ra nếu learning rate quá nhỏ?",C,C,✓,142
+165,"Trong bối cảnh linear regression đơn biến, mô hình được biểu diễn ra sao và mục tiêu của bài toán khi được mô hình hóa là gì?",B,B,✓,258
+166,Những thành phần chính nào cấu thành mô hình hồi quy tuyến tính?,A,A,✓,492
+167,Một trình tối ưu linear regression ghi nhận cost function tăng. Hành động hợp lý tiếp theo là gì?,D,D,✓,394
+168,"Trong tài liệu Public_036, đâu không phải một ứng dụng của Image segmentation được đề cập?",D,C,✗,173
+169,Mạng U-Net có mấy phần chính?,B,B,✓,201
+170,"Theo tài liệu Public_036, có bao nhiêu loại bài toán segmentation và đó là những loại nào?",C,C,✓,216
+171,"Theo tài liệu Public_036, mạng U-Net có những hạn chế hoặc điểm yếu nào khi áp dụng trong bài toán Image segmentation?",C,A,✗,505
+172,"Xác định padding (p) và stride (s) khi tiến hành transposed convolution với input 4x4, kernel 3x3 để cho ra output 9x9",B,C,✗,490
+173,Mô hình skip-gram ban đầu có bao nhiêu lớp ẩn (hidden layer)?,A,A,✓,158
+174,Co-occurrence matrix có tính chất đối xứng gì và kích thước của ma trận này là bao nhiêu (với V là kích thước từ điển)?,B,C,✗,264
+175,Khẳng định nào dưới đây không đúng với bối cảnh bài toán trong tài liệu Public_037?,B,B,✓,292
+176,Đặc điểm của một vector không phải là one-hot encoding là gì?,"B,C",B,✗,444
+177,"Trong số các mô hình mạng nơ-ron được đề cập trong tài liệu Public_038, mô hình nào không phải là một dạng của Mạng Nơ-ron Hồi quy (RNN)?",C,B,✗,336
+178,Sinh mô tả ảnh thuộc vào dạng RNN nào?,A,A,✓,242
+179,"Theo tài liệu Public_038, câu output của mô hình seq2seq sẽ có thêm mấy token và đó là những token nào?",D,D,✓,114
+180,"Trong bối cảnh dịch máy, đâu là cách hiểu ""sản phẩm trung gian"" phù hợp với seq2seq?",D,D,✓,352
+181,"Theo tài liệu Public_038, khẳng định nào dưới đây là đúng với cơ chế attention?",A,C,✗,328
+182,Đâu không phải là một ứng dụng của GAN được nêu trong phần đầu tiên của tài liệu Public_039?,D,D,✓,288
+183,GAN là viết tắt của?,A,A,✓,169
+184,"GAN gồm bao nhiêu thành phần mạng và tên gọi của chúng, theo đúng thuật ngữ, là?",C,C,✓,232
+185,Tóm tắt cách hoạt động của GAN?,B,B,✓,552
+186,Đâu là một ví dụ được coi là tương đồng với cách thức huấn luyện của GAN?,A,A,✓,269
+187,Khác biệt về kiến trúc của DCGAN và GAN?,B,B,✓,458
+188,Input của Generator trong mạng tạo sinh đối kháng (GAN) là gì?,C,C,✓,266
+189,Kích thước ảnh của CIFAR-10 và Fashion-MNIST là gì?,A,A,✓,193
+190,Điểm chung giữa DCGAN và Conditional GAN là?,D,D,✓,414
+191,"Đâu là yếu tố tạo nên ""Conditional"" trong Conditional GAN?",B,B,✓,449
+192,Logistic regression có đầu ra là gì?,A,B,✗,325
+193,Đâu là công thức của sigmoid?,C,C,✓,130
+194,"Hàm mất mát Cross-Entropy biến thiên ra sao khi nhãn thực y_i lần lượt là 1 và 0, ứng với các giá trị xác suất dự đoán p_i?",D,D,✓,334
+195,Điểm giống nhau cơ bản của logistic regression và linear regression là gì,A,A,✓,430
+196,"Theo nguyên lý xác suất được trình bày trong tài liệu Public_041, đâu không phải là một khẳng định hợp lý?",C,C,✓,410
+197,Mô hình neural network lấy cảm hứng từ?,B,B,✓,264
+198,"Neural network bắt chước toàn bộ cơ chế hoạt động của hệ thần kinh, đúng hay sai?",A,A,✓,274
+199,Ký hiệu phổ biến cho số đặc trưng trong một điểm dữ liệu và số điểm dữ liệu lần lượt là?,D,D,✓,154
+200,Bài toán về toán tử bit nào là minh chứng cho việc cần xây dựng nhiều hơn một lớp ẩn?,C,C,✓,297
+201,"Theo tài liệu Public_042, vì sao lại nên dùng hàm kích hoạt phi tuyến (non-linear activation)?",D,B,✗,430
+202,Hệ màu RGB biểu diễn tất cả các màu khả kiến dưới dạng tổ hợp của ba màu gì?,A,A,✓,182
+203,Tensor được chuyên dùng để mô tả dữ liệu theo mấy chiều,C,C,✓,249
+204,Một pixel của ảnh xám có thể nhận giá trị tối thiểu và tối đa lần lượt là?,C,C,✓,124
+205,Phép tích chập (convolution) gồm ba yếu tố chính là kernel và hai thành phần nào?,B,B,✓,228
+206,"Sử dụng công thức quy đổi RGB sang ảnh xám (p = 0.299 * r + 0.587 * g + 0.114 * b, làm tròn tới hàng đơn vị) được đề cập trong tài liệu Public_043, hãy xác định giá trị pixel ảnh xám ứng với pixel ảnh RGB (100, 10, 1).",A,A,✓,208
+207,Đâu là vấn đề trong xử lý ảnh mà CNN giải quyết tốt hơn so với các mạng nơ-ron truyền thống?,D,D,✓,461
+208,Pooling layer được thiết kế để?,B,B,✓,298
+209,Pooling layer của VGG16 có kích thước ra sao và hàm pool là?,C,C,✓,249
+210,Tổng quát một CNN sẽ gồm hai phần chính nào sau đây?,A,A,✓,245
+211,"Kết quả average pooling của hình vuông gồm 4 giá trị 15, 20, 30, 45 là?",B,B,✓,125
+212,"Theo tài liệu Public_045, điểm chung của Transfer learning và data augmentation là gì?",B,B,✓,286
+213,"Theo tài liệu Public_045, đâu không phải là một hình thức data augmentation cho ảnh?",D,D,✓,289
+214,"Theo tài liệu Public_045, khi tiến hành phân lớp với nhiều hơn hai lớp, có bao nhiêu chiến lược tiếp cận? Hình thức của chúng là gì?",C,A,✗,156
+215,"Trường hợp nào sau đây được đề xuất sử dụng Finetuning hơn là Feature extractor?
+I. Dữ liệu lớn, khác dữ liệu pretrain
+II. Dữ liệu nhỏ, khác dữ liệu pretrain
+III. Dữ liệu nhỏ, giống dữ liệu pretrain
+IV. Dữ liệu lớn, giống dữ liệu pretrain",C,D,✗,374
+216,"Theo tài liệu Public_045, đâu không phải là khẳng định đúng giữa Finetuning và Feature extractor?",A,A,✓,382
+217,Lợi ích chính của vectorization là gì,A,A,✓,356
+218,"Theo tài liệu Public_046, giá trị p trong dropout thể hiện điều gì?",C,C,✓,204
+219,"Theo tài liệu Public_046, khái niệm tiếng Việt cho bias và variance là gì?",C,C,✓,464
+220,Đâu là mục tiêu chính của các phương pháp trong tài liệu Public_046?,D,D,✓,461
+221,Một thuật toán gradient descent lấy ra 32 dữ liệu điểm mỗi lần tính đạo hàm thì thuộc loại gradient descent nào?,B,B,✓,173
+222,Input của bài toán object detection là?,B,B,✓,190
+223,Vấn đề chính của R-CNN là?,C,C,✓,241
+224,IoU phụ thuộc vào hai toán tử tập hợp nào và công thức là gì?,D,A,✗,270
+225,Các nguyên tắc cốt lõi và thành phần chính của các cách tiếp cận object detection là gì?,B,B,✓,625
+226,"Trong ROI pooling, để tạo ra output có kích thước 4x4, mỗi vùng quan tâm (ROI) được chia thành bao nhiêu phân vùng con để thực hiện pooling?",D,D,✓,190
+227,Bộ dữ liệu được sử dụng trong tài liệu Public_048 có bao nhiêu ảnh?,A,A,✓,25
+228,Mô hình được sử dụng để huấn luyện trong tài liệu Public_048 là gì?,D,D,✓,120
+229,"Trong tài liệu Public_048, có bao nhiêu phương pháp tăng cường dữ liệu đã được dùng và gồm những thao tác nào?",B,B,✓,230
+230,Cách tiếp cận đã nêu trong tài liệu Public_048 có tiến hành đọc biển số hay không?,A,A,✓,238
+231,Phân loại của bài toán được mô tả trong tài liệu Public_048 là gì?,C,C,✓,284
+232,"Theo tài liệu Public_049, khái niệm được dùng để đại diện tập xác định của một biến là gì?",A,A,✓,309
+233,"Theo tài liệu Public_049, thành phần nào không thuộc phạm vi quản lý của biến?",D,A,✗,190
+234,Tên kiểu dữ liệu của ký tự ASCII và ký tự Unicode lần lượt là?,C,C,✓,84
+235,Đâu không phải khẳng định đúng về các đặc tính của thuật toán được đề cập trong tài liệu Public_049?,C,C,✓,381
+236,Phương trình toán học 3x + 4y + 5z = 6 có mấy biến?,A,A,✓,24
+237,"Dựa vào tài liệu Public_050, từ nào điền vào chỗ trống sau: nếu hàm số f(x) bị ... bởi hằng số C nhân với g(x), ta nói f(x) có độ phức tạp O(g(x))?",B,B,✓,192
+238,"Theo nguyên tắc tổng, f1(x) + f2(x) có độ phức tạp là?",A,A,✓,254
+239,Độ phức tạp tuyến tính và giai thừa lần lượt có ký hiệu là?,C,C,✓,121
+240,"Theo tài liệu Public_050, bước đầu tiên của quá trình tiếp cận bài toán là gì?",C,C,✓,152
+241,Hai thuật toán được tiến hành kế tiếp nhau lần lượt có độ phức tạp O(n) và O(n^2). Độ phức tạp của chương trình là?,B,B,✓,240
+242,"Dựa trên tài liệu Public_051, khái niệm nào không thuộc về thuật toán sinh?",D,D,✓,464
+243,Nội dung của tài liệu Public_051 không bao gồm bài toán nào?,D,D,✓,141
+244,Số hoán vị của N phần tử phân biệt là bao nhiêu và giá trị tương ứng khi N = 3 là?,A,A,✓,106
+245,Đâu là cốt lõi của thuật toán đệ quy?,C,C,✓,409
+246,"Bài toán liệt kê xâu nhị phân độ dài 6 phải trải qua bao nhiêu cấu hình, nếu biết số cấu hình cho độ dài n là 2^n?",B,B,✓,93
+247,Đâu không phải một ví dụ duyệt được thực hiện bởi quay lui?,D,D,✓,406
+248,"Trong bài toán N quân hậu, quân hậu ở hàng thứ i phải thỏa mãn điều gì?",D,D,✓,309
+249,"Theo tài liệu Public_052, tên của thủ tục tiền xử lý và thủ tục chạy quay lui được gọi trong hàm main() lần lượt là gì?",C,C,✓,114
+250,"Làm thế nào để áp dụng thuật toán quay lui để duyệt hoặc sinh ra một số tập con K phần tử cụ thể, thay vì duyệt toàn bộ các tập con K phần tử?",B,B,✓,632
+251,Những điều kiện tiên quyết nào áp dụng cho việc sắp xếp dữ liệu?,A,A,✓,378
+252,Vai trò của sắp xếp đối với hiệu quả của quá trình tìm kiếm dữ liệu là gì?,B,B,✓,502
+253,Cho biết số lượng thuật toán sắp xếp đơn giản được trình bày trong tài liệu Public_053 và tên của chúng?,A,A,✓,245
+254,Độ phức tạp nhỏ nhất của Insertion Sort là?,B,C,✗,81
+255,"Theo tài liệu Public_054, hành động chính của Bubble Sort là gì?",B,B,✓,330
+256,Đâu không phải một cách chọn khóa (pivot) điển hình trong Quick Sort,B,B,✓,182
+257,"Trong heap, chỉ số node con trái và phải của node x lần lượt là? (node gốc có chỉ số 0)",C,C,✓,144
+258,Đâu là cấu trúc heap ta nên dùng nếu muốn sắp xếp mảng giảm dần?,A,A,✓,297
+259,Đâu là điểm chung giữa Merge Sort và Quick Sort? Chọn một đáp án,C,C,✓,220
+260,Đâu không phải thuật toán tìm kiếm được nêu trong tài liệu?,C,C,✓,225
+261,"Theo tài liệu Public_055, thuật toán đơn giản nhất trong bốn thuật toán được trình bày là gì?",D,D,✓,234
+262,"Trong ngữ cảnh của tài liệu Public_055, kết quả trả về cụ thể (ví dụ: mã trạng thái, cấu trúc dữ liệu, giá trị) khi tìm kiếm 'thấy' và 'không thấy' một mục lần lượt là gì?",C,C,✓,356
+263,Nhận định nào sau đây không đúng dựa trên nội dung của tài liệu Public_055?,B,B,✓,532
+264,"Dựa trên thông tin trong tài liệu Public_055 về tìm kiếm nhị phân hoàn thành trong logN bước, cho biết mảng đã sắp xếp gồm 2^8 phần tử sẽ cần bao nhiêu bước?",A,A,✓,234
+265,"Theo tài liệu Public_056, thao tác nào dưới đây không được liệt kê là một thao tác cơ bản trên linked list?",C,C,✓,234
+266,Một node của danh sách liên kết đơn có mấy trường?,A,A,✓,112
+267,Tên của thao tác cập nhật và tìm kiếm một node trong cấu trúc dữ liệu lần lượt là gì?,D,D,✓,566
+268,Đâu không phải là đặc điểm của linked list?,D,A,✗,420
+269,"Muốn cập nhật trong linked list phần tử thứ 5 với giá trị 7, ta cần nhập vào khi gọi update() thứ tự giá trị nào cho pos và val?",B,B,✓,109
+270,"Theo tài liệu Public_057, đâu không phải là một loại đồ thị được phân loại ở cấp dưới trong hệ thống phân loại đồ thị của tài liệu?",C,C,✓,433
+271,Đồ thị được tạo thành bằng cách bổ sung một đỉnh nối với mọi đỉnh của đồ thị C_n được ký hiệu là?,A,A,✓,82
+272,Tên gọi riêng cho đỉnh bậc 0 và đỉnh bậc 1 trong đồ thị vô hướng là?,B,B,✓,117
+273,Tài liệu Public_057 mô tả những cách biểu diễn đồ thị nào?,D,"A,C,D",✗,430
+274,"Theo tài liệu `Public_057`, đồ thị bánh xe có bao nhiêu cạnh?",A,C,✗,181
+275,"Theo tài liệu Public_058, đâu là một tên gọi khác của kiểm thử chức năng?",B,B,✓,138
+276,Tập S biểu diễn các mẫu hành vi hoặc đặc tính động lực học như thế nào?,A,A,✓,492
+277,"Trong tài liệu Public_058, các hành vi ""được đặc tả"" và ""được kiểm thử"" được định nghĩa thuộc tập nào?",D,D,✓,293
+278,"So sánh kiểm thử hộp trắng và kiểm thử hộp đen, phương pháp nào ưu việt hơn?",C,C,✓,508
+279,"Theo tài liệu Public_058, theo mô hình biểu đồ Venn, thiết kế kiểm chứng nên rơi vào miền nào nhiều nhất?",A,A,✓,374
+280,"Theo tài liệu Public_059, kiểm thử tích hợp tập trung vào vấn đề gì?",B,B,✓,457
+281,"Theo tài liệu Public_059, đâu không phải là một hình thức giao diện giữa nhiều module?",B,B,✓,182
+282,"Ngoài hai cách ghép module thông dụng là top down, bottom up thì còn mấy phương pháp và tên của chúng là?",C,C,✓,162
+283,Nội dung nào không được đề cập trong tài liệu Public_059?,D,D,✓,378
+284,Đoạn code ngắn sau định nghĩa giao diện hàm (function interface) như thế nào?,A,A,✓,401
+285,Chương Public_060 sẽ đi qua bao nhiêu ví dụ?,B,C,✗,142
+286,"Có tất cả bao nhiêu cách để đi đến nút ""Not A Triangle"" trong bài toán Tam giác, theo tài liệu?",B,B,✓,196
+287,"Trong bài toán Ngày kế tiếp, sự phân bố của những loại thực thể nào thường gây ra vấn đề, và liệu việc xác định một thực thể có phụ thuộc vào các thực thể khác không?",A,C,✗,294
+288,"Theo tài liệu Public_060, đâu không phải một yếu tố khiến bài toán Tam giác được đề cập trong đó trở nên phổ biến?",D,A,✗,389
+289,"Kết quả kiểm tra xem bộ ba số (3, 4, 5) có tạo thành tam giác vuông hay không?",A,C,✗,201
+290,Người kiểm thử cần quan tâm điều gì liên quan đến đặc tả được đề cập trong tài liệu Public_061?,"B,C",A,✗,613
+291,Đâu không phải nguyên tắc cốt lõi của khảo sát đặc tả mức cao theo tài liệu Public_061?,A,D,✗,302
+292,"Mục đích của từ ""luôn luôn"" và ""nào đó"", theo danh sách thẩm định thuật ngữ trong tài liệu Public_061, là hàm ý tính không mơ hồ và tính kiểm chứng của đặc tả?",C,C,✓,310
+293,Nhận định nào là chính xác về việc kiểm thử đặc tả mức thấp? Chọn hai nhận định,C,"B,C",✗,512
+294,Đâu không phải một thuật ngữ nhập nhằng trong đặc tả?,D,C,✗,356
+295,Giả định cơ bản nào được áp dụng trong kiểm thử giá trị biên?,C,C,✓,462
+296,Kiểm thử giá trị biên tổ hợp có công thức số ca kiểm thử là hàm số như nào?,D,"A,B,C,D",✗,364
+297,Ký hiệu của cận biên max và cận biên min theo tài liệu Public_062 là gì?,D,A,✗,162
+298,"Trong kiểm thử giá trị biên, thông thường có bao nhiêu giá trị kiểm thử cụ thể được lựa chọn xung quanh mỗi giới hạn?",A,A,✓,208
+299,"Giả sử một hàm ba biến f(x1, x2, x3) được đem ra kiểm thử giá trị biên, hỏi một ca kiểm thử gốc sẽ cho ra bao nhiêu ca kiểm thử dẫn xuất?",B,C,✗,224
+300,Bảng quyết định gồm hai yếu tố chính có tên là?,A,A,✓,112
+301,"Theo tài liệu Public_063, giá trị điều kiện chỉ bó buộc trong T/F, nhận định này đúng hay sai?",B,B,✓,240
+302,"Trong một hệ thống ký hiệu quy trình hoặc trạng thái, ký hiệu cho điều kiện kích hoạt và hành động thực thi lần lượt là gì?",A,A,✓,176
+303,Tiền đề để sử dụng dấu gạch nối (-) trong văn bản kỹ thuật?,C,C,✓,325
+304,"Đâu là tổ hợp biểu diễn một quy tắc có trạng thái điều kiện lần lượt là (đúng, đúng, tùy ý, sai)?",B,B,✓,390
+305,"Theo tài liệu Public_064, yếu tố quan trọng nhất của kiểm thử hộp trắng là gì?",A,A,✓,312
+306,Dòng điều khiển được mô hình hóa bằng các phương pháp hoặc mô hình cụ thể nào?,B,B,✓,453
+307,"Trong tài liệu Public_064, có bao nhiêu độ đo được quyết định chỉ dựa trên câu lệnh rẽ nhánh; đó là những độ đo nào?",D,B,✗,273
+308,"Theo tài liệu Public_064, có tất cả bao nhiêu độ đo kiểm thử?",C,C,✓,196
+309,"Xét hàm sau:
+if (a == 0) return 0;
+if (a == b) return 1;
+return 2;
+Cần bao nhiêu ca kiểm thử để đảm bảo 100% độ phủ cho độ đo C1?",B,A,✗,157
+310,Đâu không phải một yếu tố giúp xác định lát cắt được đề cập trong tài liệu Public_065?,D,D,✓,389
+311,"Trong tài liệu Public_065, bối cảnh ""các đoạn câu lệnh"" hàm ý gì?",D,A,✗,393
+312,"Trong xây dựng lát cắt, câu lệnh dạng I-def và I-use đối với biến v sẽ được xử lý như nào? (Trả lời đúng thứ tự)",D,B,✗,337
+313,Hình thức sử dụng biến nào không bao giờ nằm trong lát cắt của biến đó?,B,B,✓,345
+314,Câu lệnh `int temp = 31415;` thuộc loại khai báo và khởi tạo biến nào?,B,B,✓,214
+315,Mục tiêu của mô hình trong kiểm thử dựa trên mô hình?,A,A,✓,324
+316,Đâu không phải một cách biểu diễn một mô hình máy học?,D,D,✓,481
+317,FSM và DFA được biểu diễn bằng bộ mấy thành phần?,B,B,✓,201
+318,"Thứ tự của quy trình kiểm tra mô hình? Sắp xếp các bước sau.
+1. Sử dụng mô hình tạo ca kiểm thử
+2. Chạy kịch bản kiểm thử
+3. Đối chiếu kết quả kiểm thử
+4. Đánh giá và phản hồi",B,B,✓,322
+319,Điểm nào dưới đây là điểm chung cho hầu hết các hình thức biểu diễn mô hình dữ liệu?,D,C,✗,473
+320,Đâu là nhân tố đóng góp vào việc phát triển kiểm thử tự động,D,D,✓,590
+321,Lý do nào không phải thách thức dẫn đến việc đầu tư cao độ vào phát triển công cụ tìm lỗi và kiểm thử tự động?,C,C,✓,432
+322,Có bao nhiêu bước phân tích trong quy trình được mô tả trong tài liệu Public_067 và tên của chúng là gì?,A,B,✗,252
+323,"Theo tài liệu Public_067, kiến trúc kiểm thử tự động bao gồm những yếu tố nào?",D,D,✓,400
+324,"Trong kiểm thử dựa trên mô hình, những hoạt động nào không được tự động tạo ra từ mô hình mà do con người thực hiện?",A,C,✗,326
+325,"Trong giai đoạn tiền xử lý dữ liệu hình ảnh cho hệ thống thị giác máy tính, kỹ thuật nào giúp giảm nhiễu và tăng độ tương phản?","A,C",C,✗,420
+326,Mục tiêu chính của việc chia tập dữ liệu theo tỉ lệ 70/15/15 trong huấn luyện mô hình là gì?,B,B,✓,302
+327,"Hãy phân tích các bước then chốt trong toàn bộ vòng đời hệ thống thị giác máy tính công nghiệp, từ thu thập dữ liệu hình ảnh đến triển khai và bảo trì, đồng thời nêu rõ vai trò của chuẩn hóa định dạng dữ liệu và kỹ thuật Edge Computing.",A,A,✓,730
+328,Kiến trúc tổng thể của giải pháp thị giác máy tính công nghiệp gồm những giai đoạn chính nào?,A,A,✓,292
+329,"Nếu môi trường sản xuất thay đổi ánh sáng thường xuyên nhưng không cập nhật mô hình, hậu quả nào dưới đây có khả năng xảy ra nhất?",B,B,✓,274
+330,"Theo tài liệu Public_069, những đặc điểm quan trọng nào của dữ liệu chuỗi thời gian cần được xem xét trong việc dự báo?",C,C,✓,424
+331,"Khi thu thập dữ liệu với tần suất cao (high-frequency), thách thức lớn nhất thường là gì?",A,B,✗,369
+332,"Trình bày quy trình tổng thể để xây dựng hệ thống quản lý dữ liệu chuỗi thời gian từ khâu xác định nguồn, thu thập, tiền xử lý đến lưu trữ và mở rộng; đồng thời giải thích tầm quan trọng của đồng bộ NTP và chiến lược partitioning.",A,A,✓,741
+333,"Theo tài liệu Public_069, chuỗi thời gian được lưu trữ hiệu quả thường sử dụng hệ thống hoặc định dạng nào?",D,D,✓,197
+334,"Nếu dữ liệu chuỗi thời gian từ nhiều cảm biến tương quan với nhau được nhóm lại và nén (multi-series group compression), lợi ích nào có thể có được?",A,A,✓,417
+335,Thành phần nào trong kiến trúc 5G cho phép chia mạng thành nhiều “lát” phục vụ các dịch vụ khác nhau?,B,B,✓,158
+336,Công nghệ nào giúp tập trung tín hiệu và tăng hiệu quả sử dụng phổ tần trong 5G?,C,C,✓,234
+337,"Hãy mô tả đầy đủ các thành phần kiến trúc chính của mạng 5G, phương pháp triển khai và các cơ chế quản lý dịch vụ & bảo mật, đồng thời nêu rõ vai trò của network slicing và điện toán biên (MEC).",A,A,✓,676
+338,Phương pháp nào giúp giảm chi phí đầu tư và cho phép nhiều nhà cung cấp thiết bị tham gia triển khai hạ tầng 5G?,D,D,✓,317
+339,"Trong quản lý chất lượng dịch vụ 5G, nhóm dịch vụ nào phù hợp nhất cho truyền video 8K và VR?",B,B,✓,254
+340,Giao thức nào thường được dùng cho thiết bị IoT tiết kiệm băng thông và nhẹ?,B,B,✓,216
+341,"Theo tài liệu Public_071, phương pháp nào cho phép cập nhật firmware hàng loạt mà không cần tiếp cận vật lý thiết bị?",C,C,✓,102
+342,"Trình bày kiến trúc đa lớp và quy trình quản lý mạng IoT quy mô hàng triệu thiết bị, đồng thời giải thích cách bảo mật đa tầng (từ thiết bị đến truyền thông) và cơ chế giám sát–phản ứng sự cố.",A,A,✓,726
+343,"Để bảo vệ dữ liệu trong quá trình truyền, lớp bảo mật nào nên được áp dụng cho kết nối TCP/UDP?",B,B,✓,326
+344,Việc phân nhóm thiết bị IoT theo vị trí địa lý và mức độ quan trọng giúp đạt mục tiêu chính nào?,A,A,✓,322
+345,"Theo tài liệu Public_072, DRL là sự kết hợp của những lĩnh vực nào?",B,B,✓,198
+346,Thành phần nào đóng vai trò đưa ra hành động trong DRL?,C,C,✓,329
+347,"Mô tả quy trình xây dựng hệ thống DRL cho robot công nghiệp từ kiến trúc thành phần đến thuật toán, đồng thời nêu các ứng dụng tiêu biểu và thách thức triển khai thực tế.",A,A,✓,666
+348,Ưu điểm lớn nhất của việc mô phỏng trước khi triển khai trên robot thực là gì?,A,A,✓,292
+349,"Giả sử một robot đã học thành công trong môi trường mô phỏng nhưng thất bại khi hoạt động thực tế, nguyên nhân hợp lý nhất là gì?",B,B,✓,332
+350,"Theo tài liệu Public_073, ưu điểm nổi bật nhất của Federated Learning trong y tế là gì?",B,B,✓,224
+351,Thuật toán tổng hợp trọng số phổ biến trong FL là gì?,C,C,✓,252
+352,"Hãy phân tích nguyên lý hoạt động của Federated Learning và các kỹ thuật bảo mật nâng cao, đồng thời nêu lợi ích và thách thức khi áp dụng trong môi trường y tế đa cơ sở.",A,A,✓,758
+353,Thách thức lớn nhất khi các bệnh viện có đặc điểm dữ liệu khác nhau là gì?,D,D,✓,406
+354,"Giả sử một bệnh viện có hạ tầng yếu, vấn đề chính khi tham gia FL là gì?",C,C,✓,456
+355,Đơn vị thông tin cơ bản trong điện toán lượng tử là gì?,B,B,✓,264
+356,Thuật toán nào thường dùng để tối ưu hóa tổ hợp trong mạng 6G?,B,C,✗,276
+357,"Trình bày cách điện toán lượng tử hỗ trợ giải các bài toán tối ưu trong mạng 6G, mô tả các thuật toán lượng tử tiêu biểu và kiến trúc triển khai thực tế.",A,A,✓,710
+358,Hình thức triển khai nào cho phép trạm gốc 6G sử dụng tài nguyên lượng tử từ xa?,A,A,✓,189
+359,"Theo tài liệu Public_074, giải pháp khả thi nhất cho mạng lượng tử khi chưa đủ qubit là gì?",C,C,✓,274
+360,Pin nào sử dụng chất điện phân rắn thay cho lỏng?,B,B,✓,216
+361,Ưu điểm nổi bật của pin Sodium-Ion là gì?,C,C,✓,342
+362,"Hãy trình bày các công nghệ pin thế hệ mới cho lưới điện thông minh, nêu ưu nhược điểm từng loại và vai trò của AI trong khám phá vật liệu và điều độ năng lượng.",A,A,✓,688
+363,Thách thức lớn của pin Li-S là gì?,A,A,✓,233
+364,Lợi ích chính của việc tích hợp pin vào lưới điện thông minh là gì?,B,B,✓,353
+365,Phương pháp truyền thống nào đã trở nên kém hiệu quả trước tấn công mạng hiện đại?,A,A,✓,305
+366,Mô hình AI nào được thảo luận trong tài liệu Public_076 phù hợp phát hiện tấn công chuỗi thời gian như DDoS?,C,C,✓,197
+367,"Trình bày kiến trúc tổng thể và các kỹ thuật AI chủ chốt trong hệ thống phát hiện – ứng phó sự cố an ninh mạng, đồng thời giải thích vai trò của học sâu và khả năng phản ứng tự động.",A,A,✓,824
+368,Thách thức nào đặc thù khi huấn luyện AI cho an ninh mạng?,D,D,✓,544
+369,"Theo tài liệu Public_076, giải pháp nào cho phép nhiều tổ chức cùng huấn luyện mô hình mà không chia sẻ dữ liệu thô?",A,A,✓,81
+370,Ưu điểm cốt lõi của blockchain trong chuỗi cung ứng là gì?,B,B,✓,449
+371,"Trong công nghệ blockchain, thành phần nào đảm bảo các khối không thể chỉnh sửa?",C,C,✓,293
+372,"Mô tả nguyên lý hoạt động của blockchain và cách nó giải quyết minh bạch, chống giả mạo trong chuỗi cung ứng, đồng thời nêu thách thức triển khai.",A,A,✓,625
+373,Giải pháp nào giúp bảo vệ dữ liệu nhạy cảm trên blockchain?,D,D,✓,441
+374,"Theo tài liệu Public_077, công nghệ nào kết hợp với blockchain để tự động ghi dữ liệu môi trường?",C,C,✓,98
+375,Điện toán biên giải quyết vấn đề độ trễ trong nhà máy thông minh như thế nào?,C,C,✓,481
+376,Ưu điểm nổi bật nhất của Edge Computing so với Cloud Computing truyền thống là gì?,B,B,✓,402
+377,"Giải thích nguyên lý hoạt động, kiến trúc và lợi ích của Edge Computing trong các ứng dụng thời gian thực công nghiệp, kèm các ví dụ tiêu biểu.",A,A,✓,774
+378,"Nếu kết nối Internet bị gián đoạn, hệ thống Edge sẽ phản ứng thế nào?",A,A,✓,348
+379,Lợi ích bảo mật lớn nhất của Edge Computing trong môi trường sản xuất là gì?,C,C,✓,210
+380,Điểm mạnh lớn nhất của CNN trong phân tích ảnh y tế là gì?,B,B,✓,504
+381,Mạng nào chuyên biệt cho bài toán phân đoạn ảnh y tế?,C,C,✓,194
+382,"Phân tích nguyên lý, cấu trúc mạng CNN và lợi ích khi áp dụng trong phân tích ảnh y tế, nêu các ứng dụng điển hình.",A,A,✓,666
+383,Thách thức lớn khi triển khai mạng nơ-ron tích chập (CNN) trong bệnh viện là gì?,A,A,✓,516
+384,Một xu hướng mới giúp mạng nơ-ron tích chập đảm bảo quyền riêng tư dữ liệu y tế là gì?,B,B,✓,224
+385,Lợi ích lớn nhất của Generative AI trong thiết kế thuốc là gì?,B,B,✓,414
+386,"Theo tài liệu Public_080, mô hình nào thường dùng để sinh phân tử mới?",C,C,✓,261
+387,"Trình bày vai trò của Generative AI và các mô hình điển hình trong thiết kế thuốc, đồng thời nêu ứng dụng thực tế.",A,A,✓,728
+388,Thách thức quan trọng nhất khi đưa phân tử do AI tạo ra vào thực nghiệm là gì?,D,D,✓,262
+389,Xu hướng nào giúp nhiều tổ chức cùng huấn luyện mô hình AI mà vẫn giữ bí mật dữ liệu hóa học?,B,B,✓,280
+390,Đặc điểm nào khiến GNN phù hợp cho dữ liệu vật liệu?,B,B,✓,392
+391,"Từ tài liệu Public_081, những ứng dụng nào là điểm mạnh của GNN trong khoa học vật liệu?",C,C,✓,296
+392,"Giải thích cách GNN biểu diễn vật liệu, cơ chế message passing và các ứng dụng trong dự đoán tính chất vật liệu mới.",A,A,✓,545
+393,Thách thức chính khi dùng GNN trong khám phá vật liệu là gì?,A,A,✓,248
+394,Hướng phát triển tương lai đầy tiềm năng của GNN trong vật liệu là gì?,B,B,✓,542
+395,Tại sao HPC cần thiết cho mô phỏng khí hậu toàn cầu?,B,B,✓,645
+396,Thành phần phần cứng cốt lõi nào giúp hệ thống HPC tối ưu hóa xử lý song song?,C,C,✓,360
+397,"Trình bày kiến trúc HPC và vai trò trong mô phỏng khí hậu, dự báo thời tiết cực đoan, nêu công nghệ hỗ trợ.",A,A,✓,641
+398,Thách thức lớn nhất về vận hành siêu máy tính khí hậu là gì?,A,A,✓,305
+399,Xu hướng tương lai giúp tăng tốc mô phỏng khí hậu là gì?,B,B,✓,468
+400,Đặc điểm nào nổi bật nhất của 6G so với 5G?,B,B,✓,548
+401,Dải tần nào sẽ được khai thác chủ yếu trong 6G?,C,C,✓,212
+402,"Giải thích đặc trưng cốt lõi của 6G và vai trò AI trong tối ưu và bảo mật mạng, nêu các ứng dụng tiêu biểu.",A,A,✓,772
+403,Ứng dụng nào cần 6G để đạt độ trễ siêu thấp?,A,A,✓,260
+404,Thách thức chính khi triển khai 6G là gì?,B,B,✓,473
+405,Cảm biến nào cung cấp bản đồ 3D chính xác cho xe tự hành?,B,B,✓,166
+406,Kỹ thuật nào giúp hợp nhất dữ liệu từ nhiều cảm biến khác nhau nhằm nâng cao độ chính xác và độ tin cậy của thông tin?,C,C,✓,305
+407,"Mô tả các thành phần cảm biến, thuật toán và thách thức của hệ thống thị giác máy tính thế hệ tiếp theo cho xe tự hành.",A,A,✓,560
+408,Thách thức quan trọng nhất đối với xử lý thời gian thực trong xe tự hành là gì?,A,A,✓,392
+409,"Theo tài liệu Public_084, xu hướng tương lai nào cho phép xe giao tiếp trực tiếp với hạ tầng giao thông?",B,B,✓,201
+410,Kỹ thuật nào cho phép robot học từ phản hồi môi trường để tối ưu hành động?,B,B,✓,313
+411,Cảm biến nào giúp robot điều chỉnh lực cầm nắm chính xác?,D,D,✓,114
+412,"Nêu chi tiết cách các cơ chế học của robot công nghiệp tự học được áp dụng để cải thiện thuật toán lập kế hoạch đường đi trong môi trường nhà máy thông minh, kèm theo các ví dụ thực tiễn.",A,A,✓,777
+413,Thách thức quan trọng khi triển khai robot tự học là gì?,C,C,✓,452
+414,Phương pháp nào giảm chi phí huấn luyện robot trong thế giới thực?,B,B,✓,368
+415,"Theo tài liệu Public_086, lợi ích lớn nhất của AI trong quản lý năng lượng tái tạo là gì?",B,B,✓,337
+416,Công nghệ nào cho phép xử lý dữ liệu nhanh ngay tại nguồn phát sinh?,C,C,✓,334
+417,"Phân tích vai trò của AI trong dự báo, tối ưu và điều phối năng lượng tái tạo cho thành phố thông minh, đồng thời nêu rõ hạ tầng công nghệ hỗ trợ.",A,A,✓,673
+418,Thách thức chính trong việc triển khai AI quản lý năng lượng tái tạo là gì?,A,A,✓,377
+419,Xu hướng nào cho phép giao dịch điện năng trực tiếp giữa các hộ dân?,B,B,✓,393
+420,Yếu tố chính khiến AI quan trọng trong giám sát chất lượng không khí đô thị?,B,B,✓,424
+421,Công nghệ nào kết hợp dữ liệu cảm biến và vệ tinh để dự đoán ô nhiễm?,D,D,✓,333
+422,Mô tả kiến trúc cảm biến và vai trò của trí tuệ nhân tạo (AI) trong dự báo và phát hiện bất thường về chất lượng không khí đô thị.,A,A,✓,764
+423,"Theo tài liệu Public_087, thách thức lớn khi triển khai hệ thống AI giám sát không khí là gì?",A,A,✓,218
+424,Những công nghệ hoặc phương pháp luận tương lai nào hỗ trợ việc thử nghiệm chính sách môi trường trong mô hình ảo?,B,B,✓,484
+425,Lợi thế lưu trữ của DNA so với ổ cứng truyền thống là gì?,B,B,✓,260
+426,Quá trình nào trong DNA đóng vai trò như cổng logic trong tính toán sinh học?,C,C,✓,306
+427,"Giải thích nguyên lý tính toán dựa trên DNA và các ứng dụng nổi bật trong y sinh học, đồng thời nêu ưu thế so với máy tính silicon.",A,A,✓,582
+428,Thách thức lớn nhất của biocomputing hiện nay là gì?,A,A,✓,284
+429,Xu hướng nào cho phép kết hợp ưu điểm của điện tử và DNA?,B,B,✓,248
+430,Hiện tượng nào đặc trưng của vật liệu siêu dẫn?,B,B,✓,220
+431,Hợp chất nào đã cho thấy siêu dẫn gần nhiệt độ phòng khi nén áp suất cao?,C,C,✓,166
+432,Tài liệu Public_089 trình bày những tiến bộ nào trong việc đạt siêu dẫn nhiệt độ phòng?,A,A,✓,246
+433,Thách thức lớn nhất để thương mại hóa siêu dẫn nhiệt độ phòng?,D,D,✓,344
+434,Công nghệ nào hỗ trợ khám phá vật liệu siêu dẫn mới nhanh hơn?,B,B,✓,242
+435,Điểm khác biệt cốt lõi của máy tính neuromorphic so với kiến trúc Von Neumann là gì?,B,B,✓,465
+436,"Trong các mạng thần kinh nhân tạo, thành phần nào đóng vai trò tương tự synapse sinh học?",C,C,✓,146
+437,"Mô tả kiến trúc và nguyên lý của máy tính neuromorphic lấy cảm hứng từ não người, so sánh với kiến trúc Von Neumann và nêu ứng dụng AI.",A,A,✓,548
+438,Ứng dụng nào nổi bật của chip neuromorphic trong y tế?,A,A,✓,384
+439,Thách thức lớn nhất trong thương mại hóa chip neuromorphic hiện nay là gì?,A,A,✓,272
+440,Điểm khác biệt lớn nhất của pin thể rắn so với pin lithium-ion truyền thống là gì?,B,B,✓,341
+441,Ưu điểm quan trọng nhất giúp pin thể rắn an toàn hơn?,C,C,✓,340
+442,"Dựa trên tài liệu Public_091, hãy phân tích cấu trúc, nguyên lý, ưu điểm của pin thể rắn so với lithium-ion, nêu ứng dụng thực tế và thách thức.",A,A,✓,493
+443,Thách thức chính cản trở thương mại hóa pin thể rắn là gì?,D,D,✓,305
+444,"Theo tài liệu Public_091, những xu hướng nghiên cứu nào giúp tăng tính ổn định của pin thể rắn?",A,A,✓,380
+445,Điểm đặc trưng của siêu vật liệu so với vật liệu tự nhiên là gì?,B,B,✓,528
+446,Công nghệ nào trong mạng 6G tận dụng siêu vật liệu để tăng vùng phủ sóng?,C,C,✓,286
+447,"Giải thích cấu trúc, nguyên lý và ứng dụng siêu vật liệu trong điều khiển sóng điện từ và mạng 6G.",A,A,✓,717
+448,Thách thức lớn nhất hiện nay khi thương mại hóa siêu vật liệu?,D,D,✓,417
+449,"Theo tài liệu Public_092, xu hướng nào hứa hẹn tối ưu hoạt động RIS trong 6G?",A,A,✓,244
+450,Điểm khác biệt chính của máy tính quang học so với điện tử?,B,B,✓,444
+451,Thành phần nào cho phép thực hiện phép nhân–cộng ma trận bằng ánh sáng?,D,D,✓,188
+452,"Trình bày nguyên lý tính toán bằng photon, lợi ích và ứng dụng trong AI thế hệ mới.",A,A,✓,762
+453,Thách thức quan trọng nhất trong sản xuất chip quang?,A,A,✓,440
+454,Ứng dụng nào hưởng lợi trực tiếp từ suy luận thời gian thực của photonic computing?,A,A,✓,470
+455,Công cụ chính để mô phỏng sự hình thành vũ trụ được thảo luận trong tài liệu Public_094 là gì?,B,B,✓,282
+456,"Theo tài liệu Public_094, mô phỏng N-body chủ yếu tái hiện điều gì?",C,C,✓,341
+457,"Mô tả mục tiêu, công nghệ mô phỏng và ứng dụng của vũ trụ học tính toán trong nghiên cứu vũ trụ.",A,A,✓,617
+458,Thách thức lớn nhất hiện nay của vũ trụ học tính toán là gì?,A,A,✓,284
+459,Công nghệ tương lai nào hứa hẹn tăng độ phân giải mô phỏng vũ trụ?,B,B,✓,414
+460,Thách thức lớn nhất của Sao Hỏa khiến nước khó tồn tại ở dạng lỏng?,B,B,✓,265
+461,Biện pháp nào có thể tạo từ trường nhân tạo cho Sao Hỏa?,D,D,✓,288
+462,"Phân tích các phương pháp cải tạo khí hậu Sao Hỏa, công nghệ hỗ trợ và thách thức đạo đức – kỹ thuật.",A,A,✓,726
+463,"Theo tài liệu Public_095, công nghệ nào giúp xây dựng cơ sở hạ tầng tự động trên Sao Hỏa?",A,A,✓,190
+464,Public_095 thảo luận về những vấn đề đạo đức nào liên quan đến việc terraform Sao Hỏa?,A,A,✓,440
+465,Điều kiện cần thiết để quá trình nhiệt hạch xảy ra là gì?,B,B,✓,221
+466,Lò phản ứng Tokamak là gì?,A,A,✓,329
+467,"Phân tích nguyên lý hoạt động, nhiên liệu, ưu điểm và các công nghệ lò phản ứng nhiệt hạch, đồng thời nêu các thách thức kỹ thuật – kinh tế trong thương mại hóa.",A,A,✓,613
+468,Dự án quốc tế nào đang xây dựng lò phản ứng 500 MW ở Pháp?,D,D,✓,62
+469,"Theo tài liệu Public_096, thách thức kỹ thuật trọng yếu của nhiệt hạch là gì?",B,B,✓,193
+470,Sản phẩm phụ duy nhất của pin nhiên liệu hydro là gì?,B,B,✓,96
+471,Ưu điểm lớn của hydro so với pin lithium-ion cho xe tải đường dài?,D,D,✓,314
+472,"Giải thích nguyên lý pin nhiên liệu hydro và ứng dụng trong giao thông, đồng thời nêu lợi ích và thách thức hạ tầng.",A,A,✓,625
+473,Thách thức lớn nhất để triển khai đại trà giao thông hydro?,A,A,✓,288
+474,Hãng xe nào đã thương mại hóa xe hơi chạy pin nhiên liệu hydro?,B,B,✓,70
+475,Cơ chế lưu trữ năng lượng của siêu tụ điện dựa trên gì?,B,B,✓,213
+476,Ưu điểm nổi bật giúp siêu tụ phù hợp cho xe buýt điện đô thị?,D,D,✓,516
+477,"Trình bày cơ chế hoạt động, ưu điểm, và ứng dụng của siêu tụ điện trong giao thông bền vững, đồng thời so sánh với pin truyền thống.",A,A,✓,610
+478,Ứng dụng nào tận dụng siêu tụ để thu hồi năng lượng phanh?,A,A,✓,205
+479,Hạn chế chính của siêu tụ điện so với pin lithium-ion là gì?,B,B,✓,230
+480,Ưu điểm lớn nhất của pin natri-ion so với pin lithium-ion là gì?,B,B,✓,368
+481,Thách thức kỹ thuật chính của pin natri-ion hiện nay?,C,C,✓,388
+482,"Mô tả cấu trúc, cơ chế và lợi ích chiến lược của pin natri-ion, nêu ứng dụng thực tế và các thách thức hiện nay.",A,A,✓,572
+483,Công ty nào công bố pin natri-ion thương mại đầu tiên?,D,D,✓,29
+484,Lợi ích xã hội quan trọng khi phát triển pin natri-ion?,A,A,✓,522
+485,Điện toán không gian kết hợp những công nghệ nào để tạo trải nghiệm 3D thực?,B,B,✓,422
+486,Ứng dụng nào minh họa rõ nhất lợi ích của điện toán không gian trong y tế?,C,C,✓,497
+487,"Giải thích khái niệm, thành phần cốt lõi và các ứng dụng tiêu biểu của điện toán không gian, đồng thời phân tích thách thức triển khai.",A,A,✓,648
+488,Cấu hình hạ tầng mạng nào cần thiết để đảm bảo độ trễ thấp và băng thông cao cho trải nghiệm thực tế ảo (VR) mượt mà?,A,A,✓,534
+489,Những xu hướng công nghệ tương lai quan trọng nào trong lĩnh vực điện toán không gian dự kiến sẽ tác động đến các ngành công nghiệp chính trong 5 năm tới?,A,A,✓,533
+490,"Cho ma trận hiệp phương sai S của dữ liệu đã chuẩn hoá có các trị riêng λ1=5,λ2=2,λ3=1,λ4=0.5\lambda_1=5, \lambda_2=2, \lambda_3=1, \lambda_4=0.5λ1​=5,λ2​=2,λ3​=1,λ4​=0.5 (giảm dần). Nếu chọn K=2K=2K=2 thành phần chính, tỉ lệ phương sai được giữ lại là bao nhiêu?",A,A,✓,281
+491,"Trong hiện tượng nhiễu xạ, (1) khi nào xảy ra nhiễu xạ Fresnel, và (2) khi nào xảy ra nhiễu xạ Fraunhofer?",A,A,✓,274
+492,Hiện tượng giao thoa sóng xảy ra khi nào?,A,A,✓,338
+493,Mét được định nghĩa dựa trên hiện tượng nào và giây được định nghĩa dựa trên dao động của nguyên tử nào?,B,B,✓,130
+494,Nếu forget gate trong LSTM có giá trị bằng 0 thì điều gì xảy ra với thông tin lưu trữ trong cell state?,B,B,✓,269
+495,"Nội dung chính của tài liệu Public_124, hướng dẫn khai báo QoS cho thiết bị truyền dẫn Viba, là gì?","A,C,D",C,✗,422
+496,Ai là người giải thích thành công hiện tượng quang điện bằng thuyết lượng tử ánh sáng?,C,C,✓,209
+497,"Trong tài liệu Public_120, cho điểm X1 = (5, 2, 4); X2 = (3, 8, 1). Tính khoảng cách Euclidean của chúng dựa trên công thức trong phần MLkNN.",A,A,✓,181
+498,"Dựa trên kết quả CIFAR-10, độ chênh lệch tỉ lệ nhận dạng đúng giữa SGD with momentum và AdaDelta là bao nhiêu phần trăm?",B,B,✓,112
+499,Hiện tượng quang điện ngoài là gì?,A,A,✓,350
+500,Điều kiện cần và đủ để một vật rắn ở trạng thái cân bằng là:,C,C,✓,294
+501,"Một điện tích thử q=+2 Cq = +2 \, Cq=+2C được dịch chuyển trong điện trường từ điểm M đến điểm N. Công của lực điện thực hiện là 10 J10 \, J10J. Hiệu điện thế giữa hai điểm M và N bằng bao nhiêu?","A,C,D",B,✗,277
+502,Một ngọn lửa đèn cồn có chứa muối Na khi đốt sẽ cho ánh sáng màu vàng đặc trưng. Ánh sáng này thuộc loại quang phổ nào?,B,B,✓,161
+503,Đơn vị của công và năng lượng trong hệ SI là:,B,B,✓,253
+504,Hàm mục tiêu Fisher cho bài toán 2 lớp được viết dưới dạng nào?,B,B,✓,189
+505,"Theo tài liệu Public_111, công thức tính xác suất đồng thời của mạng Bayes dựa trên công thức toán học nào?",B,B,✓,101
+506,Hai thuật toán quan trọng trong Linear-Chain CRFs lần lượt được dùng cho huấn luyện và suy luận là gì?,B,A,✗,276
+507,"Trong chuyển động tròn đều, vectơ vận tốc của vật luôn:",C,C,✓,237
+508,Điểm chung của mọi dạng chuyển động trong không gian hai chiều là:,C,C,✓,393
+509,Nghiệm w tối ưu (Fisher) có thể chọn tỉ lệ theo biểu thức nào?,D,"C,D",✗,116
+510,Trọng tâm của một vật rắn là:,C,C,✓,278
+511,Ứng dụng quan trọng của âm học trong thực tiễn là gì?,B,B,✓,462
+512,Mô hình nào sử dụng self-attention để thay thế RNN trong hệ gợi ý tuần tự?,B,B,✓,437
+513,"Trong va chạm đàn hồi, động lượng của hệ có đặc điểm gì và năng lượng của hệ có đặc điểm gì?",D,B,✗,326
+514,"Một sợi dây dài 1,2m được căng cố định hai đầu. Trên dây có sóng dừng với 3 bụng sóng. Biết vận tốc truyền sóng trên dây là 60m/s. Tần số của sóng bằng bao nhiêu?",C,C,✓,244
+515,Khái niệm cân bằng tĩnh thường được ứng dụng nhiều nhất trong lĩnh vực nào?,B,B,✓,261
+516,Đơn vị của tốc độ góc trong hệ SI là:,A,A,✓,198
+517,"Theo tài liệu Public_124, chỉ số CDR và HOSR lần lượt có ý nghĩa gì?",B,B,✓,246
+518,Trình bày nội dung chính của Định lý công - động năng.,C,C,✓,370
+519,"Dựa trên thông tin từ tài liệu Public_110 về BERT4Rec và chuỗi sản phẩm, nếu trong một chuỗi lịch sử gồm 10 sản phẩm, BERT4Rec ẩn ngẫu nhiên 20% để dự đoán lại, thì có bao nhiêu sản phẩm bị ẩn?",B,B,✓,221
+520,"Định luật II Newton cho biết mối quan hệ giữa lực và gia tốc, và định luật III Newton mô tả mối quan hệ giữa hai lực nào?",B,B,✓,281
+521,"Sử dụng tài liệu `Public_117`, tính P(y=1∣x=1) theo quy tắc Bayes với y∈{0,1} có P(y=1)=0.4 và x∈{0,1} có P(x=1∣y=1)=0.9, P(x=1∣y=0)=0.2.",C,C,✓,242
+522,"Trong nghiên cứu quang phổ, (1) quang phổ vạch phát xạ xuất hiện khi nào, và (2) quang phổ vạch hấp thụ xuất hiện khi nào?",A,A,✓,350
+523,Điểm chung của các chuẩn đo lường cơ bản trong hệ SI là:,A,A,✓,401
+524,"Áp kế thủy ngân của Torricelli được dùng để đo đại lượng nào, và giá trị đo phụ thuộc vào yếu tố nào?",A,A,✓,218
+525,"Một vật có diện tích đáy tiếp xúc với chất lỏng là 0,5 𝑚2. Nếu áp suất của chất lỏng tác dụng lên bề mặt đó là 2000Pa, thì lực mà chất lỏng tác dụng lên vật là bao nhiêu?",B,B,✓,172
+526,"Trong nguyên tử Hydro, khi electron chuyển từ mức năng lượng cao xuống mức thấp hơn, dạng năng lượng nào được phát ra?",B,B,✓,146
+527,"Trong hệ tọa độ cực, một điểm có tọa độ (r, θ). Công thức chuyển đổi sang tọa độ Descartes là:",B,B,✓,372
+528,CIDNet sử dụng kiến trúc mạng nào để xử lý ảnh ánh sáng yếu?,B,B,✓,270
+529,Lực ma sát trượt có những đặc điểm nào?,D,A,✗,386
+530,Công do một lực sinh ra được tính bằng:,B,B,✓,356
+531,"Trong quá trình ước lượng chiếu sáng kép, ảnh đảo ngược (I_inv) được dùng để làm gì?",C,C,✓,226
+532,Mục tiêu chính của phương pháp dual illumination estimation được trình bày trong tài liệu Public_122 là gì?,B,B,✓,389
+533,BERT4Rec sử dụng mục tiêu huấn luyện nào để dự đoán sản phẩm bị ẩn?,C,C,✓,210
+534,"Trong thí nghiệm giao thoa sóng mặt nước, tại những điểm cực đại giao thoa ta có đặc điểm gì?",B,B,✓,353
+535,Nội dung chính của tài liệu Public_112 là gì?,D,D,✓,485
+536,Biến forward αt(i) trong thuật toán Forward biểu diễn điều gì?,"A,B,C,D",A,✗,350
+537,Văn bản chủ yếu tập trung nghiên cứu vấn đề gì?,A,B,✗,442
+538,"Trong ví dụ của tài liệu, Linear-Chain CRFs được minh họa cho hai bài toán nào?",C,C,✓,173
+539,"Trong sóng dừng trên sợi dây, (1) bụng sóng có đặc điểm dao động gì, và (2) nút sóng có đặc điểm dao động thế nào?",A,A,✓,212
+540,"Theo Bohr, (1) electron chỉ tồn tại ổn định ở đâu, và (2) khi electron chuyển quỹ đạo thì điều gì xảy ra?",A,A,✓,218
+541,Thuật toán nào thường được dùng để tối ưu tham số trong huấn luyện mạng nơ-ron sâu?,A,A,✓,357
+542,Tia sáng truyền từ không khí vào nước bị gãy khúc. Hiện tượng này gọi là gì?,B,B,✓,152
+543,Hai giả định cơ bản của Hidden Markov Model là gì?,C,C,✓,209
+544,Nội dung chính của tài liệu tập trung vào vấn đề gì?,A,A,✓,497
+545,Muốn một vật rắn ở trạng thái cân bằng cần điều kiện gì về lực và điều kiện gì về mômen lực?,A,A,✓,321
+546,"Trong hiện tượng quang điện, (1) điều kiện để electron quang điện bật ra khỏi kim loại là gì, và (2) năng lượng dư thừa sau khi thắng công thoát biến thành dạng nào?",A,A,✓,266
+547,"Giả sử 2 lớp có m1−m2 = [2, −1]^T, và S_W = [[5, 1], [1, 2]]. Tính hướng phân biệt tuyến tính của Fisher (Fisher's linear discriminant direction) w, biết rằng w tỉ lệ với S_W^{-1}(m1−m2).",B,D,✗,406
+548,Định luật I Newton còn được gọi là:,C,C,✓,213
+549,Một người nghe thấy hai âm có tần số lần lượt là 440 Hz và 442 Hz phát ra cùng lúc. Hiện tượng gì xảy ra và số nhịp đập trong 1 giây là bao nhiêu?,A,A,✓,182
+550,Điều kiện cần và đủ để một vật rắn ở trạng thái cân bằng tĩnh là:,C,C,✓,306
+551,Adam và RMSProp khác nhau ở đặc điểm nào?,B,B,✓,574
+552,Ý nghĩa quan trọng nhất của mẫu nguyên tử Bohr là gì?,B,B,✓,509
+553,Nội dung chính của tài liệu 'Public_110' nói về điều gì?,D,D,✓,489
+554,Nội dung chính của bài báo nghiên cứu Public_108 là gì?,D,D,✓,433
+555,"Theo tài liệu Public_102, nếu chuỗi đầu vào có 4 từ và mỗi từ có thể gán 3 nhãn khác nhau, tổng số cấu hình nhãn có thể có là bao nhiêu?",B,B,✓,133
+556,"Theo tài liệu Public_111, hai thành phần cơ bản của mạng Bayes là gì?",D,D,✓,181
+557,Những ứng dụng quan trọng của hiện tượng nhiễu xạ và phân cực ánh sáng là gì?,B,B,✓,606
+558,Tính chất quan trọng nhất của đại lượng vectơ khi so sánh với đại lượng vô hướng là:,C,C,✓,392
+559,Thuật toán nào được dùng để suy luận (tìm chuỗi nhãn tối ưu) trong Linear-Chain CRFs?,B,B,✓,390
+560,"Hai điện tích điểm cùng dấu đặt cách nhau 
+0,2m thì đẩy nhau bằng lực 
+9N. Nếu giữ nguyên các điện tích đó nhưng tăng khoảng cách giữa chúng lên gấp đôi, thì lực tác dụng giữa chúng còn bao nhiêu?",B,B,✓,322
+561,Phần 'Xác suất' trong tài liệu Public_117 chủ yếu trình bày nội dung gì?,B,B,✓,389
+562,Tư tưởng xuyên suốt của ba định luật Newton trong cơ học cổ điển là:,D,D,✓,400
+563,"Dựa vào nội dung tài liệu Public_131, hãy tính vận tốc sau va chạm của hai vật trong trường hợp một vật khối lượng 2 kg chuyển động với vận tốc 4 m/s va chạm trực diện, dính chặt vào một vật khối lượng 3 kg đang đứng yên.",B,B,✓,360
+564,Đơn vị chuẩn của độ dài trong hệ SI hiện nay được định nghĩa dựa trên:,C,C,✓,250
+565,"Dựa trên tài liệu Public_117, phát biểu nào đúng về hàm mật độ xác suất (pdf) của biến ngẫu nhiên liên tục x?",B,B,✓,290
+566,"Dựa vào Document Index: Public_129, hãy trình bày công thức hoặc phương pháp tính gia tốc của một vật khi biết khối lượng, lực kéo ngang và hệ số ma sát trượt.","A,B,C,D",A,✗,566
+567,"Một thanh đồng chất dài 4 m, khối lượng 40 kg được đặt nằm ngang trên hai giá đỡ ở hai đầu. Một vật nặng 20 kg được đặt tại điểm cách đầu trái của thanh 1 m. Hỏi phản lực của giá đỡ bên phải bằng bao nhiêu? (Lấy g = 10 m/s²).",D,B,✗,500
+568,Tóm tắt nội dung chính của phần Linear-Chain CRFs trong tài liệu Public_102?,D,D,✓,550
+569,"Nếu một HMM có 3 trạng thái ẩn (N=3) và chuỗi quan sát dài 4 bước (T=4), độ phức tạp của thuật toán Forward là bao nhiêu?",D,D,✓,304
+570,Nội dung chính của tài liệu Public_116 là gì?,C,C,✓,385
+571,Nội dung chính của thuật toán đàn kiến (ACO) là gì?,C,C,✓,584
+572,Điện thế tại một điểm trong điện trường đặc trưng cho điều gì?,A,A,✓,317
+573,Công thức marginal p(x)p(x)p(x) và conditional p(x∣y)p(x\mid y)p(x∣y) lần lượt là gì?,A,C,✗,318
+574,Phương của vectơ mômen lực (τ) được xác định theo quy tắc nào?,A,A,✓,242
+575,"Nếu một ảnh có nhiều khác biệt mức xám xuất hiện lặp lại, sau khi áp dụng LDR ảnh đầu ra sẽ có đặc điểm gì?",A,A,✓,326
+576,Nội dung chính của phần 2 của tài liệu Public_121 là gì?,B,B,✓,470
+577,Nội dung chính của phương pháp LDR trong tăng cường tương phản là gì?,D,D,✓,405
+578,"Trong tài liệu Public_122, thuật toán được mô tả khôi phục chi tiết vùng tối bị mất bằng thành phần nào?",A,A,✓,356
+579,Thuật toán nào thường được sử dụng để giải quyết bài toán Đánh giá và Học trong HMM?,B,B,✓,417
+580,Tóm tắt nội dung chính của phần huấn luyện và suy luận Linear-Chain CRFs?,D,D,✓,532
+581,Giả sử tại t=0 có 30 kiến ở B và 30 kiến ở D (theo ví dụ hình 2). Trung bình có bao nhiêu kiến từ nút B và từ nút D đi qua C khi chúng lựa chọn đường đi ngẫu nhiên?,B,B,✓,417
+582,Giá trị của đo độ Hamming Loss trong trường hợp lí tưởng bằng bao nhiêu?,B,B,✓,168
+583,Thuật toán nào có tỉ lệ nhận dạng đúng cao nhất trên tập MNIST?,A,A,✓,162
+584,"Phân loại Naive Bayes đòi hỏi tính các xác suất điều kiện thành phần P(xi | cj) = nc / n. Trong một số trường hợp thực tế, nc có thể rất nhỏ, thậm chí = 0. Khi đó kĩ thuật nào sẽ được sử dụng?",C,C,✓,497
+585,Mạng Bayes giải quyết vấn đề căn bản nào của các bài toán tìm kiếm liên quan đến sự không chắc chắn hoặc suy luận xác suất?,C,C,✓,494
+586,"Khi ánh sáng mặt trời phản xạ trên mặt hồ, tại sao ta thường thấy ánh sáng chói bị giảm bớt khi đeo kính râm phân cực?",B,B,✓,322
+587,CDR là viết tắt của chỉ số nào trong viễn thông?,A,A,✓,108
+588,"Nếu mạng ghi nhận 1.000 cuộc gọi và 25 cuộc bị rớt, hãy tính Tỷ lệ rớt cuộc gọi (CDR).",B,B,✓,101
+589,Thành phần nào trong học tăng cường đóng vai trò quyết định hành động để tối đa hóa phần thưởng?,B,B,✓,289
+590,"Trong chuyển động tròn đều, lực nào giữ cho vật chuyển động theo quỹ đạo tròn và gia tốc nào luôn xuất hiện?",A,A,✓,269
+591,Đặc trưng nào dưới đây định nghĩa một dao động điều hòa tắt?,B,A,✗,436
+592,SASRec và BERT4Rec khác nhau chủ yếu ở những điểm nào?,B,B,✓,448
+593,Ý nghĩa quan trọng của hiện tượng quang điện đối với vật lý hiện đại là gì?,B,B,✓,449
+594,Trọng lực tác dụng lên một vật là gì?,A,A,✓,640
+595,Đâu không phải là một ứng dụng thực tế của phân loại Naive Bayes?,C,C,✓,389
+596,Hiện tượng nào là cơ sở của công nghệ sợi quang?,C,C,✓,230
+597,Thành phần nào đảm bảo làm nổi bật các khác biệt mức xám xuất hiện thường xuyên trong thuật toán LDR?,B,B,✓,350
+598,"Trong hiện tượng giao thoa sóng, (1) điều kiện về tần số của các nguồn dao động phải thế nào, và (2) đặc điểm của các điểm cực tiểu giao thoa ra sao?",A,A,✓,270
+599,Nội dung chính của phần 1 tài liệu Public_107 về Gradient Descent là gì?,D,D,✓,580
+600,"Trong lý thuyết điện trường, (1) định luật Coulomb mô tả điều gì, và (2) khái niệm điện trường được dùng để giải thích hiện tượng nào?",A,A,✓,336
+601,"Trong cân bằng tịnh tiến, điều kiện nào phải thỏa mãn?","A,B",A,✗,156
+602,Phương pháp đánh giá các mô hình phân lớp đa nhãn (MLL) được nhắc tới trong tài liệu là gì?,C,C,✓,421
+603,Histogram Equalization (HE) và Contextual Visual Contrast (CVC) có hạn chế gì?,C,C,✓,324
+604,"Thuật toán nào được sử dụng cho: (1) Tính xác suất chuỗi quan sát, (2) Tìm chuỗi trạng thái tối ưu?",D,D,✓,256
+605,Ưu điểm và nhược điểm chính của RNN là gì?,D,D,✓,357
+606,Công cơ học dương xảy ra trong trường hợp nào và công cơ học âm xảy ra trong trường hợp nào?,A,A,✓,208
+607,Hệ thống Ant Colony System (ACS) và Max-Min Ant System (MMAS) có điểm gì nổi bật?,B,B,✓,548
+608,Tọa độ góc trong chuyển động quay của vật rắn có vai trò tương tự như đại lượng nào trong chuyển động tịnh tiến?,C,C,✓,328
+609,Kiến trúc SASRec dựa trên mô hình nào?,A,A,✓,277
+610,"Với hàm f(x)=x2+5sin⁡(x)f(x) = x^2 + 5\sin(x)f(x)=x2+5sin(x), đạo hàm là f′(x)=2x+5cos⁡(x)f'(x) = 2x + 5\cos(x)f′(x)=2x+5cos(x). Nếu khởi tạo x0=−5x_0 = -5x0​=−5, learning rate η=0.1\eta = 0.1η=0.1, thuật toán hội tụ sau khoảng bao nhiêu vòng lặp theo tài liệu?",C,C,✓,265
+611,Điểm then chốt để phân biệt va chạm đàn hồi và va chạm mềm là:,B,B,✓,353
+612,Nội dung chính phần 2 của tài liệu HMM (Public_105) là gì?,B,B,✓,554
+613,Ai là người đề xuất mẫu nguyên tử dựa trên quỹ đạo dừng và bức xạ/thu năng lượng rời rạc?,B,B,✓,117
+614,"Một học sinh ngồi trên ghế xoay cầm hai quả tạ 3 kg, ban đầu dang tay ra cách trục 1,0 m và quay với tốc độ góc 0,75 rad/s. Khi co tay lại còn cách 0,3 m, hãy cho biết tốc độ góc mới so với ban đầu:",A,C,✗,374
+615,"Theo tài liệu Public_113, ý tưởng cốt lõi của RNN là gì?",B,B,✓,338
+616,Quang phổ liên tục được tạo thành trong điều kiện nào?,A,A,✓,292
+617,"Theo tài liệu Public_144, nguyên tắc quan trọng cần nhớ khi nghiên cứu về điện trường là gì?",B,B,✓,474
+618,Nhiễu xạ ánh sáng là gì?,B,B,✓,464
+619,Định luật vạn vật hấp dẫn do Newton phát biểu năm nào?,C,C,✓,96
+620,Hiệu điện thế giữa hai điểm trong điện trường là gì?,B,B,✓,378
+621,"Khi nào sóng dừng hình thành, theo tài liệu Public_142?",A,B,✗,356
+622,Đặc điểm nào định nghĩa chuyển động tròn đều?,B,B,✓,366
+623,"Trong PCA, công thức của ma trận hiệp phương sai SSS và toạ độ sau khi chiếu Z (trên K thành phần chính) lần lượt là gì?",A,A,✓,166
+624,Đơn vị chuẩn của thời gian (giây) hiện nay được định nghĩa dựa trên:,B,B,✓,164
+625,Nội dung chính của tài liệu Public_115 đề xuất điều gì?,C,C,✓,420
+626,Nội dung chính của tài liệu về CNN tập trung vào vấn đề gì?,C,C,✓,472
+627,"Với một câu đầu vào có 4 từ và mỗi từ có thể gán 4 nhãn khác nhau (v, n, p, d), tổng số chuỗi nhãn *có thể có* mà thuật toán Viterbi xem xét là bao nhiêu?",C,C,✓,178
+628,Định luật vạn vật hấp dẫn của Newton giải thích những hiện tượng nào?,A,A,✓,472
+629,Động lượng của một vật phụ thuộc trực tiếp vào:,A,A,✓,328
+630,CSSR phản ánh điều gì trong chất lượng mạng?,A,C,✗,284
+631,Nội dung chính của phần 1 trong tài liệu Public_111 là gì?,A,A,✓,538
+632,“Learning rate” (ký hiệu η\etaη) trong Gradient Descent có vai trò gì?,B,B,✓,488
+633,“Mômen động lượng của một vật rắn quay quanh trục z được xác định bởi đại lượng nào và điều kiện nào khiến nó được bảo toàn?”,B,B,✓,216
+634,"Trong âm học, (1) đặc trưng nào quyết định độ to nhỏ của âm, và (2) đặc trưng nào quyết định âm sắc?",A,A,✓,218
+635,Đặc trưng vật lý nào quyết định độ cao (trầm hay bổng) của âm?,B,B,✓,256
+636,Thuật toán nào thường dùng để giải quyết bài toán giải mã cho các mã sửa lỗi?,C,C,✓,324
+637,GRU4Rec và BERT4Rec khác nhau chủ yếu ở điểm nào?,D,D,✓,424
+638,"Với một HMM có N trạng thái và chuỗi quan sát độ dài T, độ phức tạp của thuật toán Viterbi là bao nhiêu?",C,C,✓,182
+639,"Trong tài liệu Public_146, bản chất ánh sáng được khẳng định như thế nào?",C,C,✓,413
+640,LDR là viết tắt của gì trong xử lý ảnh?,A,A,✓,162
+641,"Một vật rắn ở trạng thái cân bằng tĩnh phải thỏa mãn điều kiện nào, và trong cân bằng quay thì gia tốc góc của vật có giá trị bao nhiêu?",A,A,✓,230
+642,"Theo tài liệu Public_142, tại nút sóng của sóng dừng có đặc điểm gì?",B,B,✓,212
+643,Các yếu tố nào được sử dụng để tính bản đồ trọng số (weight map) trong bước multi-exposure fusion?,D,D,✓,314
+644,Nguyên lý bảo toàn mômen động lượng phát biểu những gì?,B,B,✓,296
+645,"Theo tài liệu Public_131, định luật bảo toàn động lượng khẳng định điều gì trong hệ cô lập?",B,B,✓,217
+646,"Theo tài liệu Public_140, sóng cơ học là gì?",A,A,✓,341
+647,Thuật toán Q-Learning là thuộc loại nào trong học tăng cường?,B,B,✓,340
+648,"Cho 5 đối tượng được xếp hạng tương ứng là A, C, E, D, B; một xếp hạng của đối tượng cần đánh giá là A, E, B, D, C. Tính chỉ số MAP (Mean Average Precision) theo công thức được cho trong tài liệu Public_121.",D,D,✓,273
+649,Các ứng dụng thực tế của hiện tượng giao thoa sóng trong nghiên cứu khoa học và kỹ thuật được trình bày trong tài liệu Public_141 là gì?,A,A,✓,498
+650,Bộ dữ liệu CIFAR-10 gồm bao nhiêu hình ảnh dùng cho huấn luyện?,C,C,✓,76
+651,"Một vật chuyển động tròn đều bán kính 2 m, tốc độ góc 10 rad/s. Hãy tính vận tốc dài của vật.",D,D,✓,124
+652,Công thức tính kích thước đầu ra (W2) trong phép tích chập phụ thuộc vào những yếu tố nào?,C,C,✓,313
+653,Ứng dụng của hiệu điện thế trong việc truyền tải và phân phối điện năng là gì?,D,B,✗,602
+654,Linear-Chain CRFs thường được áp dụng trong bài toán nào?,A,A,✓,273
+655,"Trong thiết kế tập trung, node nào chịu trách nhiệm tổng hợp gradient và cập nhật tham số mô hình?",B,B,✓,314
+656,"Sử dụng thông tin từ tài liệu Public_126, hãy cho biết quãng đường ánh sáng đi được trong chân không trong 1 microsecond (1 µs = 10⁻⁶ s).",D,A,✗,202
+657,Đơn vị của áp suất trong hệ SI là gì?,B,B,✓,200
+658,Ai là người đầu tiên đưa ra bằng chứng thực nghiệm rõ ràng về bản chất sóng của ánh sáng?,C,C,✓,196
+659,"Trong hệ tọa độ cực, điểm được mô tả bằng những yếu tố nào và hệ tọa độ Descartes mô tả điểm bằng những yếu tố nào?",A,A,✓,164
+660,Đặc điểm đặc biệt của thuộc tính được chọn C(max) trong Naive Bayes theo Public_112 là gì?,A,A,✓,308
+661,"Trong mẫu Bohr, electron chuyển động quanh hạt nhân theo các quỹ đạo như thế nào?",B,B,✓,241
+662,"Trong dao động điều hòa, (1) điều kiện nào để gọi là dao động điều hòa, và (2) đặc điểm của lực hồi phục là gì?",A,A,✓,416
+663,Tóm tắt nội dung chính của văn bản,A,A,✓,485
+664,"Trong chuyển động tròn đều, gia tốc hướng tâm của vật luôn:",B,B,✓,318
+665,Cơ sở của động lực học quay quanh trục cố định được xây dựng trên mối quan hệ nào?,B,B,✓,413
+666,"Trong dao động điều hòa đơn giản của hệ con lắc lò xo (khối lượng m, độ cứng lò xo k), tần số góc ω phụ thuộc vào đại lượng nào?",C,C,✓,218
+667,Thuật toán BFS có độ phức tạp và yêu cầu bộ nhớ như thế nào?,B,B,✓,273
+668,Tìm tài liệu mô tả cơ chế hoạt động của hệ thống truyền lực tạo ra gia tốc khi ô tô tăng tốc và cơ chế hoạt động của hệ thống lái cùng hệ thống treo khi ô tô đổi hướng.,A,A,✓,693
+669,"Trong thiết kế phân tán, cơ chế Allgather dùng để làm gì và ưu điểm chính của thiết kế này là gì?",C,C,✓,358
+670,"Trong trạng thái tĩnh, chất lưu tác dụng lực theo hướng nào lên bề mặt vật?",A,A,✓,189
+671,"Trong chuyển động quay, đại lượng nào đặc trưng cho mức “lười” quay của vật và định lý nào được dùng để tính mômen quán tính khi trục quay không đi qua trọng tâm?",B,B,✓,298
+672,"Nếu một chuỗi có độ dài quá lớn gây ra vấn đề gradient vanish/explode, mô hình nào trong tài liệu Public_109 được thiết kế để giải quyết vấn đề này?",B,B,✓,305
+673,Ứng dụng quan trọng của hiện tượng sóng dừng trong thực tế là gì?,A,A,✓,472
+674,"Một vật khối lượng  m=0,5 kg được treo vào lò xo có độ cứng 
+k=200 N/m. Tính chu kỳ T của dao động điều hòa (lấy π≈3,1416).",C,C,✓,189
+675,Tính chất đầy đủ của thuật toán BFS được hiểu như thế nào?,D,D,✓,510
+676,Gradient Descent (GD) cập nhật tham số theo quy tắc nào đối với hàm một biến?,B,B,✓,304
+677,"Một mũi khoan nhỏ mất thời gian Δt để dừng hẳn do mômen ma sát. Nếu thay bằng mũi khoan lớn có mômen quán tính gấp đôi, cùng tốc độ góc ban đầu và cùng mômen ma sát, thì thời gian để dừng lại sẽ là:",C,C,✓,364
+678,"Trong thí nghiệm giao thoa sóng mặt nước với hai nguồn kết hợp cùng pha cách nhau 
+10cm, bước sóng của sóng là 2cm. Một điểm M nằm trên đường trung trực của hai nguồn. Tại M sẽ xảy ra hiện tượng gì?",B,B,✓,282
+679,"Nếu có 4 worker trong thiết kế phân tán, mỗi worker tính được gradient ∇L(θ)i\nabla L(\theta)_i. Khi dùng cơ chế trung bình, gradient tổng hợp sẽ được tính như thế nào?",D,D,✓,262
+680,"Theo tài liệu Public_147, một kim loại có công thoát là 2 eV. Nếu chiếu ánh sáng có năng lượng photon đúng bằng 2 eV, thì electron có bật ra không và động năng cực đại bằng bao nhiêu?",D,B,✗,216
+681,"Nếu robot ở trạng thái st nhận phần thưởng tức thời rt = 5, hằng số chiết khấu γ = 0.9, và giá trị Q kỳ vọng của trạng thái kế tiếp là 10, thì giá trị cập nhật Q mới theo Q-Learning sẽ là bao nhiêu (giả sử Q cũ = 0)?",B,B,✓,280
+682,Nội dung chính về BFS trong tài liệu Public_106 là gì?,C,C,✓,504
+683,Mục tiêu cốt lõi của PCA là gì?,D,D,✓,277
+684,Tầng POOL trong CNN có mục đích chính là gì?,A,A,✓,282
+685,"Sử dụng kiến thức từ Tài liệu Public_133, hãy xác định lực mà mỗi giá đỡ tác dụng lên thanh đồng chất dài 2m, khối lượng 10kg, đặt nằm ngang và tựa trên hai giá đỡ tại hai đầu, với trọng lượng thanh tác dụng tại trọng tâm.",B,B,✓,506
+686,Sự khác biệt giữa Feature Map và Activation Map là gì?,B,B,✓,438
+687,"Một điểm có tọa độ Descartes (−3,5;−2,5)(-3,5 ; -2,5)(−3,5;−2,5) m. Hãy xác định tọa độ cực (r, θ) của điểm này.",A,A,✓,221
+688,"Theo thực nghiệm của Millikan, điện tích có tính chất cơ bản nào?",B,B,✓,185
+689,Tác dụng chính của lực hướng tâm trong chuyển động tròn đều là gì?,B,B,✓,361
+690,"Dựa vào tài liệu Public_139, hãy trình bày khái niệm, phương trình dao động và đặc điểm năng lượng của dao động điều hòa.",A,A,✓,614
+691,"Trong điện học, (1) đại lượng nào đặc trưng cho khả năng sinh công của điện trường tại một điểm, và (2) hiệu điện thế có ý nghĩa gì đối với chuyển động của điện tích?",A,A,✓,426
+692,Không gian màu HVI được thiết kế nhằm mục đích chính nào?,C,C,✓,280
+693,Các ứng dụng quan trọng của sóng cơ học trong đời sống và kỹ thuật là gì?,A,A,✓,470
+694,Phát biểu nào đúng về số chiều tối đa sau khi áp dụng multi-class LDA với C lớp?,B,B,✓,401
+695,Nội dung chính của tài liệu Public_122 là gì?,C,C,✓,616
+696,Hệ thức nào về hàm mật độ/phân phối đồng thời là đúng khi hai biến ngẫu nhiên xxx và yyy độc lập?,A,A,✓,212
+697,Một vật có khối lượng 2 kg chuyển động với vận tốc 5 m/s. Động năng của vật bằng:,D,D,✓,166
+698,"Với mức độ rẽ nhánh là b và độ sâu lời giải d, độ phức tạp bộ nhớ của thuật toán BFS là gì?",D,C,✗,309
+699,"Trong thuật toán ACO, ký hiệu nào biểu diễn thông tin kinh nghiệm (heuristic information)?",C,C,✓,124
+700,Ai là người đầu tiên giới thiệu hệ thống Ant System (AS) trong luận văn năm 1992?,A,A,✓,100
+701,Q-Learning và SARSA khác nhau chủ yếu ở điểm nào?,"A,C",C,✗,437
+702,"Trong thuật toán BFS, mỗi trạng thái sinh ra b trạng thái kề. Từ nút gốc sẽ sinh ra b nút với độ sâu 1, các nút này lại sinh ra b2 nút với độ sâu 2,... Giả sử nút đích của bài toán nằm ở độ sâu d. Tổng số nút cần mở rộng để tìm ra nút đích là bao nhiêu?",A,A,✓,368
+703,CRFs mô hình hóa loại xác suất nào?,C,C,✓,301
+704,Hiện tượng quang phổ được ứng dụng chủ yếu để làm gì trong khoa học và kỹ thuật?,A,A,✓,352
+705,"Trong multi-class LDA, các ma trận within-class và between-class là gì?",C,C,✓,501
+706,Chuẩn-2 (spectral norm) của ma trận A được định nghĩa tương đương với đại lượng nào?,B,B,✓,126
+707,Cổng nào trong GRU quyết định mức độ ảnh hưởng của trạng thái trước đó lên trạng thái mới?,"A,B,C,D",C,✗,173
+708,Các ứng dụng thực tiễn quan trọng của định luật Pascal trong đời sống và kỹ thuật là gì?,B,B,✓,354
+709,"Yếu tố giữ vai trò quyết định trong việc phân loại cân bằng bền, cân bằng không bền và cân bằng phiếm định là:",D,C,✗,418
+710,Đơn vị của gia tốc hướng tâm trong hệ SI là:,B,B,✓,150
+711,Điện tích dương và điện tích âm có tính chất gì khi tương tác với nhau?,B,B,✓,430
+712,"Một vật nặng 10 kg đặt trên mặt đất chịu tác dụng của trọng lực khoảng bao nhiêu? (Lấy g≈9,8m/s2)",B,B,✓,133
+713,"Nếu ảnh gốc có 3 kênh RGB với giá trị tại 1 điểm ảnh lần lượt là (120, 90, 60), thì giá trị Intensity Map theo định nghĩa trong HVI là bao nhiêu?",A,A,✓,120
+714,"Trong Linear Regression, hàm mất mát và đạo hàm theo công thức trong tài liệu Public_107 lần lượt là gì?",A,A,✓,212
+715,Một ô tô chạy trên đường vòng bán kính 50 m với tốc độ 36 km/h. Hỏi gia tốc hướng tâm của ô tô là bao nhiêu?,A,A,✓,226
+716,Mục tiêu của quá trình huấn luyện Linear-Chain CRFs là gì?,C,C,✓,392
+717,Nhược điểm của thuật toán K láng giềng trong học đa nhãn là gì?,D,D,✓,417
+718,"Trong ứng dụng phân loại văn bản, hai vấn đề chủ yếu cần giải quyết khi sử dụng phân loại Naive Bayes là gì?",B,B,✓,342
+719,Thành phần nào mô tả xác suất chuyển giữa các trạng thái ẩn trong HMM?,A,A,✓,194
+720,"Theo định luật Kepler, tất cả các hành tinh chuyển động trên quỹ đạo nào, và vận tốc bán kính nối từ Mặt Trời đến hành tinh quét diện tích trong thời gian bằng nhau có ý nghĩa gì?",B,B,✓,309
+721,Âm học là ngành nghiên cứu về hiện tượng nào?,B,B,✓,258
+722,Hiện tượng nào giải thích được cả màu sắc cầu vồng và màu đỏ cam lúc hoàng hôn?,A,A,✓,342
+723,"Yếu tố ""đầu ra = 1 nếu dự đoán đúng và = 0 nếu ngược lại"" nằm trong các đo độ nào được nhắc đến trong tài liệu?",B,A,✗,378
+724,"Một sóng cơ truyền dọc theo sợi dây có vận tốc 
+v=20m/s. Biết tần số của sóng là 
+f=5Hz. Bước sóng của sóng này bằng bao nhiêu?",C,C,✓,160
+725,Hiện tượng con quay hồi chuyển không bị đổ khi quay nhanh là do:,B,B,✓,414
+726,Tiêu chuẩn Rayleigh dùng để làm gì?,C,C,✓,492
+727,"Nếu ảnh đầu vào có kích thước 32×32, bộ lọc 5×5, stride = 1, padding = 0, thì kích thước đầu ra là bao nhiêu?",B,B,✓,257
+728,Chìa khóa giúp LSTM truyền tải thông tin xuyên suốt nhiều bước thời gian là gì?,C,C,✓,321
+729,"Trong vật lý, những đại lượng nào là vô hướng?","C,D",C,✗,174
+730,Các thành phần nào thuộc cơ chế Lighten Cross-Attention (LCA)?,D,D,✓,246
+731,"Đối với sóng cơ học, (1) cần có điều kiện gì để sóng truyền được, và (2) khi sóng truyền thì năng lượng có đặc điểm gì?",A,A,✓,352
+732,Nội dung chính của tài liệu Hidden Markov Model là gì?,C,C,✓,670
+733,"Trong sóng ngang, các phần tử của môi trường dao động theo hướng nào?",B,B,✓,160
+734,Nội dung chính của tài liệu `Public_120` là gì?,B,C,✗,425
+735,Phương pháp chuyển đổi nhị phân (BR) được hiểu như thế nào?,C,C,✓,313
+736,Định nghĩa quang phổ trong tài liệu Public_149 là gì?,A,A,✓,366
+737,"Trong công thức tính xác suất đồng thời P(X1, X2... Xn) của mạng Bayes có một tham số khác, đó là gì?",B,B,✓,201
+738,Phương pháp chuyển đổi nhị phân được sử dụng trong các thuật toán MLL nào (được nhắc đến trong tài liệu)?,B,B,✓,384
+739,"Với ma trận trực giao U (UTU=IU^TU=IUTU=I), biểu diễn toạ độ mới yyy của một vector xxx trong hệ cơ sở U là gì?",B,B,✓,173
+740,"Theo tài liệu Public_195, Trí tuệ nhân tạo (AI) trong giáo dục bắt đầu được biết đến mạnh mẽ từ năm nào?",B,B,✓,105
+741,"Theo tài liệu, trong mô hình phòng vệ theo chiều sâu (Defence in Depth), yếu tố nào được coi là lớp bảo vệ đầu tiên?
+
+
+",A,A,✓,117
+742,"Theo tài liệu, trong quá trình đăng ký Tableau, người dùng cần cung cấp một số thông tin cá nhân. Nếu một người dùng nhập sai địa chỉ email trong bước đăng ký, hệ quả nào có thể xảy ra?
+",A,A,✓,244
+743,"Theo tài liệu Public_180, Stress Testing và Soak Testing là gì?",C,C,✓,108
+744,"Theo tài liệu Public_194, MongoDB là gì?",B,B,✓,377
+745,"Khi lựa chọn công cụ AI để thiết kế học liệu điện tử, giáo viên nên ưu tiên tiêu chí nào quan trọng nhất để đảm bảo hiệu quả dạy học?",A,A,✓,498
+746,Nêu 1 ưu điểm và 1 nhược điểm của Oracle được đề cập trong tài liệu Public_190.,A,A,✓,128
+747,"Trong bảy vùng của hạ tầng CNTT, nếu một tổ chức chỉ tập trung bảo mật kỹ ở vùng WAN mà bỏ qua vùng Người dùng (User domain), hệ quả nào có khả năng xảy ra nhất?
+",B,B,✓,405
+748,"Trong giải thuật DES, kích thước hiệu dụng của khóa là bao nhiêu bit?",B,B,✓,73
+749,Các giai đoạn phát triển phần mềm,A,A,✓,772
+750,"Trong tấn công DoS/DDoS, mục tiêu chính của kẻ tấn công là gì?",B,B,✓,410
+751,"Dựa vào tài liệu Public_254, nếu mục tiêu là giấu thông tin trong ảnh rồi truyền đi mà vẫn muốn thông tin ẩn không bị mất khi ảnh bị nén bằng phương pháp không làm mất dữ liệu hoặc chỉnh sửa nhẹ, định dạng ảnh nào là lựa chọn phù hợp nhất?",B,B,✓,365
+752,Điện dung ký hiệu trên tụ gốm thường được ghi theo dạng nào?,C,B,✗,202
+753,Xác định đúng sự kết hợp giữa “loại HTTT” và “vai trò chính” mà văn bản mô tả:,A,A,✓,594
+754,"Qua nội dung của tài liệu Public_166, có thể rút ra nhận định tổng quan nào về quản lý an toàn thông tin?",B,B,✓,514
+755,Các đóng góp cụ thể và cơ chế chính của cách mạng kỹ thuật số trong việc thúc đẩy các mục tiêu phát triển bền vững là gì?,B,B,✓,661
+756,"
+Tấn công SYN Flood khai thác điểm yếu nào trong giao thức TCP?",B,B,✓,272
+757,"Theo tài liệu Public_175, người dùng cần có những điều kiện cơ bản nào để sử dụng Zoiper?",B,B,✓,150
+758,"Trong tài liệu có nêu: vi rút, sâu và zombie đều có khả năng tự lây nhiễm (self-infection/self-replicate). Nếu hệ thống bị nhiễm cả vi rút và sâu, nguy cơ nào là đáng lo ngại nhất?",B,B,✓,542
+759,"Theo Phụ lục III, phương thức kết nối đến Cổng dịch vụ chứng thực chữ ký số công cộng là gì?",B,B,✓,244
+760,"Theo kịch bản tấn công Smurf, nếu một mạng LAN có 200 máy và tất cả đều phản hồi ICMP về máy nạn nhân, điều gì có thể xảy ra?",A,A,✓,377
+761,Kafka ban đầu được phát triển bởi ai?,B,B,✓,85
+762,Văn bản phân biệt “di chuyển cơ sở dữ liệu” và “sao chép cơ sở dữ liệu” như thế nào?,B,B,✓,361
+763,"Qua việc so sánh DES, 3-DES và AES, có thể rút ra nhận định tổng quan nào về xu hướng phát triển của các giải thuật mã hóa khóa đối xứng?",A,A,✓,685
+764,"Trong trường hợp, số lượng consumer trong cùng một consumer group nhiều hơn số lượng partition của một topic thì xảy ra vấn đề gì? ",D,A,✗,301
+765,Thuật toán mật mã nào bắt buộc áp dụng cho chữ ký số theo quy định kỹ thuật trong Thông tư?,B,B,✓,262
+766,Mục đích chính của việc bổ sung luồng trình ký Voffice trong hệ thống là gì?,A,A,✓,198
+767,"Theo Microsoft, lỗ hổng bảo mật được phân loại theo mấy mức độ nghiêm trọng?",C,C,✓,146
+768,"Nếu một nhóm phát triển muốn xem xét thay đổi từ repository từ xa trước khi quyết định có nên hợp nhất chúng vào nhánh chính hay không, theo văn bản, họ nên sử dụng thao tác nào, và lý do?",B,B,✓,161
+769, Devops khác biệt gì so với Sysadmin?,B,B,✓,501
+770,Zoiper có thể hỗ trợ nhiều giao thức kết nối và nhiều nền tảng thiết bị. Phần mềm này hỗ trợ những giao thức nào và có thể cài đặt trên những hệ điều hành nào?,A,A,✓,157
+771,"Trong phần “Ưu điểm của PostgreSQL”, văn bản liệt kê những điểm nào?","A,B,C","A,B,C",✓,130
+772,"Dựa trên thông tin về quantum supremacy của Google và IBM trong tài liệu `Public_199`, nếu một công ty khác tuyên bố có 130 qubit, số qubit này gấp bao nhiêu lần số qubit của Google và hơn số qubit của IBM bao nhiêu?",A,A,✓,153
+773,"Trong học phần An toàn mạng (Network Security), người học cần đạt được những chuẩn đầu ra nào sau đây?",A,A,✓,412
+774,"Theo tài liệu, mã hóa khóa đối xứng còn được gọi bằng tên nào?
+",B,B,✓,104
+775,"Khi tạo nhóm làm việc mới trong Tableau, sau khi nhập tên nhóm, người dùng cần thao tác gì tiếp theo?",B,B,✓,85
+776,"Từ các dạng tấn công (SYN Flood, Smurf, DDoS, giả mạo địa chỉ, nghe lén) được mô tả trong tài liệu Public_154, hãy rút ra nhận định tổng quan về đặc điểm của các tấn công từ chối dịch vụ và tấn công mạng.",D,D,✓,662
+777,"Theo tài liệu Public_168, mục tiêu chính của Tableau là gì?",B,B,✓,1400
+778,"Theo tài liệu Public_184, HTTT quản lý cung cấp dạng thông tin nào và hệ thống hỗ trợ quyết định cung cấp thông tin gì?",B,B,✓,2864
+779,Mục tiêu Phát triển bền vững 6 (SDG 6) của Liên hợp quốc nhằm đảm bảo điều gì?,A,A,✓,2128
+780,Lịch sử phát triển các mô hình triển khai ứng dụng,A,A,✓,650
+781,Luồng nhập điểm của giảng viên và nội dung hiển thị khi nhập là?,B,B,✓,3033
+782,Kể tên 2 công việc của Devops,C,C,✓,1646
+783,"Theo tài liệu, hệ thống IDS hoạt động chủ yếu ở lớp nào trong mô hình OSI?
+
+
+
+",D,C,✗,2185
+784,"Trong bốn phương pháp đánh giá rủi ro, phương pháp nào đòi hỏi chi phí lớn về thời gian, nguồn lực và yêu cầu chuyên gia có trình độ cao?",C,C,✓,3070
+785,Điểm khác biệt cơ bản giữa tấn công DoS và tấn công DDoS là gì?,B,B,✓,2030
+786,"Dựa vào tài liệu Public_166, hãy xác định ưu điểm chính và nhược điểm nổi bật của phương pháp không chính thức được đề cập.",B,B,✓,2580
+787,Thuật toán Shor có vai trò gì trong lịch sử phát triển Máy tính lượng tử?,A,A,✓,2778
+788,"Theo tài liệu, yếu tố nào khiến cho học liệu điện tử (HLĐT) trở thành công cụ đặc biệt phù hợp trong bối cảnh chuyển đổi số giáo dục?",B,B,✓,2190
+789,Nêu 1 lý do cần Kubernetes và lý do container trở nên phổ biến,A,A,✓,1928
+790,"Qua các đặc điểm được mô tả trong tài liệu Public_159, có thể rút ra nhận định tổng quan nào về ưu điểm nổi bật của mã hóa khóa bất đối xứng so với mã hóa khóa đối xứng?",B,B,✓,2542
+791,"Theo tài liệu Public_185, các loại báo cáo mà Jira cung cấp có đặc điểm chung nào?",A,A,✓,1645
+792,"Theo tài liệu, sau khi đã tạo dự án, người dùng có thể chỉnh sửa bằng cách click dấu “ba chấm” cạnh tên dự án. Nếu muốn thay đổi chủ sở hữu của dự án, người dùng cần chọn thao tác nào trong danh sách hiện ra?",C,C,✓,1606
+793,"Dựa trên tài liệu Public_163, hãy xác định một thực thể tham gia mô hình giao dịch SET và một nhiệm vụ chính của thực thể đó.",C,"A,C",✗,2536
+794,"Nếu trong mạch lọc nguồn ta thay tụ hóa phân cực bằng tụ gốm không phân cực, điều gì có khả năng xảy ra?",B,B,✓,2233
+795,"Nếu một hệ thống phải xử lý khối lượng lớn dữ liệu động và thường xuyên thay đổi, nhược điểm nào của GraphQL có thể khiến việc tối ưu hiệu suất trở nên phức tạp hơn?",B,B,✓,1886
+796,"Nếu một doanh nghiệp chỉ triển khai “HTTT quản lý” mà không có “hệ thống hỗ trợ quyết định”, hậu quả nào dễ xảy ra nhất?",B,B,✓,3316
+797,"Theo tài liệu Public_182, DoS và DDoS là gì?",D,D,✓,1881
+798,"Theo tài liệu Public_165, tường lửa lọc gói (Packet-filtering firewall) hoạt động dựa trên nguyên tắc nào?",A,A,✓,2210
+799,"Khi client chỉ cần một phần thông tin cụ thể từ server, GraphQL giúp loại bỏ tình trạng nào để tối ưu hóa tải trọng dữ liệu?",A,A,✓,2253
+800,Nêu một đặc điểm nổi bật của hệ thống quản lý gói trên Ubuntu và phương pháp cài đặt Driver Nvidia sử dụng kho lưu trữ chuẩn.,D,D,✓,2381
+801,Hệ thống được mô tả trong tài liệu Public_282 sử dụng công nghệ nào để xây dựng giao diện người dùng (UI/UX)?,B,B,✓,1742
+802,Loại tấn công nào gửi nhiều HTTP request làm quá tải server?,C,C,✓,1982
+803,Tóm tắt nội dung chính của học phần An toàn mạng (INT1482)?,C,C,✓,1277
+804,"Nếu một nhóm dự án nhỏ (dưới 3 tháng) lựa chọn Jira, rủi ro lớn nhất theo tài liệu là gì?",B,B,✓,3133
+805,Quản lý dự án giúp doanh nghiệp đạt được mục tiêu chiến lược như thế nào?,B,B,✓,2430
+806,Tổng quan về Kubernetes trong tài liệu Public_192,A,A,✓,2205
+807,"Qua toàn bộ phần trình bày trong tài liệu Public_167, có thể rút ra nhận định tổng quan nào về cách tiếp cận an toàn thông tin?",B,B,✓,2666
+808,"Khi công ty có một nhóm QA/Tester với background là ít kỹ năng lập trình, theo bạn thì lựa chọn công cụ nào phù hợp nhất để phù hợp với đội nhóm cho việc kiểm thử tự động?",A,B,✗,2728
+809,"Chọn mô tả chính xác nhất về mối quan hệ chức năng giữa Dart, Framework và SDK theo nội dung văn bản:",C,C,✓,2693
+810,"Theo tài liệu, phương pháp kết hợp bắt đầu bằng đánh giá rủi ro ở mức cao, sau đó chuyển sang đánh giá chi tiết. Nếu đánh giá ở mức cao ban đầu không chính xác, hậu quả nào có thể xảy ra?",B,B,✓,3868
+811,"Theo tài liệu, những ưu điểm nổi bật nào của Jira được liệt kê?","A,B,D","A,B,D",✓,1660
+812,"Olympic 2004 tại Hy Lạp dự kiến kinh phí 2 tỷ EURO, nhưng phải chi tới 12 tỷ EURO. Vậy chi phí thực tế đã vượt bao nhiêu phần trăm (%) so với kế hoạch ban đầu?","A,B,C,D",B,✗,4042
+813,Mục tiêu chính của kiểm thử hiệu năng trong việc đánh giá khả năng đáp ứng và ổn định của hệ thống là gì?,A,A,✓,2681
+814,"Trong hệ thống phân bổ giảng đường, nếu một giảng đường đang được lên lịch sử dụng cho lớp học chính khóa nhưng đồng thời có sự cố hỏng thiết bị, hệ thống sẽ xử lý thế nào và ai chịu trách nhiệm xử lý sự cố?",C,C,✓,1662
+815,"Kiểm thử tự động là gì, các nguyên tắc cơ bản và lợi ích chính của nó?",A,A,✓,1693
+816,"Trong quy trình khai báo mã KH COD hàng ngày, khi khách hàng chưa xác thực OTP, hệ thống xử lý yêu cầu ra sao và trạng thái thay đổi thế nào nếu sau 72 giờ vẫn chưa xác thực?",B,B,✓,1085
+817,Mục đích chính của quá trình ETL trong quản lý dữ liệu là gì?,B,B,✓,984
+818,"Nếu hệ thống sử dụng khóa 64 bit, không gian khóa là 2⁶⁴. Giả sử một kẻ tấn công có thể thử 1 tỉ khóa/giây, thời gian cần để thử hết toàn bộ không gian khóa gần bằng bao nhiêu?
+
+","A,B,C",B,✗,2856
+819,Các phiên bản Ubuntu LTS và các phiên bản hiện đang được hỗ trợ.,D,A,✗,2002
+820,"Hãy xác định hai cách thêm người dùng vào Tableau, và thao tác đầu tiên trong mỗi cách.",A,"A,B",✗,1430
+821,Bước nào nêu rõ các tiêu chí và quy trình để lựa chọn công cụ kiểm thử phù hợp?,C,C,✓,1620
+822,"Theo tài liệu Public_152, trong bảy vùng của hạ tầng CNTT, vùng nào được đề cập là có nhiều mối đe dọa và nguy cơ nhất?",C,C,✓,2273
+823,Quá trình thực hiện một giao dịch dựa trên SET gồm mấy bước,D,D,✓,2476
+824,"Transactional outbox pattern lưu message ở đâu, và thành phần nào chịu trách nhiệm đọc & publish message đó?",B,B,✓,1541
+825,"Nếu một công ty vừa và nhỏ chọn Jira để quản lý dự án Agile, trong khi đội ngũ nhân viên còn hạn chế về tiếng Anh và ngân sách, họ sẽ đối mặt với những khó khăn nào nhất",A,A,✓,2121
+826,"Theo văn bản, Git khác biệt so với VCS cục bộ như SVN ở điểm nào, và Git hỗ trợ thao tác nào giúp phát triển song song mà vẫn an toàn?",A,A,✓,1690
+827,"Theo tài liệu, tài sản an toàn thông tin bao gồm những loại nào?",A,A,✓,2332
+828,Các thuật ngữ thường dùng của MongoDB,A,A,✓,1153
+829,"Theo tài liệu, để thêm nhãn dữ liệu trong Tableau, bước đầu tiên cần thực hiện là gì?",B,B,✓,1318
+830,Điện trở màng than có ưu điểm gì về độ ổn định và nhược điểm gì khi làm việc ở nhiệt độ cao?,A,A,✓,1853
+831,Nội dung chính của văn bản Public_263 là gì?,A,A,✓,2434
+832,"Theo tài liệu, số vòng lặp xử lý trong giải thuật AES khi sử dụng khóa 192 bit là bao nhiêu?
+",B,B,✓,1876
+833,"Hãy xác định (i) công thức mối quan hệ giữa tấn công, mối đe dọa và lỗ hổng, và (ii) ví dụ một dạng tấn công theo mục đích.",B,B,✓,1605
+834,"Trong giải thuật RSA, độ an toàn được dựa trên tính khó của bài toán nào?
+
+
+
+",A,A,✓,3702
+835,"Từ các phương pháp mã hóa (thay thế, hoán vị, XOR, Vernam, khóa chạy, hàm băm), hãy rút ra nhận định tổng quan về các nguyên lý mã hóa cơ bản hoặc các điểm khác biệt chính giữa chúng.",A,A,✓,1980
+836,"Hãy xác định (i) năm DSA được NIST công nhận là chuẩn chữ ký số, và (ii) tên của một thành phần trong PKI có nhiệm vụ xác minh thông tin nhận dạng của người dùng.
+",C,"A,C",✗,2510
+837,Public_179 mô tả những nhiệm vụ nào trong thiết kế và phát triển kịch bản kiểm thử tự động?,D,D,✓,1236
+838,"Hãy xác định (i) phần mềm độc hại nào thường giả danh chương trình có ích để lừa người dùng, và (ii) ví dụ một hình thức lây nhiễm đặc trưng của nó.
+
+
+",A,A,✓,1652
+839,Mục tiêu của tấn công DoS là gì?,A,A,✓,2070
+840,"Theo tài liệu Public_174, ETL (Extract, Transform, Load) được hiểu là gì?",B,B,✓,1592
+841,Tổng quan về các tính năng và nguyên lý hoạt động của Ubuntu,B,B,✓,1908
+842,Khóa bí mật trong tài liệu Public_283 được hiểu là gì?,B,B,✓,2218
+843,"Theo tài liệu, giao thức SSL/TLS được xây dựng dựa trên phiên bản nào của SSL?",B,B,✓,1778
+844,"Dựa vào quy định về tín chỉ được nêu trong tài liệu Public_263, nếu sinh viên đang chọn tổng 9 tín chỉ, cần thêm tối thiểu bao nhiêu tín chỉ để nút Lưu được bật?",B,B,✓,2881
+845,Zoiper được biết đến là loại phần mềm gì?,C,C,✓,1861
+846,"Theo tài liệu, Estuary Flow sử dụng tính năng nào của MySQL để sao chép dữ liệu hiệu quả về chi phí?",C,C,✓,1469
+847,Số lượng mô hình phòng thủ phổ biến trong an toàn mạng được đề cập trong tài liệu Public_253 là bao nhiêu?,B,D,✗,756
+848,"Trong hệ sinh thái Tableau, thành phần nào cho phép người dùng chuẩn bị và làm sạch dữ liệu trước khi phân tích?
+",B,B,✓,1705
+849,"Theo tài liệu Public_160, DSA có ưu điểm nổi bật nào so với RSA?",B,B,✓,2694
+850,"Nếu Spike Testing thất bại liên tục, điều gì xảy ra khi một số lượng lớn người dùng truy cập cùng một lúc vào một hệ thống thương mại điện tử?",B,B,✓,1860
+851,"Theo nội dung văn bản, thành phần nào trong Flutter chịu trách nhiệm cung cấp công cụ (ví dụ: trình biên dịch) để biên dịch mã nguồn thành mã gốc (native code) cho từng hệ điều hành, giúp ứng dụng hoạt động mượt mà trên mỗi nền tảng?",B,B,✓,1744
+852,"Qua các nội dung trong tài liệu, có thể rút ra nhận định tổng quan nào về lợi ích khi sử dụng Tableau trong doanh nghiệp?
+",B,B,✓,1500
+853,"Theo tài liệu, pgloader cho phép thực hiện những tác vụ nào, và pg-chameleon được dùng trong trường hợp nào?",A,A,✓,4214
+854,"Trong lịch sử phát triển mật mã, năm 1977 đánh dấu sự ra đời của giải thuật nào?",C,C,✓,2712
+855,Mục đích chính của hệ thống thông tin quản lý và phân bổ giảng đường là gì?,B,B,✓,1744
+856,Cung cấp tổng quan về Oracle Database dựa trên nội dung trong tài liệu Public_190.,A,A,✓,1994
+857,Tóm tắt các nội dung chính của văn bản này,B,D,✗,2896
+858,"Những công cụ AI nào đã thực sự được phát triển trong giáo dục từ những năm 2000 đến nay, và chúng có vai trò gì?",B,B,✓,2698
+859,Jira được phát triển bởi công ty nào?,B,B,✓,3154
+860,Ba thuộc tính cốt lõi cần bảo vệ trong an toàn thông tin là gì?,A,A,✓,1662
+861,Hãy cho biết các thành phần chính của an toàn thông tin và nêu vai trò của chính sách an toàn thông tin đối với các thành phần đó.,A,A,✓,2248
+862,"Hãy xác định phiên bản Tableau miễn phí và đặc điểm nổi bật của phiên bản này.
+",C,C,✓,1424
+863,"Theo tài liệu Public_162, điểm khác biệt quan trọng giữa IDS và IPS là gì?",D,B,✗,1200
+864,GraphQL được coi là một ngôn ngữ gì trong lĩnh vực phát triển API?,C,C,✓,1950
+865,"Theo tài liệu Public_197, những yêu cầu cụ thể nào về cơ sở vật chất được xem là thách thức lớn nhất khi ứng dụng AI?",B,A,✗,1769
+866,"Giả sử một start-up có nguồn lực hạn chế nhưng cần ra mắt nhanh một MVP đa nền tảng với mức độ tùy biến giao diện tương đối cao. Dựa trên văn bản, hai yếu tố nào là NHẤT QUYẾT ĐỊNH cho quyết định chọn (hoặc không chọn) Flutter trong trường hợp này? (Chọn 2.)",A,"A,B",✗,1829
+867,Tổng quan Devops dành cho người mới bắt đầu là gì?,C,C,✓,1646
+868,Mục đích chính của việc xây dựng Cổng kết nối dịch vụ chứng thực chữ ký số công cộng là gì?,B,B,✓,2264
+869,Giao diện của phần mềm softphone Zoiper được thiết kế như thế nào để người dùng cảm thấy quen thuộc khi sử dụng?,B,B,✓,2256
+870,"Theo tài liệu, chuỗi giá trị băm đầu ra của MD5 có kích thước bao nhiêu bit?
+
+
+",A,A,✓,2857
+871,"Theo tài liệu, điểm khác biệt chính giữa tường lửa có trạng thái (Stateful) và không trạng thái (Stateless) là gì?",A,A,✓,2604
+872,"Theo tài liệu Public_196, các quốc gia nên áp dụng những chiến lược nào để đảm bảo nguồn nước bền vững trong tương lai khi các giải pháp hiện tại không đủ để giải quyết tình trạng khan hiếm nước?",A,A,✓,2846
+873,"Jira cung cấp loại báo cáo nào, và hạn chế gì khi áp dụng cho dự án ngắn hạn (dưới 3 tháng)?",B,B,✓,1914
+874,"Theo số liệu năm 2012 từ Cơ sở dữ liệu lỗ hổng quốc gia Hoa Kỳ, lỗ hổng bảo mật được phát hiện nhiều nhất nằm ở thành phần nào của hệ thống?
+",C,C,✓,2690
+875,"Trong tài liệu Public_282, cơ sở dữ liệu nào được hệ thống sử dụng để lưu trữ dữ liệu?",C,C,✓,1742
+876,"Sau khi khách hàng xác thực OTP thành công, hệ thống sẽ thực hiện bước nào tiếp theo?",D,B,✗,1214
+877,"Hãy xác định (i) năm xuất hiện khái niệm mã hóa khóa bất đối xứng, và (ii) tên của hai nhà khoa học đề xuất nó.",A,D,✗,2904
+878,"Theo Thông tư, “cặp khóa bất đối xứng” trong phần mềm ký số bao gồm những thành phần nào?",B,B,✓,1965
+879,"Trung tâm dữ liệu đã có tường lửa, IDS/IPS và sao lưu định kỳ. Sự cố gần đây cho thấy một máy chủ bị cài mã độc qua tài khoản quản trị mặc định của thiết bị IoT trong mạng nội bộ. Nếu chỉ được chọn một biện pháp bổ sung ngay lập tức, biện pháp nào giảm nguy cơ lặp lại sự cố tương tự một cách trực tiếp và hiệu quả nhất?",B,B,✓,2356
+880,Mô tả chi tiết ưu điểm của Kafka về tính mã nguồn mở và khả năng xử lý dữ liệu lớn.,D,D,✓,1273
+881,"Hãy xác định (i) tên 2 nhà mật mã học đã phát triển Rijndael – cơ sở của AES, và (ii) năm AES được NIST công nhận là chuẩn mã hóa dữ liệu.",B,B,✓,2042
+882,SQL Server được sử dụng chủ yếu để quản lý và truy vấn dữ liệu quan hệ trong các hệ thống doanh nghiệp như thế nào?,B,D,✗,2384
+883,"Từ tài liệu Public_193, những kiến thức và kỹ năng nào là cần thiết cho một kỹ sư DevOps khi tập trung vào một giai đoạn cụ thể trong roadmap DevOps?",A,B,✗,1646
+884,Các loại hệ thống thông tin (HTTT) được văn bản phân loại trong doanh nghiệp có thể nhóm lại thành những loại nào?,A,A,✓,2450
+885,"Hãy xác định hai kỹ thuật phát hiện xâm nhập chính của IDS, và  nhược điểm tương ứng của mỗi kỹ thuật.
+",A,"A,B",✗,2466
+886,"Theo quan điểm hệ thống trong dự án HTTT, yếu tố nào được xem là quan trọng nhất để quyết định hiệu quả toàn bộ hệ thống?",D,D,✓,2766
+887,Tóm tắt các nội dung chính của văn bản Public_182 về tấn công DoS/DDoS.,D,A,✗,1884
+888,Phần mềm ký số cần hỗ trợ định dạng dữ liệu nào theo Phụ lục I của tài liệu Public_257?,A,A,✓,1885
+889,Tóm tắt những ảnh hưởng của đại dịch COVID-19 đến việc áp dụng công nghệ trong giáo dục là gì?,B,B,✓,2762
+890,"Theo tài liệu Public_167, chuẩn ISO/IEC 27001:2005 tập trung vào nội dung nào?",C,C,✓,2217
+891,"Theo báo cáo của WHO và UNICEF, đến năm 2030, tình trạng khan hiếm nước sẽ khiến bao nhiêu triệu người phải di dời?",B,B,✓,3581
+892,"Theo tài liệu, phát hiện dựa trên bất thường cần giai đoạn huấn luyện để xây dựng hồ sơ hành vi bình thường. Nếu giai đoạn huấn luyện thu thập dữ liệu chưa đủ dài hoặc không đại diện, hậu quả nào có thể xảy ra?",B,B,✓,2461
+893,"Theo tài liệu, quá trình kiểm tra chữ ký số gồm bước so sánh hai chuỗi đại diện MD1 và MD2. Nếu một kẻ tấn công thay đổi nội dung thông điệp trong quá trình truyền nhưng không có khóa riêng của người gửi, điều gì sẽ xảy ra?
+
+
+",B,B,✓,3038
+894,Các phiên bản của Oracle Database,D,A,✗,1994
+895,Những yếu tố nào theo văn bản trực tiếp góp phần rút ngắn thời gian phát triển khi dùng Flutter (chọn mọi đáp án phù hợp)?,"A,B,D","A,B,D",✓,1973
+896,"Theo tài liệu, thành phần nào trong chứng chỉ số đóng vai trò ký để đảm bảo tính xác thực và toàn vẹn?",C,C,✓,2238
+897,Tóm tắt các nội dung chính của văn bản về Apache Kafka.,A,A,✓,1592
+898,Tóm tắt các bước cài đặt SQL Server 2022,D,D,✓,1141
+899,"Qua các dạng phần mềm độc hại được trình bày (virus, sâu, trojan, backdoor, rootkit, spyware, adware, zombie, bom logic…), có thể rút ra nhận định tổng quan nào về đặc điểm chung của phần mềm độc hại?",B,B,✓,1797
+900,"Trong cấu trúc tệp BMP, phần nào có kích thước 14 byte và lưu trữ thông tin tổng quát về tệp hình ảnh bitmap?",B,B,✓,1780
+901,"Khi muốn tạo một nhóm làm việc mới trên Tableau, bước cuối cùng mà người dùng cần thực hiện là gì?",B,B,✓,1316
+902,"Theo tài liệu, MD5 tạo chuỗi giá trị băm 128 bit, SHA1 tạo chuỗi 160 bit. Nếu một ứng dụng yêu cầu độ dài băm tối thiểu 160 bit để đảm bảo an toàn, hệ quả nào có thể xảy ra nếu vẫn sử dụng MD5 thay vì SHA1?",B,B,✓,2857
+903,"Nội dung chính của tài liệu “Trí tuệ nhân tạo trong kế toán, kiểm toán” là gì?",A,A,✓,3806
+904,"Hãy xác định (i) hai phương pháp phát hiện tấn công thường được sử dụng trong IDS, và (ii) nhược điểm của mỗi phương pháp.
+",B,"C,D",✗,2133
+905,"Nếu một công ty thương mại điện tử muốn phân tích xu hướng mua hàng trong nhiều năm mà dữ liệu giao dịch chứa nhiều bản ghi trùng lặp, bước nào trong ETL sẽ quan trọng nhất để giải quyết vấn đề này?",B,B,✓,1160
+906,"Nếu AI không được áp dụng trong giáo dục, điều gì có thể xảy ra với khả năng tiếp cận giáo dục của học sinh ở vùng sâu vùng xa?",B,B,✓,2444
+907,"Theo văn bản, những đặc điểm nào sau đây phản ánh tính phân tán nổi bật của Git?",A,"A,B",✗,2405
+908,"Qua quá trình cấp và sử dụng chứng chỉ số trong PKI được mô tả, những điểm rút ra chính nào có thể được xác định?",B,B,✓,2282
+909,Các thành phần chính của SQL Server là gì?,B,B,✓,1892
+910,Kubernetes được Google mở mã nguồn từ khi nào?,"B,C,D",C,✗,2360
+911,Vai trò của an toàn thông tin trong bối cảnh chuyển đổi số và các mối đe dọa mạng gia tăng được thể hiện rõ nhất ở khả năng bảo vệ dữ liệu và đảm bảo hoạt động liên tục?,C,C,✓,2770
+912,"Theo tài liệu Public_178, đặc điểm nào sau đây không phải của một dự án?",C,C,✓,1218
+913,"Trong các giao thức con của SSL/TLS, giao thức nào đảm nhiệm việc tạo đường hầm an toàn để vận chuyển dữ liệu, đảm bảo tính bí mật và toàn vẹn?",C,C,✓,2184
+914,Các bước chính để implement transactional outbox pattern theo tài liệu là gì?,A,A,✓,1305
+915,Thông tư Public_257 quy định những yêu cầu kỹ thuật nào đối với phần mềm ký số và phần mềm kiểm tra chữ ký số?,A,A,✓,1854
+916,"Để đạt được Mục tiêu Phát triển Bền vững số 6 (SDG 6) về nước sạch và vệ sinh vào năm 2030, những yếu tố nào cần được tăng cường, và chúng đóng vai trò gì?",A,A,✓,2558
+917,"Phân biệt 'Học kì' và 'Kì học' trong hệ thống quản lý đào tạo; mô tả mô hình khóa dữ liệu hợp lí cho các thực thể liên quan, và phân tích hệ quả của mô hình này đối với các ràng buộc trong việc xếp lịch học.",C,C,✓,3557
+918,"Theo tài liệu, phát hiện bất thường có thể tạo ra nhiều báo động giả, còn phát hiện dựa trên chữ ký lại không phát hiện được tấn công chưa có mẫu. Nếu một tổ chức muốn giảm thiểu cả hai hạn chế này, giải pháp hợp lý nhất là gì?
+
+
+
+",C,C,✓,2180
+919,"Trong Git, đâu là mô tả đầy đủ và chính xác nhất về mối quan hệ giữa Branch, Merge, và Master theo văn bản?",B,B,✓,1508
+920,"Theo hướng dẫn trong tài liệu, để đăng nhập tài khoản Tableau người dùng cần truy cập vào địa chỉ nào?",A,A,✓,1298
+921,"Nếu một hệ thống vẫn sử dụng DES với khóa hiệu dụng 56 bit trong bối cảnh tốc độ tính toán ngày nay đã tăng nhanh, nguy cơ nào là hiện hữu nhất?",C,C,✓,2593
+922,"Nếu khách hàng không xác thực OTP trong vòng 72 giờ, trạng thái yêu cầu sẽ được hệ thống cập nhật như thế nào?",C,C,✓,1214
+923,"Hãy xác định  số lượng vùng trong hạ tầng CNTT được mô tả trong tài liệu và nêu tên một nguy cơ điển hình của vùng WAN.
+
+",C,C,✓,2165
+924,Có mấy bước cài đặt Driver Nvidia sử dụng Repository chuẩn theo phương pháp cài đặt qua dòng lệnh,B,B,✓,2208
+925,"Khi xác định phạm vi tự động hóa, cần chú ý những yếu tố nào?",D,"A,B,D",✗,3180
+926,"Theo tài liệu Public_174, trong các bước ETL, hoạt động nào chịu trách nhiệm làm sạch, chống trùng lặp và chuẩn hóa dữ liệu?",B,B,✓,1786
+927,"Qua các phần hướng dẫn trong tài liệu, có thể rút ra nhận định tổng quan nào về quy trình sử dụng Tableau cơ bản?",B,B,✓,1560
+928,"Trong các marker của ảnh JPEG, marker nào có giá trị 0xFF 0xD9 và có chức năng đánh dấu kết thúc ảnh?",D,D,✓,1940
+929,"Trong Phụ lục II, tiêu chí nào xác định tính toàn vẹn của thông điệp dữ liệu đã ký số?",B,B,✓,2772
+930,"Theo tài liệu, Tableau nhấn mạnh việc hiểu rõ kiểu dữ liệu của từng trường (Number, String, Date, Boolean, Geographic Role). Nếu một trường ngày tháng bị gán sai kiểu dữ liệu thành String, hậu quả nào dễ xảy ra nhất?",B,B,✓,2362
+931,"Theo tài liệu, mô hình “Phòng vệ theo chiều sâu” (Defence in Depth) cho thấy nguyên tắc quan trọng nào khi thiết kế hệ thống an toàn thông tin?
+
+",B,B,✓,2720
+932,"Qua phân tích trong tài liệu, có thể rút ra nhận định tổng quan nào về đặc điểm của các lỗ hổng bảo mật?
+
+",B,B,✓,2166
+933,"Theo mô hình PGP đảm bảo cả tính bí mật và xác thực, nếu bên gửi không ký thông điệp trước khi mã hóa, hệ quả nào có thể xảy ra?",A,A,✓,2140
+934,Các bước cơ bản trong quy trình phân tích rủi ro an toàn mạng?,C,C,✓,1794
+935,"Theo mô tả trong tài liệu Public_183, outbox_table mang lại những lợi ích nào?",B,"A,B,C",✗,1080
+936,"Hãy xác định kỹ thuật tấn công DoS phổ biến thường được đề cập trong tài liệu, và  biện pháp phòng chống cơ bản cho tấn công SYN Flood.",B,"B,C",✗,2488
+937,Các tính năng chính của Oracle Database là gì?,D,D,✓,1994
+938,"Hãy xác định (i) một số luật tội phạm máy tính ở Mỹ, và (ii) một số luật về sự riêng tư cũng tại Mỹ được nêu trong tài liệu.
+
+",A,"A,C",✗,3837
+939,"Giá trị ""50 4E 47"" trong ảnh  PNG có mục đích gì ",C,C,✓,2405
+940,"Trong case notification-service, nếu chỉ có một relay publisher chung cho tất cả channel (sms, email, voice call) thay vì tách riêng, rủi ro lớn nhất là gì?",B,B,✓,2853
+941,Nội dung cốt lõi của tài liệu Public_199 có tiêu đề “Máy tính lượng tử” là gì?,A,A,✓,1785
+942,Khi mô tả hệ thống bằng ngôn ngữ tự nhiên thì ta cần thực hiện bao nhiêu bước,C,C,✓,2729
+943,"Qua các nội dung được trình bày, có thể rút ra nhận định tổng quan nào về vai trò của tường lửa và IDS/IPS trong bảo mật hệ thống?
+",A,A,✓,2446
+944,"Theo tài liệu Public_163, phiên bản chính thức mới nhất của SSL và TSL được phát hành vào những năm nào?",B,B,✓,1965
+945,"Theo tài liệu Public_178, dự án được xem là thành công và thất bại dựa trên những tiêu chí nào?",D,D,✓,2140
+946,Bước đầu tiên của quá trình khởi tạo phiên làm việc giữa SSL Client và SSL Server là gì,C,C,✓,2066
+947,RPA (Robotic Process Automation) khác với AI ở điểm nào?,A,A,✓,4373
+948,Tóm tắt các bước cài đặt thủ công driver chính thức từ Nvidia.com cho card đồ họa trên hệ điều hành Windows.,C,C,✓,2474
+949,"Trong các công ty kiểm toán Big4, công nghệ AI tiêu biểu nào đã được áp dụng, và lợi ích thực tế mà nó mang lại là gì?",A,A,✓,3886
+950,Tóm tắt cách MongoDB lưu trữ dữ liệu,D,D,✓,1261
+951,Độ dài khóa tối thiểu của thuật toán RSA theo quy định là bao nhiêu bit?,B,B,✓,2336
+952,"Theo tài liệu Public_199, đâu là thách thức và cơ hội lớn nhất của Mô hình Ngôn ngữ Lớn (MTLT) lần lượt?",A,A,✓,2125
+953,"Theo tài liệu Public_254, giấu tin trong ảnh được định nghĩa như thế nào?",C,C,✓,1465
+954,Tóm tắt cách tạo bảng 'Cán bộ quản lý mới' theo hướng dẫn trong tài liệu Public_190.,"A,B,C,D",C,✗,1462
+955,Thực thể nào không tham gia mô hình tương tác giữa các thực thể tham gia thực hiện SET,A,A,✓,2889
+956,Các nhóm linh kiện điện tử cơ bản được đề cập trong tài liệu gồm những nhóm nào?,A,A,✓,2952
+957,"Qua mô tả trong tài liệu, có thể rút ra nhận định tổng quan nào về vai trò của IDS/IPS trong an toàn mạng?
+
+",B,B,✓,1966
+958,"Dựa trên nội dung của tài liệu Public_170, nhận định tổng quan nào có thể được rút ra về quy trình sử dụng Tableau cơ bản hiệu quả?",B,B,✓,1092
+959,Sâu Nimda có điểm đặc biệt gì trong phương thức lây lan?,C,C,✓,2656
+960,"Qua toàn bộ các phần trình bày trong tài liệu, có thể rút ra nhận định tổng quan nào về các giao thức SSL/TLS, SET và PGP?",A,A,✓,1760
+961,"Nếu phải tóm tắt toàn bộ nội dung tài liệu “Sử dụng công cụ AI thiết kế học liệu điện tử” trong một câu, ý nào phản ánh đúng nhất?",A,A,✓,1818
+962,"Trong Git, hành động nào bắt buộc phải thực hiện trước Commit để thay đổi có thể được lưu trữ vào lịch sử dự án?",B,B,✓,1450
+963,"Nếu một giảng đường bị sự cố hỏng thiết bị, ai có trách nhiệm xử lý báo cáo này trong hệ thống?",C,C,✓,1662
+964,"Trong layer ứng dụng mà MongoDB hoạt động, Front end và Back end là gì?",C,C,✓,2793
+965,Hệ thống PLATO được phát triển vào thập niên nào?,A,B,✗,2273
+966,"Nếu DoS kéo dài mà không phòng chống, nó có thể gây ra những hậu quả cụ thể nào?",A,A,✓,2266
+967,"Hãy xác định ba tác giả của giải thuật RSA và năm phát minh RSA.
+
+
+
+",A,A,✓,2982
+968,"Theo văn bản, Flutter có những ưu điểm gì khi so sánh với các framework khác, và đồng thời nó còn tồn tại những hạn chế nào?",A,"A,D",✗,1973
+969,Nút “Kết xuất excel” trong màn hình Quản lý KH CusID có quy tắc hoạt động ra sao?,B,B,✓,1325
+970,"Khái niệm “tấn công” trong an toàn thông tin được hiểu là gì?
+",C,C,✓,2365
+971,"Theo tài liệu Public_163, phiên bản TLS nào được sử dụng rộng rãi nhất?",C,C,✓,1402
+972,Nêu một thành phần thuộc Storage Engine hoặc Query Processor trong Database Engine.,A,B,✗,3302
+973,Transactional outbox pattern giải quyết triệt để vấn đề nào liên quan đến việc đảm bảo tính nguyên tử (atomicity) giữa cập nhật cơ sở dữ liệu cục bộ và gửi thông báo/sự kiện trong giao dịch phân tán?,B,B,✓,1305
+974,Ưu điểm nổi bật của GraphQL so với REST trong việc lấy dữ liệu từ server là gì?,A,A,✓,1886
+975,"Nếu sau khi cấu hình tài khoản SIP Account trên Zoiper mà phần mềm không báo trạng thái online, bước hợp lý nhất cần làm là gì?",B,B,✓,2744
+976,Những yếu tố nào thường gây ảnh hưởng đến hiệu năng của hệ thống?,B,"A,B,D",✗,2186
+977,"Trong tài liệu Public_197, đâu là một lợi ích của AI đối với học sinh và một thách thức của AI đối với nhà trường?",A,A,✓,2241
+978,"Theo chu trình Plan-Do-Check-Act của ISO/IEC 27001:2005, nếu một tổ chức đã thực hiện các bước đánh giá rủi ro, lựa chọn biện pháp kiểm soát và thực thi kế hoạch xử lý rủi ro, thì bước tiếp theo hợp lý nhất là gì?
+",A,A,✓,2753
+979,Tài liệu `Public_200` mô tả chi tiết gì về phương pháp Deloitte đã sử dụng để xây dựng và quản lý một cơ sở dữ liệu rủi ro lớn như một cơ sở dữ liệu chứa 10.000 trường hợp rủi ro?,B,A,✗,3861
+980,Logic mờ (Fuzzy logic) được áp dụng trong kiểm toán nhằm mục đích chính nào?,A,A,✓,4450
+981,Broker trong Kafka có vai trò gì?,C,C,✓,1672
+982,Vì sao phần mềm ký số và kiểm tra chữ ký số cần hỗ trợ dấu thời gian trên thông điệp dữ liệu?,B,B,✓,2944
+983,"Theo tài liệu, loại vi rút nào lây nhiễm vào cung khởi động (boot sector) của đĩa?
+
+
+",C,C,✓,2585
+984,Khái quát các trường hợp sử dụng của MongoDB,D,D,✓,3013
+985,Điểm khác biệt cơ bản giữa Luật và Chính sách được tài liệu nêu là gì?,B,B,✓,1480
+986,"Nếu dự án liên tục thay đổi yêu cầu nhưng không có cơ chế kiểm soát, hệ quả là gì?",B,B,✓,2774
+987,"Theo thống kê trong tài liệu `Public_153`, lỗ hổng nghiêm trọng cao chiếm 35%, trung bình 55% và thấp 10%. Dựa trên tài liệu này, nếu một tổ chức bỏ qua việc khắc phục các lỗ hổng trung bình, điều này tiềm ẩn nguy cơ gì?",B,B,✓,1689
+988,"Theo tài liệu Public_174, Hồ dữ liệu (Data Lake) cho phép lưu trữ dữ liệu có cấu trúc và không có cấu trúc, và nó hỗ trợ những phương pháp phân tích nào?",A,A,✓,1461
+989,Tóm tắt Kubectl trên Windows,B,B,✓,2778
+990,"GraphQL cung cấp khái niệm query để mô tả yêu cầu dữ liệu và schema để định nghĩa cấu trúc API, vậy mỗi thành phần này có vai trò chính là gì?",B,B,✓,1886

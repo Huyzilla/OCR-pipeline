@@ -1,0 +1,65 @@
+[
+  {
+    "page_content": "# Giới thiệu\n\nDimensionality Reduction (giảm chiều dữ liệu) là một kỹ thuật quan trọng trong Machine Learning. Dữ liệu thực tế có thể có số chiều rất lớn (hàng nghìn). Việc giảm chiều giúp tiết kiệm lưu trữ, tăng tốc tính toán và có thể coi như nén dữ liệu. Một phương pháp tuyến tính cơ bản là Principal Component Analysis (PCA).",
+    "metadata": {
+      "document_id": "Public118",
+      "hierarchy_path": "Giới thiệu",
+      "chunk_type": "text",
+      "chunk_index": 0
+    }
+  },
+  {
+    "page_content": "## Norm 2 của ma trận\n\n$$||A||_2 = \\max_x ||Ax||_2 / ||x||_2$$\n (1)  \n $||A||_2 = \\max_{\\{||x||_2 = 1\\}} ||Ax||_2$  (2)\n\nGiải bằng nhân tử Lagrange cho thấy norm 2 của ma trận chính là singular value lớn nhất của A.\n\nVector tương ứng là right-singular vector của A.",
+    "metadata": {
+      "document_id": "Public118",
+      "hierarchy_path": "Một chút toán > Norm 2 của ma trận",
+      "chunk_type": "text",
+      "chunk_index": 1
+    }
+  },
+  {
+    "page_content": "## Biểu diễn vector trong các hệ cơ sở khác nhau\n\n$$x = Uy, y = U^{-1}x$$\n (7)\n\nNếu U trực giao: U^{-1}=U^T, do đó y = U^T x.",
+    "metadata": {
+      "document_id": "Public118",
+      "hierarchy_path": "Một chút toán > Biểu diễn vector trong các hệ cơ sở khác nhau",
+      "chunk_type": "text",
+      "chunk_index": 2
+    }
+  },
+  {
+    "page_content": "## Trace\n\nMột số tính chất:\n\n* trace(A) = trace(A^T)\n* trace(kA) = k trace(A)\n* trace(AB) = trace(BA)\n* ||A||\\_F^2 = trace(A^T A)\n* trace(A) = tổng các trị riêng của A",
+    "metadata": {
+      "document_id": "Public118",
+      "hierarchy_path": "Một chút toán > Trace",
+      "chunk_type": "text",
+      "chunk_index": 3
+    }
+  },
+  {
+    "page_content": "## Kỳ vọng và ma trận hiệp phương sai\n\nMột chiều: x̄ = (1/N) Σ x\\_n, σ^2 = (1/N) Σ (x\\_n − x̄)^2\n\nĐa chiều: x̄ = (1/N) Σ x\\_n, S = (1/N) (X − x̄1^T)(X − x̄1^T)^T",
+    "metadata": {
+      "document_id": "Public118",
+      "hierarchy_path": "Một chút toán > Kỳ vọng và ma trận hiệp phương sai",
+      "chunk_type": "text",
+      "chunk_index": 4
+    }
+  },
+  {
+    "page_content": "# Principal Component Analysis (PCA)\n\nMục tiêu: Tìm hệ cơ sở trực chuẩn sao cho phương sai dữ liệu tập trung ở K thành phần đầu.\n\nDữ liệu chuẩn hoá: Ẋ = X − x̄1^T\n\nMa trận hiệp phương sai: S = (1/N)ẊẊ^T\n\nHàm mất mát:  $J = \\Sigma_{i=K+1}^D u_i^T S u_i$ Tối ưu tương đương chọn K vector riêng ứng với K trị riêng lớn nhất của S.",
+    "metadata": {
+      "document_id": "Public118",
+      "hierarchy_path": "Principal Component Analysis (PCA)",
+      "chunk_type": "text",
+      "chunk_index": 5
+    }
+  },
+  {
+    "page_content": "# Các bước PCA\n\n* Tính kỳ vọng x\n* Chuẩn hoá dữ liêu:  $\\dot{X} = X \\bar{x}1^{T}$\n* Tính ma trận hiệp phương sai S\n* Tính trị riêng & vector riêng, sắp xếp λ giảm dần\n* Chọn K vector riêng lớn nhất  $\\rightarrow$  U\\_K\n* Tính toạ độ mới:  $Z = U K^T \\dot{X}$\n* Xấp xỉ khôi phục:  $x \\approx U K z + \\bar{x}$\n\n17.48.02\\_AI Race\n\n2025-09-28 17.48.02 AI Race\n\n2025-09-28 17.48.02\\_AI Race\n\n201,5:00",
+    "metadata": {
+      "document_id": "Public118",
+      "hierarchy_path": "Các bước PCA",
+      "chunk_type": "text",
+      "chunk_index": 6
+    }
+  }
+]

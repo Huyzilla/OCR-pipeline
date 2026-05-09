@@ -1,0 +1,11 @@
+# Core dependencies for QA Pipeline
+torch>=2.0.0
+transformers>=4.30.0
+tqdm>=4.65.0
+pandas>=1.5.0
+bitsandbytes>=0.40.0  # For 8-bit quantization
+accelerate>=0.20.0    # For distributed inference
+
+# Optional: for GPU support
+# Install with: pip install -r requirements.txt[gpu]
+# cuda-toolkit>=11.8

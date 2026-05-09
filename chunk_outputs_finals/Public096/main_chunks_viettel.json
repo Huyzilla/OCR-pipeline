@@ -1,0 +1,128 @@
+[
+  {
+    "page_content": "# Giới thiệu\n\nNhiệt hạch (fusion) là quá trình hai hạt nhân nhẹ kết hợp thành một hạt nhân nặng hơn, giải phóng năng lượng khổng lồ – cơ chế cung cấp ánh sáng và nhiệt của Mặt Trời. Khác với phân hạch (fission) trong các nhà máy điện hạt nhân hiện nay, nhiệt hạch không tạo ra chất thải phóng xạ lâu dài và tiềm ẩn nguy cơ tan chảy lõi thấp hơn nhiều.\n\nCon người đã theo đuổi giấc mơ \"mặt trời nhân tạo\" hàng thập kỷ vì nó hứa hẹn nguồn năng lượng gần như vô hạn, an toàn và không phát thải carbon, có khả năng thay thế hoàn toàn nhiên liệu hóa thạch.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Giới thiệu",
+      "chunk_type": "text",
+      "chunk_index": 0
+    }
+  },
+  {
+    "page_content": "# Nguyên lý cơ bản\n\n* Phản ứng Deuterium–Tritium (D–T): Hai đồng vị của hydro (deuterium và tritium) hợp nhất ở nhiệt độ hơn 100 triệu °C, tạo ra helium và neutron năng lượng cao.\n* Điều kiện cần thiết:\n  * o Nhiệt độ cực cao để các hạt nhân vượt qua lực đẩy Coulomb.\n  * o Áp suất và mật độ đủ lớn để duy trì phản ứng.\n  * o Thời gian giam giữ đủ lâu (Lawson Criterion) để năng lượng sinh ra nhiều hơn năng lượng đầu vào.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Nguyên lý cơ bản",
+      "chunk_type": "text",
+      "chunk_index": 1
+    }
+  },
+  {
+    "page_content": "# Tại sao các nhà khoa học nghiên cứu năng lượng nhiệt hạch (nuclear fusion)?\n\nNgay từ khi lý thuyết về phản ứng nhiệt hạch được hiểu rõ vào những năm 1930, các nhà khoa học – và ngày càng nhiều kỹ sư – đã theo đuổi mục tiêu tái tạo và khai thác nguồn năng lượng này. Lý do là nếu có thể tái tạo phản ứng nhiệt hạch trên Trái Đất ở quy mô công nghiệp, nó có thể cung cấp nguồn năng lượng sạch, an toàn và gần như vô hạn với chi phí hợp lý để đáp ứng nhu cầu của thế giới.\n\nPhản ứng nhiệt hạch có khả năng tạo ra năng lượng gấp **bốn lần so với phân hạch** (đang được dùng trong các nhà máy điện hạt nhân) và gần **bốn triệu lần so với việc đốt dầu hoặc than** tính theo cùng khối lượng nhiên liệu.\n\nHầu hết các thiết kế lò phản ứng nhiệt hạch đang được phát triển đều sử dụng **hỗn hợp deuteri và triti** – các nguyên tử hydro chứa thêm nơtron. Về lý thuyết, chỉ cần vài gram hai loại nhiên liệu này có thể tạo ra **1 terajoule năng lượng**, tương đương lượng năng lượng một người ở quốc gia phát triển cần dùng trong khoảng **60 năm**.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Tại sao các nhà khoa học nghiên cứu năng lượng nhiệt hạch (nuclear fusion)?",
+      "chunk_type": "text",
+      "chunk_index": 2
+    }
+  },
+  {
+    "page_content": "## Nguồn nhiên liệu dồi dào và an toàn\n\n* **Deuteri** có thể được chiết xuất từ nước biển với chi phí thấp.\n* **Triti** có thể được tạo ra từ phản ứng của nơtron sinh ra trong quá trình nhiệt hạch với lithium tự nhiên phong phú.\n\nNguồn nhiên liệu này đủ để cung cấp cho nhân loại **hàng triệu năm**. Các lò phản ứng nhiệt hạch tương lai cũng **an toàn về bản chất** và không được kỳ vọng tạo ra chất thải phóng xạ hoạt tính cao hay tồn tại lâu dài. Ngoài ra, do quá trình nhiệt hạch **khó khởi động và duy trì**, không có nguy cơ phản ứng dây chuyền ngoài tầm kiểm soát hay tan chảy lò. Nếu có sự cố, plasma sẽ **tự ngừng phản ứng**, mất năng lượng nhanh chóng và tắt trước khi gây hư hại nghiêm trọng cho lò.\n\nĐáng chú ý, cũng giống như phân hạch, nhiệt hạch **không thải ra khí CO₂ hay khí nhà kính**, nên có thể trở thành **nguồn điện ít carbon lâu dài** từ nửa sau thế kỷ này.\n\n![](images/image1.jpg)",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Tại sao các nhà khoa học nghiên cứu năng lượng nhiệt hạch (nuclear fusion)? > Nguồn nhiên liệu dồi dào và an toàn",
+      "chunk_type": "text",
+      "chunk_index": 3
+    }
+  },
+  {
+    "page_content": "# Nóng hơn cả Mặt Trời\n\nTrong khi lực hấp dẫn khổng lồ của Mặt Trời tự nhiên kích hoạt phản ứng nhiệt hạch, thì trên Trái Đất – **thiếu lực hấp dẫn này** – cần nhiệt độ **cao hơn cả lõi Mặt Trời** để phản ứng xảy ra. Cụ thể, chúng ta cần nhiệt độ trên **100 triệu độ C** để khiến deuteri và triti hợp nhất, đồng thời phải kiểm soát áp suất và lực từ tính để **giam giữ plasma ổn**  **định** và duy trì phản ứng đủ lâu nhằm tạo ra **nhiều năng lượng hơn mức tiêu tốn để khởi động**.\n\nHiện nay, các thí nghiệm đã đạt được điều kiện rất gần với yêu cầu của lò phản ứng nhiệt hạch. Tuy nhiên, các nhà khoa học vẫn cần **cải thiện khả năng giam giữ và ổn định của plasma** để duy trì phản ứng lâu dài và tạo ra năng lượng bền vững.\n\nCác nhà khoa học và kỹ sư trên khắp thế giới tiếp tục nghiên cứu, phát triển **vật liệu mới** và thiết kế **công nghệ tiên tiến** nhằm đạt được mục tiêu **năng lượng nhiệt hạch ròng dương (net fusion energy)** trong tương lai.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Nóng hơn cả Mặt Trời",
+      "chunk_type": "text",
+      "chunk_index": 4
+    }
+  },
+  {
+    "page_content": "## Tokamak:\n\n* o Sử dụng từ trường hình xuyến (donut) để giam giữ plasma siêu nóng.\n* o Dự án tiêu biểu: ITER ở Pháp, hợp tác quốc tế với mục tiêu tạo ra 500 MW công suất từ 50 MW đầu vào.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Công nghệ lò phản ứng > Tokamak:",
+      "chunk_type": "text",
+      "chunk_index": 5
+    }
+  },
+  {
+    "page_content": "## Stellarator:\n\n* o Thiết kế từ trường xoắn phức tạp, giúp plasma ổn định hơn và vận hành liên tục.\n* o Dự án: Wendelstein 7-X (Đức).",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Công nghệ lò phản ứng > Stellarator:",
+      "chunk_type": "text",
+      "chunk_index": 6
+    }
+  },
+  {
+    "page_content": "## Giam giữ quán tính (Inertial Confinement):\n\n* o Sử dụng laser hoặc chùm ion cường độ cao nén viên nhiên liệu nhỏ đến mật độ cực lớn.\n* o Dự án: National Ignition Facility (NIF) tại Mỹ, đã đạt bước đột phá \"ignition\" vào năm 2022.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Công nghệ lò phản ứng > Giam giữ quán tính (Inertial Confinement):",
+      "chunk_type": "text",
+      "chunk_index": 7
+    }
+  },
+  {
+    "page_content": "## Khởi nghiệp thương mại:\n\no Các công ty như Commonwealth Fusion Systems, Tokamak Energy, Helion Energy đang phát triển lò phản ứng nhỏ gọn, hứa hẹn thương mại hóa sớm hơn dự án quốc gia.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Công nghệ lò phản ứng > Khởi nghiệp thương mại:",
+      "chunk_type": "text",
+      "chunk_index": 8
+    }
+  },
+  {
+    "page_content": "# Ưu điểm nổi bật\n\n* Nhiên liệu dồi dào: Deuterium có thể tách từ nước biển, tritium có thể sinh từ lithium – nguồn cung gần như vô hạn.\n* An toàn: Phản ứng dừng lại khi có sự cố, không xảy ra \"meltdown\" như phân hạch.\n\n![](images/image2.jpg)\n\n* Không phát thải carbon: Gần như không tạo khí nhà kính.\n* Ít chất thải phóng xạ lâu dài: Vật liệu cấu trúc có thể tái chế sau vài thập kỷ.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Ưu điểm nổi bật",
+      "chunk_type": "text",
+      "chunk_index": 9
+    }
+  },
+  {
+    "page_content": "# Thách thức kỹ thuật\n\n* Giam giữ plasma ổn định: Plasma ở 100 triệu °C khó kiểm soát, dễ gây nhiễu loạn.\n* Vật liệu chịu nhiệt và bức xạ: Tường buồng phản ứng phải chịu neutron năng lượng cao liên tục.\n* Hiệu suất kinh tế: Cần đạt \"breakeven\" sản lượng năng lượng lớn hơn đầu vào – và chi phí cạnh tranh với điện gió, điện mặt trời.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Thách thức kỹ thuật",
+      "chunk_type": "text",
+      "chunk_index": 10
+    }
+  },
+  {
+    "page_content": "# Tiến bộ gần đây\n\n* Kỷ lục NIF 2022: Lần đầu tiên năng lượng đầu ra lớn hơn đầu vào của laser, chứng minh tính khả thi của nhiệt hạch.\n* ITER: Dự kiến vận hành plasma đầu tiên vào cuối thập kỷ này, tạo nền tảng cho nhà máy điện thương mại.\n* Công nghệ nam châm siêu dẫn HTS: Cho phép tạo từ trường mạnh hơn, giảm kích thước lò tokamak và chi phí.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Tiến bộ gần đây",
+      "chunk_type": "text",
+      "chunk_index": 11
+    }
+  },
+  {
+    "page_content": "# Tác động kinh tế – xã hội\n\n* Nguồn năng lượng sạch toàn cầu: Có thể cung cấp điện liên tục 24/7, thay thế than, dầu, khí.\n* Giảm phụ thuộc nhiên liệu hóa thạch: Đảm bảo an ninh năng lượng quốc gia.\n* Ứng dụng khoa học: Plasma nhiệt hạch hỗ trợ nghiên cứu vật lý hạt, y học hạt nhân, và sản xuất vật liệu mới.\n* Thúc đẩy công nghệ cao: Từ siêu dẫn, vật liệu chịu nhiệt đến AI điều khiển plasma.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Tác động kinh tế – xã hội",
+      "chunk_type": "text",
+      "chunk_index": 12
+    }
+  },
+  {
+    "page_content": "# Tương lai\n\nNếu các mục tiêu thương mại đạt được, trong vài thập kỷ tới, nhà máy nhiệt hạch có thể trở thành nguồn năng lượng chính của nhân loại. Sự kết hợp giữa AI điều khiển, vật liệu siêu bền, và máy tính lượng tử sẽ rút ngắn thời gian phát triển, đưa \"mặt trời nhân tạo\" từ phòng thí nghiệm ra thế giới.",
+    "metadata": {
+      "document_id": "Public096",
+      "hierarchy_path": "Tương lai",
+      "chunk_type": "text",
+      "chunk_index": 13
+    }
+  }
+]

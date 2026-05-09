@@ -1,0 +1,601 @@
+[
+  {
+    "page_content": "Cột: 1) Mã học phần: | INT1482\n\nDòng 1: 2) Số tín chỉ: | 3\nDòng 2: 3) Hoạt động học tập\nDòng 3: - Lý thuyết: | 30 tiết\nDòng 4: - Bài tập: | 0 tiết\nDòng 5: - Thảo luận: | 6 tiết\nDòng 6: - Thực hành/Thí nghiệm: | 12 tiết\nDòng 7: - Thực tế/Thực tập: | 0 tiết\nDòng 8: - Đề án/Bài tập lớn…: | 18 tiết\nDòng 9: - Tự học: | 90 tiết\nDòng 10: 4) Điều kiện tham gia học phần:",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Thông tin chung về học phần",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Thông tin chung về học phần",
+      "row_start": 0,
+      "row_end": 9,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>1) Mã học phần:</th><th>INT1482</th></tr>\n<tr><th>2) Số tín chỉ:</th><th>3</th></tr>\n<tr><th>3) Hoạt động học tập</th><th></th></tr>\n<tr><th>-<br/>Lý thuyết:</th><th>30 tiết</th></tr>\n<tr><th>-<br/>Bài tập:</th><th>0 tiết</th></tr>\n<tr><th>-<br/>Thảo luận:</th><th>6 tiết</th></tr>\n<tr><th>-<br/>Thực hành/Thí nghiệm:</th><th>12 tiết</th></tr>\n<tr><th>-<br/>Thực tế/Thực tập:</th><th>0 tiết</th></tr>\n<tr><th>-<br/>Đề án/Bài tập lớn…:</th><th>18 tiết</th></tr>\n<tr><th>-<br/>Tự học:</th><th>90 tiết</th></tr>\n<tr><th>4) Điều kiện tham gia học phần:</th><th></th></tr>\n</table>",
+      "column_headers": [
+        "1) Mã học phần:",
+        "INT1482"
+      ],
+      "chunk_index": 0
+    }
+  },
+  {
+    "page_content": "Cột: 1) Mã học phần: | INT1482\n\nDòng 1: - Tự học: | 90 tiết\nDòng 2: 4) Điều kiện tham gia học phần:\nDòng 3: - Học phần tiên quyết: | Cơ sở An toàn thông tin\nDòng 4: - Học phần học trước: | Mạng máy tính\nDòng 5: 5) Các giảng viên phụ trách học phần:\nDòng 6: - Giảng viên phụ trách chính: | TS. Nguyễn Ngọc Điệp\nDòng 7: mang\nDòng 8: 6) Loại học phần: | ⊠ Bắt buộc ☐ Tự chọn tự do\nDòng 9: ☐ Tự chọn theo định hướng (bắt buộc)\nDòng 10: 7) Thuộc thành phần học tập | ☐ Giáo dục đại cương (chung, khoa học",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Thông tin chung về học phần",
+      "chunk_type": "table",
+      "table_id": 2,
+      "section_hint": "Thông tin chung về học phần",
+      "row_start": 8,
+      "row_end": 17,
+      "table_part": 2,
+      "raw_html": "<table>\n<tr><th>1) Mã học phần:</th><th>INT1482</th></tr>\n<tr><th>-<br/>Tự học:</th><th>90 tiết</th></tr>\n<tr><th>4) Điều kiện tham gia học phần:</th><th></th></tr>\n<tr><th>-<br/>Học phần tiên quyết:</th><th>Cơ sở An toàn thông tin</th></tr>\n<tr><th>-<br/>Học phần học trước:</th><th>Mạng máy tính</th></tr>\n<tr><th>5) Các giảng viên phụ trách học<br/>phần:</th><th></th></tr>\n<tr><th>-<br/>Giảng viên phụ trách chính:</th><th>TS. Nguyễn Ngọc Điệp</th></tr>\n<tr><td></td><td>mang</td></tr>\n<tr><th>6) Loại học phần:</th><th>⊠ Bắt buộc ☐ Tự chọn tự do</th></tr>\n<tr><th></th><th>☐ Tự chọn theo định hướng (bắt buộc)</th></tr>\n<tr><th>7) Thuộc thành phần học tập</th><th>☐ Giáo dục đại cương (chung, khoa học</th></tr>\n</table>",
+      "column_headers": [
+        "1) Mã học phần:",
+        "INT1482"
+      ],
+      "chunk_index": 1
+    }
+  },
+  {
+    "page_content": "Cột: 1) Mã học phần: | INT1482\n\nDòng 1: ☐ Tự chọn theo định hướng (bắt buộc)\nDòng 2: 7) Thuộc thành phần học tập | ☐ Giáo dục đại cương (chung, khoa học\nDòng 3: cơ bản, kỹ năng)\nDòng 4: ☐ Cơ sở khối ngành (nhóm ngành/lĩnh vực)\nDòng 5: □ Cơ sở ngành\nDòng 6: □ Ngành\nDòng 7: ⊠ Chuyên ngành\nDòng 8: ☐ Bổ trợ\nDòng 9: ☐ Thực tập/ Đồ án tốt nghiệp/ Khóa luận tốt nghiệp\nDòng 10: 8) Ngôn ngữ giảng dạy | ⊠ Tiếng Việt",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Thông tin chung về học phần",
+      "chunk_type": "table",
+      "table_id": 3,
+      "section_hint": "Thông tin chung về học phần",
+      "row_start": 16,
+      "row_end": 25,
+      "table_part": 3,
+      "raw_html": "<table>\n<tr><th>1) Mã học phần:</th><th>INT1482</th></tr>\n<tr><th></th><th>☐ Tự chọn theo định hướng (bắt buộc)</th></tr>\n<tr><th>7) Thuộc thành phần học tập</th><th>☐ Giáo dục đại cương (chung, khoa học</th></tr>\n<tr><th></th><th>cơ bản, kỹ năng)</th></tr>\n<tr><th></th><th>☐ Cơ sở khối ngành (nhóm ngành/lĩnh vực)</th></tr>\n<tr><th></th><th>□ Cơ sở ngành</th></tr>\n<tr><th></th><th>□ Ngành</th></tr>\n<tr><th></th><th>⊠ Chuyên ngành</th></tr>\n<tr><th></th><th>☐ Bổ trợ</th></tr>\n<tr><th></th><th>☐ Thực tập/ Đồ án tốt nghiệp/ Khóa luận tốt nghiệp</th></tr>\n<tr><th>8) Ngôn ngữ giảng dạy</th><th>⊠ Tiếng Việt</th></tr>\n</table>",
+      "column_headers": [
+        "1) Mã học phần:",
+        "INT1482"
+      ],
+      "chunk_index": 2
+    }
+  },
+  {
+    "page_content": "Cột: 1) Mã học phần: | INT1482\n\nDòng 1: ☐ Thực tập/ Đồ án tốt nghiệp/ Khóa luận tốt nghiệp\nDòng 2: 8) Ngôn ngữ giảng dạy | ⊠ Tiếng Việt\nDòng 3: ☐ Tiếng Anh\nDòng 4: 9) Phương thức giảng dạy | ⊠ Trực tiếp\nDòng 5: 28 22.43.23 AIRac | ☐ Trực tuyến\nDòng 6: 22.12.20 | ☐ Trực tiếp và trực tuyến",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Thông tin chung về học phần",
+      "chunk_type": "table",
+      "table_id": 4,
+      "section_hint": "Thông tin chung về học phần",
+      "row_start": 24,
+      "row_end": 29,
+      "table_part": 4,
+      "raw_html": "<table>\n<tr><th>1) Mã học phần:</th><th>INT1482</th></tr>\n<tr><th></th><th>☐ Thực tập/ Đồ án tốt nghiệp/ Khóa luận tốt nghiệp</th></tr>\n<tr><th>8) Ngôn ngữ giảng dạy</th><th>⊠ Tiếng Việt</th></tr>\n<tr><th></th><th>☐ Tiếng Anh</th></tr>\n<tr><th>9) Phương thức giảng dạy</th><th>⊠ Trực tiếp</th></tr>\n<tr><th>28 22.43.23 AIRac</th><th>☐ Trực tuyến</th></tr>\n<tr><th>22.12.20</th><th>☐ Trực tiếp và trực tuyến</th></tr>\n</table>",
+      "column_headers": [
+        "1) Mã học phần:",
+        "INT1482"
+      ],
+      "chunk_index": 3
+    }
+  },
+  {
+    "page_content": "# Mô tả tóm tắt học phần:\n\nHọc phần An toàn mạng là học phần bắt buộc trong khối kiến thức chuyên ngành của chương trình dạy học ngành An toàn thông tin được giảng dạy ở\n\ntrong bảo mật mạng, các kỹ thuật tấn công của tin tặc và giải pháp phòng chống, các giải pháp phòng ngừa và đáp trả tấn công mạng. Bên cạnh đó, khi tham gia học phần này, người học được rèn luyện các kỹ năng cài đặt, triển khai, phân tích và đánh giá các giải pháp bảo mật, cũng như thực hành kỹ năng giao tiếp và làm việc nhóm trong khi thực hiện bài tập lớn.",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Mô tả tóm tắt học phần:",
+      "chunk_type": "text",
+      "chunk_index": 4
+    }
+  },
+  {
+    "page_content": "# Chuẩn đầu ra của học phần (CLOs)\n\n3.1. Chuẩn đầu ra của học phần và mối liên hệ với các chỉ báo thuộc **PLOs**\n\nDanh sách các PLO và bảng CM V0.5:\n\nhttps://docs.google.com/spreadsheets/d/1jbfA5tnqT2ra7Vaoi7c5 HhrXl8zbBslT/edit?gid=1389634614#gid=1389634614\n\nPLO1: Áp dung tri thức toán học, khoa học và công nghệ để xác định các giải pháp giải quyết các vấn đề phức hợp trong lĩnh vực an toàn thông tin.\n\nPLO2: Thiết kế các giải pháp đáp ứng một tập hợp các yêu cầu cụ thể trong lĩnh vực an toàn thông tin.\n\nPLO3: Áp dụng các kỹ thuật, công nghệ và công cụ bảo mật để giải quyết các vấn đề liên quan đến an toàn thông tin.\n\nPLO4: Giao tiếp và hoạt động hiệu quả trong các nhóm đa ngành liên quan đến lĩnh vực an toàn thông tin.\n\nPLO5: Nhận thức được vấn đề đạo đức và trách nhiệm nghề 2025-09-28 22.43.23\\_Al Race nghiệp trong lĩnh vực an toàn thông tin.\n\nSau khi kết thúc học phần, người học có khả năng:",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Chuẩn đầu ra của học phần (CLOs)",
+      "chunk_type": "text",
+      "chunk_index": 5
+    }
+  },
+  {
+    "page_content": "Cột: 0053 | Chuẩn đầu ra học | PLO\n\nDòng 1: STT | phần (CLOs) | Kiến thức | Kỹ năng | Thái độ\nDòng 2: paul (e200) | Cognitive | Psychomotor | Affective\nDòng 3: các giải pháp phòng\nDòng 4: ngừa\nDòng 5: Đánh giá được mức | C5 | P3\nDòng 6: CLO2 | độ rủi ro bảo mật | X R PLO2\nDòng 7: của hệ thống mạng\nDòng 8: Triển khai được các | C3\nDòng 9: CLO3 | giải pháp an toàn | P3 | X E PLO3\nDòng 10: mạng cơ bản",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Chuẩn đầu ra của học phần (CLOs)",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Chuẩn đầu ra của học phần (CLOs)",
+      "row_start": 0,
+      "row_end": 9,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>0053</th><th>Chuẩn đầu ra học</th><th></th><th></th><th></th><th>PLO</th></tr>\n<tr><td>STT</td><td>phần (CLOs)</td><td>Kiến thức</td><td>Kỹ năng</td><td>Thái độ</td><td></td></tr>\n<tr><td></td><td>paul (e200)</td><td>Cognitive</td><td>Psychomotor</td><td>Affective</td><td></td></tr>\n<tr><td></td><td>các giải pháp phòng</td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>ngừa</td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>Đánh giá được mức</td><td>C5</td><td>P3</td><td></td><td></td></tr>\n<tr><td>CLO2</td><td>độ rủi ro bảo mật</td><td></td><td></td><td></td><td>X R PLO2</td></tr>\n<tr><td></td><td>của hệ thống mạng</td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>Triển khai được các</td><td>C3</td><td></td><td></td><td></td></tr>\n<tr><td>CLO3</td><td>giải pháp an toàn</td><td></td><td>P3</td><td></td><td>X E PLO3</td></tr>\n<tr><td></td><td>mạng cơ bản</td><td></td><td></td><td></td><td></td></tr>\n</table>",
+      "column_headers": [
+        "0053",
+        "Chuẩn đầu ra học",
+        "",
+        "",
+        "",
+        "PLO"
+      ],
+      "chunk_index": 6
+    }
+  },
+  {
+    "page_content": "Cột: 0053 | Chuẩn đầu ra học | PLO\n\nDòng 1: CLO3 | giải pháp an toàn | P3 | X E PLO3\nDòng 2: mạng cơ bản\nDòng 3: Tham gia tích cực | A2\nDòng 4: CLO4 | hoạt động nhóm, | P3 | X R PLO4\nDòng 5: giao tiếp và hợp tác\nDòng 6: hiệu quả để thực\nDòng 7: hiện bài tập lớn học\nDòng 8: phần",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Chuẩn đầu ra của học phần (CLOs)",
+      "chunk_type": "table",
+      "table_id": 2,
+      "section_hint": "Chuẩn đầu ra của học phần (CLOs)",
+      "row_start": 8,
+      "row_end": 15,
+      "table_part": 2,
+      "raw_html": "<table>\n<tr><th>0053</th><th>Chuẩn đầu ra học</th><th></th><th></th><th></th><th>PLO</th></tr>\n<tr><td>CLO3</td><td>giải pháp an toàn</td><td></td><td>P3</td><td></td><td>X E PLO3</td></tr>\n<tr><td></td><td>mạng cơ bản</td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>Tham gia tích cực</td><td></td><td></td><td>A2</td><td></td></tr>\n<tr><td>CLO4</td><td>hoạt<br/>động<br/>nhóm,</td><td></td><td>P3</td><td></td><td>X R PLO4</td></tr>\n<tr><td></td><td>giao tiếp và hợp tác</td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>hiệu<br/>quả<br/>để<br/>thực</td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>hiện bài tập lớn học</td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>phần</td><td></td><td></td><td></td><td></td></tr>\n</table>",
+      "column_headers": [
+        "0053",
+        "Chuẩn đầu ra học",
+        "",
+        "",
+        "",
+        "PLO"
+      ],
+      "chunk_index": 7
+    }
+  },
+  {
+    "page_content": "Cột: CLO | Hình thức kiểm tra | Hình thức dạy học\n\nDòng 1: s | theo | theo\nDòng 2: chuẩn đầu ra | chuẩn đầu ra\nDòng 3: Trắc | Báo | Bài | Thu | Dem | Bài | Làm | Thảo | Hướng\nDòng 4: nghiệ | cáo | tập | yết | o/ | giảng | việc | luận | dẫn\nDòng 5: m | thực | trình | Trìn | nhóm | nhóm | thực\nDòng 6: hàn | h | hành\nDòng 7: h | diễn\nDòng 8: CLO | x | x | x\nDòng 9: 1\nDòng 10: CLO | x | x | x | x | x | x | x",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Chuẩn đầu ra của học phần (CLOs) > Hoạt động kiểm tra và hoạt động dạy học theo chuẩn đầu ra",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Chuẩn đầu ra của học phần (CLOs) > Hoạt động kiểm tra và hoạt động dạy học theo chuẩn đầu ra",
+      "row_start": 0,
+      "row_end": 9,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>CLO</th><th></th><th></th><th></th><th>Hình thức kiểm tra</th><th></th><th></th><th></th><th></th><th>Hình thức dạy học</th></tr>\n<tr><th>s</th><th></th><th></th><th></th><th>theo</th><th></th><th></th><th></th><th></th><th>theo</th></tr>\n<tr><th></th><th></th><th></th><th></th><th></th><th>chuẩn<br/>đầu ra</th><th></th><th></th><th></th><th>chuẩn<br/>đầu ra</th></tr>\n<tr><td></td><td>Trắc</td><td>Báo</td><td>Bài</td><td>Thu</td><td>Dem</td><td>Bài</td><td>Làm</td><td>Thảo</td><td>Hướng</td></tr>\n<tr><td></td><td>nghiệ</td><td>cáo</td><td>tập</td><td>yết</td><td>o/</td><td>giảng</td><td>việc</td><td>luận</td><td>dẫn</td></tr>\n<tr><td></td><td>m</td><td></td><td>thực</td><td>trình</td><td>Trìn</td><td></td><td>nhóm</td><td>nhóm</td><td>thực</td></tr>\n<tr><td></td><td></td><td></td><td>hàn</td><td></td><td>h</td><td></td><td></td><td></td><td>hành</td></tr>\n<tr><td></td><td></td><td></td><td>h</td><td></td><td>diễn</td><td></td><td></td><td></td><td></td></tr>\n<tr><td>CLO</td><td>x</td><td></td><td></td><td></td><td></td><td>x</td><td></td><td></td><td>x</td></tr>\n<tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\n<tr><td>CLO</td><td></td><td>x</td><td>x</td><td>x</td><td></td><td>x</td><td>x</td><td>x</td><td>x</td></tr>\n</table>",
+      "column_headers": [
+        "CLO",
+        "",
+        "",
+        "",
+        "Hình thức kiểm tra",
+        "",
+        "",
+        "",
+        "",
+        "Hình thức dạy học"
+      ],
+      "chunk_index": 8
+    }
+  },
+  {
+    "page_content": "Cột: CLO | Hình thức kiểm tra | Hình thức dạy học\n\nDòng 1: 1\nDòng 2: CLO | x | x | x | x | x | x | x\nDòng 3: 2 | x\nDòng 4: CLO | x | x | x | x | x | x | x\nDòng 5: 3 | x",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Chuẩn đầu ra của học phần (CLOs) > Hoạt động kiểm tra và hoạt động dạy học theo chuẩn đầu ra",
+      "chunk_type": "table",
+      "table_id": 2,
+      "section_hint": "Chuẩn đầu ra của học phần (CLOs) > Hoạt động kiểm tra và hoạt động dạy học theo chuẩn đầu ra",
+      "row_start": 8,
+      "row_end": 12,
+      "table_part": 2,
+      "raw_html": "<table>\n<tr><th>CLO</th><th></th><th></th><th></th><th>Hình thức kiểm tra</th><th></th><th></th><th></th><th></th><th>Hình thức dạy học</th></tr>\n<tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>\n<tr><td>CLO</td><td></td><td>x</td><td>x</td><td>x</td><td></td><td>x</td><td>x</td><td>x</td><td>x</td></tr>\n<tr><td>2</td><td></td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td></tr>\n<tr><td>CLO</td><td></td><td>x</td><td>x</td><td>x</td><td></td><td>x</td><td>x</td><td>x</td><td>x</td></tr>\n<tr><td>3</td><td></td><td></td><td></td><td></td><td>x</td><td></td><td></td><td></td><td></td></tr>\n</table>",
+      "column_headers": [
+        "CLO",
+        "",
+        "",
+        "",
+        "Hình thức kiểm tra",
+        "",
+        "",
+        "",
+        "",
+        "Hình thức dạy học"
+      ],
+      "chunk_index": 9
+    }
+  },
+  {
+    "page_content": "Cột: Thành phần kiểm tra | Hoạt động Kiểm tra | Hình thức kiểm tra | Trọng số (%) | Thời điểm kiểm tra (tuần) | CĐR HP (CLOs)\n\nDòng 1: Kiểm tra quá trình (%) (formative assessment) | Kiểm tra (%) | Vấn đáp | 10% | Trong các buổi học\nDòng 2: Thực hành (%) | Báo cáo | Tuần 4-14\nDòng 3: Kiểm tra giữa kỳ (%) | Trắc nghiệm | 10% | Tuần 8-10\nDòng 4: Kiểm tra tổng kết (%) (summative assessment) | Thi cuối kỳ 1 (%) | Trắc nghiệm | 30 % | Theo kế hoạch của trường | CLO1\nDòng 5: Thi cuối kỳ 2 (%) | Báo cáo, thuyết trình, demo bài tập lớn | 50% | Theo kế hoạch của trường | CLO2, CLO3, CLO4",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch kiểm tra theo chuẩn đầu ra",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Kế hoạch kiểm tra theo chuẩn đầu ra",
+      "row_start": 0,
+      "row_end": 4,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>Thành phần kiểm<br/>tra</th><th>Hoạt động<br/>Kiểm tra</th><th>Hình thức<br/>kiểm tra</th><th>Trọng<br/>số<br/>(%)</th><th>Thời điểm<br/>kiểm tra<br/>(tuần)</th><th>CĐR<br/>HP<br/>(CLOs)</th></tr>\n<tr><td>Kiểm tra quá trình (%)<br/>(formative assessment)</td><td>Kiểm tra (%)</td><td>Vấn đáp</td><td>10%</td><td>Trong các<br/>buổi học</td><td></td></tr>\n<tr><td></td><td>Thực hành (%)</td><td>Báo cáo</td><td></td><td>Tuần 4-14</td><td></td></tr>\n<tr><td></td><td>Kiểm tra giữa<br/>kỳ (%)</td><td>Trắc nghiệm</td><td>10%</td><td>Tuần 8-10</td><td></td></tr>\n<tr><td>Kiểm tra tổng kết<br/>(%) (summative<br/>assessment)</td><td>Thi cuối kỳ 1<br/>(%)</td><td>Trắc nghiệm</td><td>30 %</td><td>Theo kế<br/>hoạch của<br/>trường</td><td>CLO1</td></tr>\n<tr><td></td><td>Thi cuối kỳ 2<br/>(%)</td><td>Báo cáo,<br/>thuyết trình,<br/>demo bài tập<br/>lớn</td><td>50%</td><td>Theo kế<br/>hoạch của<br/>trường</td><td>CLO2,<br/>CLO3,<br/>CLO4</td></tr>\n</table>",
+      "column_headers": [
+        "Thành phần kiểm tra",
+        "Hoạt động Kiểm tra",
+        "Hình thức kiểm tra",
+        "Trọng số (%)",
+        "Thời điểm kiểm tra (tuần)",
+        "CĐR HP (CLOs)"
+      ],
+      "chunk_index": 10
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: Lý thuyết | Bài tập lớn | Thảo luận | Thực hành | có)\nDòng 2: 1.1. Các yêu | được cung cấp.\nDòng 3: cầu và\nDòng 4: phương pháp | 2 | Trên lớp (In -class)\nDòng 5: đảm bảo an toàn mạng | - Hoạt động Dạy trên lớp:\nDòng 6: 1.1.1. Các yêu cầu về đảm | + Giảng viên giới thiệu\nDòng 7: bảo an toàn | đề cương và chuẩn đầu ra của môn học\nDòng 8: mạng 1.1.2. Phương | + Giảng viên giới thiệu\nDòng 9: pháp đảm bảo | các vấn đề về an toàn\nDòng 10: an toàn mạng 1.2. Phân tích | mạng, các phương pháp đảm bảo an toàn mạng và",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 0,
+      "row_end": 9,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><th></th><th></th><th>Lý<br/>thuyết</th><th>Bài tập<br/>lớn</th><th>Thảo<br/>luận</th><th>Thực<br/>hành</th><th></th><th>có)</th><th></th><th></th></tr>\n<tr><td></td><td>1.1. Các yêu</td><td></td><td></td><td>được cung cấp.</td><td></td><td></td></tr>\n<tr><td></td><td>cầu và</td><td></td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td>phương pháp</td><td>2</td><td></td><td>Trên lớp (In<br/>-class)</td><td></td><td></td></tr>\n<tr><td></td><td>đảm bảo an<br/>toàn mạng</td><td></td><td></td><td>-<br/>Hoạt động Dạy trên lớp:</td><td></td><td></td></tr>\n<tr><td></td><td>1.1.1. Các yêu<br/>cầu về đảm</td><td></td><td></td><td>+ Giảng viên giới thiệu</td><td></td><td></td></tr>\n<tr><td></td><td>bảo an toàn</td><td></td><td></td><td>đề cương và chuẩn đầu ra<br/>của môn học</td><td></td><td></td></tr>\n<tr><td></td><td>mạng<br/>1.1.2. Phương</td><td></td><td></td><td>+ Giảng viên giới thiệu</td><td></td><td></td></tr>\n<tr><td></td><td>pháp đảm bảo</td><td></td><td></td><td>các vấn đề về an toàn</td><td></td><td></td></tr>\n<tr><td></td><td>an toàn mạng<br/>1.2. Phân tích</td><td></td><td></td><td>mạng, các phương pháp<br/>đảm bảo an toàn mạng và</td><td></td><td></td></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 11
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: pháp đảm bảo | các vấn đề về an toàn\nDòng 2: an toàn mạng 1.2. Phân tích | mạng, các phương pháp đảm bảo an toàn mạng và\nDòng 3: rủi ro và các | đưa ra yêu cầu về bài tập\nDòng 4: mô hình | lớn theo nhóm\nDòng 5: phòng thủ | + Giảng viên giới thiệu\nDòng 6: 1.2.1. Xác | về phân tích rủi ro và các\nDòng 7: định nguy cơ | mô hình phòng thủ\nDòng 8: 1.2.2. Phân tích rủi ro | - Hoạt động Học trên lớp:\nDòng 9: người học lắng nghe và\nDòng 10: 1.2.3. Các mô | hiểu được các nội dung",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 2,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 8,
+      "row_end": 17,
+      "table_part": 2,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><td></td><td>pháp đảm bảo</td><td></td><td></td><td>các vấn đề về an toàn</td><td></td><td></td></tr>\n<tr><td></td><td>an toàn mạng<br/>1.2. Phân tích</td><td></td><td></td><td>mạng, các phương pháp<br/>đảm bảo an toàn mạng và</td><td></td><td></td></tr>\n<tr><td></td><td>rủi ro và các</td><td></td><td></td><td>đưa ra yêu cầu về bài tập</td><td></td><td></td></tr>\n<tr><td></td><td>mô hình</td><td></td><td></td><td>lớn theo nhóm</td><td></td><td></td></tr>\n<tr><td></td><td>phòng thủ</td><td></td><td></td><td>+ Giảng viên giới thiệu</td><td></td><td></td></tr>\n<tr><td></td><td>1.2.1. Xác</td><td></td><td></td><td>về phân tích rủi ro và các</td><td></td><td></td></tr>\n<tr><td></td><td>định nguy cơ</td><td></td><td></td><td>mô hình phòng thủ</td><td></td><td></td></tr>\n<tr><td></td><td>1.2.2. Phân<br/>tích rủi ro</td><td></td><td></td><td>-<br/>Hoạt động Học trên lớp:</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>người học lắng nghe và</td><td></td><td></td></tr>\n<tr><td></td><td>1.2.3. Các mô</td><td></td><td></td><td>hiểu được các nội dung</td><td></td><td></td></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 12
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: người học lắng nghe và\nDòng 2: 1.2.3. Các mô | hiểu được các nội dung\nDòng 3: hình phòng | của bài học và yêu cầu bài tập lớn theo nhóm\nDòng 4: thủ\nDòng 5: Sau giờ học (Post -\nDòng 6: Class): Người học tìm\nDòng 7: hiểu thêm về các chủ đề\nDòng 8: bài tập lớn theo nhóm\nDòng 9: 1.3. Tổ chức,\nDòng 10: 2 | quản lý an | Chuẩn bị (Pre -class): | CLO1, CLO2,",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 3,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 16,
+      "row_end": 25,
+      "table_part": 3,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><td></td><td></td><td></td><td></td><td>người học lắng nghe và</td><td></td><td></td></tr>\n<tr><td></td><td>1.2.3. Các mô</td><td></td><td></td><td>hiểu được các nội dung</td><td></td><td></td></tr>\n<tr><td></td><td>hình phòng</td><td></td><td></td><td>của bài học và yêu cầu<br/>bài tập lớn theo nhóm</td><td></td><td></td></tr>\n<tr><td></td><td>thủ</td><td></td><td></td><td></td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Class): Người học tìm</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>hiểu thêm về các chủ đề</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>bài tập lớn theo nhóm</td><td></td><td></td></tr>\n<tr><td></td><td>1.3. Tổ chức,</td><td></td><td></td><td></td><td></td><td></td></tr>\n<tr><td>2</td><td>quản lý an</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):</td><td>CLO1,<br/>CLO2,</td><td></td></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 13
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: 1.3. Tổ chức,\nDòng 2: 2 | quản lý an | Chuẩn bị (Pre -class): | CLO1, CLO2,\nDòng 3: toàn | người học chuẩn bị trước nội dung của bài | CLO3\nDòng 4: 1.3.1. Vai trò và trách | học thông qua tài liệu\nDòng 5: nhiệm | được cung cấp.\nDòng 6: nhận thức an toàn mạng | thiệu, giải thích các nội dung của Tổ chức và quản lý an toàn. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 7: Sau giờ học (Post - Class): người học tìm hiểu thông tin về các khái niệm trong chương 1.\nDòng 8: 3 | Chương 2: Các nguy cơ và lỗ hổng trong bảo mật mạng | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3\nDòng 9: 2.1. Các nguy cơ và lỗ hổng trong bảo mật giao thức 2.1.1. Các giao thức phổ biến tầng ứng dụng | 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các nguy cơ và lỗ hổng trong bảo mật giao thức phổ biến tầng ứng dụng. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 10: 4 | 2.1.2. Giao thức DNS 2.1.3. Giao thức TCP/UDP | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 4,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 24,
+      "row_end": 33,
+      "table_part": 4,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><td></td><td>1.3. Tổ chức,</td><td></td><td></td><td></td><td></td><td></td></tr>\n<tr><td>2</td><td>quản lý an</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):</td><td>CLO1,<br/>CLO2,</td><td></td></tr>\n<tr><td></td><td>toàn</td><td></td><td></td><td>người học chuẩn bị<br/>trước nội dung của bài</td><td>CLO3</td><td></td></tr>\n<tr><td></td><td>1.3.1. Vai trò<br/>và trách</td><td></td><td></td><td>học thông qua tài liệu</td><td></td><td></td></tr>\n<tr><td></td><td>nhiệm</td><td></td><td></td><td>được cung cấp.</td><td></td><td></td></tr>\n<tr><td></td><td>nhận thức an<br/>toàn mạng</td><td></td><td></td><td>thiệu, giải thích các nội<br/>dung của Tổ chức và<br/>quản lý an toàn.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học tìm<br/>hiểu thông tin về các<br/>khái niệm trong chương<br/>1.</td><td></td><td></td></tr>\n<tr><td>3</td><td>Chương 2:<br/>Các nguy cơ<br/>và lỗ hổng<br/>trong bảo<br/>mật mạng</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3</td><td></td></tr>\n<tr><td></td><td>2.1. Các nguy<br/>cơ và lỗ hổng<br/>trong bảo mật<br/>giao thức<br/>2.1.1. Các<br/>giao thức phổ<br/>biến tầng ứng<br/>dụng</td><td>2</td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên giới<br/>thiệu, giải thích các nội<br/>dung về Các nguy cơ và<br/>lỗ hổng trong bảo mật<br/>giao thức phổ biến tầng<br/>ứng dụng.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td>4</td><td>2.1.2. Giao<br/>thức DNS<br/>2.1.3. Giao<br/>thức<br/>TCP/UDP</td><td></td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3</td><td></td></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 14
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: 2.1. Các nguy cơ và lỗ hổng trong bảo mật giao thức 2.1.1. Các giao thức phổ biến tầng ứng dụng | 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các nguy cơ và lỗ hổng trong bảo mật giao thức phổ biến tầng ứng dụng. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 2: 4 | 2.1.2. Giao thức DNS 2.1.3. Giao thức TCP/UDP | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3\nDòng 3: 2 | - | Trên lớp (In -class) Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các nguy cơ và lỗ hổng trong giao thức DNS và TCP/UDP. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 4: 6 | Trên lớp (In -class) - Hoạt động báo cáo tiến độ về bài tập lớn của các nhóm.\nDòng 5: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 6: khác | được cung cấp.\nDòng 7: 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các nguy cơ và lỗ hổng trong giao thức định tuyến và một số giao thức khác. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 8: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 9: 6 | 2.2. Phân tích và thiết kế giao thức an toàn | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3, CLO4\nDòng 10: thiệu, giải thích các nội dung về phân tích hoạt động của giao thức và phương pháp thiết kế giao thức an toàn. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 5,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 32,
+      "row_end": 41,
+      "table_part": 5,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><td></td><td>2.1. Các nguy<br/>cơ và lỗ hổng<br/>trong bảo mật<br/>giao thức<br/>2.1.1. Các<br/>giao thức phổ<br/>biến tầng ứng<br/>dụng</td><td>2</td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên giới<br/>thiệu, giải thích các nội<br/>dung về Các nguy cơ và<br/>lỗ hổng trong bảo mật<br/>giao thức phổ biến tầng<br/>ứng dụng.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td>4</td><td>2.1.2. Giao<br/>thức DNS<br/>2.1.3. Giao<br/>thức<br/>TCP/UDP</td><td></td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3</td><td></td></tr>\n<tr><td></td><td></td><td>2</td><td></td><td>-</td><td>Trên lớp (In<br/>-class)<br/>Hoạt động Dạy trên lớp:<br/>Giảng viên giới thiệu, giải<br/>thích các nội dung về Các<br/>nguy cơ và lỗ hổng trong<br/>giao thức DNS và<br/>TCP/UDP.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td>6</td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động báo cáo tiến<br/>độ về bài tập lớn của các<br/>nhóm.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</td><td></td><td></td></tr>\n<tr><td></td><td>khác</td><td></td><td></td><td>được cung cấp.</td><td></td></tr>\n<tr><th></th><th></th><th>2</th><th></th><th>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên giới<br/>thiệu, giải thích các nội<br/>dung về Các nguy cơ và<br/>lỗ hổng trong giao thức<br/>định tuyến và một số<br/>giao thức khác.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</th><th></th></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</td><td></td></tr>\n<tr><td>6</td><td>2.2. Phân tích<br/>và thiết kế<br/>giao thức an<br/>toàn</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3,<br/>CLO4</td></tr>\n<tr><td></td><td></td><td></td><td></td><td>thiệu, giải thích các nội<br/>dung về phân tích hoạt<br/>động của giao thức và<br/>phương pháp thiết kế<br/>giao thức an toàn.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 15
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: 6 | 2.2. Phân tích và thiết kế giao thức an toàn | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3, CLO4\nDòng 2: thiệu, giải thích các nội dung về phân tích hoạt động của giao thức và phương pháp thiết kế giao thức an toàn. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 3: 4 | Trên lớp (In -class) - Hoạt động thực hành: người học thực hành trên lớp về phân tích giao thức dựa trên bắt gói tin trên mạng\nDòng 4: Sau giờ học (Post - Class): người học làm báo cáo thực hành và thực hiện các bài tập về nhà.\nDòng 5: 7 | 2.3. Các nguy cơ và lỗ hổng trong bảo mật thiết bị mạng 2.3.1. Thiết bị chuyển mạch | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3\nDòng 6: thiệu, giải thích các nội dung về các nguy cơ và lỗ hổng trong bảo mật thiết bị mạng. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 7: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 8: 8 | Chương 3: Các kỹ thuật tấn công mạng 3.1. Kỹ thuật | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3\nDòng 9: do thám 3.1.1. Giới thiệu về kỹ thuật do thám 3.1.2. Do thám DNS 3.1.3. Thu thập và kiểm tra các tên miền và thông tin địa chỉ IP 3.1.4. Do thám sử dụng | 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các kỹ thuật do thám. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học. | CLO2,\nDòng 10: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 6,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 40,
+      "row_end": 49,
+      "table_part": 6,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><td>6</td><td>2.2. Phân tích<br/>và thiết kế<br/>giao thức an<br/>toàn</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3,<br/>CLO4</td></tr>\n<tr><td></td><td></td><td></td><td></td><td>thiệu, giải thích các nội<br/>dung về phân tích hoạt<br/>động của giao thức và<br/>phương pháp thiết kế<br/>giao thức an toàn.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td>4</td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động thực hành:<br/>người học thực hành<br/>trên lớp về phân tích<br/>giao thức dựa trên bắt<br/>gói tin trên mạng</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học làm<br/>báo cáo thực hành và<br/>thực hiện các bài tập về<br/>nhà.</td><td></td><td></td></tr>\n<tr><td>7</td><td>2.3. Các nguy<br/>cơ và lỗ hổng<br/>trong bảo mật<br/>thiết bị mạng<br/>2.3.1. Thiết bị<br/>chuyển mạch</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3</td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>thiệu, giải thích các nội<br/>dung về các nguy cơ và<br/>lỗ hổng trong bảo mật<br/>thiết bị mạng.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</td><td></td><td></td></tr>\n<tr><td>8</td><td>Chương 3:<br/>Các kỹ thuật<br/>tấn công<br/>mạng<br/>3.1. Kỹ thuật</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3</td><td></td></tr>\n<tr><td></td><td>do thám<br/>3.1.1. Giới<br/>thiệu về kỹ<br/>thuật do thám<br/>3.1.2. Do<br/>thám DNS<br/>3.1.3. Thu<br/>thập và kiểm<br/>tra các tên<br/>miền và thông<br/>tin địa chỉ IP<br/>3.1.4. Do<br/>thám sử dụng</td><td>2</td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên giới<br/>thiệu, giải thích các nội<br/>dung về Các kỹ thuật do<br/>thám.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td>CLO2,</td><td></td></tr>\n<tr><th></th><th></th><th></th><th></th><th></th><th>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</th><th></th><th></th></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 16
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: do thám 3.1.1. Giới thiệu về kỹ thuật do thám 3.1.2. Do thám DNS 3.1.3. Thu thập và kiểm tra các tên miền và thông tin địa chỉ IP 3.1.4. Do thám sử dụng | 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các kỹ thuật do thám. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học. | CLO2,\nDòng 2: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 3: 9 | 3.2. Kỹ thuật rà quét 3.2.1. Giới thiệu về kỹ thuật rà quét 3.2.2. Xác | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3, CLO4\nDòng 4: định các host hoạt động 3.2.3. Xác định các cổng và dịch vụ hoạt động 3.2.4. Xác định hệ điều hành 3.2.5. Rà quét các lỗ hổng | 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các kỹ thuật rà quét trong mạng. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 5: 4 | Trên lớp (In -class) - Hoạt động thực hành: người học thực hiện thực hành các công cụ phần mềm để rà quét mạng.\nDòng 6: nhà.\nDòng 7: 10 | 3.3. Kỹ thuật xâm nhập 3.3.1. Xâm nhập hệ thống máy khách 3.3.2. Kỹ | Chuẩn bị (Pre -class): CLO1, CLO2, người học chuẩn bị CLO3 trước nội dung của bài học thông qua tài liệu được cung cấp.\nDòng 8: thuật vượt qua tường lửa và tránh bị phát hiện | 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên giới thiệu, giải thích các nội dung về Các kỹ thuật xâm nhập. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 9: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 10: 11 | 3.4. Tấn công từ chối dịch vụ 3.4.1. Tấn công từ chối | Chuẩn bị (Pre -class): CLO1, CLO2, người học chuẩn bị CLO3, trước nội dung của bài CLO4 học thông qua tài liệu được cung cấp.",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 7,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 48,
+      "row_end": 57,
+      "table_part": 7,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><td></td><td>do thám<br/>3.1.1. Giới<br/>thiệu về kỹ<br/>thuật do thám<br/>3.1.2. Do<br/>thám DNS<br/>3.1.3. Thu<br/>thập và kiểm<br/>tra các tên<br/>miền và thông<br/>tin địa chỉ IP<br/>3.1.4. Do<br/>thám sử dụng</td><td>2</td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên giới<br/>thiệu, giải thích các nội<br/>dung về Các kỹ thuật do<br/>thám.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td>CLO2,</td><td></td></tr>\n<tr><th></th><th></th><th></th><th></th><th></th><th>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</th><th></th><th></th></tr>\n<tr><td>9</td><td>3.2. Kỹ thuật<br/>rà quét<br/>3.2.1. Giới<br/>thiệu về kỹ<br/>thuật rà quét<br/>3.2.2. Xác</td><td></td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3,<br/>CLO4</td><td></td></tr>\n<tr><td></td><td>định các host<br/>hoạt động<br/>3.2.3. Xác<br/>định các cổng<br/>và dịch vụ<br/>hoạt động<br/>3.2.4. Xác<br/>định hệ điều<br/>hành<br/>3.2.5. Rà quét<br/>các lỗ hổng</td><td>2</td><td></td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên giới<br/>thiệu, giải thích các nội<br/>dung về Các kỹ thuật rà<br/>quét trong mạng.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>4</td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động thực hành:<br/>người học thực hiện thực<br/>hành các công cụ phần<br/>mềm để rà quét mạng.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>nhà.</td><td></td></tr>\n<tr><td>10</td><td>3.3. Kỹ thuật<br/>xâm nhập<br/>3.3.1. Xâm<br/>nhập hệ thống<br/>máy khách<br/>3.3.2. Kỹ</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>CLO1,<br/>CLO2,<br/>người học chuẩn bị<br/>CLO3<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td></td></tr>\n<tr><td></td><td>thuật vượt qua<br/>tường lửa và<br/>tránh bị phát<br/>hiện</td><td>2</td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên giới<br/>thiệu, giải thích các nội<br/>dung về Các kỹ thuật<br/>xâm nhập.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</td><td></td></tr>\n<tr><td>11</td><td>3.4. Tấn công<br/>từ chối dịch<br/>vụ<br/>3.4.1. Tấn<br/>công từ chối</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>CLO1,<br/>CLO2,<br/>người học chuẩn bị<br/>CLO3,<br/>trước nội dung của bài<br/>CLO4<br/>học thông qua tài liệu<br/>được cung cấp.</td><td></td></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 17
+    }
+  },
+  {
+    "page_content": "Cột: TT | Nội dung chi tiết | Thời lượng (giờ định mức) | Hình thức và phương thức tổ chức dạy học | Kiểm tra (nếu | Đóng góp vào CLO\n\nDòng 1: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 2: 11 | 3.4. Tấn công từ chối dịch vụ 3.4.1. Tấn công từ chối | Chuẩn bị (Pre -class): CLO1, CLO2, người học chuẩn bị CLO3, trước nội dung của bài CLO4 học thông qua tài liệu được cung cấp.\nDòng 3: tầng giao vận 3.4.3. Tấn công từ chối dịch vụ tại tầng ứng dụng | thiệu, giải thích các nội dung về kỹ thuật tấn công từ chối dịch vụ. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 4: 4 | Trên lớp (In -class) - Hoạt động thực hành: thử nghiệm tấn công từ chối dịch vụ và cách phòng chống.\nDòng 5: Sau giờ học (Post - Class): người học làm báo cáo thực hành và thực hiện các bài tập về nhà.\nDòng 6: 12 | Chương 4: Các giải pháp phòng ngừa và đáp trả tấn công | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3, CLO4\nDòng 7: bảo an toàn môi trường vật lý 4.1.2 Cập nhật bản vá 4.1.3 Đảm bảo an toàn cho người dùng 4.1.4 Đảm | dung về Các giải pháp phòng ngừa, ngăn chặn tấn công. Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 8: 3.23_Al Race | bảo an toàn cho hệ thống tập tin 4.1.5 Xây dựng kế hoạch phòng | 6 | Trên lớp (In-class) * Hoạt động kiểm tra giữa kỳ: báo cáo giữa kỳ bài tập lớn theo nhóm | X | 2\nDòng 9: ngừa Kiểm tra giữa kỳ | Sau giờ học (Post- Class): người học thực niện các bài tập về nhà được giao trên lớp. | X\nDòng 10: 13 | 4.2. Các phương pháp đáp trả tấn công | 02 | CE | Chuẩn bị (Pre-class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 8,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 56,
+      "row_end": 65,
+      "table_part": 8,
+      "raw_html": "<table>\n<tr><th>TT</th><th>Nội dung<br/>chi tiết</th><th></th><th>Thời lượng<br/>(giờ định mức)</th><th></th><th></th><th>Hình thức và phương<br/>thức<br/>tổ chức dạy học</th><th>Kiểm<br/>tra<br/>(nếu</th><th>Đóng<br/>góp vào<br/>CLO</th><th></th></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</td><td></td></tr>\n<tr><td>11</td><td>3.4. Tấn công<br/>từ chối dịch<br/>vụ<br/>3.4.1. Tấn<br/>công từ chối</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>CLO1,<br/>CLO2,<br/>người học chuẩn bị<br/>CLO3,<br/>trước nội dung của bài<br/>CLO4<br/>học thông qua tài liệu<br/>được cung cấp.</td><td></td></tr>\n<tr><td></td><td>tầng giao vận<br/>3.4.3. Tấn<br/>công từ chối<br/>dịch vụ tại<br/>tầng ứng dụng</td><td></td><td></td><td>thiệu, giải thích các nội<br/>dung về kỹ thuật tấn<br/>công từ chối dịch vụ.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td></tr>\n<tr><th></th><th></th><th></th><th>4</th><th>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động thực hành:<br/>thử nghiệm tấn công từ<br/>chối dịch vụ và cách<br/>phòng chống.</th><th></th></tr>\n<tr><th></th><th></th><th></th><th></th><th>Sau giờ học (Post<br/>-<br/>Class): người học làm<br/>báo cáo thực hành và<br/>thực hiện các bài tập về<br/>nhà.</th><th></th></tr>\n<tr><th>12</th><th>Chương 4:<br/>Các giải<br/>pháp phòng<br/>ngừa và đáp<br/>trả tấn công</th><th></th><th></th><th>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</th><th>CLO1,<br/>CLO2,<br/>CLO3,<br/>CLO4</th></tr>\n<tr><td></td><td></td><td>bảo an toàn<br/>môi trường<br/>vật lý<br/>4.1.2 Cập<br/>nhật bản vá<br/>4.1.3 Đảm<br/>bảo an toàn<br/>cho người<br/>dùng<br/>4.1.4 Đảm</td><td></td><td></td><td>dung về Các giải pháp phòng ngừa, ngăn chặn tấn công.\n\nHoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.</td><td></td><td></td></tr>\n<tr><td>3.23_Al Race</td><td></td><td>bảo an toàn<br/>cho hệ thống<br/>tập tin<br/>4.1.5 Xây<br/>dựng kế<br/>hoạch phòng</td><td>6</td><td></td><td>Trên lớp (In-class)\n* Hoạt động kiểm tra\ngiữa kỳ: báo cáo giữa\nkỳ bài tập lớn theo nhóm</td><td>X</td><td>2</td></tr>\n<tr><th></th><th></th><th>ngừa<br/>Kiểm tra<br/>giữa kỳ</th><th></th><th></th><th>Sau giờ học (Post-<br/>Class): người học thực<br/>niện các bài tập về nhà<br/>được giao trên lớp.</th><th>X</th><th></th></tr>\n<tr><td></td><td>13</td><td>4.2. Các<br/>phương pháp<br/>đáp trả tấn<br/>công</td><td>02</td><td>CE</td><td>Chuẩn bị (Pre-class):\nngười học chuẩn bị\ntrước nội dung của bài\nhọc thông qua tài liệu\nđược cung cấp.</td><td></td><td>CLO1,<br/>CLO2,<br/>CLO3</td></tr>\n</table>",
+      "column_headers": [
+        "TT",
+        "Nội dung chi tiết",
+        "",
+        "Thời lượng (giờ định mức)",
+        "",
+        "",
+        "Hình thức và phương thức tổ chức dạy học",
+        "Kiểm tra (nếu",
+        "Đóng góp vào CLO",
+        ""
+      ],
+      "chunk_index": 18
+    }
+  },
+  {
+    "page_content": "Cột: 4.2.3 Công cụ pháp luật | thiệu, giải thích các nội dung về Các phương pháp đáp trả tấn công. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\n\nDòng 1: 4 | Trên lớp (In -class) - Hoạt động thảo luận: sinh viên thảo luận theo nhóm về các cách thức hiệu quả để đáp trả tấn công trong thực tế.\nDòng 2: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 3: 14 | 4.3. Khôi phục sau sự cố và tiếp tục hoạt động | Chuẩn bị (Pre -class): CLO1, CLO2, người học chuẩn bị CLO3 trước nội dung của bài học thông qua tài liệu được cung cấp.\nDòng 4: hoạch đảm bảo tiếp tục hoạt động | thiệu, giải thích các nội dung về Khôi phục sau sự cố và tiếp tục hoạt động. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.\nDòng 5: Sau giờ học (Post - Class): người học thực hiện các bài tập về nhà được giao trên lớp.\nDòng 6: 15 | Ôn tập và trả lời câu hỏi | Chuẩn bị (Pre -class): người học chuẩn bị trước nội dung của bài học thông qua tài liệu được cung cấp. | CLO1, CLO2, CLO3\nDòng 7: 2 | Trên lớp (In -class) - Hoạt động Dạy trên lớp: Giảng viên đưa ra các câu hỏi ôn tập và trả lời câu hỏi của người học. - Hoạt động Học trên lớp: Người học nghiên cứu các câu hỏi ôn tập, trao đổi và hỏi giảng viên.\nDòng 8: Tổng số giờ | 30 | 18 | 6 | 12\nDòng 9: Sau giờ học (Post Class): người học tìm hiểu và trả lời các câu hỏi ôn tập.\nDòng 10: các câu hỏi ôn tập",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Kế hoạch dạy và học",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Kế hoạch dạy và học",
+      "row_start": 0,
+      "row_end": 9,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th></th><th>4.2.3<br/>Công<br/>cụ pháp luật</th><th></th><th></th><th>thiệu, giải thích các nội<br/>dung về Các phương<br/>pháp đáp trả tấn công.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</th><th></th></tr>\n<tr><td></td><td></td><td></td><td>4</td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động thảo luận:<br/>sinh viên thảo luận theo<br/>nhóm về các cách thức<br/>hiệu quả để đáp trả tấn<br/>công trong thực tế.</td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</td><td></td></tr>\n<tr><td>14</td><td>4.3. Khôi<br/>phục sau sự<br/>cố và tiếp tục<br/>hoạt động</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>CLO1,<br/>CLO2,<br/>người học chuẩn bị<br/>CLO3<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td></td></tr>\n<tr><td></td><td>hoạch đảm<br/>bảo tiếp tục<br/>hoạt động</td><td></td><td></td><td>thiệu, giải thích các nội<br/>dung về Khôi phục sau<br/>sự cố và tiếp tục hoạt<br/>động.<br/>-<br/>Hoạt động Học trên<br/>lớp: người học lắng nghe<br/>và hiểu được các nội<br/>dung của bài học.</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>-<br/>Class): người học thực<br/>hiện các bài tập về nhà<br/>được giao trên lớp.</td><td></td><td></td></tr>\n<tr><td>15</td><td>Ôn tập và trả<br/>lời câu hỏi</td><td></td><td></td><td>Chuẩn bị (Pre<br/>-class):<br/>người học chuẩn bị<br/>trước nội dung của bài<br/>học thông qua tài liệu<br/>được cung cấp.</td><td>CLO1,<br/>CLO2,<br/>CLO3</td><td></td></tr>\n<tr><td></td><td></td><td>2</td><td></td><td>Trên lớp (In<br/>-class)<br/>-<br/>Hoạt động Dạy trên<br/>lớp: Giảng viên đưa ra<br/>các câu hỏi ôn tập và trả<br/>lời câu hỏi của người<br/>học.<br/>-<br/>Hoạt động Học trên<br/>lớp: Người học nghiên<br/>cứu các câu hỏi ôn tập,<br/>trao đổi và hỏi giảng<br/>viên.</td><td></td><td></td></tr>\n<tr><td></td><td>Tổng số giờ</td><td>30</td><td>18</td><td>6</td><td>12</td><td></td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>Sau giờ học (Post<br/>Class): người học tìm<br/>hiểu và trả lời các câu<br/>hỏi ôn tập.</td><td></td></tr>\n<tr><td></td><td></td><td></td><td></td><td></td><td></td><td>các câu hỏi ôn tập</td><td></td></tr>\n</table>",
+      "column_headers": [
+        "",
+        "4.2.3 Công cụ pháp luật",
+        "",
+        "",
+        "thiệu, giải thích các nội dung về Các phương pháp đáp trả tấn công. - Hoạt động Học trên lớp: người học lắng nghe và hiểu được các nội dung của bài học.",
+        ""
+      ],
+      "chunk_index": 19
+    }
+  },
+  {
+    "page_content": "# Nhiệm vụ của người học:\n\nNgười học phải thực hiện các nhiệm vụ sau đây:\n\n* Tham gia nghe giảng và tương tác theo quy định của lớp học phần;\n* Tham gia các hoạt động làm việc nhóm theo quy định của lớp học phần;\n* Tự tìm hiểu các vấn đề do giảng viên giao để thực hiện ngoài giờ học trên lớp;\n* Hoàn thành tất cả bài đánh giá của học phần.\n* Người học phải tôn trọng giảng viên và người học khác, phải thực hiện quy định liêm chính học thuật của Nhà trường, phải chấp hành các quy định, nội quy của Nhà trường.",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Nhiệm vụ của người học:",
+      "chunk_type": "text",
+      "chunk_index": 20
+    }
+  },
+  {
+    "page_content": "## Tài liệu chính\n\n1. Roberta Bragg, Mark Rhodes-Ousley and Keith Strassberg, Network Security: The Complete Reference, McGraw-Hill Osborne Media, 2013.\n\n* Springer, 2009.\n* 3. Michael T. Simpson, Kent Backman, Hands-On Ethical Hacking and Network Defense, Delmar Cengage Learning, 2010.\n* 4. Stuart McClure, Joel Scambray and George Kurtz, Hacking Exposed 7: Network Security Secrets & Solutions, McGraw-Hill Osborne Media, 2012.\n* 5. William Stallings, Cryptography and Network Security Principles And Practice, 7th edition, Pearson Education Limited, 2017.\n\n**Phụ lục 01 - ĐCCT BẢNG MA TRẬN VÀ THANG ĐO**\n\n**Bảng 1** - **Quan hệ giữa chuẩn đầu ra học phần và chuẩn đầu ra chương trình đào tạo**",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Tài liệu học tập > Tài liệu chính",
+      "chunk_type": "text",
+      "chunk_index": 21
+    }
+  },
+  {
+    "page_content": "Cột: \n\nDòng 1: PLOs\nDòng 2: PLO1 | PLO2 | PLO3 | PLO4 | PLO5\nDòng 3: CLO 1 | X R\nDòng 4: CLO 2 | X R\nDòng 5: CLO 3 | X E\nDòng 6: CLO 4 | X R",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Tài liệu học tập > Tài liệu chính",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Tài liệu học tập > Tài liệu chính",
+      "row_start": 0,
+      "row_end": 5,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>\n<tr><th></th><th></th><th></th><th>PLOs</th><th></th><th></th></tr>\n<tr><td></td><td>PLO1</td><td>PLO2</td><td>PLO3</td><td>PLO4</td><td>PLO5</td></tr>\n<tr><td>CLO 1</td><td></td><td></td><td>X R</td><td></td><td></td></tr>\n<tr><td>CLO 2</td><td></td><td>X R</td><td></td><td></td><td></td></tr>\n<tr><td>CLO 3</td><td></td><td></td><td>X E</td><td></td><td></td></tr>\n<tr><td>CLO 4</td><td></td><td></td><td></td><td>X R</td><td></td></tr>\n</table>",
+      "column_headers": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "chunk_index": 22
+    }
+  },
+  {
+    "page_content": "Cột: < 40% | 40%-54% | 55%-69% | 85% - 100%\n\nDòng 1: Γiêu chí\nDòng 2: .1. Giải thích được ác nguy cơ, lỗ hổng rong bảo mật mạng và các kỹ thuật tấn công của tin tặc | 40% số câu nỏi (đã phân oổ đều theo | ừ 40% đến <55% số câu rỏi (đã phân rổ đều theo | từ 55% đến <70% số câu hỏi (đã phân pổ đều theo | từ 70% đến <85% số câu hỏi (đã | ừ 85% số au hỏi (đã bhân bổ đều heo nội\nDòng 3: .2. Giải thích được ác giải pháp phòng hống, các giải pháp phòng ngừa và đáp rả tấn công mạng | 40% số câu nỏi (đã phân oổ đều theo | ừ 40% đến <55% số câu rỏi (đã phân rổ đều theo | từ 55% đến <70% số câu hỏi (đã phân pổ đều theo | từ 70% đến <85% số câu hỏi (đã | ừ 85% số âu hỏi (đã bhân bổ đều heo nội",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Tài liệu học tập > Tài liệu chính",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Tài liệu học tập > Tài liệu chính",
+      "row_start": 0,
+      "row_end": 2,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th></th><th>&lt; 40%</th><th>40%-54%</th><th>55%-69%</th><th></th><th>85% - 100%</th></tr>\n<tr><th>Γiêu chí</th><th></th><th></th><th></th><th></th><th></th></tr>\n<tr><td>.1. Giải thích được ác nguy cơ, lỗ hổng rong bảo mật mạng và các kỹ thuật tấn công của tin tặc</td><td>40% số câu<br/>nỏi (đã phân<br/>oổ đều theo</td><td>ừ 40% đến<br/>&lt;55% số câu<br/>rỏi (đã phân<br/>rổ đều theo</td><td>từ 55% đến &lt;70% số câu hỏi (đã phân pổ đều theo</td><td>từ 70% đến<br/>&lt;85% số<br/>câu hỏi (đã</td><td>ừ 85% số<br/>au hỏi (đã<br/>bhân bổ đều<br/>heo nội</td></tr>\n<tr><td>.2. Giải thích được<br/>ác giải pháp phòng<br/>hống, các giải pháp<br/>phòng ngừa và đáp<br/>rả tấn công mạng</td><td>40% số câu<br/>nỏi (đã phân<br/>oổ đều theo</td><td>ừ 40% đến<br/>&lt;55% số câu<br/>rỏi (đã phân<br/>rổ đều theo</td><td>từ 55% đến &lt;70% số câu hỏi (đã phân pổ đều theo</td><td>từ 70% đến<br/>&lt;85% số<br/>câu hỏi (đã</td><td>ừ 85% số<br/>âu hỏi (đã<br/>bhân bổ đều<br/>heo nội</td></tr>\n</table>",
+      "column_headers": [
+        "",
+        "< 40%",
+        "40%-54%",
+        "55%-69%",
+        "",
+        "85% - 100%"
+      ],
+      "chunk_index": 23
+    }
+  },
+  {
+    "page_content": "Cột: Гhang đánh giá | Fail - Below Expectation < 40% | Beginning - Needs Improvement 40%-54% | Developing - Marginally Adequate 55%-69% | Sufficient - Meet Expectation 70%-84% | Exemplary- Exceeds Expectation 85% - 100%\n\nDòng 1: Γiêu chí\nDòng 2: mai uoi voi | các định tược các rủi o bảo mật | tược một số rủi o bảo mật, còn hiếu nhiều rủi | Kác định đa số ủi ro bảo mật, nhưng còn thiếu nột số rủi ro bảo nật | tủ các rủi ro | Kác định đầy tủ và chi tiết các rủi ro bảo nật",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Tài liệu học tập > Tài liệu chính",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Tài liệu học tập > Tài liệu chính",
+      "row_start": 0,
+      "row_end": 1,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>Гhang<br/>đánh giá</th><th>Fail -<br/>Below<br/>Expectation<br/>&lt; 40%</th><th>Beginning -\nNeeds\nImprovement\n40%-54%</th><th>Developing -\nMarginally\nAdequate\n55%-69%</th><th>Sufficient -<br/>Meet<br/>Expectation<br/>70%-84%</th><th>Exemplary-<br/>Exceeds<br/>Expectation<br/>85% - 100%</th></tr>\n<tr><td>Γiêu chí</td><td></td><td></td><td></td><td></td><td></td></tr>\n<tr><td>mai uoi voi</td><td>các định<br/>tược các rủi<br/>o bảo mật</td><td>tược một số rủi<br/>o bảo mật, còn<br/>hiếu nhiều rủi</td><td>Kác định đa số<br/>ủi ro bảo mật,<br/>nhưng còn thiếu<br/>nột số rủi ro bảo<br/>nật</td><td>tủ các rủi ro</td><td>Kác định đầy<br/>tủ và chi tiết<br/>các rủi ro bảo<br/>nật</td></tr>\n</table>",
+      "column_headers": [
+        "Гhang đánh giá",
+        "Fail - Below Expectation < 40%",
+        "Beginning - Needs Improvement 40%-54%",
+        "Developing - Marginally Adequate 55%-69%",
+        "Sufficient - Meet Expectation 70%-84%",
+        "Exemplary- Exceeds Expectation 85% - 100%"
+      ],
+      "chunk_index": 24
+    }
+  },
+  {
+    "page_content": "Cột: hang ánh giá | Fail - Below Expectation < 40% | Beginning - Needs Improvement 40%-54% | Developing - Marginally Adequate 55%-69% | ifficient - Meet Expectation 70%-84% | Exemplary- Exceeds Expectation 85% - 100%\n\nDòng 1: u chí\nDòng 2: .1. Lựa họn giải háp | thông thể ra chọn giải háp an toàn nạng phù ợp cho tình\\nuống cụ thể. | ợp với yêu cầu ảo mật hoặc hả năng triển hai thực tế. | iải pháp an bàn mạng phù ợp cho tình uống cụ thể, | iải pháp an bàn mạng phù ợp và tối ưu ho tình huống ụ thể. | ựa chọn được giải háp an toàn mạng hù hợp và tối ưu, ồng thời đưa ra ược lý do lựa họn trên cơ sở so ánh với các giải háp khác.\nDòng 3: .2. riển hai giải háp | iển khai giải háp an toàn | háp gặp nhiều | iải pháp an pàn mạng đã họn, nhưng | háp an toàn nạng đã chọn nột cách chính | riển khai giải pháp n toàn mạng đã họn một cách hính xác, hiệu quả, à tối ưu hóa hiệu ăng hoạt động.",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Tài liệu học tập > Tài liệu chính",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Tài liệu học tập > Tài liệu chính",
+      "row_start": 0,
+      "row_end": 2,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>hang<br/>ánh giá</th><th>Fail -<br/>Below<br/>Expectation<br/>&lt; 40%</th><th>Beginning -<br/>Needs<br/>Improvement<br/>40%-54%</th><th>Developing -\nMarginally\nAdequate\n55%-69%</th><th>ifficient - Meet<br/>Expectation<br/>70%-84%</th><th>Exemplary-<br/>Exceeds<br/>Expectation<br/>85% - 100%</th></tr>\n<tr><th>u chí</th><th></th><th></th><th></th><th></th><th></th></tr>\n<tr><th>.1. Lựa<br/>họn giải<br/>háp</th><th>thông thể\nra chọn giải\nháp an toàn\nnạng phù\nợp cho tình\\nuống cụ thể.</th><th>ợp với yêu cầu<br/>ảo mật hoặc<br/>hả năng triển<br/>hai thực tế.</th><th>iải pháp an<br/>bàn mạng phù<br/>ợp cho tình<br/>uống cụ thể,</th><th>iải pháp an<br/>bàn mạng phù<br/>ợp và tối ưu<br/>ho tình huống<br/>ụ thể.</th><th>ựa chọn được giải\nháp an toàn mạng\nhù hợp và tối ưu,\nồng thời đưa ra\nược lý do lựa\nhọn trên cơ sở so\nánh với các giải\nháp khác.</th></tr>\n<tr><th>.2.<br/>riển<br/>hai giải<br/>háp</th><th>iển khai giải<br/>háp an toàn</th><th>háp gặp nhiều</th><th>iải pháp an<br/>pàn mạng đã<br/>họn, nhưng</th><th>háp an toàn\nnạng đã chọn\nnột cách chính</th><th>riển khai giải pháp<br/>n toàn mạng đã<br/>họn một cách<br/>hính xác, hiệu quả,<br/>à tối ưu hóa hiệu<br/>ăng hoạt động.</th></tr>\n</table>",
+      "column_headers": [
+        "hang ánh giá",
+        "Fail - Below Expectation < 40%",
+        "Beginning - Needs Improvement 40%-54%",
+        "Developing - Marginally Adequate 55%-69%",
+        "ifficient - Meet Expectation 70%-84%",
+        "Exemplary- Exceeds Expectation 85% - 100%"
+      ],
+      "chunk_index": 25
+    }
+  },
+  {
+    "page_content": "CLO4: Tham gia tích cực hoạt động nhóm, giao tiếp và hợp tác hiệu quả để thực hiện bài tập lớn học phần (P3-A2)",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Tài liệu học tập > Tài liệu chính",
+      "chunk_type": "text",
+      "chunk_index": 26
+    }
+  },
+  {
+    "page_content": "Cột: Thang đánh giá | Fail - | eveloping - | Sufficient - | Exemplary-\n\nDòng 1: Below | Beginning - | Marginally | Meet | Exceeds | Race\nDòng 2: - 13 | Needs | Adequate | Expectation | xpectation | /as\nDòng 3: 0 72.50 | pectation | 55%-69% | 70%-84% | 5% - 100%\nDòng 4: 20-20 | < 40% | nprovement | 2000\nDòng 5: -05-US | 40%-54%\nDòng 6: Tiêu chí\nDòng 7: ợc giao ông đạt | yng một số ần việc được to, nhưng iều việc chưa t chất lượng, ặc chưa đúng | ần việc được to, nhưng it số việc ưa đạt chất | ần việc được | đạt chất ợng xuất sắc c phần việc ợc giao | 9\nDòng 8: 3.23_Al Race | p tác | ng giao tiếp hợp tác ở rc rất yếu | n, hỗ trợ các nh viên khác hoàn thành ng việc ung hạn chế | n, hỗ trợ các inh viên khác hoàn thành ng việc ung, nhưng | ả, sẵn sàng trợ các thành | ao tiếp chủ ng, tích cực trợ các nh viên khác hoàn thành ng việc\\nung\nDòng 9: ra đúng h dạng,\\ni dung ếu mục huyết trình\\nu: không nh bày rõ\\ni dung Demo (nếu ) không ạt động, | n đủ các mục ính Thuyết trình: í trình bày ợc một số Demo (nếu ): một số các | n đúng định ng, bố cục rng đối hợp nội dung đủ c mục chính Thuyết trình: nh bày được c ý chính Demo (nếu ): đa số các h năng hoạt ng, còn một | nh dạng, bổ c hợp lý, nội ng đủ các ic Thuyết trình ich lạc, trình y được các ý ính Demo (nếu ): đủ các tính ng hoạt động | nh dạng, bổ c hợp lý, nội ng đủ các ic Thuyết trình ất sắc, trình y đầy đủ nội ng Demo (nếu ): đầy đủ các h năng, đúng u cầu hoạt | Race",
+    "metadata": {
+      "document_id": "Public253",
+      "hierarchy_path": "Tài liệu học tập > Tài liệu chính",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Tài liệu học tập > Tài liệu chính",
+      "row_start": 0,
+      "row_end": 8,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr><th>Thang đánh giá</th><th>Fail -</th><th></th><th>eveloping -</th><th>Sufficient -</th><th>Exemplary-</th><th></th></tr>\n<tr><th></th><th>Below</th><th>Beginning -</th><th>Marginally</th><th>Meet</th><th>Exceeds</th><th>Race</th></tr>\n<tr><th>- 13</th><th></th><th>Needs</th><th>Adequate</th><th>Expectation</th><th>xpectation</th><th>/as</th></tr>\n<tr><th>0 72.50</th><th>pectation</th><th></th><th>55%-69%</th><th>70%-84%</th><th>5% - 100%</th><th></th></tr>\n<tr><th>20-20</th><th>&lt; 40%</th><th>nprovement</th><th></th><th>2000</th><th></th><th></th></tr>\n<tr><th>-05-US</th><th></th><th>40%-54%</th><th></th><th></th><th></th><th></th></tr>\n<tr><th>Tiêu chí</th><th></th><th></th><th></th><th></th><th></th><th></th></tr>\n<tr><td></td><td></td><td>ợc giao<br/>ông đạt</td><td>yng một số<br/>ần việc được<br/>to, nhưng<br/>iều việc chưa<br/>t chất lượng,<br/>ặc chưa đúng</td><td>ần việc được<br/>to, nhưng<br/>it số việc<br/>ưa đạt chất</td><td>ần việc được</td><td>đạt chất<br/>ợng xuất sắc<br/>c phần việc<br/>ợc giao</td><td>9</td></tr>\n<tr><th>3.23_Al Race</th><th>p tác</th><th>ng giao tiếp<br/>hợp tác ở<br/>rc rất yếu</th><th>n, hỗ trợ các<br/>nh viên khác<br/>hoàn thành<br/>ng việc<br/>ung hạn chế</th><th>n, hỗ trợ các<br/>inh viên khác<br/>hoàn thành<br/>ng việc<br/>ung, nhưng</th><th>ả, sẵn sàng<br/>trợ các thành</th><th>ao tiếp chủ\nng, tích cực\ntrợ các\nnh viên khác\nhoàn thành\nng việc\\nung</th><th></th></tr>\n<tr><th></th><td></td><td>ra đúng\nh dạng,\\ni dung\nếu mục\nhuyết trình\\nu: không\nnh bày rõ\\ni dung\nDemo (nếu\n) không\nạt động,</td><td>n đủ các mục<br/>ính<br/>Thuyết trình:<br/>í trình bày<br/>ợc một số<br/>Demo (nếu<br/>): một số các</td><td>n đúng định\nng, bố cục\nrng đối hợp\nnội dung đủ\nc mục chính\nThuyết trình:\nnh bày được\nc ý chính\nDemo (nếu\n): đa số các\nh năng hoạt\nng, còn một</td><td>nh dạng, bổ c hợp lý, nội ng đủ các ic\nThuyết trình ich lạc, trình y được các ý ính\nDemo (nếu\n): đủ các tính ng hoạt động</td><td>nh dạng, bổ c hợp lý, nội ng đủ các ic\n\nThuyết trình ất sắc, trình y đầy đủ nội ng\nDemo (nếu\n): đầy đủ các h năng, đúng u cầu hoạt</td><td>Race</td></tr>\n</table>",
+      "column_headers": [
+        "Thang đánh giá",
+        "Fail -",
+        "",
+        "eveloping -",
+        "Sufficient -",
+        "Exemplary-",
+        ""
+      ],
+      "chunk_index": 27
+    }
+  }
+]

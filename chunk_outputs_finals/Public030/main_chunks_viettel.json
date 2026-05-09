@@ -1,0 +1,83 @@
+[
+  {
+    "page_content": "## Giới thiệu về tụ điện (Introduction to Capacitors)\n\n**Tụ điện là gì?**\n\nTụ điện là linh kiện thụ động có khả năng tích trữ năng lượng điện trường dưới dạng điện tích khi áp một điện áp tĩnh (Static Voltage) trên các bản cực (plates) của nó. Tụ điện tích trữ năng lượng điện tương tự như một pin sạc nhỏ.\n\nCó rất nhiều loại tụ điện khác nhau, từ các tụ điện rất nhỏ được sử dụng trong các mạch cộng hưởng, lọc nguồn, lọc tín hiệu, cho đến các tụ điện lớn dùng để bù công suất. Tuy khác nhau về kích thước và ứng dụng, tất cả đều có chức năng tương tự là lưu trữ điện tích.\n\n**Cấu tạo tụ điện cơ bản**\n\nTrong dạng cơ bản, một tụ điện bao gồm hai hoặc nhiều tấm dẫn điện (kim loại) đặt song song, không nối hoặc chạm vào nhau. Để cách ly về điện, người ta sử dụng không khí hoặc các vật liệu cách điện tốt như giấy, sáp, mica, gốm, nhựa hoặc một số dạng gel lỏng dùng trong tụ điện phân cực. Lớp cách điện giữa các tấm thường được gọi là điện môi (Dielectric).\n\nDo lớp cách điện này, dòng điện một chiều (DC) không thể chảy qua tụ điện; nó chỉ cho phép tạo ra điện áp trên các tấm dưới dạng điện tích (electrical charge). Các tấm kim loại dẫn điện của tụ điện có thể có hình vuông, hình tròn, hình chữ nhật, hoặc hình trụ, hình cầu. Hình dạng, kích thước và cấu trúc tấm song song phụ thuộc vào ứng dụng và mức điện áp của tụ điện.\n\n**Nguyên lý hoạt động**\n\nKhi được sử dụng trong mạch điện một chiều (DC), tụ điện sẽ sạc lên đến điện áp cung cấp nhưng chặn dòng điện chạy qua nó do điện môi không dẫn điện.\n\nCó hai loại điện tích: điện tích dương (+) dưới dạng proton và điện tích âm (−) dưới dạng electron. Khi một điện áp DC được đặt trên tụ điện, điện tích dương tích lũy trên một tấm, trong khi điện tích âm tích lũy trên tấm còn lại. Các tấm giữ điện tích cân bằng, tạo ra sự khác biệt điện áp giữa hai tấm. Khi đạt trạng thái ổn định, dòng điện không thể chảy qua tụ điện.\n\nKhi kết nối với dòng điện xoay chiều (AC), dòng điện có thể đi qua tụ điện nhờ sự thay đổi liên tục điện áp. Dòng electron vào các tấm tụ điện được gọi là dòng điện sạc, chảy cho đến khi điện áp trên cả hai tấm bằng với điện áp cung cấp VcV\\_c. Khi đó tụ điện được gọi là \"fully charged\".",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Tụ điện (Capacitor) > Giới thiệu về tụ điện (Introduction to Capacitors)",
+      "chunk_type": "text",
+      "chunk_index": 0
+    }
+  },
+  {
+    "page_content": "## Các tham số chính của tụ điện (Main Parameters of the Capacitor)\n\n**Điện dung của tụ điện**\n\nĐiện dung là thước đo khả năng tụ điện lưu trữ điện tích giữa hai tấm của nó. Đơn vị điện dung là Farad (F), đặt theo tên nhà vật lý người Anh Michael Faraday.\n\nĐiện dung CC được tính bằng:\n\n$$C=QVC=Q/V$$\n\nTrong đó:\n\n* CC: điện dung, đơn vị Farad (F)\n* QQ: điện lượng (coulomb), là điện tích tích trên tụ\n* VV: điện áp (volt), là điện áp cấp cho tụ\n\n**Đơn vị tiêu chuẩn của điện dung**\n\nDo Farad là đơn vị lớn, các bội số thường dùng là:\n\n* Microfarad (μF\\mu F) : 1μF=10−6F1 \\mu F = 10^{-6} F\n* Nanofarad (nF) : 1nF=10−9F1 nF = 10^{-9} F\n* Picofarad (pF) : 1pF=10−12F1 pF = 10^{-12} F\n\n**Điện dung của tụ điện phẳng (Parallel Plate Capacitor)**\n\nĐiện dung của tụ điện phẳng tỷ lệ thuận với diện tích AA (m²) của hai tấm và tỷ lệ nghịch với khoảng cách dd (m) giữa hai tấm:\n\n$$C=\\varepsilon Ad=\\varepsilon r\\varepsilon 0AdC=eA/d=e_r\\ e_0\\ A/d$$\n\nTrong đó:\n\n* CC: điện dung (F)\n* εre\\_r: hằng số điện môi tương đối của vật liệu\n* ε0e\\_0: hằng số điện môi chân không, ε0=8.854×10−12 F/m, e\\_0 = 8.854 e-12, F/m\n\n* AA: diện tích bản cực (m²)\n* dd: khoảng cách giữa hai tấm (m)",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Tụ điện (Capacitor) > Các tham số chính của tụ điện (Main Parameters of the Capacitor)",
+      "chunk_type": "text",
+      "chunk_index": 1
+    }
+  },
+  {
+    "page_content": "## Các loại tụ điện (Types of Capacitors)\n\nTùy theo vật liệu điện môi và cấu tạo, tụ điện được phân loại như sau:\n\n**Tụ gốm (Ceramic Capacitor)**\n\n* o Điện môi: gốm.\n* o Điện dung: thường nhỏ, từ vài pF đến vài μF.\n* o Ứng dụng: lọc tín hiệu, mạch cộng hưởng, mạch cao tần.\n* o Ưu điểm: nhỏ gọn, chịu nhiệt tốt, giá rẻ.\n* o Nhược điểm: điện dung thay đổi theo nhiệt độ và điện áp.\n\n**Tụ phim (Film Capacitor)**\n\n* o Điện môi: nhựa polyester, polypropylene, polystyrene.\n* o Điện dung: từ vài nF đến vài μF.\n* o Ứng dụng: lọc nguồn, mạch bảo vệ, mạch công suất.\n* o Ưu điểm: điện dung ổn định, chịu được điện áp cao.\n* o Nhược điểm: kích thước lớn hơn tụ gốm cùng điện dung.\n\n**Tụ hóa (Electrolytic Capacitor)**\n\n* o Điện môi: chất điện phân.\n* o Điện dung: lớn, từ vài μF đến vài mF.\n* o Ứng dụng: lọc nguồn, bù công suất, lưu trữ năng lượng tạm thời.\n* o Ưu điểm: dung lượng cao, giá rẻ.\n* o Nhược điểm: điện áp làm việc thấp hơn, tuổi thọ ngắn, phân cực (+, −) rõ ràng.\n\n**Tụ tantalum (Tantalum Capacitor)**\n\n* o Điện môi: tantalum oxide.\n* o Điện dung: từ vài μF đến vài trăm μF.\n* o Ứng dụng: mạch điện tử nhạy, nguồn xung.\n* o Ưu điểm: dung lượng ổn định, kích thước nhỏ.\n* o Nhược điểm: nhạy cảm với quá áp, giá cao hơn tụ nhôm.\n\n**Tụ siêu điện (Supercapacitor / Ultracapacitor)**\n\n* o Điện dung: rất lớn, từ vài F đến vài nghìn F.\n* o Ứng dụng: lưu trữ năng lượng tạm thời, backup nguồn, hệ thống hybrid/EV.\n* o Ưu điểm: lưu trữ năng lượng lớn, tuổi thọ dài.\n* o Nhược điểm: điện áp thấp, giá cao, kích thước lớn.",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Tụ điện (Capacitor) > Các loại tụ điện (Types of Capacitors)",
+      "chunk_type": "text",
+      "chunk_index": 2
+    }
+  },
+  {
+    "page_content": "## Ứng dụng của tụ điện (Applications of Capacitors)\n\n• **Lọc nguồn (Power Supply Filtering)**\n\nTụ điện dùng để lọc nhiễu và ổn định điện áp DC. Chúng loại bỏ các xung AC còn sót lại sau khi chỉnh lưu từ AC sang DC.\n\n• **Lưu trữ năng lượng tạm thời**\n\nTrong mạch xung hoặc hệ thống hybrid, tụ điện có thể cung cấp dòng điện lớn trong thời gian ngắn.\n\n• **Mạch cộng hưởng và lọc tín hiệu**\n\nKết hợp với cuộn cảm (inductor), tụ điện tạo mạch LC dùng để chọn tần số hoặc loại bỏ tần số không mong muốn.\n\n• **Bù công suất (Power Factor Correction)**\n\nTrong các mạch điện công nghiệp, tụ điện được dùng để cải thiện hệ số công suất, giảm tổn thất điện năng.\n\n• **Khởi động động cơ (Motor Start)**\n\nTụ điện khởi động giúp động cơ chạy êm và đạt mô-men xoắn ban đầu cao.",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Tụ điện (Capacitor) > Ứng dụng của tụ điện (Applications of Capacitors)",
+      "chunk_type": "text",
+      "chunk_index": 3
+    }
+  },
+  {
+    "page_content": "## Lưu ý khi sử dụng và bảo quản tụ điện (Precautions and Storage)\n\n• **Điện áp**\n\nKhông vượt quá điện áp làm việc, đặc biệt với tụ phân cực. Quá áp có thể gây đánh thủng điện môi.\n\n• **Nhiệt độ**\n\nBảo quản và vận hành trong phạm vi nhiệt độ cho phép để tránh giảm tuổi thọ hoặc hỏng tụ.\n\n• **Phân cực**\n\nVới tụ điện phân cực (electrolytic, tantalum), chú ý cực (+/−) khi lắp mạch, lắp sai có thể gây nổ.\n\n• **Lão hóa**\n\nMột số tụ điện (như tụ hóa) mất điện dung theo thời gian; cần kiểm tra định kỳ nếu dùng lâu năm.\n\n• **Bảo quản**\n\n* 1. Tránh ẩm ướt, bụi bẩn.\n* 2. Không để gần nguồn nhiệt cao.\n* 3. Tụ siêu điện và tụ hóa nên xả điện trước khi bảo quản lâu dài.",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Tụ điện (Capacitor) > Lưu ý khi sử dụng và bảo quản tụ điện (Precautions and Storage)",
+      "chunk_type": "text",
+      "chunk_index": 4
+    }
+  },
+  {
+    "page_content": "# Bài tập mẫu (Sample Problem)\n\nMột tụ điện có A=10 m2A = 10\\, \\text{m}^2, d=5 md = 5\\,\\text{m}, điện môi là không khí. Tính điện dung CC.",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Bài tập mẫu (Sample Problem)",
+      "chunk_type": "text",
+      "chunk_index": 5
+    }
+  },
+  {
+    "page_content": "# Hướng dẫn giải (Tutorial)\n\nĐiện dung được tính bởi công thức:\n\n$$C=\\varepsilon Ad=\\varepsilon r\\varepsilon 0AdC=eA/d=e_r\\ e_0\\ A/d$$\n\nĐiện dung của tụ điện thay đổi theo vật liệu điện môi. Các vật liệu điện môi thường là cách điện, tấm kim loại dẫn điện có thể làm bằng đồng, nhôm; điện môi có thể là giấy, sáp, mica, gốm, polyme, gel. Theo thời gian, vật liệu lão hóa dẫn đến giảm điện dung. Sai số tụ điện có thể dao động từ −20% đến +80% so với giá trị danh định.",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Hướng dẫn giải (Tutorial)",
+      "chunk_type": "text",
+      "chunk_index": 6
+    }
+  },
+  {
+    "page_content": "## Điện áp làm việc (Working Voltage)\n\nĐiện áp làm việc là mức điện áp tối đa DC hoặc AC mà tụ điện chịu được mà không bị hỏng. Giá trị này thường được in trên thân tụ.\n\nĐiện áp AC và DC khác nhau do AC đề cập đến giá trị hiệu dụng; điện áp cực đại AC = 1.414 × điện áp hiệu dụng. Khi chọn tụ điện, điện áp làm việc nên cao hơn điện áp mạch ~30%.\n\nVí dụ: mạch 12V → chọn tụ 16V.",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Hướng dẫn giải (Tutorial) > Điện áp làm việc (Working Voltage)",
+      "chunk_type": "text",
+      "chunk_index": 7
+    }
+  },
+  {
+    "page_content": "## Nhiệt độ làm việc (Working Temperature)\n\nNhiệt độ ảnh hưởng điện dung do thay đổi tính chất điện môi. Phạm vi làm việc bình thường: −30°C đến +125°C, điện áp danh định. Nhiệt độ làm việc không quá +70°C đối với tụ nhựa.\n\n**Lưu ý:**\n\n* Tụ phân nhôm: trên 85°C chất lỏng điện phân có thể bay hơi; thân tụ có thể biến dạng hoặc rò rỉ.\n* Tụ phân không dùng ở dưới −10°C do chất điện phân đóng băng.",
+    "metadata": {
+      "document_id": "Public030",
+      "hierarchy_path": "Hướng dẫn giải (Tutorial) > Nhiệt độ làm việc (Working Temperature)",
+      "chunk_type": "text",
+      "chunk_index": 8
+    }
+  }
+]

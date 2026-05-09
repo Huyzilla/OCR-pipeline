@@ -1,0 +1,1637 @@
+[
+  {
+    "question_index": 55,
+    "question": "Nội dung chính của tài liệu là gì?",
+    "options": [
+      "Giới thiệu lịch sử phát triển phần cứng",
+      "Trình bày khái niệm, quản lý tệp, hệ lệnh, hệ điều hành Windows (từ MS-DOS, Windows 95 đến Windows XP)",
+      "Hướng dẫn cài đặt phần mềm diệt virus",
+      "Phân tích mô hình mạng OSI"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D\nĐây không phải là đáp án chính xác. Dựa trên thông tin mà bạn cung cấp, nội dung chính của tài liệu là tổng hợp các hướng dẫn và tài liệu liên quan đến nhiều lĩnh vực khác nhau liên quan đến hệ thống, bao gồm:\n\n- Hướng dẫn sử dụng hệ thống (Hướng dẫn sử dụng, Tài liệu quản trị hệ thống)\n- Hỗ trợ k",
+    "context_token_count": 545,
+    "fusion_time": 4.815966844558716
+  },
+  {
+    "question_index": 60,
+    "question": "Nội dung chính của tài liệu là gì?",
+    "options": [
+      "Trình bày chi tiết về mạng máy tính",
+      "Giới thiệu các khái niệm cơ bản về dữ liệu, thông tin, tri thức; lịch sử phát triển máy tính; khái niệm tin học, CNTT và ICT",
+      "Hướng dẫn cài đặt phần mềm",
+      "Phân tích chi tiết hệ điều hành Windows"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. Trình bày chi tiết về mạng máy tính\nB. Giới thiệu các khái niệm cơ bản về dữ liệu, thông tin, tri thức; lịch sử phát triển máy tính; khái niệm tin học, CNTT và ICT\nC. Hướng dẫn cài đặt phần mềm\nD. Phân tích chi tiết hệ điều hành Windows\nTheo tóm tắt nội dung mà bạn đã cung cấp, tài liệu này không",
+    "context_token_count": 445,
+    "fusion_time": 3.939960479736328
+  },
+  {
+    "question_index": 65,
+    "question": "Nội dung chính của tài liệu là gì?",
+    "options": [
+      "Giới thiệu mạng máy tính",
+      "Trình bày biểu diễn dữ liệu trong máy tính: các hệ đếm, số nguyên, số thực, dữ liệu ký tự, số hóa tín hiệu và tính toán số học",
+      "Giới thiệu hệ điều hành Windows",
+      "Hướng dẫn lập trình Pascal"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "Câu trả lời đúng là A. Giới thiệu mạng máy tính.\n\nGiải thích:\n\nTheo nội dung đã cung cấp, tài liệu tập trung vào các lĩnh vực công nghệ Trí Tuệ Nhân Tạo (TTNT), chiến lược phát triển TTNT của Trung Quốc và Pháp, chứ không liên quan đến các chủ đề khác như mạng máy tính, biểu diễn dữ liệu trong máy t",
+    "context_token_count": 646,
+    "fusion_time": 6.097061634063721
+  },
+  {
+    "question_index": 70,
+    "question": "Nội dung chính của tài liệu là gì?",
+    "options": [
+      "Trình bày chi tiết lịch sử phát triển máy tính",
+      "Giới thiệu cấu trúc và chức năng CPU, các loại bộ nhớ, thiết bị vào-ra và hệ thống bus trong máy tính",
+      "Hướng dẫn cài đặt phần mềm hệ thống",
+      "Phân tích hệ điều hành Windows"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "C. Hướng dẫn cài đặt phần mềm hệ thống\n\nGiải thích:\nDựa vào thông tin được cung cấp trong tài liệu, nội dung chính của nó tập trung vào việc hướng dẫn người dùng về cách sử dụng hệ thống, bao gồm cả việc cài đặt và cấu hình hệ thống. Tài liệu đề cập đến các phần như Hướng dẫn sử dụng, Tài liệu hỗ tr",
+    "context_token_count": 680,
+    "fusion_time": 21.352060317993164
+  },
+  {
+    "question_index": 78,
+    "question": "Các loại bê tông nào được phép sử dụng khi thiết kế kết cấu theo TCVN 5574:2018?",
+    "options": [
+      "Bê tông nặng",
+      "Bê tông hạt nhỏ",
+      "Bê tông nhẹ, bê tông tổ ong",
+      "Bê tông tự ứng suất"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A,B,C,D",
+    "llm_full_answer": "D. Bê tông tự ứng suất\n\nTheo thông tin đã cung cấp, TCVN 5574:2018 xác định các loại bê tông được phép sử dụng trong thiết kế kết cấu bao gồm bê tông nặng, bê tông hạt nhỏ, bê tông nhẹ, bê tông tổ ong và bê tông tự ứng suất. Tuy nhiên, vấn đề đặt ra là chúng ta phải xác định loại bê tông được phép s",
+    "context_token_count": 224,
+    "fusion_time": 2.98711895942688
+  },
+  {
+    "question_index": 82,
+    "question": "Tiêu chuẩn TCVN 5574:2018 áp dụng cho những loại bê tông nào?",
+    "options": [
+      "Bê tông nặng",
+      "Bê tông hạt nhỏ",
+      "Bê tông nhẹ, bê tông tổ ong",
+      "Bê tông tự ứng suất"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A,B,C,D",
+    "llm_full_answer": "C. Bê tông nhẹ, bê tông tổ ong\nTheo thông tin đã cung cấp, tiêu chuẩn TCVN 5574:2018 áp dụng cho các loại bê tông như sau:\n\n1. Bê tông nhẹ\n2. Bê tông tổ ong\n\nVì vậy, đáp án chính xác là C. Bê tông nhẹ, bê tông tổ ong. \n\nCác lựa chọn còn lại A, B, D không phù hợp vì:\n\n- A. Bê tông nặng không được liệ",
+    "context_token_count": 385,
+    "fusion_time": 3.8312509059906006
+  },
+  {
+    "question_index": 90,
+    "question": "Một công trình cao 30 m cần bảo vệ chống sét trực tiếp. Theo bán kính bảo vệ của kim thu sét (r = 1,5h), bán kính bảo vệ tối đa là bao nhiêu?",
+    "options": [
+      "30 m",
+      "40 m",
+      "45 m",
+      "45 m"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "C,D",
+    "llm_full_answer": "C. 45 m\n\nThe information provided clearly states that to calculate the maximum protection radius for a lightning arrester on a building of height \\( h = 30 \\) meters, you use the formula \\( r = 1.5h \\). Applying this formula with the given height:\n\n\\[ r = 1.5 \\times 30 \\, \\text{m} = 45 \\, \\text{m} \\",
+    "context_token_count": 110,
+    "fusion_time": 1.4369699954986572
+  },
+  {
+    "question_index": 94,
+    "question": "Nội dung chính của tài liệu là gì?",
+    "options": [
+      "Giới thiệu thiết bị thử nhiệt trong công nghiệp luyện kim",
+      "Hướng dẫn quy trình đo chiều dày, lắp đặt đầu đo nhiệt và thử nghiệm khả năng chịu lửa của vật liệu chống cháy cho cấu kiện thép",
+      "Quy chuẩn thiết kế hệ thống điện",
+      "Tiêu chuẩn quản lý an toàn phòng cháy chữa cháy tại công trường"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "Câu trả lời đúng là D. Tiêu chuẩn quản lý an toàn phòng cháy chữa cháy tại công trường.\n\nGiải thích:\n\nĐầu tiên, chúng ta xem xét nội dung của tài liệu:\n1. **Yêu cầu về nguồn lực**: Nội dung này tập trung vào việc cung cấp thông tin về các yếu tố cần thiết cho phòng xét nghiệm, như nhân sự, cơ sở vật",
+    "context_token_count": 582,
+    "fusion_time": 5.510493278503418
+  },
+  {
+    "question_index": 96,
+    "question": "Bộ mã chuẩn nào đã được chọn cho tiếng Việt trong CNTT?",
+    "options": [
+      "ASCII",
+      "Unicode",
+      "TCVN 6909",
+      "UTF-16"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "C\nGiải thích: Theo thông tin trong đoạn văn, bộ mã chuẩn được chọn cho tiếng Việt trong CNTT là **TCVN 6909:2001**, có tên đầy đủ là \"Công nghệ thông tin - Bộ mã ký tự tiếng Việt 16-bit\". Vì vậy, đáp án chính xác nhất là C. TCVN 6909. Các lựa chọn khác không phù hợp vì không phải là bộ mã được chọn ",
+    "context_token_count": 154,
+    "fusion_time": 1.7971441745758057
+  },
+  {
+    "question_index": 99,
+    "question": "Nội dung chính của tài liệu là gì?",
+    "options": [
+      "Giới thiệu lịch sử phát triển CNTT ở Việt Nam",
+      "Trình bày khái niệm, tình hình nghiên cứu, thách thức và hướng phát triển của xử lý tiếng Việt trong CNTT",
+      "Đề xuất các thuật toán xử lý ngôn ngữ mới",
+      "Phân tích hệ thống mạng viễn thông"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. Giới thiệu lịch sử phát triển CNTT ở Việt Nam\nLời giải chi tiết:\nĐáp án không đúng. Tài liệu không giới thiệu lịch sử phát triển CNTT ở Việt Nam mà thay vào đó tập trung vào chiến lược phát triển công nghiệp trí tuệ nhân tạo (TTNT) tại Việt Nam trong giai đoạn 2020-2030. Tài liệu đề cập đến mục t",
+    "context_token_count": 469,
+    "fusion_time": 4.554150581359863
+  },
+  {
+    "question_index": 103,
+    "question": "Nội dung chính của tiêu chuẩn TCVN xxxx:202x là gì?",
+    "options": [
+      "Hướng dẫn thiết kế cấu kiện thép chịu lực",
+      "Quy định phương pháp thử nghiệm để đánh giá hiệu quả của hệ bọc bảo vệ chịu lửa cho cấu kiện thép trong công trình",
+      "Tiêu chuẩn tính toán kết cấu bê tông cốt thép",
+      "Hướng dẫn bảo trì lớp sơn chống cháy"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "Câu trả lời đúng là: B. Quy định phương pháp thử nghiệm để đánh giá hiệu quả của hệ bọc bảo vệ chịu lửa cho cấu kiện thép trong công trình.\n\nGiải thích:\nDựa vào thông tin trong đoạn văn, tiêu chuẩn TCVN xxxx:202x tập trung vào các yêu cầu thiết kế cho kết cấu bê tông và bê tông cốt thép trong các cô",
+    "context_token_count": 468,
+    "fusion_time": 4.233835935592651
+  },
+  {
+    "question_index": 125,
+    "question": "Nhiệt độ chuyển mềm của len thường nằm trong khoảng nào?",
+    "options": [
+      "50–70°C",
+      "80–90°C",
+      "100–110°C",
+      "150–170°C"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "D. 150–170°C\n\nTheo thông tin trong đoạn văn, nhiệt độ chuyển mềm của len thường nằm trong khoảng 130–140°C. Tuy nhiên, khi nhiệt độ vượt quá 170°C, len sẽ bị phá hủy hoàn toàn. Do đó, trong phạm vi nhiệt độ từ 150–170°C, len vẫn chưa bị phá hủy nhưng tính chất vật lý của len có thể bị ảnh hưởng. Do ",
+    "context_token_count": 181,
+    "fusion_time": 2.1074042320251465
+  },
+  {
+    "question_index": 136,
+    "question": "Nội dung chính của tài liệu là gì?",
+    "options": [
+      "Trình bày nguyên lý hoạt động của transistor BJT",
+      "Giới thiệu khái niệm chất bán dẫn, phân loại (P-type, N-type), cơ chế dẫn điện, hiện tượng dòng điện và mối nối P–N",
+      "Phân tích mạch điện xoay chiều",
+      "Giới thiệu công nghệ chế tạo vi mạch"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D. Giới thiệu công nghệ chế tạo vi mạch\n\nGiải thích:\nDựa trên thông tin cung cấp, nội dung chính của tài liệu tập trung vào hai chủ đề chính:\n\n1. Giải thuật mã hóa RSA: Các quy tắc, nguyên lý hoạt động, và quy trình sinh khóa của RSA.\n2. Điện thế và hiệu điện thế: Định nghĩa, công thức tính toán, và",
+    "context_token_count": 608,
+    "fusion_time": 6.3609466552734375
+  },
+  {
+    "question_index": 168,
+    "question": "Trong tài liệu Public_036, đâu không phải một ứng dụng của Image segmentation được đề cập?",
+    "options": [
+      "Xe tự hành",
+      "Chẩn đoán hình ảnh",
+      "Nhận diện chó mèo",
+      "Quản lý ra vào ở bãi đỗ xe"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "D. Quản lý ra vào ở bãi đỗ xe\nGiải thích:\nTheo thông tin đã được cung cấp trong tài liệu Public_036, các ứng dụng của image segmentation được đề cập chính là:\n\n1. Ô tô tự lái: Sử dụng để phân biệt đường, xe ô tô, và người đi bộ.\n2. Chẩn đoán hình ảnh: Sử dụng để phân tích ảnh X-quang và hỗ trợ chẩn ",
+    "context_token_count": 173,
+    "fusion_time": 1.7424464225769043
+  },
+  {
+    "question_index": 171,
+    "question": "Theo tài liệu Public_036, mạng U-Net có những hạn chế hoặc điểm yếu nào khi áp dụng trong bài toán Image segmentation?",
+    "options": [
+      "Loss function là MSE để tính toán khoảng cách giữa hai ảnh",
+      "Có cơ chế kết nối các lớp có cùng kích thước để tránh gradient vanishing",
+      "Mục đích của decoder là để khôi phục kích thước gốc của ảnh",
+      "Hàm pooling được sử dụng chủ yếu là max pooling"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A",
+    "llm_full_answer": "C\nGiải thích:\nTrong phần giới thiệu của tài liệu, chúng ta được biết rằng mạng U-Net được sử dụng rộng rãi trong bài toán image segmentation, đặc biệt là trong lĩnh vực y học. Tuy nhiên, tài liệu cũng nêu rõ những hạn chế của mạng U-Net khi áp dụng trong bài toán này. Một trong những hạn chế chính đ",
+    "context_token_count": 505,
+    "fusion_time": 13.81404447555542
+  },
+  {
+    "question_index": 172,
+    "question": "Xác định padding (p) và stride (s) khi tiến hành transposed convolution với input 4x4, kernel 3x3 để cho ra output 9x9",
+    "options": [
+      "p = 0, s = 1",
+      "p = 1, s = 2",
+      "p = 0, s = 2",
+      "p = 1, s = 1"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C",
+    "llm_full_answer": "B\nB. p = 1, s = 2\n\nThe solution provided in the context is correct and matches the options given. Based on the detailed steps and calculations outlined:\n\n1. We start with the formula for determining the size of the output for transposed convolution:\n   \\[\n   Y = \\left(\\frac{H - 1}{s} + 1\\right) + 2p",
+    "context_token_count": 490,
+    "fusion_time": 6.869900226593018
+  },
+  {
+    "question_index": 174,
+    "question": "Co-occurrence matrix có tính chất đối xứng gì và kích thước của ma trận này là bao nhiêu (với V là kích thước từ điển)?",
+    "options": [
+      "Đối xứng chéo. 2V x V",
+      "Đối xứng dọc. V x V",
+      "Đối xứng chéo. V x V",
+      "Đối xứng dọc. 2V x V"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C",
+    "llm_full_answer": "B. Đối xứng dọc. V x V\n\nGiải thích:\n- Co-occurrence matrix là một ma trận vuông đối xứng. Điều này có nghĩa là nó có cùng số hàng và cột, và giá trị tại ô [i, j] bằng với giá trị tại ô [j, i]. Vì vậy, đáp án \"Đối xứng chéo\" không đúng.\n- Độ dài của hàng và cột của ma trận là V (kích thước của từ điể",
+    "context_token_count": 264,
+    "fusion_time": 3.698801040649414
+  },
+  {
+    "question_index": 176,
+    "question": "Đặc điểm của một vector không phải là one-hot encoding là gì?",
+    "options": [
+      "[0, 0, 1, 0]",
+      "[1, 0, 1, 1]",
+      "[1, 0, 0, 0]",
+      "[0, 1, 0, 0]"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "Câu trả lời chính xác là B. [1, 0, 1, 1].\n\nĐể giải thích rõ hơn:\n\n- **One-hot encoding**:\n  - Vector này là một ví dụ điển hình của one-hot encoding. Nó có ba phần tử 1 (trong vector 4 chiều) và một phần tử 0. Điều này đồng nghĩa rằng nó đang biểu diễn cho một từ cụ thể trong bộ từ điển, nhưng không",
+    "context_token_count": 444,
+    "fusion_time": 4.260478258132935
+  },
+  {
+    "question_index": 177,
+    "question": "Trong số các mô hình mạng nơ-ron được đề cập trong tài liệu Public_038, mô hình nào không phải là một dạng của Mạng Nơ-ron Hồi quy (RNN)?",
+    "options": [
+      "One to one",
+      "Two to one",
+      "Many to one",
+      "Many to many"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "C. Many to one\n\nGiải thích:\nTrong tài liệu, mô hình RNN được đề cập đến các dạng bài toán One to one, One to many, Many to one, và Many to many. Trong đó, Many to one được mô tả là sử dụng nhiều input và 1 output, trong khi Many to many sử dụng nhiều input và nhiều output. Tuy nhiên, CNN là một mô h",
+    "context_token_count": 336,
+    "fusion_time": 3.5844264030456543
+  },
+  {
+    "question_index": 181,
+    "question": "Theo tài liệu Public_038, khẳng định nào dưới đây là đúng với cơ chế attention?",
+    "options": [
+      "Không có attention, mô hình vẫn nhớ được đầy đủ thông tin được đưa vào ban đầu",
+      "Attention sử dụng ánh xạ key-value làm cơ sở duy nhất để hoạt động",
+      "Attention giúp hình dung tốt hơn cách hoạt động của mô hình",
+      "Có duy nhất một hàm để tính attention score"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A\nGiải thích:\n- Điểm A: Thông tin trong tài liệu nói rõ rằng cơ chế attention giúp giảm thiểu tình trạng mất thông tin từ các từ ở xa trong context vector. Do đó, nếu không có attention, thông tin từ những từ xa trong input có thể bị mất. Điều này cho thấy rằng sự thiếu hụt của attention có thể làm ",
+    "context_token_count": 328,
+    "fusion_time": 2.7050042152404785
+  },
+  {
+    "question_index": 192,
+    "question": "Logistic regression có đầu ra là gì?",
+    "options": [
+      "Giá trị thực",
+      "Giá trị nhị phân",
+      "Giá trị nguyên dương",
+      "Giá trị phức"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. Giá trị thực\n\nGiải thích:\nTrong logistic regression, đầu ra của mô hình là xác suất của một mẫu thuộc về một lớp cụ thể. Xác suất này luôn nằm trong khoảng từ 0 đến 1, do đó nó là một giá trị thực (real number). \n\nĐiều này khác với các mô hình phân loại nhị phân thông thường, trong đó đầu ra thườ",
+    "context_token_count": 325,
+    "fusion_time": 3.882997989654541
+  },
+  {
+    "question_index": 201,
+    "question": "Theo tài liệu Public_042, vì sao lại nên dùng hàm kích hoạt phi tuyến (non-linear activation)?",
+    "options": [
+      "Vì nếu mô hình phức tạp hơn, kết quả chắc chắn sẽ tốt hơn",
+      "Vì tổ hợp của các lớp ẩn và hàm kích hoạt tuyến tính tương đương một lớp tuyến tính",
+      "Vì đây là xu hướng, thói quen của cộng đồng",
+      "Vì nó hiệu quả trên thực tế dù chưa có lời giải thích xác đáng"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D\n\nDựa trên thông tin đã cung cấp, lý do chính mà chúng ta nên sử dụng hàm kích hoạt phi tuyến (non-linear activation) là vì nó hiệu quả trên thực tế mặc dù chưa có lời giải thích xác đáng về việc sử dụng nó. Lý do chính là nó cho phép mạng nơ-ron học được các mối quan hệ phức tạp hơn và tăng cường ",
+    "context_token_count": 430,
+    "fusion_time": 4.159138441085815
+  },
+  {
+    "question_index": 214,
+    "question": "Theo tài liệu Public_045, khi tiến hành phân lớp với nhiều hơn hai lớp, có bao nhiêu chiến lược tiếp cận? Hình thức của chúng là gì?",
+    "options": [
+      "Hai. Một model phân M lớp và M model phân biệt từng lớp",
+      "Một. Một model phân M lớp",
+      "Một. M model phân biệt từng lớp",
+      "Không thể tiến hành"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A",
+    "llm_full_answer": "C\nGiải thích: Theo tài liệu, có hai chiến lược chính được đề cập cho việc phân lớp với nhiều hơn hai lớp:\n\n1. **Mô hình Neural Network không có Hidden Layer**: \n   - Sử dụng hàm activation là softmax tại output layer.\n   - Loss function là categorical-cross entropy.\n   - Đây tương đương với bài phân",
+    "context_token_count": 156,
+    "fusion_time": 1.833258867263794
+  },
+  {
+    "question_index": 215,
+    "question": "Trường hợp nào sau đây được đề xuất sử dụng Finetuning hơn là Feature extractor?\nI. Dữ liệu lớn, khác dữ liệu pretrain\nII. Dữ liệu nhỏ, khác dữ liệu pretrain\nIII. Dữ liệu nhỏ, giống dữ liệu pretrain\nIV. Dữ liệu lớn, giống dữ liệu pretrain",
+    "options": [
+      "I",
+      "II và III",
+      "I và IV",
+      "IV"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "D",
+    "llm_full_answer": "C. I và IV\nTheo thông tin đã cung cấp, chúng ta có thể phân tích từng trường hợp:\n\n1. **Trường hợp I (Dữ liệu lớn, khác dữ liệu pretrain)**: \n   - Cần sử dụng fine-tuning vì dữ liệu lớn giúp giảm nguy cơ overfitting.\n   \n2. **Trường hợp II (Dữ liệu nhỏ, khác dữ liệu pretrain)**:\n   - Cần sử dụng fea",
+    "context_token_count": 374,
+    "fusion_time": 3.765194892883301
+  },
+  {
+    "question_index": 224,
+    "question": "IoU phụ thuộc vào hai toán tử tập hợp nào và công thức là gì?",
+    "options": [
+      "Intersection và Union. I/U",
+      "Intersection và Negation. I/(I + N)",
+      "Negation và Union. (U + N)/N",
+      "Intersection và Union. U/(U + I)"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D. Intersection và Union. U/(U + I)\n\nGiải thích:\n- **Toán tử tập hợp**: IoU phụ thuộc vào hai toán tử tập hợp chính: **Giao (Intersection)** và **Hợp (Union)**.\n- **Công thức**: Công thức tính IoU là \\(\\frac{\\text{Area}(Intersection)}{\\text{Area}(Union)}\\). Trong đó:\n  - **Area(Intersection)** là di",
+    "context_token_count": 270,
+    "fusion_time": 3.447244167327881
+  },
+  {
+    "question_index": 233,
+    "question": "Theo tài liệu Public_049, thành phần nào không thuộc phạm vi quản lý của biến?",
+    "options": [
+      "Kiểu dữ liệu",
+      "Tên biến",
+      "Giá trị biến",
+      "Địa chỉ lưu biến"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D\nTheo thông tin cung cấp, trong tài liệu Public_049, biến được mô tả bao gồm tên (name), địa chỉ (address) và giá trị (value). Tài liệu khẳng định rằng phép toán không nằm trong phạm vi quản lý của biến. Do đó, thành phần không thuộc phạm vi quản lý của biến là \"địa chỉ lưu biến\" (option D). Các th",
+    "context_token_count": 190,
+    "fusion_time": 1.9490151405334473
+  },
+  {
+    "question_index": 254,
+    "question": "Độ phức tạp nhỏ nhất của Insertion Sort là?",
+    "options": [
+      "O(N^2)",
+      "O(N)",
+      "O(NlogN)",
+      "O(sqrt(N))"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C",
+    "llm_full_answer": "B\nGiải thích:\nTrong ngữ cảnh này, chúng ta cần tìm hiểu về độ phức tạp của thuật toán Insertion Sort. Độ phức tạp tốt nhất (best case) và độ phức tạp xấu nhất (worst case) của thuật toán này được nêu rõ trong đoạn văn:\n\n- Độ phức tạp tốt nhất: O(N)\n- Độ phức tạp xấu nhất: O(N²)\n\nTrong trường hợp tốt",
+    "context_token_count": 81,
+    "fusion_time": 1.449561357498169
+  },
+  {
+    "question_index": 268,
+    "question": "Đâu không phải là đặc điểm của linked list?",
+    "options": [
+      "Tại một phần tử, có thể chuyển đến phần tử trước nó",
+      "Một phần tử có hai trường: thông tin và con trỏ đến phần tử kế tiếp",
+      "Giải quyết bất cập về việc cấp phát bộ nhớ của mảng (array)",
+      "Là một kiểu dữ liệu trừu tượng (ADT - abstract data type)"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D\nGiải thích:\nTrong ngữ cảnh và thông tin cung cấp, chúng ta đang tập trung vào những đặc điểm chính của danh sách liên kết. Đặc điểm không phải của danh sách liên kết là khả năng truy cập trực tiếp vào các phần tử, điều này khác biệt so với mảng.\n\nMỗi lựa chọn cần được đánh giá:\n\nA. \"Tại một phần t",
+    "context_token_count": 420,
+    "fusion_time": 3.7686643600463867
+  },
+  {
+    "question_index": 273,
+    "question": "Tài liệu Public_057 mô tả những cách biểu diễn đồ thị nào?",
+    "options": [
+      "Ma trận kề",
+      "Danh sách đỉnh",
+      "Danh sách cạnh",
+      "Danh sách kề"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A,C,D",
+    "llm_full_answer": "D. Danh sách kề\n\nTài liệu Public_057 đã mô tả ba phương pháp biểu diễn đồ thị, bao gồm danh sách kề, danh sách cạnh và ma trận kề. Do đó, đáp án chính xác là D. Danh sách kề. \n\nA. Ma trận kề - Đây không phải là một cách biểu diễn đồ thị mà tài liệu đã mô tả.\nB. Danh sách đỉnh - Tài liệu không đề cập",
+    "context_token_count": 430,
+    "fusion_time": 4.369410514831543
+  },
+  {
+    "question_index": 274,
+    "question": "Theo tài liệu `Public_057`, đồ thị bánh xe có bao nhiêu cạnh?",
+    "options": [
+      "2n - 1",
+      "n^2",
+      "2n",
+      "n^2 + 1"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A\nGiải thích:\nTheo thông tin được cung cấp trong đoạn văn, số cạnh của đồ thị bánh xe Wn được tính theo công thức: \nSố cạnh = 2n - 1\n\nVì vậy, đáp án đúng là A: 2n - 1. Các đáp án khác không phù hợp với công thức đã đưa ra. \n\nVí dụ:\n- Đối với W3 (đồ thị bánh xe với 3 đỉnh), số cạnh là 2*3 - 1 = 5.\n- ",
+    "context_token_count": 181,
+    "fusion_time": 2.038832664489746
+  },
+  {
+    "question_index": 285,
+    "question": "Chương Public_060 sẽ đi qua bao nhiêu ví dụ?",
+    "options": [
+      "Một",
+      "Hai",
+      "Ba",
+      "Bốn"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C",
+    "llm_full_answer": "B. Hai\n\nGiải thích:\nTrong đoạn văn, chương Public_060 được mô tả với hai ví dụ chính được trình bày chi tiết. Đó là bài toán tam giác và hàm NextDate. Chương này không đề cập đến thêm bất kỳ ví dụ nào khác ngoài hai ví dụ này. Do đó, đáp án chính xác là B. Hai. Các lựa chọn khác như A (Một), C (Ba) ",
+    "context_token_count": 142,
+    "fusion_time": 1.6878204345703125
+  },
+  {
+    "question_index": 287,
+    "question": "Trong bài toán Ngày kế tiếp, sự phân bố của những loại thực thể nào thường gây ra vấn đề, và liệu việc xác định một thực thể có phụ thuộc vào các thực thể khác không?",
+    "options": [
+      "Ngày 31. Có",
+      "Tháng nhuận âm lịch. Có",
+      "Năm nhuận. Không",
+      "Ngày 30. Không"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A. Ngày 31. Có\n\nGiải thích: Trong bài toán Ngày kế tiếp, sự phân bố của năm nhuận và năm không nhuận thường gây ra vấn đề. Việc xác định một thực thể (ngày kế tiếp) thường phụ thuộc vào các thực thể khác (năm nhuận hoặc năm không nhuận). Cụ thể, nếu một năm là năm nhuận, số ngày trong tháng 2 sẽ tăn",
+    "context_token_count": 294,
+    "fusion_time": 2.5852835178375244
+  },
+  {
+    "question_index": 288,
+    "question": "Theo tài liệu Public_060, đâu không phải một yếu tố khiến bài toán Tam giác được đề cập trong đó trở nên phổ biến?",
+    "options": [
+      "Hệ thống đặc tả đầy đủ đơn giản, dễ liệt kê",
+      "Hàm ý yêu cầu nghiêm ngặt về bảo toàn đặc tả",
+      "Hàm ý người kiểm thử cần đặt ra những trường hợp \"không tầm thường\" (ví dụ input không hợp lệ phải trả về kết quả gì)",
+      "Cài đặt dài dòng, rất nhiều if else"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D. Cài đặt dài dòng, rất nhiều if else.\nGiải thích:\nTheo tài liệu, bài toán tam giác được đề cập trong tài liệu Public_060 không phải vì lý do hệ thống đặc tả đơn giản hoặc hàm ý yêu cầu nghiêm ngặt về bảo toàn đặc tả. Thay vào đó, bài toán này được đề cập để minh họa cho các vấn đề trong kiểm thử p",
+    "context_token_count": 389,
+    "fusion_time": 3.9925272464752197
+  },
+  {
+    "question_index": 289,
+    "question": "Kết quả kiểm tra xem bộ ba số (3, 4, 5) có tạo thành tam giác vuông hay không?",
+    "options": [
+      "Equilateral",
+      "Isosceles",
+      "Scalene",
+      "Not A Triangle"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A. Equilateral\n\nGiải thích: Khi kiểm tra xem bộ ba số (3, 4, 5) có tạo thành tam giác vuông hay không, chúng ta sử dụng định lý Pythagore. Định lý này xác định rằng trong một tam giác vuông, bình phương của cạnh huyền (c) bằng tổng bình phương của hai cạnh còn lại (a và b). Đặt a = 3, b = 4, c = 5, ",
+    "context_token_count": 201,
+    "fusion_time": 2.5865259170532227
+  },
+  {
+    "question_index": 290,
+    "question": "Người kiểm thử cần quan tâm điều gì liên quan đến đặc tả được đề cập trong tài liệu Public_061?",
+    "options": [
+      "Người thiết lập đặc tả (người thiết kế, lập trình viên)",
+      "Cách viết đặc tả",
+      "Ngôn ngữ đặc tả",
+      "Văn phong đặc tả"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A",
+    "llm_full_answer": "Câu trả lời đúng là B. Cách viết đặc tả.\nTheo nội dung của tài liệu, người kiểm thử cần chú ý đến cách viết đặc tả và các thuộc tính của đặc tả như đầy đủ, trúng đích, chính xác và rõ ràng, tương thích, hợp lệ, khả thi, phi mã lệnh, khả kiểm thử. Những yếu tố này đều liên quan đến cách viết đặc tả, ",
+    "context_token_count": 613,
+    "fusion_time": 5.261657476425171
+  },
+  {
+    "question_index": 291,
+    "question": "Đâu không phải nguyên tắc cốt lõi của khảo sát đặc tả mức cao theo tài liệu Public_061?",
+    "options": [
+      "\"Hãy là khách hàng của sản phẩm\"",
+      "\"Hãy nghiên cứu các chuẩn và hướng dẫn hiện hành\"",
+      "\"Hãy xem xét và kiểm thử các phần mềm tương tự\"",
+      "\"Hãy phối hợp với đội nhóm và khách hàng\""
+    ],
+    "llm_answer": "A",
+    "gt_answer": "D",
+    "llm_full_answer": "A\nGiải thích: Nguyên tắc \"Hãy là khách hàng của sản phẩm\" nằm trong nguyên tắc quan trọng của khảo sát đặc tả mức cao, vì người kiểm thử cần hiểu rõ yêu cầu và mong đợi của người dùng cuối. Tuy nhiên, nó không phải là nguyên tắc cốt lõi nhất, thay vào đó, nguyên tắc \"Khảo sát từ mức cao\" (đặt ra đầu",
+    "context_token_count": 302,
+    "fusion_time": 3.3578147888183594
+  },
+  {
+    "question_index": 293,
+    "question": "Nhận định nào là chính xác về việc kiểm thử đặc tả mức thấp? Chọn hai nhận định",
+    "options": [
+      "Nghiên cứu những đặc tả được đề ra ở mức chung nhất",
+      "Phân tích các thuật ngữ được nêu trong đặc tả",
+      "Kiểm tra các thuộc tính của các đặc tả",
+      "Đảm bảo đặc tả tuân theo các tiêu chuẩn pháp lý"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B,C",
+    "llm_full_answer": "C\nGiải thích:\nTrong phần thông tin cung cấp, hai nhận định chính xác về việc kiểm thử đặc tả mức thấp là:\n\n1. **Đánh giá các thuộc tính của đặc tả**: Nhận định này nói rằng việc kiểm thử đặc tả mức thấp bao gồm việc duyệt và đánh giá xem đặc tả có đáp ứng các thuộc tính như đầy đủ, trúng đích, chính",
+    "context_token_count": 512,
+    "fusion_time": 4.173757076263428
+  },
+  {
+    "question_index": 294,
+    "question": "Đâu không phải một thuật ngữ nhập nhằng trong đặc tả?",
+    "options": [
+      "Nào đó",
+      "Đôi khi",
+      "Chẳng hạn",
+      "Đa số"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "D. Đa số\n\nGiải thích:\n- **Đa số**: Đây là một thuật ngữ cụ thể và có thể kiểm thử. \"Đa số\" chỉ ra tỷ lệ phần lớn, nên có thể xác định được mức độ chính xác của thuật ngữ này. Vì vậy, \"đa số\" không phải là một thuật ngữ nhập nhằng. \n\n- **Nào đó**, **đôi khi**, **chẳng hạn**, **như vậy**: Những thuật ",
+    "context_token_count": 356,
+    "fusion_time": 3.7912991046905518
+  },
+  {
+    "question_index": 296,
+    "question": "Kiểm thử giá trị biên tổ hợp có công thức số ca kiểm thử là hàm số như nào?",
+    "options": [
+      "Tuyến tính",
+      "Bình phương",
+      "Bậc ba",
+      "Hàm số mũ"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A,B,C,D",
+    "llm_full_answer": "D. Hàm số mũ\n\nGiải thích: Theo thông tin trong context, số ca kiểm thử cho kiểm thử giá trị biên tổ hợp được xác định bằng công thức \\(5^n\\), trong đó n là số lượng biến. Đây là dạng công thức hàm số mũ (exponential function). \n\n- Hàm số mũ là một loại hàm số có dạng \\(a^x\\) với a > 0 và a ≠ 1.\n- Tr",
+    "context_token_count": 364,
+    "fusion_time": 4.52997899055481
+  },
+  {
+    "question_index": 297,
+    "question": "Ký hiệu của cận biên max và cận biên min theo tài liệu Public_062 là gì?",
+    "options": [
+      "max+ và min-",
+      "max- và min+",
+      "maxx và minn",
+      "Maxx và Minn"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D. Maxx và Minn\n\nĐáp án D chính xác dựa trên thông tin từ tài liệu Public_062. Theo đó:\n\n- Cận biên max được ký hiệu là *max*.\n- Cận biên min được ký hiệu là *min*.\n\nVì vậy, đáp án chính xác là D - Maxx và Minn (đây chỉ là phiên bản dịch hoặc viết tắt không chính thức của *max* và *min*). Tuy nhiên,",
+    "context_token_count": 162,
+    "fusion_time": 1.955993413925171
+  },
+  {
+    "question_index": 299,
+    "question": "Giả sử một hàm ba biến f(x1, x2, x3) được đem ra kiểm thử giá trị biên, hỏi một ca kiểm thử gốc sẽ cho ra bao nhiêu ca kiểm thử dẫn xuất?",
+    "options": [
+      "4",
+      "8",
+      "12",
+      "16"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C",
+    "llm_full_answer": "B. 8\n\nGiải thích:\nTheo thông tin đã cung cấp, khi n = 3 (trong trường hợp này n = 3 vì hàm có ba biến), số ca kiểm thử dẫn xuất sẽ là:\n\n\\[ 4n = 4 \\times 3 = 12 \\]\n\nTuy nhiên, trong đáp án đề cương, người ta đã chọn B. 8 làm đáp án. Có thể đây là một lỗi in hoặc hiểu lầm. Tuy nhiên, dựa trên cách tín",
+    "context_token_count": 224,
+    "fusion_time": 9.411847352981567
+  },
+  {
+    "question_index": 307,
+    "question": "Trong tài liệu Public_064, có bao nhiêu độ đo được quyết định chỉ dựa trên câu lệnh rẽ nhánh; đó là những độ đo nào?",
+    "options": [
+      "Hai. C1 và C2",
+      "Hai. C2 và C3",
+      "Hai. C3 và C1",
+      "Ba. C1, C2 và C3"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D. Ba. C1, C2 và C3\n\nGiải thích: Theo thông tin đã cung cấp, trong tài liệu Public_064, ba độ đo kiểm thử được xác định chỉ dựa trên câu lệnh rẽ nhánh. Cụ thể, chúng bao gồm:\n\n- **Độ đo kiểm thử cấp 1 (C1)**: Đảm bảo rằng mỗi câu lệnh trong chương trình được thực hiện ít nhất một lần.\n- **Độ đo kiểm",
+    "context_token_count": 273,
+    "fusion_time": 2.8834612369537354
+  },
+  {
+    "question_index": 309,
+    "question": "Xét hàm sau:\nif (a == 0) return 0;\nif (a == b) return 1;\nreturn 2;\nCần bao nhiêu ca kiểm thử để đảm bảo 100% độ phủ cho độ đo C1?",
+    "options": [
+      "Ba",
+      "Hai",
+      "Bốn",
+      "Năm"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A",
+    "llm_full_answer": "B. Hai\nGiải thích:\nTheo thông tin được cung cấp, để đảm bảo 100% độ phủ cho độ đo C1 cho hàm đã cho, chúng ta cần thiết lập hai ca kiểm thử như sau:\n\n1. **Ca kiểm thử 1 (tc1)**: Kiểm tra trường hợp `a == 0`. Hàm sẽ trả về 0.\n2. **Ca kiểm thử 2 (tc2)**: Kiểm tra trường hợp `a == b`. Hàm sẽ trả về 1.\n",
+    "context_token_count": 157,
+    "fusion_time": 1.9616916179656982
+  },
+  {
+    "question_index": 311,
+    "question": "Trong tài liệu Public_065, bối cảnh \"các đoạn câu lệnh\" hàm ý gì?",
+    "options": [
+      "Có thể tách đoạn câu lệnh thành các câu lệnh theo thứ tự",
+      "Một nhóm câu lẹnh không thể tách rời",
+      "Một tổ hợp câu lệnh có ý nghĩa",
+      "Một nhóm câu lệnh có thể tách rời tùy ý"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D\nGiải thích:\nTheo thông tin đã cung cấp, thuật ngữ \"các đoạn câu lệnh\" trong tài liệu Public_065 liên quan đến việc phân tích các cấu trúc phức tạp trong chương trình, bao gồm cả các câu lệnh đơn lẻ và các cấu trúc phức tạp hơn như lặp, điều kiện và hàm. Điều này có nghĩa là chúng có thể được tách ",
+    "context_token_count": 393,
+    "fusion_time": 5.449731349945068
+  },
+  {
+    "question_index": 312,
+    "question": "Trong xây dựng lát cắt, câu lệnh dạng I-def và I-use đối với biến v sẽ được xử lý như nào? (Trả lời đúng thứ tự)",
+    "options": [
+      "Đều loại bỏ",
+      "Thêm vào và loại bỏ",
+      "Loại bỏ và thêm vào",
+      "Đều thêm vào"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D\nTheo thông tin đã cung cấp, khi xử lý các câu lệnh dạng *I-def* và *I-use* đối với biến *v* trong quá trình xây dựng lát cắt:\n\n1. **Thêm vào lát cắt**: \n   - Nếu nút chứa một định nghĩa của biến *v* (*I-def* hoặc *A-def*), nút đó sẽ được thêm vào lát cắt *S*(V, n). \n   - Tất cả các *I-def* và *A-d",
+    "context_token_count": 337,
+    "fusion_time": 3.6807539463043213
+  },
+  {
+    "question_index": 319,
+    "question": "Điểm nào dưới đây là điểm chung cho hầu hết các hình thức biểu diễn mô hình dữ liệu?",
+    "options": [
+      "Các hình thức dùng đồ thị luôn cho ra một đồ thị có hướng không chu trình (DAG)",
+      "Các hình thức luôn rất phức tạp, loằng ngoằng",
+      "Được biểu diễn xoay quanh phép logic kéo theo và hệ thống biến - chuyển",
+      "Không có điểm chung nào thống nhất các hình thức"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "D\nGiải thích: Dựa trên thông tin đã cung cấp, câu trả lời đúng là D. Không có điểm chung nào thống nhất cho tất cả các hình thức biểu diễn mô hình dữ liệu. Mỗi hình thức có đặc trưng riêng và mục đích riêng của nó. Điểm chung duy nhất mà chúng ta có thể thấy là việc tổ chức và xử lý thông tin một cá",
+    "context_token_count": 473,
+    "fusion_time": 4.73760461807251
+  },
+  {
+    "question_index": 322,
+    "question": "Có bao nhiêu bước phân tích trong quy trình được mô tả trong tài liệu Public_067 và tên của chúng là gì?",
+    "options": [
+      "Hai. Phân tích tĩnh và phân tích động",
+      "Ba. Phân tích tĩnh, phân tích độ phủ và phân tích động",
+      "Hai. Phân tích độ phủ và phân tích động",
+      "Hai. Phân tích độ phủ và phân tích tĩnh"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. Hai. Phân tích tĩnh và phân tích động\nGiải thích: Trong tài liệu, quy trình có hai bước chính liên quan đến phân tích. Bước thứ hai là \"Phân tích động\", trong đó công cụ kiểm tra việc thực hiện các câu lệnh trong chương trình để phát hiện lỗi và đánh giá hiệu quả của bộ kiểm thử. Các bước khác kh",
+    "context_token_count": 252,
+    "fusion_time": 2.56974196434021
+  },
+  {
+    "question_index": 324,
+    "question": "Trong kiểm thử dựa trên mô hình, những hoạt động nào không được tự động tạo ra từ mô hình mà do con người thực hiện?",
+    "options": [
+      "Sinh các ca kiểm thử",
+      "Chương trình cần kiểm thử",
+      "Sinh đầu ra mong muốn",
+      "So sánh kết quả kiểm thử"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A\nGiải thích: Trong tình huống kiểm thử dựa trên mô hình, sinh các ca kiểm thử (cho phép con người thiết kế các kịch bản kiểm thử) không được tự động tạo ra từ mô hình. Các hoạt động khác như sinh đầu ra mong muốn, chương trình cần kiểm thử và so sánh kết quả kiểm thử đều có thể được tự động hóa một",
+    "context_token_count": 326,
+    "fusion_time": 2.922473192214966
+  },
+  {
+    "question_index": 331,
+    "question": "Khi thu thập dữ liệu với tần suất cao (high-frequency), thách thức lớn nhất thường là gì?",
+    "options": [
+      "Thiếu metadata",
+      "Lưu lượng/ dung lượng lưu trữ và xử lý dữ liệu lớn",
+      "Tính xu hướng không rõ ràng",
+      "Dữ liệu ít có biến động bất thường"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A\nĐáp án đúng là A - Thiếu metadata.\nGiải thích:\nTheo thông tin trong đoạn văn, thách thức lớn nhất khi thu thập dữ liệu với tần suất cao (high-frequency) không phải là thiếu metadata. Thay vào đó, nó đề cập đến các vấn đề liên quan đến bảo mật và quản lý thông tin cá nhân, như:\n- Việc bảo vệ hàng t",
+    "context_token_count": 369,
+    "fusion_time": 3.355830430984497
+  },
+  {
+    "question_index": 356,
+    "question": "Thuật toán nào thường dùng để tối ưu hóa tổ hợp trong mạng 6G?",
+    "options": [
+      "Backpropagation",
+      "Gradient Descent",
+      "Quantum Approximate Optimization Algorithm (QAOA)",
+      "PageRank"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C",
+    "llm_full_answer": "B. Gradient Descent\nExplanation:\nTrong ngữ cảnh được cung cấp, Gradient Descent và các thuật toán tối ưu hóa liên quan khác như SGD với động lượng, RMSProp, Adagrad, Adadelta và Adam được đề cập là các phương pháp tối ưu hóa có thể được sử dụng trong mạng 6G. \n\nMặc dù thuật toán QAOA (Quantum Approx",
+    "context_token_count": 276,
+    "fusion_time": 2.6453850269317627
+  },
+  {
+    "question_index": 501,
+    "question": "Một điện tích thử q=+2 Cq = +2 \\, Cq=+2C được dịch chuyển trong điện trường từ điểm M đến điểm N. Công của lực điện thực hiện là 10 J10 \\, J10J. Hiệu điện thế giữa hai điểm M và N bằng bao nhiêu?",
+    "options": [
+      "2 V",
+      "5 V",
+      "10 V",
+      "20 V"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "Câu hỏi đề cập đến việc tính hiệu điện thế giữa hai điểm M và N khi một điện tích thử được dịch chuyển trong điện trường và công của lực điện thực hiện. \n\nTheo định luật công suất, độ biến thiên thế năng (\\(\\Delta U\\)) giữa hai điểm M và N được tính bằng công của lực điện thực hiện (\\(W = 10 \\, J\\))",
+    "context_token_count": 277,
+    "fusion_time": 3.166994094848633
+  },
+  {
+    "question_index": 506,
+    "question": "Hai thuật toán quan trọng trong Linear-Chain CRFs lần lượt được dùng cho huấn luyện và suy luận là gì?",
+    "options": [
+      "Forward-Backward & Viterbi",
+      "Viterbi & SGD",
+      "L-BFGS & Forward-Backward",
+      "Expectation-Maximization & Viterbi"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A",
+    "llm_full_answer": "B. Viterbi & SGD\n\nGiải thích:\n- Theo thông tin trong context, thuật toán Viterbi được sử dụng cho suy luận (đặt câu hỏi) và quá trình huấn luyện (tối ưu hóa trọng số).\n- Trong đó, thuật toán Viterbi được sử dụng cho suy luận, còn thuật toán SGD (Stochastic Gradient Descent) thường được sử dụng cho q",
+    "context_token_count": 276,
+    "fusion_time": 3.622725248336792
+  },
+  {
+    "question_index": 509,
+    "question": "Nghiệm w tối ưu (Fisher) có thể chọn tỉ lệ theo biểu thức nào?",
+    "options": [
+      "w ∝ S_W (m_1 − m_2)",
+      "w ∝ S_B (m_1 − m_2)",
+      "w ∝ S_W^{-1} (m_1 − m_2)",
+      "w ∝ S_W^{-1} (m_1 − m_2)"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C,D",
+    "llm_full_answer": "D\nGiải thích: Trong biểu thức \\( w = \\alpha S_W^{-1}(m_1 - m_2) \\), ta thấy rằng \\( w \\) được nhân với \\( S_W^{-1} \\). Do đó, đáp án đúng là D: \\( w \\propto S_W^{-1}(m_1 - m_2) \\). Các đáp án còn lại không phù hợp vì chúng không bao gồm yếu tố \\( S_W^{-1} \\).",
+    "context_token_count": 116,
+    "fusion_time": 1.715667724609375
+  },
+  {
+    "question_index": 513,
+    "question": "Trong va chạm đàn hồi, động lượng của hệ có đặc điểm gì và năng lượng của hệ có đặc điểm gì?",
+    "options": [
+      "Cùng bảo toàn; cùng thay đổi",
+      "Động lượng bảo toàn; năng lượng cũng bảo toàn",
+      "Động lượng thay đổi; năng lượng bảo toàn",
+      "Động lượng bảo toàn; năng lượng không bảo toàn"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D. Động lượng bảo toàn; năng lượng không bảo toàn\n\nGiải thích:\n- Động lượng của hệ được bảo toàn trong va chạm đàn hồi, theo định luật conservation of momentum.\n- Năng lượng của hệ không được bảo toàn hoàn toàn do có một phần năng lượng biến mất dưới dạng năng lượng âm (tức là năng lượng chuyển thàn",
+    "context_token_count": 326,
+    "fusion_time": 3.7669923305511475
+  },
+  {
+    "question_index": 529,
+    "question": "Lực ma sát trượt có những đặc điểm nào?",
+    "options": [
+      "Luôn ngược chiều với chuyển động tương đối",
+      "Luôn cùng chiều với vận tốc",
+      "Không phụ thuộc vào trọng lực",
+      "Không phụ thuộc vào bề mặt tiếp xúc"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D\nLực ma sát trượt có đặc điểm không phụ thuộc vào bề mặt tiếp xúc. Do đó, đáp án đúng là D. \n\nGiải thích thêm:\n- A: Thực tế, lực ma sát trượt luôn hướng ngược lại với hướng chuyển động, không phải ngược chiều với chuyển động tương đối. \n- B: Lực ma sát trượt ngược lại với hướng chuyển động, không p",
+    "context_token_count": 386,
+    "fusion_time": 4.0003743171691895
+  },
+  {
+    "question_index": 537,
+    "question": "Văn bản chủ yếu tập trung nghiên cứu vấn đề gì?",
+    "options": [
+      "So sánh các mô hình deep learning khác nhau",
+      "Song song hóa SGD trong môi trường HPC với thiết kế tập trung và phân tán",
+      "Ứng dụng reinforcement learning trong HPC",
+      "Tối ưu hóa inference thời gian thực"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A\nĐây là một lựa chọn sai. Văn bản chủ yếu tập trung nghiên cứu việc ứng dụng công nghệ số trong quản trị đại học tại Việt Nam. Vì vậy, không phù hợp với các lựa chọn A, B, C và D đề cập đến các lĩnh vực khác nhau của AI và HPC (công nghệ xử lý hàng loạt).\n\nĐáp án đúng là D.\nVăn bản chủ yếu tập trun",
+    "context_token_count": 442,
+    "fusion_time": 3.667504072189331
+  },
+  {
+    "question_index": 547,
+    "question": "Giả sử 2 lớp có m1−m2 = [2, −1]^T, và S_W = [[5, 1], [1, 2]]. Tính hướng phân biệt tuyến tính của Fisher (Fisher's linear discriminant direction) w, biết rằng w tỉ lệ với S_W^{-1}(m1−m2).",
+    "options": [
+      "[0.5, −1.5]^T",
+      "[0.333, −0.666]^T",
+      "[1, −1]^T",
+      "[0.4, −1.2]^T (tỷ lệ)"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "D",
+    "llm_full_answer": "B. [0.333, −0.666]^T\nGiải thích: \n\nĐầu tiên, chúng ta đã tính được ma trận nghịch đảo của S_W (S_W^{-1}) bằng cách sử dụng công thức cho ma trận 2x2. Sau đó, ta nhân S_W^{-1} với vector (m1−m2). Kết quả từ phép nhân này chính là w mà chúng ta đang tìm kiếm. Tuy nhiên, vì w tỉ lệ với (m1−m2), ta chỉ ",
+    "context_token_count": 406,
+    "fusion_time": 7.306784391403198
+  },
+  {
+    "question_index": 566,
+    "question": "Dựa vào Document Index: Public_129, hãy trình bày công thức hoặc phương pháp tính gia tốc của một vật khi biết khối lượng, lực kéo ngang và hệ số ma sát trượt.",
+    "options": [
+      "2 m/s²",
+      "3 m/s²",
+      "4 m/s²",
+      "5 m/s²"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "Dựa vào thông tin trong đoạn văn bản, chúng ta cần sử dụng công thức tính gia tốc từ thông tin đã cho. Cụ thể:\n\n1. Đặt lại công thức:\n\\[\na = \\frac{F - \\mu_k mg}{m}\n\\]\n\n2. Thay vào các giá trị đã cho:\n- Khối lượng \\( m = 10 \\, \\text{kg} \\)\n- Lực kéo \\( F = 50 \\, \\text{N} \\)\n- Hệ số ma sát trượt \\( \\m",
+    "context_token_count": 566,
+    "fusion_time": 5.879878759384155
+  },
+  {
+    "question_index": 567,
+    "question": "Một thanh đồng chất dài 4 m, khối lượng 40 kg được đặt nằm ngang trên hai giá đỡ ở hai đầu. Một vật nặng 20 kg được đặt tại điểm cách đầu trái của thanh 1 m. Hỏi phản lực của giá đỡ bên phải bằng bao nhiêu? (Lấy g = 10 m/s²).",
+    "options": [
+      "200 N",
+      "300 N",
+      "400 N",
+      "500 N"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D. 500 N\n\nGiải thích:\nTheo tính toán, phản lực của giá đỡ bên phải \\( R_R \\) bằng 250 N. Tuy nhiên, trong đáp án có một sự nhầm lẫn. Trong quá trình tính toán, chúng ta đã bỏ qua trọng lực của thanh. Do đó, tổng trọng lực của thanh và vật nặng là \\( 400 \\, \\text{N} + 200 \\, \\text{N} = 600 \\, \\text{N",
+    "context_token_count": 500,
+    "fusion_time": 6.511413097381592
+  },
+  {
+    "question_index": 573,
+    "question": "Công thức marginal p(x)p(x)p(x) và conditional p(x∣y)p(x\\mid y)p(x∣y) lần lượt là gì?",
+    "options": [
+      "p(x)=∑y​p(x,y);\\ \\ p(x∣y)=p(x,y)p(y)p(x\\mid y)=\\dfrac{p(x,y)}{p(y)}p(x∣y)=p(y)p(x,y)​",
+      "p(x)=∫p(y∣x)dy;\\ \\ p(x∣y)=p(x)p(y)p(x\\mid y)=\\dfrac{p(x)}{p(y)}p(x∣y)=p(y)p(x)​",
+      "p(x)=∑yp(y∣x)p(x)=\\sum_y p(y\\mid x)p(x)=∑y​p(y∣x);\\ \\ p(x∣y)=p(y)p(x,y)p(x\\mid y)=\\dfrac{p(y)}{p(x,y)}p(x∣y)=p(x,y)p(y)​",
+      "p(x)=∑y​p(x∣y);\\ \\ p(x∣y)=p(y∣x)p(y)p(x\\mid y)=\\dfrac{p(y\\mid x)}{p(y)}p(x∣y)=p(y)p(y∣x)​"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A\nGiải thích:\n\nTrong câu hỏi, chúng ta cần xác định công thức cho xác suất biên (marginal probability) và xác suất có điều kiện (conditional probability) từ các phương án cung cấp.\n\nXét công thức xác suất biên (marginal probability):\n- Trong phần tóm tắt, công thức xác suất biên cho biến rời rạc là:",
+    "context_token_count": 318,
+    "fusion_time": 4.9545674324035645
+  },
+  {
+    "question_index": 591,
+    "question": "Đặc trưng nào dưới đây định nghĩa một dao động điều hòa tắt?",
+    "options": [
+      "Biên độ giảm dần theo thời gian do lực cản tỉ lệ với vận tốc.",
+      "Gia tốc tỉ lệ thuận với độ dời và ngược dấu.",
+      "Biên độ không đổi và tần số thay đổi theo thời gian.",
+      "Chỉ xảy ra trong hệ không có lực hồi phục."
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A",
+    "llm_full_answer": "B\n\nGiải thích:\nĐây là một câu hỏi về nhận biết về đặc trưng của dao động điều hòa tắt. Để trả lời câu hỏi này, chúng ta cần hiểu rõ về các đặc trưng của dao động điều hòa tắt và so sánh chúng với các lựa chọn đã cho.\n\nCâu hỏi đặt ra yêu cầu xác định đặc trưng nào trong các lựa chọn dưới đây định ngh",
+    "context_token_count": 436,
+    "fusion_time": 4.828740119934082
+  },
+  {
+    "question_index": 614,
+    "question": "Một học sinh ngồi trên ghế xoay cầm hai quả tạ 3 kg, ban đầu dang tay ra cách trục 1,0 m và quay với tốc độ góc 0,75 rad/s. Khi co tay lại còn cách 0,3 m, hãy cho biết tốc độ góc mới so với ban đầu:",
+    "options": [
+      "Nhỏ hơn 0,75 rad/s.",
+      "Bằng 0,75 rad/s.",
+      "Lớn hơn 0,75 rad/s.",
+      "Không xác định được."
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A. Nhỏ hơn 0,75 rad/s.\nTheo nguyên lý bảo toàn mômen động lượng, tổng mômen động lực của hệ luôn giữ恒定. Trong trường hợp này, khi học sinh co tay lại từ khoảng cách 1,0 m sang 0,3 m, mômen quán tính của hệ tăng lên do thêm hai quả tạ gần trục hơn. Điều này dẫn đến tốc độ góc giảm xuống để giữ cho tổ",
+    "context_token_count": 374,
+    "fusion_time": 6.524260759353638
+  },
+  {
+    "question_index": 621,
+    "question": "Khi nào sóng dừng hình thành, theo tài liệu Public_142?",
+    "options": [
+      "Khi sóng truyền gặp một vật cản và bị hấp thụ",
+      "Khi hai sóng truyền ngược chiều có cùng tần số, biên độ giao thoa với nhau",
+      "Khi sóng truyền trong chân không",
+      "Khi sóng gặp vật cản và bị triệt tiêu hoàn toàn"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. Khi sóng truyền gặp một vật cản và bị hấp thụ\nGiải thích:\nTheo thông tin trong tài liệu Public_142, sóng dừng hình thành khi có sự chuyển pha xảy ra trong một hệ thống. Điều này bao gồm sự nhiễu loạn trong hệ thống, dẫn đến sự tách rời các phân tử nước, ngăn chặn chúng đóng băng.\n\nTrong đó, sóng ",
+    "context_token_count": 356,
+    "fusion_time": 3.171137571334839
+  },
+  {
+    "question_index": 623,
+    "question": "Trong PCA, công thức của ma trận hiệp phương sai SSS và toạ độ sau khi chiếu Z (trên K thành phần chính) lần lượt là gì?",
+    "options": [
+      "S=N1​XXT; Z=UKTXZ = U_K^T XZ=UKT​X",
+      "S=N1​X^TX^; Z=X^UKZ = \\hat{X}U_KZ=X^UK​",
+      "S=N1​X^X^T; Z=UKTX^Z = U_K^T \\hat{X}Z=UKT​X^",
+      "S=X^X^T; Z=UKX^Z = U_K \\hat{X}Z=UK​X^"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A",
+    "llm_full_answer": "C\nGiải thích:\n\n- Công thức cho ma trận hiệp phương sai \\(S\\) là:\n  \\[\n  S = \\frac{1}{N} \\dot{X} \\dot{X}^T\n  \\]\n  Dữ liệu đã chuẩn hóa được tính theo:\n  \\[\n  \\dot{X} = X - \\bar{x}1^T\n  \\]\n  Trong đó, \\(X\\) là dữ liệu gốc chưa chuẩn hóa, \\(\\bar{x}\\) là kỳ vọng của dữ liệu và \\(1\\) là vector 1 có cùng ",
+    "context_token_count": 166,
+    "fusion_time": 2.2189056873321533
+  },
+  {
+    "question_index": 630,
+    "question": "CSSR phản ánh điều gì trong chất lượng mạng?",
+    "options": [
+      "Tỉ lệ rớt cuộc gọi",
+      "Tỉ lệ thành công của handover",
+      "Tỉ lệ thiết lập cuộc gọi thành công",
+      "Tỉ lệ nghẽn kênh thoại"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "C",
+    "llm_full_answer": "A\nCSSR phản ánh chất lượng mạng thông qua việc đo lường sự hài lòng của khách hàng về các dịch vụ mà mạng cung cấp. Các yếu tố như độ tin cậy, tốc độ, độ ổn định và khả năng phục vụ của mạng đều được đánh giá thông qua việc khách hàng phản hồi về trải nghiệm của mình với các dịch vụ mà mạng cung cấp",
+    "context_token_count": 284,
+    "fusion_time": 2.9117889404296875
+  },
+  {
+    "question_index": 653,
+    "question": "Ứng dụng của hiệu điện thế trong việc truyền tải và phân phối điện năng là gì?",
+    "options": [
+      "Xác định khối lượng riêng của chất rắn",
+      "Đo và cung cấp năng lượng điện trong mạch điện",
+      "Kiểm tra độ bền của vật liệu",
+      "Nghiên cứu cấu trúc phân tử"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D\n\nGiải thích:\nDựa trên thông tin đã được cung cấp, ứng dụng chính của hiệu điện thế trong lĩnh vực truyền tải và phân phối điện năng bao gồm:\n\n1. Giảm tổn thất năng lượng trong quá trình truyền tải điện.\n2. Điều chỉnh hiệu điện thế để đảm bảo các thiết bị hoạt động hiệu quả và an toàn.\n3. Tối ưu hó",
+    "context_token_count": 602,
+    "fusion_time": 5.054701328277588
+  },
+  {
+    "question_index": 656,
+    "question": "Sử dụng thông tin từ tài liệu Public_126, hãy cho biết quãng đường ánh sáng đi được trong chân không trong 1 microsecond (1 µs = 10⁻⁶ s).",
+    "options": [
+      "299,8 m",
+      "2.998 m",
+      "29,98 m",
+      "0,2998 m"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D. 0,2998 m\n\nGiải thích: Theo thông tin đã cung cấp, quãng đường ánh sáng đi được trong chân không trong 1 microsecond là 0,2998 mét, tương đương với đáp án D. 0,2998 m. Đáp án A, B và C đều sai so với kết quả tính toán. \n\nCách giải quyết:\n- Đầu tiên, ta xác định tốc độ ánh sáng trong chân không là ",
+    "context_token_count": 202,
+    "fusion_time": 2.9051554203033447
+  },
+  {
+    "question_index": 680,
+    "question": "Theo tài liệu Public_147, một kim loại có công thoát là 2 eV. Nếu chiếu ánh sáng có năng lượng photon đúng bằng 2 eV, thì electron có bật ra không và động năng cực đại bằng bao nhiêu?",
+    "options": [
+      "Có, động năng bằng 2 eV",
+      "Có, động năng bằng 0",
+      "Không, vì năng lượng photon nhỏ hơn công thoát",
+      "Không, vì electron không thể rời khỏi kim loại"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D. Không, vì electron không thể rời khỏi kim loại\nGiải thích:\nDựa vào thông tin trong tài liệu, chúng ta biết rằng khi năng lượng photon của ánh sáng đúng bằng công thoát của kim loại, electron sẽ không đủ năng lượng để bật ra khỏi bề mặt kim loại. Trong trường hợp này, năng lượng photon là 2 eV và ",
+    "context_token_count": 216,
+    "fusion_time": 2.6964688301086426
+  },
+  {
+    "question_index": 698,
+    "question": "Với mức độ rẽ nhánh là b và độ sâu lời giải d, độ phức tạp bộ nhớ của thuật toán BFS là gì?",
+    "options": [
+      "O(b + d)",
+      "O(bd)",
+      "O(bd + 1)",
+      "O(b^d)"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "D\nThe given context provides a clear explanation of the space complexity of the Breadth-First Search (BFS) algorithm based on the branching factor \\( b \\) and the depth \\( d \\) of the solution. The relevant information from the context is:\n\n- If no early termination check for the goal state is perfo",
+    "context_token_count": 309,
+    "fusion_time": 3.3877551555633545
+  },
+  {
+    "question_index": 709,
+    "question": "Yếu tố giữ vai trò quyết định trong việc phân loại cân bằng bền, cân bằng không bền và cân bằng phiếm định là:",
+    "options": [
+      "Khối lượng của vật",
+      "Hình dạng bên ngoài của vật",
+      "Vị trí tương đối giữa trọng tâm và điểm tựa",
+      "Lực ma sát tác dụng lên vật"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "D. Lực ma sát tác dụng lên vật\n\nGiải thích:\nTrong quá trình phân loại cân bằng bền, không bền và phiếm định, lực ma sát có vai trò rất quan trọng. Trong trường hợp cân bằng tĩnh, lực ma sát giúp ổn định vật và giữ cho nó ở trạng thái cân bằng. Trong trường hợp cân bằng không bền, lực ma sát có thể l",
+    "context_token_count": 418,
+    "fusion_time": 3.8561439514160156
+  },
+  {
+    "question_index": 723,
+    "question": "Yếu tố \"đầu ra = 1 nếu dự đoán đúng và = 0 nếu ngược lại\" nằm trong các đo độ nào được nhắc đến trong tài liệu?",
+    "options": [
+      "Hamming Loss và Average Precision",
+      "Hamming Loss và One Error",
+      "One Error và Coverage",
+      "Average Precision và Ranking Loss"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A",
+    "llm_full_answer": "B. Hamming Loss và One Error\nGiải thích:\nĐề bài đã nêu rõ rằng yếu tố \"đầu ra = 1 nếu dự đoán đúng và = 0 nếu ngược lại\" xuất hiện trong các độ đo Hamming Loss và One-error. Điều này có thể nhìn thấy từ cách định nghĩa của hai độ đo này. \n\n- Độ đo Hamming Loss sử dụng đầu ra 1 nếu dự đoán đúng và 0 ",
+    "context_token_count": 378,
+    "fusion_time": 4.909542798995972
+  },
+  {
+    "question_index": 734,
+    "question": "Nội dung chính của tài liệu `Public_120` là gì?",
+    "options": [
+      "So sánh các phương pháp MLL",
+      "Giới thiệu và mô tả các phương pháp MLL",
+      "Ứng dụng thực tế của các phương pháp MLL",
+      "Cách xây dựng một mô hình MLL"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C",
+    "llm_full_answer": "B. Giới thiệu và mô tả các phương pháp MLL\n\nGiải thích:\n- Tài liệu `Public_120` tập trung vào các thuật toán phân loại đa nhãn trong học máy.\n- Nó mô tả chi tiết về cách hoạt động của các thuật toán như Multi-label k-Nearest Neighbors (MLkNN), Random k-labelsets (RAKEL), và Binary Relevance (BR).\n- ",
+    "context_token_count": 425,
+    "fusion_time": 4.168700933456421
+  },
+  {
+    "question_index": 752,
+    "question": "Điện dung ký hiệu trên tụ gốm thường được ghi theo dạng nào?",
+    "options": [
+      "Trực tiếp bằng đơn vị Farad",
+      "Theo mã số 3 chữ số (ví dụ 104 = 100nF)",
+      "Dùng ký hiệu màu sắc",
+      "Dùng thang logarit"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "B",
+    "llm_full_answer": "C. Dùng ký hiệu màu sắc\n\nGiải thích:\nKý hiệu màu sắc trên tụ gốm được sử dụng để đánh dấu điện dung một cách dễ dàng và nhanh chóng, thay vì phải đọc trực tiếp từ biểu đồ hoặc bảng. Đây là phương pháp phổ biến nhất trong ngành điện tử và được áp dụng cho tụ gốm. \n\nThí dụ, nếu một tụ gốm có điện dung",
+    "context_token_count": 202,
+    "fusion_time": 2.760091543197632
+  },
+  {
+    "question_index": 764,
+    "question": "Trong trường hợp, số lượng consumer trong cùng một consumer group nhiều hơn số lượng partition của một topic thì xảy ra vấn đề gì? ",
+    "options": [
+      "Số lượng consumer dư thừa sẽ nhàn rỗi vì chúng không được gắn vào bất kỳ partition",
+      "Không có vấn đề gì cả, hệ thống hoạt động bình thường",
+      " Giảm hiệu suất tổng thể của hệ thống do tốn thêm tài nguyên và thời gian xử lý",
+      "Hệ thống có thể trở nên chậm lại và ít nhạy bén hơn trong việc xử lý các message, gây ra gián đoạn và giảm hiệu suất chung"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D\nGiải thích: Trong trường hợp này, nếu số lượng consumer trong cùng một consumer group nhiều hơn số lượng partition của một topic, điều này dẫn đến một loạt các vấn đề. Đầu tiên là vấn đề phân phối không đồng đều, nơi một số consumer sẽ không có partition nào để đọc, dẫn đến việc không tận dụng hết",
+    "context_token_count": 301,
+    "fusion_time": 2.8236026763916016
+  },
+  {
+    "question_index": 771,
+    "question": "Trong phần “Ưu điểm của PostgreSQL”, văn bản liệt kê những điểm nào?",
+    "options": [
+      "Hiệu suất cao với truy vấn phức tạp và dữ liệu lớn",
+      "Hỗ trợ kiểu dữ liệu do người dùng định nghĩa",
+      "Tuân thủ ACID với ghi nhật ký trước (write-ahead logging)",
+      "Tích hợp sẵn công cụ pgloader"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A,B,C",
+    "llm_full_answer": "Câu trả lời đúng là A, B, C.\n\nGiải thích:\n\n- Câu A: \"Hiệu suất cao với truy vấn phức tạp và dữ liệu lớn\" đúng trong phần \"Ưu điểm của PostgreSQL\". Đây được nêu rõ ở điểm số 1 của phần thông tin đã cung cấp.\n\n- Câu B: \"Hỗ trợ kiểu dữ liệu do người dùng định nghĩa\" cũng đúng, được nêu ở điểm số 2 của ",
+    "context_token_count": 130,
+    "fusion_time": 1.594630479812622
+  },
+  {
+    "question_index": 783,
+    "question": "Theo tài liệu, hệ thống IDS hoạt động chủ yếu ở lớp nào trong mô hình OSI?\n\n\n\n",
+    "options": [
+      "Lớp Vật lý",
+      "Lớp Liên kết dữ liệu",
+      "Lớp Mạng ",
+      "Lớp Ứng dụng"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "D. Lớp Ứng dụng\n\nGiải thích: Theo tài liệu, IDS (Intrusion Detection System) hoạt động chủ yếu ở lớp Ứng dụng (Application Layer) trong mô hình OSI. IDS được mô tả là \"công cụ cảnh báo\" mà không có khả năng chủ động ngăn chặn tấn công. Điều này phù hợp với hoạt động của lớp Ứng dụng, nơi các ứng dụn",
+    "context_token_count": 2185,
+    "fusion_time": 2.143489360809326
+  },
+  {
+    "question_index": 793,
+    "question": "Dựa trên tài liệu Public_163, hãy xác định một thực thể tham gia mô hình giao dịch SET và một nhiệm vụ chính của thực thể đó.",
+    "options": [
+      "Cardholder; chọn sản phẩm và gửi thông tin đơn hàng ",
+      " Merchant; cấp chứng chỉ số cho các bên",
+      "Payment Gateway; chuyển thông tin thẻ cho ngân hàng của người bán ",
+      " Issuer; cung cấp website thương mại điện tử"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A,C",
+    "llm_full_answer": "C\nGiải thích:\nTrong mô hình giao dịch SET được mô tả trong tài liệu, thực thể tham gia có chức năng và nhiệm vụ cụ thể. Chúng ta có thể phân loại các thực thể tham gia theo từng bước trong quá trình giao dịch như sau:\n\n1. **Cardholder (Khách hàng):** Thực hiện bước 1 và 8. Họ duyệt sản phẩm và chọn ",
+    "context_token_count": 2536,
+    "fusion_time": 2.1736690998077393
+  },
+  {
+    "question_index": 808,
+    "question": "Khi công ty có một nhóm QA/Tester với background là ít kỹ năng lập trình, theo bạn thì lựa chọn công cụ nào phù hợp nhất để phù hợp với đội nhóm cho việc kiểm thử tự động?",
+    "options": [
+      "Công cụ kiểm thử tự động, từ miễn phí (Open Source, Freeware). Chẳng hạn Opensource có thể kể đến như: Selenium IDE, Selenium WebDriver, Appium, Cucumber, hay có License như: Postman, Katalon, akaAT, …",
+      "Các công cụ như Visual Studio, IntelliJ IDEA, Eclipse, và Code Editor",
+      "Các công cụ có trả phí (License) thường cung cấp giao diện trực quan cùng các tiện ích và nhiều tính năng hỗ trợ tối đa cho người dùng có thể tạo ra kịch bản nhanh chóng, chỉ phải kéo thả, Record và config. ",
+      "Các công cụ như Jira, Trello, các công cụ quản lý kiểm thử như TestLink, Zephyr, TestRail"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A\nTrong trường hợp bạn đang có một nhóm QA/Tester với ít kỹ năng lập trình, việc lựa chọn công cụ kiểm thử tự động từ nguồn mở (Open Source, Freeware) như Selenium IDE, Selenium WebDriver, Appium, Cucumber, hoặc các công cụ có sẵn như Postman, Katalon, akaAT, sẽ là lựa chọn phù hợp. Những công cụ nà",
+    "context_token_count": 2728,
+    "fusion_time": 2.1261463165283203
+  },
+  {
+    "question_index": 811,
+    "question": "Theo tài liệu, những ưu điểm nổi bật nào của Jira được liệt kê?",
+    "options": [
+      "Phân quyền chi tiết tới từng nhiệm vụ",
+      "Dễ tích hợp với các hệ thống khác",
+      "Hoàn toàn miễn phí với mọi quy mô",
+      "Tích hợp trực tiếp với code trong môi trường phát triển"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,B,D",
+    "llm_full_answer": "A, B, D\n\nĐể trả lời chính xác câu hỏi này, tôi đã phân tích kỹ thông tin được cung cấp trong đoạn văn. Trong đó, tài liệu liệt kê rõ ràng các ưu điểm của Jira:\n\nA. \"Jira có chức năng phân quyền cực kỳ chi tiết, không chỉ phân quyền trong dự án chung, mà còn phân quyền đối với từng nhiệm vụ, giúp tea",
+    "context_token_count": 1660,
+    "fusion_time": 2.1505329608917236
+  },
+  {
+    "question_index": 812,
+    "question": "Olympic 2004 tại Hy Lạp dự kiến kinh phí 2 tỷ EURO, nhưng phải chi tới 12 tỷ EURO. Vậy chi phí thực tế đã vượt bao nhiêu phần trăm (%) so với kế hoạch ban đầu?",
+    "options": [
+      "2",
+      "5",
+      "6",
+      "3"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "To find the percentage by which the actual cost exceeded the planned cost, we can use the following formula:\n\nPercentage Excess = ((Actual Cost - Planned Cost) / Planned Cost) × 100%\n\nPlanned Cost = 2 billion Euros\nActual Cost = 12 billion Euros\n\nNow, let's plug these values into the formula:\n\nPerce",
+    "context_token_count": 4042,
+    "fusion_time": 2.13517165184021
+  },
+  {
+    "question_index": 818,
+    "question": "Nếu hệ thống sử dụng khóa 64 bit, không gian khóa là 2⁶⁴. Giả sử một kẻ tấn công có thể thử 1 tỉ khóa/giây, thời gian cần để thử hết toàn bộ không gian khóa gần bằng bao nhiêu?\n\n",
+    "options": [
+      "Khoảng 500 năm",
+      "Khoảng 584 năm ",
+      " Khoảng 1000 năm",
+      "Khoảng 64 năm"
+    ],
+    "llm_answer": "NONE",
+    "gt_answer": "B",
+    "llm_full_answer": "Để giải quyết bài toán này, chúng ta cần xác định thời gian cần để kẻ tấn công thử hết toàn bộ không gian khóa 2^64.\n\n1. **Tính tổng số khóa trong không gian khóa:**\n   Không gian khóa có kích thước 64 bit, do đó số lượng khóa có thể là 2^64. \n\n2. **Tính tốc độ thử khóa:**\n   Tốc độ thử của kẻ tấn c",
+    "context_token_count": 2856,
+    "fusion_time": 2.102214813232422
+  },
+  {
+    "question_index": 819,
+    "question": "Các phiên bản Ubuntu LTS và các phiên bản hiện đang được hỗ trợ.",
+    "options": [
+      "Ubuntu LTS, Ubuntu Server, Ubuntu MATE, Ubuntu Kylin, ",
+      "Ubuntu LTS, Ubuntu Server, Ubuntu MATE",
+      " Ubuntu Server, Ubuntu MATE, Ubuntu Kylin, ",
+      "Ubuntu LTS, Ubuntu Server"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D. Ubuntu LTS, Ubuntu Server\n\nGiải thích:\nUbuntu LTS (Long Term Support) là phiên bản Ubuntu được hỗ trợ dài hạn. Các phiên bản LTS của Ubuntu nhận được bảo trì và cập nhật bảo mật trong khoảng thời gian kéo dài hàng năm (ví dụ: 5 năm cho phiên bản LTS phổ biến nhất). \n\nTrong khi đó, Ubuntu Server đ",
+    "context_token_count": 2002,
+    "fusion_time": 2.1486315727233887
+  },
+  {
+    "question_index": 820,
+    "question": "Hãy xác định hai cách thêm người dùng vào Tableau, và thao tác đầu tiên trong mỗi cách.",
+    "options": [
+      "Add Users by Username; thao tác đầu tiên là chọn phương thức xác thực ",
+      "\nImport Users from file; thao tác đầu tiên là chọn file phù hợp ",
+      "Add Users by Username; thao tác đầu tiên là nhập mật khẩu",
+      " Import Users from file; thao tác đầu tiên là nhập email"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,B",
+    "llm_full_answer": "A. Add Users by Username; thao tác đầu tiên là chọn phương thức xác thực\nB. Import Users from file; thao tác đầu tiên là chọn file phù hợp\n\nThe two ways to add users into Tableau are as follows:\n\nA. **Add Users by Username**: In this method, you choose the authentication method, enter the user's use",
+    "context_token_count": 1430,
+    "fusion_time": 2.2406744956970215
+  },
+  {
+    "question_index": 836,
+    "question": "Hãy xác định (i) năm DSA được NIST công nhận là chuẩn chữ ký số, và (ii) tên của một thành phần trong PKI có nhiệm vụ xác minh thông tin nhận dạng của người dùng.\n",
+    "options": [
+      "Năm 1991; Registration Authority (RA) ",
+      "\nNăm 1977; Certificate Policy",
+      " Năm 1991; Validation Authority (VA)",
+      "Năm 2001; Central Directory"
+    ],
+    "llm_answer": "C",
+    "gt_answer": "A,C",
+    "llm_full_answer": "C.  Năm 1991; Validation Authority (VA)\n\n(i) Dựa trên thông tin trong đoạn văn, DSA được Viện NIST (Hoa Kỳ) công nhận là chuẩn chữ ký số sử dụng trong các cơ quan chính phủ vào năm 1991.\n\n(ii) Validation Authority (VA) được mô tả là \"cơ quan xác nhận thông tin nhận dạng của người dùng thay mặt CA\" t",
+    "context_token_count": 2510,
+    "fusion_time": 2.1948461532592773
+  },
+  {
+    "question_index": 847,
+    "question": "Số lượng mô hình phòng thủ phổ biến trong an toàn mạng được đề cập trong tài liệu Public_253 là bao nhiêu?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "D",
+    "llm_full_answer": "B. 2\n\nGiải thích:\n\nDựa trên thông tin trong bảng, chúng ta thấy rằng mục 1.2.3 của bảng này đề cập đến \"Các mô hình phòng thủ\". Tuy nhiên, chúng ta chỉ có thể xem xét một phần của thông tin trong bảng. Trong bảng còn có mục \"Phòng thủ 1.2\" (đây có vẻ là một phần của mô hình phòng thủ), nhưng không c",
+    "context_token_count": 756,
+    "fusion_time": 2.287170886993408
+  },
+  {
+    "question_index": 857,
+    "question": "Tóm tắt các nội dung chính của văn bản này",
+    "options": [
+      "Văn bản tập trung vào một loại kiểm thử hiệu năng là Stress Test\n",
+      "Văn bản mô tả kiểm thử hiệu năng đo thời gian phản hồi",
+      "Văn bản cho rằng kiểm thử hiệu năng chỉ cần thiết trong giai đoạn phát triển, không ảnh hưởng đến khi hệ thống vận hành thực tế.",
+      "Văn bản giải thích mục đích kiểm thử hiệu năng, các loại (Load, Stress, Soak, Spike), chỉ số đánh giá (thời gian phản hồi, thông lượng, độ ổn định, khả năng mở rộng) và vai trò trong việc đảm bảo hệ thống hoạt động ổn định khi triển khai. "
+    ],
+    "llm_answer": "B",
+    "gt_answer": "D",
+    "llm_full_answer": "B\nVăn bản này tập trung vào việc mô tả và đánh giá các phương pháp số hóa tài liệu văn bản tại Học viện Ngân hàng thông qua việc cài đặt và thử nghiệm hệ thống nhận dạng ký tự quang học (OCR) bằng công cụ FPT.AI Reader. Mục đích chính của văn bản là tìm hiểu và đánh giá các giải pháp số hóa tài liệu",
+    "context_token_count": 2896,
+    "fusion_time": 2.1198983192443848
+  },
+  {
+    "question_index": 863,
+    "question": "Theo tài liệu Public_162, điểm khác biệt quan trọng giữa IDS và IPS là gì?",
+    "options": [
+      "IDS chủ động ngăn chặn, IPS chỉ giám sát",
+      "IDS chỉ phát hiện, IPS có khả năng ngăn chặn ",
+      "IDS và IPS đều chỉ giám sát, không có chức năng ngăn chặn",
+      " IDS và IPS đều không yêu cầu chữ ký tấn công"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D. IDS và IPS đều không yêu cầu chữ ký tấn công\n\nGiải thích:\nThông tin được cung cấp trong tài liệu không liên quan đến IDS và IPS, mà là các thông tin về cách thức phân phối và quản lý khóa công khai. Vì vậy, không có thông tin nào cho thấy IDS và IPS có sự khác biệt về việc yêu cầu chữ ký tấn công",
+    "context_token_count": 1200,
+    "fusion_time": 2.181483507156372
+  },
+  {
+    "question_index": 865,
+    "question": "Theo tài liệu Public_197, những yêu cầu cụ thể nào về cơ sở vật chất được xem là thách thức lớn nhất khi ứng dụng AI?",
+    "options": [
+      "120 thiết bị",
+      "100 thiết bị",
+      "90 thiết bị",
+      "150 thiết bị"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A",
+    "llm_full_answer": "B. 100 thiết bị\n\nTheo thông tin từ tài liệu Public_197, việc ứng dụng trí tuệ nhân tạo (AI) trong giáo dục kỹ năng sống đặt ra thách thức lớn về cơ sở vật chất, trong đó một trong những thách thức chính là \"Một trong những rào cản lớn nhất là yêu cầu về cơ sở vật chất và kỹ năng sử dụng công nghệ. N",
+    "context_token_count": 1769,
+    "fusion_time": 2.0793142318725586
+  },
+  {
+    "question_index": 866,
+    "question": "Giả sử một start-up có nguồn lực hạn chế nhưng cần ra mắt nhanh một MVP đa nền tảng với mức độ tùy biến giao diện tương đối cao. Dựa trên văn bản, hai yếu tố nào là NHẤT QUYẾT ĐỊNH cho quyết định chọn (hoặc không chọn) Flutter trong trường hợp này? (Chọn 2.)",
+    "options": [
+      "Lợi thế: single code-base giảm thời gian và chi phí phát triển, phù hợp với start-up.",
+      "Rủi ro: hạn chế trong kết nối với thư viện bên thứ ba, làm giảm khả năng tùy chỉnh phức tạp.",
+      "Rủi ro: Flutter không hỗ trợ web và desktop nên không triển khai đa nền tảng được.",
+      "Lợi thế: kích thước tệp nhỏ, giúp tối ưu trải nghiệm khởi động cho người dùng."
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,B",
+    "llm_full_answer": "A\nExplanation: Trong trường hợp của một start-up có nguồn lực hạn chế, việc sử dụng Flutter có lợi thế lớn nhờ khả năng phát triển mã duy nhất cho nhiều nền tảng (single code-base), giảm thời gian và chi phí phát triển. Điều này giúp doanh nghiệp ra mắt nhanh chóng một MVP đa nền tảng. \n\nOption B kh",
+    "context_token_count": 1829,
+    "fusion_time": 2.32991886138916
+  },
+  {
+    "question_index": 876,
+    "question": "Sau khi khách hàng xác thực OTP thành công, hệ thống sẽ thực hiện bước nào tiếp theo?",
+    "options": [
+      "Tự động hủy yêu cầu",
+      "Cập nhật kỳ thanh toán mới cho toàn bộ mã EVTP thuộc CusID",
+      "Gửi thông báo lỗi “Xác thực thất bại”",
+      "Chuyển về trạng thái “Không hoạt động”"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "B",
+    "llm_full_answer": "D. Chuyển về trạng thái “Không hoạt động”\n\nGiải thích:\n\nTheo thông tin trong bảng mô tả các bước của quy trình, sau khi khách hàng xác thực OTP thành công (bước 6), hệ thống sẽ thực hiện bước tiếp theo là cập nhật trạng thái của yêu cầu xác thực thành \"Đã xác thực\". Điều này được thể hiện ở bước 7 t",
+    "context_token_count": 1214,
+    "fusion_time": 2.19399094581604
+  },
+  {
+    "question_index": 877,
+    "question": "Hãy xác định (i) năm xuất hiện khái niệm mã hóa khóa bất đối xứng, và (ii) tên của hai nhà khoa học đề xuất nó.",
+    "options": [
+      " Năm 1976; Ronald Rivest và Adi Shamir",
+      "Năm 1977; Leonard Adleman và Martin Hellman",
+      "\nNăm 2000; Ronald Rivest và Leonard Adleman",
+      "Năm 1976; Whitfield Diffie và Martin Hellman "
+    ],
+    "llm_answer": "A",
+    "gt_answer": "D",
+    "llm_full_answer": "A.  Năm 1976; Ronald Rivest và Adi Shamir\nExplanation: Theo thông tin trong bài, năm 1976 hai nhà khoa học Whitfield Diffie và Martin Hellman đã đưa ra khái niệm mã hóa khóa bất đối xứng (Asymmetric key cryptography), hay mã hóa khóa công khai (Public key cryptography). Tuy nhiên, năm 1977, Ronald R",
+    "context_token_count": 2904,
+    "fusion_time": 2.2911453247070312
+  },
+  {
+    "question_index": 882,
+    "question": "SQL Server được sử dụng chủ yếu để quản lý và truy vấn dữ liệu quan hệ trong các hệ thống doanh nghiệp như thế nào?",
+    "options": [
+      " Phân tích dữ liệu và tạo báo cáo",
+      "- Tạo và duy trì cơ sở dữ liệu",
+      "Để truy vấn dữ liệu ",
+      "- Tạo và duy trì cơ sở dữ liệu\n' Phân tích dữ liệu và tạo báo cáo"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "D",
+    "llm_full_answer": "B. - Tạo và duy trì cơ sở dữ liệu\n\nGiải thích:\n\nTrong phần nội dung được cung cấp, SQL Server được mô tả như một hệ thống quản lý cơ sở dữ liệu mạnh mẽ và linh hoạt. Các chức năng chính của SQL Server bao gồm:\n\n- Tạo và duy trì cơ sở dữ liệu: SQL Server cho phép người dùng tạo, sửa đổi và xóa các bả",
+    "context_token_count": 2384,
+    "fusion_time": 2.2714192867279053
+  },
+  {
+    "question_index": 883,
+    "question": "Từ tài liệu Public_193, những kiến thức và kỹ năng nào là cần thiết cho một kỹ sư DevOps khi tập trung vào một giai đoạn cụ thể trong roadmap DevOps?",
+    "options": [
+      "Giai đoạn đầu tiên: Learn a some CI/CD tool\nTừ đó Devops cần học code một số ngôn ngữ hệ thống như bashscript, java, javascipt , python, Php…",
+      "Giai đoạn đầu tiên: Learn a Programming Language\nTừ đó Devops cần học code một số ngôn ngữ hệ thống như bashscript, java, javascipt , python, Php…",
+      "Giai đoạn đầu tiên: tham gia code các function của sản phẩm phần mềm\nTừ đó Devops cần học code một số ngôn ngữ hệ thống như bashscript, java, javascipt , python, Php…",
+      "Giai đoạn sau cùng: làm việc như 1 Cloud Provider\nTừ đó Devops cần học code một số ngôn ngữ hệ thống như bashscript, java, javascipt , python, Php…"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. Giai đoạn đầu tiên: Learn a some CI/CD tool\nTừ đó Devops cần học code một số ngôn ngữ hệ thống như bashscript, java, javascipt , python, Php…\n\nGiải thích: Trong tài liệu, phần đề cập đến kiến thức và kỹ năng cần thiết cho một kỹ sư DevOps tập trung vào một giai đoạn cụ thể trong roadmap DevOps ch",
+    "context_token_count": 1646,
+    "fusion_time": 2.0850064754486084
+  },
+  {
+    "question_index": 885,
+    "question": "Hãy xác định hai kỹ thuật phát hiện xâm nhập chính của IDS, và  nhược điểm tương ứng của mỗi kỹ thuật.\n",
+    "options": [
+      "Phát hiện dựa trên chữ ký; nhược điểm: không phát hiện được tấn công mới ",
+      "Phát hiện dựa trên bất thường; nhược điểm: tỷ lệ cảnh báo sai cao ",
+      "\nPhát hiện dựa trên entropy; nhược điểm: yêu cầu chữ ký cập nhật liên tục",
+      "Phát hiện dựa trên hành vi; nhược điểm: không phân biệt được gói tin hợp pháp và bất hợp pháp"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,B",
+    "llm_full_answer": "A. Phát hiện dựa trên chữ ký; nhược điểm: không phát hiện được tấn công mới\n\nB. Phát hiện dựa trên bất thường; nhược điểm: tỷ lệ cảnh báo sai cao \n\nGiải thích:\n\nTheo thông tin trong tài liệu, hai kỹ thuật chính của IDS là:\n\n1. **Phát hiện dựa trên chữ ký (Signature-based detection)**:\n   - Ưu điểm: ",
+    "context_token_count": 2466,
+    "fusion_time": 2.2344675064086914
+  },
+  {
+    "question_index": 887,
+    "question": "Tóm tắt các nội dung chính của văn bản Public_182 về tấn công DoS/DDoS.",
+    "options": [
+      "Văn bản giải thích khái niệm DoS/DDoS, cơ chế hoạt động, các loại (SYN Flood, HTTP Flood, Smurf, Ping Flood), hậu quả (ngừng dịch vụ, mất uy tín, thiệt hại kinh tế) và sự khác biệt giữa DoS và DDoS",
+      "Văn bản giải thích khái niệm DoS mà không đề cập DDoS hay các loại hình tấn công.\n",
+      " Văn bản liệt kê các loại tấn công mà không phân tích hậu quả hay sự khác biệt.",
+      "Văn bản giải thích khái niệm DoS/DDoS, cơ chế hoạt động, các loại (SYN Flood, HTTP Flood, Smurf, Ping Flood), hậu quả (ngừng dịch vụ, mất uy tín, thiệt hại kinh tế)"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D. Văn bản giải thích khái niệm DoS/DDoS, cơ chế hoạt động, các loại (SYN Flood, HTTP Flood, Smurf, Ping Flood), hậu quả (ngừng dịch vụ, mất uy tín, thiệt hại kinh tế)\nGiải thích:\n\nTheo nội dung được cung cấp trong đoạn văn, văn bản này tập trung giải thích về tấn công từ chối dịch vụ (DoS) và tấn c",
+    "context_token_count": 1884,
+    "fusion_time": 2.100677490234375
+  },
+  {
+    "question_index": 894,
+    "question": "Các phiên bản của Oracle Database",
+    "options": [
+      "Oracle Database Standard Edition, Oracle Database Enterprise Edition, Oracle Database Express Edition (XE), Oracle Database Personal Edition",
+      "Oracle Database Standard Edition, ",
+      " Oracle Database Standard Edition, Oracle Database Express Edition (XE), Oracle Database Personal Edition",
+      "Oracle Database Standard Edition, Oracle Database Enterprise Edition, Oracle Database Express Edition (XE), Oracle Database Personal Edition, Oracle Premium "
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A",
+    "llm_full_answer": "D. Oracle Database Standard Edition, Oracle Database Enterprise Edition, Oracle Database Express Edition (XE), Oracle Database Personal Edition\n\nGiải thích:\n\nTheo nội dung đã được cung cấp, chúng ta có thể liệt kê tất cả các phiên bản của Oracle Database theo thông tin sau:\n\n1. Oracle Database Stand",
+    "context_token_count": 1994,
+    "fusion_time": 2.399545192718506
+  },
+  {
+    "question_index": 895,
+    "question": "Những yếu tố nào theo văn bản trực tiếp góp phần rút ngắn thời gian phát triển khi dùng Flutter (chọn mọi đáp án phù hợp)?",
+    "options": [
+      "Viết một mã nguồn duy nhất (single code-base) để triển khai trên nhiều nền tảng",
+      "Tính năng Hot Reload cho phép thấy kết quả tức thì khi chỉnh sửa mã",
+      "Kích thước tệp ứng dụng nhỏ, giúp giảm thời gian khởi động",
+      "Các widget tích hợp sẵn, phong phú và dễ dùng"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,B,D",
+    "llm_full_answer": "A, B, D\nĐây là những yếu tố theo văn bản trực tiếp có thể giúp rút ngắn thời gian phát triển khi dùng Flutter:\n\nA. Viết một mã nguồn duy nhất (single code-base) để triển khai trên nhiều nền tảng\n- Văn bản nói rằng Flutter cho phép chỉ cần viết mã một lần và có thể triển khai trên nhiều hệ điều hành ",
+    "context_token_count": 1973,
+    "fusion_time": 2.150158643722534
+  },
+  {
+    "question_index": 904,
+    "question": "Hãy xác định (i) hai phương pháp phát hiện tấn công thường được sử dụng trong IDS, và (ii) nhược điểm của mỗi phương pháp.\n",
+    "options": [
+      " Phát hiện bất thường; dễ bỏ sót các tấn công mới",
+      "Phát hiện dựa trên chữ ký; tốn nhiều tài nguyên xử lý",
+      "Phát hiện bất thường; có thể gây báo động giả ",
+      "Phát hiện dựa trên chữ ký; không nhận diện được tấn công chưa có mẫu"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "C,D",
+    "llm_full_answer": "B. Phát hiện dựa trên chữ ký; tốn nhiều tài nguyên xử lý\n\nGiải thích:\n\n(i) Hai phương pháp phát hiện tấn công thường được sử dụng trong IDS bao gồm:\n- Phát hiện dựa trên chữ ký (Signature-based intrusion detection)\n- Phát hiện dựa trên bất thường (Anomaly-based intrusion detection)\n\n(ii) Nhược điểm ",
+    "context_token_count": 2133,
+    "fusion_time": 2.441183090209961
+  },
+  {
+    "question_index": 907,
+    "question": "Theo văn bản, những đặc điểm nào sau đây phản ánh tính phân tán nổi bật của Git?",
+    "options": [
+      "Mỗi người dùng đều có bản sao đầy đủ của kho lưu trữ",
+      "Làm việc không phụ thuộc mạng hoặc máy chủ tập trung",
+      "Khả năng tương tác với GitHub, Bitbucket, GitLab",
+      "Cho phép khôi phục lại các phiên bản trước đó"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,B",
+    "llm_full_answer": "A\nA. Mỗi người dùng đều có bản sao đầy đủ của kho lưu trữ\n\nTheo thông tin được cung cấp, Git có tính phân tán mạnh mẽ và điều này có nghĩa là mỗi người dùng đều nhận bản sao đầy đủ của toàn bộ kho lưu trữ, không phụ thuộc vào kết nối mạng hoặc máy chủ tập trung. Điều này giúp Git hoạt động hiệu quả ",
+    "context_token_count": 2405,
+    "fusion_time": 2.2785348892211914
+  },
+  {
+    "question_index": 910,
+    "question": "Kubernetes được Google mở mã nguồn từ khi nào?",
+    "options": [
+      "2000",
+      "2010",
+      "2014",
+      "2025"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "C",
+    "llm_full_answer": "Kubernetes được Google mở mã nguồn từ năm 2014. Do đó, đáp án đúng là C. 2014.\n\nDựa trên thông tin từ phần \"CONTEXT\", cụ thể là dòng: \"Google mở mã nguồn Kubernetes từ năm 2014.\" Đây là thông tin quan trọng để trả lời câu hỏi về thời điểm Kubernetes được Google công bố mã nguồn. \n\nCác lựa chọn khác ",
+    "context_token_count": 2360,
+    "fusion_time": 2.2020699977874756
+  },
+  {
+    "question_index": 925,
+    "question": "Khi xác định phạm vi tự động hóa, cần chú ý những yếu tố nào?",
+    "options": [
+      "Tính năng quan trọng của ứng dụng",
+      "Trường hợp kiểm thử có dữ liệu phong phú",
+      "Chi phí phát triển sản phẩm",
+      "Các nghiệp vụ hay được tái sử dụng"
+    ],
+    "llm_answer": "D",
+    "gt_answer": "A,B,D",
+    "llm_full_answer": "D. Các nghiệp vụ hay được tái sử dụng\n\nGiải thích:\n\nTrong phần mô tả, chúng ta có thể tìm thấy thông tin chi tiết về các yếu tố cần xem xét khi xác định phạm vi tự động hóa kiểm thử. Cụ thể, mục \"Bước 2: Xác định phạm vi Kiểm thử tự động\" nêu rõ:\n\n- Các tính năng chính, quan trọng của ứng dụng.\n- Cá",
+    "context_token_count": 3180,
+    "fusion_time": 2.1429901123046875
+  },
+  {
+    "question_index": 935,
+    "question": "Theo mô tả trong tài liệu Public_183, outbox_table mang lại những lợi ích nào?",
+    "options": [
+      "Đảm bảo consistency giữa dữ liệu nghiệp vụ và event",
+      "Đảm bảo durability – message không mất khi commit thành công",
+      "Đảm bảo message ordering khi publish",
+      "Đảm bảo exactly-once delivery ở consumer"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A,B,C",
+    "llm_full_answer": "B\n\nĐáp án đúng là B. Theo mô tả trong tài liệu, outbox\\_table đảm bảo durability – message không mất khi commit thành công. Trong phần mô tả, nó nói rằng \"Khi xử lý business logic, bên cạnh việc update các table liên quan, ta insert thêm một record vào table outbox\\_table, đương nhiên record này chứ",
+    "context_token_count": 1080,
+    "fusion_time": 2.331230640411377
+  },
+  {
+    "question_index": 936,
+    "question": "Hãy xác định kỹ thuật tấn công DoS phổ biến thường được đề cập trong tài liệu, và  biện pháp phòng chống cơ bản cho tấn công SYN Flood.",
+    "options": [
+      "Ping Sweep; sử dụng ICMP Redirect để ngăn chặn",
+      "SYN Flood; sử dụng Spoofed IP Filtering",
+      "Smurf; tăng kích thước bảng kết nối",
+      "\nUDP Scan; dùng NAT để che giấu địa chỉ"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "B,C",
+    "llm_full_answer": "B. SYN Flood; sử dụng Spoofed IP Filtering\n\nGiải thích:\n\n- **Kỹ thuật tấn công DoS phổ biến:** Trong tài liệu, các kỹ thuật tấn công DoS phổ biến được đề cập là Ping Floods, SYN Floods, HTTP Floods, và Smurf Attacks. Trong đó, kỹ thuật tấn công phổ biến nhất được đề cập trực tiếp là **SYN Flood**, đ",
+    "context_token_count": 2488,
+    "fusion_time": 2.1981935501098633
+  },
+  {
+    "question_index": 938,
+    "question": "Hãy xác định (i) một số luật tội phạm máy tính ở Mỹ, và (ii) một số luật về sự riêng tư cũng tại Mỹ được nêu trong tài liệu.\n\n",
+    "options": [
+      "Computer Fraud and Abuse Act (1986); Federal Privacy Act (1974)",
+      "\nDigital Millennium Copyright Act; Freedom of Information Act",
+      "National Information Infrastructure Protection Act (1996); Electronic Communications Privacy Act (1986) ",
+      "\n\nEconomic Espionage Act; TRIPS Agreement"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,C",
+    "llm_full_answer": "A. Computer Fraud and Abuse Act (1986); Federal Privacy Act (1974)\n\nGiải thích:\n(i) Một số luật tội phạm máy tính ở Mỹ được nêu trong tài liệu bao gồm:\n- Computer Fraud and Abuse Act of 1986 (CFA Act): quy định về các tội phạm lừa đảo và lạm dụng máy tính.\n- Federal Privacy Act, 1974: luật Liên bang",
+    "context_token_count": 3837,
+    "fusion_time": 2.38419246673584
+  },
+  {
+    "question_index": 965,
+    "question": "Hệ thống PLATO được phát triển vào thập niên nào?",
+    "options": [
+      "1960",
+      "1970",
+      "1980",
+      "1990"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. 1960\n\nThe context states that \"PLATO (Programmed Logic for Automatic Teaching Operations) - a system for teaching and learning with computers, was an early AI system developed in the 1960s.\" This clearly indicates that PLATO was developed in the 1960s. Therefore, the correct answer is A. 1960. \n\n",
+    "context_token_count": 2273,
+    "fusion_time": 2.0849549770355225
+  },
+  {
+    "question_index": 968,
+    "question": "Theo văn bản, Flutter có những ưu điểm gì khi so sánh với các framework khác, và đồng thời nó còn tồn tại những hạn chế nào?",
+    "options": [
+      "Ưu điểm: single code-base, Hot Reload; Hạn chế: kích thước tệp lớn, thiếu hướng dẫn chuẩn hóa",
+      "Ưu điểm: chỉ hỗ trợ mobile, Hot Reload; Hạn chế: chưa hỗ trợ web, desktop",
+      "Ưu điểm: không cần SDK, không cần framework; Hạn chế: thiếu cộng đồng lập trình viên",
+      "Ưu điểm: UI đồng nhất, hiệu năng cao; Hạn chế: thường xuyên thay đổi, đôi khi chưa ổn định"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "A,D",
+    "llm_full_answer": "A\nGiải thích:\nTheo đoạn văn bản, ưu điểm của Flutter so với các framework khác bao gồm:\n\n- Tiết kiệm thời gian, công sức: Chỉ cần viết mã một lần, có thể triển khai trên nhiều hệ điều hành khác nhau.\n- Kiến trúc phân lớp linh hoạt: Cho phép tùy chỉnh và kiểm soát toàn bộ giao diện người dùng một các",
+    "context_token_count": 1973,
+    "fusion_time": 2.1485042572021484
+  },
+  {
+    "question_index": 972,
+    "question": "Nêu một thành phần thuộc Storage Engine hoặc Query Processor trong Database Engine.",
+    "options": [
+      "Storage Engine\n• File Storage: Quản lý các tệp dữ liệu và tệp nhật ký giao dịch. Dữ liệu được lưu trữ trong các tệp dữ liệu (.mdf và .ndf), trong khi các giao dịch được ghi lại trong tệp nhật ký giao dịch (.ldf).\n\nQuery Processor\n• Buffer Manager: Quản lý bộ nhớ đệm (buffer pool), lưu trữ các trang dữ liệu được truy cập gần đây để tăng tốc độ truy vấn.\n\n\n",
+      "Storage Engine\n• File Storage: Quản lý các tệp dữ liệu và tệp nhật ký giao dịch. Dữ liệu được lưu trữ trong các tệp dữ liệu (.mdf và .ndf), trong khi các giao dịch được ghi lại trong tệp nhật ký giao dịch (.ldf).\n\nQuery Processor\n• Parser: Phân tích cú pháp các câu lệnh SQL và chuyển chúng thành các cây cú pháp (syntax tree) để xử lý tiếp theo.\n\n",
+      "\nStorage Engine\n• Optimizer: Tối ưu hóa các kế hoạch thực hiện truy vấn để đảm bảo hiệu suất cao nhất. Nó chọn lựa các kế hoạch truy vấn tối ưu dựa trên thống kê và chi phí ước tính.\n\nQuery Processor\n• Parser: Phân tích cú pháp các câu lệnh SQL và chuyển chúng thành các cây cú pháp (syntax tree) để xử lý tiếp theo.\n",
+      "Không rõ từng thành phần"
+    ],
+    "llm_answer": "A",
+    "gt_answer": "B",
+    "llm_full_answer": "A. Storage Engine\n• File Storage: Quản lý các tệp dữ liệu và tệp nhật ký giao dịch. Dữ liệu được lưu trữ trong các tệp dữ liệu (.mdf và .ndf), trong khi các giao dịch được ghi lại trong tệp nhật ký giao dịch (.ldf).\n\nQuery Processor\n• Parser: Phân tích cú pháp các câu lệnh SQL và chuyển chúng thành ",
+    "context_token_count": 3302,
+    "fusion_time": 2.2148001194000244
+  },
+  {
+    "question_index": 976,
+    "question": "Những yếu tố nào thường gây ảnh hưởng đến hiệu năng của hệ thống?",
+    "options": [
+      "Thời gian phản hồi kéo dài",
+      "Quản lý tài nguyên kém",
+      " Giao diện đơn giản",
+      "Lỗi trong mã nguồn/cấu trúc dữ liệu"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A,B,D",
+    "llm_full_answer": "B. Quản lý tài nguyên kém\n\nTheo thông tin được cung cấp, yếu tố quản lý tài nguyên kém thường gây ảnh hưởng đến hiệu năng của hệ thống. Cụ thể, thông tin đã nêu rõ:\n\n\"Yếu tố này cho thấy tính hiệu quả của các chức năng và quá trình hoạt động trong hệ thống. Nếu một phần hoặc toàn bộ quá trình hoạt đ",
+    "context_token_count": 2186,
+    "fusion_time": 2.1730432510375977
+  },
+  {
+    "question_index": 979,
+    "question": "Tài liệu `Public_200` mô tả chi tiết gì về phương pháp Deloitte đã sử dụng để xây dựng và quản lý một cơ sở dữ liệu rủi ro lớn như một cơ sở dữ liệu chứa 10.000 trường hợp rủi ro?",
+    "options": [
+      "500.000 rủi ro",
+      "100.000 rủi ro",
+      "50.000 rủi ro",
+      "5.000.000 rủi ro"
+    ],
+    "llm_answer": "B",
+    "gt_answer": "A",
+    "llm_full_answer": "B\nTheo thông tin trong tài liệu, ứng dụng GRAPA của Deloitte được mô tả như sau: \"GRAPA hỗ trợ kiểm toán viên so sánh chiến lược đã chọn của họ với các chiến lược rủi ro đã sử dụng trước đó, làm việc với cơ sở dữ liệu của Deloitte gồm 10.000 trường hợp, với mỗi trường hợp bao gồm khoảng 50 rủi ro\". ",
+    "context_token_count": 3861,
+    "fusion_time": 2.2890098094940186
+  }
+]

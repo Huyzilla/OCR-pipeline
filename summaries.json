@@ -1,0 +1,1202 @@
+[
+  {
+    "doc_id": "Public001",
+    "summary_text": "Nội dung chính của tài liệu là về ứng dụng công nghệ IoT trong mô hình nhà thông minh. Các khái niệm/thuật ngữ chính bao gồm: Internet vạn vật (IoT), nhà thông minh, điện toán đám mây, xử lý sự kiện, cảm biến. Loại nội dung là nghiên cứu. Tài liệu phân tích các ứng dụng của IoT trong nhà thông minh, đánh giá các bài viết nghiên cứu từ ba cơ sở dữ liệu lớn, tổng hợp 229 bài báo và phân loại chúng thành bốn lớp. Nghiên cứu chỉ ra rằng mặc dù có nhiều ứng dụng IoT trong nhà thông minh, vẫn tồn tại nhiều thách thức như cấu trúc dữ liệu, giao diện và quy trình xử lý sự kiện. Hệ thống IoT được thiết kế cho nhà thông minh không chỉ tăng cường bảo mật mà còn giảm chi phí, mang lại những lợi ích rõ rệt cho cuộc sống hàng ngày. Tài liệu cũng nêu rõ sự cần thiết phải phát triển các nền tảng và ứng dụng để tối ưu hóa việc sử dụng IoT trong mô hình nhà thông minh.",
+    "chunk_count": 72,
+    "token_count": 236
+  },
+  {
+    "doc_id": "Public002",
+    "summary_text": "Chủ đề chính: Nội dung và cấu trúc các học phần trong Bộ môn Hệ thống thông tin và Mạng máy tính.  \nCác khái niệm/thuật ngữ chính: Cơ sở dữ liệu, Hệ quản trị cơ sở dữ liệu, Phân tích thiết kế HTTT, Khai phá dữ liệu, Nhập môn dữ liệu lớn, Kiến trúc máy tính, Hệ điều hành, Internet kết nối vạn vật (IoT), Thực tập tốt nghiệp, Lãnh đạo và kinh doanh trong kỹ thuật.  \nLoại nội dung: Thực hành, lý thuyết, nghiên cứu.  \n\nTài liệu mô tả chi tiết các học phần trong chương trình đào tạo về Hệ thống thông tin và Mạng máy tính, bao gồm kiến thức về cơ sở dữ liệu, hệ quản trị, phân tích thiết kế hệ thống thông tin, khai phá dữ liệu, kiến trúc máy tính, hệ điều hành, Internet vạn vật, và các kỹ năng mềm cần thiết cho môi trường làm việc. Mỗi học phần đều có cấu trúc rõ ràng và mục tiêu giáo dục cụ thể, nhằm trang bị cho sinh viên những kiến thức và kỹ năng cần thiết để hoạt động hiệu quả trong lĩnh vực công nghệ thông tin.",
+    "chunk_count": 137,
+    "token_count": 266
+  },
+  {
+    "doc_id": "Public003",
+    "summary_text": "Nội dung chính của tài liệu là nghiên cứu về phương pháp thích ứng miền cho dịch máy nơ ron, đặc biệt cho cặp ngôn ngữ Anh - Việt. Các khái niệm/thuật ngữ chính bao gồm: dịch máy nơ ron, dữ liệu song ngữ, dữ liệu đơn ngữ, thích ứng miền, BLEU. Loại nội dung: nghiên cứu.\n\nTài liệu trình bày sự khác biệt giữa dịch máy nơ ron và phương pháp dịch máy thống kê truyền thống, nhấn mạnh rằng dịch máy nơ ron yêu cầu nhiều dữ liệu song ngữ để đạt hiệu quả cao. Phương pháp đề xuất trong bài báo kết hợp dữ liệu đơn ngữ với bản dịch để tạo ra dữ liệu huấn luyện cho hệ dịch, từ đó nâng cao chất lượng bản dịch. Các thử nghiệm cho thấy phương pháp này dễ thực hiện và cải thiện đáng kể chất lượng dịch với mức tăng 2,21 điểm BLEU. Bài báo cũng chỉ ra rằng hiện có ít nghiên cứu về thích ứng miền trong bối cảnh cặp ngôn ngữ Anh - Việt, mở ra hướng nghiên cứu mới trong lĩnh vực này.",
+    "chunk_count": 69,
+    "token_count": 241
+  },
+  {
+    "doc_id": "Public004",
+    "summary_text": "Công nghệ in bê tông 3D trong ngành xây dựng. Công nghệ in 3D, bê tông, hiệu quả đầu tư, môi trường, kỹ thuật ép đùn, kỹ thuật lắng đọng bột. Nghiên cứu.\n\nNgành xây dựng đang đối mặt với nhiều thách thức, như tốc độ xây dựng chậm và việc sử dụng nhiều nguồn lực, dẫn đến giảm hiệu quả đầu tư và tác động tiêu cực đến môi trường. Công nghệ in bê tông 3D, mặc dù còn mới, hứa hẹn sẽ cải thiện quy trình xây dựng bằng cách loại bỏ ván khuôn và giảm lượng khí thải. Công nghệ này đã được phát triển dựa trên hai kỹ thuật chính: ép đùn và lắng đọng bột. Hai công nghệ tiêu biểu là Contour Crafting và Concrete Printing, mỗi loại đều có những ưu điểm riêng như tốc độ sản xuất nhanh và khả năng kiểm soát cấu trúc sản phẩm tốt hơn. Nhiều nghiên cứu đã chỉ ra lợi ích và rào cản của công nghệ này trong việc ứng dụng vào thực tiễn trong ngành xây dựng toàn cầu.",
+    "chunk_count": 43,
+    "token_count": 241
+  },
+  {
+    "doc_id": "Public005",
+    "summary_text": "Chủ đề chính: Chuyển đổi số trong giáo dục đào tạo tại Học viện Ngân hàng. Các khái niệm/thuật ngữ chính: chuyển đổi số, số hóa dữ liệu, nhận dạng ký tự quang học, FPT.AI Reader, Viettel OCR, Google Vision AI. Loại nội dung: nghiên cứu.\n\nBài báo nghiên cứu về chuyển đổi số trong lĩnh vực giáo dục, đặc biệt tại Học viện Ngân hàng, nhấn mạnh sự cần thiết của việc số hóa dữ liệu. Tác giả đề xuất các giải pháp số hóa tài liệu văn bản thông qua công nghệ nhận dạng ký tự quang học (OCR). Bài viết giới thiệu các công nghệ OCR như FPT.AI Reader, Viettel OCR, và Google Vision AI, đồng thời thực hiện thử nghiệm với giải pháp FPT.AI Reader. Kết quả thử nghiệm cho thấy tỷ lệ sai số ở mức 27%, với 16% lỗi ở các tiêu đề và đơn vị ban hành. Bài báo cũng nêu rõ tầm quan trọng của việc áp dụng công nghệ trong giáo dục, nhằm nâng cao hiệu quả quản lý và hỗ trợ hoạt động học tập.",
+    "chunk_count": 88,
+    "token_count": 247
+  },
+  {
+    "doc_id": "Public006",
+    "summary_text": "Chủ đề chính: Ứng dụng công nghệ số trong quản trị đại học tại Việt Nam.  \nCác khái niệm/thuật ngữ chính: Cách mạng công nghệ 4.0, quản trị đại học, chuyển đổi số, tự chủ, công nghệ thông tin, tuyển sinh số, quản lý giảng viên.  \nLoại nội dung: Nghiên cứu.\n\nNội dung tài liệu trình bày về sự chuyển đổi số trong quản trị đại học ở Việt Nam, đặc biệt trong bối cảnh cách mạng công nghệ 4.0. Các trường đại học cần thay đổi mô hình quản trị để nâng cao hiệu quả hoạt động, ứng dụng công nghệ thông tin trong quản lý, đào tạo và tuyển sinh. Bài viết phân tích thực trạng và đưa ra giải pháp nhằm cải thiện quy trình quản trị, từ việc triển khai hệ thống quản lý hành chính điện tử đến việc cung cấp thông tin tuyển sinh trực tuyến. Tác giả sử dụng các phương pháp nghiên cứu tổng hợp và phân tích dữ liệu để đề xuất các giải pháp hữu ích, giúp các trường đại học chủ động hơn trong việc áp dụng công nghệ, từ đó nâng cao chất lượng giáo dục và vị thế của đại học Việt Nam trong thời đại số.",
+    "chunk_count": 71,
+    "token_count": 259
+  },
+  {
+    "doc_id": "Public007",
+    "summary_text": "Tài liệu này quy định các yêu cầu về chất lượng và năng lực của các phòng xét nghiệm y tế. Các khái niệm/thuật ngữ chính bao gồm: phòng xét nghiệm y tế, hệ thống quản lý, đánh giá năng lực, độ chệch, độ chính xác phép đo, độ không đảm bảo đo. Loại nội dung là quy định. Tài liệu áp dụng cho việc phát triển hệ thống quản lý và đánh giá năng lực của các phòng xét nghiệm, cũng như xác nhận năng lực của chúng bởi người sử dụng và cơ quan quản lý. Ngoài ra, tài liệu cũng đề cập đến các yêu cầu về tính khách quan trong hoạt động của phòng xét nghiệm, nhấn mạnh tầm quan trọng của việc bảo vệ sự khách quan trước các áp lực bên ngoài. Các tài liệu tham khảo tiêu chuẩn quốc tế như ISO/IEC Guide 99 và ISO/IEC 17025 cũng được đề cập để hỗ trợ cho các quy định trong tài liệu.",
+    "chunk_count": 153,
+    "token_count": 204
+  },
+  {
+    "doc_id": "Public008",
+    "summary_text": "Tiêu chuẩn quản trị trong phòng xét nghiệm. Pháp nhân, giám đốc phòng xét nghiệm, năng lực, trách nhiệm, thiết bị, bảo trì, quy trình trước xét nghiệm. Nội dung quy định.\n\nTài liệu này đề cập đến các yêu cầu về cơ cấu và quản trị trong phòng xét nghiệm, nhấn mạnh vai trò của giám đốc phòng xét nghiệm với trách nhiệm triển khai hệ thống quản lý và điều hành các hoạt động. Giám đốc có thể ủy quyền cho nhân viên nhưng vẫn phải giữ trách nhiệm cuối cùng. Các quy định về thiết bị bao gồm việc sử dụng, bảo trì và bảo đảm an toàn cho thiết bị, cũng như xử lý sự cố bất lợi liên quan. Ngoài ra, tài liệu chỉ rõ các quy trình trước xét nghiệm và việc cung cấp thông tin cần thiết cho bệnh nhân và người dùng để đảm bảo hiểu biết về hoạt động của phòng xét nghiệm. Tất cả các quy trình này nhằm đảm bảo an toàn và nâng cao chất lượng chăm sóc bệnh nhân.",
+    "chunk_count": 183,
+    "token_count": 213
+  },
+  {
+    "doc_id": "Public009",
+    "summary_text": "Chủ đề chính: Mô tả nội dung và cấu trúc của các học phần trong chương trình đào tạo lý luận chính trị và khoa học xã hội tại trường Đại học Sư phạm Kỹ thuật TP.HCM.  \nCác khái niệm/thuật ngữ chính: Chủ nghĩa Mác – Lênin, tư tưởng Hồ Chí Minh, đường lối cách mạng, pháp luật đại cương, thí nghiệm vật lý, điện tử căn bản, kinh tế học đại cương, quản trị chất lượng, quản trị học, xã hội học, văn hóa Việt Nam.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nTài liệu liệt kê các học phần bắt buộc trong chương trình đào tạo, cung cấp kiến thức lý thuyết và thực hành cho sinh viên về các lĩnh vực chính trị, xã hội, pháp luật, kinh tế và quản trị. Mỗi học phần có cấu trúc cụ thể và mục tiêu rõ ràng nhằm giúp sinh viên nắm vững lý thuyết và kỹ năng cần thiết cho sự nghiệp tương lai.",
+    "chunk_count": 140,
+    "token_count": 230
+  },
+  {
+    "doc_id": "Public010",
+    "summary_text": "Tiêu chuẩn phòng xét nghiệm yêu cầu lập kế hoạch liên tục và chuẩn bị cho tình huống khẩn cấp để đảm bảo hoạt động không bị gián đoạn. Các khái niệm chính bao gồm: rủi ro, kế hoạch ứng phó, hệ thống quản lý, cải tiến liên tục, đánh giá nội bộ. Loại nội dung: quy định. \n\nPhòng xét nghiệm cần thiết lập một kế hoạch ứng phó cụ thể, cung cấp đào tạo cho nhân viên, và thực hiện các hành động để giảm thiểu hậu quả khi xảy ra sự cố. Hệ thống quản lý phải được duy trì để đáp ứng yêu cầu của tiêu chuẩn, bao gồm trách nhiệm, mục tiêu, thông tin tài liệu, và cải tiến liên tục. Đồng thời, phòng xét nghiệm cần xác định và hành động đối với các rủi ro và cơ hội cải tiến để đảm bảo an toàn cho bệnh nhân và nâng cao hiệu quả hoạt động. Cuối cùng, lãnh đạo phải xem xét và ghi lại các quyết định liên quan đến tình trạng và hiệu quả của hệ thống quản lý và cải tiến dịch vụ.",
+    "chunk_count": 101,
+    "token_count": 232
+  },
+  {
+    "doc_id": "Public011",
+    "summary_text": "Lịch sử phát triển của mạng máy tính. Mạng máy tính, mạng bình đẳng, mạng khách/chủ, GAN, cấu trúc mạng, dịch vụ Internet. Lý thuyết và thực hành.\n\nTài liệu đề cập đến khái niệm mạng máy tính như một hệ thống kết nối các thiết bị xử lý thông tin, cho phép trao đổi dữ liệu. Mạng máy tính đã có sự phát triển đáng kể từ những năm 1960, từ máy tính lớn nối với trạm cuối đến các mạng phức tạp ngày nay. Phân loại mạng được chia thành mạng bình đẳng và mạng khách/chủ, cùng với các thành phần cơ bản như máy tính, vỉ mạng, đường truyền và thiết bị kết nối. Internet ra đời từ mạng quân sự và đã trở thành một phần không thể thiếu trong đời sống hiện đại, cung cấp nhiều dịch vụ như truyền thông, truy cập từ xa và thư điện tử. Để kết nối Internet, cần có thiết bị phù hợp và dịch vụ từ các nhà cung cấp. Tài liệu nhấn mạnh tầm quan trọng của mạng máy tính trong công nghệ thông tin và đời sống hàng ngày.",
+    "chunk_count": 39,
+    "token_count": 242
+  },
+  {
+    "doc_id": "Public012",
+    "summary_text": "Hệ điều hành và tệp tin là hai khái niệm cơ bản trong công nghệ thông tin. Hệ điều hành là phần mềm quản lý tài nguyên máy tính và cung cấp dịch vụ cho người dùng, bao gồm việc khởi động máy, kiểm soát thiết bị, quản lý tài nguyên và giao tiếp với người dùng. Tệp tin là tập hợp dữ liệu có liên quan, được lưu trữ và có cấu trúc nhất định, thường có tên và phần mở rộng. Nội dung tài liệu này bao gồm lý thuyết về hệ điều hành, cách thức hoạt động của tệp tin, và các lệnh cơ bản trong hệ điều hành Windows, cùng với sự phát triển của các phiên bản Windows từ 3.0 đến Windows 95, nhấn mạnh các tính năng mới và cải tiến của từng phiên bản.",
+    "chunk_count": 74,
+    "token_count": 173
+  },
+  {
+    "doc_id": "Public013",
+    "summary_text": "Chủ đề chính: Tài liệu giới thiệu về thông tin, dữ liệu, tri thức và công nghệ thông tin.  \nCác khái niệm/thuật ngữ chính: Thông tin, Dữ liệu, Tri thức, Hệ thống thông tin, Công nghệ thông tin, ICT.  \nLoại nội dung: Lý thuyết.  \n\nTài liệu trình bày khái niệm về thông tin, dữ liệu và tri thức, nhấn mạnh rằng thông tin là kết quả của việc xử lý dữ liệu nhằm cung cấp hiểu biết cho con người. Dữ liệu là biểu diễn của thông tin, không có ý nghĩa nếu không được tổ chức. Tri thức được định nghĩa là thông tin ở mức độ trừu tượng hơn, có thể thu thập qua kinh nghiệm hoặc đào tạo. Tài liệu cũng mô tả tiến trình phát triển của máy tính qua các thế hệ từ những năm 1950 đến nay, với sự chuyển mình từ máy tính lớn đến máy tính cá nhân và trí tuệ nhân tạo. Cuối cùng, công nghệ thông tin được định nghĩa là ngành nghiên cứu các hệ thống thông tin dựa trên máy tính, bao gồm các ứng dụng quản lý dữ liệu và truyền thông trong xã hội hiện đại.",
+    "chunk_count": 41,
+    "token_count": 259
+  },
+  {
+    "doc_id": "Public014",
+    "summary_text": "Biểu diễn dữ liệu trong máy tính chủ yếu đề cập đến việc sử dụng các hệ đếm khác nhau để biểu diễn số. Các khái niệm chính bao gồm hệ đếm cơ số b, ký số, giá trị vị trí, hệ nhị phân, hệ bát phân, hệ thập phân và hệ thập lục phân. Nội dung tài liệu bao gồm lý thuyết về các hệ đếm, cách chuyển đổi số giữa các hệ đếm, cũng như quy tắc cộng, trừ, nhân và chia số nguyên có dấu trong hệ nhị phân. Tài liệu cũng trình bày chi tiết về cách biểu diễn và tính toán với các số trong các hệ đếm khác nhau, từ hệ nhị phân đến hệ thập lục phân, cùng với các ví dụ minh họa cụ thể.",
+    "chunk_count": 101,
+    "token_count": 172
+  },
+  {
+    "doc_id": "Public015",
+    "summary_text": "Chủ đề chính: Bộ xử lý trung tâm (CPU) và các thành phần của hệ thống máy tính.  \nCác khái niệm/thuật ngữ chính: CPU, khối điều khiển, khối tính toán số học và logic, tập các thanh ghi, RAM, bộ nhớ cache, bộ nhớ ngoài, hệ thống vào-ra, buses.  \nLoại nội dung: Thuyết trình lý thuyết về cấu trúc và chức năng của CPU và các thành phần liên quan.  \n\nTài liệu mô tả chi tiết về Bộ xử lý trung tâm (CPU), bao gồm các bộ phận chính như khối điều khiển (CU), khối tính toán số học và logic (ALU), cùng với tập các thanh ghi. Nó cũng giải thích về bộ nhớ trong (RAM, bộ nhớ cache) và bộ nhớ ngoài (đĩa cứng, đĩa mềm, USB). Hệ thống vào-ra được giới thiệu với vai trò trao đổi thông tin giữa máy tính và thiết bị ngoại vi. Cuối cùng, tài liệu nêu rõ vai trò của các bus trong việc kết nối và truyền tải thông tin giữa các thành phần của máy tính, bao gồm bus điều khiển, bus dữ liệu và bus địa chỉ.",
+    "chunk_count": 39,
+    "token_count": 261
+  },
+  {
+    "doc_id": "Public016",
+    "summary_text": "Tiêu chuẩn TCVN 9395:2012 quy định về thi công và nghiệm thu cọc khoan nhồi bê tông cốt thép có đường kính từ 60 cm trở lên. Các khái niệm/thuật ngữ chính bao gồm: cọc khoan nhồi, dung dịch khoan, thép gia cường. Loại nội dung là quy định. Tài liệu này được biên soạn bởi Viện Khoa học Công nghệ Xây dựng và áp dụng cho các công trình xây dựng, ngoại trừ những vùng có điều kiện địa chất đặc biệt. Tiêu chuẩn cũng chỉ rõ các yêu cầu về thi công, nghiệm thu, kiểm tra chất lượng vật liệu và an toàn lao động trong quá trình thực hiện. Các phương pháp thí nghiệm và biện pháp xử lý cặn lắng trước khi đổ bê tông được nêu rõ để đảm bảo chất lượng công trình. Nghiệm thu cọc khoan nhồi cần thực hiện dựa trên hồ sơ thiết kế và các kết quả thí nghiệm kiểm tra liên quan.",
+    "chunk_count": 86,
+    "token_count": 226
+  },
+  {
+    "doc_id": "Public017",
+    "summary_text": "Yêu cầu đối với tính toán kết cấu bê tông và bê tông cốt thép. TCVN 9379:2012, trạng thái giới hạn, độ bền, ổn định hình dạng, nội lực. Lý thuyết và quy định. \n\nTài liệu này trình bày các yêu cầu tính toán kết cấu bê tông và bê tông cốt thép theo tiêu chuẩn TCVN 9379:2012, bao gồm các trạng thái giới hạn ảnh hưởng đến khả năng sử dụng và độ bền của công trình. Các tính toán cần đảm bảo độ tin cậy và khả năng chịu lực của kết cấu trong suốt thời gian sử dụng. Nội dung chính bao gồm tính toán độ bền, ổn định hình dạng và vị trí của kết cấu, cũng như các phương pháp đánh giá khả năng chịu lực đối với các cấu kiện phức tạp. Tài liệu cũng đề cập đến các yêu cầu về vật liệu bê tông, cụ thể là các chỉ tiêu chất lượng cần được kiểm soát trong quá trình thi công, bao gồm cấp độ bền chịu nén và chịu kéo của bê tông.",
+    "chunk_count": 52,
+    "token_count": 242
+  },
+  {
+    "doc_id": "Public018",
+    "summary_text": "Tiêu chuẩn thiết kế kết cấu bê tông và bê tông cốt thép. Các khái niệm/thuật ngữ chính: kết cấu bê tông, bê tông cốt thép, nhiệt độ, thiết kế, nội lực, trạng thái giới hạn, độ bền, ổn định hình dạng, tự ứng suất. Loại nội dung: quy định. \n\nTiêu chuẩn này quy định các yêu cầu thiết kế cho kết cấu bê tông và bê tông cốt thép trong môi trường nhiệt độ từ -70 °C đến +50 °C, không xâm thực, bao gồm các loại bê tông khác nhau như bê tông nặng và bê tông tự ứng suất. Tiêu chuẩn không áp dụng cho các kết cấu liên hợp thép – bê tông, bê tông cốt sợi, và các kết cấu đặc thù khác. Các tính toán cần tuân thủ các trạng thái giới hạn liên quan đến độ bền và ổn định hình dạng, đảm bảo độ tin cậy trong suốt thời gian sử dụng. Tiêu chuẩn cũng yêu cầu sử dụng các tài liệu viện dẫn phù hợp để thực hiện thiết kế chính xác và an toàn.",
+    "chunk_count": 144,
+    "token_count": 252
+  },
+  {
+    "doc_id": "Public019",
+    "summary_text": "Chiến lược Trí tuệ nhân tạo quốc gia của Việt Nam. Các khái niệm/thuật ngữ chính: Trí tuệ nhân tạo, Cách mạng công nghiệp 4.0, Thời đại số, Công nghiệp TTNT, Phân tích dữ liệu lớn, Internet vạn vật. Loại nội dung: Nghiên cứu.\n\nTài liệu khảo sát chiến lược Trí tuệ nhân tạo (TTNT) quốc gia của Việt Nam trong bối cảnh toàn cầu, nhấn mạnh sự cần thiết phải xây dựng một chiến lược phù hợp với yêu cầu phát triển của đất nước. TTNT được xem như công nghệ chủ đạo giúp tăng cường năng suất quốc gia. Các quốc gia như Mỹ, Trung Quốc, Đài Loan, Singapore và Malaysia đã triển khai các chiến lược TTNT khác nhau, từ việc phát triển nhân tài, củng cố hạ tầng nghiên cứu đến việc thu hút đầu tư và phát triển các mô hình đổi mới. Việt Nam cần học hỏi từ các chiến lược này để nhanh chóng hội nhập vào cuộc cách mạng công nghiệp 4.0 và thúc đẩy sự phát triển bền vững trong lĩnh vực TTNT.",
+    "chunk_count": 70,
+    "token_count": 250
+  },
+  {
+    "doc_id": "Public020",
+    "summary_text": "Chủ đề chính: Hướng dẫn xác định độ dày vật liệu bảo vệ chịu lửa trong thử nghiệm khả năng chịu lửa.  \nCác khái niệm/thuật ngữ chính: Độ dày màng khô, đầu đo nhiệt, lắp đặt đầu đo, đường cong âm ỉ, ISO 834-2.  \nLoại nội dung: Quy định.  \n\nTài liệu cung cấp hướng dẫn chi tiết về việc xác định độ dày của vật liệu bảo vệ chịu lửa cần thiết cho thử nghiệm khả năng chịu lửa. Việc đo chiều dày phải tuân thủ các quy trình cụ thể, bao gồm sử dụng dụng cụ cảm ứng và thực hiện phép đo tại các vị trí quy định trên mẫu thử. Tài liệu cũng đề cập đến các yêu cầu về đầu đo nhiệt và phương pháp lắp đặt, nhằm đảm bảo độ chính xác trong việc đo nhiệt độ của cấu kiện thép. Ngoài ra, quy trình thử nghiệm cho sự tiếp xúc với lửa âm ỉ cũng được nêu rõ, nhấn mạnh rằng điều này chỉ áp dụng cho những trường hợp đặc biệt. Các quy định này nhằm đảm bảo tính nhất quán và độ tin cậy trong việc đánh giá khả năng chịu lửa của vật liệu.",
+    "chunk_count": 66,
+    "token_count": 264
+  },
+  {
+    "doc_id": "Public021",
+    "summary_text": "Chủ đề chính: Xử lý tiếng Việt trong công nghệ thông tin và những thách thức hiện tại.  \nCác khái niệm/thuật ngữ chính: Xử lý ngôn ngữ, tiếng Việt, Unicode, nhận dạng chữ in, phân tách từ, ngữ pháp, ngữ nghĩa, ngữ dụng.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nBài viết đề cập đến sự khác biệt trong hiểu biết về xử lý ngôn ngữ tự nhiên (XLNN) và xử lý tiếng Việt (XLTV) trong công nghệ thông tin (CNTT) tại Việt Nam. Tác giả nhấn mạnh các khái niệm cơ bản như tiếng nói, chữ viết, và các công nghệ liên quan đến xử lý tiếng Việt. Các bước trong quá trình xử lý ngôn ngữ được phân chia thành nhiều tầng khác nhau, từ ngữ âm đến ngữ dụng, với các thách thức như thiếu liên kết và chia sẻ giữa các nghiên cứu. Tác giả kêu gọi sự hỗ trợ từ nhà nước để phát triển các sản phẩm và công cụ cho xử lý tiếng Việt, nhấn mạnh rằng việc này cần phải được thực hiện theo một lộ trình có kế hoạch và đầu tư cho tài nguyên.",
+    "chunk_count": 62,
+    "token_count": 265
+  },
+  {
+    "doc_id": "Public022",
+    "summary_text": "Tiêu chuẩn này quy định phương pháp thử nghiệm các hệ bọc bảo vệ chịu lửa cho cấu kiện kết cấu thép như dầm, cột và cấu kiện chịu kéo. Các khái niệm/thuật ngữ chính bao gồm: hệ bọc bảo vệ chịu lửa, vật liệu bảo vệ dạng phản ứng, cấu kiện tham chiếu, hệ số tiết diện và khả năng bám dính. Loại nội dung là quy định. Tiêu chuẩn được biên soạn để đánh giá khả năng của hệ bọc bảo vệ trong việc duy trì sự kết dính và vị trí dưới tác động của nhiệt độ, đồng thời cung cấp dữ liệu về các đặc tính nhiệt của hệ bọc. Tiêu chuẩn cũng nêu rõ các quy trình thử nghiệm cần thực hiện, yêu cầu về cấu kiện thép và điều kiện tải trọng cho dầm chịu tải. Các vật liệu bảo vệ có thể là dạng thụ động hoặc phản ứng, và các phương pháp thử nghiệm cần đảm bảo đạt yêu cầu về nhiệt độ và tải trọng theo tiêu chuẩn đã quy định.",
+    "chunk_count": 126,
+    "token_count": 223
+  },
+  {
+    "doc_id": "Public023",
+    "summary_text": "Chủ đề chính: Các hệ bảo vệ chịu lửa và quy trình thử nghiệm liên quan.  \nCác khái niệm/thuật ngữ chính: Hệ bảo vệ chịu lửa, khối lượng riêng, độ ẩm, độ dày, vật liệu chống cháy thụ động, lớp phủ phản ứng, mẫu thử nghiệm, tiêu chuẩn TCVN.  \nLoại nội dung: Quy định và hướng dẫn thực hành.  \n\nTài liệu hướng dẫn về các hệ bảo vệ chịu lửa bao gồm các yêu cầu về thành phần, độ dày và quy trình kiểm tra vật liệu. Khách hàng cần cung cấp thông tin về khối lượng riêng và độ ẩm, cùng với khả năng chịu nhiệt của vật liệu. Đối với vật liệu dạng bản, tấm và vữa phun, chiều dày phải được đo và không sai lệch quá 15% giá trị trung bình. Hướng dẫn lựa chọn mẫu thử nghiệm cho vật liệu thụ động và phản ứng được nêu chi tiết, cùng với yêu cầu cho phân tích nhiệt và bố trí lắp đặt mẫu thử trong lò. Tài liệu nhấn mạnh trách nhiệm của khách hàng trong việc kiểm tra và đảm bảo vật liệu được áp dụng đúng cách để đạt được hiệu quả bảo vệ chống cháy.",
+    "chunk_count": 72,
+    "token_count": 269
+  },
+  {
+    "doc_id": "Public024",
+    "summary_text": "Chủ đề chính: Thực phẩm và phân loại thực phẩm.  \nCác khái niệm/thuật ngữ chính: thực phẩm, dinh dưỡng, thực phẩm chức năng, an toàn thực phẩm, phân loại theo thành phần hóa học, mục đích sử dụng.  \nLoại nội dung: lý thuyết / thực hành.  \n\nTài liệu khám phá khái niệm thực phẩm, định nghĩa là hỗn hợp chất hóa học từ động thực vật, phục vụ cho nhu cầu dinh dưỡng. Thực phẩm rất đa dạng và chịu ảnh hưởng bởi điều kiện địa lý và văn hóa ẩm thực của mỗi khu vực. Phân loại thực phẩm có thể dựa trên thành phần hóa học (glucid, protein, lipid) và mục đích sử dụng (dinh dưỡng, phòng và trị bệnh). Đặc biệt, thực phẩm chức năng có tác dụng hỗ trợ sức khỏe. Ngoài ra, tài liệu cũng đề cập đến những vấn đề quan tâm của người tiêu dùng về chất lượng thực phẩm, trong đó an toàn thực phẩm là yếu tố quan trọng, với ngưỡng độc tố khác nhau giữa các quốc gia.",
+    "chunk_count": 75,
+    "token_count": 238
+  },
+  {
+    "doc_id": "Public025",
+    "summary_text": "Chiếu xạ thực phẩm là phương pháp sử dụng tia bức xạ điện từ hoặc dòng electron để cải thiện chất lượng và kéo dài thời gian bảo quản sản phẩm. Các khái niệm chính bao gồm chiếu xạ, tia gamma, liều xạ, và an toàn thực phẩm. Nội dung chủ yếu là lý thuyết về quá trình chiếu xạ, ứng dụng và ảnh hưởng của nó đến các thành phần thực phẩm, như protein, lipid, vitamin và vi sinh vật. Chiếu xạ có khả năng làm chậm quá trình trao đổi chất, ức chế sự nảy mầm và cải thiện chất lượng sản phẩm chế biến. Mặc dù đã có những lo ngại về an toàn, nghiên cứu cho thấy chiếu xạ là phương pháp an toàn nếu sử dụng đúng liều lượng. Các tổ chức quốc tế đã quy định liều xạ tối đa cho từng loại thực phẩm, đảm bảo an toàn cho sức khỏe người tiêu dùng. Các quốc gia như Mỹ, Canada, và Việt Nam đã cho phép sử dụng chiếu xạ trong công nghiệp thực phẩm.",
+    "chunk_count": 63,
+    "token_count": 230
+  },
+  {
+    "doc_id": "Public026",
+    "summary_text": "Ngành vật liệu dệt nghiên cứu cấu tạo và tính chất của xơ, sợi và các chế phẩm dệt, cùng với các phương pháp xác định chúng. Các khái niệm chính bao gồm xơ thiên nhiên, xơ hóa học, sợi đơn, sợi phức, và sợi chỉ thường. Nội dung chủ yếu là lý thuyết về cấu trúc và phân loại vật liệu dệt. Đối tượng nghiên cứu không chỉ bao gồm sản phẩm dệt may mà còn các loại dây, chỉ khâu, và vật liệu dệt khác sử dụng trong công nghiệp, y tế và đời sống hàng ngày. Việc hiểu rõ tính chất và cấu tạo vật liệu dệt giúp sản xuất hàng dệt đạt chất lượng cao và thiết lập tiêu chuẩn thử nghiệm cho ngành dệt. Phân loại vật liệu dệt dựa vào hình dạng, cấu trúc và nguồn gốc của xơ, từ đó phục vụ cho việc sản xuất và ứng dụng trong nhiều lĩnh vực khác nhau.",
+    "chunk_count": 33,
+    "token_count": 210
+  },
+  {
+    "doc_id": "Public027",
+    "summary_text": "Tính chất lý hóa của sợi dệt. Xơ xenlulô, xơ protein, tơ tằm, len. Lý thuyết và thực hành.\n\nTài liệu mô tả các tính chất lý hóa của xơ xenlulô (bông) và xơ protein (len, tơ tằm), bao gồm cấu trúc, ứng dụng, và ảnh hưởng của các yếu tố như nước, nhiệt độ, ánh sáng, axit, kiềm và chất oxy hóa đến độ bền và tính chất của các loại sợi. Xơ xenlulô có khả năng hút ẩm tốt nhưng dễ bị phá hủy bởi vi sinh vật và axit mạnh. Trong khi đó, tơ tằm và len có độ bền cao hơn nhưng cũng bị ảnh hưởng bởi điều kiện môi trường. Tài liệu cũng nêu rõ ứng dụng của các loại sợi trong ngành dệt may và cách bảo quản để giữ được chất lượng sản phẩm.",
+    "chunk_count": 45,
+    "token_count": 202
+  },
+  {
+    "doc_id": "Public028",
+    "summary_text": "Sự phát triển của transistor và nguyên lý hoạt động của nó. Transistor, Diode bán dẫn, Transistor Bipolar Junction (BJT), Transistor NPN, Transistor PNP, Emitter, Base, Collector, vùng nghèo kiệt. Lý thuyết.\n\nNội dung tài liệu tập trung vào sự phát triển và cấu tạo của transistor, một thiết bị quan trọng trong ngành công nghiệp điện tử, được phát minh vào năm 1947. Transistor có hai loại chính là NPN và PNP, với ba thiết bị đầu cuối là Emitter, Base và Collector. Nguyên lý hoạt động của transistor dựa trên sự khuếch tán của các điện tử và lỗ trống giữa các lớp bán dẫn, tạo ra vùng nghèo kiệt tại mối nối Emitter-Base và Base-Collector. Tài liệu cũng đề cập đến ứng dụng của transistor trong các thiết bị như ti vi, điện thoại di động và máy tính.",
+    "chunk_count": 55,
+    "token_count": 203
+  },
+  {
+    "doc_id": "Public029",
+    "summary_text": "Chủ đề chính: Chất bán dẫn và mối nối P-N.  \nCác khái niệm/thuật ngữ chính: chất bán dẫn, silic, germanium, gallium arsenide, doping, bán dẫn loại N, bán dẫn loại P, mối nối P-N, diode, phân cực thuận, phân cực ngược.  \nLoại nội dung: lý thuyết.\n\nChất bán dẫn là vật liệu có khả năng dẫn điện trung gian giữa chất dẫn điện và chất cách điện, với silic, germanium và gallium arsenide là những ví dụ nổi bật. Chất bán dẫn có thể được điều chỉnh tính dẫn điện thông qua quá trình doping, tạo ra bán dẫn loại N (có electron tự do là hạt dẫn chính) và bán dẫn loại P (có lỗ trống là hạt dẫn chính). Mối nối P-N hình thành khi bán dẫn loại P và N kết hợp, cho phép dòng điện đi theo một hướng nhờ vào quá trình tái hợp giữa electron và lỗ trống. Chế độ phân cực thuận cho phép dòng điện lớn chạy qua diode, trong khi phân cực ngược tạo ra dòng điện rất nhỏ. Các đặc tính này là cơ sở cho nhiều thiết bị điện tử hiện đại.",
+    "chunk_count": 46,
+    "token_count": 262
+  },
+  {
+    "doc_id": "Public030",
+    "summary_text": "Tụ điện là linh kiện thụ động có khả năng tích trữ năng lượng điện trường dưới dạng điện tích khi có điện áp tĩnh. Các khái niệm/thuật ngữ chính bao gồm tụ điện, điện dung, điện môi, điện áp làm việc, nhiệt độ làm việc. Loại nội dung là lý thuyết và thực hành. Tài liệu trình bày cấu tạo, nguyên lý hoạt động và các loại tụ điện như tụ gốm, tụ phim, tụ hóa, tụ tantalum và tụ siêu điện, cùng với ứng dụng và yêu cầu bảo quản. Điện dung của tụ điện phụ thuộc vào diện tích bản cực và khoảng cách giữa các tấm. Tài liệu cũng đề cập đến các yếu tố ảnh hưởng như điện áp làm việc và nhiệt độ làm việc, nhấn mạnh tầm quan trọng của việc lựa chọn tụ điện phù hợp cho các ứng dụng điện tử khác nhau. Các lưu ý về bảo quản và kiểm tra định kỳ cũng được nêu rõ để duy trì hiệu suất của tụ điện.",
+    "chunk_count": 77,
+    "token_count": 217
+  },
+  {
+    "doc_id": "Public031",
+    "summary_text": "Điện trở (Resistor) là linh kiện điện tử thụ động, cản trở dòng chảy của electron trong mạch điện và thường được sử dụng trong các mạch điện tử như OP-AMP và vi điều khiển. Các khái niệm/thuật ngữ chính bao gồm điện trở, đơn vị điện trở (Ohm), ký hiệu điện trở, thành phần điện trở và mạch điện trở mắc nối tiếp và song song. Loại nội dung là lý thuyết và thực hành. Tài liệu giải thích cách thức hoạt động của điện trở, đơn vị đo lường, các yếu tố ảnh hưởng đến giá trị điện trở, cùng với cách tính tổng điện trở trong mạch nối tiếp và song song. Mạch nối tiếp cho phép dòng điện chảy qua từng điện trở lần lượt, trong khi mạch song song tạo nhiều đường dẫn cho dòng điện, giúp tăng khả năng phân phối dòng và đảm bảo hoạt động độc lập của các nhánh.",
+    "chunk_count": 63,
+    "token_count": 203
+  },
+  {
+    "doc_id": "Public032",
+    "summary_text": "Chủ đề chính: Tổng quan về dòng điện một chiều (DC) và dòng điện xoay chiều (AC).  \nCác khái niệm/thuật ngữ chính: Dòng điện một chiều, điện áp một chiều, định luật Ohm, dòng điện xoay chiều, điện áp RMS, công suất AC.  \nLoại nội dung: Lý thuyết, định nghĩa, ứng dụng thực tế.  \n\nTài liệu đề cập đến hai loại dòng điện chính là dòng điện một chiều (DC) và dòng điện xoay chiều (AC). Dòng điện DC có các electron chảy theo một hướng cố định, ứng dụng chủ yếu trong pin và ắc quy, trong khi dòng điện AC thay đổi hướng liên tục và thường được sử dụng trong các hộ gia đình và công nghiệp. Định luật Ohm mô tả mối quan hệ giữa dòng điện, điện áp và điện trở. Tài liệu cũng giải thích về công suất điện và điện áp hiệu dụng (RMS) trong dòng điện AC. Sự so sánh giữa DC và AC cho thấy sự khác biệt về nguồn gốc, khả năng truyền tải và ứng dụng trong thực tiễn.",
+    "chunk_count": 71,
+    "token_count": 243
+  },
+  {
+    "doc_id": "Public033",
+    "summary_text": "Chủ đề chính: Nguồn gốc và đặc tính của dòng điện.  \nCác khái niệm/thuật ngữ chính: dòng điện, điện áp, trở kháng, điện trở, dòng quy ước, dòng điện tử, công suất.  \nLoại nội dung: lý thuyết và thực hành.  \n\nTài liệu cung cấp cái nhìn tổng quan về lịch sử phát triển của điện học từ thời kỳ cổ đại cho đến các phát minh quan trọng như pin của Alessandro Volta và thí nghiệm của Benjamin Franklin về sét. Các đặc tính cơ bản của điện được trình bày rõ ràng, bao gồm dòng điện (đo bằng ampe), điện áp (đo bằng volt) và trở kháng (đo bằng ohm). Nội dung cũng giải thích về chiều dòng điện, sự ảnh hưởng của nhiệt độ đến điện trở, cũng như các loại điện trở khác nhau và ứng dụng của chúng trong mạch điện. Cuối cùng, công thức tính công suất tiêu tán trên điện trở được nêu rõ, nhấn mạnh tầm quan trọng của việc thiết kế mạch điện an toàn và hiệu quả.",
+    "chunk_count": 58,
+    "token_count": 239
+  },
+  {
+    "doc_id": "Public034",
+    "summary_text": "Chủ đề chính: Photodiode và Phototransistor trong ứng dụng quang điện.  \nCác khái niệm/thuật ngữ chính: Photodiode, Phototransistor, Hiệu ứng quang điện, Optocoupler, Tốc độ phản ứng, Phân cực, CTR.  \nLoại nội dung: Lý thuyết và ứng dụng.  \n\nTài liệu giới thiệu về photodiode - một thiết bị bán dẫn chuyển đổi năng lượng ánh sáng thành dòng điện, hoạt động chủ yếu ở chế độ phân cực nghịch. Photodiode có độ nhạy cao với ánh sáng và thường được sử dụng trong các ứng dụng tốc độ cao. Phototransistor, một phiên bản nâng cao của photodiode, có khả năng khuếch đại dòng điện và hoạt động ở hai chế độ: tuyến tính và chuyển mạch. Optocoupler là một thành phần quan trọng kết hợp LED và phototransistor, cho phép cách ly tín hiệu điện giữa các mạch. Tài liệu cũng đề cập đến các thông số quan trọng như CTR, điện áp cách ly và tốc độ phản hồi, nhấn mạnh sự cần thiết phải hiểu rõ nguyên lý hoạt động và ứng dụng của các thiết bị này trong công nghệ quang điện hiện đại.",
+    "chunk_count": 61,
+    "token_count": 264
+  },
+  {
+    "doc_id": "Public035",
+    "summary_text": "Thuật toán hồi quy tuyến tính và cách ứng dụng để dự đoán giá nhà. Các khái niệm/thuật ngữ chính: hồi quy tuyến tính, gradient descent, Mean Absolute Error (MAE), Mean Square Error (MSE). Loại nội dung: lý thuyết và thực hành. \n\nNội dung tài liệu trình bày về phương pháp hồi quy tuyến tính để dự đoán giá trị thực, lấy ví dụ từ dữ liệu diện tích và giá nhà. Tác giả mô tả quy trình tìm kiếm mô hình tối ưu thông qua thuật toán gradient descent, nơi mà các tham số được điều chỉnh để giảm thiểu hàm mất mát. Hai loại hàm mất mát phổ biến là MAE và MSE được giới thiệu, giúp đánh giá độ chính xác của mô hình. Tài liệu cũng nhấn mạnh tầm quan trọng của hệ số learning rate trong quá trình huấn luyện mô hình, với các tác động khác nhau tùy thuộc vào giá trị của nó. Các bước cụ thể để áp dụng thuật toán và so sánh các hàm mất mát cũng được giải thích chi tiết.",
+    "chunk_count": 73,
+    "token_count": 235
+  },
+  {
+    "doc_id": "Public036",
+    "summary_text": "Bài toán image segmentation là phương pháp phân chia ảnh thành nhiều vùng khác nhau để xác định hình dạng chính xác của các đối tượng. Các khái niệm/thuật ngữ chính bao gồm: image segmentation, semantic segmentation, instance segmentation, U-Net, loss function, transposed convolution. Loại nội dung của tài liệu này là lý thuyết và thực hành. Bài viết so sánh giữa object detection và image segmentation, nêu rõ sự cần thiết của segmentation trong các ứng dụng như chẩn đoán y học và ô tô tự lái. Nó cũng phân loại bài toán segmentation thành hai loại: semantic segmentation, xác định các lớp đối tượng chung, và instance segmentation, phân biệt các đối tượng riêng lẻ. Cuối cùng, tài liệu giới thiệu kiến trúc mạng U-Net, sử dụng cho bài toán semantic segmentation, cùng với các thông số kỹ thuật như loss function và transposed convolution trong quá trình xử lý ảnh.",
+    "chunk_count": 39,
+    "token_count": 196
+  },
+  {
+    "doc_id": "Public037",
+    "summary_text": "Mô hình Long Short Term Memory (LSTM) được ứng dụng trong bài toán image captioning, giúp cải thiện khả năng ghi nhớ dài hạn và tránh vấn đề vanishing gradient so với Recurrent Neural Network (RNN). Ứng dụng này không chỉ hỗ trợ người khiếm thị hiểu cảnh vật xung quanh mà còn tối ưu hóa tìm kiếm hình ảnh trên Google. Dữ liệu sử dụng là Flickr8k Dataset, bao gồm 8000 hình ảnh với các caption tương ứng, được chia thành các tập huấn luyện, kiểm tra và xác thực. Để áp dụng deep learning cho văn bản, cần số hóa từ thông qua các phương pháp như one hot encoding và word embedding, với mô hình nổi bật là word2vec. Mô hình Skip-Gram trong word2vec sẽ dự đoán các từ ngữ cảnh từ một từ đích, giúp cải thiện chất lượng biểu diễn ngữ nghĩa của từ. Bài toán cuối cùng là dự đoán từ tiếp theo trong chuỗi dựa trên ảnh đầu vào, với việc sử dụng softmax activation và categorical crossentropy loss function.",
+    "chunk_count": 91,
+    "token_count": 228
+  },
+  {
+    "doc_id": "Public038",
+    "summary_text": "Mô hình RNN và seq2seq với cơ chế attention trong xử lý dữ liệu chuỗi. RNN, seq2seq, encoder, decoder, attention, context vector. Lý thuyết.\n\nMô hình RNN (Recurrent Neural Network) được phát triển để xử lý dữ liệu dạng chuỗi như văn bản và video, với các bài toán được phân loại thành bốn dạng: one to one, one to many, many to one, và many to many. Mô hình seq2seq xuất hiện để giải quyết bài toán many to many, điển hình như dịch ngôn ngữ. Trong mô hình seq2seq, encoder chuyển đổi câu tiếng Anh thành context vector, trong khi decoder sử dụng context vector để tạo ra câu dịch tiếng Việt. Tuy nhiên, việc sử dụng một context vector duy nhất làm giảm độ chính xác khi dịch câu dài. Để khắc phục điều này, cơ chế attention ra đời, cho phép mô hình tập trung vào các từ quan trọng trong câu đầu vào, từ đó cải thiện chất lượng dịch. Attention sử dụng các thành phần query, key, và value để tính toán trọng số ảnh hưởng của từng từ, giúp mô hình học được mối quan hệ giữa các từ trong câu input và output.",
+    "chunk_count": 55,
+    "token_count": 259
+  },
+  {
+    "doc_id": "Public039",
+    "summary_text": "Mô hình GAN (Generative Adversarial Networks) là một phương pháp quan trọng trong lĩnh vực Deep Learning và AI, được giới thiệu bởi Ian J. Goodfellow vào năm 2014. Các khái niệm/thuật ngữ chính bao gồm: Generator, Discriminator, training, Nash equilibrium. Loại nội dung: lý thuyết và ứng dụng.\n\nGAN bao gồm hai mạng đối kháng: Generator tạo ra dữ liệu giả và Discriminator phân biệt dữ liệu thật và giả. Các ứng dụng của GAN rất đa dạng, từ việc tạo ra hình ảnh khuôn mặt người đến chỉnh sửa hình ảnh và sinh ra các bức ảnh tự nhiên khó phân biệt với ảnh thật. GAN cũng được dùng trong các bài toán chuyển đổi hình ảnh (image-to-image translation). Mô hình này hoạt động dựa trên nguyên lý trò chơi đối kháng, nơi cả hai mạng đều học hỏi lẫn nhau để cải thiện hiệu suất của mình. Kết quả cuối cùng là một mô hình có khả năng sinh dữ liệu mới tương tự như dữ liệu trong tập huấn luyện, mở ra nhiều cơ hội ứng dụng trong các lĩnh vực khác nhau.",
+    "chunk_count": 57,
+    "token_count": 239
+  },
+  {
+    "doc_id": "Public040",
+    "summary_text": "Chủ đề chính: Hướng dẫn xây dựng mô hình Deep Convolutional GAN (DCGAN) và Conditional GAN (cGAN).  \nCác khái niệm/thuật ngữ chính: GAN, DCGAN, cGAN, Generator, Discriminator, CIFAR-10, Fashion-MNIST, Convolutional Layer, Transposed Convolution, Loss Function.  \nLoại nội dung: Thực hành.  \n\nTài liệu trình bày chi tiết về mô hình Deep Convolutional GAN (DCGAN) và cách sử dụng nó để sinh ảnh từ bộ dữ liệu CIFAR-10. DCGAN cải tiến mô hình GAN truyền thống bằng cách áp dụng mạng nơ-ron tích chập (CNN) cho cả Generator và Discriminator. Generator tạo ra ảnh giả từ vector nhiễu, trong khi Discriminator phân biệt ảnh thật và giả. Tài liệu cũng đề cập đến các bước chi tiết trong cấu trúc mạng, các loại lớp như convolutional và transposed convolution, cùng các tips để xây dựng và huấn luyện mô hình hiệu quả. Tiếp theo, mô hình Conditional GAN (cGAN) được giới thiệu, cho phép sinh ảnh theo thể loại cụ thể bằng cách kết hợp vector nhiễu với thông tin điều kiện. Các hàm mất mát và cấu trúc mạng cho cGAN cũng được trình bày, nhằm cải thiện khả năng sinh ảnh theo mong muốn.",
+    "chunk_count": 74,
+    "token_count": 291
+  },
+  {
+    "doc_id": "Public041",
+    "summary_text": "Bài toán cho vay ưu đãi tại ngân hàng đối diện với lượng hồ sơ tăng đột biến, yêu cầu giải pháp dự đoán khả năng cho vay dựa trên mức lương và thời gian công tác của người nộp hồ sơ. Khái niệm chính bao gồm xác suất, hàm sigmoid và loss function. Nội dung tập trung vào lý thuyết và ứng dụng của logistic regression trong việc xác định xác suất cho vay cho từng hồ sơ. Trong đó, xác suất được xem như một thước đo cho sự không chắc chắn, cho phép ngân hàng chỉ cho vay những hồ sơ có xác suất trên 80%. Hàm sigmoid giúp giới hạn đầu ra trong khoảng từ 0 đến 1, phù hợp với yêu cầu của bài toán. Mô hình logistic regression được thiết lập để tối ưu hóa hàm loss function, từ đó nâng cao độ chính xác trong việc dự đoán hồ sơ vay vốn.",
+    "chunk_count": 61,
+    "token_count": 192
+  },
+  {
+    "doc_id": "Public042",
+    "summary_text": "Chủ đề chính: Giới thiệu về mạng nơ-ron (neural network) và cách hoạt động của nó.  \nCác khái niệm/thuật ngữ chính: nơ-ron, mạng nơ-ron, hàm kích hoạt (activation function), hồi quy logistic (logistic regression), feedforward.  \nLoại nội dung: lý thuyết / thực hành.  \n\nMạng nơ-ron là hệ thống tính toán lấy cảm hứng từ cách hoạt động của não bộ, với nơ-ron là đơn vị cơ bản. Mỗi nơ-ron nhận và truyền tín hiệu qua các kết nối với nơ-ron khác. Mạng nơ-ron bao gồm các lớp như input layer, hidden layer và output layer, trong đó có thể áp dụng hàm kích hoạt để quyết định kích hoạt nơ-ron. Hồi quy logistic không thể giải quyết bài toán XOR, nhưng khi thêm một hidden layer, mô hình có thể giải quyết các bài toán phức tạp hơn như XOR. Qua đó, mạng nơ-ron cho phép xử lý thông tin và giải quyết những vấn đề mà các mô hình đơn giản không thể đáp ứng.",
+    "chunk_count": 89,
+    "token_count": 247
+  },
+  {
+    "doc_id": "Public043",
+    "summary_text": "Chủ đề chính: Tài liệu này trình bày về hệ màu RGB và các khái niệm liên quan đến ảnh kỹ thuật số.  \nCác khái niệm/thuật ngữ chính: Hệ màu RGB, pixel, ảnh màu, ảnh xám, chuyển hệ màu, phép tính convolution, kernel, stride, padding.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nTài liệu mô tả hệ màu RGB, bao gồm ba màu chính là đỏ, xanh lục và xanh lam, từ đó có thể tạo ra 16.777.216 màu khác nhau. Nó giải thích khái niệm pixel là đơn vị cơ bản của ảnh kỹ thuật số và cách ảnh màu và ảnh xám được thể hiện dưới dạng ma trận. Ảnh màu sử dụng ba giá trị (r, g, b) cho mỗi pixel, còn ảnh xám chỉ cần một giá trị. Tài liệu cũng cung cấp công thức chuyển đổi giữa ảnh màu và ảnh xám, cùng với cách thực hiện phép tính convolution với kernel trên ảnh xám, bao gồm các yếu tố như stride và padding để điều chỉnh kích thước ma trận kết quả.",
+    "chunk_count": 90,
+    "token_count": 245
+  },
+  {
+    "doc_id": "Public044",
+    "summary_text": "Nội dung chính của tài liệu đề cập đến việc sử dụng mạng nơ-ron tích chập (Convolutional Neural Network - CNN) để xác minh sự tồn tại của mặt người trong ảnh, thay thế cho phương pháp captcha truyền thống. Các khái niệm/thuật ngữ chính bao gồm: captcha, deep learning, Convolutional Neural Network, fully connected layer, pooling layer, VGG16. Loại nội dung là lý thuyết về cấu trúc và hoạt động của mạng nơ-ron tích chập, cùng với cách mà các lớp như convolutional và pooling hoạt động để xử lý hình ảnh. Tài liệu cũng giới thiệu mô hình VGG16, một trong những mạng CNN nổi tiếng, đã đạt độ chính xác cao trong việc phân loại hình ảnh trong tập dữ liệu ImageNet. Việc áp dụng các phương pháp này giúp cải thiện khả năng nhận diện và phân tích hình ảnh, từ đó đáp ứng nhu cầu xác minh người dùng hiệu quả hơn.",
+    "chunk_count": 69,
+    "token_count": 206
+  },
+  {
+    "doc_id": "Public045",
+    "summary_text": "Chủ đề chính: Transfer learning và data augmentation trong nhận diện ảnh.  \nCác khái niệm/thuật ngữ chính: Transfer learning, pre-trained model, feature extractor, fine tuning, data augmentation, VGGFace2, CNN, ImageNet.  \nLoại nội dung: Lý thuyết và thực hành.\n\nTài liệu trình bày về transfer learning, một kỹ thuật hữu ích trong việc nhận diện ảnh khi dữ liệu huấn luyện hạn chế. Cụ thể, người dùng có thể sử dụng mô hình đã được huấn luyện với một tập dữ liệu lớn như VGGFace2 để trích xuất đặc trưng cho bài toán nhận diện 1000 người nổi tiếng ở Việt Nam chỉ với 10 ảnh cho mỗi người. Tài liệu giải thích hai phương pháp chính của transfer learning là feature extractor và fine tuning, với ưu điểm của fine tuning là độ chính xác cao hơn, nhưng thời gian huấn luyện lâu hơn. Ngoài ra, tài liệu cũng đề cập đến data augmentation, một kỹ thuật tạo ra dữ liệu huấn luyện bổ sung từ dữ liệu có sẵn thông qua các phương pháp như lật, quay, phóng to, và cắt ảnh, giúp cải thiện hiệu suất của mô hình trong trường hợp thiếu dữ liệu.",
+    "chunk_count": 52,
+    "token_count": 263
+  },
+  {
+    "doc_id": "Public046",
+    "summary_text": "Chủ đề chính: Tối ưu hóa quá trình huấn luyện mô hình học sâu thông qua vectorization, mini-batch gradient descent, dropout và batch normalization.  \nCác khái niệm/thuật ngữ chính: vectorization, mini-batch gradient descent, dropout, overfitting, batch normalization, activation function.  \nLoại nội dung: lý thuyết và thực hành.  \n\nNội dung tài liệu đề cập đến các kỹ thuật quan trọng trong huấn luyện mô hình học sâu, bắt đầu với vectorization, giúp tăng tốc độ tính toán bằng cách xử lý đồng thời nhiều phép tính. Mini-batch gradient descent là phương pháp hiệu quả để giảm thiểu thời gian huấn luyện và cải thiện độ chính xác của mô hình. Dropout được giới thiệu như một cách để chống overfitting bằng cách ngẫu nhiên loại bỏ một phần nút trong các layer. Cuối cùng, batch normalization chuẩn hóa dữ liệu trước khi đưa vào hàm kích hoạt, giúp giải quyết vấn đề vanishing và exploding gradient, đồng thời cho phép sử dụng learning rate lớn hơn. Các phương pháp này đều nhằm cải thiện hiệu suất và độ chính xác của mô hình trong quá trình huấn luyện.",
+    "chunk_count": 142,
+    "token_count": 249
+  },
+  {
+    "doc_id": "Public047",
+    "summary_text": "Bài toán object detection là một lĩnh vực quan trọng trong nhận diện hình ảnh, nhằm xác định vị trí và loại đối tượng trong ảnh có nhiều đối tượng. Các khái niệm/thuật ngữ chính bao gồm object detection, bounding box, R-CNN, Fast R-CNN, ROI pooling, anchor box và Intersection over Union (IoU). Nội dung chủ yếu là lý thuyết về các mô hình và thuật toán trong object detection, đặc biệt là sự phát triển từ R-CNN đến Fast R-CNN và các cải tiến mà chúng mang lại. Bài viết mô tả quy trình xác định bounding box và phân loại đối tượng trong ảnh, đồng thời giới thiệu các khái niệm như ROI pooling để xử lý kích thước khác nhau của các region proposal, và IoU để đánh giá độ chính xác của các bounding box dự đoán. Qua đó, tài liệu cung cấp cái nhìn tổng quan về các phương pháp hiện đại trong công nghệ nhận diện hình ảnh.",
+    "chunk_count": 85,
+    "token_count": 205
+  },
+  {
+    "doc_id": "Public048",
+    "summary_text": "Bài toán nhận diện biển số xe Việt Nam được phát triển dựa trên phương pháp xử lý ảnh truyền thống và Deep Learning, tập trung vào phát hiện biển số xe bằng thuật toán YOLO-Tinyv4. Các thuật ngữ chính bao gồm: nhận diện biển số, YOLO-Tinyv4, darknet, dữ liệu, gán nhãn, huấn luyện. Nội dung bài viết chủ yếu là lý thuyết và thực hành. Tác giả hướng dẫn cách chuẩn bị dữ liệu cho bài toán Object Detection, bao gồm việc đánh giá và tăng sự đa dạng cho bộ dữ liệu, cũng như cách gán nhãn dữ liệu. Bài viết cũng giới thiệu chi tiết về YOLO-Tinyv4, một phiên bản tối ưu của YOLOv4, và darknet, framework open source cho Object Detection. Các phương pháp tăng sự đa dạng dữ liệu như thay đổi kích thước, độ sáng và xoay ảnh được trình bày cụ thể, cùng với quy trình gán nhãn và tổ chức dữ liệu. Điều này nhằm mục tiêu huấn luyện mô hình hiệu quả hơn trong việc nhận diện biển số xe.",
+    "chunk_count": 96,
+    "token_count": 236
+  },
+  {
+    "doc_id": "Public049",
+    "summary_text": "Chủ đề chính: Tầm quan trọng của phân tích thuật toán và mối liên hệ với dữ liệu trong khoa học máy tính. Các khái niệm/thuật ngữ chính: thuật toán, dữ liệu, kiểu dữ liệu, biến, cấu trúc dữ liệu, cấu trúc dữ liệu trừu tượng (ADTs), độ phức tạp thuật toán, biến toàn cục, biến cục bộ. Loại nội dung: lý thuyết.\n\nTài liệu giải thích tầm quan trọng của việc phân tích thuật toán và mối quan hệ giữa dữ liệu và thuật toán trong khoa học máy tính. Bắt đầu từ các khái niệm cơ bản như kiểu dữ liệu và biến, tài liệu mở rộng đến các vấn đề phức tạp hơn như độ phức tạp thuật toán và quy trình giải quyết vấn đề. Kiểu dữ liệu được định nghĩa là tập hợp các giá trị, trong khi cấu trúc dữ liệu trừu tượng (ADTs) bao gồm các phép toán trên dữ liệu cụ thể. Tài liệu cũng đề cập đến sự khác biệt giữa biến trong toán học và tin học, đồng thời cung cấp ví dụ về thuật toán Euclide để tìm ước số chung lớn nhất. Cuối cùng, các lưu ý khi biểu diễn thuật toán bằng ngôn ngữ hình thức cũng được đề cập để đảm bảo tính chính xác và rõ ràng.",
+    "chunk_count": 52,
+    "token_count": 292
+  },
+  {
+    "doc_id": "Public050",
+    "summary_text": "Chủ đề chính: Độ phức tạp thuật toán và quy trình giải quyết bài toán trên máy tính.  \nCác khái niệm/thuật ngữ chính: độ phức tạp thời gian, dữ liệu đầu vào, thuật toán, phiếm hàm O(g(x)), cấu trúc dữ liệu, cài đặt thuật toán, kiểm thử chương trình.  \nLoại nội dung: lý thuyết và quy trình thực hành.  \n\nNội dung tài liệu trình bày khái niệm độ phức tạp của thuật toán, nhấn mạnh rằng thời gian thực hiện phụ thuộc vào kích thước dữ liệu đầu vào và không bị ảnh hưởng bởi phần cứng máy tính. Để tính toán độ phức tạp, người ta thường sử dụng các phiếm hàm O(g(x)), với các dạng như O(1), O(log(n)), O(n), O(n^2) và O(n!). Tài liệu cũng mô tả quy trình giải quyết bài toán trên máy tính qua sáu bước, từ xác định yêu cầu đến tối ưu chương trình, nhằm giúp người lập trình có cái nhìn rõ ràng về cách tiếp cận và thực hiện thuật toán hiệu quả.",
+    "chunk_count": 61,
+    "token_count": 250
+  },
+  {
+    "doc_id": "Public051",
+    "summary_text": "Nội dung chính của tài liệu trình bày các lược đồ thuật toán kinh điển để giải quyết các bài toán trong lĩnh vực tin học như bài toán liệt kê, bài toán đếm, bài toán tối ưu và bài toán tồn tại. Các thuật toán được đề cập bao gồm thuật toán sinh, đệ quy, quay lui, tham lam, nhánh cận và quy hoạch động. Lược đồ thuật toán sinh được mô tả với các bước khởi tạo và lặp, cùng các điều kiện để xác định cấu hình. Tài liệu cũng cung cấp ví dụ cụ thể cho từng thuật toán, minh họa cách áp dụng chúng để giải quyết các bài toán như tính tổng số tự nhiên, tính giai thừa và tìm ước số chung lớn nhất. \n\nCác khái niệm/thuật ngữ chính: thuật toán sinh, đệ quy, thuật toán quay lui, thuật toán tham lam, thuật toán nhánh cận, thuật toán quy hoạch động. \n\nLoại nội dung: lý thuyết và thực hành.",
+    "chunk_count": 65,
+    "token_count": 220
+  },
+  {
+    "doc_id": "Public052",
+    "summary_text": "Chủ đề chính: Mô hình thuật toán quay lui (Backtrack Algorithm) trong lập trình.  \nCác khái niệm/thuật ngữ chính: thuật toán quay lui, kiểm tra khả năng, xâu nhị phân, hoán vị, mảng chuaxet, cây quay lui.  \nLoại nội dung: lý thuyết và thực hành.  \n\nTài liệu trình bày về thuật toán quay lui, một phương pháp để tìm kiếm nghiệm cho các bài toán thỏa mãn ràng buộc. Thuật toán này hoạt động bằng cách thử từng khả năng cho các thành phần của bộ nghiệm và quay lại nếu không có khả năng nào được chấp nhận. Hai ví dụ cụ thể được đưa ra: duyệt các xâu nhị phân có độ dài n và duyệt các hoán vị của các số từ 1 đến N. Cả hai ví dụ đều sử dụng cấu trúc lặp và điều kiện để xác định nghiệm, cùng với cách tiếp cận quay lui để tổ chức các lựa chọn. Tài liệu cũng cung cấp mã nguồn minh họa cho các thuật toán này, cho thấy cách cài đặt thực tế trong ngôn ngữ lập trình C++.",
+    "chunk_count": 45,
+    "token_count": 251
+  },
+  {
+    "doc_id": "Public053",
+    "summary_text": "Tìm kiếm thông tin là một vấn đề quan trọng trong khoa học máy tính, liên quan đến hầu hết các hoạt động của người dùng và ứng dụng tin học. Các khái niệm chính bao gồm: tìm kiếm, sắp xếp, thuật toán sắp xếp đơn giản, thuật toán sắp xếp nhanh, tìm kiếm tuyến tính, tìm kiếm nhị phân, tìm kiếm nội suy, và tìm kiếm Jumping. Nội dung chủ yếu của tài liệu này là lý thuyết về các thuật toán sắp xếp và tìm kiếm. Sắp xếp được coi là giai đoạn chuẩn bị cho quá trình tìm kiếm, nhằm mục đích tổ chức dữ liệu để đạt hiệu quả cao hơn trong việc truy xuất thông tin. Tài liệu cũng đề cập đến các thuật toán sắp xếp như Selection Sort và Insertion Sort, bao gồm cách hoạt động, độ phức tạp và kiểm nghiệm thuật toán. Qua đó, người đọc có thể hiểu được cách thức tổ chức dữ liệu để tối ưu hóa quá trình tìm kiếm thông tin.",
+    "chunk_count": 43,
+    "token_count": 220
+  },
+  {
+    "doc_id": "Public054",
+    "summary_text": "Chủ đề chính: Thuật toán sắp xếp trong lập trình.  \nCác khái niệm/thuật ngữ chính: Bubble Sort, Merge Sort, Heap Sort, Max Heap, Min Heap, độ phức tạp thuật toán.  \nLoại nội dung: lý thuyết / thực hành.\n\nTài liệu giới thiệu về các thuật toán sắp xếp phổ biến trong lập trình, bao gồm Bubble Sort, Merge Sort và Heap Sort. Bubble Sort hoạt động bằng cách tráo đổi các phần tử liền kề để sắp xếp dãy số, có độ phức tạp O(N^2). Merge Sort chia dãy thành hai nửa, sắp xếp và hợp nhất chúng, sử dụng phương pháp chia để trị. Heap Sort sử dụng cấu trúc dữ liệu Heap, trong đó Max Heap được dùng để sắp xếp theo thứ tự tăng dần. Tài liệu cũng cung cấp cài đặt mã nguồn cho từng thuật toán, giúp người đọc hiểu rõ cách thức hoạt động và áp dụng chúng trong lập trình.",
+    "chunk_count": 50,
+    "token_count": 221
+  },
+  {
+    "doc_id": "Public055",
+    "summary_text": "Chủ đề chính: Các thuật toán tìm kiếm thông dụng trong khoa học máy tính.  \nCác khái niệm/thuật ngữ chính: tìm kiếm tuyến tính, tìm kiếm nhị phân, tìm kiếm nội suy, tìm kiếm nhảy, độ phức tạp thuật toán.  \nLoại nội dung: lý thuyết và thực hành.  \n\nTài liệu giới thiệu một số thuật toán tìm kiếm phổ biến, bao gồm tìm kiếm tuyến tính, tìm kiếm nhị phân, tìm kiếm nội suy và tìm kiếm nhảy. Mỗi thuật toán được giải thích chi tiết về cách hoạt động, độ phức tạp thuật toán và ví dụ minh họa. Tìm kiếm tuyến tính được áp dụng cho dữ liệu chưa được sắp xếp với độ phức tạp O(n), trong khi tìm kiếm nhị phân, áp dụng cho dữ liệu đã được sắp xếp, có độ phức tạp O(log(n)). Thuật toán tìm kiếm nội suy cải tiến so với tìm kiếm nhị phân bằng cách xác định vị trí so sánh dựa trên giá trị khóa. Cuối cùng, thuật toán tìm kiếm nhảy kết hợp phương pháp tìm kiếm tuyến tính và bước nhảy để tối ưu hóa hiệu suất tìm kiếm. Tài liệu cung cấp mã nguồn cụ thể cho từng thuật toán để người đọc có thể thực hành.",
+    "chunk_count": 63,
+    "token_count": 280
+  },
+  {
+    "doc_id": "Public056",
+    "summary_text": "Chủ đề chính: Tìm hiểu về kiểu dữ liệu trừu tượng (ADT) và danh sách liên kết đơn.  \nCác khái niệm/thuật ngữ chính: kiểu dữ liệu trừu tượng (ADT), danh sách liên kết, ngăn xếp, hàng đợi, node, con trỏ.  \nLoại nội dung: lý thuyết và thực hành.  \n\nNội dung tài liệu trình bày về kiểu dữ liệu trừu tượng (ADT) và nhấn mạnh ba kiểu dữ liệu quan trọng: danh sách liên kết, ngăn xếp và hàng đợi. Mỗi kiểu dữ liệu được xây dựng để giải quyết các vấn đề cụ thể trong khoa học máy tính. Đặc biệt, chương này tập trung vào danh sách liên kết đơn, một cấu trúc dữ liệu giúp khắc phục những hạn chế của mảng, như khả năng mở rộng và quản lý bộ nhớ. Tài liệu định nghĩa và giải thích cách biểu diễn danh sách liên kết đơn, bao gồm các thao tác thêm, xóa và duyệt các node. Ngoài ra, người học cần nắm vững các khái niệm cơ bản, thao tác trên cấu trúc dữ liệu và ứng dụng của chúng trong lập trình.",
+    "chunk_count": 38,
+    "token_count": 261
+  },
+  {
+    "doc_id": "Public057",
+    "summary_text": "Đồ thị là một cấu trúc dữ liệu quan trọng trong khoa học máy tính, bao gồm các đỉnh và các cạnh kết nối chúng, và được ứng dụng trong nhiều lĩnh vực như mạng máy tính, giao thông và mạng xã hội. Các khái niệm chính bao gồm đồ thị vô hướng, đồ thị có hướng, đơn đồ thị, đa đồ thị, giả đồ thị, đường đi, chu trình, liên thông mạnh và yếu, cùng với một số loại đồ thị đặc biệt như đồ thị đầy đủ, đồ thị vòng, đồ thị bánh xe và đồ thị hai phía. Nội dung chủ yếu tập trung vào phương pháp biểu diễn đồ thị, bao gồm biểu diễn bằng ma trận kề, danh sách cạnh và danh sách kề, mỗi phương pháp có ưu và nhược điểm riêng. Nội dung này giúp người đọc hiểu rõ hơn về cách lưu trữ và xử lý đồ thị trong các ứng dụng thực tế.",
+    "chunk_count": 79,
+    "token_count": 191
+  },
+  {
+    "doc_id": "Public058",
+    "summary_text": "Chủ đề chính: Mô tả bài toán kiểm thử phần mềm qua biểu đồ Venn.  \nCác khái niệm/thuật ngữ chính: kiểm thử, hành vi, đặc tả, cấu trúc, lỗi, sai, kiểm thử chức năng, kiểm thử cấu trúc.  \nLoại nội dung: lý thuyết / thực hành.  \n\nBài viết trình bày về kiểm thử phần mềm, phân tích sự khác biệt giữa hành vi và cấu trúc của chương trình. Nó giới thiệu biểu đồ Venn để làm rõ mối quan hệ giữa các hành vi được đặc tả và các hành vi được lập trình trong phần mềm. Việc phân loại các lỗi và sai cũng được nhấn mạnh, bao gồm các loại sai theo giai đoạn phát triển và ảnh hưởng của chúng. Trong đó, kiểm thử chức năng và kiểm thử cấu trúc là hai phương pháp chính được thảo luận, mỗi phương pháp có những ưu điểm và nhược điểm riêng. Kiểm thử chức năng dựa vào hành vi đặc tả, trong khi kiểm thử cấu trúc dựa vào mã nguồn để xác định các ca kiểm thử. Cuối cùng, bài viết nhấn mạnh tầm quan trọng của việc hiểu rõ loại lỗi để lựa chọn phương pháp kiểm thử phù hợp, biến kiểm thử thành một nghệ thuật.",
+    "chunk_count": 43,
+    "token_count": 277
+  },
+  {
+    "doc_id": "Public059",
+    "summary_text": "Chủ đề chính: Kiểm thử tích hợp trong phát triển phần mềm.  \nCác khái niệm/thuật ngữ chính: Kiểm thử tích hợp, mô-đun, kiểm thử đơn vị, giao diện, lỗi giao diện, chiến lược kiểm thử.  \nLoại nội dung: Lý thuyết.  \n\nTài liệu trình bày về kiểm thử tích hợp, một quá trình quan trọng trong phát triển phần mềm, tập trung vào việc kiểm tra sự tương thích giữa các mô-đun đã được kiểm thử đơn vị. Mô-đun là các phần tử độc lập trong hệ thống, có thể là hàm, lớp hoặc tập hợp các thành phần cung cấp dịch vụ tích hợp. Kiểm thử tích hợp giúp phát hiện lỗi giao diện giữa các mô-đun, với các phương pháp như kiểm thử hộp đen và hộp trắng. Tài liệu cũng nêu rõ các chiến lược ghép mô-đun như từ trên xuống, dưới lên, và phương pháp bigbang, cùng với nhược điểm của mỗi cách. Việc kiểm thử cần được thực hiện liên tục trong quá trình lắp ráp mô-đun để dễ dàng xác định vị trí lỗi khi phát sinh.",
+    "chunk_count": 39,
+    "token_count": 257
+  },
+  {
+    "doc_id": "Public060",
+    "summary_text": "Chương này trình bày các ví dụ kiểm thử phần mềm, bao gồm bài toán tam giác và hàm NextDate, để minh họa cho các phương pháp kiểm thử. Bài toán tam giác nhận ba số nguyên làm đầu vào và xác định loại tam giác tương ứng, trong khi hàm NextDate trả về ngày kế tiếp dựa trên ba biến ngày, tháng và năm. Các khái niệm/thuật ngữ chính bao gồm kiểm thử tích hợp, kiểm thử hệ thống, bài toán tam giác, hàm NextDate, năm nhuận, ràng buộc dữ liệu. Nội dung chủ yếu là lý thuyết kết hợp với thực hành, nhằm cung cấp cái nhìn sâu sắc về các thách thức trong quy trình kiểm thử phần mềm và cách viết mã để kiểm tra tính chính xác của các hàm. Các ví dụ cụ thể sẽ được sử dụng trong các chương tiếp theo để làm rõ hơn về kiểm thử cấu trúc và các quy tắc liên quan đến kiểm thử phần mềm.",
+    "chunk_count": 39,
+    "token_count": 210
+  },
+  {
+    "doc_id": "Public061",
+    "summary_text": "Chương này thảo luận về kỹ thuật khảo sát đặc tả và mã nguồn trong phát triển phần mềm. Các khái niệm/thuật ngữ chính bao gồm khảo sát đặc tả, khảo sát mã nguồn, kiểm thử hộp trắng tĩnh, kiểm thử hộp đen tĩnh, và các chuẩn công nghiệp, quy định chính phủ, giao diện đồ họa, bảo mật. Nội dung chủ yếu là lý thuyết và quy định. Chương nhấn mạnh tầm quan trọng của việc khảo sát đặc tả trước khi phát triển mã nguồn để phát hiện lỗi và cải thiện chất lượng phần mềm. Nó cũng đề cập đến quy trình khảo sát mã nguồn nhằm tìm lỗi mà không cần thực thi phần mềm, từ đó giúp phát hiện các vấn đề về thiết kế và cấu trúc. Việc áp dụng các chuẩn và nghiên cứu các sản phẩm tương tự cũng là những phương pháp hữu ích trong quy trình kiểm thử.",
+    "chunk_count": 37,
+    "token_count": 196
+  },
+  {
+    "doc_id": "Public062",
+    "summary_text": "Kiểm thử giá trị biên là kỹ thuật quan trọng trong kiểm thử chức năng nhằm phát hiện lỗi tại các giá trị biên của biến đầu vào. Các khái niệm chính bao gồm kiểm thử giá trị biên, miền xác định, ca kiểm thử, và kiểm thử giá trị biên tổ hợp. Nội dung tài liệu chủ yếu là lý thuyết về phương pháp kiểm thử, cách xác định biên và cận biên cho các biến, và các ví dụ minh họa. Kiểm thử này tập trung vào việc kiểm tra các giá trị cực đại, cực tiểu và các mối quan hệ giữa các biến, qua đó giúp phát hiện lỗi lập trình hoặc điều kiện không chính xác. Tài liệu cũng đề cập đến kiểm thử giá trị biên tổ hợp và kiểm thử các giá trị đặc biệt, nhấn mạnh tầm quan trọng của kinh nghiệm người kiểm thử trong việc chọn lựa giá trị kiểm thử phù hợp để tối ưu hóa quá trình phát hiện lỗi.",
+    "chunk_count": 41,
+    "token_count": 205
+  },
+  {
+    "doc_id": "Public063",
+    "summary_text": "Chủ đề chính: Kiểm thử bằng bảng quyết định trong kiểm thử phần mềm.  \nCác khái niệm/thuật ngữ chính: kiểm thử lớp tương đương, kiểm thử giá trị biên, bảng quyết định, điều kiện, hành động, bảng quyết định lôgic, bảng quyết định tổng quát.  \nLoại nội dung: lý thuyết / thực hành.  \n\nNội dung tài liệu giới thiệu về kỹ thuật kiểm thử bằng bảng quyết định, thích hợp cho các hàm có biến đầu vào phụ thuộc lẫn nhau. Bảng quyết định giúp mô tả các điều kiện và hành động có thể xảy ra khi các điều kiện này được thỏa mãn. Cấu trúc bảng quyết định bao gồm các biểu thức điều kiện, giá trị điều kiện, hành động và giá trị hành động. Tài liệu cũng đề cập đến cách thức lập bảng quyết định để xác định các ca kiểm thử, bao gồm cả việc sử dụng giá trị đặc biệt để đánh dấu các điều kiện không hợp lệ. Ví dụ minh họa về bảng quyết định cho máy in và hàm NextDate cho thấy tính hiệu quả của kỹ thuật này trong việc giảm số lượng ca kiểm thử cần thiết.",
+    "chunk_count": 31,
+    "token_count": 253
+  },
+  {
+    "doc_id": "Public064",
+    "summary_text": "Chủ đề chính: Phương pháp kiểm thử dòng điều khiển trong kiểm thử phần mềm.  \nCác khái niệm/thuật ngữ chính: kiểm thử dòng điều khiển, kiểm thử hộp trắng, độ đo kiểm thử, độ bao phủ, ca kiểm thử.  \nLoại nội dung: lý thuyết.  \n\nChương này trình bày phương pháp kiểm thử dòng điều khiển nhằm phát hiện lỗi trong chương trình thông qua việc phân tích mã nguồn và xây dựng ca kiểm thử dựa trên các dòng điều khiển. Khác với kiểm thử hộp đen, kiểm thử hộp trắng cho phép phát hiện lỗi tiềm ẩn bên trong phần mềm, yêu cầu người kiểm thử phải nắm vững ngôn ngữ lập trình và giải thuật. Đồ thị dòng điều khiển được sử dụng để tối ưu hóa số lượng đỉnh, từ đó giảm độ phức tạp trong việc phân tích và sinh ca kiểm thử. Ngoài ra, độ đo kiểm thử giúp đánh giá mức độ bao phủ của ca kiểm thử, với các độ đo phổ biến như C1, C2 và C3 được giới thiệu. Mục tiêu là đạt được độ bao phủ cao nhất với số ca kiểm thử tối thiểu, đảm bảo chất lượng phần mềm.",
+    "chunk_count": 34,
+    "token_count": 266
+  },
+  {
+    "doc_id": "Public065",
+    "summary_text": "Kiểm thử dựa trên lát cắt là một phương pháp nhằm phát hiện lỗi trong các đơn vị chương trình với độ phức tạp thấp hơn so với kiểm thử dòng dữ liệu. Các khái niệm/thuật ngữ chính bao gồm: kiểm thử dòng dữ liệu, lát cắt chương trình, biến, định nghĩa (Def), sử dụng (Use), P-use, C-use, O-use, L-use, I-use. Loại nội dung: lý thuyết. \n\nPhương pháp kiểm thử dựa trên lát cắt cho phép chỉ phân tích một tập con các câu lệnh liên quan đến từng biến, từ đó giảm thiểu chi phí và độ phức tạp trong việc sinh các ca kiểm thử. Lát cắt chương trình được định nghĩa là tập hợp các câu lệnh ảnh hưởng đến giá trị của biến tại một vị trí nhất định trong mã nguồn. Các hình thức sử dụng biến được phân loại rõ ràng để xác định các câu lệnh cần thiết và loại bỏ những câu lệnh không ảnh hưởng. Phương pháp này đã được áp dụng để phân mảnh các hàm, tạo đồ thị và tính toán các lát cắt cho từng biến.",
+    "chunk_count": 25,
+    "token_count": 248
+  },
+  {
+    "doc_id": "Public066",
+    "summary_text": "Chủ đề chính: Kiểm thử dựa trên mô hình và các công cụ hỗ trợ.  \nCác khái niệm/thuật ngữ chính: Kiểm thử dựa trên mô hình, máy hữu hạn trạng thái, ôtômat đơn định hữu hạn trạng thái, đặc tả hành vi, UML, mạng Petri, chuỗi Markov.  \nLoại nội dung: Lý thuyết / thực hành.  \n\nNội dung tài liệu giới thiệu phương pháp kiểm thử dựa trên mô hình, nhấn mạnh tầm quan trọng của nó trong việc tự động hóa và nâng cao độ chính xác của kiểm thử phần mềm. Kiểm thử dựa trên mô hình được định nghĩa là phương pháp sinh ca kiểm thử từ mô hình hành vi của hệ thống, giúp kiểm tra tính đúng đắn của lập trình so với thiết kế. Quy trình này bao gồm xác định yêu cầu, xây dựng mô hình và sinh đầu vào cho các ca kiểm thử. Tài liệu cũng đề cập đến các phương pháp và công cụ hỗ trợ như máy hữu hạn trạng thái, ôtômat đơn định và UML, cùng các phương pháp đặc tả khác nhau. Những công cụ này góp phần nâng cao chất lượng sản phẩm và tính cạnh tranh của các công ty phần mềm.",
+    "chunk_count": 37,
+    "token_count": 265
+  },
+  {
+    "doc_id": "Public067",
+    "summary_text": "Kiểm thử tự động là giải pháp quan trọng để nâng cao chất lượng sản phẩm phần mềm. Các khái niệm/thuật ngữ chính bao gồm kiểm thử tự động, kiểm thử hồi quy, công cụ kiểm thử, sinh ca kiểm thử, giá trị đầu ra mong muốn. Loại nội dung là lý thuyết và thực hành. \n\nHiện nay, kiểm thử phần mềm chủ yếu được thực hiện thủ công, tiêu tốn nhiều tài nguyên và thời gian. Tình trạng chất lượng phần mềm thấp dẫn đến thiệt hại kinh tế lớn, với nhiều công cụ tập trung vào thực thi kiểm thử mà chưa hiệu quả trong việc sinh ca kiểm thử hoặc kiểm thử hồi quy. Các công cụ kiểm thử tự động cho phép quản lý, sinh ca kiểm thử, so sánh kết quả kiểm thử và có thể được tích hợp vào quy trình phát triển phần mềm. Một bộ công cụ kiểm thử tự động có thể bao gồm nhiều thành phần như quản lý kiểm thử, phân tích tĩnh, phân tích độ phủ, và các công cụ kiểm thử hiệu năng, giúp nâng cao hiệu quả kiểm thử và giảm thiểu lỗi trong sản phẩm.",
+    "chunk_count": 17,
+    "token_count": 239
+  },
+  {
+    "doc_id": "Public068",
+    "summary_text": "Hệ thống thị giác máy tính yêu cầu quy trình thu thập và tiền xử lý dữ liệu hình ảnh bài bản để đảm bảo chất lượng. Các khái niệm/thuật ngữ chính bao gồm thu thập dữ liệu, tiền xử lý, kiến trúc mô hình, triển khai thực tế, giám sát và bảo trì, tối ưu chi phí. Loại nội dung bao gồm lý thuyết và thực hành. \n\nQuá trình bắt đầu bằng việc thu thập dữ liệu hình ảnh từ nhiều nguồn và xử lý chúng để tạo ra dữ liệu sạch, đa dạng. Tiếp theo là thiết kế kiến trúc mô hình phù hợp với mục tiêu cụ thể như phân loại hay phát hiện vật thể. Triển khai mô hình vào môi trường công nghiệp yêu cầu tích hợp phần mềm và phần cứng, cùng với giám sát liên tục để đảm bảo hiệu suất. Cuối cùng, tối ưu chi phí và khả năng mở rộng là cần thiết để hệ thống có thể thích ứng với sự phát triển của doanh nghiệp.",
+    "chunk_count": 31,
+    "token_count": 214
+  },
+  {
+    "doc_id": "Public069",
+    "summary_text": "Chủ đề chính: Quản lý và xử lý dữ liệu chuỗi thời gian.  \nCác khái niệm/thuật ngữ chính: chuỗi thời gian, cảm biến, timestamp, MQTT, TSDB, làm sạch dữ liệu, nén, bảo mật, giám sát, microservices.  \nLoại nội dung: lý thuyết và thực hành.\n\nDữ liệu chuỗi thời gian có mặt trong nhiều lĩnh vực và cần được xử lý đặc thù để đảm bảo tính liên tục và chất lượng. Các bước quan trọng bao gồm xác định nguồn dữ liệu, yêu cầu kỹ thuật, thu thập dữ liệu thời gian thực qua gateway IoT, và đảm bảo tính toàn vẹn. Tiền xử lý dữ liệu bao gồm làm sạch, chuẩn hóa, và tạo đặc trưng, trước khi lưu trữ vào cơ sở dữ liệu chuỗi thời gian (TSDB) như InfluxDB. Hệ thống cần quản lý phiên bản, bảo mật dữ liệu và có khả năng mở rộng. Giám sát luồng dữ liệu qua các công cụ như Prometheus giúp theo dõi và cảnh báo bất thường, trong khi chiến lược mở rộng và sao lưu định kỳ đảm bảo tính khả dụng và phục hồi dữ liệu hiệu quả.",
+    "chunk_count": 16,
+    "token_count": 259
+  },
+  {
+    "doc_id": "Public070",
+    "summary_text": "Công nghệ 5G là nền tảng cho hệ sinh thái kết nối hiện đại, hỗ trợ truyền thông siêu tốc và Internet vạn vật (IoT). Các khái niệm/thuật ngữ chính bao gồm mạng truy cập vô tuyến (RAN), mạng lõi (5GC), điện toán biên (MEC), QoS (Quality of Service), bảo mật đa lớp, và tự động hóa O-RAN. Loại nội dung là lý thuyết và thực hành. \n\nTài liệu trình bày cấu trúc mạng 5G với kiến trúc mở, các phương pháp quy hoạch và triển khai hạ tầng, quản lý chất lượng dịch vụ, bảo mật, và tối ưu hiệu năng. Các ứng dụng thực tiễn của 5G trong công nghiệp thông minh, y tế từ xa, giao thông thông minh, và giải trí được nhấn mạnh, cho thấy tiềm năng của 5G trong việc cải thiện hiệu suất và kết nối trong nhiều lĩnh vực. Việc áp dụng công nghệ này yêu cầu quản lý chặt chẽ về kỹ thuật và bảo mật để đảm bảo hiệu suất và khả năng mở rộng bền vững.",
+    "chunk_count": 35,
+    "token_count": 246
+  },
+  {
+    "doc_id": "Public071",
+    "summary_text": "Chủ đề chính: Quản lý và bảo mật trong hệ thống Internet vạn vật (IoT).  \nCác khái niệm/thuật ngữ chính: IoT, kiến trúc hệ thống, bảo mật, giám sát, quản lý thiết bị, phân tích dữ liệu, quy định.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nTài liệu này trình bày sự phát triển nhanh chóng của IoT với hàng tỷ thiết bị kết nối và yêu cầu quản lý, bảo mật hiệu quả. Nó giới thiệu các lớp kiến trúc cần thiết cho hệ thống IoT, bao gồm lớp thiết bị, mạng và xử lý ứng dụng, đồng thời nhấn mạnh tầm quan trọng của việc tối ưu hóa năng lượng và khả năng mở rộng. Các phương pháp quản lý thiết bị như đăng ký, giám sát từ xa và cập nhật phần mềm cũng được đề cập. Bảo mật đa lớp được xem là ưu tiên hàng đầu, với các biện pháp bảo vệ thiết bị đầu cuối và truyền thông. Cuối cùng, tài liệu cũng nêu rõ các chiến lược bền vững và tuân thủ quy định quốc tế nhằm tối ưu hóa chi phí và đảm bảo an toàn cho hệ thống IoT.",
+    "chunk_count": 59,
+    "token_count": 261
+  },
+  {
+    "doc_id": "Public072",
+    "summary_text": "Học Tăng Cường Sâu (Deep Reinforcement Learning - DRL) là sự tích hợp giữa Học Tăng Cường và Mạng Nơ-ron Sâu, cho phép robot công nghiệp tự học từ môi trường thông qua tương tác. Các khái niệm/thuật ngữ chính bao gồm: Tác nhân (Agent), Môi trường (Environment), Trạng thái (State), Hành động (Action), Phần thưởng (Reward). Loại nội dung: lý thuyết và thực hành. DRL giúp robot tự khám phá chiến lược điều khiển và thích ứng với thay đổi môi trường, giảm sự phụ thuộc vào thiết kế thủ công. Các thuật toán DRL phổ biến như Deep Q-Network, Policy Gradient, Actor-Critic, và Proximal Policy Optimization được sử dụng để cải thiện hiệu suất. DRL đã được ứng dụng trong lắp ráp tự động, quản lý kho, hàn và sơn tự động, cũng như bảo trì. Tuy nhiên, vẫn tồn tại thách thức về chi phí tính toán và khả năng tổng quát. Hướng phát triển tương lai bao gồm xây dựng mô hình thế giới nội tại, học tự giám sát, và tối ưu hóa triển khai trên phần cứng hạn chế.",
+    "chunk_count": 38,
+    "token_count": 264
+  },
+  {
+    "doc_id": "Public073",
+    "summary_text": "Ứng dụng trí tuệ nhân tạo trong y tế thông qua Học Liên Kết. Các khái niệm/thuật ngữ chính: Học Liên Kết, dữ liệu y tế, bảo mật, HIPAA, GDPR, mô hình toàn cục, huấn luyện cục bộ, thuật toán tổng hợp, bảo mật nâng cao. Loại nội dung: lý thuyết và thực hành. \n\nTài liệu khám phá cách Học Liên Kết (Federated Learning - FL) cho phép các cơ sở y tế hợp tác xây dựng mô hình AI mà không cần chia sẻ dữ liệu nhạy cảm, nhờ vào mô hình huấn luyện phân tán và tổng hợp tập trung. Nó bảo vệ quyền riêng tư của bệnh nhân và tuân thủ các quy định bảo mật. Các thách thức kỹ thuật như dữ liệu không đồng nhất và chi phí tính toán cục bộ được nêu rõ, cùng với hướng phát triển tương lai như tích hợp blockchain và thiết bị di động. FL có tiềm năng lớn trong ứng dụng y tế, từ chẩn đoán hình ảnh đến dự đoán nguy cơ bệnh mãn tính.",
+    "chunk_count": 25,
+    "token_count": 241
+  },
+  {
+    "doc_id": "Public074",
+    "summary_text": "Mạng di động thế hệ thứ sáu (6G) được kỳ vọng sẽ cải thiện tốc độ, độ trễ và khả năng kết nối so với 5G, nhờ vào điện toán lượng tử có thể giải quyết các bài toán tối ưu phức tạp. Các khái niệm/thuật ngữ chính bao gồm: 6G, điện toán lượng tử, qubit, cổng lượng tử, rối lượng tử, bài toán tối ưu, thuật toán lượng tử. Loại nội dung: lý thuyết, quy định, nghiên cứu. Mạng 6G hứa hẹn tốc độ truyền dữ liệu lên đến 1 Terabit/giây, độ trễ dưới 1 micro giây, và khả năng kết nối hàng tỷ thiết bị IoT. Các bài toán tối ưu trong mạng 6G như phân bổ phổ tần và định tuyến dữ liệu có thể được giải quyết hiệu quả hơn bằng các thuật toán lượng tử như QAOA và VQE. Tuy nhiên, thách thức về hạ tầng phần cứng lượng tử và việc phát triển thuật toán phù hợp vẫn cần được giải quyết. Hướng nghiên cứu tương lai bao gồm lượng tử hóa mạng và AI lượng tử.",
+    "chunk_count": 27,
+    "token_count": 254
+  },
+  {
+    "doc_id": "Public075",
+    "summary_text": "Nghiên cứu về pin đa hóa trị sử dụng trí tuệ nhân tạo để phát triển công nghệ lưu trữ năng lượng bền vững. Các khái niệm/thuật ngữ chính: trí tuệ nhân tạo, pin lithium-ion, pin đa hóa trị, năng lượng tái tạo, lưới điện thông minh, pin thể rắn, pin sodium-ion, pin lưu lượng, pin lithium-sulfur. Loại nội dung: nghiên cứu. \n\nViện Công nghệ New Jersey đã áp dụng AI để tìm ra các vật liệu mới cho pin đa hóa trị, hứa hẹn là giải pháp tiết kiệm hơn cho pin lithium-ion đang gặp khó khăn về nguồn cung và tính bền vững. Pin đa hóa trị có khả năng lưu trữ năng lượng cao hơn nhờ sử dụng các nguyên tố như magiê và canxi. Nhu cầu tích hợp năng lượng tái tạo trong lưới điện thông minh thúc đẩy sự phát triển của các công nghệ pin mới, trong đó pin thể rắn, sodium-ion và lưu lượng được nghiên cứu nhiều hơn. Tuy nhiên, thách thức lớn nhất vẫn là giảm chi phí sản xuất và phát triển công nghệ tái chế hiệu quả.",
+    "chunk_count": 29,
+    "token_count": 254
+  },
+  {
+    "doc_id": "Public076",
+    "summary_text": "Chủ đề chính: Phát triển hệ thống phòng thủ an ninh mạng dựa trên trí tuệ nhân tạo. Các khái niệm/thuật ngữ chính: chuyển đổi số, dữ liệu, AI, ransomware, deepfake, APT, học máy, phát hiện thời gian thực, tự động hóa, bảo mật IoT. Loại nội dung: quy định / lý thuyết / thực hành.\n\nTrong bối cảnh chuyển đổi số, dữ liệu trở thành tài sản quan trọng, trong khi hạ tầng mạng ngày càng phức tạp và dễ bị tấn công. Các cuộc tấn công hiện đại như ransomware và deepfake yêu cầu phương pháp phòng thủ mới. Trí tuệ nhân tạo (AI) cung cấp giải pháp hiệu quả thông qua việc thu thập, phân tích dữ liệu và phát hiện hành vi bất thường. Hệ thống phòng thủ AI bao gồm nhiều lớp từ thu thập dữ liệu đến phản ứng tự động. Các kỹ thuật AI như Deep Neural Networks và Generative Adversarial Networks giúp phát hiện các mối đe dọa một cách nhanh chóng và chính xác. Tuy nhiên, thách thức như thiếu dữ liệu gắn nhãn và vấn đề quyền riêng tư vẫn tồn tại. Hướng nghiên cứu tương lai bao gồm Explainable AI và Federated Learning nhằm nâng cao khả năng phát hiện và bảo vệ quyền riêng tư.",
+    "chunk_count": 39,
+    "token_count": 287
+  },
+  {
+    "doc_id": "Public077",
+    "summary_text": "Chuỗi cung ứng toàn cầu đang đối mặt với nhiều thách thức như thiếu minh bạch, nguy cơ giả mạo và dữ liệu phân tán, trong khi blockchain được xem là giải pháp khả thi để khắc phục. Các khái niệm chính bao gồm blockchain, hợp đồng thông minh, cơ chế đồng thuận và truy xuất nguồn gốc. Nội dung thuộc loại lý thuyết và thực hành. Blockchain cung cấp một sổ cái phân tán, cho phép tất cả bên liên quan truy cập thông tin minh bạch, giảm chi phí xác thực và thời gian giao hàng. Ứng dụng cụ thể của blockchain trong chuỗi cung ứng bao gồm truy xuất nguồn gốc minh bạch, chống giả mạo, tự động hóa thanh toán và tối ưu hóa vận chuyển. Tuy nhiên, việc triển khai vẫn gặp thách thức như quy mô giao dịch lớn, bảo mật dữ liệu nhạy cảm và chi phí chuẩn hóa. Tương lai của blockchain trong chuỗi cung ứng sẽ kết hợp với IoT, AI và các giải pháp bền vững nhằm nâng cao hiệu quả và giảm thiểu tác động môi trường.",
+    "chunk_count": 45,
+    "token_count": 234
+  },
+  {
+    "doc_id": "Public078",
+    "summary_text": "Chủ đề chính: Điện toán biên trong Công nghiệp 4.0.  \nCác khái niệm/thuật ngữ chính: Edge Computing, cảm biến, IoT, dữ liệu, độ trễ, bảo mật.  \nLoại nội dung: Lý thuyết và ứng dụng.  \n\nĐiện toán biên (Edge Computing) là mô hình điện toán phân tán, đưa khả năng xử lý dữ liệu gần nguồn phát sinh, nhằm giảm độ trễ, tiết kiệm băng thông và tăng bảo mật. Trong bối cảnh Công nghiệp 4.0, các nhà máy thông minh dựa vào hệ thống cảm biến, robot hợp tác và thiết bị IoT để tối ưu hóa quy trình sản xuất. Kiến trúc điện toán biên bao gồm ba tầng chính: tầng đám mây, tầng biên và tầng thiết bị. Lợi ích của điện toán biên trong sản xuất bao gồm độ trễ thấp, bảo mật dữ liệu, khả năng tự chủ và tính mở rộng. Các ứng dụng tiêu biểu như robot hợp tác, bảo trì dự đoán, kiểm soát chất lượng và quản lý năng lượng cho thấy tính hiệu quả của mô hình này. Tuy nhiên, việc triển khai cũng đối mặt với thách thức về quản lý phân tán, bảo mật và chi phí đầu tư. Xu hướng tương lai hứa hẹn sẽ có AI tự học, kết hợp Blockchain và tích hợp năng lượng",
+    "chunk_count": 32,
+    "token_count": 300
+  },
+  {
+    "doc_id": "Public079",
+    "summary_text": "Phân tích ảnh y tế sử dụng trí tuệ nhân tạo, đặc biệt là Mạng Thần Kinh Tích Chập (CNN), đang cách mạng hóa chẩn đoán y tế. Các khái niệm/thuật ngữ chính bao gồm: CNN, lớp tích chập, lớp gộp, hàm kích hoạt, shared weight, shared bias, bệnh lý, và dữ liệu y tế. Loại nội dung là lý thuyết và thực hành. CNN có khả năng học tự động từ dữ liệu hình ảnh lớn, giúp phân tích nhanh chóng và chính xác các ảnh X-quang, MRI, CT, và siêu âm. Tuy nhiên, vẫn còn nhiều thách thức như thiếu dữ liệu gắn nhãn, khó khăn trong giải thích mô hình, và yêu cầu tính toán cao. Xu hướng tương lai bao gồm tích hợp Explainable AI, học chuyển giao, và phát triển mô hình nhẹ nhằm nâng cao khả năng ứng dụng trong thực tế. CNN không chỉ cải thiện độ chính xác chẩn đoán mà còn giảm tải cho nhân lực y tế và cá nhân hóa điều trị.",
+    "chunk_count": 66,
+    "token_count": 231
+  },
+  {
+    "doc_id": "Public080",
+    "summary_text": "Chủ đề chính: Trí tuệ nhân tạo tạo sinh trong phát triển thuốc.  \nCác khái niệm/thuật ngữ chính: Trí tuệ nhân tạo tạo sinh, mạng đối kháng tạo sinh (GAN), bộ tự mã hóa biến thể (VAE), mô hình transformer, phát triển thuốc, thiết kế phân tử.  \nLoại nội dung: Lý thuyết và quy trình thực hành.  \n\nNội dung tài liệu đề cập đến việc ứng dụng trí tuệ nhân tạo tạo sinh trong quy trình phát triển thuốc truyền thống, giúp rút ngắn thời gian và chi phí. Các mô hình Generative AI như GAN, VAE và transformer có khả năng tạo ra các phân tử mới đáp ứng tiêu chí dược lý. Quy trình tích hợp AI bao gồm xác định mục tiêu, sinh phân tử mới, đánh giá in silico và thử nghiệm. Mặc dù có nhiều ưu điểm như tăng tốc độ và tiết kiệm chi phí, nhưng vẫn đối mặt với thách thức về độ tin cậy, chất lượng dữ liệu và vấn đề pháp lý. Xu hướng tương lai bao gồm kết hợp AI với tính toán lượng tử, học liên kết và tự động hóa phòng thí nghiệm để nâng cao hiệu quả trong nghiên cứu và phát triển thuốc.",
+    "chunk_count": 33,
+    "token_count": 265
+  },
+  {
+    "doc_id": "Public081",
+    "summary_text": "Khám phá vật liệu mới thông qua Mạng Nơ-ron Đồ Thị (GNN) là một công cụ mạnh mẽ trong công nghệ hiện đại. Các khái niệm chính bao gồm Mạng Nơ-ron Đồ Thị, nút (Node), cạnh (Edge), lan truyền thông tin (Message Passing), và đọc đồ thị (Graph Readout). Nội dung chủ yếu là lý thuyết và ứng dụng thực tiễn. GNN cho phép dự đoán tính chất vật liệu mới bằng cách biểu diễn cấu trúc vật liệu dưới dạng đồ thị, từ đó cải thiện hiệu quả trong các lĩnh vực như phân tích mạng xã hội, hệ thống gợi ý, hóa học và sinh học. GNN có lợi thế về tốc độ khám phá nhanh, tiết kiệm chi phí và khả năng tổng quát hóa cao, nhưng cũng gặp phải thách thức như dữ liệu hạn chế và cần độ chính xác trong mô phỏng. Xu hướng tương lai bao gồm kết hợp với học tăng cường và tự động hóa quy trình nghiên cứu. Các trường hợp nghiên cứu tiêu biểu cho thấy ứng dụng GNN trong việc phát hiện vật liệu ổn định mới và năng lượng sạch.",
+    "chunk_count": 33,
+    "token_count": 249
+  },
+  {
+    "doc_id": "Public082",
+    "summary_text": "Biến đổi khí hậu toàn cầu và vai trò của tính toán hiệu năng cao (HPC) trong nghiên cứu khí hậu. Biến đổi khí hậu, mô phỏng khí hậu, tính toán hiệu năng cao (HPC), siêu máy tính, dự báo thời tiết. Lý thuyết / thực hành.\n\nNội dung tài liệu đề cập đến sự gia tăng tần suất và cường độ của các hiện tượng thời tiết cực đoan do biến đổi khí hậu toàn cầu, nhấn mạnh tầm quan trọng của mô phỏng khí hậu ở quy mô hành tinh thông qua tính toán hiệu năng cao (HPC). HPC cho phép xử lý các bài toán phức tạp với độ chính xác cao và tốc độ nhanh, từ đó hỗ trợ dự báo thời tiết và mô phỏng biến đổi khí hậu. Tài liệu cũng trình bày cấu trúc hệ thống HPC, các ứng dụng của nó trong dự báo thời tiết cực đoan và mô phỏng khí hậu dài hạn, cùng với lợi ích, thách thức và xu hướng tương lai của công nghệ này. Các tiến bộ trong HPC có tiềm năng nâng cao khả năng dự đoán và hỗ trợ quyết định chiến lược cho các chính phủ và tổ chức trong ứng phó với biến đổi khí hậu.",
+    "chunk_count": 34,
+    "token_count": 264
+  },
+  {
+    "doc_id": "Public083",
+    "summary_text": "Chủ đề chính: Công nghệ 6G và triển vọng trong tương lai.  \nCác khái niệm/thuật ngữ chính: 6G, tốc độ terabit, độ trễ siêu thấp, trí tuệ nhân tạo, Internet vạn vật, điện toán lượng tử, vệ tinh, mạng định nghĩa bằng phần mềm, ứng dụng thực tế ảo.  \nLoại nội dung: Nghiên cứu / lý thuyết.  \n\nTài liệu giới thiệu về 6G, công nghệ viễn thông thế hệ tiếp theo dự kiến ra mắt vào năm 2030, với mục tiêu cung cấp tốc độ dữ liệu lên tới 1 terabyte mỗi giây và độ trễ dưới 0,1 mili giây. 6G sẽ tích hợp trí tuệ nhân tạo, điện toán lượng tử và các giải pháp truyền thông tiên tiến, mở ra khả năng cho nhiều ứng dụng như thực tế ảo, xe tự hành và y tế từ xa. Hệ thống này sẽ sử dụng tần số terahertz và mạng truy cập vô tuyến phân tán để tối ưu hóa hiệu suất. Tuy nhiên, 6G cũng đối mặt với thách thức về tiêu thụ năng lượng, chi phí đầu tư và bảo mật. Xu hướng tương lai của 6G bao gồm sự tích hợp AI trong mọi lớp mạng và hướng tới một mạng bền vững và an toàn hơn.",
+    "chunk_count": 35,
+    "token_count": 293
+  },
+  {
+    "doc_id": "Public084",
+    "summary_text": "Xe tự hành và công nghệ thị giác máy tính. Các khái niệm/thuật ngữ chính: xe tự hành, thị giác máy tính, cảm biến đa phương thức, mạng CNN, mạng RNN, xử lý thời gian thực, an toàn giao thông. Loại nội dung: lý thuyết / ứng dụng / thách thức.\n\nTài liệu giới thiệu về vai trò của công nghệ thị giác máy tính trong việc phát triển xe tự hành, từ việc nhận diện môi trường đến dự đoán hành vi. Các thành phần chính của hệ thống bao gồm cảm biến đa phương thức như camera, LiDAR và radar, cùng với xử lý dữ liệu để tạo ra bức tranh toàn cảnh. Nó cũng đề cập đến các thuật toán AI như mạng CNN và RNN, giúp cải thiện độ chính xác trong nhận diện và dự đoán. Bên cạnh đó, tài liệu nêu rõ các ứng dụng thực tế, thách thức kỹ thuật như xử lý trong điều kiện khó khăn và yêu cầu dữ liệu lớn. Xu hướng phát triển trong lĩnh vực này bao gồm việc sử dụng Edge AI và mô hình học tự giám sát. Cuối cùng, tài liệu nhấn mạnh tác động tích cực của xe tự hành đối với an toàn giao thông và hiệu quả vận tải.",
+    "chunk_count": 28,
+    "token_count": 265
+  },
+  {
+    "doc_id": "Public085",
+    "summary_text": "Nhà máy thông minh và robot công nghiệp tự học là nền tảng của Công nghiệp 4.0, giúp nâng cao mức độ tự động hóa và linh hoạt trong sản xuất. Các khái niệm chính bao gồm tự động hóa, robot công nghiệp, thuật toán A*, Zero Moment Point (ZMP), và điều khiển vi phân tích phân tỷ lệ (PID). Nội dung tài liệu chủ yếu bao gồm lý thuyết và ứng dụng của các thuật toán trong robot, công nghệ nền tảng, thách thức, tác động kinh tế – xã hội và xu hướng tương lai trong lĩnh vực này. Robot hiện đại có khả năng học hỏi từ dữ liệu và tối ưu hóa hoạt động, trong khi vẫn đối mặt với các thách thức về độ tin cậy, chi phí đầu tư, quản lý dữ liệu và chuẩn hóa hệ thống. Tương lai hứa hẹn với sự phát triển của robot tự học đa kỹ năng và cộng tác liên robot, mở ra cơ hội cho sản xuất bền vững và nâng cao năng suất.",
+    "chunk_count": 77,
+    "token_count": 217
+  },
+  {
+    "doc_id": "Public086",
+    "summary_text": "Thành phố thông minh tương lai cần hệ thống năng lượng xanh, bền vững với năng lượng tái tạo chủ lực. Năng lượng tái tạo, bao gồm năng lượng mặt trời, gió, thủy triều và sinh khối, là những nguồn sạch, thân thiện với môi trường. Nội dung chính của tài liệu này bao gồm lý thuyết về năng lượng tái tạo, ứng dụng trí tuệ nhân tạo trong quản lý năng lượng, các lợi ích kinh tế và môi trường, thách thức triển khai và xu hướng tương lai. Tài liệu nêu bật vai trò của AI trong việc tối ưu hóa hệ thống năng lượng, giúp giảm chi phí và phát thải CO2, đồng thời cải thiện chất lượng điện năng. Tuy nhiên, cũng có những thách thức như bảo mật dữ liệu, độ tin cậy dự báo và chi phí đầu tư ban đầu. Các xu hướng tương lai như AI tự thích nghi và tích hợp công nghệ blockchain hứa hẹn sẽ cải thiện khả năng quản lý năng lượng.",
+    "chunk_count": 41,
+    "token_count": 216
+  },
+  {
+    "doc_id": "Public087",
+    "summary_text": "Ô nhiễm không khí là một thách thức môi trường nghiêm trọng tại Việt Nam, đặc biệt ở các đô thị lớn. Các khái niệm/thuật ngữ chính bao gồm ô nhiễm không khí, bụi mịn PM2.5, hệ thống cảm biến IoT, trí tuệ nhân tạo (AI), và dự báo ô nhiễm. Nội dung tài liệu thuộc loại nghiên cứu. Tài liệu phân tích tình hình ô nhiễm không khí, với nồng độ bụi mịn PM2.5 vượt ngưỡng cho phép, ảnh hưởng đến sức khỏe cộng đồng và phát triển kinh tế. AI được đề xuất như một công cụ quan trọng trong việc giám sát và dự báo ô nhiễm, cải thiện hiệu quả quản lý chất lượng không khí thông qua việc tích hợp dữ liệu từ cảm biến và vệ tinh. Tài liệu cũng nêu lên các thách thức như độ chính xác dữ liệu, bảo mật thông tin và tính bền vững của hệ thống. Xu hướng tương lai tập trung vào việc phát triển công nghệ như Digital Twin và ứng dụng di động cá nhân hóa để nâng cao chất lượng không khí và bảo vệ sức khỏe cộng đồng.",
+    "chunk_count": 24,
+    "token_count": 252
+  },
+  {
+    "doc_id": "Public088",
+    "summary_text": "Chủ đề chính: Nghiên cứu về tế bào gốc và máy tính sinh học dựa trên DNA.  \nCác khái niệm/thuật ngữ chính: Tế bào gốc, DNA, máy tính sinh học, ngưng tụ sinh học phân tử, y học cá nhân hóa.  \nLoại nội dung: Nghiên cứu.\n\nTài liệu đề cập đến khả năng của tế bào gốc trong việc xử lý thông tin di truyền với độ tin cậy và tốc độ cao, tương tự như các quy trình trong máy tính hiện đại. Nghiên cứu của Viện Công nghệ Karlsruhe cho thấy rằng ngưng tụ sinh học phân tử cho phép tế bào gốc kích hoạt nhanh chóng các gen cần thiết, điều này có thể áp dụng cho phát triển máy tính sinh học sử dụng DNA. Máy tính sinh học hứa hẹn mang lại nhiều ưu điểm vượt trội so với máy tính truyền thống, như hiệu suất cao, khả năng tự sửa chữa và linh hoạt. Tuy nhiên, còn nhiều thách thức cần giải quyết trong việc triển khai, bao gồm tốc độ tính toán và chi phí tổng hợp DNA. Tương lai của máy tính sinh học có thể bao gồm hệ thống lai giữa điện tử và sinh học, cùng với ứng dụng trong y học cá nhân hóa.",
+    "chunk_count": 25,
+    "token_count": 273
+  },
+  {
+    "doc_id": "Public089",
+    "summary_text": "Siêu dẫn là hiện tượng vật liệu dẫn điện không có điện trở, cho phép dòng điện chảy mãi mà không mất năng lượng. Các khái niệm chính bao gồm siêu dẫn, hiệu ứng Meissner, cặp Cooper, vật liệu siêu dẫn nhiệt độ phòng. Loại nội dung là lý thuyết và nghiên cứu. Bài viết trình bày về lịch sử hình thành và nguyên lý siêu dẫn, từ phát hiện đầu tiên vào năm 1911 đến những tiến bộ gần đây trong vật liệu siêu dẫn ở nhiệt độ phòng. Sự phát triển này hứa hẹn mang lại những ứng dụng tiềm năng như tàu đệm từ, máy cộng hưởng từ MRI, máy tính lượng tử và động cơ điện công suất cao. Tuy nhiên, việc triển khai vẫn đối mặt với thách thức về ổn định, sản xuất hàng loạt và chi phí đầu tư. Tác động kinh tế xã hội lớn, bao gồm cách mạng năng lượng, giảm phát thải carbon và khuyến khích năng lượng tái tạo. Xu hướng tương lai bao gồm khám phá vật liệu mới bằng AI và ứng dụng siêu dẫn vào đời sống dân dụng.",
+    "chunk_count": 37,
+    "token_count": 246
+  },
+  {
+    "doc_id": "Public090",
+    "summary_text": "Điện toán neuromorphic là một lĩnh vực đang thay đổi cách tiếp cận trong công nghệ máy tính bằng cách mô phỏng cách bộ não hoạt động. Các khái niệm chính bao gồm điện toán thần kinh, trí tuệ nhân tạo (AI), memristor, và hệ thống lập trình sự kiện. Loại nội dung là lý thuyết và thực hành. \n\nĐiện toán neuromorphic hứa hẹn sẽ cải thiện hiệu suất và hiệu quả năng lượng trong các ứng dụng như robot tự hành, thiết bị IoT thông minh, và y tế. Lĩnh vực này kết hợp sinh học, vật lý, toán học và kỹ thuật để phát triển các hệ thống có khả năng học hỏi và thích nghi. Tuy nhiên, vẫn còn nhiều thách thức như chuẩn hóa phần mềm, sản xuất hàng loạt và khả năng mở rộng. Tương lai của điện toán neuromorphic có thể dẫn đến việc phát triển các thiết bị AI tiết kiệm năng lượng và các công nghệ y sinh tiên tiến, mở ra nhiều cơ hội trong nghiên cứu và ứng dụng thực tiễn.",
+    "chunk_count": 36,
+    "token_count": 227
+  },
+  {
+    "doc_id": "Public091",
+    "summary_text": "Pin năng lượng rắn (Solid-State Battery – SSB) là công nghệ lưu trữ năng lượng tiên tiến, hứa hẹn mang lại hiệu suất cao, an toàn và tuổi thọ dài hơn so với pin lithium-ion. Các khái niệm chính bao gồm pin thể rắn, chất điện phân rắn, cực dương, cực âm. Nội dung chính của tài liệu là lý thuyết về công nghệ pin thể rắn, cấu trúc, nguyên lý hoạt động, ưu điểm, ứng dụng thực tế, thách thức triển khai, tiến bộ nghiên cứu và tác động kinh tế – xã hội. Pin thể rắn sử dụng chất điện phân rắn thay cho chất lỏng, giúp tăng mật độ năng lượng, giảm nguy cơ cháy nổ và kéo dài tuổi thọ. Tuy nhiên, chi phí sản xuất cao và các vấn đề kỹ thuật vẫn là thách thức lớn. Pin thể rắn dự kiến sẽ có tác động tích cực đến ngành xe điện và năng lượng tái tạo, thúc đẩy sự phát triển bền vững trong tương lai.",
+    "chunk_count": 28,
+    "token_count": 225
+  },
+  {
+    "doc_id": "Public092",
+    "summary_text": "Chủ đề chính: Siêu vật liệu và ứng dụng trong công nghệ sóng điện từ.  \nCác khái niệm/thuật ngữ chính: siêu vật liệu, sóng điện từ, cloaking, superlens, anten siêu mỏng, metasurfaces.  \nLoại nội dung: lý thuyết và ứng dụng.\n\nSiêu vật liệu là vật liệu nhân tạo được thiết kế với cấu trúc ở cấp độ vi mô hoặc nano, cho phép điều khiển sóng điện từ, âm học và cơ học thông qua các tham số bất thường. Các loại siêu vật liệu bao gồm điện từ, âm học, cơ học và quang học, với ứng dụng trong các công nghệ tiên tiến như anten thông minh và hệ thống truyền thông 6G. Mặc dù siêu vật liệu có thể mang lại nhiều lợi ích như tốc độ truyền dữ liệu cao và khả năng cải thiện kết nối, nhưng vẫn gặp phải thách thức trong sản xuất quy mô lớn, độ bền và chi phí. Xu hướng phát triển trong tương lai bao gồm việc kết hợp các vật liệu khác nhau, ứng dụng AI trong điều khiển và mở rộng sử dụng trong lĩnh vực viễn thông, y tế và giáo dục. Siêu vật liệu hứa hẹn sẽ có tác động lớn đến kinh tế - xã hội, đặc biệt trong việc tối ưu hóa hạ tầng viễn thông.",
+    "chunk_count": 44,
+    "token_count": 290
+  },
+  {
+    "doc_id": "Public093",
+    "summary_text": "Máy tính quang học là giải pháp mới nổi giúp cải thiện tốc độ và giảm tiêu thụ năng lượng cho xử lý trí tuệ nhân tạo. Các khái niệm chính bao gồm photon, qubit quang tử, mạng lưới quang tử, và phép đo lượng tử. Loại nội dung trong tài liệu này là lý thuyết và nghiên cứu. Máy tính quang học sử dụng photon để truyền dữ liệu, cho phép xử lý song song và đạt tốc độ cực cao với băng thông hàng terabit/giây. Công nghệ này có khả năng hỗ trợ huấn luyện mô hình AI lớn, suy luận thời gian thực và xử lý hình ảnh. Mặc dù còn một số thách thức như độ chính xác chế tạo và chi phí sản xuất, các nghiên cứu và phát triển đang diễn ra mạnh mẽ tại nhiều tổ chức. Nếu thành công, máy tính quang học có thể tạo ra đột phá trong nhiều lĩnh vực như y tế, viễn thông và trung tâm dữ liệu, định hình tương lai của công nghệ và kinh tế toàn cầu.",
+    "chunk_count": 32,
+    "token_count": 226
+  },
+  {
+    "doc_id": "Public094",
+    "summary_text": "Vũ trụ học tính toán là lĩnh vực nghiên cứu lịch sử hình thành và tiến hóa của vũ trụ thông qua mô phỏng và tính toán. Các khái niệm/thuật ngữ chính bao gồm: Vụ Nổ Lớn, vật chất tối, năng lượng tối, mô phỏng N-body, thủy động lực học vũ trụ, học máy. Loại nội dung: lý thuyết, nghiên cứu, ứng dụng công nghệ. \n\nLĩnh vực này kết hợp nhiều ngành như vật lý thiên văn, toán học và khoa học máy tính để tái hiện các giai đoạn sớm nhất của vũ trụ và dự đoán tương lai của nó. Các mô phỏng hiện đại sử dụng sức mạnh tính toán lớn để nghiên cứu sự giãn nở không gian và các tương tác vật chất. Học máy được áp dụng để phân tích dữ liệu lớn trong vũ trụ học, giúp ước lượng các tham số vũ trụ học và phân loại thiên hà. Tuy nhiên, lĩnh vực này cũng đối mặt với nhiều thách thức như khối lượng dữ liệu khổng lồ và chi phí tính toán cao. Tương lai hứa hẹn sẽ mang lại những hiểu biết sâu sắc và cải tiến trong công nghệ mô phỏng.",
+    "chunk_count": 35,
+    "token_count": 270
+  },
+  {
+    "doc_id": "Public095",
+    "summary_text": "Chủ đề chính: Terraforming là quá trình cải tạo hành tinh để có thể sống được.  \nCác khái niệm/thuật ngữ chính: Terraforming, Sao Hỏa, Mars Direct, không gian sống nhân tạo, công nghệ nano, Paraterraforming, địa kỹ thuật.  \nLoại nội dung: Lý thuyết và nghiên cứu.  \n\nTerraforming là một kế hoạch dài hạn nhằm cải tạo khí hậu và bề mặt của hành tinh, với Sao Hỏa là ứng viên tiềm năng nhất. Các nhà nghiên cứu đề xuất nhiều phương pháp cải tạo như tăng áp suất khí quyển, gia nhiệt hành tinh, và tạo từ trường nhân tạo. Công nghệ hỗ trợ như robot tự động, in 3D, và công nghệ sinh học tổng hợp cũng được nhấn mạnh. Tuy nhiên, việc cải tạo hành tinh còn gặp nhiều thách thức về môi trường và yêu cầu khối lượng lớn công nghệ tiên tiến. Địa kỹ thuật trên Trái Đất cũng được đề cập như một dạng cải tạo hành tinh, với các giải pháp như điều chỉnh bức xạ Mặt Trời và lưu trữ CO₂. Mặc dù còn nhiều khó khăn, tiến trình này có thể mang lại lợi ích lớn cho khoa học và công nghệ, đồng thời giúp hiểu rõ hơn về biến đổi khí hậu trên Trái Đất.",
+    "chunk_count": 42,
+    "token_count": 283
+  },
+  {
+    "doc_id": "Public096",
+    "summary_text": "Nội dung về năng lượng nhiệt hạch và tiềm năng của nó. Nhiệt hạch, phản ứng Deuterium-Tritium, năng lượng sạch, an toàn, không phát thải carbon, lò phản ứng tokamak, stellarator, giam giữ quán tính. Lý thuyết / thực hành / nghiên cứu. \n\nNăng lượng nhiệt hạch là quá trình kết hợp hai hạt nhân nhẹ thành hạt nhân nặng hơn, giải phóng năng lượng lớn mà không tạo ra chất thải phóng xạ lâu dài. Nguồn nhiên liệu deuteri và triti có sẵn dồi dào, hứa hẹn cung cấp năng lượng sạch và an toàn cho tương lai. Các thí nghiệm hiện tại đã gần đạt được điều kiện cần thiết để duy trì phản ứng nhiệt hạch, với các dự án lớn như ITER và NIF đang phát triển. Tuy nhiên, vẫn còn nhiều thách thức kỹ thuật, như việc giam giữ plasma ổn định và chi phí cạnh tranh với các nguồn năng lượng khác. Nếu thành công, năng lượng nhiệt hạch có thể trở thành nguồn năng lượng chính, giảm phụ thuộc vào nhiên liệu hóa thạch và thúc đẩy phát triển công nghệ cao.",
+    "chunk_count": 40,
+    "token_count": 259
+  },
+  {
+    "doc_id": "Public097",
+    "summary_text": "Hiđrô là nguyên tố đơn giản và phổ biến nhất trong vũ trụ, đóng vai trò quan trọng trong việc sản xuất năng lượng sạch. Các khái niệm/thuật ngữ chính bao gồm: hiđrô, pin nhiên liệu, điện phân, năng lượng tái tạo, giao thông vận tải. Loại nội dung: nghiên cứu. \n\nHiđrô chủ yếu được khai thác từ dầu mỏ, khí tự nhiên và sinh khối, và có thể được tạo ra từ điện phân nước bằng năng lượng tái tạo. Khi phản ứng với oxy, hiđrô giải phóng năng lượng mà không thải khí CO₂, làm cho nó trở thành nguồn năng lượng sạch lý tưởng. Pin nhiên liệu hiđrô đang được ứng dụng rộng rãi trong giao thông vận tải, từ xe hơi đến tàu hỏa và máy bay, với ưu điểm không phát thải và mật độ năng lượng cao. Tuy nhiên, chi phí sản xuất và hạ tầng còn hạn chế, cần cải thiện để đáp ứng nhu cầu. Trong tương lai, công nghệ hiđrô hứa hẹn sẽ trở thành giải pháp cho giao thông sạch và bền vững, đồng thời tạo ra nhiều việc làm và giảm phát thải carbon.",
+    "chunk_count": 37,
+    "token_count": 266
+  },
+  {
+    "doc_id": "Public098",
+    "summary_text": "Siêu tụ điện là thiết bị lưu trữ năng lượng điện hóa với khả năng sạc nhanh và cung cấp công suất tức thì cao, vượt trội hơn pin truyền thống. Các khái niệm chính bao gồm siêu tụ điện, điện dung hai lớp, giả điện dung, tốc độ nạp/xả, và ứng dụng trong giao thông. Loại nội dung của tài liệu này là lý thuyết và ứng dụng. Siêu tụ điện hoạt động dựa trên cơ chế điện dung hai lớp và giả điện dung, cho phép lưu trữ năng lượng mà không cần phản ứng hóa học, với điện dung có thể đạt tới 12.000 F và tuổi thọ lên đến 1 triệu chu kỳ. Chúng được ứng dụng trong xe buýt điện, tàu điện, xe hybrid, và các phương tiện khác, giúp cải thiện hiệu suất và kéo dài tuổi thọ pin. Tuy nhiên, thách thức lớn là mật độ năng lượng thấp hơn so với pin lithium-ion và chi phí sản xuất cao. Tương lai của siêu tụ điện có thể bao gồm nghiên cứu vật liệu mới và công nghệ sạc không dây.",
+    "chunk_count": 33,
+    "token_count": 237
+  },
+  {
+    "doc_id": "Public099",
+    "summary_text": "Sự phát triển của pin natri-ion như một giải pháp thay thế cho pin lithium-ion. Các khái niệm/thuật ngữ chính: pin natri-ion, ion natri, hiệu suất, chi phí, ứng dụng, thách thức. Loại nội dung: lý thuyết và ứng dụng. \n\nPin natri-ion sử dụng ion natri để lưu trữ năng lượng, mang lại nhiều lợi ích như nguồn nguyên liệu dồi dào, chi phí thấp và hiệu suất tốt ở nhiệt độ thấp. Công nghệ này phù hợp cho lưu trữ năng lượng tái tạo, xe điện đô thị và thiết bị tiêu dùng. Mặc dù có mật độ năng lượng thấp hơn so với pin lithium-ion, pin natri-ion đang được nghiên cứu và phát triển mạnh mẽ. Các công ty như CATL và Faradion đang tiên phong trong việc thương mại hóa công nghệ này. Pin natri-ion không chỉ giúp giảm phụ thuộc vào lithium và cobalt, mà còn hạ giá thành lưu trữ năng lượng, tạo ra việc làm mới trong ngành công nghiệp. Trong tương lai, pin natri-ion có khả năng trở thành một phần quan trọng trong hệ thống lưu trữ năng lượng toàn cầu.",
+    "chunk_count": 28,
+    "token_count": 253
+  },
+  {
+    "doc_id": "Public100",
+    "summary_text": "Chủ đề chính: Công nghệ điện toán không gian và ứng dụng của nó trong đời sống hiện đại.  \nCác khái niệm/thuật ngữ chính: máy học, tự động hóa, công nghệ điện toán không gian, thực tế ảo (VR), thực tế tăng cường (AR), cảm biến IoT, AI nhận thức không gian, thiết bị đeo, mạng 5G/6G.  \nLoại nội dung: lý thuyết / thực hành / quy định.\n\nTài liệu trình bày về công nghệ điện toán không gian, cho phép kết hợp giữa thế giới vật lý và kỹ thuật số, giúp con người tương tác với dữ liệu trong môi trường 3D. Các công nghệ như thực tế ảo, thực tế tăng cường và cảm biến IoT đóng vai trò quan trọng trong việc tối ưu hóa quy trình làm việc, giáo dục và y tế. Đặc biệt, các thiết bị đeo như Apple Vision Pro và Microsoft HoloLens giúp người dùng trải nghiệm môi trường số một cách tự nhiên. Những lợi ích kinh tế – xã hội từ công nghệ này bao gồm tăng hiệu suất làm việc, tiết kiệm chi phí, và tạo ra ngành nghề mới. Tuy nhiên, vẫn còn tồn tại thách thức về chi phí thiết bị, quyền riêng tư và sáng tạo nội dung. Xu hướng tương lai hứa hẹn sẽ có thiết bị nhẹ hơn, tích hợp AI và Metaverse chuyên biệt",
+    "chunk_count": 33,
+    "token_count": 300
+  },
+  {
+    "doc_id": "Public101",
+    "summary_text": "Chủ đề chính: Tối ưu hóa thuật toán Stochastic Gradient Descent (SGD) trong học sâu.  \nCác khái niệm/thuật ngữ chính: Mô hình mạng nơ-ron sâu, hàm mất mát, gradient, tốc độ học, thiết kế tập trung, thiết kế phân tán, Allgather.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nTài liệu trình bày bài toán huấn luyện mô hình mạng nơ-ron sâu thông qua việc tối ưu hóa các tham số để giảm thiểu hàm mất mát, chủ yếu sử dụng thuật toán Stochastic Gradient Descent (SGD). SGD cho phép cập nhật tham số dựa trên gradient của hàm mất mát, giúp cải thiện hiệu suất huấn luyện so với phương pháp Gradient Descent toàn bộ dữ liệu. Để tối ưu hóa SGD trong môi trường phân tán, hai thiết kế chính là thiết kế tập trung và thiết kế phân tán được giới thiệu. Thiết kế tập trung sử dụng một master node để quản lý và đồng bộ hóa quá trình huấn luyện, trong khi thiết kế phân tán cho phép các nodes hoạt động độc lập, giảm thiểu điểm cổ chai nhưng có chi phí truyền thông cao hơn. Mỗi phương pháp đều có những ưu điểm và nhược điểm riêng, ảnh hưởng đến hiệu suất và khả năng mở rộng của hệ thống.",
+    "chunk_count": 44,
+    "token_count": 296
+  },
+  {
+    "doc_id": "Public102",
+    "summary_text": "Chủ đề chính: Mô hình trường ngẫu nhiên điều kiện (CRFs) trong gán nhãn chuỗi.  \nCác khái niệm/thuật ngữ chính: CRFs, chuỗi dữ liệu, chuỗi nhãn, xác suất có điều kiện, hàm năng lượng, định lý Hammersley–Clifford.  \nLoại nội dung: Lý thuyết.\n\nNội dung tài liệu trình bày về mô hình trường ngẫu nhiên điều kiện (CRFs) dùng để gán nhãn chuỗi dữ liệu. Xác định các biến ngẫu nhiên X và Y đại diện cho chuỗi dữ liệu và chuỗi nhãn tương ứng, CRFs tập trung vào xác suất có điều kiện P(Y|X). Tài liệu mô tả cách xây dựng mô hình xác suất qua các hàm năng lượng và ứng dụng định lý Hammersley–Clifford để xác định phân phối xác suất của chuỗi nhãn. Mô hình Linear-Chain CRFs được giới thiệu như một trường hợp đặc biệt với các mối quan hệ giữa các nhãn được mô hình hóa thông qua các hàm đặc trưng. Cuối cùng, tài liệu cũng trình bày cách biểu diễn xác suất có điều kiện dưới dạng ma trận, hỗ trợ cho việc huấn luyện và suy luận trong mô hình CRFs.",
+    "chunk_count": 52,
+    "token_count": 281
+  },
+  {
+    "doc_id": "Public103",
+    "summary_text": "Mô hình Linear-Chain Conditional Random Fields (CRFs) được sử dụng để phân loại chuỗi dựa trên xác suất P(Y|X), nhằm tìm chuỗi nhãn y với xác suất cao nhất cho một chuỗi quan sát x. Các hàm đặc trưng và trọng số được tối ưu hóa trong quá trình huấn luyện nhằm phản ánh mối quan hệ giữa chuỗi quan sát và chuỗi nhãn. Thuật toán huấn luyện sử dụng Maximum Likelihood Estimation (MLE) để xác định các trọng số sao cho hàm mục tiêu log-likelihood lớn nhất. Quy trình Forward-Backward và Viterbi được áp dụng để tính toán xác suất biên và tìm đường đi có trọng số lớn nhất tương ứng với các nhãn trong chuỗi. Các thuật toán này hỗ trợ trong việc gán nhãn cho các từ trong câu, đảm bảo rằng mô hình có thể đưa ra dự đoán chính xác dựa trên dữ liệu đầu vào.\n\nCRFs, xác suất, hàm đặc trưng, huấn luyện, thuật toán Forward-Backward, thuật toán Viterbi\n\nNội dung lý thuyết và thực hành.",
+    "chunk_count": 80,
+    "token_count": 239
+  },
+  {
+    "doc_id": "Public104",
+    "summary_text": "Chủ đề chính: Hidden Markov Model (HMM) là mô hình thống kê dùng để phân tích chuỗi dữ liệu tuần tự với trạng thái ẩn không quan sát được.  \nCác khái niệm/thuật ngữ chính: Trạng thái ẩn, Ma trận xác suất chuyển trạng thái, Ma trận xác suất phát xạ, Phân phối xác suất ban đầu, Thuật toán Forward, Thuật toán Viterbi, Thuật toán Baum-Welch.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nHMM kết hợp hai quá trình ngẫu nhiên là quá trình Markov ẩn và quá trình phát xạ, cho phép suy ra các trạng thái ẩn từ các quan sát. Nó được biểu diễn bằng bốn thành phần chính: tập trạng thái ẩn, ma trận chuyển trạng thái, ma trận xác suất phát xạ và phân phối xác suất ban đầu. HMM khác với Markov Chain ở chỗ trạng thái ẩn không thể quan sát trực tiếp. Ba bài toán chính trong HMM bao gồm tính toán xác suất (thuật toán Forward), giải mã chuỗi trạng thái ẩn tối ưu (thuật toán Viterbi) và học các tham số của mô hình từ dữ liệu (thuật toán Baum-Welch). HMM được ứng dụng rộng rãi trong các lĩnh vực như nhận dạng giọng nói và phân tích chuỗi sinh học.",
+    "chunk_count": 97,
+    "token_count": 297
+  },
+  {
+    "doc_id": "Public105",
+    "summary_text": "Chủ đề chính: Thuật toán và ứng dụng của Hidden Markov Model (HMM). \nCác khái niệm/thuật ngữ chính: Thuật toán Forward, Thuật toán Backward, Thuật toán Viterbi, Giả định Markov, Giả định độc lập quan sát, Gắn thẻ từ loại (POS Tagging). \nLoại nội dung: Lý thuyết và thực hành.\n\nTài liệu trình bày các thuật toán quan trọng liên quan đến Hidden Markov Model (HMM), bao gồm thuật toán Forward và Backward, dùng để tính xác suất của chuỗi quan sát, và thuật toán Viterbi, dùng để tìm chuỗi trạng thái ẩn tối ưu. Các thuật toán này dựa trên hai giả định cơ bản: giả định Markov, cho phép chỉ xét trạng thái hiện tại để dự đoán trạng thái tiếp theo, và giả định độc lập quan sát, cho rằng mỗi quan sát chỉ phụ thuộc vào trạng thái hiện tại. Mặc dù có những hạn chế, HMM được áp dụng hiệu quả trong các bài toán thực tiễn như gắn thẻ từ loại (POS Tagging) trong xử lý ngôn ngữ tự nhiên, nhờ khả năng mô hình hóa chuỗi trạng thái ẩn dựa trên chuỗi quan sát.",
+    "chunk_count": 116,
+    "token_count": 274
+  },
+  {
+    "doc_id": "Public106",
+    "summary_text": "Chủ đề chính: Tìm kiếm theo chiều rộng (BFS) là thuật toán tìm kiếm vét cạn.  \nCác khái niệm/thuật ngữ chính: Tìm kiếm theo chiều rộng, nút biên, hàng đợi FIFO, con trỏ ngược, độ phức tạp tính toán, bộ nhớ.  \nLoại nội dung: Lý thuyết / thực hành.  \n\nTìm kiếm theo chiều rộng (BFS) là một thuật toán tìm kiếm vét cạn, mở rộng các nút theo thứ tự độ sâu từ nút gốc. Thuật toán sử dụng hàng đợi FIFO để lưu trữ các nút biên và có thể áp dụng con trỏ ngược để theo dõi nút cha nhằm tìm đường đi từ nút đích về nút gốc. BFS có ưu điểm trong tính đầy đủ và tối ưu khi giá thành đường đi giống nhau, nhưng gặp khó khăn về độ phức tạp tính toán và yêu cầu bộ nhớ lớn, với số nút cần mở rộng lên tới O(b^d + 1). Nếu kiểm tra điều kiện đích trước khi thêm nút vào tập biên, số lượng nút cần mở rộng có thể giảm xuống O(b^d). Thực tế, BFS thường chỉ khả thi cho các bài toán có kích thước nhỏ do yêu cầu bộ nhớ lớn.",
+    "chunk_count": 42,
+    "token_count": 286
+  },
+  {
+    "doc_id": "Public107",
+    "summary_text": "Chủ đề chính: Thuật toán Gradient Descent trong tối ưu hóa hàm mất mát trong Machine Learning.  \nCác khái niệm/thuật ngữ chính: Machine Learning, Toán Tối Ưu, hàm mất mát, local minimum, global minimum, Gradient Descent, learning rate.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nTài liệu giới thiệu về vai trò của thuật toán Gradient Descent (GD) trong việc tối ưu hóa hàm mất mát trong Machine Learning, đặc biệt là trong bài toán hồi quy tuyến tính (Linear Regression). Việc tìm kiếm giá trị cực tiểu của hàm mất mát thường gặp khó khăn do tính phức tạp của các hàm và số lượng dữ liệu lớn. GD là phương pháp phổ biến giúp tìm kiếm các điểm gần nghiệm bằng cách lặp đi lặp lại từ một điểm khởi đầu. Tác giả trình bày các khái niệm liên quan đến GD, giải thích cách tính toán hàm mất mát và đạo hàm, đồng thời minh họa việc tối ưu hóa hàm bằng ví dụ cụ thể trong Python. Cuối cùng, tác giả nhấn mạnh rằng GD có thể được cải tiến với nhiều kỹ thuật phức tạp hơn trong các bài toán thực tế.",
+    "chunk_count": 146,
+    "token_count": 274
+  },
+  {
+    "doc_id": "Public108",
+    "summary_text": "Bài báo này trình bày phương pháp định vị và tránh vật cản cho robot di động trong môi trường đa vật thể thông qua thuật toán học tăng cường. Các khái niệm chính bao gồm: robot di động, học tăng cường, Q-Learning, SARSA, tác nhân, môi trường, hành động, trạng thái, phần thưởng, chính sách. Nội dung chủ yếu là lý thuyết và thực hành. Bài báo mô tả mô hình robot được xây dựng trên phần mềm Gazebo và thực hiện các hoạt động huấn luyện với hai thuật toán Q-Learning và SARSA, đồng thời so sánh hiệu quả của chúng. Các thuật toán này sử dụng phương pháp cập nhật giá trị để tối ưu hóa hành động của robot nhằm đạt được phần thưởng cao nhất thông qua những tương tác với môi trường. Q-Learning là thuật toán off-policy trong khi SARSA cập nhật theo hành động tại thời điểm tiếp theo. Kết quả nghiên cứu chỉ ra rằng cả hai thuật toán đều có thể hoạt động hiệu quả trong việc định vị và tránh vật cản cho robot.",
+    "chunk_count": 51,
+    "token_count": 228
+  },
+  {
+    "doc_id": "Public109",
+    "summary_text": "Hệ gợi ý tuần tự đóng vai trò quan trọng trong việc khai thác thông tin từ chuỗi hành vi người dùng để dự đoán hành động tiếp theo. Các khái niệm/thuật ngữ chính bao gồm: hệ gợi ý tuần tự, GRU4Rec, SASRec, BERT4Rec, cổng cập nhật, cổng xoá bỏ, trạng thái ẩn. Loại nội dung: lý thuyết và thực hành. Bài viết trình bày sự phát triển của các phương pháp hiện đại như GRU4Rec, SASRec và BERT4Rec, nhấn mạnh khả năng cải thiện độ chính xác trong gợi ý thông qua việc khai thác thông tin động từ hành vi người dùng. GRU và LSTM được giới thiệu để giải quyết vấn đề gradient biến mất, với cấu trúc sử dụng các cổng kiểm soát để điều chỉnh thông tin. GRU4Rec được thiết kế với các tầng đầu vào, nhúng và hồi tiếp, nhằm tối ưu hóa quá trình dự đoán sản phẩm tiếp theo dựa trên chuỗi nhấp chuột của người dùng.",
+    "chunk_count": 31,
+    "token_count": 236
+  },
+  {
+    "doc_id": "Public110",
+    "summary_text": "Mô hình SASRec và BERT4Rec là hai phương pháp hiện đại trong gợi ý tuần tự, sử dụng kiến trúc Transformer để cải thiện độ chính xác trong dự đoán hành vi người dùng. Các khái niệm chính bao gồm self-attention, embedding layer, multi-head self-attention, bidirectional context, và Cloze objective. Nội dung chủ yếu là lý thuyết và mô tả kiến trúc của hai mô hình này. SASRec sử dụng self-attention để xử lý lịch sử tương tác của người dùng, trong khi BERT4Rec cải thiện mô hình bằng cách học từ cả quá khứ và tương lai thông qua ngữ cảnh hai chiều và áp dụng phương pháp Cloze objective để dự đoán các mục bị ẩn. Cả hai mô hình đều tận dụng khả năng xử lý song song của GPU, giúp tăng tốc độ huấn luyện và nâng cao hiệu quả dự đoán trong các hệ thống gợi ý.",
+    "chunk_count": 37,
+    "token_count": 200
+  },
+  {
+    "doc_id": "Public111",
+    "summary_text": "Chủ đề chính: Mạng Bayes và suy diễn xác suất.  \nCác khái niệm/thuật ngữ chính: suy diễn xác suất, xác suất điều kiện, mạng Bayes, biến ngẫu nhiên, d-phân cách.  \nLoại nội dung: lý thuyết / thực hành.  \n\nTài liệu trình bày về việc sử dụng mạng Bayes như một mô hình để thực hiện suy diễn xác suất trong các bài toán có nhiều biến ngẫu nhiên. Nó nhấn mạnh rằng việc tính toán xác suất đồng thời cho nhiều biến là không thực tế do sự gia tăng đáng kể về số lượng. Mạng Bayes giúp rút gọn quy trình này bằng cách xác định cấu trúc và xác suất điều kiện cho các biến. Tài liệu cung cấp quy trình xây dựng mạng Bayes, bao gồm việc xác định các biến, sắp xếp chúng, và xác định các mối quan hệ giữa các biến thông qua các quy tắc cụ thể. Các ví dụ minh họa cho cách thức hoạt động của mạng Bayes được đưa ra, làm rõ cách mà mạng này có thể hỗ trợ trong việc đưa ra các dự đoán chính xác hơn dựa trên các dữ liệu quan sát được.",
+    "chunk_count": 103,
+    "token_count": 256
+  },
+  {
+    "doc_id": "Public112",
+    "summary_text": "Chủ đề chính: Phân loại Bayes đơn giản (Naïve Bayes) trong học máy.  \nCác khái niệm/thuật ngữ chính: phân loại Bayes, xác suất điều kiện, nhãn phân loại, dữ liệu huấn luyện, túi từ.  \nLoại nội dung: lý thuyết và ứng dụng.\n\nPhân loại Bayes đơn giản là một phương pháp phân loại trong học máy, áp dụng cho nhiều lĩnh vực như phân loại văn bản và chẩn đoán y tế. Phương pháp này dựa trên giả thiết các thuộc tính độc lập và sử dụng công thức Bayes để tính toán xác suất điều kiện cho nhãn phân loại. Trong giai đoạn huấn luyện, dữ liệu được cung cấp dưới dạng các mẫu, từ đó bộ phân loại dự đoán nhãn cho các mẫu mới. Mặc dù có những thách thức trong việc tính xác suất điều kiện, đặc biệt khi giá trị nhỏ hoặc bằng không, phương pháp này vẫn đạt được độ chính xác cao trong nhiều thử nghiệm, đặc biệt là trong phân loại thư rác, với tỷ lệ chính xác lên tới 98%. Phân loại Bayes đơn giản được thực hiện thông qua cách biểu diễn văn bản và tính toán xác suất cho từng thành phần từ trong văn bản.",
+    "chunk_count": 67,
+    "token_count": 270
+  },
+  {
+    "doc_id": "Public113",
+    "summary_text": "Chủ đề chính: Kỹ thuật Attention và vai trò của nó trong mô hình Transformer.  \nCác khái niệm/thuật ngữ chính: Attention, RNN, LSTM, Transformer, chuỗi đầu vào, cell state.  \nLoại nội dung: Lý thuyết.  \n\nNội dung tài liệu giới thiệu về kỹ thuật Attention, một thành phần quan trọng trong các mô hình mạng nơ-ron như BERT và GPT, đặc biệt trong việc xử lý ngôn ngữ tự nhiên. Attention giúp cải thiện khả năng của mô hình Transformer so với các mạng nơ-ron hồi quy (RNN) truyền thống, vốn có những hạn chế như khó khăn trong việc ghi nhớ thông tin lâu dài và tính toán tuần tự chậm. Tài liệu cũng đề cập đến LSTM (Long Short Term Memory), một phiên bản cải tiến của RNN, với khả năng học và lưu trữ thông tin tốt hơn nhờ vào cấu trúc nhiều tầng và cell state, giúp duy trì thông tin qua nhiều bước thời gian. Qua đó, tài liệu nhấn mạnh sự đột phá của công nghệ này trong xử lý ngôn ngữ tự nhiên.",
+    "chunk_count": 52,
+    "token_count": 244
+  },
+  {
+    "doc_id": "Public114",
+    "summary_text": "Đề xuất một phương pháp tăng cường tương phản hình ảnh hiệu quả dựa trên Layered Difference Representation (LDR). Các khái niệm/thuật ngữ chính bao gồm: tăng cường tương phản, Layered Difference Representation, Histogram Equalization, Human Visual System, Contextual Visual Contrast. Loại nội dung: lý thuyết và thực hành. \n\nPhương pháp LDR khắc phục những hạn chế của các thuật toán truyền thống như Histogram Equalization bằng cách sử dụng lược đồ 2D để phân tích mối quan hệ mức xám giữa các điểm ảnh liền kề. Thuật toán này có hai giai đoạn chính: tối ưu hóa trong lớp và tổng hợp giữa các lớp. Trong giai đoạn đầu, lược đồ 2D được xây dựng để phát hiện sự khác biệt mức xám, sau đó được phân tách thành các lớp để tối ưu hóa. Giai đoạn tổng hợp kết hợp thông tin từ tất cả các lớp, tạo ra một vector sự khác biệt cuối cùng để tái cấu trúc hàm biến đổi, từ đó cải thiện độ tương phản của hình ảnh đầu ra. Kết quả cho thấy phương pháp này cho ra hình ảnh với độ tương phản cao hơn và chất lượng tốt hơn so với các phương pháp trước đó.",
+    "chunk_count": 31,
+    "token_count": 269
+  },
+  {
+    "doc_id": "Public115",
+    "summary_text": "Nâng cao ảnh ánh sáng yếu (Low-Light Image Enhancement - LLIE) là nhiệm vụ cải thiện chất lượng ảnh trong điều kiện ánh sáng kém bằng cách phục hồi chi tiết, cân bằng độ sáng và giảm nhiễu. Các khái niệm/thuật ngữ chính bao gồm: ảnh ánh sáng yếu, không gian màu HVI (Horizontal/Vertical-Intensity), mạng nơ-ron học sâu, CIDNet (Color and Intensity Decoupling Network), và hàm mất mát. Loại nội dung là lý thuyết và thực hành. \n\nNghiên cứu đề xuất không gian màu HVI để tách biệt độ sáng và màu sắc, giúp cải thiện sự ổn định trong xử lý ảnh. CIDNet được thiết kế để tối ưu hóa tương tác giữa độ sáng và màu sắc thông qua kiến trúc UNet, kết hợp hai nhánh xử lý song song. Quá trình chuyển đổi giữa HVI và sRGB được thiết lập để đảm bảo tính thuận nghịch, đồng thời hàm mất mát được tối ưu hóa để nâng cao chất lượng ảnh đầu ra.",
+    "chunk_count": 81,
+    "token_count": 230
+  },
+  {
+    "doc_id": "Public116",
+    "summary_text": "Nghiên cứu này khảo sát các thuật toán tối ưu trong huấn luyện mô hình mạng nơ-ron, nhằm giảm giá trị hàm mất mát để cải thiện độ chính xác. Các khái niệm/thuật ngữ chính bao gồm: hàm mất mát, thuật toán tối ưu, SGD, RMSProp, AdaGrad, AdaDelta, Adam, mạng nơ-ron tích chập, phân loại hình ảnh, tập dữ liệu MNIST, CIFAR-10. Nội dung chủ yếu là lý thuyết và thực hành. Bài viết trình bày các thuật toán như SGD, Adam và các biến thể của chúng, đánh giá hiệu quả trong bài toán nhận dạng hình ảnh dựa trên các tập dữ liệu MNIST và CIFAR-10. Mục tiêu là xác định thuật toán tối ưu cho việc huấn luyện mạng nơ-ron, từ đó hỗ trợ trong việc xây dựng và cải thiện mô hình học sâu trong các nghiên cứu sau. Kết quả cho thấy sự khác biệt giữa các phương pháp tối ưu và đề xuất hướng nghiên cứu tiếp theo.",
+    "chunk_count": 98,
+    "token_count": 227
+  },
+  {
+    "doc_id": "Public117",
+    "summary_text": "Chủ đề chính là các biến ngẫu nhiên và xác suất. Các khái niệm/thuật ngữ chính bao gồm biến ngẫu nhiên, phân phối xác suất, xác suất có điều kiện, quy tắc Bayes, biến rời rạc, biến liên tục, phân phối chuẩn đơn biến, phân phối chuẩn đa biến, phân phối Beta, phân phối Dirichlet. Loại nội dung là lý thuyết. \n\nTài liệu trình bày về biến ngẫu nhiên, định nghĩa và phân loại chúng thành rời rạc và liên tục, cùng với cách tính toán xác suất có điều kiện và joint probability. Nó cũng đề cập đến quy tắc Bayes và cách tính xác suất cho nhiều biến ngẫu nhiên. Cuối cùng, tài liệu giới thiệu một số phân phối xác suất quan trọng như phân phối chuẩn và phân phối Beta, đồng thời nhấn mạnh rằng việc hiểu biết về xác suất thống kê là cần thiết cho các nghiên cứu và ứng dụng sau này.",
+    "chunk_count": 83,
+    "token_count": 207
+  },
+  {
+    "doc_id": "Public118",
+    "summary_text": "Giảm chiều dữ liệu là một kỹ thuật quan trọng trong Machine Learning giúp tiết kiệm lưu trữ và tăng tốc tính toán. Các khái niệm/thuật ngữ chính bao gồm giảm chiều dữ liệu, Principal Component Analysis (PCA), ma trận hiệp phương sai, kỳ vọng, vector riêng, và trace. Nội dung chủ yếu là lý thuyết về PCA, một phương pháp giúp tìm hệ cơ sở trực chuẩn để dữ liệu tập trung ở các thành phần chính. Tài liệu trình bày các bước thực hiện PCA, bao gồm tính kỳ vọng, chuẩn hóa dữ liệu, tính ma trận hiệp phương sai, và xác định các trị riêng để chọn ra các vector riêng tương ứng. Qua đó, phương pháp này giúp rút gọn thông tin mà không làm mất đi tính chất quan trọng của dữ liệu.",
+    "chunk_count": 28,
+    "token_count": 173
+  },
+  {
+    "doc_id": "Public119",
+    "summary_text": "Chủ đề chính: LDA (Linear Discriminant Analysis) là phương pháp phân lớp và giảm chiều dữ liệu hiệu quả. Các khái niệm/thuật ngữ chính: PCA, LDA, phương sai trong lớp, phương sai giữa các lớp, hàm mục tiêu Fisher, phân lớp đa lớp. Loại nội dung: lý thuyết và thực hành. \n\nTài liệu trình bày sự khác biệt giữa PCA và LDA, nhấn mạnh rằng LDA sử dụng nhãn để cải thiện kết quả phân lớp. Nó định nghĩa các khái niệm về phương sai trong lớp và giữa các lớp, và xây dựng hàm mục tiêu Fisher để tối ưu hóa khả năng phân biệt. Tài liệu cũng mở rộng cho bài toán phân lớp đa lớp, chỉ ra rằng số chiều tối đa sau LDA không vượt quá C-1, với C là số lớp. Cuối cùng, nó đưa ra ví dụ thực hành bằng Python và nhấn mạnh các giả định về phân phối dữ liệu, giúp người đọc hiểu rõ hơn về hiệu quả của LDA trong các tình huống khác nhau.",
+    "chunk_count": 38,
+    "token_count": 231
+  },
+  {
+    "doc_id": "Public120",
+    "summary_text": "Chủ đề chính: Phân loại đa nhãn trong học máy với các phương pháp khác nhau.  \nCác khái niệm/thuật ngữ chính: Binary Relevance (BR), Multi-label k-Nearest Neighbors (MLkNN), Random k-labelsets (RAKEL), Classifier Chain (CC).  \nLoại nội dung: Lý thuyết và mô tả thuật toán.  \n\nTài liệu trình bày các phương pháp phân loại đa nhãn trong học máy, bao gồm phương pháp chuyển đổi nhị phân (BR), thuật toán k-Nearest Neighbors (kNN) mở rộng thành MLkNN, phương pháp Random k-labelsets (RAKEL), và thuật toán Classifier Chain (CC). Mỗi phương pháp có những ưu điểm và nhược điểm riêng, như BR xây dựng từng bộ phân lớp cho mỗi nhãn, trong khi MLkNN tìm kiếm hàng xóm gần nhất để gán nhãn. RAKEL cải thiện việc phân loại bằng cách xem xét sự tương quan giữa các nhãn, và CC mở rộng không gian thuộc tính của các mô hình nhị phân. Tài liệu cũng đề cập đến công thức và quy trình cụ thể cho từng thuật toán, giúp người đọc hiểu rõ hơn về cách thức hoạt động và ứng dụng của chúng trong bài toán phân loại đa nhãn.",
+    "chunk_count": 40,
+    "token_count": 279
+  },
+  {
+    "doc_id": "Public121",
+    "summary_text": "Phương pháp đánh giá các mô hình phân lớp đa nhãn. Các khái niệm/thuật ngữ chính: k-fold cross validation, Hamming Loss, One-error, Coverage, Ranking Loss, Average Precision, Mean Average Precision. Loại nội dung: lý thuyết. \n\nKhóa luận trình bày phương pháp k-fold cross validation để đánh giá mô hình phân lớp đa nhãn, trong đó dữ liệu được chia thành k tập con và thực hiện quá trình huấn luyện và kiểm tra nhiều lần. Bên cạnh đó, một số độ đo được sử dụng để đánh giá hiệu suất của mô hình như Hamming Loss, One-error, Coverage, Ranking Loss, Average Precision và Mean Average Precision. Mỗi độ đo có công thức riêng và ý nghĩa cụ thể, giúp xác định độ chính xác và khả năng phân loại của mô hình. Ví dụ, Hamming Loss đo lường mức độ mất mát dữ liệu, trong khi Average Precision đánh giá độ chính xác trung bình của các nhãn dự đoán. Những phương pháp và độ đo này hỗ trợ trong việc cải thiện và tối ưu hóa các mô hình phân lớp đa nhãn.",
+    "chunk_count": 33,
+    "token_count": 239
+  },
+  {
+    "doc_id": "Public122",
+    "summary_text": "Nghiên cứu này đề xuất phương pháp Dual Illumination Estimation nhằm cải thiện hiệu chỉnh độ phơi sáng trong các điều kiện ánh sáng phức tạp. Các khái niệm/thuật ngữ chính bao gồm: độ phơi sáng, chiếu sáng tiến, chiếu sáng ngược, mô hình Retinex, tối ưu hóa, trọng số cục bộ. Loại nội dung: nghiên cứu. \n\nPhương pháp này giải quyết những hạn chế của các kỹ thuật truyền thống và deep learning hiện tại, bằng cách mô hình hóa hai nguồn sáng chính và phụ, từ đó nâng cao chất lượng hình ảnh qua việc điều chỉnh các vùng thừa sáng và thiếu sáng. Quy trình bao gồm việc ước lượng hai bản đồ chiếu sáng, áp dụng các bài toán tối ưu hóa và lọc mịn để đảm bảo tính nhất quán. Nghiên cứu kỳ vọng tạo ra một tiêu chuẩn mới cho hiệu chỉnh độ phơi sáng trong các bối cảnh tự nhiên, mang lại giải pháp hiệu quả cho nhiếp ảnh, thị giác máy tính và xử lý ảnh tự động.",
+    "chunk_count": 76,
+    "token_count": 229
+  },
+  {
+    "doc_id": "Public123",
+    "summary_text": "Khái niệm tích chập trong xử lý tín hiệu số. Tích chập, tín hiệu, bộ lọc, mạng nơ ron tích chập, kích thước đầu ra, pooling, fully connected layer, đặc trưng bậc thấp, đặc trưng bậc cao. Lý thuyết.\n\nTài liệu giới thiệu về tích chập, một phương pháp biến đổi tín hiệu đầu vào thông qua bộ lọc để tạo ra tín hiệu mới, giúp giảm bớt các đặc trưng không cần thiết. Tích chập hai chiều được sử dụng phổ biến trong mạng nơ ron tích chập, với các quy tắc để xác định kích thước đầu ra. Quá trình trượt và padding được mô tả để đảm bảo tích chập không bị thiếu ô. Tài liệu cũng nêu rõ ba quá trình chính trong mạng nơ ron tích chập: tích chập, tổng hợp (pooling) và kết nối hoàn toàn (fully connected). Các quá trình này giúp giảm kích thước ma trận đầu vào trong khi vẫn giữ lại các đặc trưng quan trọng. Cuối cùng, tài liệu đề cập đến tính chất kết nối trượt và tổng hợp, cũng như sự phát triển của độ phức tạp trong việc phát hiện hình ảnh qua các tầng tích chập.",
+    "chunk_count": 50,
+    "token_count": 275
+  },
+  {
+    "doc_id": "Public124",
+    "summary_text": "Xử lý ngôn ngữ tự nhiên là lĩnh vực nghiên cứu giúp máy tính hiểu và giao tiếp với con người bằng ngôn ngữ tự nhiên. Các khái niệm/thuật ngữ chính bao gồm: xử lý ngôn ngữ tự nhiên, ngôn ngữ học máy tính, tách từ, chuyển dịch trạng thái hữu hạn có trọng số (WFST), thuật toán so khớp cực đại. Loại nội dung: lý thuyết và thực hành. \n\nTài liệu giới thiệu về tách từ tiếng Việt, một vấn đề phức tạp trong xử lý ngôn ngữ do ngôn ngữ này có cấu trúc không rõ ràng. WFST là phương pháp được đề xuất để giải quyết bằng cách gán trọng số cho các từ dựa trên xác suất xuất hiện của chúng. Quy trình tách từ bao gồm xây dựng từ điển trọng số, thống kê khả năng tách từ và chọn phương án tối ưu. Kết quả nghiên cứu cho thấy thuật toán này khả thi và có thể ứng dụng trong phân loại văn bản, mặc dù vẫn còn nhiều thách thức cần giải quyết.",
+    "chunk_count": 91,
+    "token_count": 238
+  },
+  {
+    "doc_id": "Public125",
+    "summary_text": "Chủ đề chính: Nghiên cứu về hành vi tìm kiếm thức ăn của loài kiến và ứng dụng thuật toán bầy kiến trong giải quyết bài toán tổ hợp tối ưu.  \nCác khái niệm/thuật ngữ chính: kiến, pheromone, thuật toán ACO, bài toán tổ hợp tối ưu, thông tin kinh nghiệm, ma trận mùi, các mô hình thuật toán.  \nLoại nội dung: lý thuyết / thực hành.  \n\nTài liệu mô tả hành vi xã hội của loài kiến, đặc biệt là khả năng tìm kiếm thức ăn thông qua việc sử dụng pheromone. Các con kiến mù không nhìn thấy mà chỉ cảm nhận được nồng độ pheromone để xác định hướng đi, tạo nên đường đi ngắn nhất đến nguồn thức ăn. Bài viết sau đó chuyển sang ứng dụng thuật toán bầy kiến (ACO) trong các bài toán tổ hợp tối ưu NP-khó, nêu ra các bước cụ thể để xây dựng và tối ưu hóa thuật toán. Ngoài ra, tài liệu cũng đề cập đến các mô hình thuật toán khác phát triển dựa trên ACO, như topology và cách thức truyền thông tin giữa các cụm kiến, nhằm cải thiện hiệu suất giải thuật.",
+    "chunk_count": 180,
+    "token_count": 260
+  },
+  {
+    "doc_id": "Public126",
+    "summary_text": "Chủ đề chính: Vật lý là khoa học nghiên cứu các hiện tượng tự nhiên thông qua quan sát và phép đo.  \nCác khái niệm/thuật ngữ chính: định luật cơ bản, lý thuyết, nguyên tử, proton, neutron, quark, số nguyên tử, khối số, số chữ số có nghĩa.  \nLoại nội dung: lý thuyết và thực hành.  \n\nTài liệu mô tả vật lý như một khoa học dựa trên các quan sát thực nghiệm và định luật cơ bản chi phối hiện tượng tự nhiên. Các định luật này được diễn đạt bằng ngôn ngữ toán học, giúp kết nối lý thuyết với thực nghiệm. Khi lý thuyết không còn phù hợp với thực nghiệm, cần có lý thuyết mới hoặc điều chỉnh lý thuyết cũ. Tài liệu cũng đề cập đến sự phát triển của mô hình nguyên tử từ quan niệm của các nhà triết học Hy Lạp đến khám phá về electron, proton, neutron và quark. Bên cạnh đó, quy tắc về chữ số có nghĩa trong phép toán cũng được thảo luận, nhấn mạnh tầm quan trọng của độ chính xác trong phép đo trong vật lý.",
+    "chunk_count": 163,
+    "token_count": 257
+  },
+  {
+    "doc_id": "Public127",
+    "summary_text": "Chủ đề chính: Đại lượng vec-tơ và các hệ tọa độ trong vật lý.  \nCác khái niệm/thuật ngữ chính: đại lượng vec-tơ, hệ tọa độ Descartes, hệ tọa độ cực, chuyển đổi tọa độ, phép cộng vec-tơ, phép trừ vec-tơ, phép nhân vec-tơ với số vô hướng.  \nLoại nội dung: lý thuyết và thực hành.  \n\nTài liệu trình bày về đại lượng vec-tơ trong vật lý, với nhấn mạnh vào hệ tọa độ Descartes và hệ tọa độ cực. Hệ tọa độ Descartes định nghĩa hai trục vuông góc, trong khi hệ tọa độ cực sử dụng khoảng cách và góc để xác định vị trí điểm. Tài liệu cũng hướng dẫn cách chuyển đổi giữa hai hệ tọa độ này và giải thích các phép toán cơ bản với vec-tơ, bao gồm phép cộng, phép trừ và phép nhân với số vô hướng. Các bài tập mẫu minh họa cụ thể cho các khái niệm và phép toán đã trình bày, giúp người đọc nắm bắt và áp dụng vào thực tiễn.",
+    "chunk_count": 152,
+    "token_count": 253
+  },
+  {
+    "doc_id": "Public128",
+    "summary_text": "Chủ đề chính: Nghiên cứu chuyển động hai chiều trong không gian.  \nCác khái niệm/thuật ngữ chính: chuyển động hai chiều, vec-tơ vị trí, vận tốc, gia tốc, chuyển động ném nghiêng, gia tốc không đổi, tầm xa, độ cao cực đại.  \nLoại nội dung: lý thuyết.  \n\nTài liệu đề cập đến các khái niệm cơ bản về chuyển động hai chiều, bao gồm vec-tơ vị trí, vận tốc và gia tốc. Chuyển động trong không gian 2 chiều được mở rộng từ chuyển động một chiều, cho phép phân tích các hiện tượng như quỹ đạo của vệ tinh hoặc chuyển động của electron. Tài liệu cũng trình bày các phương trình động học cho chuyển động hai chiều với gia tốc không đổi, mô tả vị trí và vận tốc của chất điểm trong mặt phẳng xy. Đặc biệt, phần về chuyển động ném nghiêng được phân tích với các giả định về gia tốc rơi tự do và bỏ qua sức cản không khí, từ đó cung cấp công thức tính tầm xa và độ cao cực đại của vật ném. Nội dung hướng tới việc áp dụng lý thuyết vào các tình huống thực tế trong vật lý.",
+    "chunk_count": 94,
+    "token_count": 269
+  },
+  {
+    "doc_id": "Public129",
+    "summary_text": "Chủ đề chính: Khái niệm về lực và ứng dụng định luật Newton trong phân tích chuyển động.  \nCác khái niệm/thuật ngữ chính: lực tiếp xúc, lực trường, vectơ lực, định luật Newton thứ nhất, hệ qui chiếu quán tính, chất điểm, lực tổng hợp, trạng thái cân bằng.  \nLoại nội dung: lý thuyết / thực hành.  \n\nTài liệu giới thiệu về các loại lực, bao gồm lực do tiếp xúc và lực của một trường lực. Nó nhấn mạnh rằng lực là đại lượng vectơ, cần chú ý đến điểm đặt, phương, chiều và độ lớn khi tổng hợp. Định luật Newton thứ nhất được trình bày, cho biết một vật không bị tác động bởi ngoại lực sẽ giữ nguyên trạng thái chuyển động. Các hệ qui chiếu quán tính được xác định để áp dụng định luật này. Mô hình phân tích chất điểm ở trạng thái cân bằng và dưới tác dụng của lực tổng hợp cũng được trình bày, cùng với các bước giải bài toán liên quan đến lực và chuyển động. Tài liệu cung cấp hướng dẫn chi tiết về việc vẽ sơ đồ lực và sử dụng các phương trình Newton trong phân tích chuyển động của các vật.",
+    "chunk_count": 279,
+    "token_count": 261
+  },
+  {
+    "doc_id": "Public130",
+    "summary_text": "Chủ đề chính: Chuyển động tròn không đều và các lực tác dụng trong chuyển động.  \nCác khái niệm/thuật ngữ chính: Gia tốc hướng tâm, gia tốc tiếp tuyến, lực Coriolis, lực quán tính, vận tốc giới hạn.  \nLoại nội dung: Lý thuyết và bài tập.  \n\nNội dung tài liệu đề cập đến chuyển động tròn không đều, trong đó gia tốc bao gồm thành phần hướng tâm và thành phần tiếp tuyến. Các lực tác dụng lên chất điểm có thể phân tích thành hai thành phần này, ảnh hưởng đến sự thay đổi tốc độ và quỹ đạo chuyển động. Tài liệu cũng mô tả lực Coriolis và lực quán tính, cùng với các hiện tượng thực tế khi vật chuyển động trong các hệ quy chiếu khác nhau. Các bài tập mẫu giúp người học áp dụng lý thuyết vào thực tiễn, bao gồm tính toán gia tốc và lực căng dây trong các tình huống cụ thể. Đồng thời, tài liệu đề cập đến lực cản trong không khí và cách tính toán vận tốc giới hạn của vật rơi, từ đó cung cấp cái nhìn tổng quan về các yếu tố ảnh hưởng đến chuyển động trong môi trường khác nhau.",
+    "chunk_count": 113,
+    "token_count": 263
+  },
+  {
+    "doc_id": "Public131",
+    "summary_text": "Chủ đề chính: Khái niệm năng lượng và ứng dụng trong giải toán vật lý.  \nCác khái niệm/thuật ngữ chính: năng lượng, hệ, môi trường, công, thế năng hấp dẫn, thế năng đàn hồi, lực bảo toàn, lực không bảo toàn.  \nLoại nội dung: lý thuyết.\n\nTài liệu trình bày về vai trò của khái niệm năng lượng trong việc giải quyết các bài toán vật lý, đặc biệt là thông qua các định luật Newton và các phương pháp thay thế. Nó giới thiệu khái niệm \"hệ\" và \"môi trường\", nhấn mạnh sự phân chia giữa chúng và những yếu tố cần chú ý khi giải toán. Bài viết cũng giải thích về công thực hiện bởi lực không đổi, cách tính thế năng hấp dẫn và thế năng đàn hồi trong các hệ, cùng với các ví dụ minh họa. Đặc biệt, tài liệu phân biệt lực bảo toàn và lực không bảo toàn, nêu rõ ảnh hưởng của chúng đến sự thay đổi năng lượng trong hệ, từ đó giúp người đọc hiểu rõ hơn về các khía cạnh của năng lượng trong vật lý.",
+    "chunk_count": 116,
+    "token_count": 243
+  },
+  {
+    "doc_id": "Public132",
+    "summary_text": "Hệ không cô lập và định luật bảo toàn năng lượng. Các khái niệm/thuật ngữ chính: hệ không cô lập, hệ cô lập, công, sóng cơ, nhiệt, trao đổi chất, truyền điện, sóng điện từ, định luật bảo toàn năng lượng, công suất. Loại nội dung: lý thuyết.\n\nTài liệu giải thích khái niệm về hệ không cô lập, nơi năng lượng có thể trao đổi với môi trường, và hệ cô lập, không có sự trao đổi năng lượng. Định luật bảo toàn năng lượng được trình bày qua các phương trình toán học, chỉ ra rằng tổng năng lượng của hệ cô lập là không đổi. Các hình thức truyền năng lượng như công, sóng cơ, nhiệt, và truyền điện cũng được mô tả. Công suất, được định nghĩa là tốc độ truyền năng lượng theo thời gian, được tính bằng công thức liên quan đến công và thời gian. Tài liệu cung cấp cái nhìn tổng quan về các khái niệm cơ bản liên quan đến năng lượng và sự bảo toàn năng lượng trong các hệ vật lý.",
+    "chunk_count": 68,
+    "token_count": 232
+  },
+  {
+    "doc_id": "Public133",
+    "summary_text": "Chủ đề chính: Giải quyết bài toán cơ học thông qua khái niệm động lượng và xung lượng.  \nCác khái niệm/thuật ngữ chính: động lượng, xung lượng, định luật Newton, va chạm, hệ cô lập, hệ không cô lập.  \nLoại nội dung: lý thuyết.  \n\nTài liệu trình bày các phương pháp giải quyết bài toán cơ học bằng cách sử dụng khái niệm động lượng và xung lượng. Đặc biệt, nó nhấn mạnh rằng một số bài toán có thể được giải quyết dễ dàng hơn thông qua động lượng thay vì các phương pháp truyền thống như động học hay động lực học. Chương này giải thích định luật bảo toàn động lượng trong các va chạm giữa các chất điểm, từ đó đưa ra các công thức tính toán liên quan đến vận tốc và khối lượng của các vật sau va chạm. Đồng thời, tài liệu cũng phân tích sự khác nhau giữa va chạm đàn hồi và không đàn hồi, cùng với các định nghĩa và ứng dụng của xung lực trong việc thay đổi động lượng của chất điểm khi có lực tác dụng.",
+    "chunk_count": 130,
+    "token_count": 240
+  },
+  {
+    "doc_id": "Public134",
+    "summary_text": "Chủ đề chính: Phân tích chuyển động quay của vật rắn với gia tốc góc không đổi.  \nCác khái niệm/thuật ngữ chính: vật rắn, tọa độ góc, vận tốc góc, gia tốc góc, mômen quán tính, động năng quay, công suất.  \nLoại nội dung: lý thuyết.\n\nChương này tập trung vào việc phân tích chuyển động quay của vật rắn, trong đó mô hình vật rắn được xem xét là không bị biến dạng. Các khái niệm về tọa độ góc, vận tốc góc và gia tốc góc được trình bày để mô tả chuyển động của vật. Các phương trình động lực học cho trường hợp gia tốc góc không đổi được đưa ra, tương tự như các phương trình trong chuyển động tịnh tiến. Ngoài ra, chương cũng đề cập đến định lý công-động năng, cho rằng công do ngoại lực thực hiện lên vật rắn sẽ bằng độ biến thiên động năng quay của nó. Các mô hình phân tích cũng được giới thiệu, bao gồm chuyển động quay dưới tác dụng của mômen lực tổng hợp. Tổng thể, nội dung cung cấp kiến thức cơ bản và ứng dụng cho việc hiểu biết về chuyển động quay trong vật lý.",
+    "chunk_count": 95,
+    "token_count": 270
+  },
+  {
+    "doc_id": "Public135",
+    "summary_text": "Chủ đề chính của tài liệu là mômen động lượng trong động lực học chuyển động quay. Các khái niệm/thuật ngữ chính bao gồm mômen động lượng, nguyên lý bảo toàn mômen động lượng, mômen lực, tích vectơ, tần số tiến động. Loại nội dung là lý thuyết và thực hành. \n\nTài liệu giải thích về mômen động lượng của hệ cô lập và nguyên lý bảo toàn mômen động lượng, tương tự như bảo toàn động lượng. Nó đề cập đến cách xác định mômen lực thông qua tích vectơ giữa vectơ lực và vectơ vị trí. Một ứng dụng thực tế được trình bày là cách điều khiển tàu vũ trụ bằng cách sử dụng con quay hồi chuyển để thay đổi hướng mà không cần tiêu thụ nhiên liệu. Bên cạnh đó, tài liệu cũng đưa ra các bài tập tính toán liên quan đến mômen động lượng và động năng trong các tình huống cụ thể, từ việc va chạm đến hiện tượng nóng lên của Trái đất và tác động của nó đến thời gian quay của Trái đất.",
+    "chunk_count": 130,
+    "token_count": 234
+  },
+  {
+    "doc_id": "Public136",
+    "summary_text": "Cân bằng tĩnh là trạng thái của vật rắn khi vận tốc tịnh tiến và vận tốc quay đều bằng 0 trong một hệ quy chiếu quán tính. Các khái niệm/thuật ngữ chính bao gồm: cân bằng tĩnh, hằng số đàn hồi, mômen ngoại lực, lực đồng phẳng. Loại nội dung: lý thuyết và thực hành. Tài liệu giải thích về điều kiện cần thiết để một vật ở trạng thái cân bằng tĩnh, bao gồm tổng ngoại lực và tổng mômen ngoại lực bằng 0. Nó cũng đề cập đến các phương trình cân bằng trong mặt phẳng xy và mô hình hóa các vật rắn để phân tích lực tác dụng. Tài liệu cung cấp các chiến lược giải toán liên quan đến cân bằng, hướng dẫn cách vẽ sơ đồ lực và áp dụng các điều kiện cân bằng để giải hệ phương trình. Cuối cùng, tài liệu đưa ra ví dụ thực tế về hệ thống cân bằng và bài tập mẫu liên quan đến thang dựng nghiêng.",
+    "chunk_count": 108,
+    "token_count": 219
+  },
+  {
+    "doc_id": "Public137",
+    "summary_text": "Chủ đề chính: Định luật vạn vật hấp dẫn và các khái niệm liên quan.  \nCác khái niệm/thuật ngữ chính: trọng lực, gia tốc trọng trường, thế năng hấp dẫn, cơ năng, động năng.  \nLoại nội dung: lý thuyết.\n\nTài liệu trình bày về định luật vạn vật hấp dẫn do Isaac Newton phát triển, giải thích lực hút giữa Trái Đất và Mặt Trăng, cũng như giữa Mặt Trời và các hành tinh. Trọng lực được định nghĩa là lực hấp dẫn do Trái Đất tác dụng lên vật, trong khi gia tốc trọng trường được tính toán dựa trên khối lượng và khoảng cách. Tài liệu cũng đề cập đến cơ năng của các hành tinh và vệ tinh trong trường hấp dẫn, bao gồm động năng và thế năng hấp dẫn, với các công thức cụ thể. Những khái niệm này được áp dụng để giải thích các hiện tượng thiên văn và tính toán các yếu tố liên quan đến chuyển động của vật thể trong không gian. Các bài tập thực hành được đưa ra để minh họa ứng dụng của lý thuyết trong thực tế.",
+    "chunk_count": 124,
+    "token_count": 247
+  },
+  {
+    "doc_id": "Public138",
+    "summary_text": "Chủ đề chính: Các trạng thái và tính chất của vật chất trong cơ học chất lưu.  \nCác khái niệm/thuật ngữ chính: trạng thái rắn, lỏng, khí, chất lưu, áp suất, phương trình Bernoulli, lưu lượng.  \nLoại nội dung: lý thuyết, thực hành.  \n\nVật chất thông thường tồn tại ở ba trạng thái: rắn, lỏng và khí, mỗi trạng thái có tính chất riêng biệt. Trạng thái của vật chất có thể thay đổi theo nhiệt độ và áp suất. Chất lưu, bao gồm chất lỏng và khí, tương tác với nhau bằng lực liên kết yếu và chịu sự tác động của áp suất. Trong cơ học chất lưu, các định luật được áp dụng để nghiên cứu các trạng thái tĩnh và động của chất lưu. Phương trình Bernoulli mô tả mối quan hệ giữa áp suất, mật độ và vận tốc trong dòng chảy. Các ứng dụng của động lực học chất lưu có thể giải thích hiện tượng chuyển động của vật thể trong chất lưu, chẳng hạn như lực nâng của cánh máy bay. Các bài toán mẫu liên quan đến dòng chảy và áp suất của chất lỏng cũng được trình bày để minh họa các khái niệm lý thuyết.",
+    "chunk_count": 142,
+    "token_count": 273
+  },
+  {
+    "doc_id": "Public139",
+    "summary_text": "Chủ đề chính: Chuyển động tuần hoàn và dao động trong vật lý.  \nCác khái niệm/thuật ngữ chính: chuyển động tuần hoàn, dao động, vị trí cân bằng, lực hồi phục, dao động điều hòa, định luật Hooke, chu kỳ, tần số, năng lượng.  \nLoại nội dung: lý thuyết / thực hành.\n\nNội dung tài liệu đề cập đến chuyển động tuần hoàn, cụ thể là dao động, với các đặc điểm như vị trí cân bằng bền và lực hồi phục. Dao động điều hòa là một dạng đặc biệt, có tính chất gần gũi với nhiều hiện tượng tự nhiên và kỹ thuật. Tài liệu cũng trình bày các công thức liên quan đến dao động, bao gồm chu kỳ và tần số, cùng với mối liên hệ giữa dao động và chuyển động tròn đều. Sử dụng định luật Hooke, tác giả giới thiệu cách tính toán lực tác dụng lên vật gắn với lò xo và các thông số như vận tốc và gia tốc. Cuối cùng, tài liệu nhấn mạnh tầm quan trọng của việc hiểu dao động điều hòa trong nghiên cứu hiện tượng sóng và các ứng dụng thực tiễn.",
+    "chunk_count": 98,
+    "token_count": 257
+  },
+  {
+    "doc_id": "Public140",
+    "summary_text": "Chủ đề chính: Khảo sát các loại sóng cơ học và sóng điện từ.  \nCác khái niệm/thuật ngữ chính: sóng cơ học, sóng điện từ, nguồn phát sóng, hàm sóng, sóng hình sin, biên độ, tần số, chu kỳ, bước sóng.  \nLoại nội dung: lý thuyết.  \n\nTài liệu trình bày về sự tồn tại và đặc điểm của các loại sóng trong thế giới tự nhiên, đặc biệt là sóng cơ học và sóng điện từ. Sóng cơ học cần môi trường vật chất để hình thành và lan truyền, trong khi sóng điện từ có thể di chuyển trong môi trường và chân không. Tài liệu cũng mô tả sự hình thành sóng thông qua thí nghiệm với dây, giải thích các khái niệm như biên độ, tần số, chu kỳ và bước sóng, cùng với công thức liên hệ giữa chúng. Sóng hình sin được đưa ra như một ví dụ tiêu biểu, vì mọi dạng sóng đều có thể được xây dựng từ sóng hình sin. Cuối cùng, tài liệu đề cập đến sự truyền năng lượng qua sóng hình sin trên dây và sự tương tác giữa các sóng khi gặp các môi trường khác nhau.",
+    "chunk_count": 95,
+    "token_count": 274
+  },
+  {
+    "doc_id": "Public141",
+    "summary_text": "Chủ đề chính: Nghiên cứu về nhiệt độ và các hiện tượng nhiệt trong cơ học.  \nCác khái niệm/thuật ngữ chính: nhiệt độ, nhiệt lượng, nội năng, giãn nở nhiệt, khí lý tưởng, định luật Boyle, định luật Charles, định luật Guy-Lussac.  \nLoại nội dung: lý thuyết và nghiên cứu.  \n\nTài liệu trình bày các khái niệm cơ bản về nhiệt độ, nhiệt lượng và nội năng, cũng như tầm quan trọng của việc nghiên cứu hiện tượng nhiệt của các chất. Nó nhấn mạnh sự khác biệt trong phản ứng nhiệt của các chất rắn, lỏng và khí, cùng với việc áp dụng các định luật về khí lý tưởng. Các thang đo nhiệt độ như Celsius, Fahrenheit và Kelvin được so sánh và giải thích. Tài liệu cũng mô tả giãn nở nhiệt, một hiện tượng quan trọng khi vật thể thay đổi kích thước do thay đổi nhiệt độ. Cuối cùng, các định luật khí lý tưởng và phương trình trạng thái của khí lý tưởng được trình bày, cho thấy mối liên hệ giữa áp suất, thể tích và nhiệt độ của khí.",
+    "chunk_count": 161,
+    "token_count": 252
+  },
+  {
+    "doc_id": "Public142",
+    "summary_text": "Chủ đề chính: Mối liên hệ giữa nhiệt động lực học và cơ học trong vật lý.  \nCác khái niệm/thuật ngữ chính: Năng lượng, nội năng, nhiệt lượng, nguyên lý bảo toàn năng lượng, quá trình đẳng áp, đẳng tích, đẳng nhiệt.  \nLoại nội dung: Lý thuyết và ứng dụng.  \n\nTài liệu trình bày sự liên kết giữa nhiệt động lực học và cơ học, đặc biệt là qua các thí nghiệm của James Joule, cho thấy năng lượng có thể chuyển đổi giữa nhiệt và công. Nội năng được định nghĩa là tổng năng lượng của một hệ từ các thành phần vi mô, và nhiệt lượng là năng lượng chuyển đổi do sự khác biệt nhiệt độ. Nguyên lý thứ nhất của nhiệt động lực học được giới thiệu, bàn luận về các quá trình khác nhau như đẳng áp, đẳng tích và đẳng nhiệt, cùng với các công thức liên quan. Tài liệu cũng đề cập đến các đơn vị đo lường năng lượng như calo và BTU, và ứng dụng của các nguyên lý này trong việc tính toán năng lượng cần thiết để thay đổi trạng thái của vật chất.",
+    "chunk_count": 201,
+    "token_count": 249
+  },
+  {
+    "doc_id": "Public143",
+    "summary_text": "Mô hình phân tử của khí lý tưởng mô tả các đặc điểm và hành vi của khí lý tưởng thông qua các giả thiết cơ bản. Các khái niệm/thuật ngữ chính bao gồm: khí lý tưởng, số bậc tự do, khí đơn nguyên tử, khí lưỡng nguyên tử, khí đa nguyên tử, động năng. Nội dung bao gồm lý thuyết về tính chất của khí lý tưởng và sự phân bố năng lượng giữa các phân tử khí. Tài liệu giải thích cách mà các phân tử khí chuyển động và tương tác với nhau, đồng thời phân tích số bậc tự do của các loại khí khác nhau. Các bài tập mẫu được đưa ra để áp dụng lý thuyết vào thực tế, tính toán năng lượng cần thiết trong các quá trình nhiệt động học như nung nóng đẳng tích và đẳng áp, cũng như tính công cần thiết trong các quá trình nén và giãn nở khí. Tài liệu mang tính lý thuyết kết hợp thực hành, giúp người đọc hiểu rõ hơn về khí lý tưởng trong vật lý.",
+    "chunk_count": 103,
+    "token_count": 227
+  },
+  {
+    "doc_id": "Public144",
+    "summary_text": "Chương này giới thiệu về thuyết điện từ trường, tập trung vào lực điện từ và điện trường. Các khái niệm/thuật ngữ chính bao gồm lực tĩnh điện, định luật Coulomb, điện trường, điện tích dương, điện tích âm. Loại nội dung là lý thuyết và thực hành. \n\nTrong chương, người đọc được hướng dẫn về tính chất của lực điện từ, quá trình tương tác giữa các điện tích và mô tả điện trường xung quanh các điện tích. Định luật Coulomb được sử dụng để tính toán cường độ điện trường và lực tác dụng lên các hạt mang điện. Các thí nghiệm minh họa sự tồn tại của điện tích dương và âm, cũng như sự chuyển động của hạt trong điện trường. Bên cạnh đó, chương cũng đưa ra các phương pháp tính toán khác nhau, từ phương trình lực đến định lý công - động năng, nhằm giúp người đọc hiểu rõ hơn về các khía cạnh của điện trường và lực điện.",
+    "chunk_count": 198,
+    "token_count": 214
+  },
+  {
+    "doc_id": "Public145",
+    "summary_text": "Chủ đề chính: Nghiên cứu về điện trường từ góc độ năng lượng và thế năng.  \nCác khái niệm/thuật ngữ chính: điện trường, thế năng, điện thế, hiệu điện thế, công, định luật Coulomb, định lý Gauss.  \nLoại nội dung: lý thuyết và bài tập mẫu.  \n\nTài liệu trình bày khái niệm về điện trường và thế năng, nhấn mạnh rằng lực tĩnh điện là lực bảo toàn có thể được mô tả qua năng lượng điện thế. Các công thức tính toán độ biến thiên thế năng và điện thế được đưa ra, cùng với ví dụ về việc sử dụng định lý Gauss trong tính toán điện trường cho các hệ tích điện có tính đối xứng. Tài liệu cũng cung cấp bài tập mẫu để áp dụng lý thuyết, bao gồm việc tính điện thế và cường độ điện trường từ các cấu hình điện tích khác nhau như vành tròn tích điện đều và thanh tích điện đều. Các bài tập này giúp củng cố kiến thức về mối quan hệ giữa điện trường và thế năng trong các hệ thống điện.",
+    "chunk_count": 300,
+    "token_count": 240
+  },
+  {
+    "doc_id": "Public146",
+    "summary_text": "Ánh sáng và các hiện tượng liên quan của nó. Ánh sáng, quang hợp, tán xạ, phản xạ, khúc xạ, tán sắc, giao thoa, chiết suất. Lý thuyết / thực hành.\n\nTài liệu trình bày vai trò quan trọng của ánh sáng trong cuộc sống và sự sống trên Trái đất, từ quá trình quang hợp của thực vật đến việc truyền tải thông tin. Ánh sáng được định nghĩa là bức xạ điện từ và là nguyên nhân cho nhiều hiện tượng như màu sắc, phản xạ và khúc xạ. Tài liệu thảo luận về các khái niệm như lưỡng tính sóng-hạt của ánh sáng và các mô hình sóng, đồng thời giải thích các hiện tượng phản xạ ánh sáng, bao gồm phản xạ gương và phản xạ tràn lan. Định luật phản xạ và chiết suất cũng được đề cập, cùng với công thức tính chiết suất của các môi trường khác nhau. Nội dung này không chỉ mang tính lý thuyết mà còn áp dụng trong thực tế quang học.",
+    "chunk_count": 98,
+    "token_count": 240
+  },
+  {
+    "doc_id": "Public147",
+    "summary_text": "Nội dung của chương này trình bày về sự tạo ảnh khi chùm tia sáng tương tác với các bề mặt giữa hai môi trường, bao gồm phản xạ và khúc xạ. Các khái niệm chính bao gồm: ảnh thật, ảnh ảo, gương phẳng, thấu kính, kính hiển vi, kính thiên văn, viễn thị, cận thị. Loại nội dung là lý thuyết và thực hành. Chương giải thích cách xác định vị trí và kích thước ảnh từ các gương và thấu kính, cũng như ứng dụng của chúng trong các thiết bị quang học. Thông qua các ví dụ minh họa, chương cũng đề cập đến các tật thị lực như viễn thị và cận thị, cùng với cách khắc phục bằng kính phù hợp. Chương kết thúc với việc giới thiệu về cơ chế hoạt động của các tế bào cảm thụ ánh sáng trong mắt người.",
+    "chunk_count": 279,
+    "token_count": 201
+  },
+  {
+    "doc_id": "Public148",
+    "summary_text": "Nghiên cứu về quang sóng và hiện tượng giao thoa ánh sáng. Các khái niệm/thuật ngữ chính: quang sóng, giao thoa, nhiễu xạ, phân cực, vân tròn Newton, giao thoa kế Michelson. Loại nội dung: lý thuyết và thực hành.\n\nTài liệu trình bày về quang sóng, một lĩnh vực nghiên cứu các hiện tượng ánh sáng không thể giải thích bằng quang hình học. Giao thoa ánh sáng được mô tả qua các hiện tượng như giao thoa cực đại và cực tiểu, với các ví dụ thực nghiệm minh họa từ lịch sử, bao gồm thí nghiệm của Thomas Young. Ngoài ra, tài liệu cũng đề cập đến giao thoa kế Michelson, thiết bị đo bước sóng ánh sáng với độ chính xác cao. Một số bài toán thực hành liên quan đến giao thoa của màng mỏng cũng được đưa ra, giúp người đọc hiểu rõ hơn về ứng dụng và tính toán trong lĩnh vực này. Các công thức và điều kiện cần thiết để xác định bề dày của màng mỏng và sự giao thoa cũng được trình bày chi tiết.",
+    "chunk_count": 185,
+    "token_count": 256
+  },
+  {
+    "doc_id": "Public149",
+    "summary_text": "Chủ đề chính: Sóng điện từ và định luật Ampere trong nghiên cứu điện từ.  \nCác khái niệm/thuật ngữ chính: sóng cơ, sóng điện từ, phương trình Maxwell, định luật Ampere, dòng điện dịch, sóng phân cực tuyến tính, sóng phẳng, sóng cầu, điện trường cảm ứng, từ trường cảm ứng, áp suất bức xạ.  \nLoại nội dung: lý thuyết và thực hành.  \n\nTài liệu đề cập đến sự khác biệt giữa sóng cơ và sóng điện từ, trong đó sóng điện từ có thể truyền trong chân không và được mô tả bởi các phương trình Maxwell. Lịch sử nghiên cứu điện từ được nhấn mạnh qua công trình của James Clerk Maxwell, người đã phát triển lý thuyết sóng điện từ và khái quát hóa định luật Ampere. Tài liệu cũng giải thích về các loại sóng điện từ, như sóng phân cực tuyến tính và sóng phẳng, cùng với các định luật liên quan đến điện và từ trường. Cuối cùng, tài liệu đưa ra các bài tập thực hành liên quan đến áp suất bức xạ và các hiện tượng liên quan đến bụi trong không gian.",
+    "chunk_count": 249,
+    "token_count": 262
+  },
+  {
+    "doc_id": "Public150",
+    "summary_text": "Nội dung chính của tài liệu này tập trung vào hiện tượng nhiễu xạ ánh sáng và ứng dụng của nó trong các thiết bị quang học. Các khái niệm/thuật ngữ chính bao gồm: nhiễu xạ ánh sáng, vân nhiễu xạ, cực đại trung tâm, cực đại thứ cấp, cách tử nhiễu xạ, phổ kế, van cách tử nhiễu xạ, góc phân cực. Loại nội dung là lý thuyết và thực hành trong lĩnh vực quang học. Tài liệu mô tả cách ánh sáng tương tác với các khe hẹp và các cạnh của vật thể, tạo ra các mẫu vân sáng tối. Đồng thời, nó cũng trình bày một số ứng dụng thực tiễn của cách tử nhiễu xạ trong việc phân tích bước sóng ánh sáng và trong các thiết bị như phổ kế và van ánh sáng. Nội dung cũng đề cập đến các công thức toán học liên quan đến nhiễu xạ và điều kiện để phân biệt các ảnh nhiễu xạ.",
+    "chunk_count": 229,
+    "token_count": 227
+  },
+  {
+    "doc_id": "Public151",
+    "summary_text": "Chủ đề chính: An toàn thông tin và các biện pháp đảm bảo an toàn hệ thống thông tin.  \nCác khái niệm/thuật ngữ chính: An toàn thông tin, an toàn hệ thống thông tin, bí mật, toàn vẹn, sẵn dùng, an ninh mạng, quản lý an toàn thông tin, chính sách an toàn thông tin.  \nLoại nội dung: Lý thuyết và quy định.  \n\nChương 1 của tài liệu giới thiệu các khái niệm cơ bản về an toàn thông tin và các yêu cầu liên quan đến việc bảo vệ thông tin và hệ thống thông tin. Nó nêu rõ các rủi ro và nguy cơ trong hạ tầng công nghệ thông tin, đồng thời trình bày mô hình tổng quát cho việc đảm bảo an toàn hệ thống thông tin. Nội dung bao gồm các lĩnh vực như an toàn máy tính, an ninh mạng và quản lý an toàn thông tin, nhấn mạnh tầm quan trọng của việc bảo vệ các thuộc tính bí mật, toàn vẹn và sẵn dùng của thông tin. Tài liệu cũng đề cập đến sự gia tăng các sự cố mất an toàn thông tin trên toàn cầu và khuyến nghị cần thực hiện các biện pháp đồng bộ để bảo vệ an toàn thông tin hiệu quả.",
+    "chunk_count": 49,
+    "token_count": 272
+  },
+  {
+    "doc_id": "Public152",
+    "summary_text": "Chủ đề chính: Khái quát về an toàn hệ thống thông tin.  \nCác khái niệm/thuật ngữ chính: Hệ thống thông tin, hạ tầng công nghệ thông tin, mối đe dọa, an ninh mạng, bảo vệ thông tin.  \nLoại nội dung: Lý thuyết.  \n\nTài liệu đề cập đến khái niệm hệ thống thông tin và vai trò quan trọng của nó trong hoạt động của các tổ chức trong nền kinh tế số. Hệ thống thông tin bao gồm ba thành phần chính: thu thập, xử lý và kết xuất thông tin. Tài liệu cũng mô tả bảy vùng trong hạ tầng CNTT, mỗi vùng có những đặc điểm và mối đe dọa khác nhau. Các nguy cơ an toàn thông tin chủ yếu đến từ người dùng và các yếu tố kỹ thuật như vi rút, mã độc. Bên cạnh đó, tài liệu giới thiệu mô hình phòng vệ thông tin gồm ba lớp: an ninh cơ quan, an ninh mạng và an ninh hệ thống, với các biện pháp bảo vệ cụ thể nhằm đảm bảo tính toàn vẹn và an toàn cho hệ thống thông tin.",
+    "chunk_count": 68,
+    "token_count": 255
+  },
+  {
+    "doc_id": "Public153",
+    "summary_text": "Chương 2 trình bày về mối đe dọa, điểm yếu, lỗ hổng trong hệ thống và các loại tấn công. Các khái niệm chính bao gồm mối đe dọa, điểm yếu, lỗ hổng bảo mật, các loại tấn công, công cụ hỗ trợ tấn công và công cụ nghe trộm. Nội dung chủ yếu là lý thuyết về các hình thức tấn công vào hệ thống máy tính và mạng, như tấn công mật khẩu, tấn công DoS, DDoS, cùng các loại phần mềm độc hại. Chương cũng phân tích các biện pháp phòng chống các tấn công này, đồng thời giới thiệu các công cụ hỗ trợ cho kẻ tấn công như công cụ quét lỗ hổng và công cụ ghi phím gõ. Nội dung nhấn mạnh tầm quan trọng của việc nhận diện và xử lý các điểm yếu để bảo vệ hệ thống an toàn hơn trước các mối đe dọa.",
+    "chunk_count": 60,
+    "token_count": 217
+  },
+  {
+    "doc_id": "Public154",
+    "summary_text": "Tài liệu đề cập đến tấn công từ chối dịch vụ (DoS) và từ chối dịch vụ phân tán (DDoS), hai hình thức tấn công mạng nhằm ngăn chặn quyền truy cập hợp pháp vào tài nguyên. Các khái niệm chính bao gồm: tấn công DoS, tấn công DDoS, tấn công SYN Flood, tấn công Smurf, tấn công nghe lén, và các biện pháp phòng chống. Nội dung bao gồm lý thuyết về các loại tấn công, kỹ thuật thực hiện và phương pháp bảo vệ các hệ thống mạng khỏi các cuộc tấn công này. Tấn công DoS sử dụng một hoặc vài máy để gây cạn kiệt tài nguyên, trong khi tấn công DDoS sử dụng hàng nghìn máy từ nhiều vị trí khác nhau, làm cho việc phòng chống khó khăn hơn. Các biện pháp phòng chống được đề xuất bao gồm cấu hình mạng, sử dụng tường lửa, và mã hóa thông tin để bảo vệ dữ liệu nhạy cảm khỏi bị nghe lén.",
+    "chunk_count": 68,
+    "token_count": 229
+  },
+  {
+    "doc_id": "Public156",
+    "summary_text": "Các phần mềm độc hại (malware) là các chương trình được thiết kế để thực hiện các hành vi xấu, như đánh cắp thông tin hoặc phá hoại hệ thống. Các khái niệm/thuật ngữ chính bao gồm: malware, virus, worm, trojan horse, logic bomb, rootkit, adware, spyware. Loại nội dung: lý thuyết. Tài liệu phân loại malware thành hai nhóm chính: nhóm cần chương trình chủ để lây nhiễm (bao gồm virus, trojan, backdoor, v.v.) và nhóm không cần chương trình chủ (như worm và bot). Các dạng malware có khả năng tự lây nhiễm như virus và worm thường gây thiệt hại nghiêm trọng cho hệ thống. Tài liệu cũng đề cập đến các loại virus khác nhau, bao gồm file virus, boot virus, macro virus và email virus, cùng với những đặc điểm và cách thức lây nhiễm của chúng. Bên cạnh đó, adware và spyware cũng được mô tả như những loại phần mềm độc hại có khả năng thu thập thông tin mà người dùng không hay biết.",
+    "chunk_count": 50,
+    "token_count": 243
+  },
+  {
+    "doc_id": "Public157",
+    "summary_text": "Chương 3 trình bày các khái niệm cơ bản về mật mã và các phương pháp mã hóa. Các thuật ngữ chính bao gồm: mật mã, bản rõ, bản mã, mã hóa, giải mã, giải thuật mã hóa, mã hóa khóa đối xứng, mã hóa khóa bất đối xứng, hàm băm, chữ ký số, chứng chỉ số, và PKI. Nội dung chủ yếu là lý thuyết và thực hành về mã hóa thông tin. Chương này giới thiệu các giải thuật mã hóa như DES, 3-DES, AES cho mã hóa khóa đối xứng, và RSA cho mã hóa khóa bất đối xứng. Nó cũng đề cập đến các hàm băm như MD5 và SHA1, quản lý và phân phối khóa, cùng với các giao thức bảo mật thông tin. Bên cạnh đó, chương còn phân loại mã hóa thành mã hóa dòng và mã hóa khối, cùng với ứng dụng của mã hóa trong các dịch vụ bảo mật và đảm bảo an toàn thông tin.",
+    "chunk_count": 86,
+    "token_count": 216
+  },
+  {
+    "doc_id": "Public158",
+    "summary_text": "Khái quát về mã hóa khóa đối xứng. Mã hóa khóa đối xứng, khóa bí mật, khóa chia sẻ, DES, 3-DES, AES, IDEA, Blowfish, Twofish, RC4, RC5. Lý thuyết.\n\nTài liệu trình bày về mã hóa khóa đối xứng, một phương pháp sử dụng một khóa bí mật duy nhất cho cả quá trình mã hóa và giải mã. Khóa này cần được chia sẻ an toàn giữa các bên tham gia. Các hệ mã hóa khóa đối xứng thường sử dụng khóa có kích thước từ 128 bit trở lên để đảm bảo an toàn. Mặc dù có tốc độ thực thi nhanh và độ an toàn cao, việc quản lý và phân phối khóa trong môi trường mở gặp nhiều khó khăn. Tài liệu cũng đề cập đến một số hệ mã hóa tiêu biểu như DES, 3-DES và AES, trong đó 3-DES nâng cao độ an toàn bằng cách áp dụng DES ba lần cho mỗi khối dữ liệu, nhưng lại có tốc độ thực thi chậm. AES được công nhận là chuẩn mã hóa hiện đại và sử dụng các phép toán phức tạp trong quá trình mã hóa và giải mã.",
+    "chunk_count": 74,
+    "token_count": 254
+  },
+  {
+    "doc_id": "Public159",
+    "summary_text": "Chủ đề chính: Giải thuật mã hóa khóa bất đối xứng và hàm băm trong an ninh thông tin.  \nCác khái niệm/thuật ngữ chính: mã hóa khóa bất đối xứng, khóa công khai, khóa riêng, RSA, hàm băm, MDC, MAC, SHA1.  \nLoại nội dung: lý thuyết.\n\nTài liệu trình bày khái niệm về mã hóa khóa bất đối xứng, trong đó sử dụng cặp khóa công khai và riêng để mã hóa và giải mã thông tin. Khóa công khai có thể được phân phối rộng rãi, trong khi khóa riêng cần được giữ bí mật. Các giải thuật mã hóa khóa bất đối xứng tiêu biểu như RSA, Rabin và ElGamal được đề cập, với RSA là nổi bật nhất. Bên cạnh đó, tài liệu cũng giới thiệu về hàm băm, phân loại thành hàm băm không khóa và có khóa, cùng với các ứng dụng như mã phát hiện sửa đổi (MDC) và mã xác thực thông điệp (MAC). Cuối cùng, hàm băm SHA1 được mô tả chi tiết với quy trình xử lý thông điệp gồm tiền xử lý và các vòng lặp xử lý.",
+    "chunk_count": 87,
+    "token_count": 264
+  },
+  {
+    "doc_id": "Public160",
+    "summary_text": "Chủ đề chính: Chữ ký số và chứng chỉ số trong hệ thống bảo mật thông tin.  \nCác khái niệm/thuật ngữ chính: Chữ ký số, giải thuật tạo chữ ký số, giải thuật kiểm tra chữ ký số, hệ chữ ký số, chứng chỉ số, khóa công khai, khóa riêng, CA (Cơ quan cấp chứng chỉ).  \nLoại nội dung: Lý thuyết / thực hành.  \n\nChữ ký số là chuỗi dữ liệu gắn liền với thông điệp nhằm đảm bảo tính toàn vẹn và xác thực của thông điệp đó. Quá trình tạo chữ ký số bao gồm việc sử dụng cặp khóa công khai và khóa riêng, trong đó khóa riêng được dùng để tạo chữ ký và khóa công khai để kiểm tra tính xác thực. Một hệ chữ ký số bao gồm các giải thuật tạo và kiểm tra chữ ký. Chứng chỉ số là tài liệu điện tử liên kết khóa công khai với thông tin nhận dạng của thực thể, thường được cấp phát bởi CA. Chứng chỉ số có vai trò xác minh chủ thể của khóa công khai và được sử dụng trong nhiều ứng dụng bảo mật. Quy trình cấp và sử dụng chứng chỉ số bao gồm các bước từ yêu cầu cấp chứng chỉ đến xác thực chữ ký số.",
+    "chunk_count": 63,
+    "token_count": 269
+  },
+  {
+    "doc_id": "Public162",
+    "summary_text": "Chủ đề chính: Quản lý và phân phối khóa trong hệ thống mã hóa.  \nCác khái niệm/thuật ngữ chính: Quan hệ khóa, Quản lý khóa, Phân phối khóa, Trung tâm phân phối khóa (KDC), Trung tâm dịch chuyển khóa (KTC), Chứng chỉ khóa công khai.  \nLoại nội dung: Lý thuyết và quy định.  \n\nTài liệu trình bày về quan hệ khóa và quản lý khóa trong mã hóa, nhấn mạnh vai trò quan trọng của quản lý khóa trong việc đảm bảo tính bảo mật thông tin. Quản lý khóa bao gồm các quy trình khởi tạo, phân phối, kiểm soát và thu hồi khóa. Trung tâm phân phối khóa (KDC) và trung tâm dịch chuyển khóa (KTC) là hai kỹ thuật chính giúp giải quyết vấn đề phân phối khóa trong hệ thống nhiều người dùng. Tài liệu cũng đề cập đến các phương pháp phân phối khóa như sử dụng máy chủ tin cậy và chứng chỉ khóa công khai, nhấn mạnh tầm quan trọng của các chính sách an ninh trong quản lý khóa để đảm bảo tính bảo mật và toàn vẹn của thông tin truyền thông.",
+    "chunk_count": 87,
+    "token_count": 250
+  },
+  {
+    "doc_id": "Public163",
+    "summary_text": "Chủ đề chính: Giao thức bảo mật SSL/TLS và SET trong thanh toán điện tử.  \nCác khái niệm/thuật ngữ chính: SSL, TLS, SET, chứng chỉ số, mã hóa, xác thực, toàn vẹn thông tin.  \nLoại nội dung: Lý thuyết.\n\nTài liệu giới thiệu về giao thức bảo mật SSL (Secure Socket Layer) và TLS (Transport Layer Security), cùng với sự phát triển của chúng từ năm 1993 đến nay. SSL đã ngừng phát triển do lỗi bảo mật, trong khi TLS được IETF phê chuẩn và hiện có các phiên bản như TLS 1.2 và 1.3. Giao thức SSL/TLS được sử dụng để bảo mật thông tin truyền qua các giao thức ứng dụng như HTTP, SMTP và FTP. Bên cạnh đó, tài liệu cũng đề cập đến giao thức SET (Secure Electronic Transaction), một phương thức thanh toán điện tử an toàn cho thẻ tín dụng, đảm bảo tính bí mật và xác thực. Các bên tham gia giao dịch trong SET yêu cầu có chứng chỉ khóa công khai để thực hiện giao dịch an toàn, quy trình gửi và nhận thông điệp được mô tả chi tiết với các bước mã hóa và giải mã.",
+    "chunk_count": 65,
+    "token_count": 262
+  },
+  {
+    "doc_id": "Public165",
+    "summary_text": "Tường lửa và hệ thống phát hiện, ngăn chặn xâm nhập là những biện pháp quan trọng để bảo vệ an toàn mạng. Tường lửa, thiết bị phần cứng hoặc phần mềm, lọc các gói tin dựa trên chính sách an ninh nhằm ngăn chặn tấn công từ bên ngoài. Tuy nhiên, tường lửa có những hạn chế, như không thể chống lại các tấn công không đi qua nó và các mối đe dọa từ bên trong mạng. Hệ thống IDS/IPS hoạt động như một lớp phòng vệ bổ sung, giúp giám sát lưu lượng mạng, phát hiện và ngăn chặn các hành vi xâm nhập. IDS ghi lại các hành vi đáng ngờ, trong khi IPS có khả năng can thiệp trực tiếp. Cả hai hệ thống này đều cần được cấu hình và giám sát để đảm bảo hiệu quả tối ưu trong việc bảo vệ hệ thống thông tin. \n\nTừ khóa: Tường lửa, hệ thống IDS, hệ thống IPS, bảo mật mạng, giám sát. \n\nNội dung: lý thuyết và thực hành.",
+    "chunk_count": 63,
+    "token_count": 240
+  },
+  {
+    "doc_id": "Public166",
+    "summary_text": "Quản lý an toàn thông tin là quá trình bảo vệ tài sản thông tin của tổ chức. Các khái niệm/thuật ngữ chính: Tài sản (Asset), Quản lý an toàn thông tin (Information security management), Đánh giá rủi ro (Security risk assessment), Phân tích chi tiết rủi ro, Kiểm tra hợp chuẩn an ninh, Quản lý thay đổi và cấu hình, Xử lý các sự cố. Loại nội dung: lý thuyết và quy trình. \n\nTài sản an toàn thông tin bao gồm phần cứng, phần mềm và thông tin. Quản lý an toàn thông tin có ba câu hỏi chính: tài sản nào cần bảo vệ, mối đe dọa nào hiện hữu và biện pháp ứng phó ra sao. Đánh giá và phân tích rủi ro an toàn thông tin là các bước quan trọng, gồm việc nhận diện mối đe dọa, xác định lỗ hổng và phân tích các kiểm soát. Quy trình này cần được thực hiện liên tục để thích ứng với sự thay đổi công nghệ và môi trường rủi ro. Các hoạt động như kiểm tra hợp chuẩn và xử lý sự cố cũng là phần không thể thiếu trong quản lý an toàn thông tin.",
+    "chunk_count": 98,
+    "token_count": 269
+  },
+  {
+    "doc_id": "Public167",
+    "summary_text": "Các chuẩn quản lý an toàn thông tin. NIST SP 800, ISO/IEC 27000, ISO/IEC 27001, ISO/IEC 27002, chính sách, luật, đạo đức. Lý thuyết và quy định.\n\nTài liệu giới thiệu về các chuẩn quản lý an toàn thông tin, đặc biệt là bộ chuẩn ISO/IEC 27000 và NIST SP 800. ISO/IEC 27000 cung cấp định nghĩa và từ vựng cho các chuẩn con, trong khi ISO/IEC 27001 tập trung vào hệ thống quản lý an toàn thông tin (ISMS) và chu kỳ thực hiện kế hoạch, giám sát và hành động. ISO/IEC 27002 đưa ra 127 điều khuyến nghị về quản lý an toàn thông tin. Tài liệu cũng phân tích sự khác biệt giữa luật và chính sách, nhấn mạnh tầm quan trọng của việc xây dựng chính sách rõ ràng và công bằng trong tổ chức. Ngoài ra, luật an toàn thông tin tại Việt Nam được đề cập, cùng với các văn bản pháp lý liên quan, tạo nên cơ sở pháp lý cho quản lý an toàn thông tin trong nước.",
+    "chunk_count": 47,
+    "token_count": 247
+  },
+  {
+    "doc_id": "Public168",
+    "summary_text": "Giới thiệu tổng quan về Tableau. Tableau, Business Intelligence (BI), trực quan hóa dữ liệu, biểu đồ, dashboard, phân tích. Loại nội dung: lý thuyết.\n\nTableau là một phần mềm mạnh mẽ giúp chuyển hóa dữ liệu thành những hiểu biết trực quan, hỗ trợ người dùng từ các nhà phân tích đến người dùng thông thường. Với giao diện kéo thả, Tableau cho phép tạo biểu đồ, dashboard và báo cáo dễ dàng, giúp người dùng hiểu rõ dữ liệu hơn và đưa ra quyết định nhanh chóng. Hệ sinh thái Tableau bao gồm nhiều thành phần như Tableau Desktop và các phiên bản chuyên dụng cho cá nhân và doanh nghiệp. Mặc dù có nhiều lợi ích như tiết kiệm thời gian và nâng cao hiệu quả kinh doanh, Tableau cũng gặp một số nhược điểm như chi phí cao và hiệu suất với dữ liệu lớn. Cuối cùng, người dùng có thể đăng ký bản quyền Tableau trực tiếp từ hãng hoặc qua đại lý ủy quyền.",
+    "chunk_count": 41,
+    "token_count": 204
+  },
+  {
+    "doc_id": "Public169",
+    "summary_text": "Đăng ký sử dụng Tableau qua HVN Group. Tableau, HVN Group, Salesforce, đăng ký, hướng dẫn sử dụng, quản lý dự án. Lý thuyết và thực hành.\n\nHVN Group cung cấp phần mềm Tableau bản quyền với quy trình đăng ký đơn giản và hỗ trợ khách hàng tận tình. Người dùng chỉ cần nhấn nút đăng ký, điền thông tin và sẽ được đội ngũ hỗ trợ liên hệ trong vòng 15-20 phút. Đăng ký thông qua HVN Group mang lại nhiều lợi ích, bao gồm hỗ trợ ngôn ngữ địa phương, tư vấn phù hợp nhu cầu doanh nghiệp Việt Nam, và dịch vụ giá trị gia tăng như đào tạo và hỗ trợ kỹ thuật. Hướng dẫn sử dụng Tableau cho người mới bắt đầu bao gồm cách đăng nhập, tạo dự án và quản lý dự án. Ngoài ra, người dùng có thể quản lý và thêm người dùng vào dự án một cách dễ dàng. Tài liệu cung cấp chi tiết từng bước để sử dụng hiệu quả phần mềm Tableau.",
+    "chunk_count": 52,
+    "token_count": 217
+  },
+  {
+    "doc_id": "Public170",
+    "summary_text": "Hướng dẫn sử dụng phần mềm Tableau. Các khái niệm/thuật ngữ chính: nhãn dữ liệu, nhóm làm việc, tích hợp, phân tích, trực quan hóa, dữ liệu sạch, biểu đồ, tương tác, chia sẻ. Loại nội dung: hướng dẫn thực hành. \n\nTài liệu cung cấp hướng dẫn chi tiết về cách thêm nhãn dữ liệu và nhóm làm việc trong Tableau, cũng như cách tích hợp với các nền tảng khác như Slack và Salesforce. Nội dung bao gồm từng bước thực hiện rõ ràng, giúp người dùng dễ dàng thực hiện. Ngoài ra, tài liệu nhấn mạnh tầm quan trọng của việc làm sạch và chuẩn bị dữ liệu trước khi phân tích, lựa chọn biểu đồ phù hợp với loại dữ liệu và mục đích trực quan hóa. Nó cũng đề xuất các tính năng tương tác như bộ lọc và hành động để nâng cao trải nghiệm người dùng. Cuối cùng, tài liệu khuyến khích việc chia sẻ và thu thập phản hồi để cải thiện phân tích và trực quan hóa.",
+    "chunk_count": 44,
+    "token_count": 221
+  },
+  {
+    "doc_id": "Public174",
+    "summary_text": "ETL (Trích xuất, Chuyển đổi, Tải) là quy trình quan trọng trong quản lý và xử lý dữ liệu, giúp chuẩn bị dữ liệu cho phân tích và ứng dụng kinh doanh. Các khái niệm/thuật ngữ chính bao gồm: Trích xuất, Chuyển đổi, Tải, Dữ liệu có cấu trúc, Dữ liệu phi cấu trúc, Kho dữ liệu, AWS Glue. Loại nội dung là lý thuyết và thực hành. \n\nQuy trình ETL bao gồm ba bước chính: trích xuất dữ liệu từ nhiều nguồn khác nhau, chuyển đổi dữ liệu thô để phù hợp với nhu cầu, và tải dữ liệu đã chuẩn hóa vào hệ thống lưu trữ. ETL cho phép tổ chức xử lý cả dữ liệu có cấu trúc và phi cấu trúc, từ đó hỗ trợ ra quyết định kinh doanh, tạo báo cáo và cải thiện hiệu suất hoạt động. Dịch vụ như AWS Glue giúp đơn giản hóa quy trình này, cho phép người dùng dễ dàng tích hợp và quản lý dữ liệu mà không cần lo lắng về cơ sở hạ tầng.",
+    "chunk_count": 104,
+    "token_count": 237
+  },
+  {
+    "doc_id": "Public175",
+    "summary_text": "Zoiper là một ứng dụng phần mềm softphone miễn phí cho phép thực hiện cuộc gọi qua Internet thông qua các nhà cung cấp dịch vụ VoIP. Các khái niệm/thuật ngữ chính bao gồm: softphone, VoIP, SIP, IAX, XMPP, giao thức, tổng đài ảo. Loại nội dung là lý thuyết và hướng dẫn sử dụng. \n\nZoiper hỗ trợ nhiều tính năng như danh bạ, lịch sử cuộc gọi, chuyển tiếp cuộc gọi và có giao diện tương tự điện thoại truyền thống với khả năng tùy chỉnh. Để sử dụng, người dùng cần có tổng đài ảo hỗ trợ giao thức SIP hoặc IAX và cần thiết lập tài khoản SIP trên phần mềm. Phần mềm tương thích với nhiều hệ điều hành và thiết bị, cho phép người dùng thực hiện cuộc gọi, gọi video và chat một cách dễ dàng. Quy trình cài đặt và cấu hình Zoiper được hướng dẫn cụ thể để người dùng có thể sử dụng một cách nhanh chóng và hiệu quả.",
+    "chunk_count": 44,
+    "token_count": 217
+  },
+  {
+    "doc_id": "Public176",
+    "summary_text": "GraphQL là một ngôn ngữ truy vấn mạnh mẽ cho phép lấy dữ liệu từ server một cách hiệu quả và chính xác. Các khái niệm/thuật ngữ chính bao gồm: Query, Schema, Resolvers, Mutation, Subscription. Loại nội dung là lý thuyết và thực hành. \n\nGraphQL cho phép tổng hợp dữ liệu từ nhiều nguồn, giúp client xác định chính xác thông tin cần thiết mà không gặp tình trạng \"overfetching\" hay \"under-fetching\". Nó thay thế REST trong nhiều trường hợp nhờ khả năng tối ưu hóa yêu cầu dữ liệu và hỗ trợ phát triển API mở rộng mà không ảnh hưởng đến các truy vấn hiện có. Tuy nhiên, GraphQL cũng có những nhược điểm như tăng khối lượng công việc cho server và quản lý bộ nhớ đệm phức tạp. Hiểu rõ cách thức hoạt động và những ưu, nhược điểm của GraphQL sẽ giúp các nhà phát triển xây dựng ứng dụng hiệu quả hơn.",
+    "chunk_count": 32,
+    "token_count": 206
+  },
+  {
+    "doc_id": "Public178",
+    "summary_text": "Chủ đề chính: Dự án và quản lý dự án.  \nCác khái niệm/thuật ngữ chính: Dự án, mục tiêu, ngân sách, nhóm dự án, quản lý dự án, yếu tố thành công, giai đoạn dự án.  \nLoại nội dung: Lý thuyết.\n\nTài liệu trình bày khái niệm và đặc điểm của dự án, xác định dự án như một tập hợp các hoạt động có mục tiêu cụ thể, diễn ra trong thời gian và ngân sách nhất định. Dự án có thể được phân loại theo lĩnh vực chuyên môn, mục tiêu lợi nhuận và phạm vi tác dụng kinh tế. Các yếu tố quyết định thành công của dự án bao gồm kế hoạch chi tiết, giám sát hiệu quả, phòng ngừa rủi ro, và đánh giá chính xác. Quản lý dự án là quá trình đảm bảo hoàn thành dự án theo yêu cầu, chất lượng và ngân sách. Tài liệu cũng nêu rõ các giai đoạn của quản lý dự án, nhấn mạnh tầm quan trọng của việc theo dõi tiến độ, kiểm soát chất lượng và phát hiện rủi ro kịp thời để đạt được mục tiêu.",
+    "chunk_count": 64,
+    "token_count": 256
+  },
+  {
+    "doc_id": "Public179",
+    "summary_text": "Kiểm thử tự động là một kỹ thuật kiểm thử phần mềm sử dụng công cụ đặc biệt để thực hiện các trường hợp kiểm thử, nhằm phát hiện lỗi và vấn đề trong phần mềm. Các khái niệm/thuật ngữ chính bao gồm kiểm thử tự động, công cụ kiểm thử, kịch bản tự động, tích hợp CI/CD, và chu trình phát triển phần mềm. Loại nội dung của tài liệu này là lý thuyết và quy trình thực hành. Tài liệu mô tả tầm quan trọng của kiểm thử tự động trong việc tiết kiệm thời gian và nguồn lực, đồng thời đảm bảo chất lượng sản phẩm trước khi ra mắt. Nó cũng trình bày các bước cần thiết trong quy trình kiểm thử tự động, từ xác định phạm vi, lập kế hoạch, thiết kế và phát triển, đến thực thi kiểm thử. Cuối cùng, tài liệu nhấn mạnh tầm quan trọng của việc lựa chọn công cụ kiểm thử phù hợp và các tiêu chí đánh giá công cụ, nhằm tối ưu hóa hiệu quả kiểm thử và quản lý dự án.",
+    "chunk_count": 47,
+    "token_count": 224
+  },
+  {
+    "doc_id": "Public180",
+    "summary_text": "Chủ đề chính: Kiểm thử hiệu suất (Performance Test) trong phát triển phần mềm.  \nCác khái niệm/thuật ngữ chính: Performance Test, Load Testing, thời gian phản hồi, tải trọng tối đa, băng thông, sự ổn định, công cụ kiểm thử như JMeter, Loadrunner, Gatling, Webload, Apache Bench, Siege.  \nLoại nội dung: Lý thuyết và hướng dẫn thực hành.  \n\nNội dung tài liệu trình bày khái niệm Performance Test, quy trình đánh giá hiệu suất và khả năng chịu tải của ứng dụng hoặc hệ thống. Các chỉ số hiệu suất chính như thời gian phản hồi, tải trọng tối đa, băng thông và sự ổn định được nêu rõ. Tài liệu cũng phân biệt các loại Performance Testing như Load Testing và nhấn mạnh tầm quan trọng của việc phát hiện và giải quyết các vấn đề về hiệu suất để đảm bảo hoạt động ổn định của hệ thống. Hướng dẫn cách thực hiện kiểm thử hiệu năng cơ bản cùng với giới thiệu các công cụ phổ biến hỗ trợ quá trình này, giúp người dùng cải thiện hiệu suất ứng dụng hiệu quả hơn.",
+    "chunk_count": 71,
+    "token_count": 247
+  },
+  {
+    "doc_id": "Public181",
+    "summary_text": "Chủ đề chính: Kafka là nền tảng xử lý luồng dữ liệu hàng đầu cho các tổ chức hiện nay.  \nCác khái niệm/thuật ngữ chính: Apache Kafka, Producer, Consumer, Broker, Retention Policy, Consumer Lag, Kafka Connect, Kafka Streams, Security.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nApache Kafka là một hệ thống phát trực tuyến sự kiện phân tán, được phát triển bởi LinkedIn và hiện thuộc Apache Software Foundation. Nó cho phép xử lý dữ liệu theo thời gian thực từ nhiều nguồn khác nhau, hỗ trợ các ứng dụng phân tích và tích hợp hệ thống. Kafka cung cấp tính năng lưu trữ dữ liệu lớn và khả năng thu thập thông tin từ các nguồn như cảm biến và ứng dụng web, đồng thời hỗ trợ các công nghệ tiên tiến như Machine Learning. Mặc dù có nhiều ưu điểm như hiệu suất cao và khả năng mở rộng, Kafka cũng có nhược điểm như thiếu công cụ giám sát hoàn chỉnh và giảm hiệu suất khi khối lượng dữ liệu tăng. Tuy nhiên, nó vẫn là lựa chọn phổ biến cho việc xử lý dữ liệu phân tán.",
+    "chunk_count": 49,
+    "token_count": 243
+  },
+  {
+    "doc_id": "Public182",
+    "summary_text": "Chủ đề chính: Tìm hiểu về tấn công từ chối dịch vụ (DoS).  \nCác khái niệm/thuật ngữ chính: DoS, DDoS, tấn công mạng, Ping Floods, SYN Floods, HTTP Floods, Smurf Attacks.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nTài liệu trình bày khái niệm DoS (Denial of Service) và các phương thức tấn công phổ biến như Ping Floods, SYN Floods, HTTP Floods và Smurf Attacks. Tấn công DoS nhằm làm cho hệ thống hoặc máy chủ không khả dụng bằng cách gửi lượng yêu cầu lớn, gây ra sự quá tải và làm gián đoạn hoạt động của dịch vụ. Tác hại của tấn công này bao gồm sập hệ thống, thiệt hại tài chính, gián đoạn hoạt động kinh doanh, mất uy tín và thất thoát dữ liệu. Tài liệu cũng phân biệt giữa DoS và DDoS (tấn công từ chối dịch vụ phân tán) và đưa ra một số giải pháp phòng ngừa như cài đặt phần mềm diệt virus, sử dụng tường lửa, và áp dụng biện pháp bảo mật cho email nhằm giảm thiểu tác động từ các cuộc tấn công này.",
+    "chunk_count": 40,
+    "token_count": 282
+  },
+  {
+    "doc_id": "Public183",
+    "summary_text": "Chủ đề chính: Giải pháp cho vấn đề publish message trong hệ thống microservices khi gặp sự cố.  \nCác khái niệm/thuật ngữ chính: Transactional outbox pattern, SAGA pattern, publish event, message broker, polling publisher, transaction log tailing pattern, idempotent consumer.  \nLoại nội dung: Lý thuyết và thực hành.\n\nTài liệu đề cập đến vấn đề khi một ứng dụng trong hệ thống microservices gặp lỗi trong quá trình publish message mặc dù dữ liệu đã được lưu thành công. Giải pháp được giới thiệu là \"transactional outbox pattern\", giúp đảm bảo tính nhất quán giữa việc lưu dữ liệu và publish event. Tác giả cũng phân tích các lựa chọn về việc cấu trúc publisher, có thể là một service độc lập hoặc nằm trong service hiện tại, tùy thuộc vào độ phức tạp và yêu cầu mở rộng trong tương lai. Ngoài ra, tài liệu chỉ ra những hạn chế của phương pháp này, như việc khó đảm bảo delivery message là exactly once và độ trễ trong quá trình xử lý. Từ đó, tác giả khuyến nghị cần cân nhắc kỹ lưỡng khi thiết kế hệ thống để đạt được hiệu quả tốt nhất.",
+    "chunk_count": 56,
+    "token_count": 259
+  },
+  {
+    "doc_id": "Public184",
+    "summary_text": "Chủ đề chính: Dự án công nghệ thông tin và quản lý dự án CNTT.  \nCác khái niệm/thuật ngữ chính: Dự án CNTT, Công nghệ thông tin - Truyền thông (CNTT-TT), ứng dụng CNTT, hệ thống thông tin, quản lý dự án.  \nLoại nội dung: lý thuyết / quy định.\n\nDự án công nghệ thông tin (CNTT) mang những đặc điểm và giai đoạn giống như các dự án thông thường, nhưng cũng có những điểm khác biệt do tính chất riêng của lĩnh vực CNTT. Quản lý dự án CNTT bao gồm các bước như xác lập, lập kế hoạch, thực hiện, giám sát và kết thúc dự án. Việc ứng dụng CNTT trong tổ chức, doanh nghiệp nhằm cải thiện quản lý, giao tiếp và quy trình công nghiệp, nhưng nhiều doanh nghiệp vẫn còn dè dặt trong việc áp dụng công nghệ mới. Các hệ thống thông tin có vai trò hỗ trợ quản lý nội bộ và ngoại bộ, cải thiện sức cạnh tranh và phát triển thị trường. Dự án CNTT có thể bao gồm nhiều loại hệ thống khác nhau, từ hệ thống tác nghiệp đến hệ thống chiến lược, nhằm tối ưu hóa quy trình và tạo lợi thế cạnh tranh cho doanh nghiệp.",
+    "chunk_count": 45,
+    "token_count": 274
+  },
+  {
+    "doc_id": "Public185",
+    "summary_text": "Jira là một ứng dụng quản lý và theo dõi lỗi trong dự án, phát triển bởi Atlassian. Các khái niệm/thuật ngữ chính bao gồm: issue, task, bug, epic, velocity, burndown chart, cumulative flow diagram, sprint report, wallboard. Loại nội dung: lý thuyết và hướng dẫn thực hành. \n\nJira cho phép quản lý tiến độ dự án, theo dõi các vấn đề như tasks và bugs, cùng với khả năng tạo bộ lọc và báo cáo thống kê. Phần mềm này cũng nổi bật với tính năng phân quyền chi tiết, tích hợp dễ dàng với các hệ thống khác, và khả năng tùy biến cao. Giao diện thân thiện hỗ trợ người dùng trong việc tương tác và quản lý các issue. Các công cụ như burndown chart và velocity chart giúp theo dõi tiến độ và hiệu suất làm việc của đội ngũ. Hướng dẫn sử dụng Jira bao gồm cách tạo và tương tác với issue, giúp người dùng thực hiện công việc một cách hiệu quả và có tổ chức.",
+    "chunk_count": 71,
+    "token_count": 226
+  },
+  {
+    "doc_id": "Public186",
+    "summary_text": "Chủ đề chính: Hướng dẫn di chuyển dữ liệu từ MySQL sang PostgreSQL bằng Estuary Flow.  \nCác khái niệm/thuật ngữ chính: MySQL, PostgreSQL, Estuary Flow, ghi lại dữ liệu thay đổi (CDC), di chuyển dữ liệu, sao chép dữ liệu, công cụ đường ống dữ liệu.  \nLoại nội dung: Hướng dẫn thực hành.  \n\nBài viết cung cấp hướng dẫn chi tiết về cách di chuyển dữ liệu từ MySQL sang PostgreSQL sử dụng Estuary Flow. Nó bao gồm việc thiết lập và chuẩn bị cơ sở dữ liệu, cũng như các bước thực hiện cần thiết để đảm bảo quá trình di chuyển hiệu quả. Ngoài ra, bài viết cũng nêu rõ các điều kiện tiên quyết và những khác biệt chính giữa hai hệ quản trị cơ sở dữ liệu này. Estuary Flow cho phép di chuyển dữ liệu lịch sử và đồng bộ dữ liệu mới nhờ tính năng ghi lại dữ liệu thay đổi (CDC), giúp tiết kiệm tài nguyên và giảm chi phí. Cuối cùng, bài viết khuyến khích người dùng lựa chọn công cụ di chuyển phù hợp với yêu cầu và ngân sách của họ để đảm bảo hiệu quả trong việc quản lý dữ liệu.",
+    "chunk_count": 86,
+    "token_count": 258
+  },
+  {
+    "doc_id": "Public187",
+    "summary_text": "Chủ đề chính: Flutter là một framework mã nguồn mở cho phát triển ứng dụng di động và web.  \nCác khái niệm/thuật ngữ chính: Flutter, framework, mã nguồn mở, ngôn ngữ lập trình Dart, Hot Reload, widget, giao diện người dùng (UI).  \nLoại nội dung: lý thuyết / thực hành.  \n\nBài viết giới thiệu về Flutter, một framework được phát triển bởi Google, cho phép xây dựng ứng dụng đa nền tảng chỉ với một mã nguồn. Ban đầu hỗ trợ ứng dụng di động, Flutter hiện hỗ trợ nhiều nền tảng như iOS, Android, web, Windows, MacOS và Linux. Flutter sử dụng ngôn ngữ lập trình Dart, nổi bật với tính linh hoạt và hiệu suất cao. Các tính năng của Flutter bao gồm Hot Reload, widget tích hợp sẵn và khả năng tạo giao diện người dùng đồng nhất trên nhiều nền tảng. Flutter tiết kiệm thời gian phát triển nhờ single code-base và kiến trúc phân lớp linh hoạt. Bài viết cũng gợi ý đối tượng doanh nghiệp phù hợp sử dụng Flutter, như các start-up và doanh nghiệp có nguồn lực hạn chế, đồng thời lưu ý những doanh nghiệp lớn hoặc cần tính tùy chỉnh cao có thể không phù hợp với Flutter.",
+    "chunk_count": 68,
+    "token_count": 270
+  },
+  {
+    "doc_id": "Public188",
+    "summary_text": "Git là một hệ thống quản lý phiên bản phân tán giúp theo dõi và quản lý sự thay đổi của mã nguồn trong phát triển phần mềm. Các khái niệm/thuật ngữ chính gồm: Git, Version Control System (VCS), Repository, Branch, Commit, Merge, Origin, Master. Loại nội dung: lý thuyết và thực hành. \n\nTài liệu trình bày cách Git hoạt động, cho phép người dùng lưu trữ mã nguồn, theo dõi lịch sử thay đổi và làm việc song song trên các nhánh khác nhau. Git có khả năng hợp nhất các thay đổi từ các nhánh và xử lý xung đột khi cần thiết. Người dùng có thể dễ dàng khôi phục các phiên bản trước và bảo vệ dữ liệu thông qua việc sao lưu trên các dịch vụ lưu trữ trực tuyến như GitHub. Nội dung cung cấp kiến thức cơ bản và thuật ngữ cần thiết cho những ai học lập trình, giúp họ hiểu rõ hơn về cách sử dụng Git trong quy trình phát triển phần mềm.",
+    "chunk_count": 69,
+    "token_count": 218
+  },
+  {
+    "doc_id": "Public189",
+    "summary_text": "Chủ đề chính: SQL Server là hệ thống quản trị cơ sở dữ liệu quan hệ do Microsoft phát triển.  \nCác khái niệm/thuật ngữ chính: SQL Server, RDBMS, T-SQL, Database Engine, bảo mật dữ liệu, quản lý giao dịch, phân tích dữ liệu.  \nLoại nội dung: lý thuyết / thực hành.  \n\nTài liệu cung cấp cái nhìn tổng quan về SQL Server, một hệ thống quản trị cơ sở dữ liệu quan hệ mạnh mẽ, được sử dụng phổ biến trong các doanh nghiệp để quản lý và lưu trữ dữ liệu. SQL Server cho phép người dùng thực hiện các thao tác CRUD một cách hiệu quả và an toàn, đồng thời hỗ trợ bảo mật dữ liệu và quản lý giao dịch theo chuẩn ACID. Tài liệu cũng đề cập đến cấu trúc của SQL Server với các thành phần chính như Database Engine và các dịch vụ liên quan. Ngoài ra, SQL Server còn tích hợp các công cụ phân tích dữ liệu và tạo báo cáo, giúp người dùng ra quyết định dựa trên dữ liệu một cách chính xác. Hướng dẫn cài đặt cũng được trình bày chi tiết, hướng dẫn người dùng từng bước để có thể sử dụng SQL Server 2022.",
+    "chunk_count": 110,
+    "token_count": 261
+  },
+  {
+    "doc_id": "Public190",
+    "summary_text": "Chủ đề chính: Tổng quan về cơ sở dữ liệu Oracle và các tính năng chính của nó.  \nCác khái niệm/thuật ngữ chính: Oracle Database, RDBMS, SQL, DML, DQL, SQL\\*Plus, Oracle SQL Developer, Oracle Data Modeler, Oracle Enterprise Manager.  \nLoại nội dung: lý thuyết.  \n\nOracle Database là hệ thống quản lý cơ sở dữ liệu quan hệ hàng đầu, với phiên bản lâu dài 19c và phiên bản phát triển 21c. Nó nổi bật nhờ vào khả năng tổ chức dữ liệu hiệu quả và hỗ trợ cho cả môi trường cục bộ và điện toán đám mây. Các tính năng quan trọng của Oracle bao gồm quản lý dữ liệu mạnh mẽ, tối ưu hiệu suất với các thuật toán và khả năng mở rộng linh hoạt. Tuy nhiên, nó cũng có những hạn chế như yêu cầu về kiến thức SQL, chi phí giấy phép cao và yêu cầu phần cứng khắt khe. Các công cụ như SQL\\*Plus và Oracle SQL Developer giúp người dùng quản lý và phát triển cơ sở dữ liệu hiệu quả. Oracle SQL cho phép tương tác với cơ sở dữ liệu thông qua ngôn ngữ truy vấn, hỗ trợ thao tác và truy xuất dữ liệu.",
+    "chunk_count": 95,
+    "token_count": 266
+  },
+  {
+    "doc_id": "Public191",
+    "summary_text": "Ubuntu là một hệ điều hành mã nguồn mở dựa trên Linux, được phát triển để cung cấp trải nghiệm máy tính dễ sử dụng, ổn định và an toàn. Các khái niệm/thuật ngữ chính bao gồm: Ubuntu LTS, Ubuntu Server, Ubuntu MATE, cộng đồng, so sánh với Windows, cài đặt Driver Nvidia. Loại nội dung: lý thuyết, thực hành. \n\nUbuntu có nhiều phiên bản khác nhau để phục vụ nhu cầu sử dụng đa dạng của người dùng, từ cá nhân đến doanh nghiệp. Phiên bản LTS được hỗ trợ dài hạn, trong khi phiên bản Server tối ưu cho máy chủ. So sánh với Windows cho thấy Ubuntu có yêu cầu cấu hình thấp hơn, bảo mật tốt hơn và hoàn toàn miễn phí, nhưng có thể gặp khó khăn với một số phần cứng nhất định. Hướng dẫn cài đặt driver Nvidia cũng được trình bày chi tiết, bao gồm các bước từ xác định card đồ họa đến cấu hình hệ thống, giúp người dùng tối ưu trải nghiệm sử dụng.",
+    "chunk_count": 52,
+    "token_count": 222
+  },
+  {
+    "doc_id": "Public192",
+    "summary_text": "Kubernetes là một nền tảng mã nguồn mở mạnh mẽ cho việc quản lý ứng dụng và dịch vụ, giúp tự động hóa quy trình triển khai. Các khái niệm chính bao gồm container, ảo hóa, micro-services, service discovery và cân bằng tải. Nội dung tài liệu chủ yếu gồm lý thuyết và hướng dẫn thực hành liên quan đến Kubernetes. Tài liệu trình bày sự phát triển của Kubernetes từ những vấn đề trong triển khai ứng dụng truyền thống đến việc phát triển và triển khai container một cách hiệu quả. Nó nhấn mạnh lợi ích của Kubernetes trong việc quản lý tài nguyên, duy trì tính sẵn sàng của ứng dụng, và cung cấp khả năng mở rộng. Ngoài ra, tài liệu cũng hướng dẫn cách cài đặt công cụ kubectl trên Windows, bao gồm các bước tải xuống, xác thực và cấu hình môi trường.",
+    "chunk_count": 58,
+    "token_count": 181
+  },
+  {
+    "doc_id": "Public193",
+    "summary_text": "Chủ đề chính: Tổng quan về vị trí DevOps và vai trò của DevOps Engineer.  \nCác khái niệm/thuật ngữ chính: DevOps, DevOps Engineer, CI/CD, Infrastructure as Code, Monitoring, Collaboration.  \nLoại nội dung: Lý thuyết và thực hành.  \n\nDevOps là một phương pháp kết hợp giữa phát triển phần mềm và vận hành công nghệ thông tin nhằm tối ưu hóa quy trình phát triển và triển khai phần mềm. DevOps Engineer đảm nhiệm các công việc liên quan đến triển khai, tối ưu hóa và giám sát hệ thống, yêu cầu kỹ năng lập trình và hiểu biết về công nghệ mà sản phẩm sử dụng. Các khái niệm chính trong DevOps bao gồm Continuous Integration (CI) và Continuous Deployment (CD), giúp tăng tốc độ phát hành phần mềm và cải thiện chất lượng sản phẩm. Doanh nghiệp cần DevOps để nâng cao tốc độ phát triển, chuyển giao, và độ tin cậy của sản phẩm. Để trở thành DevOps Engineer, cần có kiến thức vững về hệ thống, lập trình, các công cụ CI/CD, và các dịch vụ đám mây.",
+    "chunk_count": 30,
+    "token_count": 243
+  },
+  {
+    "doc_id": "Public194",
+    "summary_text": "MongoDB là một phần mềm mã nguồn mở quản trị cơ sở dữ liệu NoSQL, được nhiều công ty lớn như Facebook, Google sử dụng để lưu trữ dữ liệu. Các khái niệm chính bao gồm MongoDB, NoSQL, document, collection, database, BSON, _id. Nội dung tài liệu này chủ yếu là lý thuyết và mô tả cách thức hoạt động của MongoDB. MongoDB cho phép lưu trữ dữ liệu dưới dạng collection và document, giúp tích hợp và quản lý khối lượng lớn dữ liệu đa dạng và phức tạp một cách hiệu quả. Cấu trúc dữ liệu của MongoDB sử dụng các cặp khóa-giá trị và có thể chứa các loại dữ liệu khác nhau trong cùng một collection, làm cho nó linh hoạt hơn so với các hệ quản trị cơ sở dữ liệu quan hệ. MongoDB hoạt động qua hai lớp: lớp ứng dụng và lớp dữ liệu, trong đó lớp ứng dụng bao gồm giao diện người dùng và máy chủ, còn lớp dữ liệu sử dụng bộ máy lưu trữ để quản lý dữ liệu.",
+    "chunk_count": 46,
+    "token_count": 225
+  },
+  {
+    "doc_id": "Public195",
+    "summary_text": "Trí tuệ nhân tạo trong giáo dục đang trở thành xu thế không thể đảo ngược. Các khái niệm/thuật ngữ chính bao gồm trí tuệ nhân tạo (AI), học máy (learning machines), AI tạo sinh (Generative AI), và giáo dục trực tuyến. Nội dung chính của tài liệu là nghiên cứu về sự phát triển của AI trong giáo dục, từ những năm 1960 cho đến hiện tại, cùng với những lợi ích và thách thức mà nó mang lại. Tài liệu nhấn mạnh rằng AI, đặc biệt là các ứng dụng như ChatGPT, đang tái định nghĩa cách thức dạy và học, giúp học sinh tiếp cận kiến thức một cách chủ động hơn. Tuy nhiên, cũng có những nguy cơ liên quan đến thông tin sai lệch và thiên lệch trong nội dung mà AI cung cấp. Do đó, việc xây dựng chính sách quản lý AI trong giáo dục là rất quan trọng để đảm bảo an toàn và hiệu quả trong việc ứng dụng công nghệ này.",
+    "chunk_count": 51,
+    "token_count": 212
+  },
+  {
+    "doc_id": "Public196",
+    "summary_text": "Chủ đề chính: Ứng dụng công nghệ trong quản lý tài nguyên nước và nước thải.  \nCác khái niệm/thuật ngữ chính: Tài nguyên nước, phát triển bền vững, SDG 6, trí tuệ nhân tạo (AI), Internet vạn vật (IoT), dữ liệu lớn (Big Data).  \nLoại nội dung: Nghiên cứu.  \n\nNội dung tài liệu tập trung vào vai trò quan trọng của tài nguyên nước trong phát triển kinh tế và mục tiêu phát triển bền vững 6 của Liên hợp quốc, nhằm đảm bảo sự sẵn có và quản lý hiệu quả nước. Báo cáo nêu rõ cần tăng cường nỗ lực và đầu tư vào dịch vụ nước và vệ sinh để đạt mục tiêu vào năm 2030. Ứng dụng trí tuệ nhân tạo (AI) được nhấn mạnh như một công cụ tiềm năng trong quản lý nước và nước thải, từ việc tối ưu hóa quy trình cho đến phát hiện rò rỉ. Công nghệ 4.0, bao gồm AI, IoT và Big Data, có thể giúp tiết kiệm tài nguyên nước và cải thiện hiệu quả quản lý, đặc biệt ở những khu vực bị căng thẳng về nước. Việt Nam cũng đang thực hiện các chính sách để ứng dụng công nghệ 4.0 nhằm nâng cao quản lý tài nguyên nước.",
+    "chunk_count": 49,
+    "token_count": 295
+  },
+  {
+    "doc_id": "Public197",
+    "summary_text": "Ứng dụng trí tuệ nhân tạo (AI) trong giáo dục kỹ năng sống cho học sinh phổ thông đang trở thành xu hướng quan trọng trong thời đại công nghệ số. Các khái niệm/thuật ngữ chính bao gồm trí tuệ nhân tạo, học liệu điện tử, giáo dục kỹ năng sống, và quy trình thiết kế học liệu. Loại nội dung của tài liệu này chủ yếu là lý thuyết và quy trình ứng dụng. Nghiên cứu nhấn mạnh lợi ích của AI trong việc thiết kế học liệu điện tử, giúp cá nhân hóa quá trình học tập và nâng cao chất lượng giáo dục. Tuy nhiên, việc triển khai cũng gặp nhiều thách thức như thiếu cơ sở vật chất, kỹ năng công nghệ, vấn đề bảo mật và tính công bằng trong tiếp cận công nghệ. Để phát huy tối đa tiềm năng của AI, cần có sự phối hợp giữa giáo viên, nhà trường và chuyên gia công nghệ, đồng thời tăng cường đào tạo giáo viên và phát triển các ứng dụng AI trong giáo dục kỹ năng sống.",
+    "chunk_count": 40,
+    "token_count": 222
+  },
+  {
+    "doc_id": "Public199",
+    "summary_text": "Máy tính lượng tử là một lĩnh vực công nghệ tiên tiến với tiềm năng lớn. Các khái niệm/thuật ngữ chính bao gồm máy tính lượng tử, qubit, quantum gate, quantum register. Loại nội dung là lý thuyết và nghiên cứu. Bài báo tổng quan này trình bày sự phát triển của máy tính lượng tử từ khi ra đời đến nay, nêu ra các thách thức, cơ hội và triển vọng trong tương lai. Máy tính lượng tử sử dụng qubit, cho phép thực hiện nhiều tính toán đồng thời với tốc độ và độ chính xác cao hơn so với máy tính cổ điển. Bài viết cũng giải thích nguyên lý hoạt động của máy tính lượng tử dựa trên cơ học lượng tử và các ứng dụng tiềm năng trong nhiều lĩnh vực như khoa học, kỹ thuật và tài chính. Mặc dù có nhiều tiến bộ, vẫn còn nhiều thách thức cần vượt qua để hiện thực hóa tiềm năng của công nghệ máy tính lượng tử trong thực tế.",
+    "chunk_count": 90,
+    "token_count": 213
+  },
+  {
+    "doc_id": "Public200",
+    "summary_text": "Bài viết phân tích tầm quan trọng của trí tuệ nhân tạo trong lĩnh vực kế toán và kiểm toán, đặc biệt trong bối cảnh cách mạng công nghiệp 4.0. Các khái niệm/thuật ngữ chính bao gồm: trí tuệ nhân tạo, kế toán, kiểm toán, cách mạng công nghiệp 4.0, tự động hóa quy trình bằng robot (RPA). Nội dung chủ yếu là lý thuyết và thực hành. Tác giả đề cập đến việc tích hợp AI và RPA trong công việc kế toán, kiểm toán, cho rằng AI giúp nâng cao hiệu quả và tính chuyên nghiệp, mặc dù cũng đặt ra một số thách thức về đạo đức và pháp lý. AI không chỉ tự động hóa các quy trình mà còn cải thiện khả năng phân tích và đánh giá rủi ro trong công việc. Bài viết kết luận rằng việc ứng dụng AI sẽ thúc đẩy sự đổi mới và nâng cao năng lực cạnh tranh cho doanh nghiệp trong ngành kế toán.",
+    "chunk_count": 17,
+    "token_count": 211
+  },
+  {
+    "doc_id": "Public204",
+    "summary_text": "Chủ đề chính: Bản mạch in (PCB) và thiết bị hàn điện tử.  \nCác khái niệm/thuật ngữ chính: PCB, vật liệu nền, đường đồng, lớp phủ, lớp in linh kiện, mỏ hàn nhiệt, mỏ hàn xung.  \nLoại nội dung: Lý thuyết, thực hành.  \n\nBản mạch in (PCB) là một thiết bị kết nối các linh kiện điện tử thông qua các đường dẫn điện trên một nền vật liệu. Trước khi có PCB, việc kết nối linh kiện bằng dây dẫn rất tốn thời gian và dễ gây hư hỏng. PCB thường được làm từ sợi thủy tinh và có nhiều lớp khác nhau, với lớp đồng và lớp phủ để bảo vệ các đường dẫn. Việc bố trí linh kiện trên PCB cần tuân thủ các nguyên tắc thiết kế hợp lý. Trong lĩnh vực hàn điện tử, mỏ hàn là dụng cụ thiết yếu, chia thành các loại như mỏ hàn nhiệt và mỏ hàn xung, với cấu tạo và công suất khác nhau nhằm đáp ứng nhu cầu hàn linh kiện chính xác và hiệu quả.",
+    "chunk_count": 37,
+    "token_count": 248
+  },
+  {
+    "doc_id": "Public253",
+    "summary_text": "Học phần INT1482 cung cấp kiến thức về phân tích và thiết kế giao thức an toàn trong lĩnh vực an toàn thông tin. Các khái niệm/thuật ngữ chính bao gồm giao thức, phân tích hoạt động, bảo mật thiết bị mạng, kỹ thuật tấn công mạng. Loại nội dung của học phần này là lý thuyết, thực hành và thảo luận. Học phần yêu cầu sinh viên có kiến thức nền tảng từ các học phần khác như Cơ sở An toàn thông tin và Mạng máy tính. Thời gian học tập bao gồm 30 tiết lý thuyết, 12 tiết thực hành, 6 tiết thảo luận và 18 tiết cho đề án hoặc bài tập lớn, bên cạnh 90 tiết tự học. Giảng viên phụ trách là TS. Nguyễn Ngọc Điệp. Học phần này là bắt buộc trong chương trình đào tạo chuyên ngành, giảng dạy bằng tiếng Việt và theo hình thức trực tiếp.",
+    "chunk_count": 50,
+    "token_count": 206
+  },
+  {
+    "doc_id": "Public254",
+    "summary_text": "Giấu tin trong ảnh là một kỹ thuật cho phép ẩn thông tin trong dữ liệu hình ảnh mà không làm thay đổi chất lượng ảnh, giúp người khác không phát hiện ra sự thay đổi. Các thuật toán giấu tin tận dụng hạn chế của cảm nhận hình ảnh con người để thực hiện việc này. Các kỹ thuật này có nhiều ứng dụng, từ việc truyền thông tin mật đến việc lưu trữ chữ ký số trong các tài liệu. Định dạng ảnh như BMP, PNG, và JPEG có vai trò quan trọng trong việc giấu tin, mỗi định dạng có cấu trúc và đặc tính riêng, ảnh hưởng đến khả năng giấu thông tin. Các công cụ xử lý ảnh như Corel PaintShop Pro, GIMP, và Adobe Photoshop Elements cũng hỗ trợ trong việc triển khai các phương pháp giấu tin hiệu quả. \n\nKhái niệm/thuật ngữ chính: giấu tin, định dạng ảnh, BMP, PNG, JPEG, công cụ xử lý ảnh. \n\nLoại nội dung: lý thuyết, thực hành.",
+    "chunk_count": 20,
+    "token_count": 217
+  },
+  {
+    "doc_id": "Public257",
+    "summary_text": "Chủ đề chính: Quy định yêu cầu kỹ thuật đối với phần mềm ký số và dịch vụ chứng thực chữ ký số công cộng.  \nCác khái niệm/thuật ngữ chính: phần mềm ký số, phần mềm kiểm tra chữ ký số, Cổng kết nối dịch vụ chứng thực chữ ký số, chữ ký điện tử, tiêu chuẩn kỹ thuật.  \nLoại nội dung: quy định.\n\nNội dung tài liệu quy định các yêu cầu kỹ thuật đối với phần mềm ký số, phần mềm kiểm tra chữ ký số và Cổng kết nối dịch vụ chứng thực chữ ký số công cộng. Thông tư áp dụng cho tổ chức, cá nhân liên quan đến chữ ký số và dịch vụ chứng thực. Các tiêu chuẩn kỹ thuật bao gồm định dạng thông điệp dữ liệu, ngôn ngữ định dạng, và cách thức tạo chữ ký số. Tài liệu cũng hướng dẫn kết nối đến Cổng eSign qua giao thức API, cung cấp thông tin xác thực cần thiết cho hệ thống thông tin. Các yêu cầu kỹ thuật này nhằm đảm bảo tính an toàn và hiệu quả trong giao dịch điện tử sử dụng chữ ký số.",
+    "chunk_count": 113,
+    "token_count": 237
+  },
+  {
+    "doc_id": "Public263",
+    "summary_text": "Tài liệu này trình bày quy trình tìm hiểu và phân tích lĩnh vực chuyên môn trong quản lý đăng ký tín chỉ tại trường đại học. Các khái niệm/thuật ngữ chính bao gồm: từ khóa chuyên môn, hệ thống, chức năng, thành viên, sinh viên, giảng viên, nhân viên giáo vụ, quản lý, môn học, lớp học phần. Loại nội dung là quy trình thực hành. Tài liệu mô tả các bước thực hiện từ việc làm việc nhóm để liệt kê từ khóa, phân loại, giải thích nghĩa cho đến việc xác định phạm vi hệ thống và mô tả chi tiết hoạt động nghiệp vụ. Nó cũng nêu rõ vai trò và chức năng của các thành viên trong hệ thống, như sinh viên, giảng viên và nhân viên giáo vụ, cùng với các đối tượng liên quan và mối quan hệ giữa chúng. Cuối cùng, tài liệu cung cấp cái nhìn tổng quan về cách quản lý thông tin và thống kê liên quan đến học tập tại trường.",
+    "chunk_count": 36,
+    "token_count": 213
+  },
+  {
+    "doc_id": "Public278",
+    "summary_text": "Tài liệu trình bày quy trình và giải pháp tích hợp đối tác kinh doanh tại Tổng công ty cổ phần Bưu chính Viettel, với mục tiêu hoàn thiện quy trình khai báo và phê duyệt mã khách hàng chi COD. Các khái niệm/thuật ngữ chính bao gồm: mã khách hàng (KH), phê duyệt mã KH, khai báo cấu hình, báo cáo sản lượng doanh thu, xác thực OTP. Nội dung chủ yếu là quy trình nghiệp vụ và các yêu cầu xác thực liên quan đến việc quản lý mã khách hàng và thanh toán COD hàng ngày. Tài liệu mô tả chi tiết các bước thực hiện, từ việc khai báo mã KH đến phê duyệt và báo cáo doanh thu, cũng như quy trình xác thực OTP cho khách hàng. Tất cả các quy trình được thiết kế nhằm đảm bảo sự tự động hóa và tính chính xác trong quản lý thông tin khách hàng.",
+    "chunk_count": 55,
+    "token_count": 192
+  },
+  {
+    "doc_id": "Public282",
+    "summary_text": "Dự án phát triển hệ thống thông tin quản lý và phân bổ giảng đường tại trường Đại học Sư phạm Hà Nội. Các khái niệm/thuật ngữ chính: hệ thống thông tin, quản lý giảng đường, yêu cầu nghiệp vụ, thiết kế giao diện, tài liệu người dùng. Loại nội dung: lý thuyết và thực hành. \n\nTài liệu giới thiệu mục đích, ý nghĩa và kế hoạch triển khai dự án, bao gồm phân tích yêu cầu nghiệp vụ, môi trường vận hành, và các ràng buộc thiết kế. Hệ thống sẽ giúp quản lý các hoạt động như mượn và trả trang thiết bị, lịch trình sử dụng giảng đường, và xử lý sự cố. Tài liệu còn cung cấp hướng dẫn sử dụng, hỗ trợ kỹ thuật, tài liệu API và quản trị hệ thống. Hệ thống được phát triển dựa trên công nghệ Java, Spring, PostgreSQL, và React, hoạt động trên nền tảng web, đảm bảo tính bảo mật và hiệu quả trong quản lý.",
+    "chunk_count": 67,
+    "token_count": 221
+  },
+  {
+    "doc_id": "Public283",
+    "summary_text": "Quy định về phần mềm ký số và kết nối dịch vụ chứng thực chữ ký số công cộng. Các khái niệm/thuật ngữ chính: phần mềm ký số, chữ ký số, cổng kết nối, cặp khóa không đối xứng, hàm băm, chứng thư chữ ký số. Loại nội dung: quy định. \n\nThông tư này quy định yêu cầu kỹ thuật đối với phần mềm ký số và phần mềm kiểm tra chữ ký số, đồng thời hướng dẫn kết nối tới Cổng kết nối dịch vụ chứng thực chữ ký số công cộng. Đối tượng áp dụng bao gồm tổ chức, cá nhân sử dụng và phát triển phần mềm ký số, cũng như các tổ chức cung cấp dịch vụ chứng thực. Thông tư cũng giải thích các thuật ngữ liên quan, như cặp khóa không đối xứng, khóa bí mật và khóa công khai, và yêu cầu về hàm băm. Cuối cùng, thông tư mô tả mô hình kết nối và các thông tin cần thiết để kết nối đến cổng dịch vụ chứng thực, bao gồm giao thức sử dụng và các thông tin xác thực.",
+    "chunk_count": 55,
+    "token_count": 236
+  }
+]

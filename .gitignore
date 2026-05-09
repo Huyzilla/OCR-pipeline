@@ -1,0 +1,5 @@
+__pycache__/
+.vscode/
+.env
+.qa_cache/
+New_pipeline/

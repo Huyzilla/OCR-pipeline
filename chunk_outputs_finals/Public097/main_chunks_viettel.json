@@ -1,0 +1,119 @@
+[
+  {
+    "page_content": "Public_097\n\n**Hydro (Hiđrô) – Nguyên tố đơn giản và phong phú nhất vũ trụ**\n\nHiđrô là nguyên tố đơn giản nhất và cũng phổ biến nhất trong vũ trụ. Nó là thành phần chính của **nước**, **dầu mỏ**, **khí tự nhiên**, và **mọi dạng sống**. Tuy nhiên, mặc dù rất đơn giản và phong phú, hiđrô hiếm khi tồn tại tự nhiên dưới dạng khí trên Trái Đất; nó gần như luôn **kết hợp với các nguyên tố khác**.\n\nHiđrô có thể được tạo ra từ:\n\n* **Dầu mỏ và khí tự nhiên**\n* **Sinh khối (biomass)**\n* Hoặc bằng cách **tách phân tử nước** (điện phân) sử dụng **năng lượng tái tạo** như điện mặt trời hay điện gió.\n\n**Giải phóng năng lượng từ hiđrô**\n\nKhi đã có hiđrô ở dạng phân tử (H₂), năng lượng chứa trong nó có thể được giải phóng bằng cách **phản ứng với oxy để tạo thành nước**. Việc này có thể thực hiện qua:\n\n* **Động cơ đốt trong truyền thống**\n* Hoặc **pin nhiên liệu (fuel cell)**: thiết bị chuyển đổi trực tiếp năng lượng của hiđrô thành **điện năng** với **hiệu suất cao** và **tổn thất năng lượng thấp**.\n\n**Vai trò của hiđrô**\n\nDo đó, **hiđrô là một chất mang năng lượng** – nó được dùng để **vận chuyển, lưu trữ và cung cấp năng lượng** được sản xuất từ các nguồn khác. Điều này khiến hiđrô trở thành một thành phần quan trọng trong các giải pháp năng lượng sạch và bền vững cho tương lai.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "",
+      "chunk_type": "text",
+      "chunk_index": 0
+    }
+  },
+  {
+    "page_content": "# Giới thiệu\n\nTrong bối cảnh thế giới tìm kiếm giải pháp giảm phát thải carbon, hydro nổi lên như một nguồn năng lượng sạch đầy tiềm năng. Pin nhiên liệu hydro (Hydrogen Fuel Cell – HFC) chuyển hóa hydro và oxy thành điện năng, sản phẩm phụ duy nhất là nước tinh khiết, không thải khí CO₂.\n\nCông nghệ này được kỳ vọng sẽ đóng vai trò quan trọng trong giao thông vận tải – từ xe hơi, xe tải, tàu biển đến hàng không – cũng như trong lưu trữ năng lượng quy mô lớn, góp phần hiện thực hóa mục tiêu trung hòa carbon toàn cầu.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Giới thiệu",
+      "chunk_type": "text",
+      "chunk_index": 1
+    }
+  },
+  {
+    "page_content": "# Nguyên lý hoạt động\n\n* Phản ứng điện hóa: Hydro (H₂) được đưa vào cực âm (anode), tách thành proton và electron.\n* Dòng electron: Electron di chuyển qua mạch ngoài, tạo ra dòng điện.\n* Tái hợp ở cực dương: Proton và electron kết hợp với oxy (O₂) tạo thành nước (H₂O).\n* Sản phẩm phụ: Chỉ có nước và nhiệt, hoàn toàn không phát thải carbon.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Nguyên lý hoạt động",
+      "chunk_type": "text",
+      "chunk_index": 2
+    }
+  },
+  {
+    "page_content": "# Ưu điểm vượt trội\n\n* Không phát thải CO₂: Sản phẩm chỉ là nước, đáp ứng tiêu chuẩn khí thải nghiêm ngặt.\n* Năng lượng cao: Mật độ năng lượng của hydro cao hơn pin lithium-ion, thích hợp cho phương tiện di chuyển xa.\n* Sạc nhanh: Nạp hydro chỉ mất vài phút, tương tự tiếp nhiên liệu truyền thống.\n* Hoạt động trong điều kiện lạnh: Ít bị ảnh hưởng bởi nhiệt độ so với pin điện hóa thông thường.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Ưu điểm vượt trội",
+      "chunk_type": "text",
+      "chunk_index": 3
+    }
+  },
+  {
+    "page_content": "## Xe hơi và xe tải hạng nặng:\n\n* o Các hãng như Toyota (Mirai), Hyundai (Nexo) đã thương mại hóa xe chạy pin nhiên liệu.\n* o Xe tải đường dài của Nikola và Hyundai Xcient phục vụ vận tải xuyên quốc gia.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Ứng dụng trong giao thông > Xe hơi và xe tải hạng nặng:",
+      "chunk_type": "text",
+      "chunk_index": 4
+    }
+  },
+  {
+    "page_content": "## Tàu biển:\n\n* o Pin nhiên liệu cung cấp năng lượng cho tàu chở hàng, giảm ô nhiễm cảng biển.\n* o Dự án Hydroville và các nghiên cứu của Maersk đang chứng minh tính khả thi.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Ứng dụng trong giao thông > Tàu biển:",
+      "chunk_type": "text",
+      "chunk_index": 5
+    }
+  },
+  {
+    "page_content": "## Hàng không:\n\n* o Máy bay nhỏ chạy bằng pin nhiên liệu hydro đã bay thử nghiệm.\n* o Các hãng như Airbus đặt mục tiêu ra mắt máy bay thương mại hydro vào năm 2035.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Ứng dụng trong giao thông > Hàng không:",
+      "chunk_type": "text",
+      "chunk_index": 6
+    }
+  },
+  {
+    "page_content": "## Tàu hỏa và xe buýt đô thị:\n\no Chạy tuyến dài, giảm tiếng ồn và không thải khí độc hại tại khu dân cư.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Ứng dụng trong giao thông > Tàu hỏa và xe buýt đô thị:",
+      "chunk_type": "text",
+      "chunk_index": 7
+    }
+  },
+  {
+    "page_content": "# Hạ tầng và công nghệ hỗ trợ\n\n* Sản xuất hydro xanh: Dùng điện tái tạo (gió, mặt trời) để điện phân nước, tạo hydro không phát thải.\n* Lưu trữ và vận chuyển: Công nghệ nén hoặc hóa lỏng hydro ở -253 °C, hoặc lưu trữ dưới dạng amoniac để dễ vận chuyển.\n* Trạm nạp hydro: Mạng lưới trạm tiếp nhiên liệu nhanh và an toàn, hiện đang mở rộng ở châu Âu, Mỹ, Nhật Bản.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Hạ tầng và công nghệ hỗ trợ",
+      "chunk_type": "text",
+      "chunk_index": 8
+    }
+  },
+  {
+    "page_content": "# Thách thức hiện nay\n\n![](images/image1.jpg)\n\n* Chi phí cao: Sản xuất hydro xanh và chế tạo pin nhiên liệu vẫn đắt hơn so với nhiên liệu hóa thạch.\n* Hạ tầng hạn chế: Số lượng trạm nạp hydro còn ít, khó đáp ứng nhu cầu đại trà.\n* Hiệu suất năng lượng: Quá trình sản xuất, lưu trữ, vận chuyển hydro làm giảm hiệu suất tổng thể so với điện trực tiếp.\n* An toàn: Hydro là khí nhẹ, dễ rò rỉ và dễ cháy, đòi hỏi quy trình lưu trữ nghiêm ngặt.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Thách thức hiện nay",
+      "chunk_type": "text",
+      "chunk_index": 9
+    }
+  },
+  {
+    "page_content": "# Tiến bộ và triển vọng\n\n* Công nghệ điện phân giá rẻ: Giảm chi phí hydro xanh nhờ màng điện phân mới và năng lượng tái tạo rẻ hơn.\n* Pin nhiên liệu rắn: Tăng hiệu suất và độ bền.\n* Chính sách hỗ trợ: EU, Mỹ, Nhật, Hàn Quốc đầu tư hàng tỷ USD để phát triển \"nền kinh tế hydro\".\n* Kết hợp với năng lượng tái tạo: Tận dụng hydro làm kho lưu trữ cho lưới điện gió và mặt trời.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Tiến bộ và triển vọng",
+      "chunk_type": "text",
+      "chunk_index": 10
+    }
+  },
+  {
+    "page_content": "# Tác động kinh tế – xã hội\n\n* Giảm phát thải giao thông: Đặc biệt quan trọng cho xe tải, tàu biển, hàng không – các lĩnh vực khó điện khí hóa hoàn toàn.\n* An ninh năng lượng: Giảm phụ thuộc vào dầu mỏ, tăng tính tự chủ năng lượng quốc gia.\n* Tạo việc làm công nghệ cao: Xây dựng trạm nạp, nhà máy hydro, và dây chuyền sản xuất pin nhiên liệu.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Tác động kinh tế – xã hội",
+      "chunk_type": "text",
+      "chunk_index": 11
+    }
+  },
+  {
+    "page_content": "# Tương lai\n\nTrong hai thập kỷ tới, khi chi phí hydro xanh giảm và hạ tầng mở rộng, pin nhiên liệu hydro có thể trở thành xương sống của giao thông sạch toàn cầu, bổ sung và cạnh tranh với xe điện pin lithium-ion, tạo ra hệ sinh thái năng lượng bền vững.",
+    "metadata": {
+      "document_id": "Public097",
+      "hierarchy_path": "Tương lai",
+      "chunk_type": "text",
+      "chunk_index": 12
+    }
+  }
+]

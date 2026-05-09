@@ -1,0 +1,336 @@
+[
+  {
+    "page_content": "Cột: | | | VIETTEL AI RACE | Public 257\n\nDòng 1: Quy định yêu cầu kỹ thuật đối với phần mềm ký số, phần mềm kiểm tra chữ ký số và Cổng kết nối dịch vụ chứng thực chữ ký số công cộng | Lần ban hành: 1",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "Public_257",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "Public_257",
+      "row_start": 0,
+      "row_end": 0,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr>\n<th rowspan=\"2\">|<image_1>|</image_1></th>\n<th><strong>VIETTEL AI RACE</strong></th>\n<th>Public 257</th>\n</tr>\n<tr>\n<th><strong>Quy định yêu cầu kỹ thuật đối với phần mềm ký số, phần mềm\nkiểm tra chữ ký số và Cổng kết nối dịch vụ chứng thực chữ ký số công\ncộng</strong></th>\n<th>Lần ban hành: 1</th>\n</tr>\n</table>",
+      "column_headers": [
+        "| |",
+        "VIETTEL AI RACE",
+        "Public 257"
+      ],
+      "chunk_index": 0
+    }
+  },
+  {
+    "page_content": "_Căn cứ Luật giao dịch điện tử ngày 22 tháng 06 năm 2023;_\n\n_Căn cứ Nghị định số 23/2025/NĐ-CP ngày 21 tháng 02 năm 2025 của Chính phủ quy định về chữ ký điện tử và dịch vụ tin cậy;_\n\n_Căn cứ Nghị định số 55/2025/NĐ-CP ngày 02 tháng 3 năm 2025 của Chính phủ quy định chức năng, nhiệm vụ và cơ cấu tổ chức của Bộ Khoa học và Công nghệ;_\n\n_Theo đề nghị của Vụ trưởng Vụ Pháp chế và Giám đốc Trung tâm Chứng thực điện tử quốc gia;_\n\n_Bộ trưởng Bộ Khoa học và Công nghệ ban hành Thông tư quy định yêu cầu kỹ thuật đối với phần mềm ký số, phần mềm kiểm tra chữ ký số và Cổng kết nối dịch vụ chứng thực chữ ký số công cộng._",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "Public_257",
+      "chunk_type": "text",
+      "chunk_index": 1
+    }
+  },
+  {
+    "page_content": "## 1.1. Phạm vi điều chỉnh\n\nThông tư này quy định yêu cầu kỹ thuật đối với phần mềm ký số, phần mềm kiểm tra chữ ký số và Cổng kết nối dịch vụ chứng thực chữ ký số công cộng.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "1\\. QUY ĐỊNH CHUNG > 1.1. Phạm vi điều chỉnh",
+      "chunk_type": "text",
+      "chunk_index": 2
+    }
+  },
+  {
+    "page_content": "## 1.2 . Đối tượng áp dụng\n\nThông tư này áp dụng đối với tổ chức, cá nhân sử dụng phần mềm ký số, phần mềm kiểm tra chữ ký số; các tổ chức, cá nhân phát triển phần mềm ký số, phần mềm kiểm tra chữ ký số; các tổ chức cung cấp dịch vụ chứng thực chữ ký số; các tổ chức cung cấp dịch vụ chứng thực chữ ký điện tử chuyên dùng đảm bảo an toàn; các tổ chức cung cấp dịch vụ chứng thực chữ ký điện tử nước ngoài được công nhận tại Việt Nam; chủ quản các hệ thống thông tin phục vụ giao dịch điện tử có sử dụng chữ ký số và các tổ chức, cá nhân có liên quan khác.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "1\\. QUY ĐỊNH CHUNG > 1.2 . Đối tượng áp dụng",
+      "chunk_type": "text",
+      "chunk_index": 3
+    }
+  },
+  {
+    "page_content": "## 1.3. Giải thích từ ngữ\n\nTrong Thông tư này, các từ ngữ dưới đây được hiểu như sau:\n\n\\- “Cặp khóa bất đối xứng” là khóa công khai và khóa bí mật tương ứng.\n\n\\- “Khóa bí mật” là thành phần của cặp khóa bất đối xứng được sử dụng để ký thông điệp dữ liệu.\n\n\\- “Khóa công khai” là thành phần của cặp khóa bất đối xứng được sử dụng để xác thực chữ ký số trên thông điệp dữ liệu.\n\n\\- “Chủ thể ký” là cá nhân hoặc tổ chức sở hữu chứng thư chữ ký số và sử dụng khóa bí mật tương ứng để thực hiện ký số trên thông điệp dữ liệu.\n\n\\- “Chứng thư chữ ký số” là một dạng chứng thư điện tử do tổ chức cung cấp dịch vụ chứng thực chữ ký số cấp nhằm cung cấp thông tin về khóa công khai của một cá nhân, tổ chức từ đó xác nhận cá nhân, tổ chức là chủ thể ký thông qua việc sử dụng khóa bí mật tương ứng.\n\n\\- “Phần mềm ký số” là chương trình độc lập hoặc một thành phần (module) phần mềm hoặc giải pháp có chức năng ký số vào thông điệp dữ liệu.\n\n\\- \"Phần mềm kiểm tra chữ ký số\" là chương trình độc lập hoặc một thành phần (module) phần mềm hoặc giải pháp có chức năng kiểm tra tính hợp lệ của chữ ký số trên thông điệp dữ liệu đã ký.\n\n\\- \"Đường dẫn tin cậy của chứng thư chữ ký số\" là thông tin đường dẫn trên chứng thư chữ ký số xác thực tổ chức cung cấp dịch vụ chứng thực chữ ký số đã cấp phát ra chứng thư chữ ký số đó.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "1\\. QUY ĐỊNH CHUNG > 1.3. Giải thích từ ngữ",
+      "chunk_type": "text",
+      "chunk_index": 4
+    }
+  },
+  {
+    "page_content": "# 2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số",
+      "chunk_type": "text",
+      "chunk_index": 5
+    }
+  },
+  {
+    "page_content": "## 2.1 Yêu cầu chung\n\nTuân thủ các yêu cầu và tiêu chuẩn kỹ thuật về chữ ký số trên thông điệp dữ liệu tại Phụ lục I ban hành kèm theo Thông tư này.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số > 2.1 Yêu cầu chung",
+      "chunk_type": "text",
+      "chunk_index": 6
+    }
+  },
+  {
+    "page_content": "## 2.2 Yêu cầu về chức năng\n\n\\- Chức năng xác thực chủ thể ký và ký số:\n\n\\+ Kiểm tra được thông tin chủ thể ký trên chứng thư chữ ký số;\n\n\\+ Cho phép chủ thể ký sử dụng khóa bí mật để thực hiện việc ký số vào thông điệp dữ liệu. Khoá bí mật lưu trong thiết bị được chủ thể ký sử dụng để ký số phải tuân thủ các yêu cầu và tiêu chuẩn kỹ thuật tại Phụ lục I ban hành kèm theo Thông tư này;\n\n\\+ Cho phép chuyển đổi định dạng thông điệp dữ liệu thành các định dạng được nêu tại Phụ lục I ban hành kèm theo Thông tư này;\n\n\\+ Gắn kèm chữ ký số và chứng thư chữ ký số vào thông điệp dữ liệu sau khi ký số;\n\n\\+ Hỗ trợ cài đặt, tích hợp chứng thư chữ ký số của Tổ chức cung cấp dịch vụ chứng thực chữ ký số quốc gia và chứng thư chữ ký số thuộc Danh sách tin cậy chứng thư chữ ký điện tử nước ngoài được công nhận tại Việt Nam;\n\n\\+ Đáp ứng các giao thức gửi nhận thông điệp dữ liệu của phần mềm ký số theo các yêu cầu và tiêu chuẩn tại Phụ lục I ban hành kèm theo Thông tư này.\n\n\\- Chức năng kiểm tra hiệu lực của chứng thư chữ ký số:\n\n\\+ Thông tin trong chứng thư chữ ký số được định danh theo quy định pháp luật về định danh và xác thực điện tử;\n\n\\+ Chứng thư chữ ký số của chủ thể ký phải được kiểm tra theo đường dẫn tin cậy của chứng thư chữ ký số đó và phải liên kết đến chứng thư chữ ký số gốc của Tổ chức cung cấp dịch vụ chứng thực chữ ký số quốc gia hoặc thuộc Danh sách tin cậy chứng thư chữ ký điện tử nước ngoài được công nhận tại Việt Nam;\n\n\\+ Chứng thư chữ ký số phải có hiệu lực tại thời điểm ký số và đáp ứng các tiêu chí tại Phụ lục II ban hành kèm theo Thông tư này.\n\n\\- Chức năng kết nối đến Cổng kết nối dịch vụ chứng thực chữ ký số công cộng: Hướng dẫn kết nối được quy định tại Chương III Thông tư này.\n\n\\- Chức năng lưu trữ và hủy bỏ các thông tin kèm theo thông điệp dữ liệu ký số, bao gồm:\n\n\\+ Chứng thư chữ ký số tương ứng với khóa bí mật mà chủ thể ký sử dụng để ký thông điệp dữ liệu tại thời điểm ký số;\n\n\\+ Danh sách chứng thư chữ ký số thu hồi tại thời điểm ký trong chứng thư chữ ký số của chủ thể ký;\n\n\\+ Quy chế chứng thực của tổ chức cung cấp dịch vụ chứng thực chữ ký số đã cấp chứng thư chữ ký số tương ứng với chữ ký số trên thông điệp dữ liệu;",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số > 2.2 Yêu cầu về chức năng",
+      "chunk_type": "text",
+      "chunk_index": 7
+    }
+  },
+  {
+    "page_content": "\\+ Quy chế chứng thực của tổ chức cung cấp dịch vụ chứng thực chữ ký số đã cấp chứng thư chữ ký số tương ứng với chữ ký số trên thông điệp dữ liệu;\n\n\\+ Kết quả kiểm tra trạng thái chứng thư chữ ký số tương ứng với chữ ký số trên thông điệp dữ liệu đã ký.\n\n\\- Chức năng thay đổi (thêm, bớt) chứng thư chữ ký số của cơ quan, tổ chức tạo lập cấp, phát hành chứng thư chữ ký số:\n\nCho phép tích hợp và hiển thị đầy đủ các tổ chức cung cấp dịch vụ chứng thực chữ ký số và Danh sách tin cậy chứng thư chữ ký điện tử nước ngoài được công nhận tại Việt Nam.\n\n\\- Chức năng thông báo bằng chữ hoặc ký hiệu cho chủ thể ký biết việc ký số vào thông điệp dữ liệu thành công hay không thành công, bao gồm việc:\n\n\\+ Hiển thị thông báo ký số thành công hoặc không thành công;\n\n\\+ Xem được thông điệp dữ liệu đã ký sau khi hoàn thành ký số;\n\n\\+ Tải được thông điệp dữ liệu đã ký về thiết bị.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số > 2.2 Yêu cầu về chức năng",
+      "chunk_type": "text",
+      "chunk_index": 8
+    }
+  },
+  {
+    "page_content": "## 2.3 Yêu cầu chung\n\nTuân thủ các yêu cầu và tiêu chuẩn kỹ thuật về chữ ký số trên thông điệp dữ liệu tại Phụ lục I ban hành kèm theo Thông tư này.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số > 2.3 Yêu cầu chung",
+      "chunk_type": "text",
+      "chunk_index": 9
+    }
+  },
+  {
+    "page_content": "## 2.4 Yêu cầu về chức năng\n\n\\- Chức năng kiểm tra tính hợp lệ của chữ ký số trên thông điệp dữ liệu:\n\n\\+ Cho phép xác thực chữ ký số trên thông điệp dữ liệu theo nguyên tắc chữ ký số được tạo ra đúng với khóa bí mật tương ứng với khóa công khai trên chứng thư chữ ký số;\n\n\\+ Cho phép kiểm tra chứng thư chữ ký số của chủ thể ký theo đường dẫn tin cậy của chứng thư chữ ký số đó và phải liên kết đến Tổ chức cung cấp dịch vụ chứng thực chữ ký số quốc gia hoặc thuộc Danh sách tin cậy chứng thư chữ ký điện tử nước ngoài được công nhận tại Việt Nam;\n\n\\+ Bảo đảm chứng thư chữ ký số phải có hiệu lực tại thời điểm ký số và đáp ứng các tiêu chí tại Phụ lục II ban hành kèm theo Thông tư này;\n\n\\+ Cho phép kiểm tra tính toàn vẹn của thông điệp dữ liệu ký số theo các bước sau:\n\n\\- Giải mã chữ ký số trên thông điệp dữ liệu để có thông tin về mã băm của thông điệp dữ liệu;\n\n\\- Sử dụng thuật toán hàm băm an toàn đã tạo ra mã băm trên chữ ký số để thực hiện tạo mã băm cho thông điệp dữ liệu;\n\n\\- So sánh sự trùng khớp của hai mã băm để kiểm tra tính toàn vẹn của thông điệp dữ liệu ký số.\n\n\\+ Đảm bảo tính hợp lệ của chữ ký số trên thông điệp dữ liệu đã ký theo các tiêu chí tại Phụ lục II ban hành kèm theo Thông tư này;\n\n\\+ Hỗ trợ cài đặt, tích hợp chứng thư chữ ký số của Tổ chức cung cấp dịch vụ chứng thực chữ ký số quốc gia và chứng thư chữ ký số thuộc danh sách tin cậy chứng thư chữ ký điện tử nước ngoài được công nhận tại Việt Nam;\n\n\\+ Đáp ứng các giao thức gửi nhận thông điệp dữ liệu của phần mềm ký số theo tiêu chuẩn tại Phụ lục I ban hành kèm theo Thông tư này.\n\n\\- Chức năng lưu trữ và hủy bỏ các thông tin kèm theo thông điệp dữ liệu ký số:\n\n\\+ Chứng thư chữ ký số tương ứng với chữ ký số trên thông điệp dữ liệu đã ký;\n\n\\+ Danh sách chứng thư chữ ký số thu hồi tại thời điểm ký được thể hiện trong chứng thư chữ ký số đính kèm thông điệp dữ liệu đã ký;\n\n\\+ Quy chế chứng thực của các tổ chức cung cấp dịch vụ chứng thực chữ ký số cấp phát chứng thư chữ ký số tương ứng với các chữ ký số trên thông điệp dữ liệu đã ký;\n\n\\+ Kết quả kiểm tra trạng thái chứng thư chữ ký số tương ứng với chữ ký số trên thông điệp dữ liệu đã ký.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số > 2.4 Yêu cầu về chức năng",
+      "chunk_type": "text",
+      "chunk_index": 10
+    }
+  },
+  {
+    "page_content": "\\+ Kết quả kiểm tra trạng thái chứng thư chữ ký số tương ứng với chữ ký số trên thông điệp dữ liệu đã ký.\n\n\\- Chức năng thay đổi (thêm, bớt) chứng thư chữ ký số của cơ quan, tổ chức tạo lập, cấp, phát hành chứng thư chữ ký số.\n\n\\- Chức năng thông báo bằng chữ hoặc ký hiệu việc kiểm tra tính hợp lệ của chữ ký số là hợp lệ hay không hợp lệ:\n\n\\+ Hiển thị thông báo chữ ký số trên thông điệp dữ liệu đã ký hợp lệ hay không hợp lệ;\n\n\\+ Hiển thị các thông tin về chữ ký số và chứng thư chữ ký số trên thông điệp dữ liệu đã ký, với tối thiểu các trường thông tin sau: thông tin về cơ quan, tổ chức tạo lập, cấp, phát hành chứng thư chữ ký số; thông tin về chủ thể ký; thông tin về thời điểm ký số hoặc dấu thời gian (nếu có); tính toàn vẹn của thông điệp dữ liệu đã ký; tính hợp lệ của chữ ký số tại thời điểm ký.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "2\\. Yêu cầu kỹ thuật đối với chức năng phần mềm ký số, phần mềm kiểm tra chữ ký số > 2.4 Yêu cầu về chức năng",
+      "chunk_type": "text",
+      "chunk_index": 11
+    }
+  },
+  {
+    "page_content": "## 3.1 Cổng kết nối dịch vụ chứng thực chữ ký số công cộng\n\nCổng kết nối dịch vụ chứng thực chữ ký số công cộng là hệ thống thông tin phục vụ kết nối dịch vụ chứng thực chữ ký số công cộng với các hệ thống thông tin phục vụ giao dịch điện tử sử dụng chữ ký số để bảo đảm tính xác thực, tính toàn vẹn và tính chống chối bỏ của thông điệp dữ liệu.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "3\\. CỔNG KẾT NỐI DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ CÔNG CỘNG > 3.1 Cổng kết nối dịch vụ chứng thực chữ ký số công cộng",
+      "chunk_type": "text",
+      "chunk_index": 12
+    }
+  },
+  {
+    "page_content": "## 3.2 Kết nối đến Cổng kết nối dịch vụ chứng thực chữ ký số công cộng\n\n\\- Các tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng kết nối đến Cổng kết nối dịch vụ chứng thực chữ ký số công cộng, cụ thể:\n\n\\+ Thực hiện theo Hướng dẫn kết nối tại Phụ lục III ban hành kèm theo Thông tư này;\n\n\\+ Cung cấp các đặc tả, thông số kỹ thuật và thông tin phục vụ kết nối cho Tổ chức cung cấp dịch vụ chứng thực điện tử quốc gia;\n\n\\+ Cập nhật các thông số kỹ thuật hoặc thông tin phục vụ kết nối khi có thay đổi cho Tổ chức cung cấp dịch vụ chứng thực điện tử quốc gia.\n\n\\- Các hệ thống thông tin phục vụ giao dịch điện tử sử dụng chữ ký số tích hợp với Cổng kết nối dịch vụ chứng thực chữ ký số công cộng để bảo đảm tính xác thực, tính toàn vẹn và tính chống chối bỏ của thông điệp dữ liệu, cụ thể:\n\n\\+ Thực hiện theo Hướng dẫn kết nối tại Phụ lục III ban hành kèm theo Thông tư này;\n\n\\+ Bảo đảm chức năng ký số của hệ thống thông tin phục vụ giao dịch điện tử sử dụng chữ ký số đáp ứng các quy định tại Điều 5 Thông tư này;\n\n\\+ Tổ chức cung cấp dịch vụ chứng thực điện tử quốc gia cung cấp các đặc tả, thông số kỹ thuật và thông tin phục vụ việc kết nối đến Cổng kết nối dịch vụ chứng thực chữ ký số công cộng.\n\n\\- Đầu mối hỗ trợ, hướng dẫn kết nối đến Cổng kết nối dịch vụ chứng thực chữ ký số công cộng: Trung tâm Chứng thực điện tử quốc gia, Bộ Khoa học và Công nghệ.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "3\\. CỔNG KẾT NỐI DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ CÔNG CỘNG > 3.2 Kết nối đến Cổng kết nối dịch vụ chứng thực chữ ký số công cộng",
+      "chunk_type": "text",
+      "chunk_index": 13
+    }
+  },
+  {
+    "page_content": "## 4.1 Tổ chức thực hiện\n\n\\- Trung tâm Chứng thực điện tử quốc gia có trách nhiệm hướng dẫn thực hiện các nội dung của Thông tư này và công bố thông tin theo quy định tại điểm c khoản 2 Điều 9 Thông tư này.\n\n\\- Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng, tổ chức cung cấp dịch vụ chứng thực chữ ký điện tử chuyên dùng đảm bảo an toàn, Tổ chức cung cấp dịch vụ chứng thực chữ ký điện tử nước ngoài được công nhận tại Việt Nam có trách nhiệm công bố các đặc tả kỹ thuật (tài liệu và bộ công cụ), chứng thư chữ ký số liên quan đến tổ chức cung cấp dịch vụ chứng thực chữ ký số và các tiêu chuẩn chữ ký số trên trang tin điện tử của tổ chức cung cấp dịch vụ chứng thực chữ ký số đó.\n\n\\- Tổ chức, cá nhân phát triển, sử dụng phần mềm ký số, phần mềm kiểm tra chữ ký số có trách nhiệm tuân thủ các quy định về yêu cầu kỹ thuật, hướng dẫn sử dụng đối với phần mềm ký số, phần mềm kiểm tra chữ ký số.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.1 Tổ chức thực hiện",
+      "chunk_type": "text",
+      "chunk_index": 14
+    }
+  },
+  {
+    "page_content": "## 4.2 Hiệu lực thi hành\n\n\\- Thông tư này có hiệu lực thi hành kể từ ngày tháng năm .\n\n\\- Chánh Văn phòng, Giám đốc Trung tâm Chứng thực điện tử quốc gia, Thủ trưởng các cơ quan, đơn vị thuộc Bộ, Giám đốc Sở Khoa học và Công nghệ các tỉnh, thành phố trực thuộc Trung ương, tổ chức, cá nhân có liên quan chịu trách nhiệm thi hành Thông tư này.\n\n\\- Trong quá trình thực hiện, nếu có khó khăn, vướng mắc, cơ quan, tổ chức, cá nhân phản ánh kịp thời về Bộ Khoa học và Công nghệ (Trung tâm Chứng thực điện tử quốc gia) để xem xét, giải quyết./.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "text",
+      "chunk_index": 15
+    }
+  },
+  {
+    "page_content": "**Phụ lục I**\n\n**DANH MỤC TIÊU CHUẨN KỸ THUẬT VỀ CHỮ KÝ SỐ  \nTRÊN THÔNG ĐIỆP DỮ LIỆU DÙNG CHO PHẦN MỀM KÝ SỐ VÀ PHẦN MỀM KIỂM TRA CHỮ KÝ SỐ**\n\n_(Ban hành kèm theo Thông tư số /2025/TT-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)_",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "text",
+      "chunk_index": 16
+    }
+  },
+  {
+    "page_content": "Cột: Số TT | Loại tiêu chuẩn | Ký hiệu tiêu chuẩn | Tên đầy đủ của tiêu chuẩn | Quy định áp dụng\n\nDòng 1: Tiêu chuẩn về định dạng thông điệp dữ liệu\nDòng 2: 11 | Bộ ký tự và mã hóa | ASCII | American Standard Code for Information Interchange | Khuyến nghị áp dụng\nDòng 3: 12 | Bộ ký tự và mã hóa cho tiếng Việt | TCVN 6909:2001 | TCVN 6909:2001 “ Công nghệ thông tin-Bộ mã ký tự tiếng Việt 16-bit” | Bắt buộc áp dụng\nDòng 4: 13 | Trình diễn bộ ký tự | UTF-8 | 8-bit Universal Character Set (UCS)/ Unicode Transformation Format | Khuyến nghị áp dụng\nDòng 5: 14 | Ngôn ngữ định dạng thông điệp dữ liệu | XML v1.0 (5th Edition) | Extensible Markup Language version 1.0 (5th Edition) | Khuyến nghị áp dụng một trong hai tiêu chuẩn\nDòng 6: XML v1.1 (2nd Edition) | Extensible Markup Language version 1.1\nDòng 7: 15 | Định nghĩa các lược đồ trong tài liệu XML | XML Schema version 1.1 | XML Schema version 1.1 | Khuyến nghị áp dụng\nDòng 8: 16 | Trao đổi dữ liệu đặc tả tài liệu XML | XML v2.4.2 | XML Metadata Interchange version 2.4.2 | Khuyến nghị áp dụng\nDòng 9: 77 | Quản lý tài liệu - Định dạng tài liệu di động | ISO 32000-1:2008 | Document management - Portable document format | Khuyến nghị áp dụng\nDòng 10: 88 | Định dạng trao đổi dữ liệu theo ký hiệu đối tượng Javascript | RFC7159 | The JavaScript Object Notation (JSON) Data Interchange Format | Khuyến nghị áp dụng",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "row_start": 0,
+      "row_end": 9,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr>\n<th><em><strong>Số TT</strong></em></th>\n<th><em><strong>Loại tiêu chuẩn</strong></em></th>\n<th><em><strong>Ký hiệu tiêu chuẩn</strong></em></th>\n<th><em><strong>Tên đầy đủ của tiêu chuẩn</strong></em></th>\n<th><em><strong>Quy định áp dụng</strong></em></th>\n</tr>\n<tr>\n<td colspan=\"5\"><em><strong>Tiêu chuẩn về định dạng thông điệp dữ\nliệu</strong></em></td>\n</tr>\n<tr>\n<td><em>11</em></td>\n<td><em>Bộ ký tự và mã hóa</em></td>\n<td><em>ASCII</em></td>\n<td><em>American Standard Code for Information Interchange</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>12</em></td>\n<td><em>Bộ ký tự và mã hóa cho tiếng Việt</em></td>\n<td><p><em>TCVN</em></p>\n<p><em>6909:2001</em></p></td>\n<td><em>TCVN 6909:2001 “ Công nghệ thông tin-Bộ mã ký tự tiếng Việt\n16-bit”</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>13</em></td>\n<td><em>Trình diễn bộ ký tự</em></td>\n<td><em>UTF-8</em></td>\n<td><em>8-bit Universal Character Set (UCS)/ Unicode Transformation\nFormat</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td rowspan=\"2\"><em>14</em></td>\n<td rowspan=\"2\"><em>Ngôn ngữ định dạng thông điệp dữ liệu</em></td>\n<td><p><em>XML v1.0</em></p>\n<p><em>(5th Edition)</em></p></td>\n<td><em>Extensible Markup Language version 1.0 (5th Edition)</em></td>\n<td rowspan=\"2\"><em>Khuyến nghị áp dụng một trong hai tiêu\nchuẩn</em></td>\n</tr>\n<tr>\n<td><em>XML v1.1 (2nd Edition)</em></td>\n<td><em>Extensible Markup Language version 1.1</em></td>\n</tr>\n<tr>\n<td><em>15</em></td>\n<td><em>Định nghĩa các lược đồ trong tài liệu XML</em></td>\n<td><em>XML Schema version 1.1</em></td>\n<td><em>XML Schema version 1.1</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>16</em></td>\n<td><em>Trao đổi dữ liệu đặc tả tài liệu XML</em></td>\n<td><em>XML v2.4.2</em></td>\n<td><em>XML Metadata Interchange version 2.4.2</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>77</em></td>\n<td><em>Quản lý tài liệu - Định dạng tài liệu di động</em></td>\n<td><em>ISO 32000-1:2008</em></td>\n<td><em>Document management - Portable document format</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>88</em></td>\n<td><em>Định dạng trao đổi dữ liệu theo ký hiệu đối tượng\nJavascript</em></td>\n<td><em>RFC7159</em></td>\n<td><em>The JavaScript Object Notation (JSON) Data Interchange\nFormat</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n</table>",
+      "column_headers": [
+        "Số TT",
+        "Loại tiêu chuẩn",
+        "Ký hiệu tiêu chuẩn",
+        "Tên đầy đủ của tiêu chuẩn",
+        "Quy định áp dụng"
+      ],
+      "chunk_index": 17
+    }
+  },
+  {
+    "page_content": "Cột: Số TT | Loại tiêu chuẩn | Ký hiệu tiêu chuẩn | Tên đầy đủ của tiêu chuẩn | Quy định áp dụng\n\nDòng 1: 77 | Quản lý tài liệu - Định dạng tài liệu di động | ISO 32000-1:2008 | Document management - Portable document format | Khuyến nghị áp dụng\nDòng 2: 88 | Định dạng trao đổi dữ liệu theo ký hiệu đối tượng Javascript | RFC7159 | The JavaScript Object Notation (JSON) Data Interchange Format | Khuyến nghị áp dụng\nDòng 3: Tiêu chuẩn về ký số, kiểm tra chữ ký số\nDòng 4: 21 | Tiêu chuẩn về ký số trên thiết bị quản lý khóa bí mật, phần mềm ký số, tạo chữ ký số, chứng thư số, phần mềm kiểm tra chữ ký số.\nDòng 5: 21.1 | Thuật toán mã hóa | TCVN 7816:2007 | Công nghệ thông tin. Kỹ thuật mật mã - thuật toán mã dữ liệu AES | Khuyến nghị áp dụng\nDòng 6: NIST 800-67 | Recommendation for the Triple Data Encryption Algorithm (TDEA) Block Cipher | Khuyến nghị áp dụng\nDòng 7: PKCS#1 | RSA Cryptography Standard (Phiên bản 2.1 trở lên) Áp dụng, sử dụng lược đồ RSAES-OAEP để mã hoá Độ dài khóa tối thiểu là 2048 bit | Khuyến nghị áp dụng\nDòng 8: ECC | Elliptic Curve Crytography | Khuyến nghị áp dụng\nDòng 9: 21.2 | Thuật toán chữ ký số | TCVN 7635:2007 | Các kỹ thuật mật mã - Chữ ký số | - Áp dụng một trong ba tiêu chuẩn. - Đối với tiêu chuẩn TCVN 7635:2007 và PKCS#1: + Phiên bản 2.1 + Áp dụng lược đồ RSAES-OAEP để mã hoá và RSASSA-PSS để ký. + Độ dài khóa tối thiểu là 2048 bit - Đối với tiêu chuẩn ECDSA: độ dài khóa tối thiểu là 256 bit\nDòng 10: PKCS#1 | RSA Cryptography Standard",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "table",
+      "table_id": 2,
+      "section_hint": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "row_start": 8,
+      "row_end": 17,
+      "table_part": 2,
+      "raw_html": "<table>\n<tr>\n<th><em><strong>Số TT</strong></em></th>\n<th><em><strong>Loại tiêu chuẩn</strong></em></th>\n<th><em><strong>Ký hiệu tiêu chuẩn</strong></em></th>\n<th><em><strong>Tên đầy đủ của tiêu chuẩn</strong></em></th>\n<th><em><strong>Quy định áp dụng</strong></em></th>\n</tr>\n<tr>\n<td><em>77</em></td>\n<td><em>Quản lý tài liệu - Định dạng tài liệu di động</em></td>\n<td><em>ISO 32000-1:2008</em></td>\n<td><em>Document management - Portable document format</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>88</em></td>\n<td><em>Định dạng trao đổi dữ liệu theo ký hiệu đối tượng\nJavascript</em></td>\n<td><em>RFC7159</em></td>\n<td><em>The JavaScript Object Notation (JSON) Data Interchange\nFormat</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td colspan=\"5\"><em><strong>Tiêu chuẩn về ký số, kiểm tra chữ ký\nsố</strong></em></td>\n</tr>\n<tr>\n<td><em><strong>21</strong></em></td>\n<td colspan=\"4\"><em><strong>Tiêu chuẩn về ký số trên thiết bị quản lý\nkhóa bí mật, phần mềm ký số, tạo chữ ký số, chứng thư số, phần mềm kiểm\ntra chữ ký số.</strong></em></td>\n</tr>\n<tr>\n<td rowspan=\"4\"><em>21.1</em></td>\n<td rowspan=\"4\"><em>Thuật toán mã hóa</em></td>\n<td><em>TCVN 7816:2007</em></td>\n<td><em>Công nghệ thông tin. Kỹ thuật mật mã - thuật toán mã dữ liệu\nAES</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>NIST 800-67</em></td>\n<td><em>Recommendation for the Triple Data Encryption Algorithm (TDEA)\nBlock Cipher</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>PKCS#1</em></td>\n<td><p><em>RSA Cryptography Standard (Phiên bản 2.1 trở lên)</em></p>\n<p><em>Áp dụng, sử dụng lược đồ RSAES-OAEP để mã hoá</em></p>\n<p><em>Độ dài khóa tối thiểu là 2048 bit</em></p></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em>ECC</em></td>\n<td><em>Elliptic Curve Crytography</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td rowspan=\"3\"><em>21.2</em></td>\n<td rowspan=\"3\"><em>Thuật toán chữ ký số</em></td>\n<td><em>TCVN 7635:2007</em></td>\n<td><em>Các kỹ thuật mật mã - Chữ ký số</em></td>\n<td rowspan=\"3\"><p><em>- Áp dụng một trong ba tiêu chuẩn.</em></p>\n<p><em>- Đối với tiêu chuẩn TCVN 7635:2007 và PKCS#1:</em></p>\n<p><em>+ Phiên bản 2.1</em></p>\n<p><em>+ Áp dụng lược đồ RSAES-OAEP để mã hoá và RSASSA-PSS để\nký.</em></p>\n<p><em>+ Độ dài khóa tối thiểu là 2048 bit</em></p>\n<p><em>- Đối với tiêu chuẩn ECDSA: độ dài khóa tối thiểu là 256\nbit</em></p></td>\n</tr>\n<tr>\n<td><em>PKCS#1</em></td>\n<td><em>RSA Cryptography Standard</em></td>\n</tr>\n</table>",
+      "column_headers": [
+        "Số TT",
+        "Loại tiêu chuẩn",
+        "Ký hiệu tiêu chuẩn",
+        "Tên đầy đủ của tiêu chuẩn",
+        "Quy định áp dụng"
+      ],
+      "chunk_index": 18
+    }
+  },
+  {
+    "page_content": "Cột: Số TT | Loại tiêu chuẩn | Ký hiệu tiêu chuẩn | Tên đầy đủ của tiêu chuẩn | Quy định áp dụng\n\nDòng 1: 21.2 | Thuật toán chữ ký số | TCVN 7635:2007 | Các kỹ thuật mật mã - Chữ ký số | - Áp dụng một trong ba tiêu chuẩn. - Đối với tiêu chuẩn TCVN 7635:2007 và PKCS#1: + Phiên bản 2.1 + Áp dụng lược đồ RSAES-OAEP để mã hoá và RSASSA-PSS để ký. + Độ dài khóa tối thiểu là 2048 bit - Đối với tiêu chuẩn ECDSA: độ dài khóa tối thiểu là 256 bit\nDòng 2: PKCS#1 | RSA Cryptography Standard\nDòng 3: ANSI X9.62-2005 | Public Key Cryptography for the Financial Services Industry: The Elliptic Curve Digital Signature Algorithm (ECDSA)\nDòng 4: 21.3 | Hàm băm an toàn | FIPS PUB 180-4 | Secure Hash Algorithms | Áp dụng một trong các hàm băm sau: SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, SHA-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHAKE128, SHAKE256\nDòng 5: FIPS PUB 202 | SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions\nDòng 6: 21.4 | Cú pháp mã hóa và cách xử lý thông điệp dữ liệu định dạng XML | XML Encryption Syntax and Processing | XML Encryption Syntax and Processing | Bắt buộc áp dụng\nDòng 7: XML Signature Syntax and Processing | XML Signature Syntax and Processing | Bắt buộc áp dụng\nDòng 8: 21.5 | Quản lý khóa công khai thông điệp dữ liệu định dạng XML | XKMS v2.0 | XML Key Management Specification version 2.0 | Bắt buộc áp dụng\nDòng 9: 21.6 | Cú pháp thông điệp mật mã cho ký, mã hóa | PKCS#7 v1.5 (RFC 2315) | Cryptographic message syntax for file-based signing and encrypting version 1.5 | Bắt buộc áp dụng\nDòng 10: 11.7 | Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ liệu định dạng PDF | ETSI EN 319 142-1 | Electronic Signatures and Infrastructures (ESI) - PAdES digital signatures | Áp dụng một trong hai tiêu chuẩn PAdES hoặc CAdES",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "table",
+      "table_id": 3,
+      "section_hint": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "row_start": 16,
+      "row_end": 25,
+      "table_part": 3,
+      "raw_html": "<table>\n<tr>\n<th><em><strong>Số TT</strong></em></th>\n<th><em><strong>Loại tiêu chuẩn</strong></em></th>\n<th><em><strong>Ký hiệu tiêu chuẩn</strong></em></th>\n<th><em><strong>Tên đầy đủ của tiêu chuẩn</strong></em></th>\n<th><em><strong>Quy định áp dụng</strong></em></th>\n</tr>\n<tr>\n<td rowspan=\"3\"><em>21.2</em></td>\n<td rowspan=\"3\"><em>Thuật toán chữ ký số</em></td>\n<td><em>TCVN 7635:2007</em></td>\n<td><em>Các kỹ thuật mật mã - Chữ ký số</em></td>\n<td rowspan=\"3\"><p><em>- Áp dụng một trong ba tiêu chuẩn.</em></p>\n<p><em>- Đối với tiêu chuẩn TCVN 7635:2007 và PKCS#1:</em></p>\n<p><em>+ Phiên bản 2.1</em></p>\n<p><em>+ Áp dụng lược đồ RSAES-OAEP để mã hoá và RSASSA-PSS để\nký.</em></p>\n<p><em>+ Độ dài khóa tối thiểu là 2048 bit</em></p>\n<p><em>- Đối với tiêu chuẩn ECDSA: độ dài khóa tối thiểu là 256\nbit</em></p></td>\n</tr>\n<tr>\n<td><em>PKCS#1</em></td>\n<td><em>RSA Cryptography Standard</em></td>\n</tr>\n<tr>\n<td><em>ANSI X9.62-2005</em></td>\n<td><em>Public Key Cryptography for the Financial Services Industry: The\nElliptic Curve Digital Signature Algorithm (ECDSA)</em></td>\n</tr>\n<tr>\n<td rowspan=\"2\"><em>21.3</em></td>\n<td rowspan=\"2\"><em>Hàm băm an toàn</em></td>\n<td><em>FIPS PUB 180-4</em></td>\n<td><em>Secure Hash Algorithms</em></td>\n<td rowspan=\"2\"><em>Áp dụng một trong các hàm băm sau:<br/>\nSHA-224,<br/>\nSHA-256,<br/>\nSHA-384,<br/>\nSHA-512,<br/>\nSHA-512/224,<br/>\nSHA-512/256,<br/>\nSHA3-224,<br/>\nSHA3-256,<br/>\nSHA3-384,<br/>\nSHA3-512, SHAKE128, SHAKE256</em></td>\n</tr>\n<tr>\n<td><em>FIPS PUB 202</em></td>\n<td><em>SHA-3 Standard: Permutation-Based Hash and Extendable-Output\nFunctions</em></td>\n</tr>\n<tr>\n<td rowspan=\"2\"><em>21.4</em></td>\n<td rowspan=\"2\"><em>Cú pháp mã hóa và cách xử lý thông điệp dữ liệu định\ndạng XML</em></td>\n<td><em>XML Encryption Syntax and Processing</em></td>\n<td><em>XML Encryption Syntax and Processing</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>XML Signature Syntax and Processing</em></td>\n<td><em>XML Signature Syntax and Processing</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>21.5</em></td>\n<td><em>Quản lý khóa công khai thông điệp dữ liệu định dạng\nXML</em></td>\n<td><em>XKMS v2.0</em></td>\n<td><em>XML Key Management Specification version 2.0</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>21.6</em></td>\n<td><em>Cú pháp thông điệp mật mã cho ký, mã hóa</em></td>\n<td><em>PKCS#7 v1.5 (RFC 2315)</em></td>\n<td><em>Cryptographic message syntax for file-based signing and\nencrypting version 1.5</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>11.7</em></td>\n<td><em>Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ\nliệu định dạng PDF</em></td>\n<td><em>ETSI EN 319 142-1</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI) - PAdES digital\nsignatures</em></td>\n<td><em>Áp dụng một trong hai tiêu chuẩn PAdES hoặc CAdES</em></td>\n</tr>\n</table>",
+      "column_headers": [
+        "Số TT",
+        "Loại tiêu chuẩn",
+        "Ký hiệu tiêu chuẩn",
+        "Tên đầy đủ của tiêu chuẩn",
+        "Quy định áp dụng"
+      ],
+      "chunk_index": 19
+    }
+  },
+  {
+    "page_content": "Cột: Số TT | Loại tiêu chuẩn | Ký hiệu tiêu chuẩn | Tên đầy đủ của tiêu chuẩn | Quy định áp dụng\n\nDòng 1: 21.6 | Cú pháp thông điệp mật mã cho ký, mã hóa | PKCS#7 v1.5 (RFC 2315) | Cryptographic message syntax for file-based signing and encrypting version 1.5 | Bắt buộc áp dụng\nDòng 2: 11.7 | Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ liệu định dạng PDF | ETSI EN 319 142-1 | Electronic Signatures and Infrastructures (ESI) - PAdES digital signatures | Áp dụng một trong hai tiêu chuẩn PAdES hoặc CAdES\nDòng 3: 11.8 | Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ liệu định dạng XML | ETSI TS 101 903 | Electronic Signatures and Infrastructures (ESI) - XML Advanced Electronic Signatures (XAdES) | Áp dụng một trong hai tiêu chuẩn XAdES hoặc CAdES\nDòng 4: 11.9 | Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ liệu định dạng JSON | RFC 7515 | JSON Web Signature (JWS) | Bắt buộc áp dụng cho thông điệp dữ liệu định dạng JSON\nDòng 5: 11.10 | Tiêu chuẩn về chữ ký điện tử nâng cao dành cho cú pháp tin nhắn mật mã | ETSI TS 101 733 | Electronic Signatures and Infrastructures (ESI) - CMS Advanced Electronic Signatures (CAdES) | Khuyến nghị áp dụng\nDòng 6: .2 | Tiêu chuẩn về hệ thống, thiết bị lưu trữ và sử dụng khóa bí mật\nDòng 7: 22.1 | Yêu cầu an toàn dành cho mô đun bảo mật phần cứng | FIPS PUB 140-2 | Security Requirements for Cryptographic Modules | - Yêu cầu tối thiểu mức 3 (level 3)\nDòng 8: 22.2 | Yêu cầu an toàn đối với thẻ Token và Smart card | FIPS PUB 140-2 | Security Requirements for Cryptographic Modules | - Yêu cầu tối thiểu mức 2 (level 2)\nDòng 9: .2.3 | Yêu cầu về chính sách và an toàn cho các tổ chức cung cấp dịch vụ tin cậy: Các thành phần dịch vụ vận hành thiết bị tạo chữ ký số và hỗ trợ tạo chữ ký số AdES | ETSI TS 119 431-1 | Electronic Signatures and Infrastructures (ESI); Policy and security requirements for trust service providers; Part 1: TSP service components operating a remote QSCD/SCDev | Áp dụng cả bộ tiêu chuẩn 2 phần; Phiên bản V1.1.1 (12/2018)\nDòng 10: ETSI TS 119 431-2 | Electronic Signatures and Infrastructures (ESI); Policy and security requirements for trust service providers; Part 2: TSP service components supporting AdES digital signature creation",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "table",
+      "table_id": 4,
+      "section_hint": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "row_start": 24,
+      "row_end": 33,
+      "table_part": 4,
+      "raw_html": "<table>\n<tr>\n<th><em><strong>Số TT</strong></em></th>\n<th><em><strong>Loại tiêu chuẩn</strong></em></th>\n<th><em><strong>Ký hiệu tiêu chuẩn</strong></em></th>\n<th><em><strong>Tên đầy đủ của tiêu chuẩn</strong></em></th>\n<th><em><strong>Quy định áp dụng</strong></em></th>\n</tr>\n<tr>\n<td><em>21.6</em></td>\n<td><em>Cú pháp thông điệp mật mã cho ký, mã hóa</em></td>\n<td><em>PKCS#7 v1.5 (RFC 2315)</em></td>\n<td><em>Cryptographic message syntax for file-based signing and\nencrypting version 1.5</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>11.7</em></td>\n<td><em>Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ\nliệu định dạng PDF</em></td>\n<td><em>ETSI EN 319 142-1</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI) - PAdES digital\nsignatures</em></td>\n<td><em>Áp dụng một trong hai tiêu chuẩn PAdES hoặc CAdES</em></td>\n</tr>\n<tr>\n<td><em>11.8</em></td>\n<td><em>Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ\nliệu định dạng XML</em></td>\n<td><em>ETSI TS 101 903</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI) - XML Advanced\nElectronic Signatures (XAdES)</em></td>\n<td><em>Áp dụng một trong hai tiêu chuẩn XAdES hoặc CAdES</em></td>\n</tr>\n<tr>\n<td><em>11.9</em></td>\n<td><em>Tiêu chuẩn về chữ ký điện tử nâng cao dành cho thông điệp dữ\nliệu định dạng JSON</em></td>\n<td><em>RFC 7515</em></td>\n<td><em>JSON Web Signature (JWS)</em></td>\n<td><em>Bắt buộc áp dụng cho thông điệp dữ liệu định dạng JSON</em></td>\n</tr>\n<tr>\n<td><em>11.10</em></td>\n<td><em>Tiêu chuẩn về chữ ký điện tử nâng cao dành cho cú pháp tin nhắn\nmật mã</em></td>\n<td><em> ETSI TS 101 733</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI) - CMS Advanced\nElectronic Signatures (CAdES)</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em><strong>.2</strong></em></td>\n<td colspan=\"4\"><em><strong>Tiêu chuẩn về hệ thống, thiết bị lưu trữ và\nsử dụng khóa bí mật</strong></em></td>\n</tr>\n<tr>\n<td><em>22.1</em></td>\n<td><em>Yêu cầu an toàn dành cho mô đun bảo mật phần cứng</em></td>\n<td><em>FIPS PUB 140-2</em></td>\n<td><em>Security Requirements for Cryptographic Modules</em></td>\n<td><em>- Yêu cầu tối thiểu mức 3 (level 3)</em></td>\n</tr>\n<tr>\n<td><em>22.2</em></td>\n<td><em>Yêu cầu an toàn đối với thẻ Token và Smart card</em></td>\n<td><em>FIPS PUB 140-2</em></td>\n<td><em>Security Requirements for Cryptographic Modules</em></td>\n<td><em>- Yêu cầu tối thiểu mức 2 (level 2)</em></td>\n</tr>\n<tr>\n<td rowspan=\"2\"><em>.2.3</em></td>\n<td rowspan=\"2\"><em>Yêu cầu về chính sách và an toàn cho các tổ chức\ncung cấp dịch vụ tin cậy: Các thành phần dịch vụ vận hành thiết bị tạo\nchữ ký số và hỗ trợ tạo chữ ký số AdES</em></td>\n<td><em>ETSI TS 119 431-1</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI); Policy and\nsecurity requirements for trust service providers; Part 1: TSP service\ncomponents operating a remote QSCD/SCDev</em></td>\n<td rowspan=\"2\"><p><em>Áp dụng cả bộ tiêu chuẩn 2 phần;</em></p>\n<p><em>Phiên bản V1.1.1 (12/2018)</em></p></td>\n</tr>\n<tr>\n<td><em>ETSI TS 119 431-2</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI); Policy and\nsecurity requirements for trust service providers; Part 2: TSP service\ncomponents supporting AdES digital signature creation</em></td>\n</tr>\n</table>",
+      "column_headers": [
+        "Số TT",
+        "Loại tiêu chuẩn",
+        "Ký hiệu tiêu chuẩn",
+        "Tên đầy đủ của tiêu chuẩn",
+        "Quy định áp dụng"
+      ],
+      "chunk_index": 20
+    }
+  },
+  {
+    "page_content": "Cột: Số TT | Loại tiêu chuẩn | Ký hiệu tiêu chuẩn | Tên đầy đủ của tiêu chuẩn | Quy định áp dụng\n\nDòng 1: .2.3 | Yêu cầu về chính sách và an toàn cho các tổ chức cung cấp dịch vụ tin cậy: Các thành phần dịch vụ vận hành thiết bị tạo chữ ký số và hỗ trợ tạo chữ ký số AdES | ETSI TS 119 431-1 | Electronic Signatures and Infrastructures (ESI); Policy and security requirements for trust service providers; Part 1: TSP service components operating a remote QSCD/SCDev | Áp dụng cả bộ tiêu chuẩn 2 phần; Phiên bản V1.1.1 (12/2018)\nDòng 2: ETSI TS 119 431-2 | Electronic Signatures and Infrastructures (ESI); Policy and security requirements for trust service providers; Part 2: TSP service components supporting AdES digital signature creation\nDòng 3: .2.4 | Giao thức tạo chữ ký số từ xa | ETSI TS 119 432 | Electronic Signatures and Infrastructures (ESI); Protocols for remote digital signature creation | Phiên bản V1.1.1 (03/2019)\nDòng 4: .2.5 | Hệ thống tin cậy hỗ trợ ký số từ xa - Các yêu cầu chung | EN 419241-1:2018 | Trustworthy Systems Supporting Server Signing - Part 1: General system security requirements\nDòng 5: .2.6 | Hệ thống tin cậy hỗ trợ ký số từ xa – Yêu cầu và mục tiêu (hồ sơ bảo vệ) của thiết bị tạo chữ ký số dành cho ký số từ xa | EN 419241-2:2019 | Trustworthy Systems Supporting Server Signing - Part 2: Protection Profile for QSCD for Server Signing\nDòng 6: .2.7 | Yêu cầu và mục tiêu (hồ sơ bảo vệ) dành cho mô đun bảo mật phần cứng của tổ chức cung cấp dịch vụ tin cậy – mô đun mã hóa dành cho các dịch vụ tin cậy | EN 419221-5:2018 | Protection Profiles for TSP Cryptographic modules - Part 5: Cryptographic Module for Trust Services\nDòng 7: 33 | Tiêu chuẩn kiểm tra trạng thái chứng thư số\nDòng 8: 33.1 | Giao thức truyền, nhận chứng thư chữ ký số và danh sách chứng thư chữ ký số bị thu hồi | RFC 2585 | Internet X.509 Public Key Infrastructure - Operational Protocols: FTP and HTTP | Áp dụng một hoặc cả hai giao thức FTP và HTTP\nDòng 9: 33.2 | Giao thức bảo mật tầng giao vận | RFC 8446 | The Transport Layer Security (TLS) Protocol Version 1.3 | Bắt buộc áp dụng tối thiểu\nDòng 10: 33.3 | Giao thức cho kiểm tra trạng thái chứng thư chữ ký sốtrực tuyến | RFC 2560 | X.509 Internet Public Key Infrastructure - On-line Certificate status protocol",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "table",
+      "table_id": 5,
+      "section_hint": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "row_start": 32,
+      "row_end": 41,
+      "table_part": 5,
+      "raw_html": "<table>\n<tr>\n<th><em><strong>Số TT</strong></em></th>\n<th><em><strong>Loại tiêu chuẩn</strong></em></th>\n<th><em><strong>Ký hiệu tiêu chuẩn</strong></em></th>\n<th><em><strong>Tên đầy đủ của tiêu chuẩn</strong></em></th>\n<th><em><strong>Quy định áp dụng</strong></em></th>\n</tr>\n<tr>\n<td rowspan=\"2\"><em>.2.3</em></td>\n<td rowspan=\"2\"><em>Yêu cầu về chính sách và an toàn cho các tổ chức\ncung cấp dịch vụ tin cậy: Các thành phần dịch vụ vận hành thiết bị tạo\nchữ ký số và hỗ trợ tạo chữ ký số AdES</em></td>\n<td><em>ETSI TS 119 431-1</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI); Policy and\nsecurity requirements for trust service providers; Part 1: TSP service\ncomponents operating a remote QSCD/SCDev</em></td>\n<td rowspan=\"2\"><p><em>Áp dụng cả bộ tiêu chuẩn 2 phần;</em></p>\n<p><em>Phiên bản V1.1.1 (12/2018)</em></p></td>\n</tr>\n<tr>\n<td><em>ETSI TS 119 431-2</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI); Policy and\nsecurity requirements for trust service providers; Part 2: TSP service\ncomponents supporting AdES digital signature creation</em></td>\n</tr>\n<tr>\n<td><em>.2.4</em></td>\n<td><em>Giao thức tạo chữ ký số từ xa</em></td>\n<td><em>ETSI TS 119 432</em></td>\n<td><em>Electronic Signatures and Infrastructures (ESI); Protocols for\nremote digital signature creation</em></td>\n<td><em>Phiên bản V1.1.1 (03/2019)</em></td>\n</tr>\n<tr>\n<td><em>.2.5</em></td>\n<td><em>Hệ thống tin cậy hỗ trợ ký số từ xa - Các yêu cầu\nchung</em></td>\n<td><em>EN 419241-1:2018</em></td>\n<td><em>Trustworthy Systems Supporting Server Signing - Part 1: General\nsystem security requirements</em></td>\n<td></td>\n</tr>\n<tr>\n<td><em>.2.6</em></td>\n<td><em>Hệ thống tin cậy hỗ trợ ký số từ xa – Yêu cầu và mục tiêu (hồ sơ\nbảo vệ) của thiết bị tạo chữ ký số dành cho ký số từ xa</em></td>\n<td><em>EN 419241-2:2019</em></td>\n<td><em>Trustworthy Systems Supporting Server Signing - Part 2:\nProtection Profile for QSCD for Server Signing</em></td>\n<td></td>\n</tr>\n<tr>\n<td><em>.2.7</em></td>\n<td><em>Yêu cầu và mục tiêu (hồ sơ bảo vệ) dành cho mô đun bảo mật phần\ncứng của tổ chức cung cấp dịch vụ tin cậy – mô đun mã hóa dành cho các\ndịch vụ tin cậy</em></td>\n<td><em>EN 419221-5:2018</em></td>\n<td><em>Protection Profiles for TSP Cryptographic modules - Part 5:\nCryptographic Module for Trust Services</em></td>\n<td></td>\n</tr>\n<tr>\n<td><em><strong>33</strong></em></td>\n<td colspan=\"4\"><em><strong>Tiêu chuẩn kiểm tra trạng thái chứng thư\nsố</strong></em></td>\n</tr>\n<tr>\n<td><em>33.1</em></td>\n<td><em>Giao thức truyền, nhận chứng thư chữ ký số và danh sách chứng\nthư chữ ký số bị thu hồi</em></td>\n<td><em>RFC 2585</em></td>\n<td><em>Internet X.509 Public Key Infrastructure - Operational\nProtocols: FTP and HTTP</em></td>\n<td><em>Áp dụng một hoặc cả hai giao thức FTP và HTTP</em></td>\n</tr>\n<tr>\n<td><em>33.2</em></td>\n<td><em>Giao thức bảo mật tầng giao vận</em></td>\n<td><em>RFC 8446</em></td>\n<td><em>The Transport Layer Security (TLS) Protocol Version\n1.3</em></td>\n<td><em>Bắt buộc áp dụng <del>tối thiểu</del></em></td>\n</tr>\n<tr>\n<td><em>33.3</em></td>\n<td><em>Giao thức cho kiểm tra trạng thái chứng thư chữ ký sốtrực\ntuyến</em></td>\n<td><em>RFC 2560</em></td>\n<td><em>X.509 Internet Public Key Infrastructure - On-line Certificate\nstatus protocol</em></td>\n<td></td>\n</tr>\n</table>",
+      "column_headers": [
+        "Số TT",
+        "Loại tiêu chuẩn",
+        "Ký hiệu tiêu chuẩn",
+        "Tên đầy đủ của tiêu chuẩn",
+        "Quy định áp dụng"
+      ],
+      "chunk_index": 21
+    }
+  },
+  {
+    "page_content": "**  \nPhụ lục II**\n\n**DANH MỤC TIÊU CHÍ ĐÁNH GIÁ HIỆU LỰC CỦA CHỨNG THƯ CHỮ KÝ SỐ VÀ CHỮ KÝ SỐ HỢP LỆ TRONG PHẦN MỀM KÝ SỐ, PHẦN MỀM KIỂM TRA CHỮ KÝ SỐ**\n\n_(Ban hành kèm theo Thông tư số /2025/TT-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)_",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "text",
+      "chunk_index": 22
+    }
+  },
+  {
+    "page_content": "Cột: Số TT | Tiêu chí đánh giá | Hiệu lực/hợp lệ | Quy định áp dụng\n\nDòng 1: 1 | Tính hiệu lực của chứng thư chữ ký số\nDòng 2: 1.1 | Thời gian có hiệu lực của chứng thư số | Thời gian trên chứng thư chữ ký số còn hiệu lực tại thời điểm ký số | Bắt buộc áp dụng\nDòng 3: 1.2 | Trạng thái chứng thư số qua danh sách chứng thư chữ ký số thu hồi (CRL) được công bố tại thời điểm ký số hoặc bằng phương pháp kiểm tra trạng thái chứng thư chữ ký số trực tuyến (OCSP) ở chế độ trực tuyến trong trường hợp tổ chức cung cấp dịch vụ chứng thực chữ ký số có cung cấp dịch vụ OCSP | Trạng thái của chứng thư chữ ký số còn hoạt động tại thời điểm ký số | Bắt buộc áp dụng\nDòng 4: 1.3 | Thuật toán mật mã trên chứng thư chữ ký số | Các thuật toán mật mã trên chứng thư chữ ký số tuân thủ theo quy định về quy chuẩn, tiêu chuẩn kỹ thuật bắt buộc áp dụng về chữ ký số và dịch vụ chứng thực chữ ký số đang có hiệu lực | Bắt buộc áp dụng\nDòng 5: 1.4 | Mục đích, phạm vi sử dụng của chứng thư chữ ký số | Chứng thư chữ ký số được sử dụng đúng mục đích, phạm vi sử dụng | Bắt buộc áp dụng\nDòng 6: 1.5 | Các tuyên bố khác của Tổ chức cung cấp dịch vụ chứng thực chữ ký số | Các tuyên bố khác không nằm ngoài phạm vi Quy chế chứng thực của Tổ chức cung cấp dịch vụ chứng thực chữ ký số | Khuyến nghị áp dụng\nDòng 7: 2 | Tính hợp lệ của chữ ký số\nDòng 8: 2.1 | Thông tin về chủ thể ký | Kiểm tra, xác thực được đúng thông tin chủ thể ký số | Bắt buộc áp dụng\nDòng 9: 2.2 | Cách thức tạo chữ ký số | Chữ ký số được tạo ra đúng bởi khóa bí mật tương ứng với khóa công khai trên chứng thư chữ ký số | Bắt buộc áp dụng\nDòng 10: 2.3 | Chứng thư chữ ký số kèm theo thông điệp dữ liệu | Chứng thư chữ ký số có hiệu lực tại thời điểm ký | Bắt buộc áp dụng",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "table",
+      "table_id": 1,
+      "section_hint": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "row_start": 0,
+      "row_end": 9,
+      "table_part": 1,
+      "raw_html": "<table>\n<tr>\n<th><em><strong>Số TT</strong></em></th>\n<th><em><strong>Tiêu chí đánh giá</strong></em></th>\n<th><em><strong>Hiệu lực/hợp lệ</strong></em></th>\n<th><em><strong>Quy định áp dụng</strong></em></th>\n</tr>\n<tr>\n<td><em><strong>1</strong></em></td>\n<td colspan=\"3\"><em><strong>Tính hiệu lực của chứng thư chữ ký\nsố</strong></em></td>\n</tr>\n<tr>\n<td><em>1.1</em></td>\n<td><em>Thời gian có hiệu lực của chứng thư số</em></td>\n<td><em>Thời gian trên chứng thư chữ ký số còn hiệu lực tại thời điểm ký\nsố</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>1.2</em></td>\n<td><em>Trạng thái chứng thư số qua danh sách chứng thư chữ ký số thu\nhồi (CRL) được công bố tại thời điểm ký số hoặc bằng phương pháp kiểm\ntra trạng thái chứng thư chữ ký số trực tuyến (OCSP) ở chế độ trực tuyến\ntrong trường hợp tổ chức cung cấp dịch vụ chứng thực chữ ký số có cung\ncấp dịch vụ OCSP</em></td>\n<td><em>Trạng thái của chứng thư chữ ký số còn hoạt động tại thời điểm\nký số</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>1.3</em></td>\n<td><em>Thuật toán mật mã trên chứng thư chữ ký số</em></td>\n<td><em>Các thuật toán mật mã trên chứng thư chữ ký số tuân thủ theo quy\nđịnh về quy chuẩn, tiêu chuẩn kỹ thuật bắt buộc áp dụng về chữ ký số và\ndịch vụ chứng thực chữ ký số đang có hiệu lực</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>1.4</em></td>\n<td><em>Mục đích, phạm vi sử dụng của chứng thư chữ ký số</em></td>\n<td><em>Chứng thư chữ ký số được sử dụng đúng mục đích, phạm vi sử\ndụng</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>1.5</em></td>\n<td><em>Các tuyên bố khác của Tổ chức cung cấp dịch vụ chứng thực chữ ký\nsố</em></td>\n<td><em>Các tuyên bố khác không nằm ngoài phạm vi Quy chế chứng thực của\nTổ chức cung cấp dịch vụ chứng thực chữ ký số</em></td>\n<td><em>Khuyến nghị áp dụng</em></td>\n</tr>\n<tr>\n<td><em><strong>2</strong></em></td>\n<td colspan=\"3\"><em><strong>Tính hợp lệ của chữ ký số</strong></em></td>\n</tr>\n<tr>\n<td><em>2.1</em></td>\n<td><em>Thông tin về chủ thể ký</em></td>\n<td><em>Kiểm tra, xác thực được đúng thông tin chủ thể ký số</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>2.2</em></td>\n<td><em>Cách thức tạo chữ ký số</em></td>\n<td><em>Chữ ký số được tạo ra đúng bởi khóa bí mật tương ứng với khóa\ncông khai trên chứng thư chữ ký số</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>2.3</em></td>\n<td><em>Chứng thư chữ ký số kèm theo thông điệp dữ liệu</em></td>\n<td><em>Chứng thư chữ ký số có hiệu lực tại thời điểm ký</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n</table>",
+      "column_headers": [
+        "Số TT",
+        "Tiêu chí đánh giá",
+        "Hiệu lực/hợp lệ",
+        "Quy định áp dụng"
+      ],
+      "chunk_index": 23
+    }
+  },
+  {
+    "page_content": "Cột: Số TT | Tiêu chí đánh giá | Hiệu lực/hợp lệ | Quy định áp dụng\n\nDòng 1: 2.2 | Cách thức tạo chữ ký số | Chữ ký số được tạo ra đúng bởi khóa bí mật tương ứng với khóa công khai trên chứng thư chữ ký số | Bắt buộc áp dụng\nDòng 2: 2.3 | Chứng thư chữ ký số kèm theo thông điệp dữ liệu | Chứng thư chữ ký số có hiệu lực tại thời điểm ký | Bắt buộc áp dụng\nDòng 3: 2.4 | Tính toàn vẹn của thông điệp dữ liệu | Mã băm có được từ việc băm thông điệp dữ liệu và mã băm có được khi giải mã chữ ký số trùng nhau | Bắt buộc áp dụng",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "table",
+      "table_id": 2,
+      "section_hint": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "row_start": 8,
+      "row_end": 10,
+      "table_part": 2,
+      "raw_html": "<table>\n<tr>\n<th><em><strong>Số TT</strong></em></th>\n<th><em><strong>Tiêu chí đánh giá</strong></em></th>\n<th><em><strong>Hiệu lực/hợp lệ</strong></em></th>\n<th><em><strong>Quy định áp dụng</strong></em></th>\n</tr>\n<tr>\n<td><em>2.2</em></td>\n<td><em>Cách thức tạo chữ ký số</em></td>\n<td><em>Chữ ký số được tạo ra đúng bởi khóa bí mật tương ứng với khóa\ncông khai trên chứng thư chữ ký số</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>2.3</em></td>\n<td><em>Chứng thư chữ ký số kèm theo thông điệp dữ liệu</em></td>\n<td><em>Chứng thư chữ ký số có hiệu lực tại thời điểm ký</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n<tr>\n<td><em>2.4</em></td>\n<td><em>Tính toàn vẹn của thông điệp dữ liệu</em></td>\n<td><em>Mã băm có được từ việc băm thông điệp dữ liệu và mã băm có được\nkhi giải mã chữ ký số trùng nhau</em></td>\n<td><em>Bắt buộc áp dụng</em></td>\n</tr>\n</table>",
+      "column_headers": [
+        "Số TT",
+        "Tiêu chí đánh giá",
+        "Hiệu lực/hợp lệ",
+        "Quy định áp dụng"
+      ],
+      "chunk_index": 24
+    }
+  },
+  {
+    "page_content": "**Phụ lục III**\n\n**HƯỚNG DẪN KẾT NỐI ĐẾN CỔNG KẾT NỐI DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ CÔNG CỘNG**\n\n_(Ban hành kèm theo Thông tư số /2025/TT-BKHCN ngày tháng năm 2025 của Bộ trưởng Bộ Khoa học và Công nghệ)_\n\n**1\\. Mô hình kết nối**\n\nMô hình kết nối với Cổng kết nối dịch vụ chứng thực chữ ký số công cộng (sau đây gọi là Cổng eSign) được mô tả tại sơ đồ như sau:\n\n|<image_2>| _  \n_ Chú thích:\n\n\\- HTTT: Hệ thống thông tin phục vụ giao dịch điện tử sử dụng chữ ký số.\n\\- CA: Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng.\n\n**2\\. Các thông tin hướng dẫn kết nối**\n\na) Giao thức sử dụng để kết nối là API, phương thức kết nối là POST.\n\nb) Đường dẫn kết nối các API: <https://esign.neac.gov.vn>\n\nc) Thông tin Cổng eSign cung cấp cho các HTTT gồm: sp_id và sp_password hoặc token, trong đó:\n\n\\- sp_id: Mã xác thực được cấp cho HTTT.\n\n\\- sp_password: Mật khẩu kết nối được cấp cho HTTT tương ứng với sp_id.\n\n\\- token: Thông tin xác thực được cấp cho HTTT.",
+    "metadata": {
+      "document_id": "Public257",
+      "hierarchy_path": "4\\. ĐIỀU KHOẢN THI HÀNH > 4.2 Hiệu lực thi hành",
+      "chunk_type": "text",
+      "chunk_index": 25
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "page_content": "Public_028\n\nSự phát triển của ngành công nghiệp điện tử như chúng ta thấy ngày nay bắt đầu với sự phát minh ra **Transistor**. Cách thức hoạt động của transistor có thể được hiểu dễ dàng nếu bạn đã có kiến thức về **Diode bán dẫn**. Việc thêm một lớp khác vào một diode mối nối P-N tạo thành một thiết bị **3 đầu cuối** được gọi là **Transistor**. Thuật ngữ transistor thường đề cập đến **Transistor Bipolar Junction (BJT)**.\n\nTransistor đã được kiểm chứng thành công vào ngày **23/12/1947** tại Phòng thí nghiệm Bell, New Jersey. Ba cá nhân được ghi nhận phát minh ra transistor là **John Bardeen, William Shockley và Walter Brattain**, trong đó William Shockley đóng vai trò quan trọng trong việc phát minh.\n\n**Các ứng dụng của Transistor lưỡng cực (BJT) bao gồm:**\n\n* Ti vi\n* Điện thoại di động\n* Máy tính\n* Thiết bị phát sóng vô tuyến\n* Bộ khuếch đại âm thanh …",
+    "metadata": {
+      "document_id": "Public028",
+      "hierarchy_path": "",
+      "chunk_type": "text",
+      "chunk_index": 0
+    }
+  },
+  {
+    "page_content": "## Cấu tạo\n\nGiống như diode mối nối P-N, một BJT cũng được tạo thành từ sự kết hợp của các lớp bán dẫn loại P và loại N. Tuy nhiên, transistor có thể chứa:\n\n* Một lớp P giữa hai lớp N → **Transistor NPN**\n* Một lớp N giữa hai lớp P → **Transistor PNP**\n\nTransistor có ba thiết bị đầu cuối (**3 chân ra**):\n\n* **Emitter (Bộ phát)**\n* **Base (Cơ sở / Đế / Lớp nền)**\n* **Collector (Bộ thu)**\n\n**Cấu tạo cụ thể:**\n\n**Transistor NPN:**\n\n* Emitter kết nối với lớp N bên trái\n* Collector kết nối với lớp N bên phải\n* Base kết nối với lớp P ở giữa\n\n**Transistor PNP:**\n\n* Emitter kết nối với lớp P bên trái\n* Collector kết nối với lớp P bên phải\n* Base kết nối với lớp N ở giữa\n\nTransistor có **hai mối nối P-N**:\n\n* 1. **Emitter-Base (E-B)**\n* 2. **Base-Collector (B-C)**",
+    "metadata": {
+      "document_id": "Public028",
+      "hierarchy_path": "Cấu tạo – Ký hiệu > Cấu tạo",
+      "chunk_type": "text",
+      "chunk_index": 1
+    }
+  },
+  {
+    "page_content": "## Thiết bị đầu cuối của BJT\n\n• **Emitter:**\n\nCung cấp các điện tích. Emitter được pha tạp nặng để bơm nhiều hạt mang điện vào Base. Kích thước E > Base.\n\n• **Base:**\n\nLớp giữa, rất mỏng, pha tạp nhẹ, nồng độ tạp chất thấp nhất.\n\n• **Collector:**\n\nThu thập các hạt mang điện, pha tạp vừa phải. Kích thước lớn hơn Emitter và Base, để xử lý năng lượng và tản nhiệt tốt.",
+    "metadata": {
+      "document_id": "Public028",
+      "hierarchy_path": "Cấu tạo – Ký hiệu > Thiết bị đầu cuối của BJT",
+      "chunk_type": "text",
+      "chunk_index": 2
+    }
+  },
+  {
+    "page_content": "## Ký hiệu\n\nTransistor được xem như **hai diode mắc chung Anode hoặc Cathode**:\n\n• **NPN:** chung Anode\n\n• **PNP:** chung Cathode",
+    "metadata": {
+      "document_id": "Public028",
+      "hierarchy_path": "Cấu tạo – Ký hiệu > Ký hiệu",
+      "chunk_type": "text",
+      "chunk_index": 3
+    }
+  },
+  {
+    "page_content": "## Nguyên lý làm việc của Transistor NPN\n\nKhi không có điện áp cấp cho transistor NPN → **không phân cực**.\n\n* **Lớp N (Emitter & Collector):** điện tử tự do là hạt dẫn đa số, lỗ trống là hạt mang điện thiểu số.\n* **Lớp P (Base):** điện tử tự do là hạt mang điện thiểu số, lỗ trống là hạt dẫn đa số.\n\nCác hạt mang điện luôn di chuyển từ vùng nồng độ cao → nồng độ thấp:\n\n• Điện tử: từ N (n-region) → P (p-region)\n\n• Lỗ trống: từ P (p-region) → N (n-region)\n\nQuá trình này tạo ra **vùng nghèo kiệt (depletion region)** tại mối nối **B-E** và **B-C**.\n\n**Tại sao vùng nghèo kiệt thâm nhập nhiều hơn về phía pha tạp nhẹ?**\n\n* Doping là quá trình thêm tạp chất vào chất bán dẫn để tăng dẫn điện.\n* **Pha tạp nặng:** nhiều hạt mang điện, dẫn điện cao\n* **Pha tạp nhẹ:** ít hạt mang điện, dẫn điện thấp\n\nTrong **Transistor NPN**:\n\n* **Emitter (N):** pha tạp nặng → nhiều điện tử tự do\n* **Base (P):** pha tạp nhẹ → ít lỗ trống\n* **Collector (N):** pha tạp vừa phải → nồng độ giữa Emitter và Base\n\n**Nguyên tử và ion trong bán dẫn**\n\n* Nguyên tử nhường electron → **ion dương**\n* Nguyên tử nhận electron → **ion âm**\n* Nguyên tử cho electron → **nhà tài trợ (donor)**\n* Nguyên tử nhận electron → **người nhận (acceptor)**",
+    "metadata": {
+      "document_id": "Public028",
+      "hierarchy_path": "Nguyên lý hoạt động > Nguyên lý làm việc của Transistor NPN",
+      "chunk_type": "text",
+      "chunk_index": 4
+    }
+  },
+  {
+    "page_content": "## Mối nối B- E(Emitter-base junction)\n\n**n lỗ trống từ Base sang Emitter:**\n\n* o Đồng thời, các **lỗ trống** trong vùng p (Base) di chuyển sang vùng n (Emitter).\n* o Tuy nhiên, vì Emitter được pha tạp nặng, số lỗ trống đi vào Emitter chỉ là một phần rất nhỏ so với số electron đi sang Base.\n\n**Tương tác nguyên tử tại mối nối**\n\nTại **mối nối B-E**, khi các electron từ Emitter di chuyển vào Base:\n\n* Mỗi nguyên tử trong **n-region (Emitter)** nhường electron cho các nguyên tử lỗ trống trong **p-region (Base)**.\n* Ví dụ: nếu mỗi nguyên tử Emitter nhường **3 electron tự do**, thì **3 nguyên tử trong Base** sẽ nhận các electron này.\n\n* Khi nguyên tử Emitter nhường electron → trở thành **ion dương**, do mất electron.\n* Khi nguyên tử Base nhận electron → trở thành **ion âm**, do thêm electron vào lỗ trống.\n\nKết quả của quá trình này là:\n\n* 1. Hình thành **vùng nghèo kiệt (depletion region)** tại mối nối B-E:\n  * o Vùng này chứa các **ion dương cố định** ở phía Emitter và **ion âm cố định** ở phía Base.\n  * o Vùng nghèo kiệt này tạo ra một **điện trường nội** ngăn cản dòng electron và lỗ trống tự do tiếp tục khuếch tán một cách quá mức.\n* 2. Dòng điện chủ yếu là **electron từ Emitter sang Base**:\n  * o Chỉ một phần nhỏ electron kết hợp với lỗ trống trong Base, số còn lại đi vào **Collector** nhờ hiệu ứng điện trường tại mối nối Base-Collector.\n\n**Tóm tắt cơ chế hoạt động B-E**\n\n* **Emitter:** cung cấp electron tự do với nồng độ cao.\n* **Base:** mỏng, pha tạp nhẹ, chứa lỗ trống nhưng ít electron.\n* **Khuếch tán:** electron từ Emitter sang Base, lỗ trống từ Base sang Emitter.\n* **Vùng nghèo kiệt:** ion dương Emitter và ion âm Base hình thành điện trường nội.\n* **Dòng điện chủ yếu:** từ Emitter sang Collector qua Base, cơ chế này giúp transistor hoạt động như **bộ khuếch đại dòng điện**.\n\n![](images/image1.jpg)",
+    "metadata": {
+      "document_id": "Public028",
+      "hierarchy_path": "Nguyên lý hoạt động > Mối nối B- E(Emitter-base junction)",
+      "chunk_type": "text",
+      "chunk_index": 5
+    }
+  }
+]
