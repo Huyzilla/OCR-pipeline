@@ -1,0 +1,50 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+
+\section{RAG overview}
+\label{section:2.1}
+Tổng quan kiến trúc RAG và vai trò của truy xuất tri thức trong bài toán QA tài liệu tiếng Việt.
+
+\section{Retrieval}
+\label{section:2.2}
+\subsection{BM25}
+\label{subsection:2.2.1}
+Trình bày lại cách tiếp cận truy hồi thưa và vì sao BM25 vẫn là một baseline quan trọng.
+
+\subsection{Dense Retrieval}
+\label{subsection:2.2.2}
+Mô tả truy hồi đặc trưng dày, ưu điểm về ngữ nghĩa và hạn chế khi áp dụng cho dữ liệu tiếng Việt.
+
+\subsection{Hybrid}
+\label{subsection:2.2.3}
+Phân tích chiến lược kết hợp sparse và dense retrieval để cải thiện độ phủ và độ chính xác.
+
+\section{Reranking}
+\label{section:2.3}
+\subsection{Cross encoder}
+\label{subsection:2.3.1}
+Tóm tắt nguyên lý cross encoder và lý do chi phí suy luận cao.
+
+\subsection{Distillation}
+\label{subsection:2.3.2}
+Trình bày xu hướng distillation cho reranker nhẹ hơn nhưng vẫn giữ chất lượng đủ tốt.
+
+\section{Embedding optimization}
+\label{section:2.4}
+\subsection{MRL}
+\label{subsection:2.4.1}
+Mô tả mục tiêu của Matryoshka Representation Learning trong tối ưu vector embedding.
+
+\subsection{Curriculum}
+\label{subsection:2.4.2}
+Nêu vai trò của curriculum training trong ổn định quá trình học biểu diễn.
+
+\section{Query routing / intent classification}
+\label{section:2.5}
+Khảo sát hướng routing theo intent để chọn pipeline xử lý phù hợp cho từng loại truy vấn.
+
+\section{Research Gap}
+\label{section:2.6}
+Chốt lại khoảng trống nghiên cứu, nhấn mạnh bài toán cân bằng giữa chất lượng, độ trễ và chi phí trong Vietnamese RAG.
+
+\end{document}

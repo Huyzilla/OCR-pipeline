@@ -1,0 +1,24 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+
+\section{Overall Architecture}
+\label{section:3.1}
+Mô tả kiến trúc tổng thể của hệ thống RAG theo luồng Parser $\rightarrow$ Chunking $\rightarrow$ Retrieval $\rightarrow$ Routing $\rightarrow$ Reranking $\rightarrow$ Generation.
+
+\section{Document Processing}
+\label{section:3.2}
+Trình bày quá trình tiền xử lý tài liệu, tách đoạn, chuẩn hóa và xây dựng kho chỉ mục.
+
+\section{Hybrid Retrieval}
+\label{section:3.3}
+Mô tả cách kết hợp truy hồi sparse và dense trong pipeline thực tế.
+
+\section{Routing mechanism}
+\label{section:3.4}
+Giới thiệu cơ chế định tuyến truy vấn theo intent hoặc độ phức tạp câu hỏi.
+
+\section{Final inference pipeline}
+\label{section:3.5}
+Tóm tắt pipeline suy luận cuối cùng của hệ thống, từ đầu vào truy vấn đến câu trả lời sinh ra.
+
+\end{document}

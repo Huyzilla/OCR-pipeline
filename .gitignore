@@ -1,5 +1,49 @@
-__pycache__/
-.vscode/
+# Secrets / local config
 .env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Runtime cache
+cache/
 .qa_cache/
+
+# Generated QA outputs
+baseline.csv
+fusion.csv
+router.csv
+baseline_debug.json
+fusion_debug.json
+results_*.csv
+results_*.json
+benchmark_reranker/
+domain_data/retrieve_991_test.jsonl
+domain_data/results_smoke_output.json
+
+# Vector DB / indexes
+chroma_db_*/
+doc_index/
+
+# Generated OCR/RAG outputs
+outputs/
+outputs_*/
+chunk_outputs1_finals/
+chroma_db_viettel_outputs*/
+data_check/
+
+# Local model checkpoints / heavy artifacts
+stage_b_adrmse/
+
+# Old/local scratch
 New_pipeline/

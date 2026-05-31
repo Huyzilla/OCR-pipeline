@@ -10,13 +10,6 @@ from bs4 import BeautifulSoup
 
 
 class TableAwareChunker:
-    """
-    Viettel-AI-Race style chunker:
-    - Split document into text and HTML table parts
-    - Chunk text by paragraphs with word budget
-    - Chunk tables by rows with overlap
-    """
-
     def __init__(
         self,
         chunk_size: int = 512,
@@ -31,7 +24,6 @@ class TableAwareChunker:
 
     @staticmethod
     def _clean_cell_text(text: str) -> str:
-        # Collapse OCR/HTML whitespace noise inside table cells.
         return " ".join(text.split())
     
     @staticmethod
@@ -249,10 +241,6 @@ class TableAwareChunker:
         text: str,
         initial_heading_stack: List[tuple[int, str]],
     ) -> tuple[List[tuple[str, List[tuple[int, str]]]], List[tuple[int, str]]]:
-        """
-        Split a text section into blocks with stable heading hierarchy.
-        Each returned block is (block_text, heading_stack_for_block).
-        """
         lines = text.splitlines(keepends=True)
         active_heading_stack = initial_heading_stack.copy()
 

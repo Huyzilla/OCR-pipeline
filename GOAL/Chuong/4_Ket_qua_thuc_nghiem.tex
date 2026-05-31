@@ -1,0 +1,45 @@
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+
+\section{Lightweight Reranker}
+\label{section:4.1}
+\subsection{Motivation}
+Nêu lý do cần một reranker nhẹ để giảm độ trễ và chi phí suy luận.
+
+\subsection{Data pipeline}
+Mô tả pipeline tạo dữ liệu huấn luyện cho reranker.
+
+\subsection{Distillation}
+Trình bày chiến lược distillation từ mô hình teacher sang reranker nhẹ.
+
+\section{Reranker training}
+\label{section:4.2}
+\subsection{Stage A}
+Mô tả giai đoạn huấn luyện đầu tiên và mục tiêu tối ưu chính.
+
+\subsection{Stage B}
+Mô tả giai đoạn huấn luyện tiếp theo và cách tinh chỉnh chất lượng xếp hạng.
+
+\subsection{Losses}
+Trình bày các hàm loss sử dụng, bao gồm ADR-MSE và các biến thể liên quan.
+
+\section{Embedding optimization}
+\label{section:4.3}
+\subsection{MRL}
+Mô tả cách áp dụng Matryoshka Representation Learning cho embedding.
+
+\subsection{Curriculum training}
+Trình bày curriculum training để cải thiện tính ổn định và hiệu quả học.
+
+\section{Intent Classification}
+\label{section:4.4}
+\subsection{PhoBERT architecture}
+Mô tả kiến trúc PhoBERT dùng cho phân loại intent.
+
+\subsection{Training}
+Trình bày dữ liệu, quy trình huấn luyện và tiêu chí đánh giá.
+
+\subsection{Routing logic}
+Nêu cách ánh xạ nhãn intent sang chiến lược routing trong hệ thống.
+
+\end{document}

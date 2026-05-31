@@ -1,0 +1,344 @@
+Question,A,B,C,D,Answer
+Mật khẩu mạnh dành cho người quản trị hệ thống nên có tối thiểu bao nhiêu ký tự?,Ít nhất 6 ký tự,Ít nhất 8 ký tự,Ít nhất 10 ký tự,Ít nhất 12 ký tự,C
+"Trong ví dụ gây tràn bộ đệm, biến buffer trong hàm function() có kích thước bao nhiêu byte?",8 byte,16 byte,64 byte,256 byte,B
+Sâu SQL Slammer sử dụng cổng dịch vụ nào để quét tìm máy có lỗ hổng?,Cổng 21,Cổng 80,Cổng 1433,Cổng 1434,D
+"Trong tấn công SQL Injection vượt qua xác thực đăng nhập, chuỗi nào được chèn để khiến điều kiện WHERE luôn đúng?",AND 1=0,OR 1=1--,UNION SELECT *,DROP TABLE users,B
+"Theo mô tả về phishing, kẻ tấn công thường giả mạo tổ chức nào để đánh cắp thông tin người dùng?",Nhà cung cấp dịch vụ Internet và diễn đàn game,Trang thương mại điện tử và công ty vận chuyển,Tổ chức tài chính và ngân hàng,Nhà phát triển phần mềm và mạng xã hội,C
+Biện pháp nào giúp ngăn mã độc thực thi dù kẻ tấn công đã chèn được mã vào bộ đệm?,Sử dụng giao thức FTP,Kích hoạt cơ chế DEP (Data Execution Prevention),Lưu mật khẩu ở dạng plaintext,Cho phép thực thi mã trong vùng dữ liệu,B
+"Trong trò lừa đảo Nigeria 4-1-9, kẻ lừa đảo thường hứa trả cho nạn nhân khoảng bao nhiêu phần trăm số tiền để dụ tham gia?",5-10%,10-15%,20-30%,40-50%,C
+"Khi phanh gấp, người lái xe nên đặt gót chân như thế nào?",Tì chặt xuống sàn xe để giữ thăng bằng,Đặt nửa gót chân trên bàn đạp ga,Không để gót chân dính xuống sàn xe,Đặt gót chân lên bàn đạp ly hợp,C
+Số nào trên xe hộp số cơ khí có lực kéo lớn nhất nhưng tốc độ chậm nhất?,Số 1,Số 2,Số 4,Số 5,A
+"Sau khi vào số 1 trên xe số sàn, người lái nên nhả bàn đạp ly hợp như thế nào?",Nhả toàn bộ thật nhanh ngay lập tức,"Khoảng 2/3 đầu nhả nhanh, 1/3 sau nhả từ từ",Giữ nguyên ly hợp và tăng ga trước,Nhả chậm đều toàn bộ hành trình,B
+"Khi chuyển từ số 4 sang số 5 trên xe số sàn, người lái cần thực hiện thao tác nào?",Đẩy thẳng cần số xuống số 5 mà không cần qua số 0,Đạp phanh rồi kéo cần số sang trái,"Đạp hết hành trình ly hợp, kéo cần số về số 0 rồi đẩy nhẹ sang cửa số 5",Nhả ga hoàn toàn rồi chuyển trực tiếp sang số lùi,C
+"Trên xe hộp số tự động, số nào được sử dụng khi đỗ xe?",Số N,Số D,Số R,Số P,D
+"Khi xuống dốc dài với xe số tự động, người lái được khuyến nghị cài số nào?",Chỉ dùng số D,Số P hoặc số N,Số 2 hoặc số 1 (L),Chỉ dùng số R,C
+"Khi cài số 1 trên xe hộp số tự động, điều kiện nào cần được đảm bảo trước?",Xe đang chạy tốc độ cao để tránh chết máy,Phải đạp hết ga trước khi cài số,Xe phải đi rất chậm hoặc dừng hẳn và đạp phanh,Chỉ cần kéo phanh tay là đủ,C
+"Trước khi khởi động động cơ, người lái cần kiểm tra mức dầu bôi trơn bằng dụng cụ nào?",Đồng hồ áp suất dầu,Bơm dầu phụ,Thước thăm dầu,Van xả dầu,C
+"Đối với động cơ Diesel, thao tác nào cần thực hiện trước khi vặn chìa khóa sang vị trí START?",Đạp ga hết hành trình,Sấy nóng buồng đốt và chờ đèn sấy tắt,Kéo phanh tay xuống,Chuyển cần số sang D,B
+"Theo hướng dẫn, mỗi lần khởi động động cơ không nên kéo dài quá bao nhiêu giây?",3 giây,5 giây,10 giây,15 giây,B
+"Khi tắt động cơ Diesel, nên để động cơ chạy chậm trong khoảng bao lâu trước khi tắt máy?",30 giây,1 phút,2 phút,3 phút,D
+"Khi khởi hành trên đường bằng với xe số sàn, sau khi vào số 1 người lái cần thao tác gì với phanh tay?",Đạp thêm phanh chân,Giữ nguyên phanh tay đến khi xe chạy nhanh,Nhả phanh tay bằng cách bấm nút mở khóa rồi hạ cần xuống,Tắt động cơ rồi nhả phanh tay,C
+"Trong trường hợp xuống dốc cao nguy hiểm hoặc đi trên đường trơn lầy, phương pháp nào được khuyến nghị để giảm tốc độ?",Chỉ dùng phanh tay,Chỉ dùng bàn đạp ga,Sử dụng phanh động cơ,Tắt động cơ để giảm quán tính,C
+"Khi phanh để dừng hẳn ô tô nhằm tránh động cơ bị tắt, người lái cần thực hiện thao tác nào?",Tăng ga đồng thời đánh lái,Cắt ly hợp khi phanh,Chuyển sang số cao hơn,Kéo phanh tay ngay lập tức,B
+"Khi tăng từ số 4 lên số 5, số 5 có đặc điểm gì so với số 4?",Lực kéo lớn hơn nhưng tốc độ nhỏ hơn,Lực kéo nhỏ hơn nhưng tốc độ lớn hơn,Lực kéo và tốc độ đều nhỏ hơn,Lực kéo và tốc độ đều lớn hơn,B
+"Theo hướng dẫn thao tác tăng số, khi chuyển từ số 1 sang số 2 cần nhả ly hợp như thế nào?",Nhả ly hợp thật nhanh,Nhả ly hợp chậm,Giữ nguyên ly hợp rồi tăng ga,Nhả ly hợp theo từng nhịp ngắt quãng,B
+"Khi xe đi vào đoạn đường xấu hoặc đèo dốc, người lái cần giảm số với mục đích chính nào?",Giảm tiêu hao nhiên liệu,Tăng tốc độ tối đa,Tăng lực kéo cho xe,Giảm nhiệt độ động cơ,C
+"Theo hướng dẫn giảm số, thời điểm phù hợp để giảm số là khi nào?",Khi động cơ hoạt động yếu đi,Ngay sau khi tăng ga mạnh,Khi xe đạt tốc độ tối đa,Chỉ khi xe đã dừng hẳn,A
+Vì sao việc lùi xe ôtô thường khó hơn chạy tiến?,Xe tiêu hao nhiên liệu nhiều hơn,Không quan sát chính xác phía sau và khó điều khiển ly hợp,Động cơ hoạt động không ổn định,Hệ thống phanh hoạt động yếu hơn,B
+Thiết bị nào hỗ trợ người lái quan sát các điểm mù phía sau mà gương chiếu hậu không nhìn thấy?,Đèn pha và đèn sương mù,Bộ định vị GPS,Cảm biến lùi và camera chiếu hậu,Hệ thống điều hòa tự động,C
+"Khi muốn chuyển hướng đầu xe sang trái trong lúc lùi, đuôi xe sẽ di chuyển theo hướng nào?",Sang phải,Sang trái,Đi thẳng,Quay vòng tại chỗ,A
+"Khi lùi xe ghép dọc vào nơi đỗ, người lái cần bật đèn xin đường bên nào?",Bên trái,Bên phải,Cả hai bên,Không cần bật,B
+"Trong quá trình ghép xe dọc, khi nhìn qua vai sang phải thấy giữa hình ghép xe, người lái cần thực hiện thao tác nào tiếp theo?",Đánh hết lái sang trái,Đạp ga mạnh để tăng tốc,Kéo phanh tay,Đánh hết lái sang phải,A
+"Khi lùi xe ghép dọc, thao tác nào giúp xe lùi thẳng vào nơi đỗ?",Đánh hết lái sang trái liên tục,Trả lái sang phải khi lùi,Về số 0 rồi đạp ga,Kéo phanh tay khi xe đang lùi,B
+"Theo lưu ý trong bài ghép xe dọc, người lái cần quan sát như thế nào trong quá trình lùi xe?",Chỉ nhìn phía trước đầu xe,Chỉ quan sát qua camera lùi,Liên tục quan sát qua gương chiếu hậu và có thể quay đầu nhìn trực tiếp,Chỉ cần quan sát gương chiếu hậu bên trái,C
+"Khi lùi xe ghép ngang, lúc nhìn qua gương chiếu hậu bên phải thấy góc cuối cùng bên phải của vị trí đỗ xe, người lái cần làm gì?",Đánh lái sang phải để lùi sâu hơn,"Trả lái, đánh lái sang trái để lùi thẳng xe vào",Đạp hết ga để vào nhanh,Kéo phanh tay để dừng xe,B
+"Trong quá trình ghép xe ngang, khi xe đã đến gần đầu xe màu đen, người lái cần thực hiện thao tác nào?",Tiếp tục lùi nhanh,Cài số lùi và tăng ga,Dừng lại bằng cách đạp ly hợp hết hành trình và đạp phanh,Đánh hết lái sang phải,C
+"Sau khi xe song song với vỉa hè và tiến sát xe màu hồng trong bài ghép xe ngang, bước tiếp theo là gì?",Tắt máy ngay lập tức,Giữ ly hợp và phanh rồi cài số lùi (R),Đánh lái sang trái và tăng ga mạnh,Kéo phanh tay và rời khỏi xe,B
+"Theo phương pháp điều khiển xe ôtô chuyển động đúng hướng, đường thẳng dẫn hướng tưởng tượng được xác định bởi mấy điểm?",Hai điểm,Ba điểm,Bốn điểm,Năm điểm,B
+"Khi điều khiển xe ôtô quay vòng sang phải, người lái cần quay vô lăng theo chiều nào?",Ngược chiều kim đồng hồ,Theo chiều kim đồng hồ,Giữ nguyên vô lăng,Đánh lái sang trái trước rồi sang phải,B
+"Theo phương pháp căn đường, khi người lái thấy vị trí của mình lệch hẳn sang bên trái điểm chuẩn thì xe đang ở vị trí nào?",Ở giữa đường,Ở bên phải đường,Ở bên trái đường,Đang đi đúng tim đường,C
+"Khi tránh nhau trên mặt đường hẹp vào ban đêm, người lái xe nên sử dụng loại đèn nào?",Đèn pha,Đèn cảnh báo khẩn cấp,Đèn sương mù,Đèn cốt,D
+"Khi lên dốc thấp, người lái cần thực hiện thao tác nào để vượt dốc hiệu quả?",Về số thấp ngay từ đầu dốc,Tăng tốc độ trước khi đến chân dốc để lấy đà,Đạp phanh liên tục khi lên dốc,Tắt điều hòa để giảm tải động cơ,B
+"Khi xuống dốc dài, phương pháp phanh nào nên được sử dụng chủ yếu để tránh cháy má phanh?",Phanh tay,Phanh chân liên tục,Phanh động cơ,Tắt máy để giảm tốc,C
+"Khi dừng xe trên dốc lên không có bó vỉa, người lái cần đánh tay lái theo hướng nào để đảm bảo an toàn?",Đánh hết sang trái,Đánh sang phải,Giữ thẳng tay lái,Đánh luân phiên hai bên,B
+"Theo tài liệu, Python được sử dụng phổ biến cho lĩnh vực nào?",Thiết kế đồ họa và dựng phim,"Nghiên cứu và ứng dụng AI, Machine Learning",Quản trị cơ sở dữ liệu Oracle,Lập trình hệ điều hành nhúng,B
+"Trước khi làm thí nghiệm, học viên được yêu cầu cài đặt thư viện nào sau đây?","TensorFlow, OpenCV, Flask","NumPy, Pandas, Scikit-learn, Matplotlib","PyTorch, FastAPI, Selenium","Keras, BeautifulSoup, Django",B
+"Trong phần mô tả hồi quy logistic, hàm nào được sử dụng để phân loại nhị phân?",Hàm ReLU,Hàm Softmax,Hàm Sigmoid,Hàm Tanh,C
+"Theo công thức chuẩn hóa dữ liệu (Standardization), giá trị z được tính như thế nào?",z = x + μ / σ,z = (x − μ) / σ,z = x² − μ,z = σ / (x − μ),B
+Thuật toán nào được mô tả là dùng để gom cụm dữ liệu?,Naive Bayes,Support Vector Machine,Gradient Descent,K-Means Clustering,D
+"Trong mô hình SVM, mục tiêu chính là gì?",Tìm hàm sigmoid tối ưu,Giảm số chiều dữ liệu,Tìm siêu phẳng tối ưu,Chuẩn hóa dữ liệu đầu vào,C
+"Theo công thức đánh giá mô hình, chỉ số nào được tính bằng TP / (TP + FP)?",Accuracy,Recall,Precision,F1-score,C
+"Theo tài liệu, Python được sử dụng trong lĩnh vực năng lượng tái tạo để làm gì?",Thiết kế phần cứng vi xử lý,Phân tích dữ liệu vận hành và tối ưu hóa cấu hình hệ thống,Điều khiển giao thông thông minh,Phát triển trò chơi điện tử,B
+Một trong các kiến thức cần nắm vững trước khi làm thí nghiệm là gì?,Lập trình hệ điều hành Linux,Thiết kế mạch FPGA,Nguyên lý hoạt động của tấm pin quang điện (PV),Lập trình ứng dụng di động,C
+"Theo tài liệu, hệ MPPT được sử dụng với mục đích gì?",Giảm nhiệt độ của tấm pin mặt trời,Đảm bảo pin mặt trời luôn làm việc ở điểm MPP,Tăng dung lượng pin lưu trữ,Giảm điện áp đầu ra của hệ PV,B
+"Theo bảng định nghĩa đại lượng cơ bản, công suất PV được tính theo công thức nào?",Ppv = Gt + A + ηpv,Ppv = Gt / (A ⋅ ηpv),Ppv = Gt ⋅ A ⋅ ηpv,Ppv = ηpv / (Gt ⋅ A),C
+"Trong hệ thống PV + Pin, hệ thống được gọi là ổn định khi điều kiện nào được thỏa mãn?",Công suất PV luôn bằng công suất tải,"SOC luôn nằm trong khoảng [0, 1]",Nhiệt độ môi trường luôn không đổi,Pin luôn ở trạng thái sạc đầy,B
+"Theo bảng dữ liệu mô phỏng, tại thời điểm 12 giờ, công suất PV (Ppv) có giá trị bao nhiêu?",0.85 kW,1.55 kW,2.55 kW,3.80 kW,C
+"Trong phương trình cân bằng năng lượng của hệ PV + Pin, đại lượng nào được trừ đi?",Pload(t),Ppv(t),Pdischarge(t),Pcharge(t),D
+"Theo tài liệu, mạng nơ-ron nhân tạo (ANN) được xây dựng dựa trên ý tưởng nào?",Mô phỏng hoạt động của động cơ điện,Cách bộ não sinh học xử lý thông tin qua các nơ-ron liên kết,Mô hình truyền dữ liệu trong mạng Internet,Cấu trúc của cơ sở dữ liệu phân tán,B
+"Theo phần mục đích thí nghiệm, ANN được ứng dụng trong bài toán nào sau đây?",Thiết kế vi mạch điện tử,Nén dữ liệu mạng,"Phân loại, dự đoán, xử lý ảnh và ngôn ngữ",Quản lý bộ nhớ hệ điều hành,C
+"Theo mô tả trong tài liệu, hàm kích hoạt nào có đầu ra nằm trong khoảng (-1, 1)?",ReLU,Softmax,Sigmoid,Tanh,D
+Đặc điểm nào của ReLU được nhắc đến trong tài liệu?,"Nén giá trị về khoảng (0,1)",Giữ thành phần dương và triệt tiêu thành phần âm,Biến vector logit thành phân phối xác suất,Chuẩn hóa dữ liệu theo mini-batch,B
+Softmax được sử dụng để làm gì trong mạng nơ-ron?,Chuẩn hóa dữ liệu đầu vào,Tạo phân phối xác suất trên K lớp,Loại bỏ hiện tượng overfitting,Giảm số chiều dữ liệu,B
+"Theo tài liệu, Dropout được sử dụng với mục đích gì?",Tăng số lượng tham số của mạng,Chuẩn hóa dữ liệu đầu vào,Vô hiệu ngẫu nhiên các đơn vị trong huấn luyện để phá đồng thích nghi,Chuyển đầu ra thành xác suất,C
+Hàm loss nào được mô tả là thường dùng cho hồi quy và nhạy cảm với ngoại lai do bình phương sai số?,Cross-Entropy,Hinge Loss,Binary Cross-Entropy,MSE,D
+"Theo tài liệu, học tăng cường (RL) tập trung vào mục tiêu nào?",Tối ưu hóa cơ sở dữ liệu quan hệ,Huấn luyện agent đưa ra chuỗi hành động để tối đa hóa phần thưởng tích lũy,Phân loại dữ liệu bằng nhãn cố định,Giảm số chiều dữ liệu đầu vào,B
+"Theo tài liệu, môi trường RL chuẩn nào được đề cập để thực hành?",ImageNet và COCO,MNIST và CIFAR-10,"CartPole, MountainCar, Atari",PostgreSQL và MongoDB,C
+"Trong mô hình MDP của Reinforcement Learning, ký hiệu γ biểu diễn đại lượng nào?",Tập trạng thái,Phần thưởng tức thời,Xác suất chuyển trạng thái,Hệ số chiết khấu,D
+"Theo công thức Q-learning trong tài liệu, giá trị nào được sử dụng để cập nhật Q(s,a)?",Giá trị trung bình của mọi hành động,"Giá trị nhỏ nhất của Q(s',a')","Giá trị lớn nhất của Q(s',a')",Tổng phần thưởng của toàn bộ episode,C
+"Thuật toán nào được mô tả là học theo chính sách đang thực hiện, khác với Q-learning?",Policy Gradient,SARSA,Actor-Critic,PPO,B
+"Theo tài liệu, hàm Advantage dùng để đo lường điều gì?",Độ chính xác trung bình của mô hình,Mức độ tốt hơn trung bình của hành động tại một trạng thái,Tốc độ hội tụ của gradient,Số lượng trạng thái khả dụng,B
+"Theo mô tả về PPO trong tài liệu, mục đích của hàm mất mát PPO là gì?",Tăng số lượng hành động được chọn,Giảm kích thước không gian trạng thái,Giới hạn cập nhật chính sách để tránh bước nhảy quá lớn,"Chuẩn hóa phần thưởng về khoảng [0,1]",C
+"Theo tài liệu, mục đích chính của ontology trong xử lý ảnh là gì?",Giảm kích thước tập dữ liệu ảnh,Biểu diễn hình ảnh theo cách ngữ nghĩa để máy dễ hiểu và tìm kiếm dễ hơn,Tăng tốc độ huấn luyện mạng R-CNN,Chuyển đổi ảnh sang định dạng RDF/XML,B
+"Trong luận án, kỹ thuật nào được sử dụng để nhận diện và phân đoạn đối tượng từ ảnh gốc?",YOLOv5,ResNet,R-CNN,Transformer Vision,C
+"Theo tài liệu, Protégé có hạn chế gì khi quản lý ontology ảnh?",Không hỗ trợ lưu dưới dạng OWL,Không thể trực quan hóa ontology,Không quản lý hiệu quả cơ sở tri thức lớn và thường xuyên cập nhật,Không hỗ trợ RDF/XML,C
+"Phương pháp xây dựng ontology nào được mô tả là kết hợp giữa thủ công và tự động, có chuyên gia kiểm tra thông tin trước khi cập nhật?",Phương pháp phân cấp,Phương pháp thủ công,Phương pháp tự động,Phương pháp bán tự động,D
+"Trong mô hình xây dựng khung ontology bán tự động, định nghĩa lớp được lấy từ nguồn nào?",TensorFlow Hub,WordNet,ImageNet,OpenCV,B
+"Theo ví dụ truy vấn SPARQL, truy vấn nào được dùng để tìm các phân lớp con của Bird?",SELECT ?x WHERE { ?x rdf:type :Bird },SELECT ?x WHERE { ?x rdfs:subClassOf :Bird },SELECT ?x ?y WHERE { ?y rdf:type :Bird },SELECT DISTINCT ?x WHERE { ?x :Bird ?y },B
+"Theo bảng ví dụ truy vấn SPARQL, các phân lớp con của Bird bao gồm những lớp nào?","Duck, Eagle, Peacock, Swan","Car, Truck, Bus, Van","Dog, Cat, Tiger, Lion","Apple, Banana, Orange, Mango",A
+"Theo tài liệu, phần mềm được định nghĩa là gì?",Một thiết bị dùng để lưu trữ dữ liệu,Tập hợp các mạch điện tử điều khiển máy tính,Tập hợp các câu lệnh được viết bằng ngôn ngữ lập trình để thực hiện chức năng hoặc giải quyết bài toán,Một hệ thống mạng kết nối các máy tính,C
+"Theo tài liệu, phần mềm hệ thống có chức năng chính nào?",Soạn thảo văn bản và xử lý ảnh,Giúp vận hành phần cứng máy tính và hệ thống máy tính,Thiết kế đồ họa 3D,Quản lý mạng xã hội,B
+Chức năng nào sau đây thuộc về hệ điều hành?,Biên tập video chuyên nghiệp,"Quản lý, phân phối và thu hồi bộ nhớ",Thiết kế website thương mại điện tử,Dựng mô hình 3D,B
+"Theo tài liệu, hệ điều hành nào sau đây được liệt kê là hệ điều hành thông dụng?",TensorFlow,Photoshop,Ubuntu,Wireshark,C
+"Trong quy trình sản xuất phần mềm, công đoạn nào bao gồm việc xây dựng kịch bản kiểm thử và đánh giá khả năng gây lỗi?",Phân tích và thiết kế,"Lập trình, viết mã lệnh","Kiểm tra, thử nghiệm phần mềm","Phát hành, phân phối sản phẩm",C
+"Theo tài liệu, phần mềm nguồn mở là phần mềm có đặc điểm nào?",Chỉ được sử dụng nội bộ trong doanh nghiệp,Mã nguồn không được phép chỉnh sửa,"Mã nguồn được công bố và cho phép nghiên cứu, thay đổi, cải tiến",Bắt buộc phải trả phí bản quyền hàng năm,C
+"Theo bảng phần mềm nguồn mở thông dụng, phần mềm nào được mô tả là công cụ hỗ trợ bảo mật mạng nổi tiếng, trước đây có tên là Ethereal?",ClamWin,Wireshark,Filezilla,Notepad++,B
+"Theo tài liệu, thuật toán được mô tả là gì?",Một tập hợp thiết bị phần cứng xử lý dữ liệu,"Dãy thao tác rõ ràng, sắp xếp theo trình tự xác định để giải quyết bài toán",Một loại ngôn ngữ lập trình cấp thấp,Một phương pháp lưu trữ dữ liệu trên máy tính,B
+Đặc trưng nào của thuật toán yêu cầu thuật toán phải dừng sau một số hữu hạn bước thực hiện?,Tính hiệu quả,Tính xác định,Tính dừng,Tính phổ dụng,C
+"Trong lưu đồ thuật toán, hình thoi thường dùng để biểu diễn điều gì?",Điểm bắt đầu hoặc kết thúc,Thao tác nhập/xuất dữ liệu,Một hay nhiều chỉ thị cần thực hiện,Rẽ nhánh và kiểm tra điều kiện,D
+"Theo tài liệu, mã giả (Pseudo code) có đặc điểm nào?",Chỉ gồm ký tự 0 và 1,Gần giống ngôn ngữ tự nhiên nhưng sử dụng các cấu trúc chuẩn hóa,Phải biên dịch trực tiếp sang mã máy,Chỉ dùng để mô tả phần cứng máy tính,B
+"Theo tài liệu, chương trình viết bằng ngôn ngữ máy sử dụng bảng chữ cái nào?",Các ký tự ASCII mở rộng,Các chữ cái Latin,Chỉ gồm hai ký tự 0 và 1,Các ký hiệu toán học,C
+"Theo tài liệu, trình thông dịch (interpreter) hoạt động như thế nào?",Dịch toàn bộ chương trình sang tập tin EXE trước khi chạy,Biên dịch trực tiếp thành mã nhị phân phần cứng,Dịch từng lệnh sang mã máy và thực hiện ngay,Chỉ kiểm tra cú pháp mà không thực thi,C
+"Theo tài liệu, trình biên dịch (compiler) tạo ra loại tập tin nào trước khi liên kết thành EXE?",Tập tin .dll,Tập tin .obj,Tập tin .txt,Tập tin .sys,B
+"Theo tài liệu, mục tiêu chính của giai đoạn thiết kế và mô phỏng mô hình là gì?",Giảm chi phí sản xuất hàng loạt,Đảm bảo thiết kế khả thi và giảm rủi ro trước khi chế tạo thực tế,Tăng điện áp hệ thống lên 10 kV,Loại bỏ hoàn toàn việc thử nghiệm thực tế,B
+"Theo yêu cầu kỹ thuật của mô hình, thời gian đáp ứng của mạch phải nhỏ hơn bao nhiêu?",1 ms,5 ms,10 ms,20 ms,C
+Hệ thống trong mô hình được thiết kế trên cơ sở mạng điện nào?,Mạng điện 1 pha 220 VAC,Mạng điện 3 pha quy đổi từ 6 kV sang 400 VAC,Mạng điện 3 pha 35 kV,Mạng điện DC 48 V,B
+"Theo tài liệu, nguyên tắc phát hiện sự cố chạm đất dựa trên điều gì?",Đo nhiệt độ của dây dẫn,So sánh điện áp các pha với điểm trung tính hoặc với nhau,Đo công suất tiêu thụ của tải,Phân tích tần số sóng hài,B
+"Trong cấu trúc mạch phát hiện chạm đất, thành phần nào được dùng để tác động khi phát hiện sự cố?",Máy biến áp,Mạch dao động,Rơ le,Bộ nghịch lưu,C
+"Theo bảng kết quả thử nghiệm, với điện trở rò 27Ω, kết luận của hệ thống là gì?",Không phát hiện được,Đạt yêu cầu tuyệt đối,Tác động không chắc,Hệ thống bị quá tải,C
+"Theo phần nhận xét, đối với mạng quy đổi từ 6 kV sang 400 VAC, mạch có khả năng phát hiện pha rò với điện trở rò không quá bao nhiêu?",10Ω,20Ω,26.6Ω,40Ω,C
+"Theo bảng vật liệu cách điện, mica có độ bền điện nằm trong khoảng nào?",10-15 kV/mm,20-30 kV/mm,50-100 kV/mm,100-150 kV/mm,C
+"Theo tài liệu, mica có thể chịu được nhiệt độ khoảng bao nhiêu?",100°C,300°C,600°C,1200°C,C
+"Theo bảng vật liệu, mica được ứng dụng trong trường hợp nào sau đây?",Làm vỏ bọc dây dẫn,Dùng trong tụ điện và cách điện cho thiết bị nung nóng,Hàn gắn linh kiện điện tử,Làm chất chống ẩm cho động cơ,B
+"Theo bảng dữ liệu, vật liệu nào được mô tả có kích thước nhỏ nhưng điện dung lớn?",Bakêlit,Cao su,Gốm,Lụa cách điện,C
+"Theo tài liệu, cao su được sử dụng chủ yếu để làm gì?",Làm chất tẩm sấy biến áp,Làm vỏ bọc dây dẫn và tấm cách điện,Làm tụ điện công suất lớn,Làm vật liệu hàn gắn điện tử,B
+"Theo bảng vật liệu, lụa cách điện có độ bền điện nằm trong khoảng nào?",5-15 kV/mm,8-60 kV/mm,20-30 kV/mm,60-100 kV/mm,B
+"Theo tài liệu, nhựa thông được dùng để làm gì?",Làm sạch mối hàn và phối hợp với parafin làm chất tẩm sấy,Làm lõi dẫn điện cho cáp điện,Làm bộ phận phát nhiệt trong bàn là,Làm lớp phủ chống ăn mòn kim loại,A
+"Theo tài liệu, biểu đồ phân tán còn được gọi là loại đồ thị nào?",Đồ thị tròn,Đồ thị cột,Đồ thị X-Y,Đồ thị Pareto,C
+Biểu đồ phân tán được sử dụng chủ yếu để làm gì?,Phân loại dữ liệu theo nhóm,Xác định mối quan hệ giữa hai biến số,Biểu diễn cơ cấu phần trăm,Theo dõi tiến độ công việc,B
+"Theo tài liệu, khi các điểm dữ liệu nằm trong vùng elip nghiêng về bên phải thì hai đặc tính có mối quan hệ gì?",Mối quan hệ nghịch,Không có quan hệ,Mối quan hệ thuận,Mối quan hệ phi tuyến,C
+"Theo tài liệu, giá trị hệ số tương quan r gần với giá trị nào cho thấy mối quan hệ nghịch rất lớn?",r gần 0,r gần +1,r lớn hơn 0.5,r nhỏ hơn -0.85,D
+"Trong biểu đồ phân tán, trục hoành thường dùng để biểu thị điều gì?",Tần số xuất hiện,Biến số,Giá trị trung bình,Hệ số hồi quy,B
+"Theo bảng phân tích dạng biểu đồ phân tán, trường hợp nào biểu thị không có tương quan?",Các điểm tạo xu hướng tăng rõ rệt,Các điểm tạo xu hướng giảm rõ rệt,Các điểm phân bố ngẫu nhiên không theo xu hướng,Các điểm tạo thành đường cong,C
+"Theo tài liệu, nếu hệ số tương quan Pearson r = 0 thì điều đó có ý nghĩa gì?",Hai biến có quan hệ thuận hoàn toàn,Hai biến có quan hệ nghịch hoàn toàn,"Hai biến hoàn toàn độc lập, không có liên hệ",Hai biến có mối quan hệ phi tuyến mạnh,C
+"Theo tài liệu, trạng thái nào được xem là lý tưởng trong kiểm soát chất lượng sản phẩm?",Độ biến động vượt ngoài giới hạn cho phép,Giá trị trung bình lệch về giới hạn trên,Sự biến động sản phẩm nằm gọn trong giới hạn kỹ thuật và phân bố cân đối,Dung sai rộng hơn nhiều so với biến động thực tế,C
+"Trong trường hợp phân bố gần giới hạn (Hình 2), nguy cơ chính của quá trình sản xuất là gì?",Sản phẩm luôn đạt chuẩn tuyệt đối,Chỉ cần dao động nhỏ cũng có thể làm sản phẩm không đạt chuẩn,Chi phí kiểm tra chất lượng giảm mạnh,Dung sai kỹ thuật trở nên quá rộng,B
+"Theo tài liệu, công cụ nào được đề xuất để truy tìm nguyên nhân gây gia tăng dao động trong trường hợp sát nút (Hình 3)?",Biểu đồ Pareto,Histogram,Fishbone diagram (Ishikawa),Biểu đồ Gantt,C
+"Trong trường hợp dung sai rộng hơn biến động (Hình 4), tài liệu cho rằng điều gì có thể xảy ra?",Quy trình sản xuất bị mất kiểm soát hoàn toàn,Doanh nghiệp có nguy cơ đánh mất lợi thế cạnh tranh,Sản phẩm chắc chắn bị loại bỏ hàng loạt,Mọi sai lỗi đều được loại bỏ,B
+"Theo tài liệu, hệ thống nào có thể giúp phát hiện lệch chuẩn sớm trong trường hợp lệch phân bố (Hình 5)?",Hệ thống ERP,Hệ thống kiểm soát chất lượng theo thời gian thực,Hệ thống quản trị nhân sự,Hệ thống quản lý kho tự động,B
+"Trong trường hợp vượt ngoài giới hạn (Hình 6), hậu quả nào được nhắc đến trong tài liệu?",Chi phí bảo trì thiết bị giảm,Sản phẩm đồng đều hơn,"Sản phẩm bị loại bỏ, gây tổn thất tài chính và mất uy tín thương hiệu",Dung sai kỹ thuật được mở rộng tự động,C
+"Theo phần so sánh và tổng hợp, trạng thái nào yêu cầu cải tiến toàn diện?",Hình 1,Hình 2 và Hình 5,Hình 3 và Hình 4,Hình 6,D
+"Trong phần lệnh Sketch, công cụ nào được dùng để vẽ đoạn thẳng?",Spline,Arc,Line,Offset,C
+"Theo bảng công cụ Sketch, lệnh Circle Tangent được dùng để làm gì?",Vẽ đường tròn biết tâm và bán kính,Vẽ đường tròn tiếp xúc với 3 đối tượng,Vẽ cung tròn qua 3 điểm,Tạo đường tròn đồng tâm,B
+Lệnh Fillet trong Sketch có chức năng gì?,Tạo đối xứng đối tượng,Cắt bỏ một phần đối tượng,Vê tròn góc của Sketch,Tạo đường song song,C
+"Theo tài liệu, lệnh Offset được dùng để thực hiện thao tác nào?",Quay đối tượng Sketch,Tạo đường thẳng hoặc cong song song cách một khoảng cho trước,Tạo tâm lỗ,Chiếu hình học lên Sketch khác,B
+"Khi sử dụng lệnh Extend, nhấn phím Shift có tác dụng gì?",Chuyển sang chế độ Rotate,Tạm thời chuyển sang chế độ Trim,Tăng độ dài đối tượng gấp đôi,Ẩn các ràng buộc Sketch,B
+"Theo bảng ràng buộc Sketch, công cụ nào dùng để tạo ràng buộc song song?",=,>_,//,~,C
+Lệnh Project Cut Edges có chức năng gì?,Xóa toàn bộ cạnh trong Sketch,Chiếu tất cả các cạnh của chi tiết đã chọn lên mặt phẳng Sketch,Tạo đối tượng đối xứng,Tạo đường cong tiếp xúc,B
+"Theo tài liệu, công cụ Extrude được sử dụng để làm gì?",Quay biên dạng quanh một trục,Khoét rỗng chi tiết,Đùn một biên dạng theo phương vuông góc với phác thảo để tạo khối rắn hoặc mô hình mặt,Tạo đường ren trong hoặc ren ngoài,C
+Lệnh Revolve có chức năng gì trong tạo mô hình chi tiết?,Đùn biên dạng theo đường dẫn cong,Quay liên tục một biên dạng quanh một trục,Tạo một mặt làm việc,Tạo ma trận chữ nhật Feature,B
+"Theo tài liệu, công cụ Loft yêu cầu điều kiện nào?",Phải có ít nhất một mặt cong,Yêu cầu có nhiều mặt phẳng làm việc,Chỉ áp dụng cho mô hình mặt,Bắt buộc dùng với lệnh Revolve,B
+Công cụ nào được dùng để tạo đường ren trong hoặc ren ngoài chi tiết?,Shell,Coil,Thread,Sweep,C
+"Theo tài liệu, lệnh Circular Pattern dùng để làm gì?",Tạo một Feature theo đường tròn,Tạo đối xứng qua một mặt,Tạo mặt làm việc mới,Khoét rỗng chi tiết,A
+Công cụ Pan trong nhóm công cụ quan sát có chức năng gì?,Phóng to mô hình,Hiển thị toàn bộ chi tiết,Di chuyển vị trí mô hình trong cửa sổ đồ họa,Thay đổi hướng quan sát mô hình,C
+"Theo mô tả của công cụ Look at, thao tác này dùng để làm gì?",Ẩn toàn bộ đối tượng hình học,Thay đổi hướng quan sát vuông góc với đối tượng hình học được chọn,Tạo một mặt làm việc mới,Phóng to vùng được chọn,B
+"Theo tài liệu, Autodesk Inventor duy trì mối quan hệ như thế nào giữa mô hình và bản vẽ?",Chỉ mô hình cập nhật từ bản vẽ,Chỉ bản vẽ cập nhật từ mô hình,Mối quan hệ hai chiều giữa mô hình và bản vẽ,Mô hình và bản vẽ hoàn toàn độc lập,C
+"Khi tạo hình chiếu vuông góc trong Autodesk Inventor, người dùng cần sử dụng công cụ nào?",Section View,Projected View,Auxiliary View,Detail View,B
+"Theo hướng dẫn tạo hình cắt, sau khi vẽ xong đường cắt người dùng cần chọn lệnh nào trong menu để tiếp tục?",Create,Project,Continue,Finish,C
+"Trong Autodesk Inventor, công cụ nào được dùng để thêm một tờ giấy vẽ mới?",Base View,New Sheet,Draft View,Parts List,B
+"Theo tài liệu, lệnh Get Model Dimensions có chức năng gì?",Tạo bảng danh mục chi tiết,Hiện các kích thước mô hình song song với mặt phẳng chiếu trong bản vẽ,Tạo hình chiếu phụ,Tự động đánh số chi tiết,B
+Công cụ nào trong Drawing Annotation dùng để ghi ký hiệu độ nhám bề mặt?,Weld Symbol,Leader Text,Surface Texture Symbol,Center Mark,C
+"Theo bảng công cụ vẽ, Auto Balloon có chức năng gì?",Tạo bảng danh mục chi tiết,Tự động ghi số hiệu cho tất cả chi tiết trong cụm lắp,Tạo chú thích có đường dẫn,Tạo kích thước theo tọa độ,B
+"Theo tài liệu Public_521, chiều rộng các nét vẽ được chọn từ dãy kích thước nào sau đây?","0,1; 0,2; 0,4; 0,8; 1,2 mm","0,18; 0,25; 0,35; 0,5; 0,75; 1; 1,4; 2 mm","0,15; 0,3; 0,45; 0,6; 1,2 mm","0,2; 0,4; 0,6; 0,8; 1,6 mm",B
+"Theo bảng các loại nét vẽ, nét đứt mảnh được dùng để biểu diễn điều gì?",Đường đối xứng và đường trục,Đường bao thấy,Cạnh khuất và đường bao khuất,Đường cắt,C
+"Loại nét nào được sử dụng để biểu diễn đường đối xứng, đường trục và đường tâm?",Nét liền mảnh,Nét đứt đậm,Nét chấm gạch mảnh,Nét cắt đậm,C
+"Theo quy tắc ưu tiên khi các nét vẽ khác loại trùng nhau, nét nào có độ ưu tiên cao nhất?",Nét liền mảnh,Nét đứt,Nét chấm gạch mảnh,Nét liền đậm,D
+"Đối với đường tròn có đường kính nhỏ hơn 12 mm, tài liệu cho phép dùng loại nét nào thay cho nét chấm gạch mảnh?",Nét đứt mảnh,Nét liền mảnh,Nét cắt đậm,Nét hai chấm gạch mảnh,B
+"Theo quy định trong tài liệu, tỷ số chiều rộng giữa nét đậm và nét mảnh trên cùng bản vẽ không được nhỏ hơn bao nhiêu?",1:1,"1,5:1",2:1,3:1,C
+"Trong ví dụ các loại nét vẽ, số thứ tự nào tương ứng với nét lượn sóng?",2,3,5,6,B
+"Theo tài liệu Public_524, lò xo được sử dụng với mục đích nào sau đây?",Dẫn điện và truyền tín hiệu,"Dự trữ năng lượng, giảm xóc, ép chặt và đo lực",Làm kín các bề mặt tiếp xúc,Truyền nhiệt trong hệ thống cơ khí,B
+"Theo mô tả, lò xo xoắn ốc được chia thành những loại nào dựa theo tác dụng của lò xo?","Lò xo trụ, lò xo nón và lò xo đĩa","Lò xo nén, lò xo xoắn và lò xo kéo","Lò xo phẳng, lò xo lá và lò xo đĩa","Lò xo thép, lò xo đồng và lò xo hợp kim",B
+Lò xo xoắn phẳng thường được dùng làm gì?,Giảm xóc cho ô tô,Truyền động quay giữa hai trục,Dây cót,Ép chặt chi tiết máy,C
+"Theo quy ước vẽ lò xo xoắn trụ hoặc nón có số vòng xoắn lớn hơn 4 vòng, người ta quy định như thế nào?",Vẽ đầy đủ tất cả các vòng xoắn,"Chỉ vẽ một hoặc hai vòng xoắn ở mỗi đầu, các vòng còn lại dùng nét chấm gạch",Chỉ vẽ mặt cắt của lò xo,Bỏ hoàn toàn các vòng xoắn ở giữa,B
+"Đối với lò xo có đường kính dây bằng 2 mm hoặc nhỏ hơn, tài liệu quy định vẽ như thế nào?",Vẽ bằng nét đứt mảnh,Vẽ bằng nét chấm gạch,Vẽ bằng nét cơ bản và tô đen mặt cắt,Chỉ vẽ đường tâm của lò xo,C
+"Theo tài liệu Public_524, bánh răng côn được dùng để truyền chuyển động giữa các trục như thế nào?",Hai trục song song,Hai trục đồng tâm,Hai trục vuông góc,Hai trục chéo nhau,C
+"Theo tài liệu Public_524, ưu điểm nào của truyền động bánh răng cho phép hệ thống hoạt động ổn định?",Có nhiều tiếng ồn khi vận tốc lớn,Tỷ số truyền không thay đổi,Chế tạo tương đối đơn giản,Không yêu cầu độ chính xác cao,B
+"Theo tài liệu Publi_566, Microsoft PowerPoint là ứng dụng hỗ trợ chủ yếu cho công việc nào?",Quản lý cơ sở dữ liệu,Thiết kế đồ họa 3D,Trình chiếu và trình diễn,Lập trình ứng dụng web,C
+"Trong PowerPoint 2016, chủ đề nào sau đây được nhắc đến như một nhóm chủ đề hỗ trợ sẵn?",Engineering,Business,Programming,Finance Report,B
+"Theo hướng dẫn khởi động PowerPoint, tổ hợp phím nào được dùng để mở hộp thoại Run?",Ctrl + R,Alt + R,Windows + R,Shift + R,C
+"Để tạo nhanh một Slide mới trong PowerPoint, người dùng có thể sử dụng tổ hợp phím nào?",Ctrl + N,Ctrl + M,Ctrl + S,Ctrl + P,B
+"Theo tài liệu, tại mỗi thời điểm trình chiếu PowerPoint sẽ hiển thị bao nhiêu Slide?",Hai Slide,Ba Slide,Toàn bộ Slide,Một Slide,D
+"Theo hướng dẫn trình diễn Slide, phím nào được sử dụng để bắt đầu trình chiếu nhanh?",F1,F3,F5,F9,C
+"Khi đang trình diễn Slide, người dùng cần nhấn phím nào để thoát khỏi màn hình trình diễn và quay lại màn hình làm việc?",Enter,Esc,Delete,Tab,B
+"Theo tài liệu Public_574, linh kiện điện tử được hiểu là gì?",Thiết bị dùng để lưu trữ dữ liệu số,Những bộ phận điện tử cơ bản có thể là một hoặc nhiều thành phần kết nối với nhau,Một loại phần mềm điều khiển mạch điện,Thiết bị chỉ dùng trong hệ thống công nghiệp,B
+"Theo tài liệu Public_574, vai trò chính của linh kiện điện tử là gì?",Làm tăng kích thước thiết bị điện,Giúp cải thiện khả năng hoạt động và đảm bảo máy móc chạy hiệu suất tối ưu,Giảm điện áp xuống mức cố định,Chỉ dùng để trang trí bảng mạch,B
+"Theo tài liệu Public_574, linh kiện điện tử được phân thành bao nhiêu dòng chính?",2 dòng,3 dòng,4 dòng,5 dòng,B
+Loại linh kiện nào sau đây được xếp vào nhóm linh kiện điện cơ?,Điện trở,Tụ điện,Cầu chì,Diode,C
+"Theo tài liệu Public_574, linh kiện bị động có đặc điểm nào?",Có khả năng đưa dòng điện vào mạch,Không truyền điện cho mạch nếu không có nguồn nối với mạch xoay chiều,Chỉ hoạt động với nguồn điện một chiều,Luôn cần vi xử lý điều khiển,B
+"Theo tài liệu Public_574, transistor thường được sử dụng với chức năng nào?",Lưu trữ dữ liệu dài hạn,Khuếch đại hoặc khóa điện tử,Biến đổi ánh sáng thành nhiệt,Tạo cách điện cho mạch,B
+"Theo tài liệu Public_574, cuộn cảm tạo ra hiện tượng gì khi có dòng điện chạy qua?",Phóng điện,Hiệu ứng quang điện,Từ trường,Nhiệt lượng lớn,C
+"Theo tài liệu Public_578, tỷ trọng tiêu thụ năng lượng tái tạo trong cơ cấu tổng tiêu thụ năng lượng cuối cùng đã tăng từ bao nhiêu năm 2010 lên bao nhiêu năm 2019?","Từ 5,1% lên 7,6%","Từ 7,1% lên 8,6%","Từ 8,6% lên 10,2%","Từ 6,3% lên 9,1%",B
+"Theo tài liệu Public_578, tỷ lệ tiêu dùng điện năng lượng tái tạo năm 2019 đạt bao nhiêu?","17,2%","23,2%","29,1%","31,4%",C
+"Theo điều tra năm 2020, vùng Trung du miền núi phía Bắc có bao nhiêu thôn chưa có điện?",457 thôn,547 thôn,619 thôn,682 thôn,B
+"Theo bảng số liệu, tỉnh nào trong vùng Trung du miền núi phía Bắc có số thôn chưa có điện cao nhất?",Sơn La,Hà Giang,Điện Biên,Cao Bằng,C
+"Theo tài liệu Public_578, một trong những nguyên nhân hạn chế việc phát triển sử dụng thiết bị năng lượng mặt trời tại vùng TDMNPB là gì?",Nguồn điện lưới quốc gia quá dư thừa,Người dân thiếu cơ hội tiếp cận và tìm hiểu công nghệ năng lượng mặt trời,Không có doanh nghiệp cung cấp thiết bị,Thiếu hoàn toàn tiềm năng thủy điện nhỏ,B
+"Theo tài liệu Public_578, cơ chế khuyến khích phát triển điện mặt trời được ban hành theo quyết định nào?",Quyết định số 24/2014/QĐ-TTg,Quyết định số 39/2018/QĐ-TTg,Quyết định số 11/2017/QĐ-TTg,Quyết định số 37/2011/QĐ-TTg,C
+"Theo kết quả khảo sát chuyên gia, loại năng lượng tái tạo nào được đánh giá có khả năng tiếp cận khá với giá trị trung bình 3.27?",Năng lượng gió,Năng lượng mặt trời,Thủy điện nhỏ,Năng lượng sinh khối,D
+Đặc tính nào được dùng để đánh giá khả năng chịu điện áp của vật liệu cách điện mà không bị đánh thủng?,Độ bền về điện,Hằng số điện môi,Góc tổn hao,Tỷ trọng,A
+"Vật liệu nào có điện trở suất khoảng 0,0175 Wmm²/m và chủ yếu được dùng làm dây dẫn?",Nhôm,Đồng đỏ hay đồng kỹ thuật,Thau,Sắt,B
+Loại vật liệu dẫn điện nào thường được dùng làm dây điện trở nung nóng?,Maganin,Contantan,Niken - Crôm,Thiếc,C
+Hợp kim chất hàn được mô tả gồm 60% thiếc và 40% chì có đặc điểm gì?,Có nhiệt độ nóng chảy cao hơn từng kim loại thành phần,Có nhiệt độ nóng chảy thấp hơn từng kim loại thiếc và chì,Chỉ dùng cho dây dẫn công suất lớn,Không thích hợp để hàn linh kiện điện tử,B
+Vật liệu cách điện nào có khả năng chịu nhiệt độ khoảng 1500-1700°C và thường dùng làm giá đỡ cách điện cho đường dây dẫn?,Thuỷ tinh,Mi ca,Sứ,Bakêlit,C
+Vật liệu nào được dùng để làm vỏ bọc dây dẫn và làm tấm cách điện?,Cao su,Lụa cách điện,Pretspan,Paraphin,A
+"Trong các vật liệu dẫn điện dưới đây, vật liệu nào có nhiệt độ nóng chảy cao nhất?",Sắt,Niken - Crôm,Nicken,Đồng đỏ,A
+Doanh nghiệp phân tích tình hình biến động tài sản cố định bằng cách nào?,So sánh số cuối kỳ và số đầu năm về nguyên giá và tỷ trọng từng loại tài sản cố định,So sánh doanh thu với chi phí bảo trì tài sản cố định,Đánh giá số lượng lao động sử dụng tài sản cố định,So sánh lợi nhuận với tổng chi phí sản xuất,A
+Tài sản cố định dùng trong sản xuất của doanh nghiệp đã tăng bao nhiêu phần trăm vào cuối năm?,"+32,0%","+45,2%","+12,2%","+88,6%",B
+Khoản mục nào có mức tăng tỷ lệ lớn nhất trong bảng phân tích biến động tài sản cố định?,Tài sản cố định dùng cho bán hàng,Tài sản cố định dùng ngoài sản xuất,Phương tiện kỹ thuật,Tài sản cố định cho quản lý,C
+Hệ số hao mòn tài sản cố định được xác định bằng công thức nào?,H = NG / HM,H = HM / NG,H = Gs / Ng,H = Ng / Gs,B
+Nếu hệ số hao mòn tài sản cố định càng gần 1 thì điều đó cho thấy điều gì?,Tài sản cố định còn rất mới,Doanh nghiệp sử dụng tài sản cố định rất hiệu quả,Tài sản cố định của doanh nghiệp càng cũ và cần đổi mới,Nguyên giá tài sản cố định đang giảm mạnh,C
+Hiệu suất sử dụng tài sản cố định năm nay của doanh nghiệp là bao nhiêu?,"65,2","68,4","77,292","12,9",B
+"Theo phân tích mức độ ảnh hưởng của các nhân tố, hiệu suất sử dụng tài sản cố định đã làm giá trị sản xuất tăng thêm bao nhiêu triệu đồng?",5.216 triệu đồng,8.832 triệu đồng,3.616 triệu đồng,1.130 triệu đồng,C
+STEM là thuật ngữ viết tắt của những lĩnh vực nào?,"Science, Technology, Engineering và Mathematics","Science, Teaching, Economics và Mathematics","Social, Technology, Engineering và Management","Science, Technology, Environment và Mechanics",A
+Giáo dục STEM nhằm mục tiêu chính nào đối với học sinh?,Trang bị kỹ năng ghi nhớ lý thuyết thuần túy,Phát triển năng lực phát hiện và giải quyết vấn đề gắn với thực tiễn,Tăng thời lượng học các môn xã hội,Thay thế hoàn toàn phương pháp dạy học truyền thống,B
+Quy trình xây dựng bài giảng điện tử E-learning gồm bao nhiêu bước?,4 bước,5 bước,6 bước,7 bước,C
+Ưu điểm nào của E-learning cho phép học viên lựa chọn phương pháp học phù hợp với thời gian biểu cá nhân?,Nội dung học tập được cập nhật thường xuyên,Hệ thống hỗ trợ học theo khả năng cá nhân và linh động thời gian,Giáo viên dễ dàng theo dõi học viên,Giảm tổng thời gian cần thiết cho việc học,B
+"Trong thực nghiệm sư phạm, có bao nhiêu học sinh lớp thực nghiệm đạt mức điểm từ 8 đến 8,7?",11 học sinh,13 học sinh,41 học sinh,54 học sinh,C
+Giá trị trung bình điểm kiểm tra của lớp thực nghiệm (TN) là bao nhiêu?,"6,192","7,804","1,2199","0,543",B
+"Theo kết quả phân tích thực nghiệm, giá trị p của phép kiểm chứng t-test là bao nhiêu?","1,20.10-5","0,543","3,6.10-7","0,05",C
+"Theo mô hình 5Vs của Big Data do Gartner đưa ra năm 2014, chữ V nào thể hiện sự gia tăng về tốc độ xử lý dữ liệu?",Volume,Velocity,Variety,Veracity,B
+"Theo IBM, khoảng bao nhiêu phần trăm dữ liệu trên thế giới là dữ liệu phi cấu trúc hoặc bán cấu trúc?",20%,40%,60%,80%,D
+Hadoop Distributed File System (HDFS) có đặc điểm nào sau đây?,Mỗi file chỉ được lưu trên một node duy nhất,Mỗi block của file được lưu thành nhiều bản sao để đảm bảo an toàn dữ liệu,Chỉ hỗ trợ dữ liệu có cấu trúc,Không sử dụng block ID để nhận diện dữ liệu,B
+"Trong MapReduce, giai đoạn nào thực hiện việc gom nhóm tất cả value theo intermediate key?",Map,Shuffle,Reduce,Split,C
+"Trong dữ liệu COVID-19, trường nào dùng để lưu số cá nhân từ chối tiêm vắc xin?",UnknownDose,SecondDose,FirstDoseRefused,Denominator,C
+Kết quả truy vấn tỷ lệ tiêm chủng cho quốc gia DK là bao nhiêu?,75.7%,86.66%,87.99%,92.28%,C
+"Trong thực nghiệm so sánh SQL Server và Hortonworks Sandbox, ở lần xử lý thứ 31 điều gì xảy ra với SQL Server?",Cho kết quả sau 18m 50s,Dung lượng lưu trữ vượt 30 GB,Báo lỗi khi xử lý dữ liệu,Có thời gian xử lý nhanh hơn HWS,C
+Khu công nghiệp nào tại Dĩ An được đề cập là đã có hệ thống thu gom và nhà máy xử lý nước thải?,Khu công nghiệp VSIP 1,Khu công nghiệp Sóng Thần 1 và 2,Khu công nghiệp Mỹ Phước,Khu công nghiệp Nam Tân Uyên,B
+Phạm vi dự án III được đề xuất có tổng diện tích bao nhiêu hecta?,1.200 ha,1.600 ha,2.000 ha,6.010 ha,B
+"Theo kế hoạch năm 2020, công suất của nhà máy xử lý nước thải thuộc dự án III là bao nhiêu?",10.000 m3/ngày,15.000 m3/ngày,30.000 m3/ngày,60.000 m3/ngày,B
+Khu vực nào được dự báo có số dân được thu gom nước thải vào năm 2035 cao nhất?,An Bình,Dĩ An,Đông Hòa,Tân Đông Hiệp,B
+"Theo dự báo năm 2035, tổng lưu lượng nước thải của dự án III là bao nhiêu m3/ngày?",14.687 m3/ngày,32.217 m3/ngày,60.311 m3/ngày,89.000 m3/ngày,C
+Chi phí xây dựng hệ thống ống trong dự án được dự toán khoảng bao nhiêu?,400.285.000.000 VND,224.410.522.000 VND,1.179.647.300.000 VND,160.293.230.000 VND,C
+Nguồn vốn JICA chiếm bao nhiêu phần trăm tổng mức đầu tư của dự án?,60%,70%,85%,90%,C
+"Năm 2017, tốc độ tăng trưởng GRDP của tỉnh Bắc Giang đạt bao nhiêu phần trăm?","6,81%","10,5%","13,3%","20,6%",C
+"Đến năm 2025, dân số đô thị toàn tỉnh Bắc Giang được dự báo khoảng bao nhiêu người?",371.800 người,659.500 người,857.700 người,1.880.000 người,B
+"Theo tài liệu, tỷ lệ rác thải sinh hoạt được thu gom tại các đô thị của tỉnh đạt khoảng bao nhiêu?","80,3%","83,5%","92,2%","95,8%",D
+Công nghệ nào được mô tả là cốt lõi để sử dụng và phát triển Internet vạn vật (IoT) và trí tuệ nhân tạo (AI)?,Điện toán đám mây,Blockchain,Dữ liệu lớn (Big Data),Mạng 5G,C
+"Theo đánh giá hiện trạng, Bắc Giang đã cung cấp bao nhiêu dịch vụ công mức độ 3 phục vụ người dân và doanh nghiệp?",230 dịch vụ,667 dịch vụ,1208 dịch vụ,1850 dịch vụ,B
+"Trong các điểm yếu được nêu, vấn đề nào được cho là còn hạn chế trong triển khai ứng dụng công nghệ thông tin tại các cơ quan, đơn vị?",Thiếu mạng Internet tốc độ cao,Thiếu các phần mềm chuyên ngành và cơ sở dữ liệu liên thông,Không có cổng thông tin điện tử,Chưa triển khai chữ ký số,B
+"Theo bộ chỉ tiêu đề xuất cho tỉnh Bắc Giang, mục tiêu tỷ lệ hồ sơ hành chính nộp qua mạng của tổ chức và người dân là bao nhiêu?","0,5%",10%,30%,50%,B
+Khi vật liệu SAS: Eu3+ được thiêu kết ở 1250°C trong bao lâu thì chỉ còn tồn tại pha Sr2Al2SiO7?,30 min,60 min,90 min,120 min,D
+"Trong khảo sát ảnh hưởng của hàm lượng B2O3, vật liệu chỉ tồn tại một pha Sr2Al2SiO7 khi hàm lượng chất chảy nằm trong khoảng nào?",1–2 %kl sản phẩm,2–3 %kl sản phẩm,4–5 %kl sản phẩm,6–7 %kl sản phẩm,C
+Cấu trúc tinh thể của hệ vật liệu Ca2Al2SiO7 được xác định thuộc pha nào?,Lập phương (Cubic),Tứ giác (Tetragonal),Lục giác (Hexagonal),Trực thoi (Orthorhombic),B
+"Trong bảng các hệ vật liệu chế tạo, hệ nào dưới đây được nghiên cứu với nồng độ từ 0,25 đến 4,0 %mol?",Eu3+ (x CAS: %mol),Sm3+ (x CAS: %mol),Ce3+ (x CAS: %mol),CAS: Tb3+ (x %mol),C
+"Theo kết luận chương 2, nhiệt độ thiêu kết tối ưu để chế tạo hệ vật liệu CAS là bao nhiêu?",1200°C,1250°C,1280°C,1350°C,C
+Quy trình chế tạo vật liệu SAS của nghiên cứu đã giảm được bao nhiêu độ C nhiệt độ thiêu kết so với công bố của nhóm Jadhaw năm 2017?,50°C,100°C,150°C,200°C,C
+"Trong luận án, các hệ vật liệu CAS: RE3+ được nghiên cứu với các nguyên tố đất hiếm nào?","La, Nd, Pr, Gd, Yb","Sm, Dy, Ce, Tb, Eu","Er, Ho, Tm, Lu, Y","Ce, Yb, Sc, In, Ga",B
+Louis Pasteur phát hiện nấm men là tác nhân gây lên men rượu vào năm nào?,1780,1810,1836,1854,D
+"Đầu những năm 1980, dạng nấm men nào được nghiên cứu và sử dụng phổ biến trong sản xuất rượu vang?",Nấm men lỏng tự nhiên,Nấm men dạng kem,Sinh khối nấm men S. cerevisiae dạng khô,Nấm men nuôi trên môi trường thạch,C
+Kích thước tế bào của nấm men Saccharomyces sử dụng trong công nghiệp thường nằm trong khoảng nào?,(1 - 2) × (2 - 4) μm,(3 - 5) × (5 - 10) μm,(8 - 10) × (12 - 15) μm,(15 - 20) × (20 - 25) μm,B
+"Trong thành phần các chất hữu cơ cơ bản của tế bào nấm men, protein thô chiếm khoảng bao nhiêu phần trăm?",30-37%,42-46%,50-52%,6-8%,C
+Giống dứa nào trong bảng thành phần hóa học có hàm lượng saccharose cao nhất?,Dứa Long An,Dứa Victoria nhập nội,Dứa hoa Vĩnh Phú,Dứa hoa Tuyên Quang,D
+Độ rượu của brandy thường nằm trong khoảng nào?,10 – 20% V/V ethanol,20 – 35% V/V ethanol,40 – 60% V/V ethanol,65 – 80% V/V ethanol,C
+"Theo bảng chỉ tiêu hóa học TCVN 7043:2013, hàm lượng methanol tối đa cho phép trong rượu chưng cất là bao nhiêu?",200 mg/l cồn,500 mg/l cồn,1000 mg/l cồn,2000 mg/l cồn,D
+"Trong nghiên cứu, nước ép dứa được bổ sung bao nhiêu g/l saccharose để đạt đường tổng?",100 g/l,200 g/l,300 g/l,400 g/l,C
+Môi trường Hansen rắn dùng để phân lập và giữ giống nấm men có pH bao nhiêu?,"4,0","5,0","5,5","6,5",C
+Chủng nấm men được tuyển chọn trong nghiên cứu có đặc tính nổi bật nào?,Khả năng tạo màu cao,Lên men mạnh và hương thơm đặc trưng,Sinh trưởng ở nhiệt độ thấp,Khả năng tạo methanol cao,B
+Thiết bị nào được sử dụng để phân tích sắc kí khí khối phổ trong nghiên cứu?,UV-VIS 1800 Shimadzu,Gel Doc XR+,QP2010 Shimadzu,T100 Thermal Cycler,C
+"Trong bảng mẫu thử xác định furfurol, bình nào chứa 8,0 ml dung dịch furfurol chuẩn?",Bình 3,Bình 4,Bình 5,Bình 6,D
+Hiệu suất lên men được tính bằng công thức nào?,Lượng rượu lý thuyết / Lượng rượu thực tế × 100,Lượng đường thực tế / Lượng đường lý thuyết × 100,Lượng rượu thực tế / Lượng rượu lý thuyết × 100,Lượng ethanol tạo thành / Tổng acid × 100,C
+"Theo tiêu chuẩn cảm quan TCVN 3217-79, sản phẩm có mùi “Hòa hợp, thơm dịu, hoàn toàn đặc trưng cho sản phẩm” được chấm bao nhiêu điểm?",3 điểm,4 điểm,5 điểm,0 điểm,C
+"Theo số liệu nguồn cung cấp, hệ số công suất trung bình trên thanh góp cao áp của nguồn điện bằng bao nhiêu?","0,75","0,80","0,85","0,90",C
+Phụ tải nào có công suất cực đại lớn nhất trong các hộ tiêu thụ?,Phụ tải 1,Phụ tải 3,Phụ tải 4,Phụ tải 6,B
+"Điện áp định mức lưới điện hạ áp của các hộ tiêu thụ 4, 5 và 6 là bao nhiêu?",6 kV,10 kV,22 kV,35 kV,B
+"Trong chế độ MAX, phụ tải 4 có công suất phản kháng Q bằng bao nhiêu MVAr?","12,10805262 MVAr","13,56101894 MVAr","16,95127367 MVAr","8,717797887 MVAr",B
+"Theo nội dung cân bằng công suất phản kháng, hệ thống điện có cần bù công suất phản kháng không?",Cần bù toàn bộ phụ tải,Chỉ cần bù trong chế độ sự cố,Không cần bù vì nguồn cung cấp đủ công suất phản kháng,Chỉ cần bù cho phụ tải loại I,C
+"Đối với phụ tải loại I, phương án nối dây phải đáp ứng yêu cầu nào?",Chỉ cần một đường dây để giảm chi phí,Cho phép gián đoạn điện ngắn hạn,Có đường dây dự phòng như hai đường dây song song hoặc mạch vòng kín,Chỉ sử dụng lưới điện hạ áp 10 kV,C
+Loại dây ACSR nào trong bảng thông số có điện trở r0 nhỏ nhất?,ACSR-70,ACSR-95,ACSR-185,ACSR-240,D
+"Đến tháng 5/2020, số thuê bao băng rộng di động trên 100 dân đạt bao nhiêu?",55.39 thuê bao/100 dân,62.83 thuê bao/100 dân,67.71 thuê bao/100 dân,47.90 thuê bao/100 dân,C
+"Tính đến 30/6/2020, tên miền quốc gia "".vn"" đạt khoảng bao nhiêu tên miền?",412.700 tên miền,512.700 tên miền,612.700 tên miền,712.700 tên miền,B
+"Theo số liệu năm 2019, tổng doanh thu toàn ngành viễn thông đạt mức nào?","369,7 nghìn tỷ đồng","469,7 nghìn tỷ đồng","569,7 nghìn tỷ đồng","669,7 nghìn tỷ đồng",B
+Doanh nghiệp nào được cấp phép thử nghiệm mạng và dịch vụ viễn thông sử dụng công nghệ 5G?,"Viettel, Mobifone và VNPT","FPT Telecom, CMC Telecom và SCTV","Vietnamobile, Gtel và NetNam","VNPost, EVN Telecom và S-Fone",A
+"Năm 2017, chỉ số HHI của thị trường di động Việt Nam xấp xỉ bao nhiêu?",2600,3000,3600,4200,C
+"Đến tháng 6/2020, tỷ lệ ứng dụng IPv6 trên mạng Internet Việt Nam đạt mức nào?",22%,34%,44%,54%,C
+Một trong những hạn chế được nêu về cơ cấu doanh thu dịch vụ viễn thông là gì?,Doanh thu từ dữ liệu đã vượt 90% tổng doanh thu,Doanh thu thoại và tin nhắn vẫn chiếm khoảng 70% tổng doanh thu dịch vụ viễn thông,Doanh thu từ dịch vụ vệ tinh giảm xuống dưới 5%,Doanh thu từ Mobile Money chiếm tỷ trọng lớn nhất thị trường,B
+Một giải pháp được đánh giá là đạt đối với tính năng có nhiều tiêu chí kỹ thuật khi nào?,Khi đạt ít nhất 50% tiêu chí kỹ thuật,"Khi đạt tất cả các tiêu chí, chỉ tiêu kỹ thuật",Khi đạt các tiêu chí quan trọng do người dùng lựa chọn,Khi đạt tối thiểu một tiêu chí kỹ thuật,B
+Tính năng triển khai máy ảo có cấu hình cao yêu cầu hỗ trợ tối thiểu bao nhiêu vCPU và RAM?,32 vCPU và 64 GB RAM,64 vCPU và 128 GB RAM,96 vCPU và 256 GB RAM,128 vCPU và 512 GB RAM,B
+Giải pháp tạo máy ảo mới cần hỗ trợ những giao diện nào?,Chỉ giao diện GUI và CLI,"GUI, CLI và API tích hợp với hệ thống khác",CLI và giao diện web portal,GUI và SSH console,B
+Tính năng sao lưu/khôi phục máy ảo yêu cầu cho phép lưu tối thiểu bao nhiêu phiên bản khác nhau của một máy ảo?,03 phiên bản,05 phiên bản,07 phiên bản,10 phiên bản,C
+Tính năng hỗ trợ khả năng dự phòng cho mạng mà máy ảo kết nối đến phải hoạt động ở chế độ nào để cải thiện băng thông và đảm bảo tính sẵn sàng?,Passive-passive hoặc failover-only,Active-active hoặc active-standby,Read-only hoặc read-write,Clustered hoặc isolated,B
+"Khi triển khai máy ảo sử dụng công nghệ tăng tốc (accelerator), giải pháp cần hỗ trợ công nghệ nào sau đây?",PCI Passthrough và SR-IOV,Only Hyper-V Replica,RAID 0 và RAID 1,NAT Traversal và GRE Tunnel,A
+Tính năng tích hợp các dịch vụ lưu trữ yêu cầu hỗ trợ những loại lưu trữ nào?,Chỉ block storage,Block storage và tape storage,"Block storage, object storage và file storage",Object storage và cold archive storage,C
+Website được yêu cầu hỗ trợ ngôn ngữ nào trong phần yêu cầu về nội dung thông tin?,Tiếng Việt và Tiếng Anh,Chỉ Tiếng Anh,Tiếng Việt,"Tiếng Việt, Nhật và Hàn",C
+Module thanh toán của website cho phép khách hàng thanh toán qua cổng nào?,Stripe và Payoneer,"Bảo Kim, Ngân Lượng và PayPal",Momo và ZaloPay,VNPay và Apple Pay,B
+"Theo yêu cầu về bảo mật và hiệu suất, website cần đáp ứng điều gì?",Chỉ hoạt động tốt trên thiết bị di động,Tốc độ truy cập cao và hỗ trợ lượng truy cập lớn cùng lúc,Bắt buộc dùng công nghệ điện toán đám mây,Giới hạn số lượng người dùng truy cập đồng thời,B
+Công nghệ nào được sử dụng để thiết kế website theo tài liệu?,ASP.NET và SQL Server,Java Spring và Oracle,PHP kết hợp Smarty và MySQL,Python Django và PostgreSQL,C
+Chi phí của gói website Pro là bao nhiêu?,"12,000,000 VNĐ","18,000,000 VNĐ","23,800,000 VNĐ","4,800,000 VNĐ",A
+"Trong kế hoạch tiến độ, giai đoạn coding và xây dựng database theo yêu cầu kéo dài bao nhiêu ngày?",07 ngày,10 ngày,20 ngày,30 ngày,C
+Dịch vụ hậu mãi của hosting bao gồm dung lượng và băng thông nào?,"1,000 MB và 50 GB","2,000 MB và 100 GB","5,000 MB và 200 GB","10,000 MB và không giới hạn băng thông",B
+Quy trình quản lý lỗ hổng rà quét bao gồm hoạt động nào sau đây?,Rà quét lỗ hổng,Triển khai hệ thống ERP,Đào tạo nhân sự nội bộ,Mã hóa cơ sở dữ liệu,A
+"Trong quy trình quản lý lỗ hổng pentest, hoạt động nào được thực hiện trước khi đóng request?",Lập biên bản ATTT,Mua thiết bị mạng,Khởi tạo tài khoản người dùng,Sao lưu dữ liệu định kỳ,A
+"Theo quy trình cập nhật bản vá, bước nào diễn ra ngay sau khi thông báo các bên liên quan?",Tiến hành cập nhật bản vá,Lập báo cáo và lưu thông tin,Lập kế hoạch cập nhật bản vá,Đóng request,C
+"Trong quy trình quản lý lỗ hổng rà quét, vai trò nào chịu trách nhiệm phê duyệt kế hoạch xử lý lỗ hổng?",Team ATTT,SO,Ban lãnh đạo,Chăm sóc khách hàng,C
+"Theo tài liệu, lỗ hổng mức NGHIÊM TRỌNG có thể dẫn đến hậu quả nào?",Chỉ ảnh hưởng nhỏ đến giao diện người dùng,Có khả năng gây thiệt hại lớn và tạo điều kiện cho tin tặc chiếm quyền điều khiển hệ thống,Không có khả năng gây mất dữ liệu,Chỉ làm chậm tốc độ truy cập mạng nội bộ,B
+Đầu vào của quy trình cập nhật bản vá là gì?,Khi có thông tin về bản vá cần cập nhật,Khi người dùng yêu cầu đổi mật khẩu,Khi hệ thống hết dung lượng lưu trữ,Khi phát sinh lỗi phần cứng máy chủ,A
+"Trong quy trình Threat Intelligence, nếu ảnh hưởng đến sản phẩm, dịch vụ hoặc IP khách hàng thì cần làm gì?",Tiến hành pentest ngay lập tức,Thông báo khách hàng và kết thúc,Khóa toàn bộ hệ thống nội bộ,Khởi tạo môi trường thử nghiệm mới,B
+ATS trong hệ thống điện có chức năng chính nào?,Ổn định điện áp đầu ra cho UPS,Chuyển đổi nguồn tự động sang nguồn dự phòng khi mất nguồn chính,Triệt xung điện áp trên đường dây,Đo điện trở nối đất của hệ thống,B
+"Theo tài liệu, MCCB thường có dòng định mức nằm trong khoảng nào?",Iđm ≤ 100A,100A < Iđm < 1000A,Iđm ≥ 1000A,50A < Iđm < 500A,B
+Phòng DV TTDL có trách nhiệm gì trong công tác bảo dưỡng máy phát điện?,Thay thế toàn bộ thiết bị điện định kỳ,Phối hợp lập kế hoạch bảo dưỡng định kỳ hàng quý,Kiểm tra chất lượng nhiên liệu hàng ngày,Quản lý hệ thống camera giám sát,B
+"Trong hệ thống nhiên liệu của máy phát điện, hạng mục nào được yêu cầu thay mới định kỳ?",Bơm cấp nhiên liệu,Đường dẫn và khớp nối,Lọc dầu,Mức nhiên liệu,C
+"Ở hệ thống làm mát, tài liệu yêu cầu kiểm tra nội dung nào sau đây?",Mức nước làm mát,Độ phân giải camera nhiệt,Công suất UPS,Tần số chuyển mạch ATS,A
+"Trong phần kiểm tra hệ thống khí thải, nội dung nào được yêu cầu kiểm tra định kỳ?",Màu khí thải,Dung lượng ắc quy,Nhiệt độ phòng máy,Khả năng chống tĩnh điện của sàn,A
+"Khi kiểm tra tủ đầu cực, nếu phát hiện cáp bị lỏng thì cần thực hiện hành động nào?",Thay toàn bộ ACB,Ngắt toàn bộ hệ thống điện,Xiết lại các bulong,Thay mới dây cáp động lực,C
+"Theo tài liệu, UPS là viết tắt của hệ thống nào?",Hệ thống chuyển nguồn tự động,Hệ thống cấp nguồn AC liên tục,Hệ thống triệt xung điện áp,Hệ thống thông gió lọc bụi,B
+Phòng DV TTDL được yêu cầu lập kế hoạch bảo dưỡng UPS/STS định kỳ với tần suất như thế nào?,1 tháng/lần,2 tháng/lần,3 tháng/lần,6 tháng/lần,C
+"Trong quy trình bảo dưỡng UPS, công việc nào yêu cầu đo nội trở của battery và có kết quả đánh giá?",Kiểm tra các mối nối và siết lại các mối,Kiểm tra điện áp của các ắc quy khi nạp/xả,Vệ sinh các thiết bị bên trong,Hiệu chỉnh điện áp và tần số bằng phần mềm,B
+Kiểm tra B đối với UPS có đặc điểm nào sau đây?,Không cần shutdown UPS và chỉ mất dưới 30 phút,Chỉ thực hiện một lần mỗi năm,Cần shutdown UPS và thời gian thực hiện từ 2 đến 4 tiếng cho mỗi UPS,Chỉ bao gồm vệ sinh bên ngoài thiết bị,C
+"Trong bảo dưỡng UPS, nội dung nào yêu cầu thực hiện bằng phần mềm thiết bị chuyên dụng với các ACB kèm theo UPS?",Kiểm tra log file và phân tích log,"Vệ sinh, kiểm tra và hiệu chỉnh các thông số",Đo nội trở của battery,Kiểm tra tình trạng quạt làm mát,B
+"Trong phần bảo dưỡng STS, hoạt động nào được mô tả là kiểm tra tác động trong quá trình chuyển mạch STS bằng thiết bị chuyên dụng?",Kiểm tra cáp nguồn vào/ra,Kiểm tra tình trạng của các Switch,Vệ sinh bên ngoài thiết bị,Hiệu chỉnh các thông số điện áp và tần số,B
+Kiểm tra A đối với STS được thực hiện với điều kiện nào?,Cần shutdown STS hoàn toàn,Chỉ thực hiện khi thay tụ điện,Không cần shutdown STS,Chỉ áp dụng cho STS mới lắp đặt,C
+"Trong hệ thống điện, ATS có chức năng gì khi nguồn chính bị mất?",Ổn định điện áp cho hệ thống UPS,Tự động chuyển sang nguồn dự phòng,Ngắt toàn bộ tải điện để bảo vệ thiết bị,Triệt tiêu xung điện áp trên đường dây,B
+"Theo tài liệu, hệ thống tháp giải nhiệt trong hệ chiller sử dụng bao nhiêu quạt?",2 quạt,3 quạt,4 quạt,6 quạt,C
+"Trong công tác bảo dưỡng chiller, nội dung nào yêu cầu báo cáo kết quả các vị trí xì?",Kiểm tra mức độ rung bất thường,Thử xì thông thường,Kiểm tra mức gas,Kiểm tra áp lực nước,B
+Việc vệ sinh ống đồng bình ngưng tụ bằng phương pháp cơ khí được thực hiện với tần suất nào?,1 lần/năm,2 lần/năm,4 lần/năm,6 lần/năm,C
+"Trong hệ thống dàn lạnh, nội dung nào được dùng để kiểm tra mức gas?",Đồng hồ áp suất nước,Sensor đo mức lỏng hoặc kính xem gas,Công tắc dòng chảy,Thiết bị đo nhiệt độ motor,B
+"Khi kiểm tra đầu dò nhiệt độ của hệ thống DDC, sai số chấp nhận được phải nằm trong khoảng nào?",+/- 0.5°C,+/- 1°C,+/- 2°C,+/- 5°C,B
+"Trong phần kiểm tra hệ thống bôi trơn, nội dung nào sau đây được yêu cầu thực hiện?",Kiểm tra màu dầu và mức dầu,Kiểm tra độ rung của tháp giải nhiệt,Kiểm tra tín hiệu relay UPS,Kiểm tra độ cách nhiệt của dàn ngưng,A
+Vina Virtual Private Cloud sử dụng công nghệ nào để tách biệt logic mạng giữa các khách hàng?,Network Function Virtualization (NFV),Software Defined Networking (SDN),Content Delivery Network (CDN),Multi-Protocol Label Switching (MPLS),B
+"Trong thành phần Network của vVPC, Elastic IP được sử dụng để làm gì?",Tạo subnet cho hệ thống mạng,Định tuyến giữa các subnet,Gán IPv4 Public cho máy chủ ảo truy cập Internet,Kiểm soát quyền truy cập người dùng IAM,C
+Tính năng nào cho phép tự động thêm hoặc xóa máy chủ ảo theo lưu lượng truy cập?,Elastic IP,Autoscale,Security Group,VPC Peering,B
+"Theo tài liệu, VPN trong vVPC hỗ trợ những hình thức kết nối nào?",PPTP VPN và L2TP VPN,GRE Tunnel và MPLS VPN,IPSec VPN site-to-site và SSL VPN client-to-site,SSL VPN site-to-site và OpenVPN mesh,C
+Khách hàng có thể theo dõi chỉ số nào của máy chủ ảo trên giao diện Web portal?,"RAM, CPU, IOPS và Bandwidth",Nhiệt độ CPU và điện áp nguồn,Độ trễ DNS và tốc độ tải trang,Mức sử dụng GPU và FPS,A
+Giải pháp SDN của vVPC hỗ trợ những giao thức định tuyến động nào?,RIP và EIGRP,OSPF và BGP,IS-IS và MPLS,STP và VLAN,B
+"Theo bảng so sánh sản phẩm cloud compute, Vina Virtual Private Cloud được cung cấp dưới hình thức nào?",Máy chủ vật lý chuyên dụng,Máy chủ ảo đơn lẻ (Single VM),Cụm tài nguyên (Resource Pool),Container orchestration cluster,C
+vCloud Portal cho phép thực hiện thao tác nào trên máy chủ ảo?,"Power off, suspend, reset và tạo snapshot",Cài đặt trực tiếp phần cứng vật lý,Thay đổi firmware BIOS của server vật lý,Quản lý switch mạng vật lý trong datacenter,A
+"Để clone một VM bằng chức năng Copy To, điều kiện nào phải được đáp ứng?",VM phải đang chạy và có snapshot,VM phải ở trạng thái Suspend,VM phải ở trạng thái Power off và không chứa snapshot,VM phải được gắn thêm ISO boot,C
+Hệ thống snapshot của vCloud Server lưu tối đa bao nhiêu bản snapshot cho mỗi VM?,1 bản snapshot,3 bản snapshot,5 bản snapshot,Không giới hạn số lượng snapshot,A
+"Để reset mật khẩu admin của hệ điều hành, máy chủ ảo cần cài đặt thành phần nào?",Docker Engine,Vmware tools hoặc Open-vm-tools,Microsoft IIS,Windows Defender ATP,B
+"Trong biểu đồ hiệu suất VM, chỉ số nào biểu thị lượng dữ liệu nhận trung bình mỗi giây?",disk.read.average,cpu.usage.average,net.bytesRx.average,mem.usage.average,C
+"Trong cấu hình NAT của vFirewall, DNAT được dùng để làm gì?",Chuyển đổi IP private của server ra IP public,Giới hạn số lượng kết nối đồng thời,Chuyển tiếp lưu lượng từ IP public vào IP private của server,Mã hóa toàn bộ lưu lượng VPN,C
+"Trong cấu hình IPsec VPN Site to Site, thuật toán mã hóa nào được hệ thống hỗ trợ?","AES, AES256 và 3DES","RSA, ECC và Blowfish","SHA1, SHA256 và MD5",ChaCha20 và Poly1305,A
+"Theo yêu cầu chung của hệ thống CT 64 lát cắt, thiết bị phải đạt tiêu chuẩn nào?",ISO 9001,ISO 27001,ISO 13485,IEC 60601,C
+Hệ thống chụp cắt lớp vi tính được mô tả có cấu hình bao nhiêu dãy đầu thu và bao nhiêu lát cắt?,"16 dãy đầu thu, 32 lát cắt","32 dãy đầu thu, 64 lát cắt","64 dãy đầu thu, 128 lát cắt","128 dãy đầu thu, 256 lát cắt",B
+Phần mềm nào được sử dụng để giảm nhiễu ảnh giả gây ra bởi các vật liệu cấy ghép?,ClearRay,Bolus Tracking,iDose4,O-MAR,D
+"Theo thông số kỹ thuật của gantry, tốc độ quay tối đa 1 vòng/360 độ là bao nhiêu?",0.3 giây,0.5 giây,0.75 giây,1.0 giây,B
+Tải trọng tối đa của bàn bệnh nhân trong hệ thống CT là bao nhiêu?,180 kg,200 kg,205 kg,250 kg,C
+Bộ đầu thu (Detector) của hệ thống CT sử dụng vật liệu gì?,Silicon tinh thể,Chất bán dẫn GOS,Germanium oxide,Ceramic composite,B
+Máy in phim khô của hệ thống có tốc độ in tối thiểu khoảng bao nhiêu phim mỗi giờ với cỡ phim 35x43 cm?,80 phim/giờ,95 phim/giờ,110 phim/giờ,150 phim/giờ,C
+Thuật ngữ ADD trong bảo dưỡng máy bay dùng để chỉ trường hợp nào?,Hỏng hóc không thể xử lý ngay và được phép trì hoãn sửa chữa theo điều kiện của tài liệu MEL,Hỏng hóc bắt buộc phải sửa chữa ngay trước khi máy bay tiếp tục khai thác,Hỏng hóc được phép bỏ qua nếu không ảnh hưởng đến hệ thống điện,Hỏng hóc chỉ cần ghi nhận mà không cần theo dõi trong tài liệu bảo dưỡng,A
+Tài liệu nào do Nhà chế tạo máy bay ban hành và yêu cầu nhân viên kỹ thuật phải tuân theo khi thực hiện bảo dưỡng máy bay?,Aircraft Maintenance Manual (AMM),Aircraft Maintenance Review Report (AMRR),Aircraft Maintenance Schedule/Programme (AMS/AMP),Configuration Deviation List (CDL),A
+Thông báo kỹ thuật bắt buộc (AD) thường được ban hành nhằm mục đích gì?,Chỉ ra một khiếm khuyết kỹ thuật đã được phát hiện hoặc có thể xuất hiện,Hướng dẫn quy trình đào tạo kỹ thuật viên bảo dưỡng định kỳ,Cho phép trì hoãn các công việc sửa chữa ngoài kế hoạch,Quy định mức tiêu hao nhiên liệu tối đa của động cơ,A
+Ai là người có nhiệm vụ hỗ trợ các đánh giá viên trong thời gian chuẩn bị và tiến hành đánh giá nhưng ý kiến chỉ mang tính tham khảo?,Assistance auditor,Authorised person,Auditee,Controller,A
+CRS-SMI được cấp trong trường hợp nào?,Sau khi hoàn thành một bảo dưỡng định kỳ từ dạng A trở lên,Sau khi hoàn thành bất kỳ sửa chữa nhỏ nào trong khoang hành khách,Khi máy bay đạt tiêu chuẩn xuất xưởng của nhà sản xuất,Khi hoàn tất kiểm tra chống ăn mòn cấu trúc mức 1,A
+Khái niệm “Continuing airworthiness” mô tả nội dung nào dưới đây?,Các quá trình đảm bảo máy bay luôn tuân thủ yêu cầu đủ điều kiện bay và an toàn bay trong suốt quá trình khai thác,Hoạt động kiểm tra định kỳ nhằm đánh giá mức tiêu hao nhiên liệu của máy bay,Quy trình cấp phép tạm thời cho nhân viên bảo dưỡng ngoài phạm vi được phê chuẩn,Hệ thống quản lý phụ tùng tiêu hao và vật liệu sửa chữa máy bay,A
+"Theo định nghĩa trong tài liệu, “Critical task” là loại công việc nào?",Công việc bảo dưỡng liên quan đến tháo/lắp nhiều hơn một thiết bị cùng loại trên hai hoặc nhiều hệ thống máy bay,Công việc sửa chữa khẩn cấp phải hoàn thành trong vòng 24 giờ,Công việc bảo dưỡng chỉ được thực hiện bởi Nhà chức trách hàng không,Công việc thay thế vật liệu tiêu hao trong quá trình bảo dưỡng định kỳ,A
+Tiêu chuẩn nào quy định về công trình xây dựng và tổ chức thi công?,TCVN 4055:2012,TCVN 4091:1985,TCVN 4252:2012,TCVN 5637:1991,A
+"Tiêu chuẩn nào quy định phương pháp đo kiểm công trình và cấu kiện chế sẵn, Phần 1 là phương pháp và dụng cụ đo?",TCVN 9262-1:2012,TCVN 9262-2:2012,TCVN 9259-8:2012,TCVN 9261:2012,A
+"Nếu cần tham khảo tiêu chuẩn về công tác đất, thi công và nghiệm thu thì nên dùng mã nào?",TCVN 4447:2012,TCVN 9361:2012,TCVN 9394:2012,TCVN 7201:2015,A
+Tiêu chuẩn nào liên quan đến xử lý nền đất yếu bằng phương pháp cố kết hút chân không có màng kín khí?,TCVN 9842:2013,TCVN 9844:2013,TCVN 10379:2014,TCVN 9355:2012,A
+Mã tiêu chuẩn nào áp dụng cho kết cấu bê tông và bê tông cốt thép toàn khối về quy phạm thi công và nghiệm thu?,TCVN 4453:1995,TCVN 4452:1987,TCVN 5724:1993,TCVN 9342:2012,A
+Tiêu chuẩn nào hướng dẫn kỹ thuật phòng chống nứt cho kết cấu bê tông và bê tông cốt thép dưới tác động của khí hậu nóng ẩm?,TCVN 9345:2012,TCVN 9344:2012,TCVN 9343:2012,TCVN 9348:2012,A
+Tiêu chuẩn nào quy định yêu cầu an toàn về cấu tạo và lắp đặt đối với thang máy thủy lực?,TCVN 6396-2:2009,TCVN 6395:2008,TCVN 6396-3:2010,TCVN 5867:2009,A
+Máy X-quang đo độ loãng xương sử dụng công nghệ nào?,Công nghệ DXA toàn thân (Hấp thu tia X năng lượng kép),Công nghệ MRI cộng hưởng từ toàn thân,Công nghệ CT đa lát cắt,Công nghệ siêu âm Doppler màu,A
+Thời gian quét xương đùi tối đa của máy đo độ loãng xương là bao nhiêu?,≤ 25 giây (± 2 giây),≤ 30 giây (± 2 giây),≤ 23 giây (± 2 giây),≤ 45 giây (± 5 giây),A
+Liều bức xạ tối đa cho phép khi đo toàn thân là bao nhiêu?,≤ 0.55 uGy,≤ 2.06 uGy,≤ 7.52 uGy,≤ 8.28 uGy,A
+Diện tích vùng quét tối thiểu cho toàn cơ thể của hệ thống DXA là bao nhiêu?,≥ 580mm x 1995mm,≥ 160mm x 189mm,≥ 240mm x 420mm,≥ 120mm x 147mm,A
+Loại cảm biến ảnh được sử dụng trong bộ nhận ảnh của máy là gì?,CdTe (Tinh thể Cadmium Telluride),CMOS Silicon đa lớp,CCD đơn sắc,a-Si Flat Panel Detector,A
+Máy in màu trong trạm làm việc yêu cầu tốc độ in đen trắng tối thiểu bao nhiêu?,≥ 25 tờ/phút,≥ 15 tờ/phút,≥ 12 tờ/phút,≥ 30 tờ/phút,A
+Hệ thống tán sỏi ngoài cơ thể sử dụng công nghệ nào để xác định vị trí sỏi?,Sóng xung kích kết hợp đĩa từ định vị X-Quang,Laser Holmium kết hợp siêu âm Doppler,CT Scan thời gian thực,Sóng RF kết hợp camera nội soi,A
+Hệ thống nội soi tiêu hóa ống mềm video yêu cầu màn hình y tế chuyên dụng kích thước bao nhiêu?,27 inches,24 inches,32 inches,19 inches,A
+Bộ xử lý hình ảnh của hệ thống nội soi cần hỗ trợ tối thiểu bao nhiêu chế độ hình ảnh tăng cường?,≥ 4 chế độ,≥ 2 chế độ,≥ 6 chế độ,≥ 8 chế độ,A
+Tuổi thọ tối thiểu yêu cầu của nguồn chiếu sáng LED trong hệ thống nội soi là bao nhiêu?,≥ 10.000 giờ,≥ 5.000 giờ,≥ 15.000 giờ,≥ 20.000 giờ,A
+Ống soi dạ dày video yêu cầu khả năng phóng đại tối đa bao nhiêu lần khi kết hợp màn hình tương thích?,≥ 100 lần,≥ 90 lần,≥ 70 lần,≥ 120 lần,A
+Đường kính ngoài đầu cuối của ống soi dạ dày được yêu cầu tối đa là bao nhiêu?,≤ 9.9 mm,≤ 12.8 mm,≤ 13.2 mm,≤ 8.5 mm,A
+Độ uốn cong tối thiểu theo hướng lên của đầu ống soi dạ dày là bao nhiêu?,≥ 210°,≥ 180°,≥ 100°,≥ 90°,A
+Ống soi đại tràng video yêu cầu khả năng phóng đại tối đa bao nhiêu lần khi kết hợp màn hình tương thích?,≥ 90 lần,≥ 100 lần,≥ 70 lần,≥ 120 lần,A

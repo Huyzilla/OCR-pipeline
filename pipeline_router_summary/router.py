@@ -5,11 +5,11 @@ Router module: Intent detection + Public ID extraction
 Sử dụng Qwen2.5 1.5B Instruct local để phân loại intent: tra_cuu / tinh_toan
 """
 
+import os
 import re
 from typing import TypedDict
 
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from openai import OpenAI
 
 try:
     from qa.utils import detect_public_doc_ids
@@ -43,30 +43,24 @@ Intent: """
     # Pattern fallback để tìm public_id dạng Public_001/Public-001/Public 1
     PUBLIC_ID_FALLBACK_PATTERN = r'\bpublic[_\s-]?(\d{1,3})\b'
     
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
-        """
-        Initialize router với model local Qwen2.5 1.5B Instruct
+    def __init__(self, model_name: str = "gpt-4o-mini"):
+        """Initialize router.
+
+        If `model_name` looks like an OpenAI hosted model (gpt-4o-mini), use OpenAI
+        API and read `OPENAI_API_KEY` from the environment. Otherwise the router
+        falls back to a simple keyword-based classifier.
         """
         self.model_name = model_name
-        self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.use_openai = isinstance(model_name, str) and model_name.lower().startswith("gpt")
 
-        print(f"Loading router model: {model_name}")
-        print(f"Router device: {self.device}")
-
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
-            device_map="auto" if self.device == "cuda" else None,
-            low_cpu_mem_usage=True,
-            trust_remote_code=True,
-        )
-
-        if self.device == "cpu":
-            self.model = self.model.to(self.device)
-
-        self.model.eval()
-        print(f"Router initialized with local model {model_name}")
+        if self.use_openai:
+            api_key = os.environ.get("OPENAI_API_KEY")
+            if not api_key:
+                raise EnvironmentError("OPENAI_API_KEY not set in environment")
+            self.client = OpenAI(api_key=api_key)
+            print(f"Router configured to use OpenAI model: {model_name}")
+        else:
+            print("Router: using local/simple fallback (no OpenAI client)")
     
     def extract_public_ids(self, text: str) -> list[str]:
         """
@@ -103,53 +97,35 @@ Intent: """
             "tra_cuu" hoặc "tinh_toan"
         """
         prompt = self.ROUTER_PROMPT_TEMPLATE.format(question=question)
-        try:
-            messages = [
-                {"role": "system", "content": "Bạn là một trợ lý thông minh phân loại câu hỏi. Chỉ trả về một từ duy nhất: 'tra_cuu' hoặc 'tinh_toan'."},
-                {"role": "user", "content": prompt},
-            ]
 
-            if hasattr(self.tokenizer, "apply_chat_template"):
-                input_text = self.tokenizer.apply_chat_template(
-                    messages,
-                    tokenize=False,
-                    add_generation_prompt=True,
-                )
-            else:
-                input_text = f"{messages[0]['content']}\n\n{messages[1]['content']}\n\nAssistant:"
-
-            inputs = self.tokenizer(input_text, return_tensors="pt")
-            inputs = {k: v.to(self.model.device) for k, v in inputs.items()}
-
-            with torch.no_grad():
-                outputs = self.model.generate(
-                    **inputs,
-                    max_new_tokens=8,
+        if self.use_openai:
+            try:
+                resp = self.client.chat.completions.create(
+                    model=self.model_name,
+                    messages=[
+                        {"role": "system", "content": "Bạn là một trợ lý thông minh phân loại câu hỏi. Chỉ trả về một từ duy nhất: 'tra_cuu' hoặc 'tinh_toan'."},
+                        {"role": "user", "content": prompt},
+                    ],
+                    max_tokens=16,
                     temperature=0.0,
-                    do_sample=False,
-                    top_p=1.0,
-                    pad_token_id=self.tokenizer.eos_token_id,
                 )
-
-            response_text = self.tokenizer.decode(
-                outputs[0][inputs["input_ids"].shape[1]:],
-                skip_special_tokens=True
-            ).strip()
-        except Exception as e:
-            print(f"  [WARNING] Router model error: {e}")
-            response_text = "tra_cuu"
+                response_text = resp.choices[0].message.content.strip()
+            except Exception as e:
+                print(f"  [WARNING] OpenAI router error: {e}")
+                response_text = "tra_cuu"
+        else:
+            # Simple keyword fallback if OpenAI not used
+            response_text = "tinh_toan" if any(kw in question.lower() for kw in ["tính", "tính toán", "bao nhiêu", "cộng", "trừ", "nhân", "chia"]) else "tra_cuu"
 
         # Parse response để lấy intent
-        response_lower = response_text.lower().strip()
+        response_lower = response_text.lower()
         if "tinh_toan" in response_lower or "tính toán" in response_lower:
             return "tinh_toan"
-        elif "tra_cuu" in response_lower or "tra cứu" in response_lower:
+        if "tra_cuu" in response_lower or "tra cứu" in response_lower:
             return "tra_cuu"
-        else:
-            # Default fallback: kiểm tra các từ khóa
-            if any(kw in question.lower() for kw in ["tính", "tính toán", "bao nhiêu", "cộng", "trừ", "nhân", "chia"]):
-                return "tinh_toan"
-            return "tra_cuu"
+
+        # Default fallback
+        return "tra_cuu"
     
     def route(self, question: str) -> RouterResult:
         """

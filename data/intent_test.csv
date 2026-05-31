@@ -1,0 +1,344 @@
+question_index,question,intent
+1,Mật khẩu mạnh dành cho người quản trị hệ thống nên có tối thiểu bao nhiêu ký tự?,tra_cuu
+2,"Trong ví dụ gây tràn bộ đệm, biến buffer trong hàm function() có kích thước bao nhiêu byte?",tra_cuu
+3,Sâu SQL Slammer sử dụng cổng dịch vụ nào để quét tìm máy có lỗ hổng?,tra_cuu
+4,"Trong tấn công SQL Injection vượt qua xác thực đăng nhập, chuỗi nào được chèn để khiến điều kiện WHERE luôn đúng?",tra_cuu
+5,"Theo mô tả về phishing, kẻ tấn công thường giả mạo tổ chức nào để đánh cắp thông tin người dùng?",tra_cuu
+6,Biện pháp nào giúp ngăn mã độc thực thi dù kẻ tấn công đã chèn được mã vào bộ đệm?,tra_cuu
+7,"Trong trò lừa đảo Nigeria 4-1-9, kẻ lừa đảo thường hứa trả cho nạn nhân khoảng bao nhiêu phần trăm số tiền để dụ tham gia?",tra_cuu
+8,"Khi phanh gấp, người lái xe nên đặt gót chân như thế nào?",tra_cuu
+9,Số nào trên xe hộp số cơ khí có lực kéo lớn nhất nhưng tốc độ chậm nhất?,tra_cuu
+10,"Sau khi vào số 1 trên xe số sàn, người lái nên nhả bàn đạp ly hợp như thế nào?",tra_cuu
+11,"Khi chuyển từ số 4 sang số 5 trên xe số sàn, người lái cần thực hiện thao tác nào?",tra_cuu
+12,"Trên xe hộp số tự động, số nào được sử dụng khi đỗ xe?",tra_cuu
+13,"Khi xuống dốc dài với xe số tự động, người lái được khuyến nghị cài số nào?",tra_cuu
+14,"Khi cài số 1 trên xe hộp số tự động, điều kiện nào cần được đảm bảo trước?",tra_cuu
+15,"Trước khi khởi động động cơ, người lái cần kiểm tra mức dầu bôi trơn bằng dụng cụ nào?",tra_cuu
+16,"Đối với động cơ Diesel, thao tác nào cần thực hiện trước khi vặn chìa khóa sang vị trí START?",tra_cuu
+17,"Theo hướng dẫn, mỗi lần khởi động động cơ không nên kéo dài quá bao nhiêu giây?",tra_cuu
+18,"Khi tắt động cơ Diesel, nên để động cơ chạy chậm trong khoảng bao lâu trước khi tắt máy?",tra_cuu
+19,"Khi khởi hành trên đường bằng với xe số sàn, sau khi vào số 1 người lái cần thao tác gì với phanh tay?",tra_cuu
+20,"Trong trường hợp xuống dốc cao nguy hiểm hoặc đi trên đường trơn lầy, phương pháp nào được khuyến nghị để giảm tốc độ?",tra_cuu
+21,"Khi phanh để dừng hẳn ô tô nhằm tránh động cơ bị tắt, người lái cần thực hiện thao tác nào?",tra_cuu
+22,"Khi tăng từ số 4 lên số 5, số 5 có đặc điểm gì so với số 4?",tra_cuu
+23,"Theo hướng dẫn thao tác tăng số, khi chuyển từ số 1 sang số 2 cần nhả ly hợp như thế nào?",tra_cuu
+24,"Khi xe đi vào đoạn đường xấu hoặc đèo dốc, người lái cần giảm số với mục đích chính nào?",tra_cuu
+25,"Theo hướng dẫn giảm số, thời điểm phù hợp để giảm số là khi nào?",tra_cuu
+26,Vì sao việc lùi xe ôtô thường khó hơn chạy tiến?,tra_cuu
+27,Thiết bị nào hỗ trợ người lái quan sát các điểm mù phía sau mà gương chiếu hậu không nhìn thấy?,tra_cuu
+28,"Khi muốn chuyển hướng đầu xe sang trái trong lúc lùi, đuôi xe sẽ di chuyển theo hướng nào?",tra_cuu
+29,"Khi lùi xe ghép dọc vào nơi đỗ, người lái cần bật đèn xin đường bên nào?",tra_cuu
+30,"Trong quá trình ghép xe dọc, khi nhìn qua vai sang phải thấy giữa hình ghép xe, người lái cần thực hiện thao tác nào tiếp theo?",tra_cuu
+31,"Khi lùi xe ghép dọc, thao tác nào giúp xe lùi thẳng vào nơi đỗ?",tra_cuu
+32,"Theo lưu ý trong bài ghép xe dọc, người lái cần quan sát như thế nào trong quá trình lùi xe?",tra_cuu
+33,"Khi lùi xe ghép ngang, lúc nhìn qua gương chiếu hậu bên phải thấy góc cuối cùng bên phải của vị trí đỗ xe, người lái cần làm gì?",tra_cuu
+34,"Trong quá trình ghép xe ngang, khi xe đã đến gần đầu xe màu đen, người lái cần thực hiện thao tác nào?",tra_cuu
+35,"Sau khi xe song song với vỉa hè và tiến sát xe màu hồng trong bài ghép xe ngang, bước tiếp theo là gì?",tra_cuu
+36,"Theo phương pháp điều khiển xe ôtô chuyển động đúng hướng, đường thẳng dẫn hướng tưởng tượng được xác định bởi mấy điểm?",tra_cuu
+37,"Khi điều khiển xe ôtô quay vòng sang phải, người lái cần quay vô lăng theo chiều nào?",tra_cuu
+38,"Theo phương pháp căn đường, khi người lái thấy vị trí của mình lệch hẳn sang bên trái điểm chuẩn thì xe đang ở vị trí nào?",tra_cuu
+39,"Khi tránh nhau trên mặt đường hẹp vào ban đêm, người lái xe nên sử dụng loại đèn nào?",tra_cuu
+40,"Khi lên dốc thấp, người lái cần thực hiện thao tác nào để vượt dốc hiệu quả?",tra_cuu
+41,"Khi xuống dốc dài, phương pháp phanh nào nên được sử dụng chủ yếu để tránh cháy má phanh?",tra_cuu
+42,"Khi dừng xe trên dốc lên không có bó vỉa, người lái cần đánh tay lái theo hướng nào để đảm bảo an toàn?",tra_cuu
+43,"Theo tài liệu, Python được sử dụng phổ biến cho lĩnh vực nào?",tra_cuu
+44,"Trước khi làm thí nghiệm, học viên được yêu cầu cài đặt thư viện nào sau đây?",tra_cuu
+45,"Trong phần mô tả hồi quy logistic, hàm nào được sử dụng để phân loại nhị phân?",tra_cuu
+46,"Theo công thức chuẩn hóa dữ liệu (Standardization), giá trị z được tính như thế nào?",tra_cuu
+47,Thuật toán nào được mô tả là dùng để gom cụm dữ liệu?,tra_cuu
+48,"Trong mô hình SVM, mục tiêu chính là gì?",tra_cuu
+49,"Theo công thức đánh giá mô hình, chỉ số nào được tính bằng TP / (TP + FP)?",tra_cuu
+50,"Theo tài liệu, Python được sử dụng trong lĩnh vực năng lượng tái tạo để làm gì?",tra_cuu
+51,Một trong các kiến thức cần nắm vững trước khi làm thí nghiệm là gì?,tra_cuu
+52,"Theo tài liệu, hệ MPPT được sử dụng với mục đích gì?",tra_cuu
+53,"Theo bảng định nghĩa đại lượng cơ bản, công suất PV được tính theo công thức nào?",tra_cuu
+54,"Trong hệ thống PV + Pin, hệ thống được gọi là ổn định khi điều kiện nào được thỏa mãn?",tra_cuu
+55,"Theo bảng dữ liệu mô phỏng, tại thời điểm 12 giờ, công suất PV (Ppv) có giá trị bao nhiêu?",tra_cuu
+56,"Trong phương trình cân bằng năng lượng của hệ PV + Pin, đại lượng nào được trừ đi?",tra_cuu
+57,"Theo tài liệu, mạng nơ-ron nhân tạo (ANN) được xây dựng dựa trên ý tưởng nào?",tra_cuu
+58,"Theo phần mục đích thí nghiệm, ANN được ứng dụng trong bài toán nào sau đây?",tra_cuu
+59,"Theo mô tả trong tài liệu, hàm kích hoạt nào có đầu ra nằm trong khoảng (-1, 1)?",tra_cuu
+60,Đặc điểm nào của ReLU được nhắc đến trong tài liệu?,tra_cuu
+61,Softmax được sử dụng để làm gì trong mạng nơ-ron?,tra_cuu
+62,"Theo tài liệu, Dropout được sử dụng với mục đích gì?",tra_cuu
+63,Hàm loss nào được mô tả là thường dùng cho hồi quy và nhạy cảm với ngoại lai do bình phương sai số?,tra_cuu
+64,"Theo tài liệu, học tăng cường (RL) tập trung vào mục tiêu nào?",tra_cuu
+65,"Theo tài liệu, môi trường RL chuẩn nào được đề cập để thực hành?",tra_cuu
+66,"Trong mô hình MDP của Reinforcement Learning, ký hiệu γ biểu diễn đại lượng nào?",tra_cuu
+67,"Theo công thức Q-learning trong tài liệu, giá trị nào được sử dụng để cập nhật Q(s,a)?",tra_cuu
+68,"Thuật toán nào được mô tả là học theo chính sách đang thực hiện, khác với Q-learning?",tra_cuu
+69,"Theo tài liệu, hàm Advantage dùng để đo lường điều gì?",tra_cuu
+70,"Theo mô tả về PPO trong tài liệu, mục đích của hàm mất mát PPO là gì?",tra_cuu
+71,"Theo tài liệu, mục đích chính của ontology trong xử lý ảnh là gì?",tra_cuu
+72,"Trong luận án, kỹ thuật nào được sử dụng để nhận diện và phân đoạn đối tượng từ ảnh gốc?",tra_cuu
+73,"Theo tài liệu, Protégé có hạn chế gì khi quản lý ontology ảnh?",tra_cuu
+74,"Phương pháp xây dựng ontology nào được mô tả là kết hợp giữa thủ công và tự động, có chuyên gia kiểm tra thông tin trước khi cập nhật?",tra_cuu
+75,"Trong mô hình xây dựng khung ontology bán tự động, định nghĩa lớp được lấy từ nguồn nào?",tra_cuu
+76,"Theo ví dụ truy vấn SPARQL, truy vấn nào được dùng để tìm các phân lớp con của Bird?",tra_cuu
+77,"Theo bảng ví dụ truy vấn SPARQL, các phân lớp con của Bird bao gồm những lớp nào?",tra_cuu
+78,"Theo tài liệu, phần mềm được định nghĩa là gì?",tra_cuu
+79,"Theo tài liệu, phần mềm hệ thống có chức năng chính nào?",tra_cuu
+80,Chức năng nào sau đây thuộc về hệ điều hành?,tra_cuu
+81,"Theo tài liệu, hệ điều hành nào sau đây được liệt kê là hệ điều hành thông dụng?",tra_cuu
+82,"Trong quy trình sản xuất phần mềm, công đoạn nào bao gồm việc xây dựng kịch bản kiểm thử và đánh giá khả năng gây lỗi?",tra_cuu
+83,"Theo tài liệu, phần mềm nguồn mở là phần mềm có đặc điểm nào?",tra_cuu
+84,"Theo bảng phần mềm nguồn mở thông dụng, phần mềm nào được mô tả là công cụ hỗ trợ bảo mật mạng nổi tiếng, trước đây có tên là Ethereal?",tra_cuu
+85,"Theo tài liệu, thuật toán được mô tả là gì?",tra_cuu
+86,Đặc trưng nào của thuật toán yêu cầu thuật toán phải dừng sau một số hữu hạn bước thực hiện?,tra_cuu
+87,"Trong lưu đồ thuật toán, hình thoi thường dùng để biểu diễn điều gì?",tra_cuu
+88,"Theo tài liệu, mã giả (Pseudo code) có đặc điểm nào?",tra_cuu
+89,"Theo tài liệu, chương trình viết bằng ngôn ngữ máy sử dụng bảng chữ cái nào?",tra_cuu
+90,"Theo tài liệu, trình thông dịch (interpreter) hoạt động như thế nào?",tra_cuu
+91,"Theo tài liệu, trình biên dịch (compiler) tạo ra loại tập tin nào trước khi liên kết thành EXE?",tra_cuu
+92,"Theo tài liệu, mục tiêu chính của giai đoạn thiết kế và mô phỏng mô hình là gì?",tra_cuu
+93,"Theo yêu cầu kỹ thuật của mô hình, thời gian đáp ứng của mạch phải nhỏ hơn bao nhiêu?",tra_cuu
+94,Hệ thống trong mô hình được thiết kế trên cơ sở mạng điện nào?,tra_cuu
+95,"Theo tài liệu, nguyên tắc phát hiện sự cố chạm đất dựa trên điều gì?",tra_cuu
+96,"Trong cấu trúc mạch phát hiện chạm đất, thành phần nào được dùng để tác động khi phát hiện sự cố?",tra_cuu
+97,"Theo bảng kết quả thử nghiệm, với điện trở rò 27Ω, kết luận của hệ thống là gì?",tra_cuu
+98,"Theo phần nhận xét, đối với mạng quy đổi từ 6 kV sang 400 VAC, mạch có khả năng phát hiện pha rò với điện trở rò không quá bao nhiêu?",tra_cuu
+99,"Theo bảng vật liệu cách điện, mica có độ bền điện nằm trong khoảng nào?",tra_cuu
+100,"Theo tài liệu, mica có thể chịu được nhiệt độ khoảng bao nhiêu?",tra_cuu
+101,"Theo bảng vật liệu, mica được ứng dụng trong trường hợp nào sau đây?",tra_cuu
+102,"Theo bảng dữ liệu, vật liệu nào được mô tả có kích thước nhỏ nhưng điện dung lớn?",tra_cuu
+103,"Theo tài liệu, cao su được sử dụng chủ yếu để làm gì?",tra_cuu
+104,"Theo bảng vật liệu, lụa cách điện có độ bền điện nằm trong khoảng nào?",tra_cuu
+105,"Theo tài liệu, nhựa thông được dùng để làm gì?",tra_cuu
+106,"Theo tài liệu, biểu đồ phân tán còn được gọi là loại đồ thị nào?",tra_cuu
+107,Biểu đồ phân tán được sử dụng chủ yếu để làm gì?,tra_cuu
+108,"Theo tài liệu, khi các điểm dữ liệu nằm trong vùng elip nghiêng về bên phải thì hai đặc tính có mối quan hệ gì?",tra_cuu
+109,"Theo tài liệu, giá trị hệ số tương quan r gần với giá trị nào cho thấy mối quan hệ nghịch rất lớn?",tra_cuu
+110,"Trong biểu đồ phân tán, trục hoành thường dùng để biểu thị điều gì?",tra_cuu
+111,"Theo bảng phân tích dạng biểu đồ phân tán, trường hợp nào biểu thị không có tương quan?",tra_cuu
+112,"Theo tài liệu, nếu hệ số tương quan Pearson r = 0 thì điều đó có ý nghĩa gì?",tra_cuu
+113,"Theo tài liệu, trạng thái nào được xem là lý tưởng trong kiểm soát chất lượng sản phẩm?",tra_cuu
+114,"Trong trường hợp phân bố gần giới hạn (Hình 2), nguy cơ chính của quá trình sản xuất là gì?",tra_cuu
+115,"Theo tài liệu, công cụ nào được đề xuất để truy tìm nguyên nhân gây gia tăng dao động trong trường hợp sát nút (Hình 3)?",tra_cuu
+116,"Trong trường hợp dung sai rộng hơn biến động (Hình 4), tài liệu cho rằng điều gì có thể xảy ra?",tra_cuu
+117,"Theo tài liệu, hệ thống nào có thể giúp phát hiện lệch chuẩn sớm trong trường hợp lệch phân bố (Hình 5)?",tra_cuu
+118,"Trong trường hợp vượt ngoài giới hạn (Hình 6), hậu quả nào được nhắc đến trong tài liệu?",tra_cuu
+119,"Theo phần so sánh và tổng hợp, trạng thái nào yêu cầu cải tiến toàn diện?",tra_cuu
+120,"Trong phần lệnh Sketch, công cụ nào được dùng để vẽ đoạn thẳng?",tra_cuu
+121,"Theo bảng công cụ Sketch, lệnh Circle Tangent được dùng để làm gì?",tra_cuu
+122,Lệnh Fillet trong Sketch có chức năng gì?,tra_cuu
+123,"Theo tài liệu, lệnh Offset được dùng để thực hiện thao tác nào?",tra_cuu
+124,"Khi sử dụng lệnh Extend, nhấn phím Shift có tác dụng gì?",tra_cuu
+125,"Theo bảng ràng buộc Sketch, công cụ nào dùng để tạo ràng buộc song song?",tra_cuu
+126,Lệnh Project Cut Edges có chức năng gì?,tra_cuu
+127,"Theo tài liệu, công cụ Extrude được sử dụng để làm gì?",tra_cuu
+128,Lệnh Revolve có chức năng gì trong tạo mô hình chi tiết?,tra_cuu
+129,"Theo tài liệu, công cụ Loft yêu cầu điều kiện nào?",tra_cuu
+130,Công cụ nào được dùng để tạo đường ren trong hoặc ren ngoài chi tiết?,tra_cuu
+131,"Theo tài liệu, lệnh Circular Pattern dùng để làm gì?",tra_cuu
+132,Công cụ Pan trong nhóm công cụ quan sát có chức năng gì?,tra_cuu
+133,"Theo mô tả của công cụ Look at, thao tác này dùng để làm gì?",tra_cuu
+134,"Theo tài liệu, Autodesk Inventor duy trì mối quan hệ như thế nào giữa mô hình và bản vẽ?",tra_cuu
+135,"Khi tạo hình chiếu vuông góc trong Autodesk Inventor, người dùng cần sử dụng công cụ nào?",tra_cuu
+136,"Theo hướng dẫn tạo hình cắt, sau khi vẽ xong đường cắt người dùng cần chọn lệnh nào trong menu để tiếp tục?",tra_cuu
+137,"Trong Autodesk Inventor, công cụ nào được dùng để thêm một tờ giấy vẽ mới?",tra_cuu
+138,"Theo tài liệu, lệnh Get Model Dimensions có chức năng gì?",tra_cuu
+139,Công cụ nào trong Drawing Annotation dùng để ghi ký hiệu độ nhám bề mặt?,tra_cuu
+140,"Theo bảng công cụ vẽ, Auto Balloon có chức năng gì?",tra_cuu
+141,"Theo tài liệu Public_521, chiều rộng các nét vẽ được chọn từ dãy kích thước nào sau đây?",tra_cuu
+142,"Theo bảng các loại nét vẽ, nét đứt mảnh được dùng để biểu diễn điều gì?",tra_cuu
+143,"Loại nét nào được sử dụng để biểu diễn đường đối xứng, đường trục và đường tâm?",tra_cuu
+144,"Theo quy tắc ưu tiên khi các nét vẽ khác loại trùng nhau, nét nào có độ ưu tiên cao nhất?",tra_cuu
+145,"Đối với đường tròn có đường kính nhỏ hơn 12 mm, tài liệu cho phép dùng loại nét nào thay cho nét chấm gạch mảnh?",tra_cuu
+146,"Theo quy định trong tài liệu, tỷ số chiều rộng giữa nét đậm và nét mảnh trên cùng bản vẽ không được nhỏ hơn bao nhiêu?",tra_cuu
+147,"Trong ví dụ các loại nét vẽ, số thứ tự nào tương ứng với nét lượn sóng?",tra_cuu
+148,"Theo tài liệu Public_524, lò xo được sử dụng với mục đích nào sau đây?",tra_cuu
+149,"Theo mô tả, lò xo xoắn ốc được chia thành những loại nào dựa theo tác dụng của lò xo?",tra_cuu
+150,Lò xo xoắn phẳng thường được dùng làm gì?,tra_cuu
+151,"Theo quy ước vẽ lò xo xoắn trụ hoặc nón có số vòng xoắn lớn hơn 4 vòng, người ta quy định như thế nào?",tra_cuu
+152,"Đối với lò xo có đường kính dây bằng 2 mm hoặc nhỏ hơn, tài liệu quy định vẽ như thế nào?",tra_cuu
+153,"Theo tài liệu Public_524, bánh răng côn được dùng để truyền chuyển động giữa các trục như thế nào?",tra_cuu
+154,"Theo tài liệu Public_524, ưu điểm nào của truyền động bánh răng cho phép hệ thống hoạt động ổn định?",tra_cuu
+155,"Theo tài liệu Publi_566, Microsoft PowerPoint là ứng dụng hỗ trợ chủ yếu cho công việc nào?",tra_cuu
+156,"Trong PowerPoint 2016, chủ đề nào sau đây được nhắc đến như một nhóm chủ đề hỗ trợ sẵn?",tra_cuu
+157,"Theo hướng dẫn khởi động PowerPoint, tổ hợp phím nào được dùng để mở hộp thoại Run?",tra_cuu
+158,"Để tạo nhanh một Slide mới trong PowerPoint, người dùng có thể sử dụng tổ hợp phím nào?",tra_cuu
+159,"Theo tài liệu, tại mỗi thời điểm trình chiếu PowerPoint sẽ hiển thị bao nhiêu Slide?",tra_cuu
+160,"Theo hướng dẫn trình diễn Slide, phím nào được sử dụng để bắt đầu trình chiếu nhanh?",tra_cuu
+161,"Khi đang trình diễn Slide, người dùng cần nhấn phím nào để thoát khỏi màn hình trình diễn và quay lại màn hình làm việc?",tra_cuu
+162,"Theo tài liệu Public_574, linh kiện điện tử được hiểu là gì?",tra_cuu
+163,"Theo tài liệu Public_574, vai trò chính của linh kiện điện tử là gì?",tra_cuu
+164,"Theo tài liệu Public_574, linh kiện điện tử được phân thành bao nhiêu dòng chính?",tra_cuu
+165,Loại linh kiện nào sau đây được xếp vào nhóm linh kiện điện cơ?,tra_cuu
+166,"Theo tài liệu Public_574, linh kiện bị động có đặc điểm nào?",tra_cuu
+167,"Theo tài liệu Public_574, transistor thường được sử dụng với chức năng nào?",tra_cuu
+168,"Theo tài liệu Public_574, cuộn cảm tạo ra hiện tượng gì khi có dòng điện chạy qua?",tra_cuu
+169,"Theo tài liệu Public_578, tỷ trọng tiêu thụ năng lượng tái tạo trong cơ cấu tổng tiêu thụ năng lượng cuối cùng đã tăng từ bao nhiêu năm 2010 lên bao nhiêu năm 2019?",tra_cuu
+170,"Theo tài liệu Public_578, tỷ lệ tiêu dùng điện năng lượng tái tạo năm 2019 đạt bao nhiêu?",tra_cuu
+171,"Theo điều tra năm 2020, vùng Trung du miền núi phía Bắc có bao nhiêu thôn chưa có điện?",tra_cuu
+172,"Theo bảng số liệu, tỉnh nào trong vùng Trung du miền núi phía Bắc có số thôn chưa có điện cao nhất?",tra_cuu
+173,"Theo tài liệu Public_578, một trong những nguyên nhân hạn chế việc phát triển sử dụng thiết bị năng lượng mặt trời tại vùng TDMNPB là gì?",tra_cuu
+174,"Theo tài liệu Public_578, cơ chế khuyến khích phát triển điện mặt trời được ban hành theo quyết định nào?",tra_cuu
+175,"Theo kết quả khảo sát chuyên gia, loại năng lượng tái tạo nào được đánh giá có khả năng tiếp cận khá với giá trị trung bình 3.27?",tra_cuu
+176,Đặc tính nào được dùng để đánh giá khả năng chịu điện áp của vật liệu cách điện mà không bị đánh thủng?,tra_cuu
+177,"Vật liệu nào có điện trở suất khoảng 0,0175 Wmm²/m và chủ yếu được dùng làm dây dẫn?",tra_cuu
+178,Loại vật liệu dẫn điện nào thường được dùng làm dây điện trở nung nóng?,tra_cuu
+179,Hợp kim chất hàn được mô tả gồm 60% thiếc và 40% chì có đặc điểm gì?,tra_cuu
+180,Vật liệu cách điện nào có khả năng chịu nhiệt độ khoảng 1500-1700°C và thường dùng làm giá đỡ cách điện cho đường dây dẫn?,tra_cuu
+181,Vật liệu nào được dùng để làm vỏ bọc dây dẫn và làm tấm cách điện?,tra_cuu
+182,"Trong các vật liệu dẫn điện dưới đây, vật liệu nào có nhiệt độ nóng chảy cao nhất?",tra_cuu
+183,Doanh nghiệp phân tích tình hình biến động tài sản cố định bằng cách nào?,tra_cuu
+184,Tài sản cố định dùng trong sản xuất của doanh nghiệp đã tăng bao nhiêu phần trăm vào cuối năm?,tra_cuu
+185,Khoản mục nào có mức tăng tỷ lệ lớn nhất trong bảng phân tích biến động tài sản cố định?,tra_cuu
+186,Hệ số hao mòn tài sản cố định được xác định bằng công thức nào?,tra_cuu
+187,Nếu hệ số hao mòn tài sản cố định càng gần 1 thì điều đó cho thấy điều gì?,tra_cuu
+188,Hiệu suất sử dụng tài sản cố định năm nay của doanh nghiệp là bao nhiêu?,tra_cuu
+189,"Theo phân tích mức độ ảnh hưởng của các nhân tố, hiệu suất sử dụng tài sản cố định đã làm giá trị sản xuất tăng thêm bao nhiêu triệu đồng?",tra_cuu
+190,STEM là thuật ngữ viết tắt của những lĩnh vực nào?,tra_cuu
+191,Giáo dục STEM nhằm mục tiêu chính nào đối với học sinh?,tra_cuu
+192,Quy trình xây dựng bài giảng điện tử E-learning gồm bao nhiêu bước?,tra_cuu
+193,Ưu điểm nào của E-learning cho phép học viên lựa chọn phương pháp học phù hợp với thời gian biểu cá nhân?,tra_cuu
+194,"Trong thực nghiệm sư phạm, có bao nhiêu học sinh lớp thực nghiệm đạt mức điểm từ 8 đến 8,7?",tra_cuu
+195,Giá trị trung bình điểm kiểm tra của lớp thực nghiệm (TN) là bao nhiêu?,tra_cuu
+196,"Theo kết quả phân tích thực nghiệm, giá trị p của phép kiểm chứng t-test là bao nhiêu?",tra_cuu
+197,"Theo mô hình 5Vs của Big Data do Gartner đưa ra năm 2014, chữ V nào thể hiện sự gia tăng về tốc độ xử lý dữ liệu?",tra_cuu
+198,"Theo IBM, khoảng bao nhiêu phần trăm dữ liệu trên thế giới là dữ liệu phi cấu trúc hoặc bán cấu trúc?",tra_cuu
+199,Hadoop Distributed File System (HDFS) có đặc điểm nào sau đây?,tra_cuu
+200,"Trong MapReduce, giai đoạn nào thực hiện việc gom nhóm tất cả value theo intermediate key?",tra_cuu
+201,"Trong dữ liệu COVID-19, trường nào dùng để lưu số cá nhân từ chối tiêm vắc xin?",tra_cuu
+202,Kết quả truy vấn tỷ lệ tiêm chủng cho quốc gia DK là bao nhiêu?,tra_cuu
+203,"Trong thực nghiệm so sánh SQL Server và Hortonworks Sandbox, ở lần xử lý thứ 31 điều gì xảy ra với SQL Server?",tra_cuu
+204,Khu công nghiệp nào tại Dĩ An được đề cập là đã có hệ thống thu gom và nhà máy xử lý nước thải?,tra_cuu
+205,Phạm vi dự án III được đề xuất có tổng diện tích bao nhiêu hecta?,tra_cuu
+206,"Theo kế hoạch năm 2020, công suất của nhà máy xử lý nước thải thuộc dự án III là bao nhiêu?",tra_cuu
+207,Khu vực nào được dự báo có số dân được thu gom nước thải vào năm 2035 cao nhất?,tra_cuu
+208,"Theo dự báo năm 2035, tổng lưu lượng nước thải của dự án III là bao nhiêu m3/ngày?",tra_cuu
+209,Chi phí xây dựng hệ thống ống trong dự án được dự toán khoảng bao nhiêu?,tra_cuu
+210,Nguồn vốn JICA chiếm bao nhiêu phần trăm tổng mức đầu tư của dự án?,tra_cuu
+211,"Năm 2017, tốc độ tăng trưởng GRDP của tỉnh Bắc Giang đạt bao nhiêu phần trăm?",tra_cuu
+212,"Đến năm 2025, dân số đô thị toàn tỉnh Bắc Giang được dự báo khoảng bao nhiêu người?",tra_cuu
+213,"Theo tài liệu, tỷ lệ rác thải sinh hoạt được thu gom tại các đô thị của tỉnh đạt khoảng bao nhiêu?",tra_cuu
+214,Công nghệ nào được mô tả là cốt lõi để sử dụng và phát triển Internet vạn vật (IoT) và trí tuệ nhân tạo (AI)?,tra_cuu
+215,"Theo đánh giá hiện trạng, Bắc Giang đã cung cấp bao nhiêu dịch vụ công mức độ 3 phục vụ người dân và doanh nghiệp?",tra_cuu
+216,"Trong các điểm yếu được nêu, vấn đề nào được cho là còn hạn chế trong triển khai ứng dụng công nghệ thông tin tại các cơ quan, đơn vị?",tra_cuu
+217,"Theo bộ chỉ tiêu đề xuất cho tỉnh Bắc Giang, mục tiêu tỷ lệ hồ sơ hành chính nộp qua mạng của tổ chức và người dân là bao nhiêu?",tra_cuu
+218,Khi vật liệu SAS: Eu3+ được thiêu kết ở 1250°C trong bao lâu thì chỉ còn tồn tại pha Sr2Al2SiO7?,tra_cuu
+219,"Trong khảo sát ảnh hưởng của hàm lượng B2O3, vật liệu chỉ tồn tại một pha Sr2Al2SiO7 khi hàm lượng chất chảy nằm trong khoảng nào?",tra_cuu
+220,Cấu trúc tinh thể của hệ vật liệu Ca2Al2SiO7 được xác định thuộc pha nào?,tra_cuu
+221,"Trong bảng các hệ vật liệu chế tạo, hệ nào dưới đây được nghiên cứu với nồng độ từ 0,25 đến 4,0 %mol?",tra_cuu
+222,"Theo kết luận chương 2, nhiệt độ thiêu kết tối ưu để chế tạo hệ vật liệu CAS là bao nhiêu?",tra_cuu
+223,Quy trình chế tạo vật liệu SAS của nghiên cứu đã giảm được bao nhiêu độ C nhiệt độ thiêu kết so với công bố của nhóm Jadhaw năm 2017?,tra_cuu
+224,"Trong luận án, các hệ vật liệu CAS: RE3+ được nghiên cứu với các nguyên tố đất hiếm nào?",tra_cuu
+225,Louis Pasteur phát hiện nấm men là tác nhân gây lên men rượu vào năm nào?,tra_cuu
+226,"Đầu những năm 1980, dạng nấm men nào được nghiên cứu và sử dụng phổ biến trong sản xuất rượu vang?",tra_cuu
+227,Kích thước tế bào của nấm men Saccharomyces sử dụng trong công nghiệp thường nằm trong khoảng nào?,tra_cuu
+228,"Trong thành phần các chất hữu cơ cơ bản của tế bào nấm men, protein thô chiếm khoảng bao nhiêu phần trăm?",tra_cuu
+229,Giống dứa nào trong bảng thành phần hóa học có hàm lượng saccharose cao nhất?,tra_cuu
+230,Độ rượu của brandy thường nằm trong khoảng nào?,tra_cuu
+231,"Theo bảng chỉ tiêu hóa học TCVN 7043:2013, hàm lượng methanol tối đa cho phép trong rượu chưng cất là bao nhiêu?",tra_cuu
+232,"Trong nghiên cứu, nước ép dứa được bổ sung bao nhiêu g/l saccharose để đạt đường tổng?",tra_cuu
+233,Môi trường Hansen rắn dùng để phân lập và giữ giống nấm men có pH bao nhiêu?,tra_cuu
+234,Chủng nấm men được tuyển chọn trong nghiên cứu có đặc tính nổi bật nào?,tra_cuu
+235,Thiết bị nào được sử dụng để phân tích sắc kí khí khối phổ trong nghiên cứu?,tra_cuu
+236,"Trong bảng mẫu thử xác định furfurol, bình nào chứa 8,0 ml dung dịch furfurol chuẩn?",tra_cuu
+237,Hiệu suất lên men được tính bằng công thức nào?,tra_cuu
+238,"Theo tiêu chuẩn cảm quan TCVN 3217-79, sản phẩm có mùi “Hòa hợp, thơm dịu, hoàn toàn đặc trưng cho sản phẩm” được chấm bao nhiêu điểm?",tra_cuu
+239,"Theo số liệu nguồn cung cấp, hệ số công suất trung bình trên thanh góp cao áp của nguồn điện bằng bao nhiêu?",tra_cuu
+240,Phụ tải nào có công suất cực đại lớn nhất trong các hộ tiêu thụ?,tra_cuu
+241,"Điện áp định mức lưới điện hạ áp của các hộ tiêu thụ 4, 5 và 6 là bao nhiêu?",tra_cuu
+242,"Trong chế độ MAX, phụ tải 4 có công suất phản kháng Q bằng bao nhiêu MVAr?",tra_cuu
+243,"Theo nội dung cân bằng công suất phản kháng, hệ thống điện có cần bù công suất phản kháng không?",tra_cuu
+244,"Đối với phụ tải loại I, phương án nối dây phải đáp ứng yêu cầu nào?",tra_cuu
+245,Loại dây ACSR nào trong bảng thông số có điện trở r0 nhỏ nhất?,tra_cuu
+246,"Đến tháng 5/2020, số thuê bao băng rộng di động trên 100 dân đạt bao nhiêu?",tra_cuu
+247,"Tính đến 30/6/2020, tên miền quốc gia "".vn"" đạt khoảng bao nhiêu tên miền?",tra_cuu
+248,"Theo số liệu năm 2019, tổng doanh thu toàn ngành viễn thông đạt mức nào?",tra_cuu
+249,Doanh nghiệp nào được cấp phép thử nghiệm mạng và dịch vụ viễn thông sử dụng công nghệ 5G?,tra_cuu
+250,"Năm 2017, chỉ số HHI của thị trường di động Việt Nam xấp xỉ bao nhiêu?",tra_cuu
+251,"Đến tháng 6/2020, tỷ lệ ứng dụng IPv6 trên mạng Internet Việt Nam đạt mức nào?",tra_cuu
+252,Một trong những hạn chế được nêu về cơ cấu doanh thu dịch vụ viễn thông là gì?,tra_cuu
+253,Một giải pháp được đánh giá là đạt đối với tính năng có nhiều tiêu chí kỹ thuật khi nào?,tra_cuu
+254,Tính năng triển khai máy ảo có cấu hình cao yêu cầu hỗ trợ tối thiểu bao nhiêu vCPU và RAM?,tra_cuu
+255,Giải pháp tạo máy ảo mới cần hỗ trợ những giao diện nào?,tra_cuu
+256,Tính năng sao lưu/khôi phục máy ảo yêu cầu cho phép lưu tối thiểu bao nhiêu phiên bản khác nhau của một máy ảo?,tra_cuu
+257,Tính năng hỗ trợ khả năng dự phòng cho mạng mà máy ảo kết nối đến phải hoạt động ở chế độ nào để cải thiện băng thông và đảm bảo tính sẵn sàng?,tra_cuu
+258,"Khi triển khai máy ảo sử dụng công nghệ tăng tốc (accelerator), giải pháp cần hỗ trợ công nghệ nào sau đây?",tra_cuu
+259,Tính năng tích hợp các dịch vụ lưu trữ yêu cầu hỗ trợ những loại lưu trữ nào?,tra_cuu
+260,Website được yêu cầu hỗ trợ ngôn ngữ nào trong phần yêu cầu về nội dung thông tin?,tra_cuu
+261,Module thanh toán của website cho phép khách hàng thanh toán qua cổng nào?,tra_cuu
+262,"Theo yêu cầu về bảo mật và hiệu suất, website cần đáp ứng điều gì?",tra_cuu
+263,Công nghệ nào được sử dụng để thiết kế website theo tài liệu?,tra_cuu
+264,Chi phí của gói website Pro là bao nhiêu?,tra_cuu
+265,"Trong kế hoạch tiến độ, giai đoạn coding và xây dựng database theo yêu cầu kéo dài bao nhiêu ngày?",tra_cuu
+266,Dịch vụ hậu mãi của hosting bao gồm dung lượng và băng thông nào?,tra_cuu
+267,Quy trình quản lý lỗ hổng rà quét bao gồm hoạt động nào sau đây?,tra_cuu
+268,"Trong quy trình quản lý lỗ hổng pentest, hoạt động nào được thực hiện trước khi đóng request?",tra_cuu
+269,"Theo quy trình cập nhật bản vá, bước nào diễn ra ngay sau khi thông báo các bên liên quan?",tra_cuu
+270,"Trong quy trình quản lý lỗ hổng rà quét, vai trò nào chịu trách nhiệm phê duyệt kế hoạch xử lý lỗ hổng?",tra_cuu
+271,"Theo tài liệu, lỗ hổng mức NGHIÊM TRỌNG có thể dẫn đến hậu quả nào?",tra_cuu
+272,Đầu vào của quy trình cập nhật bản vá là gì?,tra_cuu
+273,"Trong quy trình Threat Intelligence, nếu ảnh hưởng đến sản phẩm, dịch vụ hoặc IP khách hàng thì cần làm gì?",tra_cuu
+274,ATS trong hệ thống điện có chức năng chính nào?,tra_cuu
+275,"Theo tài liệu, MCCB thường có dòng định mức nằm trong khoảng nào?",tra_cuu
+276,Phòng DV TTDL có trách nhiệm gì trong công tác bảo dưỡng máy phát điện?,tra_cuu
+277,"Trong hệ thống nhiên liệu của máy phát điện, hạng mục nào được yêu cầu thay mới định kỳ?",tra_cuu
+278,"Ở hệ thống làm mát, tài liệu yêu cầu kiểm tra nội dung nào sau đây?",tra_cuu
+279,"Trong phần kiểm tra hệ thống khí thải, nội dung nào được yêu cầu kiểm tra định kỳ?",tra_cuu
+280,"Khi kiểm tra tủ đầu cực, nếu phát hiện cáp bị lỏng thì cần thực hiện hành động nào?",tra_cuu
+281,"Theo tài liệu, UPS là viết tắt của hệ thống nào?",tra_cuu
+282,Phòng DV TTDL được yêu cầu lập kế hoạch bảo dưỡng UPS/STS định kỳ với tần suất như thế nào?,tra_cuu
+283,"Trong quy trình bảo dưỡng UPS, công việc nào yêu cầu đo nội trở của battery và có kết quả đánh giá?",tra_cuu
+284,Kiểm tra B đối với UPS có đặc điểm nào sau đây?,tra_cuu
+285,"Trong bảo dưỡng UPS, nội dung nào yêu cầu thực hiện bằng phần mềm thiết bị chuyên dụng với các ACB kèm theo UPS?",tra_cuu
+286,"Trong phần bảo dưỡng STS, hoạt động nào được mô tả là kiểm tra tác động trong quá trình chuyển mạch STS bằng thiết bị chuyên dụng?",tra_cuu
+287,Kiểm tra A đối với STS được thực hiện với điều kiện nào?,tra_cuu
+288,"Trong hệ thống điện, ATS có chức năng gì khi nguồn chính bị mất?",tra_cuu
+289,"Theo tài liệu, hệ thống tháp giải nhiệt trong hệ chiller sử dụng bao nhiêu quạt?",tra_cuu
+290,"Trong công tác bảo dưỡng chiller, nội dung nào yêu cầu báo cáo kết quả các vị trí xì?",tra_cuu
+291,Việc vệ sinh ống đồng bình ngưng tụ bằng phương pháp cơ khí được thực hiện với tần suất nào?,tra_cuu
+292,"Trong hệ thống dàn lạnh, nội dung nào được dùng để kiểm tra mức gas?",tra_cuu
+293,"Khi kiểm tra đầu dò nhiệt độ của hệ thống DDC, sai số chấp nhận được phải nằm trong khoảng nào?",tra_cuu
+294,"Trong phần kiểm tra hệ thống bôi trơn, nội dung nào sau đây được yêu cầu thực hiện?",tra_cuu
+295,Vina Virtual Private Cloud sử dụng công nghệ nào để tách biệt logic mạng giữa các khách hàng?,tra_cuu
+296,"Trong thành phần Network của vVPC, Elastic IP được sử dụng để làm gì?",tra_cuu
+297,Tính năng nào cho phép tự động thêm hoặc xóa máy chủ ảo theo lưu lượng truy cập?,tra_cuu
+298,"Theo tài liệu, VPN trong vVPC hỗ trợ những hình thức kết nối nào?",tra_cuu
+299,Khách hàng có thể theo dõi chỉ số nào của máy chủ ảo trên giao diện Web portal?,tra_cuu
+300,Giải pháp SDN của vVPC hỗ trợ những giao thức định tuyến động nào?,tra_cuu
+301,"Theo bảng so sánh sản phẩm cloud compute, Vina Virtual Private Cloud được cung cấp dưới hình thức nào?",tra_cuu
+302,vCloud Portal cho phép thực hiện thao tác nào trên máy chủ ảo?,tra_cuu
+303,"Để clone một VM bằng chức năng Copy To, điều kiện nào phải được đáp ứng?",tra_cuu
+304,Hệ thống snapshot của vCloud Server lưu tối đa bao nhiêu bản snapshot cho mỗi VM?,tra_cuu
+305,"Để reset mật khẩu admin của hệ điều hành, máy chủ ảo cần cài đặt thành phần nào?",tra_cuu
+306,"Trong biểu đồ hiệu suất VM, chỉ số nào biểu thị lượng dữ liệu nhận trung bình mỗi giây?",tra_cuu
+307,"Trong cấu hình NAT của vFirewall, DNAT được dùng để làm gì?",tra_cuu
+308,"Trong cấu hình IPsec VPN Site to Site, thuật toán mã hóa nào được hệ thống hỗ trợ?",tra_cuu
+309,"Theo yêu cầu chung của hệ thống CT 64 lát cắt, thiết bị phải đạt tiêu chuẩn nào?",tra_cuu
+310,Hệ thống chụp cắt lớp vi tính được mô tả có cấu hình bao nhiêu dãy đầu thu và bao nhiêu lát cắt?,tra_cuu
+311,Phần mềm nào được sử dụng để giảm nhiễu ảnh giả gây ra bởi các vật liệu cấy ghép?,tra_cuu
+312,"Theo thông số kỹ thuật của gantry, tốc độ quay tối đa 1 vòng/360 độ là bao nhiêu?",tra_cuu
+313,Tải trọng tối đa của bàn bệnh nhân trong hệ thống CT là bao nhiêu?,tra_cuu
+314,Bộ đầu thu (Detector) của hệ thống CT sử dụng vật liệu gì?,tra_cuu
+315,Máy in phim khô của hệ thống có tốc độ in tối thiểu khoảng bao nhiêu phim mỗi giờ với cỡ phim 35x43 cm?,tra_cuu
+316,Thuật ngữ ADD trong bảo dưỡng máy bay dùng để chỉ trường hợp nào?,tra_cuu
+317,Tài liệu nào do Nhà chế tạo máy bay ban hành và yêu cầu nhân viên kỹ thuật phải tuân theo khi thực hiện bảo dưỡng máy bay?,tra_cuu
+318,Thông báo kỹ thuật bắt buộc (AD) thường được ban hành nhằm mục đích gì?,tra_cuu
+319,Ai là người có nhiệm vụ hỗ trợ các đánh giá viên trong thời gian chuẩn bị và tiến hành đánh giá nhưng ý kiến chỉ mang tính tham khảo?,tra_cuu
+320,CRS-SMI được cấp trong trường hợp nào?,tra_cuu
+321,Khái niệm “Continuing airworthiness” mô tả nội dung nào dưới đây?,tra_cuu
+322,"Theo định nghĩa trong tài liệu, “Critical task” là loại công việc nào?",tra_cuu
+323,Tiêu chuẩn nào quy định về công trình xây dựng và tổ chức thi công?,tra_cuu
+324,"Tiêu chuẩn nào quy định phương pháp đo kiểm công trình và cấu kiện chế sẵn, Phần 1 là phương pháp và dụng cụ đo?",tra_cuu
+325,"Nếu cần tham khảo tiêu chuẩn về công tác đất, thi công và nghiệm thu thì nên dùng mã nào?",tra_cuu
+326,Tiêu chuẩn nào liên quan đến xử lý nền đất yếu bằng phương pháp cố kết hút chân không có màng kín khí?,tra_cuu
+327,Mã tiêu chuẩn nào áp dụng cho kết cấu bê tông và bê tông cốt thép toàn khối về quy phạm thi công và nghiệm thu?,tra_cuu
+328,Tiêu chuẩn nào hướng dẫn kỹ thuật phòng chống nứt cho kết cấu bê tông và bê tông cốt thép dưới tác động của khí hậu nóng ẩm?,tra_cuu
+329,Tiêu chuẩn nào quy định yêu cầu an toàn về cấu tạo và lắp đặt đối với thang máy thủy lực?,tra_cuu
+330,Máy X-quang đo độ loãng xương sử dụng công nghệ nào?,tra_cuu
+331,Thời gian quét xương đùi tối đa của máy đo độ loãng xương là bao nhiêu?,tra_cuu
+332,Liều bức xạ tối đa cho phép khi đo toàn thân là bao nhiêu?,tra_cuu
+333,Diện tích vùng quét tối thiểu cho toàn cơ thể của hệ thống DXA là bao nhiêu?,tra_cuu
+334,Loại cảm biến ảnh được sử dụng trong bộ nhận ảnh của máy là gì?,tra_cuu
+335,Máy in màu trong trạm làm việc yêu cầu tốc độ in đen trắng tối thiểu bao nhiêu?,tra_cuu
+336,Hệ thống tán sỏi ngoài cơ thể sử dụng công nghệ nào để xác định vị trí sỏi?,tra_cuu
+337,Hệ thống nội soi tiêu hóa ống mềm video yêu cầu màn hình y tế chuyên dụng kích thước bao nhiêu?,tra_cuu
+338,Bộ xử lý hình ảnh của hệ thống nội soi cần hỗ trợ tối thiểu bao nhiêu chế độ hình ảnh tăng cường?,tra_cuu
+339,Tuổi thọ tối thiểu yêu cầu của nguồn chiếu sáng LED trong hệ thống nội soi là bao nhiêu?,tra_cuu
+340,Ống soi dạ dày video yêu cầu khả năng phóng đại tối đa bao nhiêu lần khi kết hợp màn hình tương thích?,tra_cuu
+341,Đường kính ngoài đầu cuối của ống soi dạ dày được yêu cầu tối đa là bao nhiêu?,tra_cuu
+342,Độ uốn cong tối thiểu theo hướng lên của đầu ống soi dạ dày là bao nhiêu?,tra_cuu
+343,Ống soi đại tràng video yêu cầu khả năng phóng đại tối đa bao nhiêu lần khi kết hợp màn hình tương thích?,tra_cuu

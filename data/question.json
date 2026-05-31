@@ -1,0 +1,4829 @@
+[
+  {
+    "question": "Mật khẩu mạnh dành cho người quản trị hệ thống nên có tối thiểu bao nhiêu ký tự?",
+    "options": {
+      "A": "Ít nhất 6 ký tự",
+      "B": "Ít nhất 8 ký tự",
+      "C": "Ít nhất 10 ký tự",
+      "D": "Ít nhất 12 ký tự"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_155::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong ví dụ gây tràn bộ đệm, biến buffer trong hàm function() có kích thước bao nhiêu byte?",
+    "options": {
+      "A": "8 byte",
+      "B": "16 byte",
+      "C": "64 byte",
+      "D": "256 byte"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_155::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Sâu SQL Slammer sử dụng cổng dịch vụ nào để quét tìm máy có lỗ hổng?",
+    "options": {
+      "A": "Cổng 21",
+      "B": "Cổng 80",
+      "C": "Cổng 1433",
+      "D": "Cổng 1434"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_155::chunk::8"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong tấn công SQL Injection vượt qua xác thực đăng nhập, chuỗi nào được chèn để khiến điều kiện WHERE luôn đúng?",
+    "options": {
+      "A": "AND 1=0",
+      "B": "OR 1=1--",
+      "C": "UNION SELECT *",
+      "D": "DROP TABLE users"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_155::chunk::14"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo mô tả về phishing, kẻ tấn công thường giả mạo tổ chức nào để đánh cắp thông tin người dùng?",
+    "options": {
+      "A": "Nhà cung cấp dịch vụ Internet và diễn đàn game",
+      "B": "Trang thương mại điện tử và công ty vận chuyển",
+      "C": "Tổ chức tài chính và ngân hàng",
+      "D": "Nhà phát triển phần mềm và mạng xã hội"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_155::chunk::23"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Biện pháp nào giúp ngăn mã độc thực thi dù kẻ tấn công đã chèn được mã vào bộ đệm?",
+    "options": {
+      "A": "Sử dụng giao thức FTP",
+      "B": "Kích hoạt cơ chế DEP (Data Execution Prevention)",
+      "C": "Lưu mật khẩu ở dạng plaintext",
+      "D": "Cho phép thực thi mã trong vùng dữ liệu"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_155::chunk::9"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong trò lừa đảo Nigeria 4-1-9, kẻ lừa đảo thường hứa trả cho nạn nhân khoảng bao nhiêu phần trăm số tiền để dụ tham gia?",
+    "options": {
+      "A": "5-10%",
+      "B": "10-15%",
+      "C": "20-30%",
+      "D": "40-50%"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_155::chunk::22"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi phanh gấp, người lái xe nên đặt gót chân như thế nào?",
+    "options": {
+      "A": "Tì chặt xuống sàn xe để giữ thăng bằng",
+      "B": "Đặt nửa gót chân trên bàn đạp ga",
+      "C": "Không để gót chân dính xuống sàn xe",
+      "D": "Đặt gót chân lên bàn đạp ly hợp"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_207::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Số nào trên xe hộp số cơ khí có lực kéo lớn nhất nhưng tốc độ chậm nhất?",
+    "options": {
+      "A": "Số 1",
+      "B": "Số 2",
+      "C": "Số 4",
+      "D": "Số 5"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_207::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Sau khi vào số 1 trên xe số sàn, người lái nên nhả bàn đạp ly hợp như thế nào?",
+    "options": {
+      "A": "Nhả toàn bộ thật nhanh ngay lập tức",
+      "B": "Khoảng 2/3 đầu nhả nhanh, 1/3 sau nhả từ từ",
+      "C": "Giữ nguyên ly hợp và tăng ga trước",
+      "D": "Nhả chậm đều toàn bộ hành trình"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_207::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi chuyển từ số 4 sang số 5 trên xe số sàn, người lái cần thực hiện thao tác nào?",
+    "options": {
+      "A": "Đẩy thẳng cần số xuống số 5 mà không cần qua số 0",
+      "B": "Đạp phanh rồi kéo cần số sang trái",
+      "C": "Đạp hết hành trình ly hợp, kéo cần số về số 0 rồi đẩy nhẹ sang cửa số 5",
+      "D": "Nhả ga hoàn toàn rồi chuyển trực tiếp sang số lùi"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_207::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trên xe hộp số tự động, số nào được sử dụng khi đỗ xe?",
+    "options": {
+      "A": "Số N",
+      "B": "Số D",
+      "C": "Số R",
+      "D": "Số P"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_207::chunk::5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi xuống dốc dài với xe số tự động, người lái được khuyến nghị cài số nào?",
+    "options": {
+      "A": "Chỉ dùng số D",
+      "B": "Số P hoặc số N",
+      "C": "Số 2 hoặc số 1 (L)",
+      "D": "Chỉ dùng số R"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_207::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi cài số 1 trên xe hộp số tự động, điều kiện nào cần được đảm bảo trước?",
+    "options": {
+      "A": "Xe đang chạy tốc độ cao để tránh chết máy",
+      "B": "Phải đạp hết ga trước khi cài số",
+      "C": "Xe phải đi rất chậm hoặc dừng hẳn và đạp phanh",
+      "D": "Chỉ cần kéo phanh tay là đủ"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_207::chunk::6"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Trước khi khởi động động cơ, người lái cần kiểm tra mức dầu bôi trơn bằng dụng cụ nào?",
+    "options": {
+      "A": "Đồng hồ áp suất dầu",
+      "B": "Bơm dầu phụ",
+      "C": "Thước thăm dầu",
+      "D": "Van xả dầu"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_208::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Đối với động cơ Diesel, thao tác nào cần thực hiện trước khi vặn chìa khóa sang vị trí START?",
+    "options": {
+      "A": "Đạp ga hết hành trình",
+      "B": "Sấy nóng buồng đốt và chờ đèn sấy tắt",
+      "C": "Kéo phanh tay xuống",
+      "D": "Chuyển cần số sang D"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_208::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo hướng dẫn, mỗi lần khởi động động cơ không nên kéo dài quá bao nhiêu giây?",
+    "options": {
+      "A": "3 giây",
+      "B": "5 giây",
+      "C": "10 giây",
+      "D": "15 giây"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_208::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi tắt động cơ Diesel, nên để động cơ chạy chậm trong khoảng bao lâu trước khi tắt máy?",
+    "options": {
+      "A": "30 giây",
+      "B": "1 phút",
+      "C": "2 phút",
+      "D": "3 phút"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_208::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi khởi hành trên đường bằng với xe số sàn, sau khi vào số 1 người lái cần thao tác gì với phanh tay?",
+    "options": {
+      "A": "Đạp thêm phanh chân",
+      "B": "Giữ nguyên phanh tay đến khi xe chạy nhanh",
+      "C": "Nhả phanh tay bằng cách bấm nút mở khóa rồi hạ cần xuống",
+      "D": "Tắt động cơ rồi nhả phanh tay"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_208::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong trường hợp xuống dốc cao nguy hiểm hoặc đi trên đường trơn lầy, phương pháp nào được khuyến nghị để giảm tốc độ?",
+    "options": {
+      "A": "Chỉ dùng phanh tay",
+      "B": "Chỉ dùng bàn đạp ga",
+      "C": "Sử dụng phanh động cơ",
+      "D": "Tắt động cơ để giảm quán tính"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_208::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi phanh để dừng hẳn ô tô nhằm tránh động cơ bị tắt, người lái cần thực hiện thao tác nào?",
+    "options": {
+      "A": "Tăng ga đồng thời đánh lái",
+      "B": "Cắt ly hợp khi phanh",
+      "C": "Chuyển sang số cao hơn",
+      "D": "Kéo phanh tay ngay lập tức"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_208::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi tăng từ số 4 lên số 5, số 5 có đặc điểm gì so với số 4?",
+    "options": {
+      "A": "Lực kéo lớn hơn nhưng tốc độ nhỏ hơn",
+      "B": "Lực kéo nhỏ hơn nhưng tốc độ lớn hơn",
+      "C": "Lực kéo và tốc độ đều nhỏ hơn",
+      "D": "Lực kéo và tốc độ đều lớn hơn"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_209::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo hướng dẫn thao tác tăng số, khi chuyển từ số 1 sang số 2 cần nhả ly hợp như thế nào?",
+    "options": {
+      "A": "Nhả ly hợp thật nhanh",
+      "B": "Nhả ly hợp chậm",
+      "C": "Giữ nguyên ly hợp rồi tăng ga",
+      "D": "Nhả ly hợp theo từng nhịp ngắt quãng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_209::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi xe đi vào đoạn đường xấu hoặc đèo dốc, người lái cần giảm số với mục đích chính nào?",
+    "options": {
+      "A": "Giảm tiêu hao nhiên liệu",
+      "B": "Tăng tốc độ tối đa",
+      "C": "Tăng lực kéo cho xe",
+      "D": "Giảm nhiệt độ động cơ"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_209::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo hướng dẫn giảm số, thời điểm phù hợp để giảm số là khi nào?",
+    "options": {
+      "A": "Khi động cơ hoạt động yếu đi",
+      "B": "Ngay sau khi tăng ga mạnh",
+      "C": "Khi xe đạt tốc độ tối đa",
+      "D": "Chỉ khi xe đã dừng hẳn"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_209::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Vì sao việc lùi xe ôtô thường khó hơn chạy tiến?",
+    "options": {
+      "A": "Xe tiêu hao nhiên liệu nhiều hơn",
+      "B": "Không quan sát chính xác phía sau và khó điều khiển ly hợp",
+      "C": "Động cơ hoạt động không ổn định",
+      "D": "Hệ thống phanh hoạt động yếu hơn"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_209::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Thiết bị nào hỗ trợ người lái quan sát các điểm mù phía sau mà gương chiếu hậu không nhìn thấy?",
+    "options": {
+      "A": "Đèn pha và đèn sương mù",
+      "B": "Bộ định vị GPS",
+      "C": "Cảm biến lùi và camera chiếu hậu",
+      "D": "Hệ thống điều hòa tự động"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_209::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi muốn chuyển hướng đầu xe sang trái trong lúc lùi, đuôi xe sẽ di chuyển theo hướng nào?",
+    "options": {
+      "A": "Sang phải",
+      "B": "Sang trái",
+      "C": "Đi thẳng",
+      "D": "Quay vòng tại chỗ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_209::chunk::5"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Khi lùi xe ghép dọc vào nơi đỗ, người lái cần bật đèn xin đường bên nào?",
+    "options": {
+      "A": "Bên trái",
+      "B": "Bên phải",
+      "C": "Cả hai bên",
+      "D": "Không cần bật"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_210::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong quá trình ghép xe dọc, khi nhìn qua vai sang phải thấy giữa hình ghép xe, người lái cần thực hiện thao tác nào tiếp theo?",
+    "options": {
+      "A": "Đánh hết lái sang trái",
+      "B": "Đạp ga mạnh để tăng tốc",
+      "C": "Kéo phanh tay",
+      "D": "Đánh hết lái sang phải"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_210::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi lùi xe ghép dọc, thao tác nào giúp xe lùi thẳng vào nơi đỗ?",
+    "options": {
+      "A": "Đánh hết lái sang trái liên tục",
+      "B": "Trả lái sang phải khi lùi",
+      "C": "Về số 0 rồi đạp ga",
+      "D": "Kéo phanh tay khi xe đang lùi"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_210::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo lưu ý trong bài ghép xe dọc, người lái cần quan sát như thế nào trong quá trình lùi xe?",
+    "options": {
+      "A": "Chỉ nhìn phía trước đầu xe",
+      "B": "Chỉ quan sát qua camera lùi",
+      "C": "Liên tục quan sát qua gương chiếu hậu và có thể quay đầu nhìn trực tiếp",
+      "D": "Chỉ cần quan sát gương chiếu hậu bên trái"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_210::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi lùi xe ghép ngang, lúc nhìn qua gương chiếu hậu bên phải thấy góc cuối cùng bên phải của vị trí đỗ xe, người lái cần làm gì?",
+    "options": {
+      "A": "Đánh lái sang phải để lùi sâu hơn",
+      "B": "Trả lái, đánh lái sang trái để lùi thẳng xe vào",
+      "C": "Đạp hết ga để vào nhanh",
+      "D": "Kéo phanh tay để dừng xe"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_210::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong quá trình ghép xe ngang, khi xe đã đến gần đầu xe màu đen, người lái cần thực hiện thao tác nào?",
+    "options": {
+      "A": "Tiếp tục lùi nhanh",
+      "B": "Cài số lùi và tăng ga",
+      "C": "Dừng lại bằng cách đạp ly hợp hết hành trình và đạp phanh",
+      "D": "Đánh hết lái sang phải"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_210::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Sau khi xe song song với vỉa hè và tiến sát xe màu hồng trong bài ghép xe ngang, bước tiếp theo là gì?",
+    "options": {
+      "A": "Tắt máy ngay lập tức",
+      "B": "Giữ ly hợp và phanh rồi cài số lùi (R)",
+      "C": "Đánh lái sang trái và tăng ga mạnh",
+      "D": "Kéo phanh tay và rời khỏi xe"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_210::chunk::1"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo phương pháp điều khiển xe ôtô chuyển động đúng hướng, đường thẳng dẫn hướng tưởng tượng được xác định bởi mấy điểm?",
+    "options": {
+      "A": "Hai điểm",
+      "B": "Ba điểm",
+      "C": "Bốn điểm",
+      "D": "Năm điểm"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi điều khiển xe ôtô quay vòng sang phải, người lái cần quay vô lăng theo chiều nào?",
+    "options": {
+      "A": "Ngược chiều kim đồng hồ",
+      "B": "Theo chiều kim đồng hồ",
+      "C": "Giữ nguyên vô lăng",
+      "D": "Đánh lái sang trái trước rồi sang phải"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo phương pháp căn đường, khi người lái thấy vị trí của mình lệch hẳn sang bên trái điểm chuẩn thì xe đang ở vị trí nào?",
+    "options": {
+      "A": "Ở giữa đường",
+      "B": "Ở bên phải đường",
+      "C": "Ở bên trái đường",
+      "D": "Đang đi đúng tim đường"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_215::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi tránh nhau trên mặt đường hẹp vào ban đêm, người lái xe nên sử dụng loại đèn nào?",
+    "options": {
+      "A": "Đèn pha",
+      "B": "Đèn cảnh báo khẩn cấp",
+      "C": "Đèn sương mù",
+      "D": "Đèn cốt"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_215::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi lên dốc thấp, người lái cần thực hiện thao tác nào để vượt dốc hiệu quả?",
+    "options": {
+      "A": "Về số thấp ngay từ đầu dốc",
+      "B": "Tăng tốc độ trước khi đến chân dốc để lấy đà",
+      "C": "Đạp phanh liên tục khi lên dốc",
+      "D": "Tắt điều hòa để giảm tải động cơ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi xuống dốc dài, phương pháp phanh nào nên được sử dụng chủ yếu để tránh cháy má phanh?",
+    "options": {
+      "A": "Phanh tay",
+      "B": "Phanh chân liên tục",
+      "C": "Phanh động cơ",
+      "D": "Tắt máy để giảm tốc"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_215::chunk::7"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi dừng xe trên dốc lên không có bó vỉa, người lái cần đánh tay lái theo hướng nào để đảm bảo an toàn?",
+    "options": {
+      "A": "Đánh hết sang trái",
+      "B": "Đánh sang phải",
+      "C": "Giữ thẳng tay lái",
+      "D": "Đánh luân phiên hai bên"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::8"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, Python được sử dụng phổ biến cho lĩnh vực nào?",
+    "options": {
+      "A": "Thiết kế đồ họa và dựng phim",
+      "B": "Nghiên cứu và ứng dụng AI, Machine Learning",
+      "C": "Quản trị cơ sở dữ liệu Oracle",
+      "D": "Lập trình hệ điều hành nhúng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_476::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trước khi làm thí nghiệm, học viên được yêu cầu cài đặt thư viện nào sau đây?",
+    "options": {
+      "A": "TensorFlow, OpenCV, Flask",
+      "B": "NumPy, Pandas, Scikit-learn, Matplotlib",
+      "C": "PyTorch, FastAPI, Selenium",
+      "D": "Keras, BeautifulSoup, Django"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_476::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong phần mô tả hồi quy logistic, hàm nào được sử dụng để phân loại nhị phân?",
+    "options": {
+      "A": "Hàm ReLU",
+      "B": "Hàm Softmax",
+      "C": "Hàm Sigmoid",
+      "D": "Hàm Tanh"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_476::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo công thức chuẩn hóa dữ liệu (Standardization), giá trị z được tính như thế nào?",
+    "options": {
+      "A": "z = x + μ / σ",
+      "B": "z = (x − μ) / σ",
+      "C": "z = x² − μ",
+      "D": "z = σ / (x − μ)"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_476::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Thuật toán nào được mô tả là dùng để gom cụm dữ liệu?",
+    "options": {
+      "A": "Naive Bayes",
+      "B": "Support Vector Machine",
+      "C": "Gradient Descent",
+      "D": "K-Means Clustering"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_476::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong mô hình SVM, mục tiêu chính là gì?",
+    "options": {
+      "A": "Tìm hàm sigmoid tối ưu",
+      "B": "Giảm số chiều dữ liệu",
+      "C": "Tìm siêu phẳng tối ưu",
+      "D": "Chuẩn hóa dữ liệu đầu vào"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_476::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo công thức đánh giá mô hình, chỉ số nào được tính bằng TP / (TP + FP)?",
+    "options": {
+      "A": "Accuracy",
+      "B": "Recall",
+      "C": "Precision",
+      "D": "F1-score"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_476::chunk::3"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, Python được sử dụng trong lĩnh vực năng lượng tái tạo để làm gì?",
+    "options": {
+      "A": "Thiết kế phần cứng vi xử lý",
+      "B": "Phân tích dữ liệu vận hành và tối ưu hóa cấu hình hệ thống",
+      "C": "Điều khiển giao thông thông minh",
+      "D": "Phát triển trò chơi điện tử"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_477::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Một trong các kiến thức cần nắm vững trước khi làm thí nghiệm là gì?",
+    "options": {
+      "A": "Lập trình hệ điều hành Linux",
+      "B": "Thiết kế mạch FPGA",
+      "C": "Nguyên lý hoạt động của tấm pin quang điện (PV)",
+      "D": "Lập trình ứng dụng di động"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_477::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, hệ MPPT được sử dụng với mục đích gì?",
+    "options": {
+      "A": "Giảm nhiệt độ của tấm pin mặt trời",
+      "B": "Đảm bảo pin mặt trời luôn làm việc ở điểm MPP",
+      "C": "Tăng dung lượng pin lưu trữ",
+      "D": "Giảm điện áp đầu ra của hệ PV"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_477::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bảng định nghĩa đại lượng cơ bản, công suất PV được tính theo công thức nào?",
+    "options": {
+      "A": "Ppv = Gt + A + ηpv",
+      "B": "Ppv = Gt / (A ⋅ ηpv)",
+      "C": "Ppv = Gt ⋅ A ⋅ ηpv",
+      "D": "Ppv = ηpv / (Gt ⋅ A)"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_477::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong hệ thống PV + Pin, hệ thống được gọi là ổn định khi điều kiện nào được thỏa mãn?",
+    "options": {
+      "A": "Công suất PV luôn bằng công suất tải",
+      "B": "SOC luôn nằm trong khoảng [0, 1]",
+      "C": "Nhiệt độ môi trường luôn không đổi",
+      "D": "Pin luôn ở trạng thái sạc đầy"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_477::chunk::7"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bảng dữ liệu mô phỏng, tại thời điểm 12 giờ, công suất PV (Ppv) có giá trị bao nhiêu?",
+    "options": {
+      "A": "0.85 kW",
+      "B": "1.55 kW",
+      "C": "2.55 kW",
+      "D": "3.80 kW"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_477::chunk::8"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong phương trình cân bằng năng lượng của hệ PV + Pin, đại lượng nào được trừ đi?",
+    "options": {
+      "A": "Pload(t)",
+      "B": "Ppv(t)",
+      "C": "Pdischarge(t)",
+      "D": "Pcharge(t)"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_477::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, mạng nơ-ron nhân tạo (ANN) được xây dựng dựa trên ý tưởng nào?",
+    "options": {
+      "A": "Mô phỏng hoạt động của động cơ điện",
+      "B": "Cách bộ não sinh học xử lý thông tin qua các nơ-ron liên kết",
+      "C": "Mô hình truyền dữ liệu trong mạng Internet",
+      "D": "Cấu trúc của cơ sở dữ liệu phân tán"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_481::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo phần mục đích thí nghiệm, ANN được ứng dụng trong bài toán nào sau đây?",
+    "options": {
+      "A": "Thiết kế vi mạch điện tử",
+      "B": "Nén dữ liệu mạng",
+      "C": "Phân loại, dự đoán, xử lý ảnh và ngôn ngữ",
+      "D": "Quản lý bộ nhớ hệ điều hành"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_481::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo mô tả trong tài liệu, hàm kích hoạt nào có đầu ra nằm trong khoảng (-1, 1)?",
+    "options": {
+      "A": "ReLU",
+      "B": "Softmax",
+      "C": "Sigmoid",
+      "D": "Tanh"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_481::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Đặc điểm nào của ReLU được nhắc đến trong tài liệu?",
+    "options": {
+      "A": "Nén giá trị về khoảng (0,1)",
+      "B": "Giữ thành phần dương và triệt tiêu thành phần âm",
+      "C": "Biến vector logit thành phân phối xác suất",
+      "D": "Chuẩn hóa dữ liệu theo mini-batch"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_481::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Softmax được sử dụng để làm gì trong mạng nơ-ron?",
+    "options": {
+      "A": "Chuẩn hóa dữ liệu đầu vào",
+      "B": "Tạo phân phối xác suất trên K lớp",
+      "C": "Loại bỏ hiện tượng overfitting",
+      "D": "Giảm số chiều dữ liệu"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_481::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, Dropout được sử dụng với mục đích gì?",
+    "options": {
+      "A": "Tăng số lượng tham số của mạng",
+      "B": "Chuẩn hóa dữ liệu đầu vào",
+      "C": "Vô hiệu ngẫu nhiên các đơn vị trong huấn luyện để phá đồng thích nghi",
+      "D": "Chuyển đầu ra thành xác suất"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_481::chunk::6"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hàm loss nào được mô tả là thường dùng cho hồi quy và nhạy cảm với ngoại lai do bình phương sai số?",
+    "options": {
+      "A": "Cross-Entropy",
+      "B": "Hinge Loss",
+      "C": "Binary Cross-Entropy",
+      "D": "MSE"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_481::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, học tăng cường (RL) tập trung vào mục tiêu nào?",
+    "options": {
+      "A": "Tối ưu hóa cơ sở dữ liệu quan hệ",
+      "B": "Huấn luyện agent đưa ra chuỗi hành động để tối đa hóa phần thưởng tích lũy",
+      "C": "Phân loại dữ liệu bằng nhãn cố định",
+      "D": "Giảm số chiều dữ liệu đầu vào"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_496::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, môi trường RL chuẩn nào được đề cập để thực hành?",
+    "options": {
+      "A": "ImageNet và COCO",
+      "B": "MNIST và CIFAR-10",
+      "C": "CartPole, MountainCar, Atari",
+      "D": "PostgreSQL và MongoDB"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_496::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong mô hình MDP của Reinforcement Learning, ký hiệu γ biểu diễn đại lượng nào?",
+    "options": {
+      "A": "Tập trạng thái",
+      "B": "Phần thưởng tức thời",
+      "C": "Xác suất chuyển trạng thái",
+      "D": "Hệ số chiết khấu"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_496::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo công thức Q-learning trong tài liệu, giá trị nào được sử dụng để cập nhật Q(s,a)?",
+    "options": {
+      "A": "Giá trị trung bình của mọi hành động",
+      "B": "Giá trị nhỏ nhất của Q(s',a')",
+      "C": "Giá trị lớn nhất của Q(s',a')",
+      "D": "Tổng phần thưởng của toàn bộ episode"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_496::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Thuật toán nào được mô tả là học theo chính sách đang thực hiện, khác với Q-learning?",
+    "options": {
+      "A": "Policy Gradient",
+      "B": "SARSA",
+      "C": "Actor-Critic",
+      "D": "PPO"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_496::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, hàm Advantage dùng để đo lường điều gì?",
+    "options": {
+      "A": "Độ chính xác trung bình của mô hình",
+      "B": "Mức độ tốt hơn trung bình của hành động tại một trạng thái",
+      "C": "Tốc độ hội tụ của gradient",
+      "D": "Số lượng trạng thái khả dụng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_496::chunk::3",
+      "Public_496::chunk::6"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo mô tả về PPO trong tài liệu, mục đích của hàm mất mát PPO là gì?",
+    "options": {
+      "A": "Tăng số lượng hành động được chọn",
+      "B": "Giảm kích thước không gian trạng thái",
+      "C": "Giới hạn cập nhật chính sách để tránh bước nhảy quá lớn",
+      "D": "Chuẩn hóa phần thưởng về khoảng [0,1]"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_496::chunk::6"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, mục đích chính của ontology trong xử lý ảnh là gì?",
+    "options": {
+      "A": "Giảm kích thước tập dữ liệu ảnh",
+      "B": "Biểu diễn hình ảnh theo cách ngữ nghĩa để máy dễ hiểu và tìm kiếm dễ hơn",
+      "C": "Tăng tốc độ huấn luyện mạng R-CNN",
+      "D": "Chuyển đổi ảnh sang định dạng RDF/XML"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_501::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong luận án, kỹ thuật nào được sử dụng để nhận diện và phân đoạn đối tượng từ ảnh gốc?",
+    "options": {
+      "A": "YOLOv5",
+      "B": "ResNet",
+      "C": "R-CNN",
+      "D": "Transformer Vision"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_501::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, Protégé có hạn chế gì khi quản lý ontology ảnh?",
+    "options": {
+      "A": "Không hỗ trợ lưu dưới dạng OWL",
+      "B": "Không thể trực quan hóa ontology",
+      "C": "Không quản lý hiệu quả cơ sở tri thức lớn và thường xuyên cập nhật",
+      "D": "Không hỗ trợ RDF/XML"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_501::chunk::0",
+      "Public_501::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Phương pháp xây dựng ontology nào được mô tả là kết hợp giữa thủ công và tự động, có chuyên gia kiểm tra thông tin trước khi cập nhật?",
+    "options": {
+      "A": "Phương pháp phân cấp",
+      "B": "Phương pháp thủ công",
+      "C": "Phương pháp tự động",
+      "D": "Phương pháp bán tự động"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_501::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong mô hình xây dựng khung ontology bán tự động, định nghĩa lớp được lấy từ nguồn nào?",
+    "options": {
+      "A": "TensorFlow Hub",
+      "B": "WordNet",
+      "C": "ImageNet",
+      "D": "OpenCV"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_501::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo ví dụ truy vấn SPARQL, truy vấn nào được dùng để tìm các phân lớp con của Bird?",
+    "options": {
+      "A": "SELECT ?x WHERE { ?x rdf:type :Bird }",
+      "B": "SELECT ?x WHERE { ?x rdfs:subClassOf :Bird }",
+      "C": "SELECT ?x ?y WHERE { ?y rdf:type :Bird }",
+      "D": "SELECT DISTINCT ?x WHERE { ?x :Bird ?y }"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_501::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bảng ví dụ truy vấn SPARQL, các phân lớp con của Bird bao gồm những lớp nào?",
+    "options": {
+      "A": "Duck, Eagle, Peacock, Swan",
+      "B": "Car, Truck, Bus, Van",
+      "C": "Dog, Cat, Tiger, Lion",
+      "D": "Apple, Banana, Orange, Mango"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_501::chunk::3"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, phần mềm được định nghĩa là gì?",
+    "options": {
+      "A": "Một thiết bị dùng để lưu trữ dữ liệu",
+      "B": "Tập hợp các mạch điện tử điều khiển máy tính",
+      "C": "Tập hợp các câu lệnh được viết bằng ngôn ngữ lập trình để thực hiện chức năng hoặc giải quyết bài toán",
+      "D": "Một hệ thống mạng kết nối các máy tính"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_502::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, phần mềm hệ thống có chức năng chính nào?",
+    "options": {
+      "A": "Soạn thảo văn bản và xử lý ảnh",
+      "B": "Giúp vận hành phần cứng máy tính và hệ thống máy tính",
+      "C": "Thiết kế đồ họa 3D",
+      "D": "Quản lý mạng xã hội"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_502::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Chức năng nào sau đây thuộc về hệ điều hành?",
+    "options": {
+      "A": "Biên tập video chuyên nghiệp",
+      "B": "Quản lý, phân phối và thu hồi bộ nhớ",
+      "C": "Thiết kế website thương mại điện tử",
+      "D": "Dựng mô hình 3D"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_502::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, hệ điều hành nào sau đây được liệt kê là hệ điều hành thông dụng?",
+    "options": {
+      "A": "TensorFlow",
+      "B": "Photoshop",
+      "C": "Ubuntu",
+      "D": "Wireshark"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_502::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong quy trình sản xuất phần mềm, công đoạn nào bao gồm việc xây dựng kịch bản kiểm thử và đánh giá khả năng gây lỗi?",
+    "options": {
+      "A": "Phân tích và thiết kế",
+      "B": "Lập trình, viết mã lệnh",
+      "C": "Kiểm tra, thử nghiệm phần mềm",
+      "D": "Phát hành, phân phối sản phẩm"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_502::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, phần mềm nguồn mở là phần mềm có đặc điểm nào?",
+    "options": {
+      "A": "Chỉ được sử dụng nội bộ trong doanh nghiệp",
+      "B": "Mã nguồn không được phép chỉnh sửa",
+      "C": "Mã nguồn được công bố và cho phép nghiên cứu, thay đổi, cải tiến",
+      "D": "Bắt buộc phải trả phí bản quyền hàng năm"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_502::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng phần mềm nguồn mở thông dụng, phần mềm nào được mô tả là công cụ hỗ trợ bảo mật mạng nổi tiếng, trước đây có tên là Ethereal?",
+    "options": {
+      "A": "ClamWin",
+      "B": "Wireshark",
+      "C": "Filezilla",
+      "D": "Notepad++"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_502::chunk::10"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, thuật toán được mô tả là gì?",
+    "options": {
+      "A": "Một tập hợp thiết bị phần cứng xử lý dữ liệu",
+      "B": "Dãy thao tác rõ ràng, sắp xếp theo trình tự xác định để giải quyết bài toán",
+      "C": "Một loại ngôn ngữ lập trình cấp thấp",
+      "D": "Một phương pháp lưu trữ dữ liệu trên máy tính"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_503::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Đặc trưng nào của thuật toán yêu cầu thuật toán phải dừng sau một số hữu hạn bước thực hiện?",
+    "options": {
+      "A": "Tính hiệu quả",
+      "B": "Tính xác định",
+      "C": "Tính dừng",
+      "D": "Tính phổ dụng"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_503::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong lưu đồ thuật toán, hình thoi thường dùng để biểu diễn điều gì?",
+    "options": {
+      "A": "Điểm bắt đầu hoặc kết thúc",
+      "B": "Thao tác nhập/xuất dữ liệu",
+      "C": "Một hay nhiều chỉ thị cần thực hiện",
+      "D": "Rẽ nhánh và kiểm tra điều kiện"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_503::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, mã giả (Pseudo code) có đặc điểm nào?",
+    "options": {
+      "A": "Chỉ gồm ký tự 0 và 1",
+      "B": "Gần giống ngôn ngữ tự nhiên nhưng sử dụng các cấu trúc chuẩn hóa",
+      "C": "Phải biên dịch trực tiếp sang mã máy",
+      "D": "Chỉ dùng để mô tả phần cứng máy tính"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_503::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, chương trình viết bằng ngôn ngữ máy sử dụng bảng chữ cái nào?",
+    "options": {
+      "A": "Các ký tự ASCII mở rộng",
+      "B": "Các chữ cái Latin",
+      "C": "Chỉ gồm hai ký tự 0 và 1",
+      "D": "Các ký hiệu toán học"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_503::chunk::5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, trình thông dịch (interpreter) hoạt động như thế nào?",
+    "options": {
+      "A": "Dịch toàn bộ chương trình sang tập tin EXE trước khi chạy",
+      "B": "Biên dịch trực tiếp thành mã nhị phân phần cứng",
+      "C": "Dịch từng lệnh sang mã máy và thực hiện ngay",
+      "D": "Chỉ kiểm tra cú pháp mà không thực thi"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_503::chunk::7"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, trình biên dịch (compiler) tạo ra loại tập tin nào trước khi liên kết thành EXE?",
+    "options": {
+      "A": "Tập tin .dll",
+      "B": "Tập tin .obj",
+      "C": "Tập tin .txt",
+      "D": "Tập tin .sys"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_503::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, mục tiêu chính của giai đoạn thiết kế và mô phỏng mô hình là gì?",
+    "options": {
+      "A": "Giảm chi phí sản xuất hàng loạt",
+      "B": "Đảm bảo thiết kế khả thi và giảm rủi ro trước khi chế tạo thực tế",
+      "C": "Tăng điện áp hệ thống lên 10 kV",
+      "D": "Loại bỏ hoàn toàn việc thử nghiệm thực tế"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_504::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo yêu cầu kỹ thuật của mô hình, thời gian đáp ứng của mạch phải nhỏ hơn bao nhiêu?",
+    "options": {
+      "A": "1 ms",
+      "B": "5 ms",
+      "C": "10 ms",
+      "D": "20 ms"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_504::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Hệ thống trong mô hình được thiết kế trên cơ sở mạng điện nào?",
+    "options": {
+      "A": "Mạng điện 1 pha 220 VAC",
+      "B": "Mạng điện 3 pha quy đổi từ 6 kV sang 400 VAC",
+      "C": "Mạng điện 3 pha 35 kV",
+      "D": "Mạng điện DC 48 V"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_504::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, nguyên tắc phát hiện sự cố chạm đất dựa trên điều gì?",
+    "options": {
+      "A": "Đo nhiệt độ của dây dẫn",
+      "B": "So sánh điện áp các pha với điểm trung tính hoặc với nhau",
+      "C": "Đo công suất tiêu thụ của tải",
+      "D": "Phân tích tần số sóng hài"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_504::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong cấu trúc mạch phát hiện chạm đất, thành phần nào được dùng để tác động khi phát hiện sự cố?",
+    "options": {
+      "A": "Máy biến áp",
+      "B": "Mạch dao động",
+      "C": "Rơ le",
+      "D": "Bộ nghịch lưu"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_504::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng kết quả thử nghiệm, với điện trở rò 27Ω, kết luận của hệ thống là gì?",
+    "options": {
+      "A": "Không phát hiện được",
+      "B": "Đạt yêu cầu tuyệt đối",
+      "C": "Tác động không chắc",
+      "D": "Hệ thống bị quá tải"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_504::chunk::2"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo phần nhận xét, đối với mạng quy đổi từ 6 kV sang 400 VAC, mạch có khả năng phát hiện pha rò với điện trở rò không quá bao nhiêu?",
+    "options": {
+      "A": "10Ω",
+      "B": "20Ω",
+      "C": "26.6Ω",
+      "D": "40Ω"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_504::chunk::3"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo bảng vật liệu cách điện, mica có độ bền điện nằm trong khoảng nào?",
+    "options": {
+      "A": "10-15 kV/mm",
+      "B": "20-30 kV/mm",
+      "C": "50-100 kV/mm",
+      "D": "100-150 kV/mm"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_508::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, mica có thể chịu được nhiệt độ khoảng bao nhiêu?",
+    "options": {
+      "A": "100°C",
+      "B": "300°C",
+      "C": "600°C",
+      "D": "1200°C"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_508::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng vật liệu, mica được ứng dụng trong trường hợp nào sau đây?",
+    "options": {
+      "A": "Làm vỏ bọc dây dẫn",
+      "B": "Dùng trong tụ điện và cách điện cho thiết bị nung nóng",
+      "C": "Hàn gắn linh kiện điện tử",
+      "D": "Làm chất chống ẩm cho động cơ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_508::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bảng dữ liệu, vật liệu nào được mô tả có kích thước nhỏ nhưng điện dung lớn?",
+    "options": {
+      "A": "Bakêlit",
+      "B": "Cao su",
+      "C": "Gốm",
+      "D": "Lụa cách điện"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_508::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, cao su được sử dụng chủ yếu để làm gì?",
+    "options": {
+      "A": "Làm chất tẩm sấy biến áp",
+      "B": "Làm vỏ bọc dây dẫn và tấm cách điện",
+      "C": "Làm tụ điện công suất lớn",
+      "D": "Làm vật liệu hàn gắn điện tử"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_508::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng vật liệu, lụa cách điện có độ bền điện nằm trong khoảng nào?",
+    "options": {
+      "A": "5-15 kV/mm",
+      "B": "8-60 kV/mm",
+      "C": "20-30 kV/mm",
+      "D": "60-100 kV/mm"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_508::chunk::2"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, nhựa thông được dùng để làm gì?",
+    "options": {
+      "A": "Làm sạch mối hàn và phối hợp với parafin làm chất tẩm sấy",
+      "B": "Làm lõi dẫn điện cho cáp điện",
+      "C": "Làm bộ phận phát nhiệt trong bàn là",
+      "D": "Làm lớp phủ chống ăn mòn kim loại"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_508::chunk::4",
+      "Public_508::chunk::5"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, biểu đồ phân tán còn được gọi là loại đồ thị nào?",
+    "options": {
+      "A": "Đồ thị tròn",
+      "B": "Đồ thị cột",
+      "C": "Đồ thị X-Y",
+      "D": "Đồ thị Pareto"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_509::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Biểu đồ phân tán được sử dụng chủ yếu để làm gì?",
+    "options": {
+      "A": "Phân loại dữ liệu theo nhóm",
+      "B": "Xác định mối quan hệ giữa hai biến số",
+      "C": "Biểu diễn cơ cấu phần trăm",
+      "D": "Theo dõi tiến độ công việc"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_509::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, khi các điểm dữ liệu nằm trong vùng elip nghiêng về bên phải thì hai đặc tính có mối quan hệ gì?",
+    "options": {
+      "A": "Mối quan hệ nghịch",
+      "B": "Không có quan hệ",
+      "C": "Mối quan hệ thuận",
+      "D": "Mối quan hệ phi tuyến"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_509::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, giá trị hệ số tương quan r gần với giá trị nào cho thấy mối quan hệ nghịch rất lớn?",
+    "options": {
+      "A": "r gần 0",
+      "B": "r gần +1",
+      "C": "r lớn hơn 0.5",
+      "D": "r nhỏ hơn -0.85"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_509::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong biểu đồ phân tán, trục hoành thường dùng để biểu thị điều gì?",
+    "options": {
+      "A": "Tần số xuất hiện",
+      "B": "Biến số",
+      "C": "Giá trị trung bình",
+      "D": "Hệ số hồi quy"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_509::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng phân tích dạng biểu đồ phân tán, trường hợp nào biểu thị không có tương quan?",
+    "options": {
+      "A": "Các điểm tạo xu hướng tăng rõ rệt",
+      "B": "Các điểm tạo xu hướng giảm rõ rệt",
+      "C": "Các điểm phân bố ngẫu nhiên không theo xu hướng",
+      "D": "Các điểm tạo thành đường cong"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_509::chunk::3"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, nếu hệ số tương quan Pearson r = 0 thì điều đó có ý nghĩa gì?",
+    "options": {
+      "A": "Hai biến có quan hệ thuận hoàn toàn",
+      "B": "Hai biến có quan hệ nghịch hoàn toàn",
+      "C": "Hai biến hoàn toàn độc lập, không có liên hệ",
+      "D": "Hai biến có mối quan hệ phi tuyến mạnh"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_509::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, trạng thái nào được xem là lý tưởng trong kiểm soát chất lượng sản phẩm?",
+    "options": {
+      "A": "Độ biến động vượt ngoài giới hạn cho phép",
+      "B": "Giá trị trung bình lệch về giới hạn trên",
+      "C": "Sự biến động sản phẩm nằm gọn trong giới hạn kỹ thuật và phân bố cân đối",
+      "D": "Dung sai rộng hơn nhiều so với biến động thực tế"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_511::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong trường hợp phân bố gần giới hạn (Hình 2), nguy cơ chính của quá trình sản xuất là gì?",
+    "options": {
+      "A": "Sản phẩm luôn đạt chuẩn tuyệt đối",
+      "B": "Chỉ cần dao động nhỏ cũng có thể làm sản phẩm không đạt chuẩn",
+      "C": "Chi phí kiểm tra chất lượng giảm mạnh",
+      "D": "Dung sai kỹ thuật trở nên quá rộng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_511::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, công cụ nào được đề xuất để truy tìm nguyên nhân gây gia tăng dao động trong trường hợp sát nút (Hình 3)?",
+    "options": {
+      "A": "Biểu đồ Pareto",
+      "B": "Histogram",
+      "C": "Fishbone diagram (Ishikawa)",
+      "D": "Biểu đồ Gantt"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_511::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong trường hợp dung sai rộng hơn biến động (Hình 4), tài liệu cho rằng điều gì có thể xảy ra?",
+    "options": {
+      "A": "Quy trình sản xuất bị mất kiểm soát hoàn toàn",
+      "B": "Doanh nghiệp có nguy cơ đánh mất lợi thế cạnh tranh",
+      "C": "Sản phẩm chắc chắn bị loại bỏ hàng loạt",
+      "D": "Mọi sai lỗi đều được loại bỏ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_511::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, hệ thống nào có thể giúp phát hiện lệch chuẩn sớm trong trường hợp lệch phân bố (Hình 5)?",
+    "options": {
+      "A": "Hệ thống ERP",
+      "B": "Hệ thống kiểm soát chất lượng theo thời gian thực",
+      "C": "Hệ thống quản trị nhân sự",
+      "D": "Hệ thống quản lý kho tự động"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_511::chunk::5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong trường hợp vượt ngoài giới hạn (Hình 6), hậu quả nào được nhắc đến trong tài liệu?",
+    "options": {
+      "A": "Chi phí bảo trì thiết bị giảm",
+      "B": "Sản phẩm đồng đều hơn",
+      "C": "Sản phẩm bị loại bỏ, gây tổn thất tài chính và mất uy tín thương hiệu",
+      "D": "Dung sai kỹ thuật được mở rộng tự động"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_511::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo phần so sánh và tổng hợp, trạng thái nào yêu cầu cải tiến toàn diện?",
+    "options": {
+      "A": "Hình 1",
+      "B": "Hình 2 và Hình 5",
+      "C": "Hình 3 và Hình 4",
+      "D": "Hình 6"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_511::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Trong phần lệnh Sketch, công cụ nào được dùng để vẽ đoạn thẳng?",
+    "options": {
+      "A": "Spline",
+      "B": "Arc",
+      "C": "Line",
+      "D": "Offset"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_514::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng công cụ Sketch, lệnh Circle Tangent được dùng để làm gì?",
+    "options": {
+      "A": "Vẽ đường tròn biết tâm và bán kính",
+      "B": "Vẽ đường tròn tiếp xúc với 3 đối tượng",
+      "C": "Vẽ cung tròn qua 3 điểm",
+      "D": "Tạo đường tròn đồng tâm"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_514::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Lệnh Fillet trong Sketch có chức năng gì?",
+    "options": {
+      "A": "Tạo đối xứng đối tượng",
+      "B": "Cắt bỏ một phần đối tượng",
+      "C": "Vê tròn góc của Sketch",
+      "D": "Tạo đường song song"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_514::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, lệnh Offset được dùng để thực hiện thao tác nào?",
+    "options": {
+      "A": "Quay đối tượng Sketch",
+      "B": "Tạo đường thẳng hoặc cong song song cách một khoảng cho trước",
+      "C": "Tạo tâm lỗ",
+      "D": "Chiếu hình học lên Sketch khác"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_514::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi sử dụng lệnh Extend, nhấn phím Shift có tác dụng gì?",
+    "options": {
+      "A": "Chuyển sang chế độ Rotate",
+      "B": "Tạm thời chuyển sang chế độ Trim",
+      "C": "Tăng độ dài đối tượng gấp đôi",
+      "D": "Ẩn các ràng buộc Sketch"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_514::chunk::2"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo bảng ràng buộc Sketch, công cụ nào dùng để tạo ràng buộc song song?",
+    "options": {
+      "A": "=",
+      "B": ">_",
+      "C": "//",
+      "D": "~"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_514::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Lệnh Project Cut Edges có chức năng gì?",
+    "options": {
+      "A": "Xóa toàn bộ cạnh trong Sketch",
+      "B": "Chiếu tất cả các cạnh của chi tiết đã chọn lên mặt phẳng Sketch",
+      "C": "Tạo đối tượng đối xứng",
+      "D": "Tạo đường cong tiếp xúc"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_514::chunk::8"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, công cụ Extrude được sử dụng để làm gì?",
+    "options": {
+      "A": "Quay biên dạng quanh một trục",
+      "B": "Khoét rỗng chi tiết",
+      "C": "Đùn một biên dạng theo phương vuông góc với phác thảo để tạo khối rắn hoặc mô hình mặt",
+      "D": "Tạo đường ren trong hoặc ren ngoài"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_515::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Lệnh Revolve có chức năng gì trong tạo mô hình chi tiết?",
+    "options": {
+      "A": "Đùn biên dạng theo đường dẫn cong",
+      "B": "Quay liên tục một biên dạng quanh một trục",
+      "C": "Tạo một mặt làm việc",
+      "D": "Tạo ma trận chữ nhật Feature"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_515::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, công cụ Loft yêu cầu điều kiện nào?",
+    "options": {
+      "A": "Phải có ít nhất một mặt cong",
+      "B": "Yêu cầu có nhiều mặt phẳng làm việc",
+      "C": "Chỉ áp dụng cho mô hình mặt",
+      "D": "Bắt buộc dùng với lệnh Revolve"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_515::chunk::1",
+      "Public_515::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Công cụ nào được dùng để tạo đường ren trong hoặc ren ngoài chi tiết?",
+    "options": {
+      "A": "Shell",
+      "B": "Coil",
+      "C": "Thread",
+      "D": "Sweep"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_515::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, lệnh Circular Pattern dùng để làm gì?",
+    "options": {
+      "A": "Tạo một Feature theo đường tròn",
+      "B": "Tạo đối xứng qua một mặt",
+      "C": "Tạo mặt làm việc mới",
+      "D": "Khoét rỗng chi tiết"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_515::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Công cụ Pan trong nhóm công cụ quan sát có chức năng gì?",
+    "options": {
+      "A": "Phóng to mô hình",
+      "B": "Hiển thị toàn bộ chi tiết",
+      "C": "Di chuyển vị trí mô hình trong cửa sổ đồ họa",
+      "D": "Thay đổi hướng quan sát mô hình"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_515::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo mô tả của công cụ Look at, thao tác này dùng để làm gì?",
+    "options": {
+      "A": "Ẩn toàn bộ đối tượng hình học",
+      "B": "Thay đổi hướng quan sát vuông góc với đối tượng hình học được chọn",
+      "C": "Tạo một mặt làm việc mới",
+      "D": "Phóng to vùng được chọn"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_515::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu, Autodesk Inventor duy trì mối quan hệ như thế nào giữa mô hình và bản vẽ?",
+    "options": {
+      "A": "Chỉ mô hình cập nhật từ bản vẽ",
+      "B": "Chỉ bản vẽ cập nhật từ mô hình",
+      "C": "Mối quan hệ hai chiều giữa mô hình và bản vẽ",
+      "D": "Mô hình và bản vẽ hoàn toàn độc lập"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_517::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi tạo hình chiếu vuông góc trong Autodesk Inventor, người dùng cần sử dụng công cụ nào?",
+    "options": {
+      "A": "Section View",
+      "B": "Projected View",
+      "C": "Auxiliary View",
+      "D": "Detail View"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_517::chunk::2",
+      "Public_517::chunk::13"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo hướng dẫn tạo hình cắt, sau khi vẽ xong đường cắt người dùng cần chọn lệnh nào trong menu để tiếp tục?",
+    "options": {
+      "A": "Create",
+      "B": "Project",
+      "C": "Continue",
+      "D": "Finish"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_517::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong Autodesk Inventor, công cụ nào được dùng để thêm một tờ giấy vẽ mới?",
+    "options": {
+      "A": "Base View",
+      "B": "New Sheet",
+      "C": "Draft View",
+      "D": "Parts List"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_517::chunk::4",
+      "Public_517::chunk::13"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, lệnh Get Model Dimensions có chức năng gì?",
+    "options": {
+      "A": "Tạo bảng danh mục chi tiết",
+      "B": "Hiện các kích thước mô hình song song với mặt phẳng chiếu trong bản vẽ",
+      "C": "Tạo hình chiếu phụ",
+      "D": "Tự động đánh số chi tiết"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_517::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Công cụ nào trong Drawing Annotation dùng để ghi ký hiệu độ nhám bề mặt?",
+    "options": {
+      "A": "Weld Symbol",
+      "B": "Leader Text",
+      "C": "Surface Texture Symbol",
+      "D": "Center Mark"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_517::chunk::15"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bảng công cụ vẽ, Auto Balloon có chức năng gì?",
+    "options": {
+      "A": "Tạo bảng danh mục chi tiết",
+      "B": "Tự động ghi số hiệu cho tất cả chi tiết trong cụm lắp",
+      "C": "Tạo chú thích có đường dẫn",
+      "D": "Tạo kích thước theo tọa độ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_517::chunk::16"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu Public_521, chiều rộng các nét vẽ được chọn từ dãy kích thước nào sau đây?",
+    "options": {
+      "A": "0,1; 0,2; 0,4; 0,8; 1,2 mm",
+      "B": "0,18; 0,25; 0,35; 0,5; 0,75; 1; 1,4; 2 mm",
+      "C": "0,15; 0,3; 0,45; 0,6; 1,2 mm",
+      "D": "0,2; 0,4; 0,6; 0,8; 1,6 mm"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_521::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng các loại nét vẽ, nét đứt mảnh được dùng để biểu diễn điều gì?",
+    "options": {
+      "A": "Đường đối xứng và đường trục",
+      "B": "Đường bao thấy",
+      "C": "Cạnh khuất và đường bao khuất",
+      "D": "Đường cắt"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_521::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Loại nét nào được sử dụng để biểu diễn đường đối xứng, đường trục và đường tâm?",
+    "options": {
+      "A": "Nét liền mảnh",
+      "B": "Nét đứt đậm",
+      "C": "Nét chấm gạch mảnh",
+      "D": "Nét cắt đậm"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_521::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo quy tắc ưu tiên khi các nét vẽ khác loại trùng nhau, nét nào có độ ưu tiên cao nhất?",
+    "options": {
+      "A": "Nét liền mảnh",
+      "B": "Nét đứt",
+      "C": "Nét chấm gạch mảnh",
+      "D": "Nét liền đậm"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_521::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Đối với đường tròn có đường kính nhỏ hơn 12 mm, tài liệu cho phép dùng loại nét nào thay cho nét chấm gạch mảnh?",
+    "options": {
+      "A": "Nét đứt mảnh",
+      "B": "Nét liền mảnh",
+      "C": "Nét cắt đậm",
+      "D": "Nét hai chấm gạch mảnh"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_521::chunk::3"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo quy định trong tài liệu, tỷ số chiều rộng giữa nét đậm và nét mảnh trên cùng bản vẽ không được nhỏ hơn bao nhiêu?",
+    "options": {
+      "A": "1:1",
+      "B": "1,5:1",
+      "C": "2:1",
+      "D": "3:1"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_521::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong ví dụ các loại nét vẽ, số thứ tự nào tương ứng với nét lượn sóng?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "5",
+      "D": "6"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_521::chunk::4"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu Public_524, lò xo được sử dụng với mục đích nào sau đây?",
+    "options": {
+      "A": "Dẫn điện và truyền tín hiệu",
+      "B": "Dự trữ năng lượng, giảm xóc, ép chặt và đo lực",
+      "C": "Làm kín các bề mặt tiếp xúc",
+      "D": "Truyền nhiệt trong hệ thống cơ khí"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_524::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo mô tả, lò xo xoắn ốc được chia thành những loại nào dựa theo tác dụng của lò xo?",
+    "options": {
+      "A": "Lò xo trụ, lò xo nón và lò xo đĩa",
+      "B": "Lò xo nén, lò xo xoắn và lò xo kéo",
+      "C": "Lò xo phẳng, lò xo lá và lò xo đĩa",
+      "D": "Lò xo thép, lò xo đồng và lò xo hợp kim"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_524::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Lò xo xoắn phẳng thường được dùng làm gì?",
+    "options": {
+      "A": "Giảm xóc cho ô tô",
+      "B": "Truyền động quay giữa hai trục",
+      "C": "Dây cót",
+      "D": "Ép chặt chi tiết máy"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_524::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo quy ước vẽ lò xo xoắn trụ hoặc nón có số vòng xoắn lớn hơn 4 vòng, người ta quy định như thế nào?",
+    "options": {
+      "A": "Vẽ đầy đủ tất cả các vòng xoắn",
+      "B": "Chỉ vẽ một hoặc hai vòng xoắn ở mỗi đầu, các vòng còn lại dùng nét chấm gạch",
+      "C": "Chỉ vẽ mặt cắt của lò xo",
+      "D": "Bỏ hoàn toàn các vòng xoắn ở giữa"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_524::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Đối với lò xo có đường kính dây bằng 2 mm hoặc nhỏ hơn, tài liệu quy định vẽ như thế nào?",
+    "options": {
+      "A": "Vẽ bằng nét đứt mảnh",
+      "B": "Vẽ bằng nét chấm gạch",
+      "C": "Vẽ bằng nét cơ bản và tô đen mặt cắt",
+      "D": "Chỉ vẽ đường tâm của lò xo"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_524::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu Public_524, bánh răng côn được dùng để truyền chuyển động giữa các trục như thế nào?",
+    "options": {
+      "A": "Hai trục song song",
+      "B": "Hai trục đồng tâm",
+      "C": "Hai trục vuông góc",
+      "D": "Hai trục chéo nhau"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_524::chunk::8"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu Public_524, ưu điểm nào của truyền động bánh răng cho phép hệ thống hoạt động ổn định?",
+    "options": {
+      "A": "Có nhiều tiếng ồn khi vận tốc lớn",
+      "B": "Tỷ số truyền không thay đổi",
+      "C": "Chế tạo tương đối đơn giản",
+      "D": "Không yêu cầu độ chính xác cao"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_524::chunk::8"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu Publi_566, Microsoft PowerPoint là ứng dụng hỗ trợ chủ yếu cho công việc nào?",
+    "options": {
+      "A": "Quản lý cơ sở dữ liệu",
+      "B": "Thiết kế đồ họa 3D",
+      "C": "Trình chiếu và trình diễn",
+      "D": "Lập trình ứng dụng web"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_566::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong PowerPoint 2016, chủ đề nào sau đây được nhắc đến như một nhóm chủ đề hỗ trợ sẵn?",
+    "options": {
+      "A": "Engineering",
+      "B": "Business",
+      "C": "Programming",
+      "D": "Finance Report"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_566::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo hướng dẫn khởi động PowerPoint, tổ hợp phím nào được dùng để mở hộp thoại Run?",
+    "options": {
+      "A": "Ctrl + R",
+      "B": "Alt + R",
+      "C": "Windows + R",
+      "D": "Shift + R"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_566::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Để tạo nhanh một Slide mới trong PowerPoint, người dùng có thể sử dụng tổ hợp phím nào?",
+    "options": {
+      "A": "Ctrl + N",
+      "B": "Ctrl + M",
+      "C": "Ctrl + S",
+      "D": "Ctrl + P"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_566::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, tại mỗi thời điểm trình chiếu PowerPoint sẽ hiển thị bao nhiêu Slide?",
+    "options": {
+      "A": "Hai Slide",
+      "B": "Ba Slide",
+      "C": "Toàn bộ Slide",
+      "D": "Một Slide"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_566::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo hướng dẫn trình diễn Slide, phím nào được sử dụng để bắt đầu trình chiếu nhanh?",
+    "options": {
+      "A": "F1",
+      "B": "F3",
+      "C": "F5",
+      "D": "F9"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_566::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khi đang trình diễn Slide, người dùng cần nhấn phím nào để thoát khỏi màn hình trình diễn và quay lại màn hình làm việc?",
+    "options": {
+      "A": "Enter",
+      "B": "Esc",
+      "C": "Delete",
+      "D": "Tab"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_566::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu Public_574, linh kiện điện tử được hiểu là gì?",
+    "options": {
+      "A": "Thiết bị dùng để lưu trữ dữ liệu số",
+      "B": "Những bộ phận điện tử cơ bản có thể là một hoặc nhiều thành phần kết nối với nhau",
+      "C": "Một loại phần mềm điều khiển mạch điện",
+      "D": "Thiết bị chỉ dùng trong hệ thống công nghiệp"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_574::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu Public_574, vai trò chính của linh kiện điện tử là gì?",
+    "options": {
+      "A": "Làm tăng kích thước thiết bị điện",
+      "B": "Giúp cải thiện khả năng hoạt động và đảm bảo máy móc chạy hiệu suất tối ưu",
+      "C": "Giảm điện áp xuống mức cố định",
+      "D": "Chỉ dùng để trang trí bảng mạch"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_574::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu Public_574, linh kiện điện tử được phân thành bao nhiêu dòng chính?",
+    "options": {
+      "A": "2 dòng",
+      "B": "3 dòng",
+      "C": "4 dòng",
+      "D": "5 dòng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_574::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Loại linh kiện nào sau đây được xếp vào nhóm linh kiện điện cơ?",
+    "options": {
+      "A": "Điện trở",
+      "B": "Tụ điện",
+      "C": "Cầu chì",
+      "D": "Diode"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_574::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu Public_574, linh kiện bị động có đặc điểm nào?",
+    "options": {
+      "A": "Có khả năng đưa dòng điện vào mạch",
+      "B": "Không truyền điện cho mạch nếu không có nguồn nối với mạch xoay chiều",
+      "C": "Chỉ hoạt động với nguồn điện một chiều",
+      "D": "Luôn cần vi xử lý điều khiển"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_574::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu Public_574, transistor thường được sử dụng với chức năng nào?",
+    "options": {
+      "A": "Lưu trữ dữ liệu dài hạn",
+      "B": "Khuếch đại hoặc khóa điện tử",
+      "C": "Biến đổi ánh sáng thành nhiệt",
+      "D": "Tạo cách điện cho mạch"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_574::chunk::11"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu Public_574, cuộn cảm tạo ra hiện tượng gì khi có dòng điện chạy qua?",
+    "options": {
+      "A": "Phóng điện",
+      "B": "Hiệu ứng quang điện",
+      "C": "Từ trường",
+      "D": "Nhiệt lượng lớn"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_574::chunk::12"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu Public_578, tỷ trọng tiêu thụ năng lượng tái tạo trong cơ cấu tổng tiêu thụ năng lượng cuối cùng đã tăng từ bao nhiêu năm 2010 lên bao nhiêu năm 2019?",
+    "options": {
+      "A": "Từ 5,1% lên 7,6%",
+      "B": "Từ 7,1% lên 8,6%",
+      "C": "Từ 8,6% lên 10,2%",
+      "D": "Từ 6,3% lên 9,1%"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_578::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu Public_578, tỷ lệ tiêu dùng điện năng lượng tái tạo năm 2019 đạt bao nhiêu?",
+    "options": {
+      "A": "17,2%",
+      "B": "23,2%",
+      "C": "29,1%",
+      "D": "31,4%"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_578::chunk::0",
+      "Public_578::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo điều tra năm 2020, vùng Trung du miền núi phía Bắc có bao nhiêu thôn chưa có điện?",
+    "options": {
+      "A": "457 thôn",
+      "B": "547 thôn",
+      "C": "619 thôn",
+      "D": "682 thôn"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_578::chunk::2",
+      "Public_578::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bảng số liệu, tỉnh nào trong vùng Trung du miền núi phía Bắc có số thôn chưa có điện cao nhất?",
+    "options": {
+      "A": "Sơn La",
+      "B": "Hà Giang",
+      "C": "Điện Biên",
+      "D": "Cao Bằng"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_578::chunk::6"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo tài liệu Public_578, một trong những nguyên nhân hạn chế việc phát triển sử dụng thiết bị năng lượng mặt trời tại vùng TDMNPB là gì?",
+    "options": {
+      "A": "Nguồn điện lưới quốc gia quá dư thừa",
+      "B": "Người dân thiếu cơ hội tiếp cận và tìm hiểu công nghệ năng lượng mặt trời",
+      "C": "Không có doanh nghiệp cung cấp thiết bị",
+      "D": "Thiếu hoàn toàn tiềm năng thủy điện nhỏ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_578::chunk::9"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu Public_578, cơ chế khuyến khích phát triển điện mặt trời được ban hành theo quyết định nào?",
+    "options": {
+      "A": "Quyết định số 24/2014/QĐ-TTg",
+      "B": "Quyết định số 39/2018/QĐ-TTg",
+      "C": "Quyết định số 11/2017/QĐ-TTg",
+      "D": "Quyết định số 37/2011/QĐ-TTg"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_578::chunk::11"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo kết quả khảo sát chuyên gia, loại năng lượng tái tạo nào được đánh giá có khả năng tiếp cận khá với giá trị trung bình 3.27?",
+    "options": {
+      "A": "Năng lượng gió",
+      "B": "Năng lượng mặt trời",
+      "C": "Thủy điện nhỏ",
+      "D": "Năng lượng sinh khối"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_578::chunk::22"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Đặc tính nào được dùng để đánh giá khả năng chịu điện áp của vật liệu cách điện mà không bị đánh thủng?",
+    "options": {
+      "A": "Độ bền về điện",
+      "B": "Hằng số điện môi",
+      "C": "Góc tổn hao",
+      "D": "Tỷ trọng"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_579::chunk::13"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Vật liệu nào có điện trở suất khoảng 0,0175 Wmm²/m và chủ yếu được dùng làm dây dẫn?",
+    "options": {
+      "A": "Nhôm",
+      "B": "Đồng đỏ hay đồng kỹ thuật",
+      "C": "Thau",
+      "D": "Sắt"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_579::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Loại vật liệu dẫn điện nào thường được dùng làm dây điện trở nung nóng?",
+    "options": {
+      "A": "Maganin",
+      "B": "Contantan",
+      "C": "Niken - Crôm",
+      "D": "Thiếc"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_579::chunk::12"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hợp kim chất hàn được mô tả gồm 60% thiếc và 40% chì có đặc điểm gì?",
+    "options": {
+      "A": "Có nhiệt độ nóng chảy cao hơn từng kim loại thành phần",
+      "B": "Có nhiệt độ nóng chảy thấp hơn từng kim loại thiếc và chì",
+      "C": "Chỉ dùng cho dây dẫn công suất lớn",
+      "D": "Không thích hợp để hàn linh kiện điện tử"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_579::chunk::6",
+      "Public_579::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Vật liệu cách điện nào có khả năng chịu nhiệt độ khoảng 1500-1700°C và thường dùng làm giá đỡ cách điện cho đường dây dẫn?",
+    "options": {
+      "A": "Thuỷ tinh",
+      "B": "Mi ca",
+      "C": "Sứ",
+      "D": "Bakêlit"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_579::chunk::15",
+      "Public_579::chunk::16"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Vật liệu nào được dùng để làm vỏ bọc dây dẫn và làm tấm cách điện?",
+    "options": {
+      "A": "Cao su",
+      "B": "Lụa cách điện",
+      "C": "Pretspan",
+      "D": "Paraphin"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_579::chunk::19"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong các vật liệu dẫn điện dưới đây, vật liệu nào có nhiệt độ nóng chảy cao nhất?",
+    "options": {
+      "A": "Sắt",
+      "B": "Niken - Crôm",
+      "C": "Nicken",
+      "D": "Đồng đỏ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_579::chunk::8",
+      "Public_579::chunk::12",
+      "Public_579::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Doanh nghiệp phân tích tình hình biến động tài sản cố định bằng cách nào?",
+    "options": {
+      "A": "So sánh số cuối kỳ và số đầu năm về nguyên giá và tỷ trọng từng loại tài sản cố định",
+      "B": "So sánh doanh thu với chi phí bảo trì tài sản cố định",
+      "C": "Đánh giá số lượng lao động sử dụng tài sản cố định",
+      "D": "So sánh lợi nhuận với tổng chi phí sản xuất"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_580::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tài sản cố định dùng trong sản xuất của doanh nghiệp đã tăng bao nhiêu phần trăm vào cuối năm?",
+    "options": {
+      "A": "+32,0%",
+      "B": "+45,2%",
+      "C": "+12,2%",
+      "D": "+88,6%"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_580::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khoản mục nào có mức tăng tỷ lệ lớn nhất trong bảng phân tích biến động tài sản cố định?",
+    "options": {
+      "A": "Tài sản cố định dùng cho bán hàng",
+      "B": "Tài sản cố định dùng ngoài sản xuất",
+      "C": "Phương tiện kỹ thuật",
+      "D": "Tài sản cố định cho quản lý"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_580::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hệ số hao mòn tài sản cố định được xác định bằng công thức nào?",
+    "options": {
+      "A": "H = NG / HM",
+      "B": "H = HM / NG",
+      "C": "H = Gs / Ng",
+      "D": "H = Ng / Gs"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_580::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Nếu hệ số hao mòn tài sản cố định càng gần 1 thì điều đó cho thấy điều gì?",
+    "options": {
+      "A": "Tài sản cố định còn rất mới",
+      "B": "Doanh nghiệp sử dụng tài sản cố định rất hiệu quả",
+      "C": "Tài sản cố định của doanh nghiệp càng cũ và cần đổi mới",
+      "D": "Nguyên giá tài sản cố định đang giảm mạnh"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_580::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hiệu suất sử dụng tài sản cố định năm nay của doanh nghiệp là bao nhiêu?",
+    "options": {
+      "A": "65,2",
+      "B": "68,4",
+      "C": "77,292",
+      "D": "12,9"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_580::chunk::10"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo phân tích mức độ ảnh hưởng của các nhân tố, hiệu suất sử dụng tài sản cố định đã làm giá trị sản xuất tăng thêm bao nhiêu triệu đồng?",
+    "options": {
+      "A": "5.216 triệu đồng",
+      "B": "8.832 triệu đồng",
+      "C": "3.616 triệu đồng",
+      "D": "1.130 triệu đồng"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_580::chunk::11"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "STEM là thuật ngữ viết tắt của những lĩnh vực nào?",
+    "options": {
+      "A": "Science, Technology, Engineering và Mathematics",
+      "B": "Science, Teaching, Economics và Mathematics",
+      "C": "Social, Technology, Engineering và Management",
+      "D": "Science, Technology, Environment và Mechanics"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_581::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Giáo dục STEM nhằm mục tiêu chính nào đối với học sinh?",
+    "options": {
+      "A": "Trang bị kỹ năng ghi nhớ lý thuyết thuần túy",
+      "B": "Phát triển năng lực phát hiện và giải quyết vấn đề gắn với thực tiễn",
+      "C": "Tăng thời lượng học các môn xã hội",
+      "D": "Thay thế hoàn toàn phương pháp dạy học truyền thống"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_581::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Quy trình xây dựng bài giảng điện tử E-learning gồm bao nhiêu bước?",
+    "options": {
+      "A": "4 bước",
+      "B": "5 bước",
+      "C": "6 bước",
+      "D": "7 bước"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_581::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Ưu điểm nào của E-learning cho phép học viên lựa chọn phương pháp học phù hợp với thời gian biểu cá nhân?",
+    "options": {
+      "A": "Nội dung học tập được cập nhật thường xuyên",
+      "B": "Hệ thống hỗ trợ học theo khả năng cá nhân và linh động thời gian",
+      "C": "Giáo viên dễ dàng theo dõi học viên",
+      "D": "Giảm tổng thời gian cần thiết cho việc học"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_581::chunk::7"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong thực nghiệm sư phạm, có bao nhiêu học sinh lớp thực nghiệm đạt mức điểm từ 8 đến 8,7?",
+    "options": {
+      "A": "11 học sinh",
+      "B": "13 học sinh",
+      "C": "41 học sinh",
+      "D": "54 học sinh"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_581::chunk::11",
+      "Public_581::chunk::12"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Giá trị trung bình điểm kiểm tra của lớp thực nghiệm (TN) là bao nhiêu?",
+    "options": {
+      "A": "6,192",
+      "B": "7,804",
+      "C": "1,2199",
+      "D": "0,543"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_581::chunk::16"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo kết quả phân tích thực nghiệm, giá trị p của phép kiểm chứng t-test là bao nhiêu?",
+    "options": {
+      "A": "1,20.10-5",
+      "B": "0,543",
+      "C": "3,6.10-7",
+      "D": "0,05"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_581::chunk::16",
+      "Public_581::chunk::17"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo mô hình 5Vs của Big Data do Gartner đưa ra năm 2014, chữ V nào thể hiện sự gia tăng về tốc độ xử lý dữ liệu?",
+    "options": {
+      "A": "Volume",
+      "B": "Velocity",
+      "C": "Variety",
+      "D": "Veracity"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_583::chunk::0",
+      "Public_583::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo IBM, khoảng bao nhiêu phần trăm dữ liệu trên thế giới là dữ liệu phi cấu trúc hoặc bán cấu trúc?",
+    "options": {
+      "A": "20%",
+      "B": "40%",
+      "C": "60%",
+      "D": "80%"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_583::chunk::0",
+      "Public_583::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Hadoop Distributed File System (HDFS) có đặc điểm nào sau đây?",
+    "options": {
+      "A": "Mỗi file chỉ được lưu trên một node duy nhất",
+      "B": "Mỗi block của file được lưu thành nhiều bản sao để đảm bảo an toàn dữ liệu",
+      "C": "Chỉ hỗ trợ dữ liệu có cấu trúc",
+      "D": "Không sử dụng block ID để nhận diện dữ liệu"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_583::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong MapReduce, giai đoạn nào thực hiện việc gom nhóm tất cả value theo intermediate key?",
+    "options": {
+      "A": "Map",
+      "B": "Shuffle",
+      "C": "Reduce",
+      "D": "Split"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_583::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong dữ liệu COVID-19, trường nào dùng để lưu số cá nhân từ chối tiêm vắc xin?",
+    "options": {
+      "A": "UnknownDose",
+      "B": "SecondDose",
+      "C": "FirstDoseRefused",
+      "D": "Denominator"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_583::chunk::12"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Kết quả truy vấn tỷ lệ tiêm chủng cho quốc gia DK là bao nhiêu?",
+    "options": {
+      "A": "75.7%",
+      "B": "86.66%",
+      "C": "87.99%",
+      "D": "92.28%"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_583::chunk::15"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong thực nghiệm so sánh SQL Server và Hortonworks Sandbox, ở lần xử lý thứ 31 điều gì xảy ra với SQL Server?",
+    "options": {
+      "A": "Cho kết quả sau 18m 50s",
+      "B": "Dung lượng lưu trữ vượt 30 GB",
+      "C": "Báo lỗi khi xử lý dữ liệu",
+      "D": "Có thời gian xử lý nhanh hơn HWS"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_583::chunk::20"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Khu công nghiệp nào tại Dĩ An được đề cập là đã có hệ thống thu gom và nhà máy xử lý nước thải?",
+    "options": {
+      "A": "Khu công nghiệp VSIP 1",
+      "B": "Khu công nghiệp Sóng Thần 1 và 2",
+      "C": "Khu công nghiệp Mỹ Phước",
+      "D": "Khu công nghiệp Nam Tân Uyên"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_585::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Phạm vi dự án III được đề xuất có tổng diện tích bao nhiêu hecta?",
+    "options": {
+      "A": "1.200 ha",
+      "B": "1.600 ha",
+      "C": "2.000 ha",
+      "D": "6.010 ha"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_585::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo kế hoạch năm 2020, công suất của nhà máy xử lý nước thải thuộc dự án III là bao nhiêu?",
+    "options": {
+      "A": "10.000 m3/ngày",
+      "B": "15.000 m3/ngày",
+      "C": "30.000 m3/ngày",
+      "D": "60.000 m3/ngày"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_585::chunk::4",
+      "Public_585::chunk::5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Khu vực nào được dự báo có số dân được thu gom nước thải vào năm 2035 cao nhất?",
+    "options": {
+      "A": "An Bình",
+      "B": "Dĩ An",
+      "C": "Đông Hòa",
+      "D": "Tân Đông Hiệp"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_585::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo dự báo năm 2035, tổng lưu lượng nước thải của dự án III là bao nhiêu m3/ngày?",
+    "options": {
+      "A": "14.687 m3/ngày",
+      "B": "32.217 m3/ngày",
+      "C": "60.311 m3/ngày",
+      "D": "89.000 m3/ngày"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_585::chunk::8"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Chi phí xây dựng hệ thống ống trong dự án được dự toán khoảng bao nhiêu?",
+    "options": {
+      "A": "400.285.000.000 VND",
+      "B": "224.410.522.000 VND",
+      "C": "1.179.647.300.000 VND",
+      "D": "160.293.230.000 VND"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_585::chunk::13"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Nguồn vốn JICA chiếm bao nhiêu phần trăm tổng mức đầu tư của dự án?",
+    "options": {
+      "A": "60%",
+      "B": "70%",
+      "C": "85%",
+      "D": "90%"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_585::chunk::15"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Năm 2017, tốc độ tăng trưởng GRDP của tỉnh Bắc Giang đạt bao nhiêu phần trăm?",
+    "options": {
+      "A": "6,81%",
+      "B": "10,5%",
+      "C": "13,3%",
+      "D": "20,6%"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_587::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Đến năm 2025, dân số đô thị toàn tỉnh Bắc Giang được dự báo khoảng bao nhiêu người?",
+    "options": {
+      "A": "371.800 người",
+      "B": "659.500 người",
+      "C": "857.700 người",
+      "D": "1.880.000 người"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_587::chunk::9"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, tỷ lệ rác thải sinh hoạt được thu gom tại các đô thị của tỉnh đạt khoảng bao nhiêu?",
+    "options": {
+      "A": "80,3%",
+      "B": "83,5%",
+      "C": "92,2%",
+      "D": "95,8%"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_587::chunk::5",
+      "Public_587::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Công nghệ nào được mô tả là cốt lõi để sử dụng và phát triển Internet vạn vật (IoT) và trí tuệ nhân tạo (AI)?",
+    "options": {
+      "A": "Điện toán đám mây",
+      "B": "Blockchain",
+      "C": "Dữ liệu lớn (Big Data)",
+      "D": "Mạng 5G"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_587::chunk::14"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo đánh giá hiện trạng, Bắc Giang đã cung cấp bao nhiêu dịch vụ công mức độ 3 phục vụ người dân và doanh nghiệp?",
+    "options": {
+      "A": "230 dịch vụ",
+      "B": "667 dịch vụ",
+      "C": "1208 dịch vụ",
+      "D": "1850 dịch vụ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_587::chunk::17",
+      "Public_587::chunk::18"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong các điểm yếu được nêu, vấn đề nào được cho là còn hạn chế trong triển khai ứng dụng công nghệ thông tin tại các cơ quan, đơn vị?",
+    "options": {
+      "A": "Thiếu mạng Internet tốc độ cao",
+      "B": "Thiếu các phần mềm chuyên ngành và cơ sở dữ liệu liên thông",
+      "C": "Không có cổng thông tin điện tử",
+      "D": "Chưa triển khai chữ ký số"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_587::chunk::19"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bộ chỉ tiêu đề xuất cho tỉnh Bắc Giang, mục tiêu tỷ lệ hồ sơ hành chính nộp qua mạng của tổ chức và người dân là bao nhiêu?",
+    "options": {
+      "A": "0,5%",
+      "B": "10%",
+      "C": "30%",
+      "D": "50%"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_587::chunk::23",
+      "Public_587::chunk::24"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Khi vật liệu SAS: Eu3+ được thiêu kết ở 1250°C trong bao lâu thì chỉ còn tồn tại pha Sr2Al2SiO7?",
+    "options": {
+      "A": "30 min",
+      "B": "60 min",
+      "C": "90 min",
+      "D": "120 min"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_590::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong khảo sát ảnh hưởng của hàm lượng B2O3, vật liệu chỉ tồn tại một pha Sr2Al2SiO7 khi hàm lượng chất chảy nằm trong khoảng nào?",
+    "options": {
+      "A": "1–2 %kl sản phẩm",
+      "B": "2–3 %kl sản phẩm",
+      "C": "4–5 %kl sản phẩm",
+      "D": "6–7 %kl sản phẩm"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_590::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Cấu trúc tinh thể của hệ vật liệu Ca2Al2SiO7 được xác định thuộc pha nào?",
+    "options": {
+      "A": "Lập phương (Cubic)",
+      "B": "Tứ giác (Tetragonal)",
+      "C": "Lục giác (Hexagonal)",
+      "D": "Trực thoi (Orthorhombic)"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_590::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong bảng các hệ vật liệu chế tạo, hệ nào dưới đây được nghiên cứu với nồng độ từ 0,25 đến 4,0 %mol?",
+    "options": {
+      "A": "Eu3+ (x CAS: %mol)",
+      "B": "Sm3+ (x CAS: %mol)",
+      "C": "Ce3+ (x CAS: %mol)",
+      "D": "CAS: Tb3+ (x %mol)"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_590::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo kết luận chương 2, nhiệt độ thiêu kết tối ưu để chế tạo hệ vật liệu CAS là bao nhiêu?",
+    "options": {
+      "A": "1200°C",
+      "B": "1250°C",
+      "C": "1280°C",
+      "D": "1350°C"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_590::chunk::7"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quy trình chế tạo vật liệu SAS của nghiên cứu đã giảm được bao nhiêu độ C nhiệt độ thiêu kết so với công bố của nhóm Jadhaw năm 2017?",
+    "options": {
+      "A": "50°C",
+      "B": "100°C",
+      "C": "150°C",
+      "D": "200°C"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_590::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong luận án, các hệ vật liệu CAS: RE3+ được nghiên cứu với các nguyên tố đất hiếm nào?",
+    "options": {
+      "A": "La, Nd, Pr, Gd, Yb",
+      "B": "Sm, Dy, Ce, Tb, Eu",
+      "C": "Er, Ho, Tm, Lu, Y",
+      "D": "Ce, Yb, Sc, In, Ga"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_590::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Louis Pasteur phát hiện nấm men là tác nhân gây lên men rượu vào năm nào?",
+    "options": {
+      "A": "1780",
+      "B": "1810",
+      "C": "1836",
+      "D": "1854"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_594::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Đầu những năm 1980, dạng nấm men nào được nghiên cứu và sử dụng phổ biến trong sản xuất rượu vang?",
+    "options": {
+      "A": "Nấm men lỏng tự nhiên",
+      "B": "Nấm men dạng kem",
+      "C": "Sinh khối nấm men S. cerevisiae dạng khô",
+      "D": "Nấm men nuôi trên môi trường thạch"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_594::chunk::0",
+      "Public_594::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Kích thước tế bào của nấm men Saccharomyces sử dụng trong công nghiệp thường nằm trong khoảng nào?",
+    "options": {
+      "A": "(1 - 2) × (2 - 4) μm",
+      "B": "(3 - 5) × (5 - 10) μm",
+      "C": "(8 - 10) × (12 - 15) μm",
+      "D": "(15 - 20) × (20 - 25) μm"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_594::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong thành phần các chất hữu cơ cơ bản của tế bào nấm men, protein thô chiếm khoảng bao nhiêu phần trăm?",
+    "options": {
+      "A": "30-37%",
+      "B": "42-46%",
+      "C": "50-52%",
+      "D": "6-8%"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_594::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Giống dứa nào trong bảng thành phần hóa học có hàm lượng saccharose cao nhất?",
+    "options": {
+      "A": "Dứa Long An",
+      "B": "Dứa Victoria nhập nội",
+      "C": "Dứa hoa Vĩnh Phú",
+      "D": "Dứa hoa Tuyên Quang"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_594::chunk::8"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Độ rượu của brandy thường nằm trong khoảng nào?",
+    "options": {
+      "A": "10 – 20% V/V ethanol",
+      "B": "20 – 35% V/V ethanol",
+      "C": "40 – 60% V/V ethanol",
+      "D": "65 – 80% V/V ethanol"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_594::chunk::15"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo bảng chỉ tiêu hóa học TCVN 7043:2013, hàm lượng methanol tối đa cho phép trong rượu chưng cất là bao nhiêu?",
+    "options": {
+      "A": "200 mg/l cồn",
+      "B": "500 mg/l cồn",
+      "C": "1000 mg/l cồn",
+      "D": "2000 mg/l cồn"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_594::chunk::27"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Trong nghiên cứu, nước ép dứa được bổ sung bao nhiêu g/l saccharose để đạt đường tổng?",
+    "options": {
+      "A": "100 g/l",
+      "B": "200 g/l",
+      "C": "300 g/l",
+      "D": "400 g/l"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_596::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Môi trường Hansen rắn dùng để phân lập và giữ giống nấm men có pH bao nhiêu?",
+    "options": {
+      "A": "4,0",
+      "B": "5,0",
+      "C": "5,5",
+      "D": "6,5"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_596::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Chủng nấm men được tuyển chọn trong nghiên cứu có đặc tính nổi bật nào?",
+    "options": {
+      "A": "Khả năng tạo màu cao",
+      "B": "Lên men mạnh và hương thơm đặc trưng",
+      "C": "Sinh trưởng ở nhiệt độ thấp",
+      "D": "Khả năng tạo methanol cao"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_596::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Thiết bị nào được sử dụng để phân tích sắc kí khí khối phổ trong nghiên cứu?",
+    "options": {
+      "A": "UV-VIS 1800 Shimadzu",
+      "B": "Gel Doc XR+",
+      "C": "QP2010 Shimadzu",
+      "D": "T100 Thermal Cycler"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_596::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong bảng mẫu thử xác định furfurol, bình nào chứa 8,0 ml dung dịch furfurol chuẩn?",
+    "options": {
+      "A": "Bình 3",
+      "B": "Bình 4",
+      "C": "Bình 5",
+      "D": "Bình 6"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_596::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hiệu suất lên men được tính bằng công thức nào?",
+    "options": {
+      "A": "Lượng rượu lý thuyết / Lượng rượu thực tế × 100",
+      "B": "Lượng đường thực tế / Lượng đường lý thuyết × 100",
+      "C": "Lượng rượu thực tế / Lượng rượu lý thuyết × 100",
+      "D": "Lượng ethanol tạo thành / Tổng acid × 100"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_596::chunk::5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tiêu chuẩn cảm quan TCVN 3217-79, sản phẩm có mùi “Hòa hợp, thơm dịu, hoàn toàn đặc trưng cho sản phẩm” được chấm bao nhiêu điểm?",
+    "options": {
+      "A": "3 điểm",
+      "B": "4 điểm",
+      "C": "5 điểm",
+      "D": "0 điểm"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_596::chunk::8"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo số liệu nguồn cung cấp, hệ số công suất trung bình trên thanh góp cao áp của nguồn điện bằng bao nhiêu?",
+    "options": {
+      "A": "0,75",
+      "B": "0,80",
+      "C": "0,85",
+      "D": "0,90"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_599::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Phụ tải nào có công suất cực đại lớn nhất trong các hộ tiêu thụ?",
+    "options": {
+      "A": "Phụ tải 1",
+      "B": "Phụ tải 3",
+      "C": "Phụ tải 4",
+      "D": "Phụ tải 6"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_599::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Điện áp định mức lưới điện hạ áp của các hộ tiêu thụ 4, 5 và 6 là bao nhiêu?",
+    "options": {
+      "A": "6 kV",
+      "B": "10 kV",
+      "C": "22 kV",
+      "D": "35 kV"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_599::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong chế độ MAX, phụ tải 4 có công suất phản kháng Q bằng bao nhiêu MVAr?",
+    "options": {
+      "A": "12,10805262 MVAr",
+      "B": "13,56101894 MVAr",
+      "C": "16,95127367 MVAr",
+      "D": "8,717797887 MVAr"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_599::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo nội dung cân bằng công suất phản kháng, hệ thống điện có cần bù công suất phản kháng không?",
+    "options": {
+      "A": "Cần bù toàn bộ phụ tải",
+      "B": "Chỉ cần bù trong chế độ sự cố",
+      "C": "Không cần bù vì nguồn cung cấp đủ công suất phản kháng",
+      "D": "Chỉ cần bù cho phụ tải loại I"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_599::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Đối với phụ tải loại I, phương án nối dây phải đáp ứng yêu cầu nào?",
+    "options": {
+      "A": "Chỉ cần một đường dây để giảm chi phí",
+      "B": "Cho phép gián đoạn điện ngắn hạn",
+      "C": "Có đường dây dự phòng như hai đường dây song song hoặc mạch vòng kín",
+      "D": "Chỉ sử dụng lưới điện hạ áp 10 kV"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_599::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Loại dây ACSR nào trong bảng thông số có điện trở r0 nhỏ nhất?",
+    "options": {
+      "A": "ACSR-70",
+      "B": "ACSR-95",
+      "C": "ACSR-185",
+      "D": "ACSR-240"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_599::chunk::9"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Đến tháng 5/2020, số thuê bao băng rộng di động trên 100 dân đạt bao nhiêu?",
+    "options": {
+      "A": "55.39 thuê bao/100 dân",
+      "B": "62.83 thuê bao/100 dân",
+      "C": "67.71 thuê bao/100 dân",
+      "D": "47.90 thuê bao/100 dân"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_600::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tính đến 30/6/2020, tên miền quốc gia \".vn\" đạt khoảng bao nhiêu tên miền?",
+    "options": {
+      "A": "412.700 tên miền",
+      "B": "512.700 tên miền",
+      "C": "612.700 tên miền",
+      "D": "712.700 tên miền"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_600::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo số liệu năm 2019, tổng doanh thu toàn ngành viễn thông đạt mức nào?",
+    "options": {
+      "A": "369,7 nghìn tỷ đồng",
+      "B": "469,7 nghìn tỷ đồng",
+      "C": "569,7 nghìn tỷ đồng",
+      "D": "669,7 nghìn tỷ đồng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_600::chunk::5"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Doanh nghiệp nào được cấp phép thử nghiệm mạng và dịch vụ viễn thông sử dụng công nghệ 5G?",
+    "options": {
+      "A": "Viettel, Mobifone và VNPT",
+      "B": "FPT Telecom, CMC Telecom và SCTV",
+      "C": "Vietnamobile, Gtel và NetNam",
+      "D": "VNPost, EVN Telecom và S-Fone"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_600::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Năm 2017, chỉ số HHI của thị trường di động Việt Nam xấp xỉ bao nhiêu?",
+    "options": {
+      "A": "2600",
+      "B": "3000",
+      "C": "3600",
+      "D": "4200"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_600::chunk::9"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Đến tháng 6/2020, tỷ lệ ứng dụng IPv6 trên mạng Internet Việt Nam đạt mức nào?",
+    "options": {
+      "A": "22%",
+      "B": "34%",
+      "C": "44%",
+      "D": "54%"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_600::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Một trong những hạn chế được nêu về cơ cấu doanh thu dịch vụ viễn thông là gì?",
+    "options": {
+      "A": "Doanh thu từ dữ liệu đã vượt 90% tổng doanh thu",
+      "B": "Doanh thu thoại và tin nhắn vẫn chiếm khoảng 70% tổng doanh thu dịch vụ viễn thông",
+      "C": "Doanh thu từ dịch vụ vệ tinh giảm xuống dưới 5%",
+      "D": "Doanh thu từ Mobile Money chiếm tỷ trọng lớn nhất thị trường"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_600::chunk::10"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Một giải pháp được đánh giá là đạt đối với tính năng có nhiều tiêu chí kỹ thuật khi nào?",
+    "options": {
+      "A": "Khi đạt ít nhất 50% tiêu chí kỹ thuật",
+      "B": "Khi đạt tất cả các tiêu chí, chỉ tiêu kỹ thuật",
+      "C": "Khi đạt các tiêu chí quan trọng do người dùng lựa chọn",
+      "D": "Khi đạt tối thiểu một tiêu chí kỹ thuật"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_605::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tính năng triển khai máy ảo có cấu hình cao yêu cầu hỗ trợ tối thiểu bao nhiêu vCPU và RAM?",
+    "options": {
+      "A": "32 vCPU và 64 GB RAM",
+      "B": "64 vCPU và 128 GB RAM",
+      "C": "96 vCPU và 256 GB RAM",
+      "D": "128 vCPU và 512 GB RAM"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_605::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Giải pháp tạo máy ảo mới cần hỗ trợ những giao diện nào?",
+    "options": {
+      "A": "Chỉ giao diện GUI và CLI",
+      "B": "GUI, CLI và API tích hợp với hệ thống khác",
+      "C": "CLI và giao diện web portal",
+      "D": "GUI và SSH console"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_605::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Tính năng sao lưu/khôi phục máy ảo yêu cầu cho phép lưu tối thiểu bao nhiêu phiên bản khác nhau của một máy ảo?",
+    "options": {
+      "A": "03 phiên bản",
+      "B": "05 phiên bản",
+      "C": "07 phiên bản",
+      "D": "10 phiên bản"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_605::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tính năng hỗ trợ khả năng dự phòng cho mạng mà máy ảo kết nối đến phải hoạt động ở chế độ nào để cải thiện băng thông và đảm bảo tính sẵn sàng?",
+    "options": {
+      "A": "Passive-passive hoặc failover-only",
+      "B": "Active-active hoặc active-standby",
+      "C": "Read-only hoặc read-write",
+      "D": "Clustered hoặc isolated"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_605::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Khi triển khai máy ảo sử dụng công nghệ tăng tốc (accelerator), giải pháp cần hỗ trợ công nghệ nào sau đây?",
+    "options": {
+      "A": "PCI Passthrough và SR-IOV",
+      "B": "Only Hyper-V Replica",
+      "C": "RAID 0 và RAID 1",
+      "D": "NAT Traversal và GRE Tunnel"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_605::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Tính năng tích hợp các dịch vụ lưu trữ yêu cầu hỗ trợ những loại lưu trữ nào?",
+    "options": {
+      "A": "Chỉ block storage",
+      "B": "Block storage và tape storage",
+      "C": "Block storage, object storage và file storage",
+      "D": "Object storage và cold archive storage"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_605::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Website được yêu cầu hỗ trợ ngôn ngữ nào trong phần yêu cầu về nội dung thông tin?",
+    "options": {
+      "A": "Tiếng Việt và Tiếng Anh",
+      "B": "Chỉ Tiếng Anh",
+      "C": "Tiếng Việt",
+      "D": "Tiếng Việt, Nhật và Hàn"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_608::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Module thanh toán của website cho phép khách hàng thanh toán qua cổng nào?",
+    "options": {
+      "A": "Stripe và Payoneer",
+      "B": "Bảo Kim, Ngân Lượng và PayPal",
+      "C": "Momo và ZaloPay",
+      "D": "VNPay và Apple Pay"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_608::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo yêu cầu về bảo mật và hiệu suất, website cần đáp ứng điều gì?",
+    "options": {
+      "A": "Chỉ hoạt động tốt trên thiết bị di động",
+      "B": "Tốc độ truy cập cao và hỗ trợ lượng truy cập lớn cùng lúc",
+      "C": "Bắt buộc dùng công nghệ điện toán đám mây",
+      "D": "Giới hạn số lượng người dùng truy cập đồng thời"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_608::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Công nghệ nào được sử dụng để thiết kế website theo tài liệu?",
+    "options": {
+      "A": "ASP.NET và SQL Server",
+      "B": "Java Spring và Oracle",
+      "C": "PHP kết hợp Smarty và MySQL",
+      "D": "Python Django và PostgreSQL"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_608::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Chi phí của gói website Pro là bao nhiêu?",
+    "options": {
+      "A": "12,000,000 VNĐ",
+      "B": "18,000,000 VNĐ",
+      "C": "23,800,000 VNĐ",
+      "D": "4,800,000 VNĐ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_608::chunk::12"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong kế hoạch tiến độ, giai đoạn coding và xây dựng database theo yêu cầu kéo dài bao nhiêu ngày?",
+    "options": {
+      "A": "07 ngày",
+      "B": "10 ngày",
+      "C": "20 ngày",
+      "D": "30 ngày"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_608::chunk::10"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Dịch vụ hậu mãi của hosting bao gồm dung lượng và băng thông nào?",
+    "options": {
+      "A": "1,000 MB và 50 GB",
+      "B": "2,000 MB và 100 GB",
+      "C": "5,000 MB và 200 GB",
+      "D": "10,000 MB và không giới hạn băng thông"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_608::chunk::15"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Quy trình quản lý lỗ hổng rà quét bao gồm hoạt động nào sau đây?",
+    "options": {
+      "A": "Rà quét lỗ hổng",
+      "B": "Triển khai hệ thống ERP",
+      "C": "Đào tạo nhân sự nội bộ",
+      "D": "Mã hóa cơ sở dữ liệu"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_612::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong quy trình quản lý lỗ hổng pentest, hoạt động nào được thực hiện trước khi đóng request?",
+    "options": {
+      "A": "Lập biên bản ATTT",
+      "B": "Mua thiết bị mạng",
+      "C": "Khởi tạo tài khoản người dùng",
+      "D": "Sao lưu dữ liệu định kỳ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_612::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo quy trình cập nhật bản vá, bước nào diễn ra ngay sau khi thông báo các bên liên quan?",
+    "options": {
+      "A": "Tiến hành cập nhật bản vá",
+      "B": "Lập báo cáo và lưu thông tin",
+      "C": "Lập kế hoạch cập nhật bản vá",
+      "D": "Đóng request"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_612::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong quy trình quản lý lỗ hổng rà quét, vai trò nào chịu trách nhiệm phê duyệt kế hoạch xử lý lỗ hổng?",
+    "options": {
+      "A": "Team ATTT",
+      "B": "SO",
+      "C": "Ban lãnh đạo",
+      "D": "Chăm sóc khách hàng"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_612::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, lỗ hổng mức NGHIÊM TRỌNG có thể dẫn đến hậu quả nào?",
+    "options": {
+      "A": "Chỉ ảnh hưởng nhỏ đến giao diện người dùng",
+      "B": "Có khả năng gây thiệt hại lớn và tạo điều kiện cho tin tặc chiếm quyền điều khiển hệ thống",
+      "C": "Không có khả năng gây mất dữ liệu",
+      "D": "Chỉ làm chậm tốc độ truy cập mạng nội bộ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_612::chunk::12"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Đầu vào của quy trình cập nhật bản vá là gì?",
+    "options": {
+      "A": "Khi có thông tin về bản vá cần cập nhật",
+      "B": "Khi người dùng yêu cầu đổi mật khẩu",
+      "C": "Khi hệ thống hết dung lượng lưu trữ",
+      "D": "Khi phát sinh lỗi phần cứng máy chủ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_612::chunk::11"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong quy trình Threat Intelligence, nếu ảnh hưởng đến sản phẩm, dịch vụ hoặc IP khách hàng thì cần làm gì?",
+    "options": {
+      "A": "Tiến hành pentest ngay lập tức",
+      "B": "Thông báo khách hàng và kết thúc",
+      "C": "Khóa toàn bộ hệ thống nội bộ",
+      "D": "Khởi tạo môi trường thử nghiệm mới"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_612::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "ATS trong hệ thống điện có chức năng chính nào?",
+    "options": {
+      "A": "Ổn định điện áp đầu ra cho UPS",
+      "B": "Chuyển đổi nguồn tự động sang nguồn dự phòng khi mất nguồn chính",
+      "C": "Triệt xung điện áp trên đường dây",
+      "D": "Đo điện trở nối đất của hệ thống"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_614::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, MCCB thường có dòng định mức nằm trong khoảng nào?",
+    "options": {
+      "A": "Iđm ≤ 100A",
+      "B": "100A < Iđm < 1000A",
+      "C": "Iđm ≥ 1000A",
+      "D": "50A < Iđm < 500A"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_614::chunk::0"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Phòng DV TTDL có trách nhiệm gì trong công tác bảo dưỡng máy phát điện?",
+    "options": {
+      "A": "Thay thế toàn bộ thiết bị điện định kỳ",
+      "B": "Phối hợp lập kế hoạch bảo dưỡng định kỳ hàng quý",
+      "C": "Kiểm tra chất lượng nhiên liệu hàng ngày",
+      "D": "Quản lý hệ thống camera giám sát"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_614::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong hệ thống nhiên liệu của máy phát điện, hạng mục nào được yêu cầu thay mới định kỳ?",
+    "options": {
+      "A": "Bơm cấp nhiên liệu",
+      "B": "Đường dẫn và khớp nối",
+      "C": "Lọc dầu",
+      "D": "Mức nhiên liệu"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_614::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Ở hệ thống làm mát, tài liệu yêu cầu kiểm tra nội dung nào sau đây?",
+    "options": {
+      "A": "Mức nước làm mát",
+      "B": "Độ phân giải camera nhiệt",
+      "C": "Công suất UPS",
+      "D": "Tần số chuyển mạch ATS"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_614::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong phần kiểm tra hệ thống khí thải, nội dung nào được yêu cầu kiểm tra định kỳ?",
+    "options": {
+      "A": "Màu khí thải",
+      "B": "Dung lượng ắc quy",
+      "C": "Nhiệt độ phòng máy",
+      "D": "Khả năng chống tĩnh điện của sàn"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_614::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khi kiểm tra tủ đầu cực, nếu phát hiện cáp bị lỏng thì cần thực hiện hành động nào?",
+    "options": {
+      "A": "Thay toàn bộ ACB",
+      "B": "Ngắt toàn bộ hệ thống điện",
+      "C": "Xiết lại các bulong",
+      "D": "Thay mới dây cáp động lực"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_614::chunk::10"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, UPS là viết tắt của hệ thống nào?",
+    "options": {
+      "A": "Hệ thống chuyển nguồn tự động",
+      "B": "Hệ thống cấp nguồn AC liên tục",
+      "C": "Hệ thống triệt xung điện áp",
+      "D": "Hệ thống thông gió lọc bụi"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_616::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Phòng DV TTDL được yêu cầu lập kế hoạch bảo dưỡng UPS/STS định kỳ với tần suất như thế nào?",
+    "options": {
+      "A": "1 tháng/lần",
+      "B": "2 tháng/lần",
+      "C": "3 tháng/lần",
+      "D": "6 tháng/lần"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_616::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong quy trình bảo dưỡng UPS, công việc nào yêu cầu đo nội trở của battery và có kết quả đánh giá?",
+    "options": {
+      "A": "Kiểm tra các mối nối và siết lại các mối",
+      "B": "Kiểm tra điện áp của các ắc quy khi nạp/xả",
+      "C": "Vệ sinh các thiết bị bên trong",
+      "D": "Hiệu chỉnh điện áp và tần số bằng phần mềm"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_616::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Kiểm tra B đối với UPS có đặc điểm nào sau đây?",
+    "options": {
+      "A": "Không cần shutdown UPS và chỉ mất dưới 30 phút",
+      "B": "Chỉ thực hiện một lần mỗi năm",
+      "C": "Cần shutdown UPS và thời gian thực hiện từ 2 đến 4 tiếng cho mỗi UPS",
+      "D": "Chỉ bao gồm vệ sinh bên ngoài thiết bị"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_616::chunk::5"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Trong bảo dưỡng UPS, nội dung nào yêu cầu thực hiện bằng phần mềm thiết bị chuyên dụng với các ACB kèm theo UPS?",
+    "options": {
+      "A": "Kiểm tra log file và phân tích log",
+      "B": "Vệ sinh, kiểm tra và hiệu chỉnh các thông số",
+      "C": "Đo nội trở của battery",
+      "D": "Kiểm tra tình trạng quạt làm mát"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_616::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong phần bảo dưỡng STS, hoạt động nào được mô tả là kiểm tra tác động trong quá trình chuyển mạch STS bằng thiết bị chuyên dụng?",
+    "options": {
+      "A": "Kiểm tra cáp nguồn vào/ra",
+      "B": "Kiểm tra tình trạng của các Switch",
+      "C": "Vệ sinh bên ngoài thiết bị",
+      "D": "Hiệu chỉnh các thông số điện áp và tần số"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_616::chunk::7"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Kiểm tra A đối với STS được thực hiện với điều kiện nào?",
+    "options": {
+      "A": "Cần shutdown STS hoàn toàn",
+      "B": "Chỉ thực hiện khi thay tụ điện",
+      "C": "Không cần shutdown STS",
+      "D": "Chỉ áp dụng cho STS mới lắp đặt"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_616::chunk::8"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong hệ thống điện, ATS có chức năng gì khi nguồn chính bị mất?",
+    "options": {
+      "A": "Ổn định điện áp cho hệ thống UPS",
+      "B": "Tự động chuyển sang nguồn dự phòng",
+      "C": "Ngắt toàn bộ tải điện để bảo vệ thiết bị",
+      "D": "Triệt tiêu xung điện áp trên đường dây"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_617::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Theo tài liệu, hệ thống tháp giải nhiệt trong hệ chiller sử dụng bao nhiêu quạt?",
+    "options": {
+      "A": "2 quạt",
+      "B": "3 quạt",
+      "C": "4 quạt",
+      "D": "6 quạt"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_617::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong công tác bảo dưỡng chiller, nội dung nào yêu cầu báo cáo kết quả các vị trí xì?",
+    "options": {
+      "A": "Kiểm tra mức độ rung bất thường",
+      "B": "Thử xì thông thường",
+      "C": "Kiểm tra mức gas",
+      "D": "Kiểm tra áp lực nước"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_617::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Việc vệ sinh ống đồng bình ngưng tụ bằng phương pháp cơ khí được thực hiện với tần suất nào?",
+    "options": {
+      "A": "1 lần/năm",
+      "B": "2 lần/năm",
+      "C": "4 lần/năm",
+      "D": "6 lần/năm"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_617::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong hệ thống dàn lạnh, nội dung nào được dùng để kiểm tra mức gas?",
+    "options": {
+      "A": "Đồng hồ áp suất nước",
+      "B": "Sensor đo mức lỏng hoặc kính xem gas",
+      "C": "Công tắc dòng chảy",
+      "D": "Thiết bị đo nhiệt độ motor"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_617::chunk::6"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Khi kiểm tra đầu dò nhiệt độ của hệ thống DDC, sai số chấp nhận được phải nằm trong khoảng nào?",
+    "options": {
+      "A": "+/- 0.5°C",
+      "B": "+/- 1°C",
+      "C": "+/- 2°C",
+      "D": "+/- 5°C"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_617::chunk::17"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong phần kiểm tra hệ thống bôi trơn, nội dung nào sau đây được yêu cầu thực hiện?",
+    "options": {
+      "A": "Kiểm tra màu dầu và mức dầu",
+      "B": "Kiểm tra độ rung của tháp giải nhiệt",
+      "C": "Kiểm tra tín hiệu relay UPS",
+      "D": "Kiểm tra độ cách nhiệt của dàn ngưng"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_617::chunk::8"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Vina Virtual Private Cloud sử dụng công nghệ nào để tách biệt logic mạng giữa các khách hàng?",
+    "options": {
+      "A": "Network Function Virtualization (NFV)",
+      "B": "Software Defined Networking (SDN)",
+      "C": "Content Delivery Network (CDN)",
+      "D": "Multi-Protocol Label Switching (MPLS)"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_618::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong thành phần Network của vVPC, Elastic IP được sử dụng để làm gì?",
+    "options": {
+      "A": "Tạo subnet cho hệ thống mạng",
+      "B": "Định tuyến giữa các subnet",
+      "C": "Gán IPv4 Public cho máy chủ ảo truy cập Internet",
+      "D": "Kiểm soát quyền truy cập người dùng IAM"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_618::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tính năng nào cho phép tự động thêm hoặc xóa máy chủ ảo theo lưu lượng truy cập?",
+    "options": {
+      "A": "Elastic IP",
+      "B": "Autoscale",
+      "C": "Security Group",
+      "D": "VPC Peering"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_618::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo tài liệu, VPN trong vVPC hỗ trợ những hình thức kết nối nào?",
+    "options": {
+      "A": "PPTP VPN và L2TP VPN",
+      "B": "GRE Tunnel và MPLS VPN",
+      "C": "IPSec VPN site-to-site và SSL VPN client-to-site",
+      "D": "SSL VPN site-to-site và OpenVPN mesh"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_618::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khách hàng có thể theo dõi chỉ số nào của máy chủ ảo trên giao diện Web portal?",
+    "options": {
+      "A": "RAM, CPU, IOPS và Bandwidth",
+      "B": "Nhiệt độ CPU và điện áp nguồn",
+      "C": "Độ trễ DNS và tốc độ tải trang",
+      "D": "Mức sử dụng GPU và FPS"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_618::chunk::4"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Giải pháp SDN của vVPC hỗ trợ những giao thức định tuyến động nào?",
+    "options": {
+      "A": "RIP và EIGRP",
+      "B": "OSPF và BGP",
+      "C": "IS-IS và MPLS",
+      "D": "STP và VLAN"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_618::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo bảng so sánh sản phẩm cloud compute, Vina Virtual Private Cloud được cung cấp dưới hình thức nào?",
+    "options": {
+      "A": "Máy chủ vật lý chuyên dụng",
+      "B": "Máy chủ ảo đơn lẻ (Single VM)",
+      "C": "Cụm tài nguyên (Resource Pool)",
+      "D": "Container orchestration cluster"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_618::chunk::7"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "vCloud Portal cho phép thực hiện thao tác nào trên máy chủ ảo?",
+    "options": {
+      "A": "Power off, suspend, reset và tạo snapshot",
+      "B": "Cài đặt trực tiếp phần cứng vật lý",
+      "C": "Thay đổi firmware BIOS của server vật lý",
+      "D": "Quản lý switch mạng vật lý trong datacenter"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_619::chunk::2"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Để clone một VM bằng chức năng Copy To, điều kiện nào phải được đáp ứng?",
+    "options": {
+      "A": "VM phải đang chạy và có snapshot",
+      "B": "VM phải ở trạng thái Suspend",
+      "C": "VM phải ở trạng thái Power off và không chứa snapshot",
+      "D": "VM phải được gắn thêm ISO boot"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_619::chunk::4"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Hệ thống snapshot của vCloud Server lưu tối đa bao nhiêu bản snapshot cho mỗi VM?",
+    "options": {
+      "A": "1 bản snapshot",
+      "B": "3 bản snapshot",
+      "C": "5 bản snapshot",
+      "D": "Không giới hạn số lượng snapshot"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_619::chunk::6"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Để reset mật khẩu admin của hệ điều hành, máy chủ ảo cần cài đặt thành phần nào?",
+    "options": {
+      "A": "Docker Engine",
+      "B": "Vmware tools hoặc Open-vm-tools",
+      "C": "Microsoft IIS",
+      "D": "Windows Defender ATP"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_619::chunk::11"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Trong biểu đồ hiệu suất VM, chỉ số nào biểu thị lượng dữ liệu nhận trung bình mỗi giây?",
+    "options": {
+      "A": "disk.read.average",
+      "B": "cpu.usage.average",
+      "C": "net.bytesRx.average",
+      "D": "mem.usage.average"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_619::chunk::13"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Trong cấu hình NAT của vFirewall, DNAT được dùng để làm gì?",
+    "options": {
+      "A": "Chuyển đổi IP private của server ra IP public",
+      "B": "Giới hạn số lượng kết nối đồng thời",
+      "C": "Chuyển tiếp lưu lượng từ IP public vào IP private của server",
+      "D": "Mã hóa toàn bộ lưu lượng VPN"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_619::chunk::21"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Trong cấu hình IPsec VPN Site to Site, thuật toán mã hóa nào được hệ thống hỗ trợ?",
+    "options": {
+      "A": "AES, AES256 và 3DES",
+      "B": "RSA, ECC và Blowfish",
+      "C": "SHA1, SHA256 và MD5",
+      "D": "ChaCha20 và Poly1305"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_619::chunk::23"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo yêu cầu chung của hệ thống CT 64 lát cắt, thiết bị phải đạt tiêu chuẩn nào?",
+    "options": {
+      "A": "ISO 9001",
+      "B": "ISO 27001",
+      "C": "ISO 13485",
+      "D": "IEC 60601"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_627::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Hệ thống chụp cắt lớp vi tính được mô tả có cấu hình bao nhiêu dãy đầu thu và bao nhiêu lát cắt?",
+    "options": {
+      "A": "16 dãy đầu thu, 32 lát cắt",
+      "B": "32 dãy đầu thu, 64 lát cắt",
+      "C": "64 dãy đầu thu, 128 lát cắt",
+      "D": "128 dãy đầu thu, 256 lát cắt"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_627::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Phần mềm nào được sử dụng để giảm nhiễu ảnh giả gây ra bởi các vật liệu cấy ghép?",
+    "options": {
+      "A": "ClearRay",
+      "B": "Bolus Tracking",
+      "C": "iDose4",
+      "D": "O-MAR"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_627::chunk::3",
+      "Public_627::chunk::12"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Theo thông số kỹ thuật của gantry, tốc độ quay tối đa 1 vòng/360 độ là bao nhiêu?",
+    "options": {
+      "A": "0.3 giây",
+      "B": "0.5 giây",
+      "C": "0.75 giây",
+      "D": "1.0 giây"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_627::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Tải trọng tối đa của bàn bệnh nhân trong hệ thống CT là bao nhiêu?",
+    "options": {
+      "A": "180 kg",
+      "B": "200 kg",
+      "C": "205 kg",
+      "D": "250 kg"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_627::chunk::7"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Bộ đầu thu (Detector) của hệ thống CT sử dụng vật liệu gì?",
+    "options": {
+      "A": "Silicon tinh thể",
+      "B": "Chất bán dẫn GOS",
+      "C": "Germanium oxide",
+      "D": "Ceramic composite"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_627::chunk::10"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Máy in phim khô của hệ thống có tốc độ in tối thiểu khoảng bao nhiêu phim mỗi giờ với cỡ phim 35x43 cm?",
+    "options": {
+      "A": "80 phim/giờ",
+      "B": "95 phim/giờ",
+      "C": "110 phim/giờ",
+      "D": "150 phim/giờ"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_627::chunk::18"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Thuật ngữ ADD trong bảo dưỡng máy bay dùng để chỉ trường hợp nào?",
+    "options": {
+      "A": "Hỏng hóc không thể xử lý ngay và được phép trì hoãn sửa chữa theo điều kiện của tài liệu MEL",
+      "B": "Hỏng hóc bắt buộc phải sửa chữa ngay trước khi máy bay tiếp tục khai thác",
+      "C": "Hỏng hóc được phép bỏ qua nếu không ảnh hưởng đến hệ thống điện",
+      "D": "Hỏng hóc chỉ cần ghi nhận mà không cần theo dõi trong tài liệu bảo dưỡng"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_629::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tài liệu nào do Nhà chế tạo máy bay ban hành và yêu cầu nhân viên kỹ thuật phải tuân theo khi thực hiện bảo dưỡng máy bay?",
+    "options": {
+      "A": "Aircraft Maintenance Manual (AMM)",
+      "B": "Aircraft Maintenance Review Report (AMRR)",
+      "C": "Aircraft Maintenance Schedule/Programme (AMS/AMP)",
+      "D": "Configuration Deviation List (CDL)"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_629::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Thông báo kỹ thuật bắt buộc (AD) thường được ban hành nhằm mục đích gì?",
+    "options": {
+      "A": "Chỉ ra một khiếm khuyết kỹ thuật đã được phát hiện hoặc có thể xuất hiện",
+      "B": "Hướng dẫn quy trình đào tạo kỹ thuật viên bảo dưỡng định kỳ",
+      "C": "Cho phép trì hoãn các công việc sửa chữa ngoài kế hoạch",
+      "D": "Quy định mức tiêu hao nhiên liệu tối đa của động cơ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_629::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Ai là người có nhiệm vụ hỗ trợ các đánh giá viên trong thời gian chuẩn bị và tiến hành đánh giá nhưng ý kiến chỉ mang tính tham khảo?",
+    "options": {
+      "A": "Assistance auditor",
+      "B": "Authorised person",
+      "C": "Auditee",
+      "D": "Controller"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_629::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "CRS-SMI được cấp trong trường hợp nào?",
+    "options": {
+      "A": "Sau khi hoàn thành một bảo dưỡng định kỳ từ dạng A trở lên",
+      "B": "Sau khi hoàn thành bất kỳ sửa chữa nhỏ nào trong khoang hành khách",
+      "C": "Khi máy bay đạt tiêu chuẩn xuất xưởng của nhà sản xuất",
+      "D": "Khi hoàn tất kiểm tra chống ăn mòn cấu trúc mức 1"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_629::chunk::6"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Khái niệm “Continuing airworthiness” mô tả nội dung nào dưới đây?",
+    "options": {
+      "A": "Các quá trình đảm bảo máy bay luôn tuân thủ yêu cầu đủ điều kiện bay và an toàn bay trong suốt quá trình khai thác",
+      "B": "Hoạt động kiểm tra định kỳ nhằm đánh giá mức tiêu hao nhiên liệu của máy bay",
+      "C": "Quy trình cấp phép tạm thời cho nhân viên bảo dưỡng ngoài phạm vi được phê chuẩn",
+      "D": "Hệ thống quản lý phụ tùng tiêu hao và vật liệu sửa chữa máy bay"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_629::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Theo định nghĩa trong tài liệu, “Critical task” là loại công việc nào?",
+    "options": {
+      "A": "Công việc bảo dưỡng liên quan đến tháo/lắp nhiều hơn một thiết bị cùng loại trên hai hoặc nhiều hệ thống máy bay",
+      "B": "Công việc sửa chữa khẩn cấp phải hoàn thành trong vòng 24 giờ",
+      "C": "Công việc bảo dưỡng chỉ được thực hiện bởi Nhà chức trách hàng không",
+      "D": "Công việc thay thế vật liệu tiêu hao trong quá trình bảo dưỡng định kỳ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_629::chunk::8"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Tiêu chuẩn nào quy định về công trình xây dựng và tổ chức thi công?",
+    "options": {
+      "A": "TCVN 4055:2012",
+      "B": "TCVN 4091:1985",
+      "C": "TCVN 4252:2012",
+      "D": "TCVN 5637:1991"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_630::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tiêu chuẩn nào quy định phương pháp đo kiểm công trình và cấu kiện chế sẵn, Phần 1 là phương pháp và dụng cụ đo?",
+    "options": {
+      "A": "TCVN 9262-1:2012",
+      "B": "TCVN 9262-2:2012",
+      "C": "TCVN 9259-8:2012",
+      "D": "TCVN 9261:2012"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_630::chunk::1"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Nếu cần tham khảo tiêu chuẩn về công tác đất, thi công và nghiệm thu thì nên dùng mã nào?",
+    "options": {
+      "A": "TCVN 4447:2012",
+      "B": "TCVN 9361:2012",
+      "C": "TCVN 9394:2012",
+      "D": "TCVN 7201:2015"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_630::chunk::3"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Tiêu chuẩn nào liên quan đến xử lý nền đất yếu bằng phương pháp cố kết hút chân không có màng kín khí?",
+    "options": {
+      "A": "TCVN 9842:2013",
+      "B": "TCVN 9844:2013",
+      "C": "TCVN 10379:2014",
+      "D": "TCVN 9355:2012"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_630::chunk::4"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Mã tiêu chuẩn nào áp dụng cho kết cấu bê tông và bê tông cốt thép toàn khối về quy phạm thi công và nghiệm thu?",
+    "options": {
+      "A": "TCVN 4453:1995",
+      "B": "TCVN 4452:1987",
+      "C": "TCVN 5724:1993",
+      "D": "TCVN 9342:2012"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_630::chunk::5"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Tiêu chuẩn nào hướng dẫn kỹ thuật phòng chống nứt cho kết cấu bê tông và bê tông cốt thép dưới tác động của khí hậu nóng ẩm?",
+    "options": {
+      "A": "TCVN 9345:2012",
+      "B": "TCVN 9344:2012",
+      "C": "TCVN 9343:2012",
+      "D": "TCVN 9348:2012"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_630::chunk::7"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Tiêu chuẩn nào quy định yêu cầu an toàn về cấu tạo và lắp đặt đối với thang máy thủy lực?",
+    "options": {
+      "A": "TCVN 6396-2:2009",
+      "B": "TCVN 6395:2008",
+      "C": "TCVN 6396-3:2010",
+      "D": "TCVN 5867:2009"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_630::chunk::16"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Máy X-quang đo độ loãng xương sử dụng công nghệ nào?",
+    "options": {
+      "A": "Công nghệ DXA toàn thân (Hấp thu tia X năng lượng kép)",
+      "B": "Công nghệ MRI cộng hưởng từ toàn thân",
+      "C": "Công nghệ CT đa lát cắt",
+      "D": "Công nghệ siêu âm Doppler màu"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_631::chunk::0"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Thời gian quét xương đùi tối đa của máy đo độ loãng xương là bao nhiêu?",
+    "options": {
+      "A": "≤ 25 giây (± 2 giây)",
+      "B": "≤ 30 giây (± 2 giây)",
+      "C": "≤ 23 giây (± 2 giây)",
+      "D": "≤ 45 giây (± 5 giây)"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_631::chunk::1",
+      "Public_631::chunk::2"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Liều bức xạ tối đa cho phép khi đo toàn thân là bao nhiêu?",
+    "options": {
+      "A": "≤ 0.55 uGy",
+      "B": "≤ 2.06 uGy",
+      "C": "≤ 7.52 uGy",
+      "D": "≤ 8.28 uGy"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_631::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Diện tích vùng quét tối thiểu cho toàn cơ thể của hệ thống DXA là bao nhiêu?",
+    "options": {
+      "A": "≥ 580mm x 1995mm",
+      "B": "≥ 160mm x 189mm",
+      "C": "≥ 240mm x 420mm",
+      "D": "≥ 120mm x 147mm"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_631::chunk::7"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Loại cảm biến ảnh được sử dụng trong bộ nhận ảnh của máy là gì?",
+    "options": {
+      "A": "CdTe (Tinh thể Cadmium Telluride)",
+      "B": "CMOS Silicon đa lớp",
+      "C": "CCD đơn sắc",
+      "D": "a-Si Flat Panel Detector"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_631::chunk::9"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Máy in màu trong trạm làm việc yêu cầu tốc độ in đen trắng tối thiểu bao nhiêu?",
+    "options": {
+      "A": "≥ 25 tờ/phút",
+      "B": "≥ 15 tờ/phút",
+      "C": "≥ 12 tờ/phút",
+      "D": "≥ 30 tờ/phút"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_631::chunk::11"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Hệ thống tán sỏi ngoài cơ thể sử dụng công nghệ nào để xác định vị trí sỏi?",
+    "options": {
+      "A": "Sóng xung kích kết hợp đĩa từ định vị X-Quang",
+      "B": "Laser Holmium kết hợp siêu âm Doppler",
+      "C": "CT Scan thời gian thực",
+      "D": "Sóng RF kết hợp camera nội soi"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_631::chunk::14"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Hệ thống nội soi tiêu hóa ống mềm video yêu cầu màn hình y tế chuyên dụng kích thước bao nhiêu?",
+    "options": {
+      "A": "27 inches",
+      "B": "24 inches",
+      "C": "32 inches",
+      "D": "19 inches"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_633::chunk::0",
+      "Public_633::chunk::1"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Bộ xử lý hình ảnh của hệ thống nội soi cần hỗ trợ tối thiểu bao nhiêu chế độ hình ảnh tăng cường?",
+    "options": {
+      "A": "≥ 4 chế độ",
+      "B": "≥ 2 chế độ",
+      "C": "≥ 6 chế độ",
+      "D": "≥ 8 chế độ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_633::chunk::2",
+      "Public_633::chunk::3"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Tuổi thọ tối thiểu yêu cầu của nguồn chiếu sáng LED trong hệ thống nội soi là bao nhiêu?",
+    "options": {
+      "A": "≥ 10.000 giờ",
+      "B": "≥ 5.000 giờ",
+      "C": "≥ 15.000 giờ",
+      "D": "≥ 20.000 giờ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_633::chunk::7"
+    ],
+    "difficulty": "easy"
+  },
+  {
+    "question": "Ống soi dạ dày video yêu cầu khả năng phóng đại tối đa bao nhiêu lần khi kết hợp màn hình tương thích?",
+    "options": {
+      "A": "≥ 100 lần",
+      "B": "≥ 90 lần",
+      "C": "≥ 70 lần",
+      "D": "≥ 120 lần"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_633::chunk::10"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Đường kính ngoài đầu cuối của ống soi dạ dày được yêu cầu tối đa là bao nhiêu?",
+    "options": {
+      "A": "≤ 9.9 mm",
+      "B": "≤ 12.8 mm",
+      "C": "≤ 13.2 mm",
+      "D": "≤ 8.5 mm"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_633::chunk::12"
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "question": "Độ uốn cong tối thiểu theo hướng lên của đầu ống soi dạ dày là bao nhiêu?",
+    "options": {
+      "A": "≥ 210°",
+      "B": "≥ 180°",
+      "C": "≥ 100°",
+      "D": "≥ 90°"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_633::chunk::14"
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "question": "Ống soi đại tràng video yêu cầu khả năng phóng đại tối đa bao nhiêu lần khi kết hợp màn hình tương thích?",
+    "options": {
+      "A": "≥ 90 lần",
+      "B": "≥ 100 lần",
+      "C": "≥ 70 lần",
+      "D": "≥ 120 lần"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_633::chunk::17"
+    ],
+    "difficulty": "medium"
+  }
+]
