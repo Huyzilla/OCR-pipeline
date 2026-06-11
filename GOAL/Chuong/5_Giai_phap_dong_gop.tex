@@ -1,36 +1,368 @@
+% !TEX root = ../DoAn.tex
 \documentclass[../DoAn.tex]{subfiles}
 \begin{document}
 
-\section{Experimental Setup}
+\section{Thiết lập thực nghiệm}
 \label{section:5.1}
-Mô tả môi trường thực nghiệm, thiết lập mô hình, cấu hình phần cứng và các pipeline so sánh.
 
-\section{Dataset}
+\subsection{Môi trường và phần cứng}
+\label{subsection:5.1.1}
+
+Toàn bộ quá trình huấn luyện và đánh giá được thực hiện trên hai môi trường. Huấn luyện reranker và embedding sử dụng GPU NVIDIA RTX 6000 Ada (48GB VRAM), cấu hình đủ để duy trì batch size lớn cho MNR (128) và chạy teacher BGE-M3 song song với student MiniLM trong Stage B. Một số thử nghiệm bổ sung sử dụng Kaggle P100 (16GB).
+
+Đánh giá inference và đo latency được thực hiện trên CPU để phản ánh đúng điều kiện triển khai thực tế. Đây là lý do chính để đồ án lựa chọn mục tiêu tối ưu latency CPU thay vì chỉ tối ưu trên GPU.
+
+\subsection{Tập dữ liệu đánh giá}
+\label{subsection:5.1.2}
+
+Đồ án sử dụng hai tập test cho hai bài toán khác nhau và một tập dev để theo dõi quá trình huấn luyện. Tập 343 câu hỏi trên 49 PDF unseen là tập đánh giá zero-shot chính thức cho khả năng tổng quát hóa của reranker và pipeline v2. Tập 157 queries là internal test riêng cho component embedding, được dùng để so sánh các cấu hình embedding trong quá trình phát triển.
+
+\begin{table}[H]
+    \centering
+    \caption{Các tập dữ liệu dùng trong đánh giá}
+    \label{tab:evaluation-datasets}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{4.1cm}|>{\raggedright\arraybackslash}p{6.0cm}|}
+        \hline
+        \textbf{Tập} & \textbf{Quy mô} & \textbf{Mục đích} \\ \hline
+        Test reranker & 343 câu hỏi, 49 PDF unseen & Đánh giá zero-shot reranker và khả năng generalization trên tài liệu mới \\ \hline
+        Internal test embedding & 157 queries, 2,204 chunks & So sánh các cấu hình embedding retrieval trong quá trình phát triển \\ \hline
+        Dev reranker & 305 triplets, 50 queries & Theo dõi và lựa chọn checkpoint trong quá trình huấn luyện \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Tập test reranker (343 câu, 49 PDF) hoàn toàn tách biệt với tập phát triển v1 (991 câu, 200 PDF), không có tài liệu nào trùng lặp. Đây là điều kiện zero-shot: model chưa từng thấy bất kỳ chunk nào từ 49 PDF này trong quá trình huấn luyện. Kết quả trên tập này do đó phản ánh khả năng generalization của model, không phải memorization.
+
+\subsection{Metrics đánh giá}
+\label{subsection:5.1.3}
+
+\textbf{Đánh giá reranker} sử dụng bốn metrics tiêu chuẩn trong information retrieval: Hit@1 (tỉ lệ gold chunk xuất hiện ở rank 1), Recall@5 (tỉ lệ gold chunk xuất hiện trong top-5), MRR@10 (Mean Reciprocal Rank, đo vị trí trung bình của gold chunk) và NDCG@10 (Normalized Discounted Cumulative Gain, đo chất lượng toàn bộ thứ tự xếp hạng). Metric chính để so sánh là MRR@10 và Recall@5 vì chúng phản ánh trực tiếp hiệu quả của reranker trong pipeline RAG thực tế, nơi top-5 chunks được đưa vào LLM.
+
+\noindent\textbf{Đánh giá embedding.}
+
+Các metrics gồm Acc@1 (tương đương Hit@1), Acc@10 và MRR@10, được đo trên internal test gồm 157 queries.
+
+\textbf{Đánh giá end-to-end} sử dụng accuracy trên 343 câu hỏi trắc nghiệm (exact match với đáp án A/B/C/D), kết hợp đo latency (ms/query) và chi phí API.
+
+\section{Đánh giá Reranker}
 \label{section:5.2}
-Trình bày bộ dữ liệu sử dụng cho huấn luyện và đánh giá.
 
-\section{Metrics}
+\subsection{Ablation study: xác nhận vai trò của Stage A}
+\label{subsection:5.2.1}
+
+Nhóm thực nghiệm đầu tiên kiểm tra vai trò của Stage A (Contrastive Learning) trước khi áp dụng Knowledge Distillation, đồng thời đánh giá ảnh hưởng của hệ số $\alpha$ trong Stage B.
+
+\begin{table}[H]
+    \centering
+    \caption{Ablation về vai trò của Stage A và hệ số $\alpha$}
+    \label{tab:stage-a-ablation}
+    {\scriptsize
+    \setlength{\tabcolsep}{2pt}
+    \begin{tabular}{|>{\centering\arraybackslash}p{0.55cm}|>{\raggedright\arraybackslash}p{6.2cm}|>{\centering\arraybackslash}p{1.0cm}|>{\centering\arraybackslash}p{1.25cm}|>{\centering\arraybackslash}p{1.25cm}|>{\centering\arraybackslash}p{1.25cm}|>{\centering\arraybackslash}p{1.15cm}|}
+        \hline
+        \textbf{\#} & \textbf{Cấu hình} & \textbf{Params} & \shortstack{\textbf{Recall}\\\textbf{@5}} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} & \textbf{Hit@1} \\ \hline
+        1 & MiniLM-L12 base (no training) & 33M & 0.7347 & 0.5869 & 0.6536 & 0.4694 \\ \hline
+        2 & KD trực tiếp từ base (không có Stage A) & 33M & 0.7347 & 0.5193 & -- & -- \\ \hline
+        3 & Stage A only (không dùng mMARCO) & 33M & 0.8746 & 0.7318 & 0.7801 & 0.6181 \\ \hline
+        4 & Stage A + KD only, $\alpha=1.0$ (ListwiseKL) & 33M & 0.8484 & 0.7122 & -- & -- \\ \hline
+        5 & Stage A + KD only, $\alpha=1.0$ (ADR-MSE) & 33M & 0.9038 & 0.7529 & 0.7960 & 0.6501 \\ \hline
+        \textbf{6} & \textbf{Stage A + ADR-MSE, $\alpha=0.7$ (KD+CL)} & \textbf{33M} & \textbf{0.9096} & \textbf{0.7827} & \textbf{0.8222} & \textbf{0.6822} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Cấu hình \#2, KD trực tiếp từ base, cho MRR@10 = 0.5193, thấp hơn cả MiniLM base chưa huấn luyện (\#1: 0.5869). Khoảng cách miền giữa English MS MARCO, nguồn pretrain của MiniLM, và tài liệu kỹ thuật tiếng Việt quá lớn; student chưa có nền biểu diễn phù hợp nên KD không hội tụ hiệu quả. Stage A ở cấu hình \#3 giải quyết vấn đề này và nâng MRR lên 0.7318, tương ứng mức cải thiện 24.7\% so với base trước khi áp dụng KD. Kết quả này nhất quán với nhận định của Xu et al. (2025): KD chỉ phát huy hiệu quả khi student đã có foundation phù hợp với miền dữ liệu.
+
+So sánh \#4 và \#5 cho thấy lựa chọn loss ảnh hưởng lớn ngay cả khi chỉ dùng KD ($\alpha=1.0$): ADR-MSE đạt MRR = 0.7529, vượt ListwiseKL ở mức 0.7122 nhờ tín hiệu thứ hạng ổn định hơn. So sánh \#5 và \#6 tiếp tục xác nhận CL anchor vẫn cần thiết với ADR-MSE. Việc kết hợp KD và CL tại $\alpha=0.7$ cải thiện thêm 0.0298 MRR so với KD thuần.
+
+\subsection{Ablation study: ảnh hưởng của mMARCO-VI}
+\label{subsection:5.2.2}
+
+Nhóm thực nghiệm thứ hai kiểm tra ba cách tích hợp 50,000 mẫu tiếng Việt tổng quát từ mMARCO-VI vào pipeline huấn luyện.
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh các hướng tích hợp mMARCO-VI}
+    \label{tab:mmarco-ablation}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\centering\arraybackslash}p{0.8cm}|>{\raggedright\arraybackslash}p{7.0cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{4.0cm}|}
+        \hline
+        \textbf{\#} & \textbf{Cấu hình} & \shortstack{\textbf{Recall}\\\textbf{@5}} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} & \textbf{Ghi chú} \\ \hline
+        7 & Stage A+B ListwiseKL (gộp mMARCO) & 0.8601 & 0.7043 & 0.7548 & mMARCO làm loãng tín hiệu domain \\ \hline
+        8 & Stage A+B ListwiseKL (không mMARCO) & 0.8688 & 0.7430 & 0.7884 & Chỉ dùng domain data, tốt hơn \#7 \\ \hline
+        9 & Ba stage A1(mMARCO) $\rightarrow$ A2(domain) $\rightarrow$ B, chỉ đánh giá A2 & 0.8863 & 0.7293 & 0.7781 & A2 gần tương đương Stage A không mMARCO \\ \hline
+        10 & Ba stage A1(mMARCO) $\rightarrow$ A2(domain) $\rightarrow$ B, đầy đủ & 0.9125 & 0.7729 & 0.8153 & Kém hơn ADR-MSE hai stage \\ \hline
+        \textbf{6} & \textbf{Stage A+B ADR-MSE, không mMARCO, hai stage} & \textbf{0.9096} & \textbf{0.7827} & \textbf{0.8222} & \textbf{Tốt nhất trong nhóm này} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Cả ba hướng tích hợp đều cho kết quả kém hơn pipeline hai stage không dùng mMARCO (\#6). Khi gộp chung dữ liệu ở cấu hình \#7, 94.9\% mẫu mMARCO được BGE-M3 đánh giá là easy, với mean logit margin = 8.91 so với 4.13 của tập domain train. Số lượng lớn easy samples vì vậy làm loãng tín hiệu từ các hard negatives thuộc miền kỹ thuật.
+
+Với pipeline tuần tự ba stage (\#9 và \#10), Stage A2 trên dữ liệu domain ghi đè gần như hoàn toàn kiến thức học ở Stage A1 do catastrophic forgetting. Kết quả A2 only đạt MRR = 0.7293, gần bằng Stage A không dùng mMARCO (0.7318), cho thấy đóng góp của A1 hầu như bị mất. Hard-mining từ mMARCO cũng được thử nghiệm nhưng mean margin vẫn đạt 7.09, cao hơn đáng kể so với domain train (4.13), nên không cải thiện chất lượng tín hiệu.
+
+Như vậy, với 2,689 mẫu hard và medium thuộc đúng miền dữ liệu, mMARCO-VI không mang lại lợi ích dù được tích hợp theo nhiều cách. Kết quả cho thấy tín hiệu từ một tập domain-specific nhỏ nhưng chất lượng cao có giá trị hơn một tập general data lớn và nhiều easy negatives.
+
+\subsection{So sánh các loss functions và teacher models trong Stage B}
+\label{subsection:5.2.3}
+
+Nhóm thực nghiệm thứ ba so sánh các loss functions và teacher models trên cùng checkpoint Stage A không dùng mMARCO, với cùng siêu tham số $\alpha=0.7$ và seed = 42.
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh các loss functions và teacher models trong Stage B}
+    \label{tab:stage-b-losses}
+    {\scriptsize
+    \setlength{\tabcolsep}{2pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{1.9cm}|>{\centering\arraybackslash}p{1.15cm}|>{\centering\arraybackslash}p{1.15cm}|>{\centering\arraybackslash}p{1.15cm}|>{\centering\arraybackslash}p{1.0cm}|}
+        \hline
+        \textbf{Loss / Teacher} & \textbf{Teacher signal} & \textbf{Data} & \shortstack{\textbf{Recall}\\\textbf{@5}} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} & \textbf{Hit@1} \\ \hline
+        ListwiseKL & Score distribution & 792 queries & 0.8688 & 0.7430 & 0.7884 & 0.6414 \\ \hline
+        Margin-MSE & Score margins & 2,202 pairs & 0.8805 & 0.7372 & 0.7832 & 0.6356 \\ \hline
+        RankNet & Pairwise probabilities & 991 queries & 0.8717 & 0.7419 & 0.7858 & 0.6443 \\ \hline
+        ADR-MSE, BGE-M3 teacher & Rank positions & 991 queries & 0.9096 & 0.7827 & 0.8222 & 0.6822 \\ \hline
+        Discounted ADR-MSE & Rank + NDCG weights & 991 queries & 0.8834 & 0.7426 & 0.7873 & 0.6297 \\ \hline
+        Top-K ADR-MSE ($k=10$) & Top-10 ranks only & 991 queries & 0.8717 & 0.7350 & 0.7781 & 0.6152 \\ \hline
+        ADR-MSE, Jina-v3 teacher & Rank positions Jina & 983 queries & 0.8980 & 0.7694 & 0.8120 & 0.6706 \\ \hline
+        ADR-MSE, Voyage 2.5 top-50 & Rank positions Voyage & 983 queries & 0.8980 & 0.7715 & 0.8126 & 0.6764 \\ \hline
+        \textbf{ADR-MSE, Voyage 2.5 top-20} & \textbf{Rank positions Voyage} & \textbf{983 queries} & \textbf{0.9155} & \textbf{0.7925} & \textbf{0.8329} & \textbf{0.6997} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+ADR-MSE với BGE-M3 teacher vượt ListwiseKL 0.0397 MRR, Margin-MSE 0.0455 và RankNet 0.0408. Hai biến thể Discounted ADR-MSE và Top-K ADR-MSE đều kém hơn ADR-MSE gốc, cho thấy việc gán trọng số bằng nhau cho toàn bộ 20 vị trí phù hợp hơn với tập huấn luyện nhỏ gồm 983--991 queries.
+
+Margin-MSE học từ hiệu điểm cross-encoder logit của teacher, $\Delta T_{ij}=T_i-T_j$, có thang đo không bị chặn. Trên 2,689 mẫu train, margin có mean = 4.13, std = 2.57, khoảng giá trị 23.3 units và 37\% mẫu có margin $\geq 5.0$. Gradient từ các mẫu margin lớn có thể cao hơn 25 lần so với hard negatives có margin 0.1--0.4, khiến loss bị chi phối bởi easy pairs. ADR-MSE chuyển rank position về target chuẩn hóa trong $[-1,+1]$, nhờ đó tránh scale mismatch và giữ độ lớn gradient cân bằng hơn giữa các vị trí.
+
+Thử nghiệm với Jina-v3 (MRR@10 = 0.9195 khi đánh giá trực tiếp) cho student kém hơn BGE-M3 teacher: MRR = 0.7694 so với 0.7827. Jina-v3 là listwise model phải chia nhỏ 20 candidates thành các cửa sổ 5 tài liệu, không có so sánh trực tiếp giữa các cửa sổ và tạo ranking noise khi chuyển sang rank positions. Voyage Rerank 2.5 (MRR@10 = 0.9381 khi đánh giá trực tiếp) được thử nghiệm với hai cấu hình candidate pool. Với top-50 candidates (MRR student = 0.7715), kết quả kém hơn BGE-M3 do chuẩn hóa ADR-MSE bị loãng: với $n=50$, các rank 0--10 đều nhận tín hiệu dương nằm trong khoảng $[+1.00, +0.59]$, gradient phân biệt relevant và non-relevant yếu hơn so với $n=20$ ($[+1.00, -0.05]$). Ngoài ra, 30 candidates thêm ở vị trí 21--50 chủ yếu là easy negatives rõ ràng, không đóng góp tín hiệu học hữu ích. Khi thu hẹp về top-20 candidates, Voyage teacher đạt MRR student = 0.7925, vượt BGE-M3 teacher (+0.0098 MRR). Kết quả này cho thấy teacher mạnh hơn thực sự cải thiện student khi candidate pool được kiểm soát phù hợp: kích thước pool ảnh hưởng đến chất lượng tín hiệu ADR-MSE, không phải bản thân kiến trúc teacher.
+
+\subsection{So sánh với baselines}
+\label{subsection:5.2.4}
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh MiniLM-ADR-MSE với các baselines}
+    \label{tab:reranker-baselines}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{2.2cm}|}
+        \hline
+        \textbf{Model} & \textbf{Params} & \textbf{Hit@1} & \shortstack{\textbf{Recall}\\\textbf{@5}} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} & \shortstack{\textbf{Latency}\\\textbf{/query}} \\ \hline
+        MiniLM-L12 base & 33M & 0.4694 & 0.7347 & 0.5869 & 0.6536 & khoảng 22ms \\ \hline
+        PhoRanker (VI) & 135M & 0.6472 & 0.8659 & 0.7415 & 0.7846 & khoảng 18ms \\ \hline
+        MiniLM + ADR-MSE, BGE teacher & 33M & 0.6822 & 0.9096 & 0.7827 & 0.8222 & khoảng 22ms \\ \hline
+        \textbf{MiniLM + ADR-MSE, Voyage teacher} & \textbf{33M} & \textbf{0.6997} & \textbf{0.9155} & \textbf{0.7925} & \textbf{0.8329} & \textbf{khoảng 22ms} \\ \hline
+        BGE-M3 (teacher) & 568M & 0.8309 & 0.9650 & 0.8891 & 0.9111 & khoảng 147ms \\ \hline
+        Voyage Rerank 2.5 (API) & -- & 0.9009 & 0.9854 & 0.9381 & 0.9246 & API \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+MiniLM + ADR-MSE với Voyage teacher (33M) là cấu hình tốt nhất trong số các student models, vượt PhoRanker (135M) trên cả bốn metrics với model nhỏ hơn 4 lần: +0.0525 Hit@1, +0.0496 Recall@5, +0.0510 MRR@10 và +0.0483 NDCG@10. So với BGE-M3 teacher, model đạt 84.2\% Hit@1, 94.9\% Recall@5 và 89.1\% MRR@10 với số tham số nhỏ hơn 17 lần và latency thấp hơn 6.7 lần (22ms so với 147ms). Voyage Rerank 2.5 khi dùng trực tiếp qua API đạt MRR@10 = 0.9381, là upper bound thực nghiệm trên tập test; tuy nhiên, đây là dịch vụ cloud với latency mạng và chi phí per-request, không phù hợp với yêu cầu triển khai local của đồ án.
+
+\begin{table}[H]
+    \centering
+    \caption{Đánh giá end-to-end các reranker trên 343 câu hỏi trắc nghiệm}
+    \label{tab:reranker-e2e}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{3.2cm}|}
+        \hline
+        \textbf{Model} & \textbf{Đúng/Tổng} & \textbf{Accuracy} & \textbf{Latency/query} \\ \hline
+        BGE-M3 (teacher) & 333/343 & 97.1\% & khoảng 17,249ms \\ \hline
+        \textbf{MiniLM + ADR-MSE (ours)} & \textbf{326/343} & \textbf{95.0\%} & \textbf{khoảng 1,621ms} \\ \hline
+        MiniLM + ListwiseKL & 325/343 & 94.8\% & khoảng 1,438ms \\ \hline
+        MiniLM base & 295/343 & 86.0\% & khoảng 1,016ms \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Khi thay riêng thành phần reranker và giữ nguyên các bước còn lại của quy trình đánh giá MCQ, ADR-MSE đạt accuracy 95.0\%, chỉ thấp hơn BGE-M3 2.1 điểm phần trăm, tương ứng 7 câu, nhưng nhanh hơn khoảng 10.6 lần (1,621ms so với 17,249ms/query). Bảng~\ref{tab:reranker-e2e} đánh giá ảnh hưởng của từng reranker trong cùng một cấu hình; đây chưa phải phép so sánh đầy đủ giữa toàn bộ pipeline v1 và v2 ở Mục~\ref{section:5.5}.
+
+\subsection{Phân tích lỗi reranker}
+\label{subsection:5.2.5}
+
+Best model (ADR-MSE với Voyage teacher, top-20) đạt Recall@5 = 0.9155, tức 29/343 queries không có gold chunk trong top-5. Phân tích dưới đây dựa trên cấu hình ADR-MSE với BGE-M3 teacher (Recall@5 = 0.9096, 31 miss cases) do có đầy đủ thông tin chi tiết từ quá trình phân tích; hai cấu hình có profile lỗi tương tự nhau.
+
+\begin{table}[H]
+    \centering
+    \caption{Phân tích 31 miss cases của ADR-MSE (BGE-M3 teacher)}
+    \label{tab:reranker-misses}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{5.2cm}|}
+        \hline
+        \textbf{Loại lỗi} & \textbf{Số lượng} & \textbf{Tỉ lệ} & \textbf{Mô tả} \\ \hline
+        Near miss (gold rank 6--10) & 15 & 48.4\% & Gold chunk nằm ngay ngoài top-5 \\ \hline
+        Retrieval miss (gold rank N/A) & 4 & 12.9\% & Gold không có trong top-20, reranker không thể khôi phục \\ \hline
+        Cross-domain noise & khoảng 13 & 41.9\% & BM25/embedding match sai document hoặc sai domain \\ \hline
+        Same-domain confusion & khoảng 14 & 45.2\% & Đúng domain nhưng chọn sai chunk cụ thể \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Nhóm near miss (48.4\%) phản ánh giới hạn của ngưỡng top-5: nếu pipeline đưa top-6 hoặc top-7 chunk vào LLM, một phần trong 15 queries này có thể được khôi phục. Tuy nhiên, việc tăng top-K cũng làm context dài hơn và tăng chi phí generation.
+
+Nhóm retrieval miss gồm 4 trường hợp hoàn toàn ngoài tầm kiểm soát của reranker vì gold chunk không nằm trong top-20 candidates: (i) lệnh Offset trong CAD, tên lệnh ngắn khiến BM25 match sai tài liệu; (ii) hệ thống làm mát, gold nằm trong bảng checklist bảo dưỡng nhưng embedding không biểu diễn tốt; (iii) acronym UPS, truy xuất nhầm tài liệu hàng không có cùng từ viết tắt; (iv) ống soi dạ dày, hai chunk liền kề cùng tài liệu có surface form tương tự và retriever lấy nhầm chunk.
+
+Các domain bị miss nhiều nhất gồm y tế/thiết bị y tế (5 cases), điện/vật liệu (4 cases), CAD/Autodesk (3 cases) và HVAC/Chiller (3 cases). Đây đều là các domain có nhiều bảng số liệu kỹ thuật và thuật ngữ đặc thù, nơi cả embedding lẫn BM25 gặp khó khăn khi exact-match thấp.
+
+\section{Đánh giá Embedding}
 \label{section:5.3}
-Liệt kê các chỉ số đánh giá như độ chính xác, MRR, nDCG, latency và cost.
 
-\section{RAG Pipeline Comparison}
+\subsection{Kết quả theo từng curriculum stage}
+\label{subsection:5.3.1}
+
+\begin{table}[H]
+    \centering
+    \caption{Tiến trình cải thiện qua 3 curriculum stages}
+    \label{tab:embedding-curriculum-results}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{3.3cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{2.2cm}|}
+        \hline
+        \textbf{Stage} & \textbf{Nguồn data} & \textbf{Triplets} & \textbf{Acc@1} & \textbf{MRR@10} & \textbf{Delta Acc@1} \\ \hline
+        Baseline (trước train) & -- & -- & 73.89\% & 0.8259 & -- \\ \hline
+        Stage 1 -- Easy & Synthesized negatives & 1,040 & 74.52\% & 0.8313 & +0.63\% \\ \hline
+        Stage 2 -- Medium & Synth + Extra synth & 3,840 & 76.43\% & 0.8521 & +2.54\% \\ \hline
+        \textbf{Stage 3 -- Hard} & \textbf{Tất cả + mined} & \textbf{6,985} & \textbf{78.34\%} & \textbf{0.8673} & \textbf{+4.45\%} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Mỗi stage đều cải thiện so với stage trước, xác nhận curriculum learning đúng hướng: model học boundary dễ trước khi tiếp cận hard negatives. Stage 2 cải thiện mạnh nhất (+2.54\% Acc@1) nhờ extra synthesized mở rộng phân phối dữ liệu training từ 1,040 lên 3,840 triplets. Stage 3 thêm mined negatives, tức các chunk thực tế nằm gần gold trong không gian vector, tiếp tục cải thiện Acc@1 thêm 1.91 điểm phần trăm.
+
+Nếu train trực tiếp trên toàn bộ dữ liệu mà không áp dụng curriculum, model phải học hard negatives ngay từ đầu khi tham số chưa ổn định và có nguy cơ rơi vào local minima. Curriculum giảm rủi ro này bằng cách khởi động với synthesized negatives có boundary rõ ràng trước.
+
+\subsection{Ablation theo dimension với MRL}
+\label{subsection:5.3.2}
+
+\begin{table}[H]
+    \centering
+    \caption{Kết quả MRL theo kích thước embedding}
+    \label{tab:embedding-dimensions}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{3.3cm}|}
+        \hline
+        \textbf{Dimension} & \textbf{Acc@1} & \textbf{Acc@10} & \textbf{MRR@10} & \textbf{Index size} & \textbf{Search speed} \\ \hline
+        256-dim & 73.89\% & 97.45\% & 0.8188 & 1$\times$ (baseline) & 4$\times$ nhanh hơn 1024 \\ \hline
+        512-dim & 75.16\% & 97.77\% & 0.8390 & 2$\times$ & 2$\times$ nhanh hơn 1024 \\ \hline
+        \textbf{1024-dim} & \textbf{78.34\%} & \textbf{98.73\%} & \textbf{0.8673} & 4$\times$ & baseline \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+MRL cho phép một checkpoint duy nhất hỗ trợ ba kích thước deployment. Đáng chú ý, 256-dim đạt đúng mức Acc@1 của baseline gốc (73.89\%). Vì vậy, chọn 256-dim không làm mất chất lượng so với embedding ban đầu nhưng giúp index ChromaDB nhỏ hơn 4 lần và search nhanh hơn 4 lần.
+
+Kết quả này mở ra chiến lược triển khai two-stage: search nhanh bằng 256-dim để lấy top-50 candidates, sau đó re-score bằng 1024-dim để chọn top-k cuối. Cấu hình này phù hợp với môi trường production cần cân bằng giữa tốc độ, bộ nhớ và chất lượng.
+
+\subsection{So sánh với baseline}
+\label{subsection:5.3.3}
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh embedding fine-tuned với baseline}
+    \label{tab:embedding-baseline}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|}
+        \hline
+        \textbf{Model} & \textbf{Acc@1} & \textbf{Acc@10} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
+        \path{Vietnamese_Embedding_v2} (baseline) & 73.89\% & 98.09\% & 0.8259 & 0.7933 \\ \hline
+        \textbf{Fine-tuned (ours, 1024-dim)} & \textbf{78.34\%} & \textbf{98.73\%} & \textbf{0.8673} & \textbf{0.8538} \\ \hline
+        Delta & \textbf{+4.45\%} & +0.64\% & \textbf{+0.041} & +0.061 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Fine-tuned embedding cải thiện Acc@1 thêm 4.45 điểm phần trăm và MRR@10 thêm 0.041 so với \path{Vietnamese_Embedding_v2} gốc trên cùng internal test gồm 157 queries. Cải thiện lớn nhất ở Acc@1, tức gold chunk xuất hiện ở rank 1, cho thấy model đã học được boundary ngữ nghĩa domain-specific tốt hơn, đặc biệt với câu hỏi về thông số kỹ thuật và bảng số liệu.
+
+Acc@10 gần như giữ nguyên (98.09\% $\rightarrow$ 98.73\%) vì baseline đã đạt mức rất cao. Cải thiện chủ yếu nằm ở thứ tự ranking trong top-10, không phải recall tổng thể. Với retriever tốt hơn, nhiều query có gold chunk ở thứ hạng đầu hơn, mở rộng khả năng xử lý cho bước reranking tiếp theo.
+
+\section{Đánh giá Intent Classifier}
 \label{section:5.4}
-So sánh các pipeline C3, M2, Router, Selector, ZMAI và các biến thể khác.
 
-\section{Reranker Experiments}
+Phần đánh giá PhoBERT intent classifier sẽ được hoàn thiện sau khi có kết quả thực nghiệm cuối cùng. Bảng~\ref{tab:intent-placeholder} giữ lại các chỉ số cần báo cáo để đảm bảo quy trình đánh giá nhất quán.
+
+\begin{table}[H]
+    \centering
+    \caption{Khung kết quả đánh giá PhoBERT Intent Classifier}
+    \label{tab:intent-placeholder}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\centering\arraybackslash}p{4.0cm}|>{\centering\arraybackslash}p{4.0cm}|}
+        \hline
+        \textbf{Metric} & \textbf{PhoBERT fine-tuned} & \textbf{GPT-4o-mini (v1)} \\ \hline
+        Accuracy & TBD & 99.39\% (985/991) \\ \hline
+        F1-macro & TBD & -- \\ \hline
+        F1 lớp \path{tra_cuu} & TBD & -- \\ \hline
+        F1 lớp \path{tinh_toan} & TBD & -- \\ \hline
+        Latency/query & khoảng 1--3ms (local) & khoảng 800ms (API) \\ \hline
+        Chi phí/1M queries & \$0 & khoảng \$30 tiền input với 200 tokens/query \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Mục tiêu thiết kế của PhoBERT classifier là đạt accuracy $\geq 97\%$, ngưỡng đủ để routing không ảnh hưởng đáng kể đến accuracy end-to-end. Ngưỡng này dựa trên quan sát từ v1 rằng 6 câu bị nhầm intent vẫn được trả lời đúng cuối cùng. Đồng thời, latency mục tiêu dưới 5ms giúp bước routing không tạo overhead đáng kể trong pipeline.
+
+\section{So sánh end-to-end v1 và v2}
 \label{section:5.5}
-Đánh giá các thiết lập ADR, RankNet, Margin, KL và các biến thể reranker.
 
-\section{Embedding Experiments}
+Phần accuracy end-to-end sẽ được bổ sung sau khi pipeline v2 hoàn chỉnh được chạy trên toàn bộ 343 câu hỏi thuộc 49 PDF unseen. Hiện tại, các chỉ số tài nguyên đã đo được cho thấy mức cải thiện rõ ràng về khả năng triển khai trên CPU.
+
+\begin{table}[H]
+    \centering
+    \caption{Khung so sánh end-to-end giữa v1 và v2}
+    \label{tab:end-to-end-placeholder}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\centering\arraybackslash}p{3.4cm}|>{\centering\arraybackslash}p{3.4cm}|>{\centering\arraybackslash}p{2.2cm}|}
+        \hline
+        \textbf{Chỉ số} & \textbf{v1 (Router-Summary)} & \textbf{v2 (tối ưu)} & \textbf{Delta} \\ \hline
+        Accuracy trên 343 câu test & TBD & TBD & TBD \\ \hline
+        Latency reranker/query & khoảng 147ms (BGE-M3) & khoảng 22ms (MiniLM-ADR) & nhanh hơn 6.7$\times$ \\ \hline
+        Latency intent/query & khoảng 800ms (GPT API) & khoảng 3ms (PhoBERT local) & nhanh hơn $>200\times$ \\ \hline
+        Chi phí intent/1M queries & khoảng \$30 tiền input & \$0 & $-100\%$ \\ \hline
+        Kích thước reranker & 568M params & 33M params & nhỏ hơn 17$\times$ \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Số liệu latency v1 được đo trực tiếp từ thực nghiệm. BGE-M3 đạt khoảng 147ms/query trên CPU; GPT-4o-mini cần khoảng 800ms, bao gồm network round-trip. Số liệu v2 được đo trên cùng môi trường CPU. Accuracy end-to-end chỉ được báo cáo sau khi pipeline v2 hoàn chỉnh được đánh giá trên tập 343 câu hỏi zero-shot.
+
+\section{Phân tích lỗi tổng thể}
 \label{section:5.6}
-Phân tích MRL, khảo sát kích thước embedding và curriculum training.
 
-\section{Ablation Studies}
-\label{section:5.7}
-Thực hiện các kiểm tra ablation để xác định đóng góp của từng thành phần.
+Tổng hợp phân tích từ các thành phần cho thấy ba nguồn gốc lỗi chính theo thứ tự tác động giảm dần.
 
-\section{Error Analysis}
-\label{section:5.8}
-Phân tích các lỗi điển hình và nguyên nhân thất bại của hệ thống.
+\noindent\textbf{Nguồn 1 -- Retrieval ceiling.}
+
+Trong 31 miss cases của reranker, 4 trường hợp xảy ra do gold chunk không nằm trong top-20 candidates, tức lỗi xuất hiện trước khi reranker nhìn thấy dữ liệu. Cải thiện embedding thêm 4.45 điểm phần trăm Acc@1 giúp giảm nhóm lỗi này nhưng không loại bỏ hoàn toàn. Các trường hợp khó nhất gồm acronym match (UPS, Offset) và bảng số liệu liền kề. Những trường hợp này cần cải thiện chunking strategy hoặc query expansion.
+
+\noindent\textbf{Nguồn 2 -- Near miss.}
+
+15/31 miss cases có gold ở rank 6--10. Tăng top-K từ 5 lên 6 hoặc 7 có thể khôi phục thêm một phần các query này, nhưng phải đánh đổi với context window lớn hơn và chi phí generation cao hơn. Đây là trade-off cần được quyết định theo yêu cầu triển khai thực tế.
+
+\noindent\textbf{Nguồn 3 -- Domain-specific confusion.}
+
+Cross-domain noise và same-domain confusion phản ánh giới hạn của embedding và BM25 với tài liệu kỹ thuật đặc thù. Các hướng cải thiện tiếp theo gồm bổ sung dữ liệu domain-specific cho embedding fine-tune, đặc biệt ở y tế, điện và HVAC, hoặc áp dụng query expansion để tăng recall trước khi rerank.
+
+Nhìn tổng thể, pipeline v2 đạt Recall@5 = 0.9155 trên tập reranker zero-shot và Acc@1 = 78.34\% trên internal test của embedding. Cả hai component đều cải thiện đáng kể so với baseline. Các giới hạn còn lại tập trung ở retrieval ceiling, dữ liệu domain-specific và chunking strategy; kết quả end-to-end cuối cùng sẽ được hoàn thiện sau khi chạy toàn bộ pipeline v2 trên 343 câu hỏi thuộc 49 PDF unseen.
 
 \end{document}

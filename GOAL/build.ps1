@@ -11,6 +11,7 @@ Copy-Item -Path build\DoAn.pdf -Destination DoAn.pdf -Force
 $rootArtifacts = @(
     'DoAn.aux',
     'DoAn.bbl',
+    'DoAn.bcf',
     'DoAn.blg',
     'DoAn-blx.bib',
     'DoAn.fdb_latexmk',
@@ -22,7 +23,7 @@ $rootArtifacts = @(
     'DoAn.run.xml',
     'DoAn.synctex.gz',
     'DoAn.toc',
-    'DoAn.xdv',
+    'DoAn.xdv'
 )
 
 foreach ($artifact in $rootArtifacts) {

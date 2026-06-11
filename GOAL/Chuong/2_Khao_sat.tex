@@ -1,50 +1,539 @@
+% !TEX root = ../DoAn.tex
 \documentclass[../DoAn.tex]{subfiles}
 \begin{document}
 
-\section{RAG overview}
+\section{Kiến trúc RAG tổng quan}
 \label{section:2.1}
-Tổng quan kiến trúc RAG và vai trò của truy xuất tri thức trong bài toán QA tài liệu tiếng Việt.
 
-\section{Retrieval}
+\subsection{Hạn chế của LLM thuần túy}
+\label{subsection:2.1.1}
+
+Các mô hình ngôn ngữ lớn (Large Language Models -- LLM) như GPT-4, Llama hay Qwen đã đạt được thành tựu nổi bật trong nhiều tác vụ xử lý ngôn ngữ tự nhiên. Tuy nhiên, khi triển khai trong môi trường doanh nghiệp với kho tài liệu nội bộ, LLM thuần túy bộc lộ ba hạn chế căn bản.
+
+\noindent\textbf{Hallucination.}
+
+Đây là hiện tượng LLM tạo ra thông tin nghe hợp lý nhưng không chính xác. Do LLM là mô hình xác suất sinh token tiếp theo dựa trên các mẫu đã học, nó không có cơ chế tự xác minh thông tin với nguồn bên ngoài. Khi câu hỏi nằm ngoài tri thức huấn luyện, model có thể tạo ra câu trả lời thay vì thừa nhận không biết. Hậu quả đặc biệt nghiêm trọng trong môi trường kỹ thuật, nơi câu trả lời cần độ chính xác cao.
+
+\noindent\textbf{Knowledge cutoff.}
+
+Đây là giới hạn thời gian của tri thức: model không biết thông tin xuất hiện sau thời điểm huấn luyện và không thể cập nhật kiến thức nếu không fine-tune lại, vốn tốn kém tài nguyên tính toán.
+
+\noindent\textbf{Domain gap.}
+
+Đây là khoảng cách giữa corpus huấn luyện chung, chẳng hạn dữ liệu web, Wikipedia và sách, với tài liệu kỹ thuật chuyên ngành nội bộ. LLM không được huấn luyện trên tài liệu đặc thù của từng tổ chức nên có thể trả lời thiếu chính xác về thông số, quy trình hoặc chính sách riêng.
+
+\subsection{Kiến trúc RAG}
+\label{subsection:2.1.2}
+
+Retrieval-Augmented Generation (Lewis et al., 2020) giải quyết các hạn chế trên bằng cách bổ sung bước truy xuất thông tin trước khi sinh câu trả lời. Thay vì chỉ dựa vào tri thức nằm trong tham số model, RAG cung cấp cho LLM context cụ thể từ kho tài liệu, qua đó neo câu trả lời vào nguồn có thể kiểm chứng.
+
+Quy trình RAG gồm hai giai đoạn chính. Trong \textbf{giai đoạn offline} (indexing), tài liệu được chia thành các đoạn nhỏ, mỗi đoạn được mã hóa thành vector embedding và lưu vào vector database. Trong \textbf{giai đoạn online} (inference), hệ thống mã hóa query đầu vào, tìm các chunk tương đồng nhất, ghép context vào prompt và yêu cầu LLM sinh câu trả lời dựa trên context được cung cấp.
+
+Chất lượng hệ thống RAG phụ thuộc chủ yếu vào hai thành phần: \textbf{retrieval}, chịu trách nhiệm đưa đúng chunk vào candidate pool, và \textbf{reranking}, chịu trách nhiệm sắp xếp các chunk theo mức độ liên quan. Nếu chunk chứa thông tin cần thiết không xuất hiện trong top-k, bước generation khó có thể tạo ra câu trả lời đúng dù LLM mạnh. Đây là lý do đồ án tập trung tối ưu retrieval và reranking thay vì thay thế LLM.
+
+Trong bài toán hỏi đáp tài liệu kỹ thuật tiếng Việt, 991 câu hỏi ban đầu trên 200 tài liệu PDF được sử dụng để chạy thử pipeline v1, phân tích bottleneck và xây dựng dữ liệu huấn luyện cho v2. RAG phù hợp với bài toán này vì kho tài liệu có thể được cập nhật độc lập với model, câu trả lời cần tham chiếu nguồn cụ thể, và nhiều câu hỏi đòi hỏi thông tin chi tiết như số liệu, thông số kỹ thuật hoặc điều kiện vận hành mà LLM khó ghi nhớ chính xác.
+
+\section{Truy xuất thông tin}
 \label{section:2.2}
-\subsection{BM25}
+
+\subsection{BM25 -- Sparse Retrieval}
 \label{subsection:2.2.1}
-Trình bày lại cách tiếp cận truy hồi thưa và vì sao BM25 vẫn là một baseline quan trọng.
 
-\subsection{Dense Retrieval}
+BM25 (Best Matching 25) là mô hình truy xuất xác suất được Robertson và Zaragoza đề xuất năm 2009, phát triển từ mô hình xác suất cơ bản của Robertson và Sparck Jones (1976). BM25 vẫn là baseline quan trọng trong nhiều hệ thống truy xuất hiện đại vì hiệu quả, không yêu cầu GPU và đặc biệt mạnh với từ khóa kỹ thuật chính xác.
+
+Điểm số BM25 của tài liệu $d$ đối với query $q$ gồm các term $q_i$ được tính như sau:
+
+\[
+\text{BM25}(d, q) =
+\sum_{i=1}^{n}
+\text{IDF}(q_i)
+\cdot
+\frac{f(q_i,d)(k_1+1)}
+{f(q_i,d)+k_1\left(1-b+b\frac{|d|}{\text{avgdl}}\right)}
+\]
+
+trong đó $f(q_i,d)$ là tần suất xuất hiện của term $q_i$ trong tài liệu $d$, $|d|$ là độ dài tài liệu và $\text{avgdl}$ là độ dài trung bình của toàn corpus. Siêu tham số $k_1 \in [1.2,2.0]$ kiểm soát mức bão hòa của term frequency; giá trị lớn hơn cho phép tần suất tiếp tục làm tăng điểm khi term xuất hiện nhiều lần. Siêu tham số $b=0.75$ kiểm soát chuẩn hóa độ dài; $b=0$ tương ứng không chuẩn hóa và $b=1$ tương ứng chuẩn hóa hoàn toàn theo $\text{avgdl}$.
+
+IDF được tính theo công thức:
+
+\[
+\text{IDF}(q_i) =
+\log
+\frac{N-n(q_i)+0.5}
+{n(q_i)+0.5}
+\]
+
+trong đó $N$ là tổng số tài liệu và $n(q_i)$ là số tài liệu chứa term $q_i$. IDF giảm trọng số của các từ phổ biến và tăng trọng số của các từ hiếm. Tính chất này đặc biệt hữu ích với thuật ngữ kỹ thuật chuyên ngành xuất hiện ít trong corpus.
+
+\noindent\textbf{Ví dụ minh họa.}
+
+Xét một corpus gồm ba tài liệu và query ``nhiệt độ vận hành tối đa'':
+
+\begin{itemize}
+    \item Doc 1: ``nhiệt độ vận hành tối đa là 85\textdegree C'', chứa đầy đủ các term của query.
+    \item Doc 2: ``nhiệt độ môi trường'', chỉ chứa một phần term.
+    \item Doc 3: ``áp suất vận hành'', chỉ chứa một phần term.
+\end{itemize}
+
+BM25 xếp Doc 1 cao nhất vì chứa nhiều term của query nhất, đồng thời vẫn điều chỉnh điểm nếu tài liệu dài bất thường so với $\text{avgdl}$. Term ``nhiệt độ'' xuất hiện trong nhiều tài liệu nên có IDF thấp hơn term ``tối đa'', vốn chỉ xuất hiện trong Doc 1.
+
+Ưu điểm thực tiễn của BM25 gồm ba điểm: không cần GPU và có thể lập chỉ mục nhanh; hiệu quả với exact keyword match, đặc biệt với mã tài liệu như \path{Public_021}, tên model thiết bị hoặc ký hiệu kỹ thuật; và ít chịu ảnh hưởng của domain shift vì chỉ dựa trên tần suất từ. Hạn chế chính là không nắm bắt đầy đủ quan hệ ngữ nghĩa. Chẳng hạn, query dùng cụm ``nhiệt độ hoạt động'' có thể không khớp tốt với tài liệu chỉ sử dụng thuật ngữ tiếng Anh tương đương.
+
+\subsection{Dense Retrieval -- Bi-encoder}
 \label{subsection:2.2.2}
-Mô tả truy hồi đặc trưng dày, ưu điểm về ngữ nghĩa và hạn chế khi áp dụng cho dữ liệu tiếng Việt.
 
-\subsection{Hybrid}
+Dense retrieval sử dụng kiến trúc bi-encoder để mã hóa query và document thành các vector dày đặc trong cùng một không gian ngữ nghĩa. Khác với BM25 chỉ dựa vào mức độ trùng khớp từ, bi-encoder học biểu diễn ngữ nghĩa nên hai câu khác nhau về mặt chữ nhưng gần nghĩa có thể có vector gần nhau.
+
+Kiến trúc bi-encoder gồm hai encoder xử lý query và document độc lập:
+
+\[
+s(q,d)
+=
+\cos\left(\mathbf{E}_q(q),\mathbf{E}_d(d)\right)
+=
+\frac{\mathbf{E}_q(q)\cdot\mathbf{E}_d(d)}
+{\|\mathbf{E}_q(q)\|\cdot\|\mathbf{E}_d(d)\|}
+\]
+
+trong đó $\mathbf{E}_q$ và $\mathbf{E}_d$ lần lượt là encoder của query và document. Trong thực tế, nhiều hệ thống sử dụng cùng một encoder với shared weights cho cả hai đầu vào.
+
+Toàn bộ document embeddings được tính trước ở giai đoạn offline và lưu trong vector database. Khi inference, hệ thống chỉ cần encode query một lần rồi thực hiện approximate nearest neighbor search. Cơ chế này cho latency thấp ngay cả khi corpus lớn và là lợi thế quan trọng so với cross-encoder reranker, vốn không thể precompute.
+
+\noindent\textbf{Ví dụ minh họa.}
+
+Với query ``thiết bị có thể chịu nhiệt độ bao nhiêu?'', dense retrieval có thể tìm được chunk ``nhiệt độ hoạt động tối đa: 85\textdegree C'' dù hai câu chỉ trùng khớp ít từ, vì chúng có biểu diễn ngữ nghĩa gần nhau. BM25 có thể xếp trường hợp này thấp hơn nếu tài liệu và query sử dụng các cách diễn đạt khác nhau.
+
+Hạn chế chính của dense retrieval là chất lượng phụ thuộc vào embedding model. Nếu model chưa được tối ưu cho domain, vector của query và document liên quan có thể nằm xa nhau. Đây là một bottleneck được phát hiện trong hệ thống v1, dẫn đến việc fine-tune embedding ở v2.
+
+\subsection{Hybrid Retrieval và Reciprocal Rank Fusion}
 \label{subsection:2.2.3}
-Phân tích chiến lược kết hợp sparse và dense retrieval để cải thiện độ phủ và độ chính xác.
 
-\section{Reranking}
+Sparse và dense retrieval có điểm mạnh bổ sung cho nhau: BM25 bắt được exact keyword match, trong khi dense retrieval bắt được quan hệ ngữ nghĩa. Hybrid retrieval kết hợp cả hai để tăng recall tổng thể, tức tăng xác suất gold chunk xuất hiện trong candidate pool trước khi reranking.
+
+Thách thức khi kết hợp là hai retriever trả về điểm số trên các thang đo khác nhau. Điểm BM25 là số thực dương không bị chặn, còn cosine similarity thường nằm trong $[-1,1]$. Việc cộng trực tiếp các điểm số có thể làm kết quả bị chi phối bởi scale của một retriever.
+
+Reciprocal Rank Fusion -- RRF (Cormack et al., 2009) giải quyết vấn đề này bằng cách chỉ sử dụng thứ hạng:
+
+\[
+\text{RRF}(d)
+=
+\sum_{r\in R}
+\frac{1}{k+\text{rank}_r(d)}
+\]
+
+trong đó $R$ là tập retriever, $\text{rank}_r(d)$ là thứ hạng của document $d$ trong retriever $r$, với rank 1 là tốt nhất, và $k=60$ là hằng số ổn định thường được sử dụng.
+
+\begin{table}[H]
+    \centering
+    \caption{Ví dụ kết hợp thứ hạng bằng RRF}
+    \label{tab:rrf-example}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\centering\arraybackslash}p{2.8cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{4.0cm}|}
+        \hline
+        \textbf{Document} & \textbf{Rank BM25} & \textbf{Rank Dense} & \textbf{RRF ($k=60$)} \\ \hline
+        Doc A & 1 & 3 & $1/61+1/63=0.0321$ \\ \hline
+        Doc B & 2 & 1 & $1/62+1/61=0.0326$ \\ \hline
+        Doc C & 10 & 2 & $1/70+1/62=0.0304$ \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Doc B được xếp cao nhất vì xuất hiện trong top-2 của cả hai retriever, dù không phải lúc nào cũng đứng đầu. RRF thưởng cho sự nhất quán giữa các retriever. Hằng số $k=60$ làm phẳng chênh lệch giữa các vị trí thấp, nhờ đó hạn chế một outlier từ một retriever chi phối kết quả.
+
+Trong hệ thống đồ án, BM25 top-10 và ChromaDB dense top-10 được hợp nhất bằng RRF với $k=60$ để tạo candidate pool trước khi đưa vào reranker.
+
+\section{Reranking -- Cross-encoder}
 \label{section:2.3}
-\subsection{Cross encoder}
+
+\subsection{Kiến trúc Cross-encoder và chi phí suy luận}
 \label{subsection:2.3.1}
-Tóm tắt nguyên lý cross encoder và lý do chi phí suy luận cao.
 
-\subsection{Distillation}
+Cross-encoder là kiến trúc reranker nhận đồng thời cặp query và document làm đầu vào, cho phép cross-attention đầy đủ giữa từng token của hai chuỗi. Khác với bi-encoder mã hóa hai đầu vào độc lập, cross-encoder xử lý chúng như một chuỗi ghép nối:
+
+\[
+\text{Input}
+=
+[\text{CLS}]\ q_1\ q_2\ldots q_m\
+[\text{SEP}]\ d_1\ d_2\ldots d_n\
+[\text{SEP}]
+\]
+
+\[
+s(q,d)
+=
+\text{Linear}\left(\mathbf{h}_{[\text{CLS}]}\right)
+\]
+
+trong đó $\mathbf{h}_{[\text{CLS}]}$ là hidden state của token \texttt{[CLS]} sau Transformer encoder, còn lớp Linear tạo ra một scalar relevance score.
+
+Cross-attention đầy đủ cho phép model nắm bắt quan hệ token--token giữa query và document. Ví dụ, từ ``tối đa'' trong query có thể attend trực tiếp đến giá trị ``85\textdegree C'' trong document. Đây là lý do cross-encoder thường cho chất lượng ranking cao hơn bi-encoder.
+
+Hạn chế chính là document embeddings không thể được tính trước. Với mỗi query mới, tất cả cặp query--candidate phải được xử lý lại. Latency vì vậy tăng gần tuyến tính theo số candidates; rerank 20 candidates yêu cầu chấm điểm 20 cặp đầu vào.
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh bi-encoder và cross-encoder}
+    \label{tab:biencoder-crossencoder}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.0cm}|>{\centering\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{4.2cm}|}
+        \hline
+        \textbf{Đặc điểm} & \textbf{Bi-encoder} & \textbf{Cross-encoder} \\ \hline
+        Precompute document & Có, thực hiện offline & Không \\ \hline
+        Latency & $O(1)$ lần encode query & $O(n)$ candidates \\ \hline
+        Chất lượng ranking & Trung bình & Cao \\ \hline
+        Vai trò trong pipeline & First-stage retrieval & Second-stage reranking \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Trong pipeline thực tế, bi-encoder truy xuất nhanh khoảng 20--50 candidates, sau đó cross-encoder rerank để chọn top-5 cuối cùng. Cả v1 và v2 của đồ án đều sử dụng thiết kế này. Với \path{BAAI/bge-reranker-v2-m3} gồm 568 triệu tham số và 20 candidates, latency reranking trên CPU đạt khoảng 147ms/query. Đây là bottleneck chính được xác định trong v1.
+
+\subsection{Knowledge Distillation tổng quan}
 \label{subsection:2.3.2}
-Trình bày xu hướng distillation cho reranker nhẹ hơn nhưng vẫn giữ chất lượng đủ tốt.
 
-\section{Embedding optimization}
+Knowledge Distillation -- KD (Hinton et al., 2015) là kỹ thuật chuyển tri thức từ một teacher model lớn sang student model nhỏ hơn. Thay vì chỉ học từ hard labels, student học từ soft outputs của teacher như phân phối xác suất hoặc điểm số liên tục.
+
+Soft labels chứa nhiều thông tin hơn hard labels. Chẳng hạn, với câu hỏi về nhiệt độ vận hành, một chunk có thể chứa nhiệt độ tối đa và một chunk khác chứa dải nhiệt độ khuyến nghị. Hard labels chỉ đánh dấu gold chunk là 1 và chunk còn lại là 0, trong khi điểm teacher có thể biểu diễn rằng chunk thứ hai vẫn liên quan một phần.
+
+Cơ chế KD cơ bản được mô tả bởi:
+
+\[
+\mathcal{L}_{\text{KD}}
+=
+\text{CE}
+\left(
+\text{softmax}(z^S/T),
+\text{softmax}(z^T/T)
+\right)
+\]
+
+trong đó $z^S$ và $z^T$ là logits của student và teacher, còn $T$ là temperature. Khi $T>1$, phân phối softmax mềm hơn, giúp student nhận được tín hiệu về quan hệ giữa các đầu ra thay vì chỉ đầu ra có xác suất cao nhất.
+
+Trong đồ án, teacher là BGE-M3 gồm 568M tham số và student là MiniLM-L12 gồm 33M tham số. Student học cách BGE-M3 phân biệt mức relevance trên toàn bộ candidate list thay vì chỉ học nhãn relevant hoặc irrelevant.
+
+Xu et al. (2025) cho thấy KD hiệu quả hơn contrastive learning thuần túy khi student đã có domain foundation phù hợp. Kết quả của đồ án nhất quán với nhận định này: KD trực tiếp từ MiniLM base cho MRR@10 = 0.5193, thấp hơn base chưa huấn luyện ở mức 0.5869. Vì vậy, Stage A domain adaptation là bước cần thiết trước KD.
+
+\subsection{Các loss functions cho reranker KD}
+\label{subsection:2.3.3}
+
+Đồ án tập trung phân tích bốn nhóm loss cốt lõi, mỗi nhóm sử dụng một dạng teacher signal khác nhau. Các biến thể mở rộng và kết quả thực nghiệm được trình bày trong Chương 5.
+
+\noindent\textbf{Listwise KL Divergence.}
+
+Điểm teacher và student được chuẩn hóa thành phân phối xác suất trên toàn bộ $n$ candidates bằng softmax với temperature $\tau$:
+
+\[
+P_i^T
+=
+\frac{\exp(s_i^T/\tau)}
+{\sum_j\exp(s_j^T/\tau)},
+\qquad
+P_i^S
+=
+\frac{\exp(s_i^S/\tau)}
+{\sum_j\exp(s_j^S/\tau)}
+\]
+
+\[
+\mathcal{L}_{\text{KL}}
+=
+\sum_i
+P_i^T
+\log
+\frac{P_i^T}{P_i^S}
+\]
+
+KL divergence đo khoảng cách giữa hai phân phối. Đây là listwise loss vì tối ưu toàn bộ danh sách thay vì từng cặp riêng lẻ.
+
+\noindent\textbf{Margin-MSE.}
+
+Loss học từ chênh lệch điểm tương đối giữa các cặp candidates:
+
+\[
+\mathcal{L}_{\text{MMSE}}
+=
+\frac{1}{|P|}
+\sum_{(i,j)\in P}
+\left[
+(s_i^S-s_j^S)
+-
+(s_i^T-s_j^T)
+\right]^2
+\]
+
+Student không cần khớp điểm tuyệt đối mà khớp hiệu điểm. Tuy nhiên, cross-encoder logits của teacher có range lớn. Trên tập train của đồ án, margin có mean = 4.13, std = 2.57 và khoảng giá trị lên tới 23.3 units, khiến gradient dễ bị chi phối bởi easy pairs có margin lớn.
+
+\noindent\textbf{RankNet với teacher soft labels.}
+
+RankNet (Burges et al., 2005) được mở rộng bằng cách dùng xác suất liên tục từ teacher:
+
+\[
+P_{ij}^T
+=
+\sigma(s_i^T-s_j^T)
+\]
+
+\[
+\mathcal{L}_{\text{RN}}
+=
+-\frac{1}{n^2-n}
+\sum_{i\neq j}
+\left[
+P_{ij}^T\log P_{ij}^S
++
+(1-P_{ij}^T)\log(1-P_{ij}^S)
+\right]
+\]
+
+RankNet tối ưu $O(n^2)$ cặp cho mỗi query. Với 20 candidates, số cặp có thứ tự là 380, tạo tín hiệu phong phú nhưng vẫn có thể chịu ảnh hưởng từ scale của teacher logits.
+
+\noindent\textbf{ADR-MSE (Asymmetric Distillation Ranking MSE).}
+
+ADR-MSE là loss được đề xuất trong đồ án, sử dụng rank positions thay vì continuous scores làm teacher signal. Với rank $r_i\in\{0,\ldots,n-1\}$, trong đó $r=0$ là vị trí tốt nhất, target được ánh xạ về $[-1,+1]$:
+
+\[
+\tilde{r}_i
+=
+1-\frac{2r_i}{n-1}
+\]
+
+Student logits được chuẩn hóa theo từng candidate list:
+
+\[
+\tilde{s}_i
+=
+\frac{s_i^S-\mu_s}
+{\sigma_s+\epsilon}
+\]
+
+\[
+\mathcal{L}_{\text{ADR}}
+=
+\frac{1}{n}
+\sum_{i=1}^{n}
+\left(\tilde{s}_i-\tilde{r}_i\right)^2
+\]
+
+\begin{table}[H]
+    \centering
+    \caption{Ví dụ target và student score trong ADR-MSE}
+    \label{tab:adr-example}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.2cm}|}
+        \hline
+        \textbf{Candidate} & \textbf{Teacher rank $r_i$} & \textbf{Target $\tilde{r}_i$} & \textbf{Student logit $s_i$} & \textbf{Score chuẩn hóa $\tilde{s}_i$} \\ \hline
+        Doc A (gold) & 0 & $+1.00$ & 2.5 & $+0.8$ \\ \hline
+        Doc B & 1 & $+0.33$ & 1.2 & $+0.2$ \\ \hline
+        Doc C & 2 & $-0.33$ & 0.1 & $-0.3$ \\ \hline
+        Doc D & 3 & $-1.00$ & $-1.5$ & $-0.7$ \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Với ví dụ trong Bảng~\ref{tab:adr-example}, loss bằng:
+
+\[
+\frac{
+(0.8-1.0)^2
++
+(0.2-0.33)^2
++
+(-0.3+0.33)^2
++
+(-0.7+1.0)^2
+}{4}
+\approx 0.037
+\]
+
+Rank position là tín hiệu ordinal và ổn định, không phụ thuộc vào thang điểm tuyệt đối của teacher. Phép ánh xạ tuyến tính về $[-1,+1]$ giúp các vị trí có target bị chặn và hạn chế scale mismatch giữa teacher và student.
+
+\section{Mô hình nhúng văn bản}
 \label{section:2.4}
-\subsection{MRL}
+
+\subsection{Kiến trúc Transformer và BERT}
 \label{subsection:2.4.1}
-Mô tả mục tiêu của Matryoshka Representation Learning trong tối ưu vector embedding.
 
-\subsection{Curriculum}
+Transformer (Vaswani et al., 2017) là nền tảng của BERT, PhoBERT, MiniLM và BGE-M3. Transformer encoder xử lý chuỗi token $x_1,x_2,\ldots,x_n$ qua $L$ lớp, trong đó mỗi lớp gồm Multi-Head Self-Attention và Feed-Forward Network.
+
+Self-attention cho phép mỗi token tham chiếu đến tất cả token khác trong chuỗi:
+
+\[
+\text{Attention}(Q,K,V)
+=
+\text{softmax}
+\left(
+\frac{QK^T}{\sqrt{d_k}}
+\right)
+V
+\]
+
+trong đó $Q$, $K$ và $V$ là các ma trận query, key và value được chiếu từ hidden states, còn $d_k$ là số chiều của key vector. Cơ chế này giúp model nắm bắt quan hệ dài hạn giữa các token mà không phụ thuộc trực tiếp vào khoảng cách vị trí.
+
+BERT (Bidirectional Encoder Representations from Transformers; Devlin et al., 2019) được pretrain chủ yếu bằng Masked Language Modeling và Next Sentence Prediction. Đặc tính bidirectional cho phép mỗi token nhận context từ cả bên trái và bên phải. Hidden state của token \texttt{[CLS]} thường được dùng làm biểu diễn tổng hợp của toàn chuỗi cho các tác vụ phân loại.
+
+\subsection{\texttt{Vietnamese\_Embedding\_v2} và BGE-M3}
 \label{subsection:2.4.2}
-Nêu vai trò của curriculum training trong ổn định quá trình học biểu diễn.
 
-\section{Query routing / intent classification}
+\path{AITeamVN/Vietnamese_Embedding_v2} là mô hình embedding tiếng Việt được xây dựng trên nền BGE-M3 (Chen et al., 2024). BGE-M3 là mô hình đa ngôn ngữ hỗ trợ ba chế độ retrieval: dense bi-encoder, learned sparse weights và multi-vector theo hướng ColBERT. \path{Vietnamese_Embedding_v2} được fine-tune tiếp trên corpus tiếng Việt để cải thiện khả năng hiểu từ vựng và ngữ nghĩa đặc thù.
+
+Trong hệ thống đồ án, \path{Vietnamese_Embedding_v2} được dùng ở chế độ dense bi-encoder và tạo vector 1024 chiều được chuẩn hóa L2. Baseline trước fine-tune đạt Acc@1 = 73.89\% trên internal test gồm 157 queries. Đây là điểm xuất phát cho giai đoạn fine-tune embedding ở v2.
+
+\subsection{MultipleNegativesRankingLoss}
+\label{subsection:2.4.3}
+
+MultipleNegativesRankingLoss -- MNR (Henderson et al., 2017) là loss nền tảng cho contrastive learning của embedding model. Với batch gồm $N$ cặp query--positive, mỗi query phải phân biệt positive của nó với $N-1$ in-batch negatives, tức positive của các query khác:
+
+\[
+\mathcal{L}_{\text{MNR}}
+=
+-\frac{1}{N}
+\sum_{i=1}^{N}
+\log
+\frac{
+\exp\left(
+\cos(\mathbf{e}_{q_i},\mathbf{e}_{p_i})/\tau
+\right)
+}{
+\sum_{j=1}^{N}
+\exp\left(
+\cos(\mathbf{e}_{q_i},\mathbf{e}_{p_j})/\tau
+\right)
+}
+\]
+
+trong đó $\mathbf{e}_{q_i}$ và $\mathbf{e}_{p_i}$ là embedding của query và positive tương ứng, còn $\tau$ là temperature.
+
+\begin{table}[H]
+    \centering
+    \caption{Ví dụ in-batch negatives với batch size bằng 3}
+    \label{tab:mnr-example}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\raggedright\arraybackslash}p{5.2cm}|>{\centering\arraybackslash}p{3.5cm}|}
+        \hline
+        \textbf{Query} & \textbf{Positive} & \textbf{In-batch negatives} \\ \hline
+        $q_1$: ``nhiệt độ tối đa?'' & $p_1$: ``max temp: 85\textdegree C'' & $p_2,p_3$ \\ \hline
+        $q_2$: ``áp suất vận hành?'' & $p_2$: ``operating pressure: 3 bar'' & $p_1,p_3$ \\ \hline
+        $q_3$: ``công suất tiêu thụ?'' & $p_3$: ``power consumption: 500W'' & $p_1,p_2$ \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Với $q_1$, model phải tạo $\cos(q_1,p_1)$ cao hơn $\cos(q_1,p_2)$ và $\cos(q_1,p_3)$. In-batch negatives không yêu cầu nhãn negative tường minh. Với batch size = 128 trong đồ án, mỗi query nhận 127 negatives. Vì vậy, batch size lớn giúp tạo tín hiệu học khó và đa dạng hơn, nhưng đồng thời đòi hỏi GPU có đủ VRAM.
+
+\subsection{Matryoshka Representation Learning}
+\label{subsection:2.4.4}
+
+Matryoshka Representation Learning -- MRL (Kusupati et al., 2022) huấn luyện embedding model sao cho mỗi prefix của vector cũng là một biểu diễn hữu ích. Tên gọi lấy cảm hứng từ búp bê Matryoshka: vector 1024 chiều chứa prefix 512 chiều, và prefix này tiếp tục chứa biểu diễn 256 chiều.
+
+MRL tính MNR loss đồng thời trên nhiều kích thước trong một forward pass:
+
+\[
+\mathcal{L}_{\text{MRL}}
+=
+\sum_{m\in\mathcal{M}}
+w_m
+\cdot
+\mathcal{L}_{\text{MNR}}
+\left(
+f_m(\mathbf{e}_q),
+f_m(\mathbf{e}_p),
+\{f_m(\mathbf{e}_{p_j})\}
+\right)
+\]
+
+trong đó $\mathcal{M}=\{256,512,1024\}$, $f_m(\mathbf{x})=\mathbf{x}[:m]$ là phép lấy $m$ chiều đầu và $w_m=1$ cho mọi kích thước.
+
+Loss được tính trên cả ba kích thước rồi cộng lại, buộc model tổ chức thông tin sao cho các chiều đầu mang thông tin quan trọng. Nếu chỉ tối ưu vector 1024 chiều, model có thể phân bổ thông tin tùy ý và prefix ngắn không nhất thiết còn hữu ích.
+
+Một checkpoint MRL hỗ trợ triển khai linh hoạt theo tài nguyên. Trong đồ án, embedding 256 chiều đạt Acc@1 = 73.89\%, bằng baseline gốc, trong khi index ChromaDB nhỏ hơn 4 lần và tìm kiếm nhanh hơn khoảng 4 lần so với 1024 chiều.
+
+\subsection{Curriculum Learning}
+\label{subsection:2.4.5}
+
+Curriculum Learning (Bengio et al., 2009) là chiến lược tổ chức dữ liệu huấn luyện theo độ khó tăng dần. Nếu model gặp hard negatives quá sớm khi tham số chưa ổn định, gradient có thể nhiễu và model dễ hội tụ vào nghiệm kém.
+
+Trong bài toán embedding retrieval, độ khó của negative được xác định theo nguồn gốc và mức gần với gold chunk:
+
+\begin{itemize}
+    \item \textbf{Easy negatives}: synthesized negatives do GPT tạo bằng cách thay đổi entity, số liệu hoặc logic trong positive chunk. Boundary với positive tương đối rõ ràng.
+    \item \textbf{Medium negatives}: extra synthesized negatives từ corpus thực tế, có phân phối domain rộng hơn.
+    \item \textbf{Hard negatives}: các chunk thực nằm ở rank 4--15 trong kết quả retrieval, gần gold trong không gian vector nhưng không phải gold.
+\end{itemize}
+
+Pipeline của đồ án gồm Stage 1 với 1,040 synthesized triplets, Stage 2 với 3,840 triplets gồm synthesized và extra synthesized, và Stage 3 với 6,985 triplets gồm toàn bộ dữ liệu cộng mined negatives. Checkpoint của stage trước được dùng làm điểm khởi đầu cho stage sau, đồng thời learning rate giảm dần.
+
+\section{Mô hình ngôn ngữ lớn trong pipeline RAG}
 \label{section:2.5}
-Khảo sát hướng routing theo intent để chọn pipeline xử lý phù hợp cho từng loại truy vấn.
+
+\subsection{GPT-4o-mini}
+\label{subsection:2.5.1}
+
+GPT-4o-mini (OpenAI, 2024) là phiên bản nhỏ và hiệu quả hơn của GPT-4o, phù hợp với các tác vụ không yêu cầu toàn bộ năng lực của model lớn. Model hỗ trợ context window lên đến 128K tokens.
+
+Trong v1, GPT-4o-mini đảm nhận hai vai trò. Thứ nhất là answer generation: nhận top-5 chunks cùng câu hỏi trắc nghiệm và sinh đáp án A/B/C/D. Thứ hai là intent routing: phân loại câu hỏi thành \path{tra_cuu} hoặc \path{tinh_toan} trong pipeline Router-Summary. Mỗi lần gọi API cho routing bổ sung khoảng 800ms latency và phát sinh chi phí, do đó trở thành một bottleneck của v1.
+
+Trong giai đoạn xây dựng dữ liệu huấn luyện v2, GPT-4o-mini còn được dùng làm GPT judge để xác định gold chunks và lọc synthesized negatives. Quy trình này được trình bày trong Chương 4.
+
+\subsection{Chain-of-Thought Prompting}
+\label{subsection:2.5.2}
+
+Chain-of-Thought -- CoT prompting (Wei et al., 2022) khuyến khích LLM thực hiện các bước suy luận trung gian trước khi đưa ra câu trả lời cuối. Thay vì chỉ yêu cầu đáp án, CoT prompt hướng model trích xuất dữ kiện, lập luận hoặc tính toán từng bước.
+
+Trong pipeline Router-Summary, câu hỏi được phân loại là \path{tinh_toan} nhận CoT prompt, còn câu hỏi \path{tra_cuu} sử dụng direct prompt ngắn hơn. Kết quả v1 cho thấy CoT cải thiện accuracy trên nhóm \path{tinh_toan} từ 63.16\% của Baseline lên 85.53\% của Router-Summary.
+
+\section{Query Routing và phân loại Intent}
+\label{section:2.6}
+
+\subsection{LLM-based Routing}
+\label{subsection:2.6.1}
+
+Query routing phân tích câu hỏi đầu vào để chọn chiến lược xử lý phù hợp. Câu hỏi tra cứu có thể dùng direct retrieval và prompt ngắn, trong khi câu hỏi tính toán cần reasoning theo từng bước. Routing đúng giúp tăng accuracy mà không áp dụng pipeline tốn kém cho mọi query.
+
+Trong v1, GPT-4o-mini phân loại intent đúng 985/991 câu, tương ứng accuracy 99.4\%. Tuy nhiên, mỗi API call bổ sung khoảng 800ms latency và chi phí inference, trong khi bài toán chỉ gồm hai lớp. Đây là trường hợp sử dụng model có năng lực lớn hơn nhiều so với yêu cầu của tác vụ.
+
+\subsection{PhoBERT và phân loại văn bản tiếng Việt}
+\label{subsection:2.6.2}
+
+PhoBERT (Nguyen et al., 2020) là BERT được pretrain trên khoảng 20GB văn bản tiếng Việt, gồm dữ liệu báo chí và Wikipedia. PhoBERT sử dụng BPE tokenizer được học từ corpus tiếng Việt nên phù hợp hơn với từ ghép, từ láy và các dạng viết tắt trong tiếng Việt so với nhiều model đa ngôn ngữ.
+
+Kiến trúc PhoBERT-base gồm 12 Transformer layers, hidden size 768, 12 attention heads và khoảng 135M tham số. Để fine-tune cho phân loại nhị phân, một classification head được đặt trên hidden state của token \texttt{[CLS]}:
+
+\[
+\hat{y}
+=
+\text{softmax}
+\left(
+\mathbf{W}\mathbf{h}_{[\text{CLS}]}
++
+\mathbf{b}
+\right)
+\]
+
+trong đó $\mathbf{h}_{[\text{CLS}]}\in\mathbb{R}^{768}$ và $\mathbf{W}\in\mathbb{R}^{2\times768}$.
+
+So với GPT-4o-mini router, PhoBERT fine-tuned chạy local, không cần API call và có latency mục tiêu khoảng 1--3ms. Thách thức chính là class imbalance: \path{tra_cuu} chiếm 915/991 câu (92.3\%), còn \path{tinh_toan} chỉ chiếm 76/991 câu (7.7\%). Chiến lược xử lý imbalance được trình bày trong Chương 4.
 
 \section{Research Gap}
-\label{section:2.6}
-Chốt lại khoảng trống nghiên cứu, nhấn mạnh bài toán cân bằng giữa chất lượng, độ trễ và chi phí trong Vietnamese RAG.
+\label{section:2.7}
+
+Qua khảo sát tài liệu và thực nghiệm hệ thống v1, đồ án xác định ba khoảng trống nghiên cứu làm cơ sở cho các đóng góp kỹ thuật trong những chương tiếp theo.
+
+\noindent\textbf{Gap 1 -- Lightweight reranker cho tiếng Việt.}
+
+PhoRanker (Nguyen Ba, 2023) là một cross-encoder reranker tiếng Việt đã được công bố, gồm 135M tham số và đạt MRR@10 = 0.7415 trong thực nghiệm của đồ án. Chưa có nhiều nghiên cứu áp dụng Knowledge Distillation để xây dựng reranker nhỏ hơn cho miền tài liệu kỹ thuật tiếng Việt, đặc biệt là phân tích các KD loss và teacher signal. Đồ án giải quyết khoảng trống này thông qua các đóng góp C2, C3 và C4.
+
+\noindent\textbf{Gap 2 -- Phân tích latency--cost--accuracy trong Vietnamese RAG.}
+
+Các hệ thống RAG thường tập trung báo cáo accuracy mà ít phân tích đồng thời latency và chi phí inference. Bên cạnh đó, nhiều công trình tối ưu từng thành phần riêng lẻ thay vì xem xét toàn bộ pipeline. Đồ án đồng thời tối ưu reranker, embedding và intent routing theo điều kiện triển khai CPU, tiếp cận bài toán dưới góc nhìn tối ưu đa mục tiêu qua đóng góp C5.
+
+\noindent\textbf{Gap 3 -- Thiếu cơ sở thực nghiệm cho quyết định tối ưu.}
+
+Nhiều giải pháp được lựa chọn từ đầu mà không xuất phát từ bottleneck đo được trên một hệ thống hoàn chỉnh. Đồ án thực hiện theo hướng xây dựng và đo lường v1 trước, sau đó dùng kết quả thực nghiệm làm căn cứ cho từng quyết định tối ưu ở v2. Cách tiếp cận này giúp tập trung nguồn lực vào bottleneck thực tế và tạo cơ sở cho đóng góp C1.
 
 \end{document}

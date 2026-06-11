@@ -9,6 +9,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ipynb_checkpoints/
+test.ipynb
 
 # Editor / OS
 .vscode/
@@ -29,6 +30,7 @@ results_*.csv
 results_*.json
 benchmark_reranker/
 domain_data/retrieve_991_test.jsonl
+domain_data/retrieve_rerank_991_voyage.jsonl
 domain_data/results_smoke_output.json
 
 # Vector DB / indexes

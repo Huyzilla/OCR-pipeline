@@ -1,24 +1,363 @@
+% !TEX root = ../DoAn.tex
 \documentclass[../DoAn.tex]{subfiles}
 \begin{document}
 
-\section{Overall Architecture}
+\section{Vai trò của hệ thống v1 trong đồ án}
 \label{section:3.1}
-Mô tả kiến trúc tổng thể của hệ thống RAG theo luồng Parser $\rightarrow$ Chunking $\rightarrow$ Retrieval $\rightarrow$ Routing $\rightarrow$ Reranking $\rightarrow$ Generation.
 
-\section{Document Processing}
+Hệ thống RAG ban đầu, gọi là v1 trong đồ án, được xây dựng như một prototype để kiểm chứng khả năng áp dụng RAG cho bài toán hỏi đáp tài liệu kỹ thuật tiếng Việt. Mục tiêu của v1 không phải tạo ra hệ thống cuối cùng, mà là một bước phát triển trung gian nhằm trả lời ba câu hỏi thực tế: pipeline RAG cơ bản có hoạt động ổn định trên dữ liệu kỹ thuật tiếng Việt hay không; thành phần nào tạo ra bottleneck khi triển khai; và cần tối ưu ở đâu để hình thành đóng góp kỹ thuật rõ ràng.
+
+Trong giai đoạn này, hệ thống được chạy thử trên 991 câu hỏi trắc nghiệm và 200 tài liệu PDF từ tập phát triển. Chính 991 câu hỏi này sau đó được dùng để xây dựng dữ liệu huấn luyện cho v2, gồm nhãn intent, cặp query--positive chunk và negative samples cho reranker và embedding. Vì vậy, kết quả trên 991 câu chỉ được xem là tín hiệu phát triển nội bộ, không phải kết quả đánh giá cuối cùng.
+
+Tập kiểm thử độc lập gồm 343 câu hỏi từ 49 tài liệu PDF được giữ riêng cho giai đoạn đánh giá v2 và không được sử dụng để huấn luyện.
+
+\begin{table}[H]
+    \centering
+    \caption{Vai trò của các tập dữ liệu trong quy trình phát triển}
+    \label{tab:data-role}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.4cm}|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{6.3cm}|}
+        \hline
+        \textbf{Nhóm dữ liệu} & \textbf{Quy mô} & \textbf{Vai trò} \\ \hline
+        Tập phát triển v1 & 991 câu hỏi, 200 tài liệu PDF & Chạy thử pipeline, quan sát lỗi, đo bottleneck và tạo dữ liệu huấn luyện v2 \\ \hline
+        Dữ liệu huấn luyện v2 & Xây dựng từ 991 câu hỏi & Huấn luyện reranker, embedding và intent classifier \\ \hline
+        Tập kiểm thử độc lập & 343 câu hỏi, 49 tài liệu PDF & Chỉ dùng để đánh giá v2, không dùng để huấn luyện hoặc lựa chọn cấu hình \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+\section{Quy trình tiền xử lý tài liệu}
 \label{section:3.2}
-Trình bày quá trình tiền xử lý tài liệu, tách đoạn, chuẩn hóa và xây dựng kho chỉ mục.
 
-\section{Hybrid Retrieval}
+\subsection{OCR và chuẩn hóa văn bản}
+\label{subsection:3.2.1}
+
+Tập dữ liệu gồm các PDF kỹ thuật thuộc nhiều lĩnh vực như phần mềm kiểm thử, thiết bị y tế, ô tô, điện, hệ thống HVAC và hướng dẫn vận hành thiết bị. Các tài liệu được chuyển đổi sang Markdown bằng công cụ OCR. Quá trình này giữ lại cấu trúc heading và biểu diễn bảng dưới dạng HTML, cho phép bước chunking phân biệt bảng với văn bản thường.
+
+Mỗi tài liệu được lưu dưới dạng file \path{main.md} trong thư mục riêng theo định danh \path{Public_XXX}. Định danh được giữ trong metadata của từng chunk để hỗ trợ truy xuất trực tiếp khi câu hỏi nêu rõ tài liệu nguồn, chẳng hạn \path{Public_021}.
+
+Ví dụ, một bảng thông số sau OCR vẫn giữ được cấu trúc hàng--cột như Bảng~\ref{tab:ocr-table-example}.
+
+\begin{table}[H]
+    \centering
+    \caption{Ví dụ bảng thông số được bảo toàn sau OCR}
+    \label{tab:ocr-table-example}
+    {\small
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{6.0cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.0cm}|}
+        \hline
+        \textbf{Thông số} & \textbf{Giá trị} & \textbf{Đơn vị} \\ \hline
+        Nhiệt độ vận hành tối đa & 85 & \textdegree C \\ \hline
+        Áp suất vận hành & 3.0 & bar \\ \hline
+        Công suất tiêu thụ & 500 & W \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Việc bảo toàn cấu trúc này giúp \path{TableAwareChunker} xử lý đúng quan hệ giữa header và từng ô dữ liệu.
+
+\subsection{TableAwareChunker}
+\label{subsection:3.2.2}
+
+Chunking quyết định đơn vị thông tin được đưa vào retrieval. Với tài liệu kỹ thuật, chunk quá lớn, chẳng hạn trên 1,000 từ, làm loãng thông tin; ngược lại, chunk quá nhỏ, chẳng hạn dưới 100 từ, có thể làm mất ngữ cảnh hoặc tách header khỏi dữ liệu bảng. \path{TableAwareChunker} giải quyết vấn đề này bằng hai luồng xử lý riêng.
+
+\noindent\textbf{Text chunking.}
+
+Văn bản thuần được chia theo paragraph với ngân sách \path{chunk_size=512} từ và overlap khoảng 100 từ ở cấp paragraph. Overlap hạn chế mất thông tin tại ranh giới giữa hai chunk. Mỗi chunk lưu \path{hierarchy_path}, tức chuỗi heading H1 $>$ H2 $>$ H3 dẫn tới đoạn văn, để bảo toàn ngữ cảnh cấu trúc.
+
+\noindent\textbf{Table chunking.}
+
+Mỗi bảng được chia theo cửa sổ 10 hàng với overlap 2 hàng. Header được thêm lại vào đầu mỗi chunk để giữ ý nghĩa của từng cột. Nội dung HTML sau đó được chuyển thành text có cấu trúc, ví dụ:
+
+\begin{quote}
+\small\ttfamily
+Cột: Thông số \textbar{} Giá trị \textbar{} Đơn vị\\
+Dòng 1: Nhiệt độ vận hành tối đa \textbar{} 85 \textbar{} độ C\\
+Dòng 2: Áp suất vận hành \textbar{} 3.0 \textbar{} bar\\
+Dòng 3: Công suất tiêu thụ \textbar{} 500 \textbar{} W
+\end{quote}
+
+Biểu diễn text phù hợp với embedding model hơn HTML thô vì model chủ yếu được pretrain trên ngôn ngữ tự nhiên.
+
+\noindent\textbf{Metadata của chunk.}
+
+Mỗi chunk lưu bốn trường: \path{document_id}, \path{hierarchy_path}, \path{chunk_type} và \path{chunk_index}. Metadata hỗ trợ lọc theo tài liệu, xây dựng DocIndex và truy vết nguồn gốc khi phân tích lỗi.
+
+Quy trình \path{TableAwareChunker} có thể tóm tắt như sau:
+
+\begin{enumerate}
+    \item Tách file \path{main.md} thành các segment text và table dựa trên thẻ HTML.
+    \item Với segment text, tách thành paragraph và gộp tới giới hạn \path{chunk_size}, đồng thời giữ overlap cho chunk kế tiếp.
+    \item Với segment table, parse danh sách hàng, chia thành cửa sổ 10 hàng với overlap 2 hàng và thêm lại header.
+    \item Chuyển từng segment thành text, sau đó gán metadata và chỉ số thứ tự chunk.
+\end{enumerate}
+
+\subsection{Xây dựng chỉ mục}
+\label{subsection:3.2.3}
+
+Sau chunking, các chunk được đưa vào ba cấu trúc chỉ mục phục vụ những pipeline khác nhau.
+
+\noindent\textbf{ChromaDB.}
+
+ChromaDB lưu dense embeddings của các chunk. Embedding được tạo bằng \path{AITeamVN/Vietnamese_Embedding_v2} dưới dạng vector 1024 chiều chuẩn hóa L2 và được cache vào \path{cache_chunk_embeddings.pkl}, tránh phải encode lại khi khởi động hệ thống.
+
+\noindent\textbf{BM25Okapi.}
+
+BM25Okapi lập chỉ mục toàn bộ chunk text cho sparse retrieval. Thành phần này không cần GPU, có latency dưới khoảng 10ms/query và phù hợp với mã số, ký hiệu hoặc tên thiết bị mà dense model có thể chưa biểu diễn tốt.
+
+\noindent\textbf{DocIndex.}
+
+DocIndex là chỉ mục bổ sung dành cho Router-Summary, trong đó mỗi tài liệu được biểu diễn bằng một doc-level vector. Với tài liệu có ít nhất ba text chunk, vector được tính bằng TextRank weighted mean và blend 85/15 với table embedding. Tài liệu có một hoặc hai text chunk dùng tỉ lệ blend 70/30. Tài liệu chỉ có bảng sử dụng hierarchy weighted mean với trọng số theo độ sâu heading.
+
+DocIndex thu hẹp không gian tìm kiếm từ toàn bộ corpus xuống top-3 tài liệu trước khi thực hiện retrieval cấp chunk.
+
+\section{Kiến trúc ba pipeline RAG}
 \label{section:3.3}
-Mô tả cách kết hợp truy hồi sparse và dense trong pipeline thực tế.
 
-\section{Routing mechanism}
+Trên nền tiền xử lý và chỉ mục chung, đồ án xây dựng ba pipeline để xác định trade-off giữa độ đơn giản, latency, chi phí API và khả năng xử lý các loại câu hỏi.
+
+\subsection{Pipeline Baseline}
+\label{subsection:3.3.1}
+
+Baseline thực hiện hybrid retrieval trực tiếp trên toàn corpus rồi đưa context vào LLM để sinh đáp án.
+
+\noindent\textbf{Bước 1 -- Hybrid Retrieval.}
+
+BM25 top-10 và ChromaDB dense top-10 chạy độc lập. Kết quả được hợp nhất bằng RRF với $k=60$ để tạo candidate pool.
+
+\noindent\textbf{Bước 2 -- BGE Rerank.}
+
+Cross-encoder \path{BAAI/bge-reranker-v2-m3} chấm điểm từng cặp query--candidate. Sau khi toàn bộ candidates được score, hệ thống giữ top-5 chunk có relevance cao nhất.
+
+\noindent\textbf{Bước 3 -- Phát hiện Public ID.}
+
+Nếu câu hỏi chứa định danh tài liệu như \path{Public_021}, candidate pool được giới hạn trực tiếp vào các chunk của tài liệu đó trước khi rerank. Heuristic này hiệu quả trong nhiều trường hợp nhưng có thể sai nếu câu hỏi nhắc tới một Public ID trong khi thông tin cần trả lời nằm ở tài liệu khác.
+
+\noindent\textbf{Bước 4 -- Answer Generation.}
+
+Top-5 chunk được ghép cùng câu hỏi và các lựa chọn A/B/C/D. GPT-4o-mini sinh đáp án với \path{max_tokens=16} và \path{temperature=0}; prompt yêu cầu trả lời trực tiếp bằng lựa chọn cuối cùng.
+
+Baseline chỉ gọi LLM một lần, có latency trung bình thấp nhất là 1.07s/câu và không phát sinh format error. Hạn chế là câu tra cứu và câu tính toán được xử lý giống nhau.
+
+\subsection{Pipeline Fusion}
+\label{subsection:3.3.2}
+
+Fusion giữ nguyên Phase 1 gồm hybrid retrieval và rerank của Baseline. Kết quả Phase 1 được cache trong \path{cache_prepared.pkl} để hai pipeline dùng chung. Fusion bổ sung hai bước ở Phase 2.
+
+\noindent\textbf{Extract.}
+
+LLM thứ nhất nhận top-5 chunk và trích xuất tối đa 300 từ chứa thông tin cần thiết cho câu hỏi, đồng thời giữ nguyên số liệu và thuật ngữ. Lời gọi này sử dụng \path{max_tokens=400}.
+
+\noindent\textbf{Answer.}
+
+Phần text đã trích xuất thay thế raw context trong prompt trả lời. Ý tưởng là context ngắn và tập trung hơn có thể hỗ trợ reasoning, đặc biệt với câu hỏi cần kết hợp nhiều con số.
+
+Fusion gọi LLM hai lần và đạt latency 5.76s/câu, cao hơn Baseline khoảng 5.4 lần. Bước extract cũng có nguy cơ loại bỏ thông tin liên quan, đặc biệt với câu multi-answer.
+
+\subsection{Pipeline Router-Summary}
+\label{subsection:3.3.3}
+
+Router-Summary gồm bốn bước nối tiếp và xử lý câu \path{tra_cuu} khác với câu \path{tinh_toan}.
+
+\noindent\textbf{Bước 1 -- Router.}
+
+GPT-4o-mini phân loại intent thành \path{tra_cuu} hoặc \path{tinh_toan}; regex đồng thời trích xuất Public ID. Router đạt accuracy 99.4\%, tương ứng 985/991 câu. Sáu câu bị nhầm intent vẫn được trả lời đúng ở đầu ra cuối.
+
+\noindent\textbf{Bước 2 -- DocIndexer.}
+
+Nếu không có Public ID, DocIndexer chọn top-3 tài liệu bằng cách kết hợp BM25 trên doc-level text và cosine similarity trên doc-level vector qua RRF. Query embedding được tính một lần và tái sử dụng ở bước chunk retrieval. Nếu có Public ID, hệ thống chuyển sang direct mode và bỏ qua DocIndexer.
+
+\noindent\textbf{Bước 3 -- MultiDocRetriever.}
+
+Hybrid retrieval được thực hiện trong phạm vi top-3 tài liệu đã chọn. BGE-M3 sau đó rerank candidate pool để lấy top-5 chunk cuối cùng. Việc giới hạn phạm vi retrieval giúp giảm nhiễu từ các tài liệu không liên quan.
+
+\noindent\textbf{Bước 4 -- AnswerGenerator.}
+
+Câu \path{tinh_toan} sử dụng Chain-of-Thought prompt để khuyến khích suy luận từng bước trước khi chọn đáp án. Câu \path{tra_cuu} sử dụng direct prompt ngắn gọn tương tự Baseline.
+
+\subsection{So sánh kiến trúc ba pipeline}
+\label{subsection:3.3.4}
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh kiến trúc ba pipeline v1}
+    \label{tab:v1-pipeline-comparison}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\raggedright\arraybackslash}p{3.7cm}|>{\raggedright\arraybackslash}p{4.2cm}|>{\raggedright\arraybackslash}p{5.0cm}|}
+        \hline
+        \textbf{Đặc điểm} & \textbf{Baseline} & \textbf{Fusion} & \textbf{Router-Summary} \\ \hline
+        Retrieval scope & Toàn corpus & Toàn corpus & Top-3 tài liệu qua DocIndexer \\ \hline
+        Rerank & BGE-M3 & BGE-M3, dùng chung Phase 1 & BGE-M3 \\ \hline
+        Phân loại intent & Không & Không & GPT-4o-mini \\ \hline
+        Số lần gọi LLM/câu & 1 & 2, extract + answer & 2, router + answer \\ \hline
+        Prompt theo intent & Không & Không & CoT cho \path{tinh_toan} \\ \hline
+        Latency đo được & \textbf{1.07s} & 5.76s & Chưa đo chính xác \\ \hline
+        Format error & 0 & 9 câu & 5 câu \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Ba pipeline dùng chung nền tảng chunking, indexing và reranker. Khác biệt chính nằm ở phạm vi retrieval, việc phân loại intent, số lần gọi LLM và chiến lược prompt.
+
+\section{Đánh giá thực nghiệm v1}
 \label{section:3.4}
-Giới thiệu cơ chế định tuyến truy vấn theo intent hoặc độ phức tạp câu hỏi.
 
-\section{Final inference pipeline}
+\subsection{Thiết lập thực nghiệm}
+\label{subsection:3.4.1}
+
+\begin{table}[H]
+    \centering
+    \caption{Cấu hình thực nghiệm v1 trên tập phát triển}
+    \label{tab:v1-experimental-setup}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{8.0cm}|}
+        \hline
+        \textbf{Thành phần} & \textbf{Cấu hình} \\ \hline
+        Tập chạy thử & 991 câu hỏi trắc nghiệm tiếng Việt \\ \hline
+        Phân phối intent & \path{tra_cuu}: 915 câu (92.3\%); \path{tinh_toan}: 76 câu (7.7\%) \\ \hline
+        Câu multi-answer & 22 câu (2.2\%) có ít nhất hai đáp án đúng \\ \hline
+        Embedding model & \path{AITeamVN/Vietnamese_Embedding_v2} \\ \hline
+        Rerank model & \path{BAAI/bge-reranker-v2-m3} \\ \hline
+        LLM & GPT-4o-mini, \path{temperature=0} \\ \hline
+        Top-K sau rerank & 5 chunks \\ \hline
+        Ground truth & Nhãn thủ công trong \path{ans.md} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Metric chính là accuracy theo exact match đáp án A/B/C/D, được tính tổng thể và theo intent. Câu multi-answer chỉ được tính đúng khi hệ thống chọn đủ tất cả đáp án đúng và không chọn thêm đáp án sai. Do 991 câu hỏi sau đó được dùng để xây dựng dữ liệu huấn luyện v2, các số liệu trong mục này chỉ mô tả hành vi của v1 trên tập phát triển.
+
+\subsection{Kết quả tổng thể và theo intent}
+\label{subsection:3.4.2}
+
+\begin{table}[H]
+    \centering
+    \caption{Accuracy tổng thể và theo intent của ba pipeline v1}
+    \label{tab:v1-accuracy}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\centering\arraybackslash}p{3.7cm}|>{\centering\arraybackslash}p{3.7cm}|>{\centering\arraybackslash}p{4.2cm}|}
+        \hline
+        \textbf{Chỉ số} & \textbf{Baseline} & \textbf{Fusion} & \textbf{Router-Summary} \\ \hline
+        Overall accuracy & 909/991 (91.73\%) & 892/991 (90.01\%) & \textbf{916/991 (92.43\%)} \\ \hline
+        \path{tra_cuu}, 915 câu & \textbf{861/915 (94.10\%)} & 829/915 (90.60\%) & 851/915 (93.01\%) \\ \hline
+        \path{tinh_toan}, 76 câu & 48/76 (63.16\%) & 63/76 (82.89\%) & \textbf{65/76 (85.53\%)} \\ \hline
+        Multi-answer, 22 câu & \textbf{15/22 (68.18\%)} & 10/22 (45.45\%) & 12/22 (54.55\%) \\ \hline
+        Format error & 0 & 9 câu & 5 câu \\ \hline
+        Latency trung bình/câu & \textbf{1.07s} & 5.76s & Chưa đo \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Router-Summary đạt accuracy tổng thể cao nhất, 92.43\%, so với 91.73\% của Baseline và 90.01\% của Fusion. Chênh lệch lớn nhất nằm ở nhóm \path{tinh_toan}: Router-Summary đạt 85.53\%, cao hơn Baseline 22.37 điểm phần trăm. Kết quả này đến từ sự kết hợp giữa DocIndexer, giúp thu hẹp candidate pool, và CoT prompt, hỗ trợ LLM suy luận từng bước.
+
+Baseline đạt kết quả tốt nhất trên nhóm \path{tra_cuu}, ở mức 94.10\%. Với câu tra cứu trực tiếp, pipeline đơn giản không có bước trung gian nên ít nguy cơ làm mất thông tin.
+
+Fusion cải thiện nhóm \path{tinh_toan} thêm 19.73 điểm phần trăm so với Baseline nhưng giảm 3.50 điểm ở \path{tra_cuu} và 22.73 điểm ở nhóm multi-answer. Bước extract có thể loại bỏ chi tiết cần thiết. Với latency cao hơn 5.4 lần nhưng accuracy tổng thể thấp hơn Baseline 1.72 điểm phần trăm, Fusion không tạo ra trade-off phù hợp.
+
+\subsection{Phân tích chất lượng retrieval}
+\label{subsection:3.4.3}
+
+Để phân biệt lỗi retrieval với lỗi reasoning, toàn bộ câu sai của Baseline và Router-Summary được đánh giá bằng GPT-4o-mini judge. Với mỗi trường hợp, judge xác định liệu context đã retrieve có đủ để một người đọc suy ra đáp án đúng hay không.
+
+\begin{table}[H]
+    \centering
+    \caption{Phân tích nguồn gốc lỗi của Baseline và Router-Summary}
+    \label{tab:v1-error-source}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.7cm}|>{\centering\arraybackslash}p{2.7cm}|>{\centering\arraybackslash}p{4.1cm}|>{\centering\arraybackslash}p{4.1cm}|}
+        \hline
+        \textbf{Pipeline} & \textbf{Tổng câu sai} & \textbf{Context đủ, lỗi reasoning} & \textbf{Context thiếu, lỗi retrieval} \\ \hline
+        Baseline & 82 & 54 (65.9\%) & 28 (34.1\%) \\ \hline
+        Router-Summary & 75 & 46 (61.3\%) & 29 (38.7\%) \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Trong khoảng 61--66\% câu sai, context đã chứa đủ thông tin nhưng GPT-4o-mini vẫn không suy ra đáp án đúng. Điều này cho thấy reasoning của LLM là một giới hạn quan trọng của v1. Cải thiện reranker và embedding chủ yếu tác động lên khoảng 34--39\% lỗi do context bị thiếu.
+
+\subsection{Phân tích lỗi định tính}
+\label{subsection:3.4.4}
+
+Trong 75 câu sai của Router-Summary, 27 câu được phân tích thủ công để xác định nguyên nhân cụ thể.
+
+\begin{table}[H]
+    \centering
+    \caption{Phân loại nguyên nhân lỗi trên 27 câu của Router-Summary}
+    \label{tab:v1-qualitative-errors}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{7.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{5.5cm}|}
+        \hline
+        \textbf{Nhóm nguyên nhân} & \textbf{Số câu} & \textbf{Tỉ lệ} & \textbf{Khả năng cải thiện kỹ thuật} \\ \hline
+        Retrieval thất bại, chunk đúng không được kéo & 10 & 37.0\% & Có, thông qua embedding hoặc reranker \\ \hline
+        Câu hỏi mơ hồ trong dataset & 8 & 29.6\% & Cần cải thiện dataset \\ \hline
+        Corpus thiếu nội dung liên quan & 7 & 25.9\% & Cần bổ sung tài liệu \\ \hline
+        Lỗi reasoning của LLM & 4 & 14.8\% & Một phần, bằng prompt hoặc model mạnh hơn \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Các nhãn trong Bảng~\ref{tab:v1-qualitative-errors} có thể chồng lấp, chẳng hạn một câu vừa mơ hồ vừa gây lỗi reasoning. Vì vậy, số lượng và tỉ lệ ở các hàng không được cộng trực tiếp.
+
+Nhóm retrieval thất bại gồm hai trường hợp: gold chunk nằm ngoài top-20 candidates, hoặc gold có trong candidate pool nhưng bị reranker xếp dưới chunk sai. Đây là nhóm có thể can thiệp trực tiếp bằng cách cải thiện embedding và reranker.
+
+Câu hỏi mơ hồ thường yêu cầu xác định ``nội dung chính'' của một tài liệu mà không có một chunk duy nhất làm đáp án. Nhóm corpus thiếu gồm các câu hỏi về thông tin không tồn tại trong tài liệu. Hai nhóm này chiếm 15/27 trường hợp được phân tích, tương ứng 55.5\%, và phản ánh giới hạn dữ liệu thay vì riêng pipeline.
+
+\section{Xác định bottleneck}
 \label{section:3.5}
-Tóm tắt pipeline suy luận cuối cùng của hệ thống, từ đầu vào truy vấn đến câu trả lời sinh ra.
+
+V1 đạt accuracy phát triển 92.43\% với Router-Summary, nhưng phân tích chi tiết cho thấy ba bottleneck về latency, chi phí và chất lượng retrieval. Mỗi vấn đề gắn với một thành phần và dẫn đến một hướng tối ưu riêng trong v2.
+
+\subsection{Bottleneck latency: Reranker BGE-M3}
+\label{subsection:3.5.1}
+
+\path{BAAI/bge-reranker-v2-m3} gồm 568M tham số và là thành phần nặng nhất trong retrieval pipeline. Khi chạy trên CPU với 20 candidates, latency reranking đạt khoảng 147ms/query, chiếm hơn 90\% latency của bước retrieval và reranking.
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh latency của các reranker trên CPU}
+    \label{tab:reranker-cpu-latency}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.0cm}|}
+        \hline
+        \textbf{Model} & \textbf{Params} & \textbf{Latency/query} & \textbf{MRR@10} \\ \hline
+        BGE-M3 & 568M & khoảng 147ms & 0.8891 \\ \hline
+        PhoRanker & 135M & khoảng 18ms & 0.7415 \\ \hline
+        MiniLM-L12 base & 33M & khoảng 22ms & 0.5869 \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Các chỉ số MRR trong Bảng~\ref{tab:reranker-cpu-latency} được đo trên tập test reranker độc lập và được phân tích đầy đủ ở Chương 5. Bảng cho thấy giảm kích thước model giúp giảm yêu cầu RAM và thời gian tải, nhưng một MiniLM chưa huấn luyện có chất lượng thấp. Vì vậy, bài toán đặt ra là distill tri thức từ BGE-M3 sang model 33M tham số mà vẫn duy trì chất lượng ranking.
+
+\subsection{Bottleneck chi phí: GPT Intent Router}
+\label{subsection:3.5.2}
+
+Router-Summary gọi GPT-4o-mini hai lần cho mỗi câu hỏi. Lần gọi intent classification bổ sung khoảng 800ms latency và chi phí API, dù tác vụ chỉ phân biệt hai lớp \path{tra_cuu} và \path{tinh_toan}. Sáu câu bị phân loại sai vẫn có đáp án cuối đúng, cho thấy routing không đòi hỏi một model có năng lực sinh ngôn ngữ lớn.
+
+Với đơn giá giả định \$0.15 cho một triệu input tokens và trung bình 200 input tokens/query, một triệu query cần khoảng 200 triệu input tokens, tương ứng khoảng \$30 chỉ tính phần input của bước routing. Chi phí thực tế còn phụ thuộc output tokens và bảng giá API tại thời điểm triển khai. Một PhoBERT fine-tuned có thể chạy local với chi phí suy luận biên gần bằng không và loại bỏ phụ thuộc mạng.
+
+\subsection{Bottleneck chất lượng: Embedding chưa tối ưu domain}
+\label{subsection:3.5.3}
+
+\path{Vietnamese_Embedding_v2} là embedding tiếng Việt mạnh nhưng chưa được tối ưu riêng cho miền tài liệu kỹ thuật của đồ án. Trên internal test của component embedding gồm 157 queries và corpus 2,204 chunks, baseline đạt Acc@1 = 73.89\% và MRR@10 = 0.8259. Như vậy, 26.11\% query không có gold chunk ở rank 1 và cần reranker cải thiện thứ hạng.
+
+Nếu gold chunk không xuất hiện trong top-20 candidates, reranker không thể khôi phục. Phân tích định tính cũng cho thấy retrieval thất bại là nhóm lỗi kỹ thuật quan trọng. Các câu hỏi về thông số, bảng số liệu, ký hiệu và thuật ngữ chuyên ngành đòi hỏi embedding hiểu quan hệ domain-specific thay vì chỉ ngữ nghĩa tiếng Việt tổng quát.
+
+Ba bottleneck trên xác định ba hướng tối ưu của v2: xây dựng lightweight reranker bằng Knowledge Distillation để giảm latency; fine-tune PhoBERT để thay GPT router; và fine-tune embedding bằng MRL kết hợp curriculum learning để cải thiện retrieval. Các phương pháp này được trình bày trong Chương 4.
 
 \end{document}

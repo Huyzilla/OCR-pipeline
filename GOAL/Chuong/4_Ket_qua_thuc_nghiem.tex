@@ -1,45 +1,574 @@
+% !TEX root = ../DoAn.tex
 \documentclass[../DoAn.tex]{subfiles}
 \begin{document}
 
-\section{Lightweight Reranker}
+\section{Tổng quan định hướng v2}
 \label{section:4.1}
-\subsection{Motivation}
-Nêu lý do cần một reranker nhẹ để giảm độ trễ và chi phí suy luận.
 
-\subsection{Data pipeline}
-Mô tả pipeline tạo dữ liệu huấn luyện cho reranker.
+Từ ba bottleneck được xác định trong Chương 3, hệ thống v2 được thiết kế theo nguyên tắc mỗi thay đổi kỹ thuật phải giải quyết một vấn đề đã được đo lường, thay vì tối ưu dựa trên giả định. Ba hướng tối ưu tương ứng được trình bày trong Bảng~\ref{tab:v2-bottleneck-mapping}.
 
-\subsection{Distillation}
-Trình bày chiến lược distillation từ mô hình teacher sang reranker nhẹ.
+\begin{table}[H]
+    \centering
+    \caption{Ánh xạ bottleneck của v1 sang giải pháp v2}
+    \label{tab:v2-bottleneck-mapping}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{5.5cm}|>{\raggedright\arraybackslash}p{5.8cm}|}
+        \hline
+        \textbf{Bottleneck v1} & \textbf{Giải pháp v2} & \textbf{Mục tiêu thiết kế} \\ \hline
+        BGE-M3: 568M tham số, khoảng 147ms/query & Distill sang MiniLM-L12 33M tham số & Latency $\leq 25$ms, MRR@10 $\geq 0.75$ \\ \hline
+        GPT router: khoảng 800ms và phát sinh chi phí API & Fine-tune PhoBERT intent classifier & Accuracy $\geq 97\%$, latency $<5$ms \\ \hline
+        Embedding baseline: Acc@1 = 73.89\% & Fine-tune bằng MRL và curriculum learning & Acc@1 tăng ít nhất 3 điểm phần trăm, MRR@10 tăng ít nhất 0.03 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
 
-\section{Reranker training}
+Ba hướng có thể được phát triển và đánh giá tương đối độc lập. Các mục tiếp theo trình bày thiết kế, dữ liệu huấn luyện và quy trình của từng hướng; kết quả đánh giá được tổng hợp trong Chương 5.
+
+\section{Lightweight Reranker via Knowledge Distillation}
 \label{section:4.2}
-\subsection{Stage A}
-Mô tả giai đoạn huấn luyện đầu tiên và mục tiêu tối ưu chính.
 
-\subsection{Stage B}
-Mô tả giai đoạn huấn luyện tiếp theo và cách tinh chỉnh chất lượng xếp hạng.
+\subsection{Motivation và thiết kế tổng quan}
+\label{subsection:4.2.1}
 
-\subsection{Losses}
-Trình bày các hàm loss sử dụng, bao gồm ADR-MSE và các biến thể liên quan.
+Mục tiêu của hướng thứ nhất là thay BGE-M3, gồm 568M tham số và có latency khoảng 147ms/query, bằng MiniLM-L12 gồm 33M tham số và có latency khoảng 22ms/query. MiniLM nhỏ hơn khoảng 17 lần nhưng vẫn sử dụng kiến trúc cross-encoder phù hợp với reranking và đã có foundation về passage ranking từ MS MARCO.
 
-\section{Embedding optimization}
+Thực nghiệm ban đầu cho thấy KD trực tiếp từ MiniLM base không hiệu quả: MRR@10 chỉ đạt 0.5193, thấp hơn MiniLM base chưa huấn luyện ở mức 0.5869. Nguyên nhân là domain gap giữa English MS MARCO và tài liệu kỹ thuật tiếng Việt. Student chưa có biểu diễn phù hợp cho đầu vào nên không tiếp nhận tốt ranking signal từ teacher.
+
+Quan sát này nhất quán với Xu et al. (2025): KD chỉ hiệu quả khi student đã có domain foundation phù hợp. Vì vậy, đồ án sử dụng pipeline hai giai đoạn:
+
+\begin{itemize}
+    \item \textbf{Stage A -- Contrastive Learning}: domain adaptation MiniLM-L12 bằng dữ liệu tiếng Việt kỹ thuật và BCE loss.
+    \item \textbf{Stage B -- Knowledge Distillation}: từ checkpoint Stage A, distill ranking signal của BGE-M3 để học mức relevance tinh tế hơn.
+\end{itemize}
+
+\subsection{Pipeline xây dựng dữ liệu huấn luyện}
+\label{subsection:4.2.2}
+
+Dữ liệu reranker được xây dựng qua năm giai đoạn có input và output riêng. Quy trình này tạo positive chunks đã xác minh, synthesized hard negatives và mined negatives từ kết quả ranking.
+
+\noindent\textbf{Giai đoạn 1 -- Retrieve \& Rerank.}
+
+Toàn bộ 991 câu hỏi được đưa qua hybrid retrieval gồm BM25, ChromaDB dense retrieval và RRF, sau đó BGE-M3 rerank. Mỗi query giữ 20 candidates kèm \path{bge_score} và thứ hạng. File \path{retrieve_rerank_991.jsonl} chứa tổng cộng 19,820 cặp query--chunk và là đầu vào cho các giai đoạn sau.
+
+\noindent\textbf{Giai đoạn 2 -- GPT Gold Chunk Judge.}
+
+GPT-4o-mini nhận câu hỏi và top-5 candidates, sau đó phân loại từng chunk thành \path{gold}, \path{partial} hoặc \path{irrelevant}, kèm confidence \path{high}, \path{medium} hoặc \path{low}. Nếu không tìm thấy gold trong top-5, hệ thống mở rộng sang các vị trí 5--9.
+
+Kết quả có 793 queries tìm được gold chunk với confidence đủ cao. Trong các trường hợp còn lại, 141 queries thuộc nhóm \path{low_score_skip}, tức top-1 BGE score nhỏ hơn 0.3, và 57 queries thuộc nhóm \path{none}. GPT judge giúp tránh việc mặc định top-1 của BGE-M3 là positive trong những trường hợp partial chunk được xếp trên gold chunk.
+
+\noindent\textbf{Giai đoạn 3 -- Synthesize Hard Negatives.}
+
+Với mỗi query có gold chunk, GPT tạo các phiên bản gần giống positive về văn phong và cấu trúc nhưng thay đổi thông tin quyết định answerability:
+
+\begin{itemize}
+    \item \path{entity_swap}: thay thực thể lõi, ví dụ ``Model X200'' thành ``Model X500''.
+    \item \path{temporal_edit}: thay số liệu hoặc mốc thời gian.
+    \item \path{logic_flip}: đảo điều kiện hoặc quan hệ nhân quả.
+    \item \path{provenance_conflict}: thay phạm vi hoặc đối tượng áp dụng.
+\end{itemize}
+
+Ví dụ, positive ``người lao động được hưởng 1/2 tháng lương cho mỗi năm làm việc nếu làm việc từ đủ 12 tháng'' có thể được sửa thành negative ``được hưởng 1/4 tháng lương nếu làm việc từ đủ 6 tháng''. Negative vẫn tự nhiên nhưng dẫn tới câu trả lời sai.
+
+Mỗi negative qua ba tầng lọc: self-check trong prompt; một GPT judge độc lập; và BGE-M3 gap filter, loại mẫu có $\text{score}_{pos}-\text{score}_{neg}<0.1$. Sau lọc, 405 trong 1,291 synthesized candidates được giữ lại.
+
+\begin{table}[H]
+    \centering
+    \caption{Thống kê synthesized negatives sau lọc}
+    \label{tab:synthesized-negative-stats}
+    {\small
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{2.6cm}|}
+        \hline
+        \textbf{Edit type} & \textbf{Tổng sinh} & \textbf{Giữ lại} & \textbf{Tỉ lệ} \\ \hline
+        \path{entity_swap} & 599 & 195 & 32.6\% \\ \hline
+        \path{temporal_edit} & 606 & 183 & 30.2\% \\ \hline
+        \path{logic_flip} & 55 & 18 & 32.7\% \\ \hline
+        \path{provenance_conflict} & 31 & 9 & 29.0\% \\ \hline
+        \textbf{Tổng} & \textbf{1,291} & \textbf{405} & \textbf{31.4\%} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Tỉ lệ loại 68.6\% phản ánh tiêu chuẩn nghiêm ngặt: chỉ các negative khó nhưng không trả lời được query mới được dùng cho reranker.
+
+\noindent\textbf{Giai đoạn 4 -- Mine Negatives từ BGE Rankings.}
+
+Các chunk ở rank 4--20 được xem xét làm mined negatives. Gold và partial chunks bị loại. Chunk cùng document với positive chỉ được giữ nếu GPT xác nhận irrelevant để hạn chế false negatives. Score gap được dùng để phân loại: hard trong khoảng 0.1--0.4, medium trong khoảng 0.4--0.7, và easy lớn hơn 0.7.
+
+Quy trình thu được 9,917 mined negatives, trong đó 913 hard và 1,676 medium được sử dụng cho tập reranker.
+
+\begin{table}[H]
+    \centering
+    \caption{Thống kê mined negatives theo nguồn}
+    \label{tab:mined-negative-stats}
+    {\small
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{7.0cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.0cm}|}
+        \hline
+        \textbf{Nguồn} & \textbf{Số negatives} & \textbf{Tỉ lệ} \\ \hline
+        \path{cross_doc}, khác tài liệu & 9,475 & 95.5\% \\ \hline
+        \path{irr_gpt}, cùng tài liệu và được GPT xác nhận irrelevant & 442 & 4.5\% \\ \hline
+        \textbf{Tổng} & \textbf{9,917} & \textbf{100\%} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+\noindent\textbf{Giai đoạn 5 -- Merge \& Split.}
+
+Synthesized negatives sau lọc (405) và mined hard+medium negatives (2,589) được gộp thành 2,994 triplets. Dữ liệu được split theo query thay vì theo triplet để cùng một query không xuất hiện ở cả train và dev. Tỉ lệ 90/10 tạo 2,689 train triplets từ 439 queries và 305 dev triplets từ 50 queries.
+
+\begin{table}[H]
+    \centering
+    \caption{Tổng quan dataset huấn luyện reranker}
+    \label{tab:reranker-training-data}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{6.0cm}|>{\centering\arraybackslash}p{2.7cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|}
+        \hline
+        \textbf{Nguồn negative} & \textbf{Triplets} & \textbf{Hardness} & \textbf{Tỉ lệ} \\ \hline
+        Synthesized hard negatives & 405 & hard & 13.5\% \\ \hline
+        Mined hard negatives & 913 & hard & 30.5\% \\ \hline
+        Mined medium negatives & 1,676 & medium & 56.0\% \\ \hline
+        \textbf{Tổng} & \textbf{2,994} & -- & \textbf{100\%} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+\subsection{Stage A: Contrastive Learning}
+\label{subsection:4.2.3}
+
+Stage A fine-tune MiniLM-L12 bằng Binary Cross-Entropy trên domain triplets:
+
+\[
+\mathcal{L}_A
+=
+\text{BCE}(\sigma(s_{\text{pos}}),1)
++
+\text{BCE}(\sigma(s_{\text{neg}}),0)
+\]
+
+\[
+\mathcal{L}_A
+=
+-\log\sigma(s_{\text{pos}})
+-
+\log\left(1-\sigma(s_{\text{neg}})\right)
+\]
+
+trong đó $s_{\text{pos}}$ và $s_{\text{neg}}$ là logits của MiniLM cho positive và negative chunk.
+
+Một quyết định quan trọng là không dùng mMARCO-VI trong cấu hình cuối. Thêm 50,000 mẫu mMARCO-VI làm MRR@10 giảm từ 0.7318 xuống 0.7194. Phân tích cho thấy 94.9\% mẫu mMARCO là easy negatives theo BGE-M3, với mean margin = 8.91 so với 4.13 của domain data. Dữ liệu general quá dễ làm loãng tín hiệu từ domain hard negatives.
+
+\begin{table}[H]
+    \centering
+    \caption{Hyperparameters của Stage A}
+    \label{tab:stage-a-hyperparameters}
+    {\small
+    \setlength{\tabcolsep}{7pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{6.5cm}|>{\centering\arraybackslash}p{5.5cm}|}
+        \hline
+        \textbf{Tham số} & \textbf{Giá trị} \\ \hline
+        Learning rate & $2\times10^{-5}$ \\ \hline
+        Batch size & 32 \\ \hline
+        Epochs & 5 \\ \hline
+        Early stopping patience & 2 \\ \hline
+        Seed & 42 \\ \hline
+        Optimizer & AdamW \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Sau Stage A, MRR@10 đạt 0.7318, tăng 24.7\% so với MiniLM base ở mức 0.5869. Checkpoint này tạo domain foundation cho Stage B.
+
+\subsection{Stage B: Knowledge Distillation}
+\label{subsection:4.2.4}
+
+Stage B distill BGE-M3 vào checkpoint Stage A. Với mỗi query, teacher và student cùng score 20 candidates. Loss kết hợp KD signal và CL anchor:
+
+\[
+\mathcal{L}_B
+=
+\alpha\mathcal{L}_{\text{KD}}
++
+(1-\alpha)\mathcal{L}_A,
+\qquad
+\alpha=0.7
+\]
+
+Như vậy, KD có trọng số 0.7 và CL anchor có trọng số $1-\alpha=0.3$. Anchor giúp student duy trì domain discrimination đã học ở Stage A. KD thuần với $\alpha=1.0$ cho MRR@10 = 0.7122, thấp hơn Stage A only ở mức 0.7318.
+
+\noindent\textbf{Listwise KL Divergence.}
+
+\[
+\mathcal{L}_{\text{KL}}
+=
+\sum_i P_i^T\log\frac{P_i^T}{P_i^S},
+\quad
+P_i^T
+=
+\frac{\exp(s_i^T/\tau)}{\sum_j\exp(s_j^T/\tau)},
+\quad
+P_i^S
+=
+\frac{\exp(s_i^S/\tau)}{\sum_j\exp(s_j^S/\tau)}
+\]
+
+Với $\tau=2.0$, loss tối ưu phân phối của toàn bộ 20 candidates. ListwiseKL nhạy với noisy queries; lọc còn 792 queries có gold rõ ràng làm MRR tăng từ 0.7226 lên 0.7430.
+
+\noindent\textbf{Margin-MSE.}
+
+\[
+\mathcal{L}_{\text{MMSE}}
+=
+\frac{1}{|P|}
+\sum_{(i,j)\in P}
+\left[
+(s_i^S-s_j^S)
+-
+(s_i^T-s_j^T)
+\right]^2
+\]
+
+Margin-MSE học khoảng cách tương đối giữa các candidates. Tuy nhiên, teacher margins có mean = 4.13, std = 2.57 và range 23.3 units; 37\% mẫu có margin $\geq 5.0$. Gradient từ easy pairs vì vậy có thể lớn hơn 25 lần so với hard negatives có margin 0.1--0.4.
+
+\noindent\textbf{RankNet với Teacher Soft Labels.}
+
+\[
+P_{ij}^T=\sigma(s_i^T-s_j^T),
+\qquad
+P_{ij}^S=\sigma(s_i^S-s_j^S)
+\]
+
+\[
+\mathcal{L}_{\text{RN}}
+=
+-\frac{1}{n^2-n}
+\sum_{i\neq j}
+\left[
+P_{ij}^T\log P_{ij}^S
++
+(1-P_{ij}^T)\log(1-P_{ij}^S)
+\right]
+\]
+
+Với 20 candidates, RankNet tối ưu 380 cặp có thứ tự cho mỗi query. Tín hiệu pairwise phong phú nhưng vẫn chịu ảnh hưởng bởi scale của teacher logits.
+
+\noindent\textbf{ADR-MSE (Asymmetric Distillation Ranking MSE).}
+
+ADR-MSE là loss được đề xuất trong đồ án. Thay vì dùng điểm teacher, loss sử dụng rank position $r_i\in\{0,\ldots,n-1\}$ và ánh xạ tuyến tính về $[-1,+1]$:
+
+\[
+\tilde{r}_i
+=
+1-\frac{2r_i}{n-1}
+\]
+
+Student logits được chuẩn hóa theo candidate list:
+
+\[
+\tilde{s}_i
+=
+\frac{s_i^S-\mu_s}{\sigma_s+\epsilon}
+\]
+
+\[
+\mathcal{L}_{\text{ADR}}
+=
+\frac{1}{n}
+\sum_{i=1}^{n}
+\left(\tilde{s}_i-\tilde{r}_i\right)^2
+\]
+
+Rank position là tín hiệu ordinal, không phụ thuộc vào thang điểm tuyệt đối của teacher. Phép ánh xạ tạo target bị chặn và cách đều; ADR-MSE gán trọng số bằng nhau cho các vị trí trong phiên bản cơ sở.
+
+\begin{table}[H]
+    \centering
+    \caption{Ví dụ tính ADR-MSE với năm candidates}
+    \label{tab:adr-mse-example-ch4}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.8cm}|>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{2.8cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}|}
+        \hline
+        \textbf{Candidate} & \textbf{Rank $r_i$} & \textbf{Target $\tilde{r}_i$} & \textbf{Logit $s_i$} & \textbf{Score $\tilde{s}_i$} & \textbf{Loss item} \\ \hline
+        Doc A (gold) & 0 & $+1.00$ & 3.2 & $+1.455$ & 0.207 \\ \hline
+        Doc B & 1 & $+0.50$ & 1.8 & $+0.712$ & 0.045 \\ \hline
+        Doc C & 2 & $0.00$ & 0.3 & $-0.085$ & 0.007 \\ \hline
+        Doc D & 3 & $-0.50$ & $-0.9$ & $-0.722$ & 0.049 \\ \hline
+        Doc E & 4 & $-1.00$ & $-2.1$ & $-1.359$ & 0.129 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Với mean logit $\mu_s=0.460$ và population standard deviation $\sigma_s=1.883$, ví dụ trên cho:
+
+\[
+\mathcal{L}_{\text{ADR}}
+\approx
+\frac{0.207+0.045+0.007+0.049+0.129}{5}
+\approx
+0.088
+\]
+
+\begin{table}[H]
+    \centering
+    \caption{Hyperparameters của Stage B}
+    \label{tab:stage-b-hyperparameters}
+    {\small
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{6.5cm}|>{\centering\arraybackslash}p{5.5cm}|}
+        \hline
+        \textbf{Tham số} & \textbf{Giá trị} \\ \hline
+        KD weight $\alpha$ & 0.7 \\ \hline
+        Learning rate & $1\times10^{-5}$ \\ \hline
+        Batch size & 16 queries, 20 candidates/query \\ \hline
+        ListwiseKL temperature $\tau$ & 2.0 \\ \hline
+        Epochs & 3 \\ \hline
+        Early stopping & Patience 2 theo dev MRR@10 \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+\section{Fine-tune Embedding bằng MRL và Curriculum Learning}
 \label{section:4.3}
-\subsection{MRL}
-Mô tả cách áp dụng Matryoshka Representation Learning cho embedding.
 
-\subsection{Curriculum training}
-Trình bày curriculum training để cải thiện tính ổn định và hiệu quả học.
+\subsection{Pipeline xây dựng dữ liệu embedding}
+\label{subsection:4.3.1}
 
-\section{Intent Classification}
+Dữ liệu embedding sử dụng nền tảng từ pipeline reranker và bổ sung \textbf{extra synthesized data}. Nguồn này được GPT tạo trực tiếp từ ChromaDB corpus bằng cách thay từ hoặc số liệu quan trọng trong positive chunk. Nguồn extra synthesized không qua independent judge, do đó có chất lượng xác minh thấp hơn nhưng cung cấp phân phối đa dạng cho Stage 2.
+
+Master dataset gồm 786 eligible queries và ba nguồn negative:
+
+\begin{table}[H]
+    \centering
+    \caption{Các nguồn negative trong master dataset embedding}
+    \label{tab:embedding-master-data}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\centering\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{5.4cm}|}
+        \hline
+        \textbf{Nguồn} & \textbf{Số negatives} & \textbf{Ghi chú} \\ \hline
+        Synthesized candidates & 1,291 & Tập ứng viên được tạo trước bộ lọc nghiêm ngặt dành riêng cho reranker \\ \hline
+        Mined, rank 4--15 và tối đa 5/query & 9,103 & Chunk thật nằm gần gold trong không gian vector \\ \hline
+        Extra synthesized & 3,476 & GPT-generated, không có independent judge \\ \hline
+        \textbf{Tổng} & \textbf{13,870} & -- \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Việc dùng 1,291 synthesized records ở master embedding khác với 405 triplets nghiêm ngặt của reranker: 405 là tập vượt qua toàn bộ ba tầng lọc để huấn luyện cross-encoder, còn embedding curriculum sử dụng pool rộng hơn để tăng độ đa dạng.
+
+Dữ liệu được split stratified theo intent với tỉ lệ 80/20, tạo 629 train queries và 157 internal test queries. Ba file curriculum gồm:
+
+\begin{itemize}
+    \item \path{train_stage1.jsonl}: synthesized only, 1,040 triplets.
+    \item \path{train_stage2.jsonl}: synthesized và extra synthesized, 3,840 triplets.
+    \item \path{train_stage3.jsonl}: tất cả nguồn, mined tối đa 5/query, 6,985 triplets.
+\end{itemize}
+
+\subsection{Matryoshka Loss và MNR}
+\label{subsection:4.3.2}
+
+Base model là \path{AITeamVN/Vietnamese_Embedding_v2}, dựa trên BGE-M3 và tạo vector 1024 chiều. MultipleNegativesRankingLoss với batch size $N=128$ cho mỗi query 127 in-batch negatives:
+
+\[
+\mathcal{L}_{\text{MNR}}
+=
+-\frac{1}{N}
+\sum_{i=1}^{N}
+\log
+\frac{
+\exp\left(\cos(\mathbf{e}_{q_i},\mathbf{e}_{p_i})/\tau\right)
+}{
+\sum_{j=1}^{N}
+\exp\left(\cos(\mathbf{e}_{q_i},\mathbf{e}_{p_j})/\tau\right)
+}
+\]
+
+Trong thực nghiệm, scale = 20 tương ứng $\tau=0.05$. MatryoshkaLoss tính MNR đồng thời tại ba kích thước $\mathcal{M}=\{256,512,1024\}$:
+
+\[
+\mathcal{L}_{\text{MRL}}
+=
+\sum_{m\in\mathcal{M}}
+\mathcal{L}_{\text{MNR}}
+\left(
+f_m(\mathbf{e}_q),
+f_m(\mathbf{e}_p),
+\{f_m(\mathbf{e}_{p_j})\}
+\right)
+\]
+
+trong đó $f_m(\mathbf{x})=\mathbf{x}[:m]$. Ba loss thành phần có trọng số bằng nhau. Batch size 128 cung cấp tín hiệu phong phú hơn batch size 16, nhưng cần GPU có VRAM lớn để duy trì model 1024 chiều.
+
+\subsection{Curriculum Training ba giai đoạn}
+\label{subsection:4.3.3}
+
+Ba stage được train nối tiếp. Checkpoint stage trước là điểm khởi đầu của stage sau và learning rate giảm dần khi độ khó tăng.
+
+\begin{table}[H]
+    \centering
+    \caption{Cấu hình curriculum training cho embedding}
+    \label{tab:curriculum-config}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.8cm}|>{\raggedright\arraybackslash}p{4.5cm}|>{\centering\arraybackslash}p{2.3cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.8cm}|}
+        \hline
+        \textbf{Stage} & \textbf{Nguồn dữ liệu} & \textbf{Triplets} & \textbf{Epochs} & \textbf{LR} & \textbf{Warmup steps} \\ \hline
+        Stage 1 -- Easy & Synthesized only & 1,040 & 2 & $2\times10^{-6}$ & 50 \\ \hline
+        Stage 2 -- Medium & Synth + Extra synth & 3,840 & 2 & $1\times10^{-6}$ & 10 \\ \hline
+        Stage 3 -- Hard & Tất cả + mined & 6,985 & 1 & $5\times10^{-7}$ & 5 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Các tham số chung gồm AdamW, \path{weight_decay=0.01}, \path{max_grad_norm=1.0}, mixed precision và \path{max_seq_length=512}.
+
+Stage 1 dùng synthesized negatives có boundary rõ ràng. Stage 2 thêm extra synthesized để mở rộng phân phối domain. Stage 3 thêm mined negatives là các chunk thật nằm gần gold trong không gian vector. Trình tự này hạn chế việc model phải học hard negatives ngay khi biểu diễn chưa ổn định.
+
+Một hạn chế được phát hiện sau thực nghiệm là 50 warmup steps của Stage 1 quá dài so với khoảng 9 steps/epoch, do $1,040/128\approx9$. Model gần như không đạt full learning rate trong Stage 1. Đây là tham số cần giảm xuống khoảng 5--10 steps trong các thử nghiệm tiếp theo.
+
+\subsection{Chiến lược deployment với MRL}
+\label{subsection:4.3.4}
+
+Một checkpoint hỗ trợ ba cấu hình:
+
+\begin{table}[H]
+    \centering
+    \caption{Các chế độ deployment từ một checkpoint MRL}
+    \label{tab:mrl-deployment-modes}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\centering\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{5.0cm}|}
+        \hline
+        \textbf{Dimension} & \textbf{Cách sử dụng} & \textbf{Mục tiêu} \\ \hline
+        256 & \path{truncate_dim=256} & Tìm kiếm nhanh, index nhỏ hơn 4 lần \\ \hline
+        512 & \path{truncate_dim=512} & Cân bằng chất lượng và tài nguyên \\ \hline
+        1024 & Kích thước mặc định & Chất lượng retrieval cao nhất \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Chiến lược two-stage dùng vector 256 chiều để search top-50 trên toàn index, sau đó tính lại cosine similarity ở 1024 chiều trong 50 candidates để chọn top-k cuối. Cách này giảm kích thước index và chi phí search toàn corpus, trong khi bước re-score vẫn tận dụng biểu diễn đầy đủ.
+
+\section{Fine-tune PhoBERT Intent Classifier}
 \label{section:4.4}
-\subsection{PhoBERT architecture}
-Mô tả kiến trúc PhoBERT dùng cho phân loại intent.
 
-\subsection{Training}
-Trình bày dữ liệu, quy trình huấn luyện và tiêu chí đánh giá.
+\subsection{Kiến trúc và dữ liệu}
+\label{subsection:4.4.1}
 
-\subsection{Routing logic}
-Nêu cách ánh xạ nhãn intent sang chiến lược routing trong hệ thống.
+PhoBERT-base-v2 được fine-tune cho hai lớp \path{tra_cuu} và \path{tinh_toan}. Classification head \path{Linear(768,2)} được đặt trên hidden state của token \texttt{[CLS]}:
+
+\[
+\mathbf{h}_{[\text{CLS}]}
+=
+\text{PhoBERT}(\text{tokenize}(q))_{[\text{CLS}]}
+\in\mathbb{R}^{768}
+\]
+
+\[
+\hat{y}
+=
+\text{softmax}
+\left(
+\mathbf{W}\mathbf{h}_{[\text{CLS}]}
++
+\mathbf{b}
+\right)
+\in\mathbb{R}^{2}
+\]
+
+trong đó $\mathbf{W}\in\mathbb{R}^{2\times768}$ và $\mathbf{b}\in\mathbb{R}^{2}$.
+
+Dataset gồm 991 câu hỏi có nhãn intent được phân loại thủ công và xác minh. Split stratified theo group với tỉ lệ 70/15/15 tạo 694 câu train, 148 câu validation và 149 câu internal test.
+
+Ví dụ, ``Theo tài liệu \path{Public_021}, nhiệt độ vận hành tối đa là bao nhiêu?'' thuộc lớp \path{tra_cuu}; câu hỏi tính chi phí nhiên liệu từ quãng đường, mức tiêu hao và giá xăng thuộc lớp \path{tinh_toan}.
+
+\subsection{Xử lý class imbalance}
+\label{subsection:4.4.2}
+
+\path{tra_cuu} chiếm 915/991 câu (92.3\%), còn \path{tinh_toan} chỉ có 76/991 câu (7.7\%). Một classifier luôn dự đoán lớp đa số đã có accuracy 92.3\%, do đó accuracy riêng lẻ là metric dễ gây hiểu nhầm. F1-macro được dùng để đánh giá bình đẳng hai lớp.
+
+\noindent\textbf{Class weights.}
+
+CrossEntropyLoss sử dụng trọng số tỉ lệ nghịch với tần suất lớp và được chuẩn hóa:
+
+\[
+w_{\text{tra\_cuu}}
+=
+\frac{1/0.923}{1/0.923+1/0.077}
+\approx
+0.077
+\]
+
+\[
+w_{\text{tinh\_toan}}
+=
+\frac{1/0.077}{1/0.923+1/0.077}
+\approx
+0.923
+\]
+
+Lỗi trên lớp \path{tinh_toan} vì vậy bị phạt mạnh hơn.
+
+\noindent\textbf{WeightedRandomSampler.}
+
+Xác suất lấy mẫu tỉ lệ nghịch với tần suất lớp, giúp mỗi batch gần cân bằng thay vì giữ tỉ lệ tự nhiên 92/8. Với batch size 32, nếu không có sampler thì trung bình chỉ có khoảng hai mẫu \path{tinh_toan} trong mỗi batch.
+
+\begin{table}[H]
+    \centering
+    \caption{Hyperparameters fine-tune PhoBERT}
+    \label{tab:phobert-hyperparameters}
+    {\small
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{6.5cm}|>{\centering\arraybackslash}p{5.5cm}|}
+        \hline
+        \textbf{Tham số} & \textbf{Giá trị} \\ \hline
+        Learning rate & $2\times10^{-5}$ \\ \hline
+        Batch size & 32 \\ \hline
+        Epochs & 15 \\ \hline
+        Warmup ratio & 0.1 \\ \hline
+        Weight decay & 0.01 \\ \hline
+        Early stopping & Theo validation F1-macro \\ \hline
+        Optimizer & AdamW \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Early stopping theo F1-macro tránh dừng sớm khi accuracy tổng thể cao nhưng recall của lớp thiểu số còn thấp.
+
+\subsection{Routing logic trong pipeline v2}
+\label{subsection:4.4.3}
+
+Trong v1, query được gửi tới GPT-4o-mini qua API để nhận intent label, bổ sung khoảng 800ms. Trong v2, query được tokenize và chạy qua PhoBERT local, với latency mục tiêu khoảng 1--3ms. Logic sau classification không đổi: \path{tra_cuu} dùng direct prompt, còn \path{tinh_toan} dùng Chain-of-Thought prompt. Regex trích xuất Public ID chạy song song với classifier.
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh GPT router của v1 và PhoBERT classifier của v2}
+    \label{tab:router-comparison}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\centering\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{4.2cm}|}
+        \hline
+        \textbf{Tiêu chí} & \textbf{GPT-4o-mini v1} & \textbf{PhoBERT v2} \\ \hline
+        Accuracy & 99.4\% (985/991) & TBD \\ \hline
+        F1-macro & -- & TBD \\ \hline
+        Latency/query & khoảng 800ms & khoảng 1--3ms \\ \hline
+        Chi phí/1M queries & khoảng \$30 tiền input theo giả định 200 tokens/query & \$0 chi phí API \\ \hline
+        Offline & Không & Có \\ \hline
+        Model & API remote & 135M tham số, local \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+PhoBERT local loại bỏ phụ thuộc vào external API và giữ dữ liệu câu hỏi trong hạ tầng nội bộ, phù hợp với yêu cầu bảo mật của môi trường doanh nghiệp.
 
 \end{document}
