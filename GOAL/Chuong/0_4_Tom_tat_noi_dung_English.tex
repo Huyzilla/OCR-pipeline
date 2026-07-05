@@ -5,9 +5,13 @@
     \Large{\textbf{ABSTRACT}}\\
 \end{center}
 \vspace{1cm}
-Mục này khuyến khích sinh viên viết lại mục “Tóm tắt” đồ án tốt nghiệp ở trang trước bằng tiếng Anh. Phần này phải có đầy đủ các nội dung như trong phần tóm tắt bằng tiếng Việt.
-Sinh viên không nhất thiết phải trình bày mục này. 
 
-Nhưng nếu lựa chọn trình bày, sinh viên cần đảm bảo câu từ và ngữ pháp chuẩn tắc, nếu không sẽ có tác dụng ngược, gây phản cảm.
+Retrieval-Augmented Generation (RAG) systems for Vietnamese technical documents face two main challenges: retrieval quality over specialized text dense with terminology and tables, and the cost and latency of the reranking stage. Existing solutions typically rely on a large cross-encoder such as BGE-M3 (568M parameters) for reranking and a large language model accessed through an API for query routing; this achieves high accuracy but is heavy, slow on CPU, and costly, while the underlying embedding model is not optimized for the target domain.
+
+This thesis adopts the approach of optimizing the entire pipeline into lightweight components that can be deployed on CPU at low cost while preserving quality close to that of large models, rather than depending on heavy models or external APIs. Following this direction, the embedding model is fine-tuned for the domain, the reranker is compressed through knowledge distillation into smaller models together with vocabulary pruning, and the LLM router is replaced by a local Sentence-BERT/SetFit-based intent router.
+
+Specifically, the embedding model \plaincode{Vietnamese_Embedding_v2} (BGE-M3 backbone) is trained with a two-stage curriculum: Stage 1 uses the GIST loss --- a variant of MNRL in which a BGE-M3 guide model filters false negatives --- while Stage 2 switches to the MNRL loss on mined hard negatives. Both stages are combined with Matryoshka Representation Learning for three sizes (256/512/1024), with the 512-dimensional configuration chosen as the primary one. The reranker is distilled from the BGE-reranker-v2-m3 teacher into an mmarco-mMiniLMv2 117M student and a pruned 35.6M variant, using the rank-based ADR-MSE loss and two-stage training on data shared with the embedding pipeline.
+
+As a result, the fine-tuned 512-dimensional embedding achieves an Acc@1 of 76.43\% (compared with 73.89\% for the baseline) and an MRR@10 of 0.8042 --- the highest among all compared models on documents not seen during training. The pruned 35.6M reranker attains an MRR@10 of 0.8718, surpassing the 568M ViRanker (0.8434) despite being about 16 times smaller and 5.8 times faster (23.8ms versus 138.9ms), while the 117M student retains 99.4\% of the teacher's MRR. The entire pipeline runs on CPU, demonstrating the feasibility of an efficient, low-cost Vietnamese RAG system.
 
 \end{document}

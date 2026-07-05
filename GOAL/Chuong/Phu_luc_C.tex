@@ -1,0 +1,162 @@
+\chapter{CÁC PROMPT SỬ DỤNG VỚI MÔ HÌNH NGÔN NGỮ}
+\label{appendix:C}
+
+Phụ lục này tập hợp các prompt dùng với mô hình ngôn ngữ trong hai vai trò: (1) vận hành hệ thống hỏi đáp (định tuyến ý định và sinh câu trả lời), và (2) xây dựng dữ liệu huấn luyện (xác định positive, sinh hard negative và kiểm tra hard negative). Các trường trong dấu ngoặc nhọn như \plaincode{\{question\}} là chỗ điền nội dung động khi chạy.
+
+\section{Prompt định tuyến ý định}
+\label{appendix:C.1}
+
+Prompt phân loại câu hỏi thành một trong hai lớp \plaincode{tra_cuu} hoặc \plaincode{tinh_toan}.
+
+\begin{promptbox}
+Phân loại intent của câu hỏi sau. Trả lời chỉ một từ:
+- "tra_cuu" nếu câu hỏi yêu cầu tra cứu, tìm kiếm thông tin, định nghĩa, giải thích
+- "tinh_toan" nếu câu hỏi yêu cầu tính toán, suy luận số liệu, so sánh theo phép tính
+
+Câu hỏi: {question}
+
+Intent:
+\end{promptbox}
+
+\section{Prompt sinh câu trả lời theo ý định}
+\label{appendix:C.2}
+
+Với câu \plaincode{tra_cuu}, hệ thống dùng một lượt gọi để chọn đáp án trực tiếp:
+
+\begin{promptbox}
+Dựa vào thông tin sau đây, trả lời câu hỏi trắc nghiệm.
+
+CONTEXT:
+{context}
+
+QUESTION:
+{question}
+
+OPTIONS:
+{options_text}
+Chỉ trả lời đúng 1 dòng, chỉ ghi chữ cái đáp án (A/B/C/D).
+Nếu có nhiều đáp án đúng thì ghi tất cả, ví dụ: AB hoặc ACD.
+Không giải thích.
+ANSWER:
+\end{promptbox}
+
+Với câu \plaincode{tinh_toan}, hệ thống dùng hai lượt gọi. Lượt một sinh phân tích từng bước:
+
+\begin{promptbox}
+Dựa vào context sau, phân tích câu hỏi từng bước.
+
+CONTEXT:
+{context}
+
+QUESTION:
+{question}
+
+OPTIONS:
+{options_text}
+Phân tích từng bước, giữ nguyên số liệu quan trọng.
+Chưa cần kết luận đáp án cuối cùng:
+\end{promptbox}
+
+Lượt hai chọn đáp án cuối từ phần phân tích:
+
+\begin{promptbox}
+Dựa vào phân tích sau, chọn đáp án đúng cho câu hỏi trắc nghiệm.
+
+PHÂN TÍCH:
+{reasoning}
+
+QUESTION:
+{question}
+
+OPTIONS:
+{options_text}
+Chỉ trả lời đúng 1 dòng, chỉ ghi chữ cái đáp án (A/B/C/D).
+Nếu có nhiều đáp án đúng thì ghi tất cả, ví dụ: AB hoặc ACD.
+Không giải thích.
+ANSWER:
+\end{promptbox}
+
+\section{Prompt giám khảo xác định positive}
+\label{appendix:C.3}
+
+Prompt yêu cầu mô hình phân loại từng đoạn ứng viên thành gold, partial hoặc irrelevant, trả về kết quả dạng JSON.
+
+\begin{promptbox}
+Judge relevance cho RAG tiếng Việt.
+
+Phân loại từng chunk:
+- gold:       đủ thông tin trả lời trực tiếp
+- partial:    liên quan nhưng không đủ
+- irrelevant: không liên quan
+
+JSON only:
+{"gold_indices": [...], "partial_indices": [...],
+ "irrelevant_indices": [...], "confidence": "high|medium|low"}
+\end{promptbox}
+
+Phần prompt người dùng kèm câu hỏi và danh sách đoạn:
+
+\begin{promptbox}
+QUERY: {question}
+INTENT: {intent}
+
+CÁC ĐOẠN VĂN:
+[CHUNK_0] (bge_score={score})
+{chunk_text}
+...
+
+Phân loại từng chunk.
+\end{promptbox}
+
+\section{Prompt sinh hard negative}
+\label{appendix:C.4}
+
+Prompt yêu cầu mô hình tạo hai phiên bản sai lệch tinh vi từ đoạn gốc, mỗi phiên bản dùng một loại chỉnh sửa khác nhau.
+
+\begin{promptbox}
+Bạn tạo dữ liệu huấn luyện cho retrieval system.
+
+Với đoạn văn GỐC và query, tạo 2 phiên bản sai lệch tinh vi.
+Chọn 2 loại edit PHÙ HỢP NHẤT với nội dung,
+mỗi version dùng 1 loại khác nhau:
+
+- entity_swap:         đổi thực thể lõi (tên, điều khoản, đối tượng)
+- temporal_edit:       đổi số liệu, ngưỡng, mốc thời gian
+- logic_flip:          đảo ngược điều kiện, quan hệ nhân quả
+- provenance_conflict: đổi phạm vi áp dụng, nguồn tài liệu
+
+Yêu cầu BẮT BUỘC:
+- SAO CHÉP TOÀN BỘ đoạn văn gốc, chỉ thay đổi 1-2 chi tiết nhỏ
+- KHÔNG rút ngắn, KHÔNG tóm tắt, KHÔNG bỏ câu nào
+- Độ dài version phải gần bằng đoạn gốc (+-10%)
+- KHÔNG thêm câu giveaway như "tuy nhiên...", "thực ra..."
+- Mỗi version dùng 1 loại edit khác nhau
+- Tự kiểm tra: still_plausible, answers_query, contains_giveaway_style
+\end{promptbox}
+
+\section{Prompt kiểm tra hard negative}
+\label{appendix:C.5}
+
+Prompt dùng một mô hình độc lập để xác nhận hard negative hợp lệ, tức đoạn không trả lời được câu hỏi.
+
+\begin{promptbox}
+Bạn là judge độc lập để kiểm tra khả năng trả lời của hard negative
+trong dữ liệu huấn luyện RAG tiếng Việt.
+
+Nhiệm vụ: Với một QUERY và một CANDIDATE CHUNK,
+quyết định xem đoạn này có trả lời được query hay không.
+
+Trả về answers_query=true nếu đoạn văn chứa đủ thông tin
+để trả lời trực tiếp query, hoặc nếu đáp án có thể được
+suy ra rõ ràng từ đoạn văn.
+
+Trả về answers_query=false nếu đoạn văn chỉ liên quan cùng chủ đề,
+có chi tiết sai/mâu thuẫn, thiếu thông tin then chốt,
+hoặc không trả lời được query.
+
+Hãy đánh giá nghiêm ngặt: hard negative hợp lệ là đoạn
+KHÔNG trả lời được query.
+
+JSON only:
+{"answers_query": true|false, "confidence": "high|medium|low"}
+\end{promptbox}

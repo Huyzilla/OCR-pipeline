@@ -1,16 +1,49 @@
 \documentclass[../DoAn.tex]{subfiles}
 \begin{document}
-\begin{longtable}{l p{14cm}}
+\begingroup
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4cm} >{\raggedright\arraybackslash}p{10cm}}
 	\hline
-   \textbf{Viết tắt}  & \textbf{Tên tiếng Anh} \\ \hline 
-	\textbf{Browser} & Trình duyệt \\
-	\textbf{Cache memory} & Bộ nhớ đệm \\
-	\textbf{E-commerce} & Thương mại điện tử \\
-	\textbf{Bloatware} & Ứng dụng nhà sản xuất tích hợp vào thiết bị \\
-	\textbf{Interpreter}  &  Trình thông dịch \\
-    \textbf{Compiler}  &  Trình biên dịch \\
-
-    \hline
+	\textbf{Thuật ngữ} & \textbf{Giải thích} \\ \hline
+	\endhead
+	\textbf{Ablation} & Thực nghiệm loại bỏ hoặc thay đổi từng thành phần để đo đóng góp của thành phần đó \\
+	\textbf{Baseline} & Mô hình hoặc cấu hình cơ sở dùng làm mốc so sánh \\
+	\textbf{BGE-M3} & Mô hình embedding/truy hồi đa ngôn ngữ thuộc họ BGE, dùng làm backbone hoặc guide model trong đồ án \\
+	\textbf{BGE-reranker-v2-m3} & Mô hình reranker dạng cross-encoder thuộc họ BGE, dùng làm teacher cho chưng cất reranker \\
+	\textbf{Bi-encoder} & Kiến trúc mã hóa query và tài liệu độc lập thành hai vector riêng \\
+	\textbf{Candidate pool} & Tập ứng viên (chunk) được truy hồi để đưa vào bước xếp hạng lại \\
+	\textbf{Checkpoint} & Bản lưu trọng số mô hình tại một thời điểm huấn luyện \\
+	\textbf{Chunk / Chunking} & Đoạn văn bản chia nhỏ từ tài liệu / quá trình chia tài liệu thành các đoạn \\
+	\textbf{Corpus} & Tập văn bản hoặc tập đoạn được dùng để truy hồi, huấn luyện hoặc đánh giá \\
+	\textbf{Cross-encoder} & Kiến trúc đưa đồng thời query và tài liệu qua mô hình để chấm điểm liên quan \\
+	\textbf{Curriculum} & Cách tổ chức dữ liệu hoặc hàm mất mát theo lộ trình từ dễ đến khó qua nhiều giai đoạn \\
+	\textbf{Dense retrieval} & Truy hồi dựa trên vector ngữ nghĩa \\
+	\textbf{Embedding} & Vector biểu diễn ngữ nghĩa của văn bản \\
+	\textbf{Fine-tune} & Tinh chỉnh mô hình tiền huấn luyện trên dữ liệu của miền cụ thể \\
+	\textbf{Gold chunk} & Đoạn văn bản chứa thông tin trả lời đúng cho query \\
+	\textbf{Guide model} & Mô hình dẫn hướng dùng để lọc false negative trong GIST \\
+	\textbf{Hard negative} & Negative khó: gần positive về ngữ nghĩa nhưng không trả lời đúng query \\
+	\textbf{In-batch negative} & Negative lấy từ các mẫu khác trong cùng một batch huấn luyện \\
+	\textbf{Intent classifier} & Bộ phân loại ý định câu hỏi, dùng để chọn nhánh xử lý tra cứu hoặc tính toán \\
+	\textbf{Latency} & Độ trễ xử lý mỗi truy vấn \\
+	\textbf{Logit} & Điểm số thô đầu ra của mô hình trước khi chuẩn hóa thành xác suất hoặc phân phối \\
+	\textbf{Markdown} & Định dạng văn bản đánh dấu nhẹ dùng để lưu cấu trúc tài liệu sau OCR/chuyển đổi \\
+	\textbf{PhoBERT} & Mô hình BERT được tiền huấn luyện cho tiếng Việt, dùng trong backbone phân loại ý định \\
+	\textbf{Pipeline} & Chuỗi các bước xử lý nối tiếp của hệ thống \\
+	\textbf{Prompt} & Chỉ dẫn đầu vào gửi cho mô hình ngôn ngữ hoặc mô hình giám khảo \\
+	\textbf{Pruned model} & Mô hình đã được cắt tỉa một phần tham số hoặc từ vựng để giảm dung lượng \\
+	\textbf{Query} & Câu truy vấn của người dùng \\
+	\textbf{Reranker} & Mô hình xếp hạng lại các ứng viên đã được truy hồi \\
+	\textbf{Router} & Thành phần định tuyến câu hỏi sang nhánh xử lý phù hợp trong pipeline \\
+	\textbf{SetFit} & Phương pháp fine-tune sentence transformer bằng học tương phản rồi huấn luyện classifier nhẹ \\
+	\textbf{Sparse retrieval} & Truy hồi dựa trên trùng khớp từ khóa (ví dụ BM25) \\
+	\textbf{Teacher / Student} & Mô hình thầy (lớn) và trò (nhỏ) trong chưng cất tri thức \\
+	\textbf{Tokenizer} & Bộ tách văn bản thành token trước khi đưa vào mô hình ngôn ngữ \\
+	\textbf{Triplet} & Mẫu huấn luyện gồm query, positive và negative dùng cho học tương phản hoặc reranking \\
+	\textbf{Vocabulary pruning} & Cắt tỉa từ vựng của tokenizer để giảm kích thước mô hình \\
+	\textbf{Zero-shot} & Đánh giá trên dữ liệu hoặc tài liệu chưa từng xuất hiện khi huấn luyện \\
+	\hline
 \end{longtable}
-
+\endgroup
 \end{document}

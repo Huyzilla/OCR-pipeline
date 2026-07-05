@@ -6,21 +6,21 @@
 \section{Đặt vấn đề}
 \label{section:1.1}
 
-Sự bùng nổ của các mô hình ngôn ngữ lớn (LLM) đã mở ra hướng tiếp cận mới cho bài toán hỏi đáp tự động. Tuy nhiên, LLM thuần túy bộc lộ hạn chế rõ rệt khi cần trả lời câu hỏi về kiến thức chuyên biệt, cập nhật theo thời gian hoặc đòi hỏi tham chiếu tài liệu cụ thể --- những tình huống thường xuyên gặp trong môi trường doanh nghiệp. Kiến trúc Retrieval-Augmented Generation (RAG) ra đời nhằm giải quyết vấn đề này bằng cách kết hợp truy xuất thông tin từ kho tài liệu nội bộ với khả năng sinh ngôn ngữ của LLM, giúp câu trả lời bám sát nguồn và có thể kiểm chứng.
+Sự bùng nổ của các mô hình ngôn ngữ lớn (LLM) đã mở ra hướng tiếp cận mới cho bài toán hỏi đáp tự động. Tuy nhiên, LLM thuần túy bộc lộ hạn chế rõ rệt khi cần trả lời câu hỏi về kiến thức chuyên biệt, cập nhật theo thời gian hoặc đòi hỏi tham chiếu tài liệu cụ thể --- những tình huống thường xuyên gặp trong môi trường doanh nghiệp. Kiến trúc Retrieval-Augmented Generation (RAG)~\cite{lewis2020rag} ra đời nhằm giải quyết vấn đề này bằng cách kết hợp truy xuất thông tin từ kho tài liệu nội bộ với khả năng sinh ngôn ngữ của LLM, giúp câu trả lời bám sát nguồn và có thể kiểm chứng.
 
-Đồ án này được thực hiện trên tập dữ liệu của cuộc thi Viettel AI Race 2025, gồm 991 câu hỏi trắc nghiệm tiếng Việt trải rộng trên 49 tài liệu kỹ thuật đa lĩnh vực. Tập tài liệu có cấu trúc phức tạp --- bảng biểu, ký hiệu kỹ thuật, thuật ngữ chuyên ngành --- và đặt ra thách thức không nhỏ cho các bước chunking, retrieval lẫn ranking. Đây là bối cảnh thực tiễn phản ánh đúng những khó khăn khi triển khai RAG trong môi trường sản xuất thực tế, không phải trên các benchmark học thuật lý tưởng hóa.
+Đồ án này được thực hiện trên tập dữ liệu của cuộc thi Viettel AI Race 2025, gồm 991 câu hỏi trắc nghiệm tiếng Việt trải rộng trên 200 tài liệu kỹ thuật đa lĩnh vực. Tập tài liệu có cấu trúc phức tạp --- bảng biểu, ký hiệu kỹ thuật, thuật ngữ chuyên ngành --- và đặt ra thách thức không nhỏ cho các bước chia đoạn (chunking), truy hồi và xếp hạng. Đây là bối cảnh thực tiễn phản ánh đúng những khó khăn khi triển khai RAG trong môi trường sản xuất thực tế, không phải trên các tập đánh giá học thuật lý tưởng hóa.
 
 \section{Các giải pháp hiện có và hạn chế}
 \label{section:1.2}
 
-Các hệ thống RAG hiện nay thường kết hợp Hybrid Retrieval (BM25 + Dense + RRF), Cross-Encoder Reranker, và LLM generation. Đây là kiến trúc được chứng minh hiệu quả về mặt học thuật. Tuy nhiên, trong quá trình xây dựng và đánh giá hệ thống trên tập dữ liệu cuộc thi, chúng tôi quan sát thấy ba vấn đề thực tế mà các công trình hiện có chưa giải quyết triệt để:
+Các hệ thống RAG hiện nay thường kết hợp truy hồi lai (BM25 + truy hồi dày đặc + RRF), reranker dạng cross-encoder, và sinh câu trả lời bằng LLM. Đây là kiến trúc được chứng minh hiệu quả về mặt học thuật. Tuy nhiên, trong quá trình xây dựng và đánh giá hệ thống trên tập dữ liệu cuộc thi, chúng tôi quan sát thấy ba vấn đề thực tế mà các công trình hiện có chưa giải quyết triệt để:
 
 \begin{itemize}
-    \item Reranker quá nặng cho triển khai thực tế. BGE-M3 (568M tham số) là reranker mạnh nhưng tạo ra bottleneck latency nghiêm trọng --- khoảng 147ms mỗi query --- khiến toàn bộ pipeline bị nghẽn tại bước này. Các công trình hiện tại thường chỉ báo cáo accuracy mà bỏ qua chi phí suy luận, trong khi đây là yếu tố quyết định khả năng triển khai thực tế.
+    \item Reranker quá nặng cho triển khai thực tế. BGE reranker~\cite{bge_reranker_v2_m3} (568M tham số) cho chất lượng xếp hạng cao nhưng chi phí suy luận lớn. Trên môi trường không có GPU mạnh --- chẳng hạn khi triển khai trên CPU hoặc hạ tầng nội bộ hạn chế --- độ trễ của mô hình tăng cao và trở thành điểm nghẽn của toàn bộ luồng xử lý. Các công trình hiện tại thường chỉ báo cáo độ chính xác mà bỏ qua chi phí suy luận, trong khi đây là yếu tố quyết định khả năng triển khai thực tế.
 
-    \item Routing bằng LLM lớn tốn kém không cần thiết. Hệ thống Router-Summary sử dụng GPT-4o-mini để phân loại intent --- một tác vụ thực chất chỉ cần phân biệt hai lớp (\texttt{tra\_cuu} / \texttt{tinh\_toan}). Mỗi lần gọi API thêm khoảng 800ms latency và phát sinh chi phí, trong khi accuracy phân loại đạt 99.4\% --- ngưỡng này hoàn toàn có thể đạt được bằng mô hình nhỏ hơn nhiều bậc.
+    \item Định tuyến bằng LLM lớn tốn kém không cần thiết. Luồng Router-Summary sử dụng GPT-4o-mini~\cite{openai2024gpt4omini} để phân loại ý định --- một tác vụ thực chất chỉ cần phân biệt hai lớp (\plaincode{tra_cuu} / \plaincode{tinh_toan}). Mỗi lần gọi API thêm khoảng 800ms độ trễ và phát sinh chi phí, trong khi độ chính xác phân loại đạt 99.4\% --- ngưỡng này hoàn toàn có thể đạt được bằng mô hình nhỏ hơn nhiều bậc.
 
-    \item Embedding pretrained chưa tối ưu cho domain. Mô hình Vietnamese Embedding v2, dù là embedding mạnh nhất hiện có cho tiếng Việt, vẫn chỉ đạt Acc@1 = 73.89\% trên tập test nội bộ khi đánh giá riêng bước retrieval. Đây là giới hạn trên của toàn pipeline --- nếu retrieval không kéo đúng chunk, các bước sau không thể cứu vãn.
+    \item Mô hình embedding đã huấn luyện sẵn chưa tối ưu cho miền. Mô hình Vietnamese Embedding v2~\cite{aiteamvn_embedding}, dù là embedding mạnh nhất hiện có cho tiếng Việt, vẫn chỉ đạt Acc@1 = 73.89\% trên tập kiểm thử nội bộ khi đánh giá riêng bước truy hồi. Đây là giới hạn trên của toàn luồng xử lý --- nếu truy hồi không lấy đúng đoạn văn bản, các bước sau không thể cứu vãn.
 \end{itemize}
 
 \section{Mục tiêu và định hướng giải pháp}
@@ -28,16 +28,16 @@ Các hệ thống RAG hiện nay thường kết hợp Hybrid Retrieval (BM25 + 
 
 Đồ án hướng tới mục tiêu xây dựng và tối ưu hệ thống RAG tiếng Việt theo hai giai đoạn phát triển có căn cứ thực nghiệm.
 
-Giai đoạn 1 xây dựng và đánh giá ba pipeline RAG --- Baseline, Fusion và Router-Summary --- trên tập 991 câu hỏi, nhằm có bức tranh định lượng rõ ràng về accuracy, latency và các dạng lỗi thực tế trước khi quyết định tối ưu.
+Giai đoạn 1 xây dựng và đánh giá hai luồng xử lý RAG --- Baseline Router và Router-Summary --- trên tập 991 câu hỏi, nhằm có bức tranh định lượng rõ ràng về độ chính xác, độ trễ và các dạng lỗi thực tế trước khi quyết định tối ưu.
 
-Giai đoạn 2 dựa trên kết quả giai đoạn 1 để đề xuất ba hướng tối ưu có chủ đích, mỗi hướng giải quyết đúng một bottleneck đã xác định:
+Giai đoạn 2 dựa trên kết quả giai đoạn 1 để đề xuất ba hướng tối ưu có chủ đích, mỗi hướng giải quyết đúng một điểm nghẽn đã xác định:
 
 \begin{itemize}
-    \item Fine-tune lightweight reranker MiniLM-L12 (33M tham số) thông qua Knowledge Distillation từ BGE-M3 (568M), nhằm giảm latency reranking khoảng 6--7 lần trong khi duy trì chất lượng ranking.
+    \item Chưng cất BGE reranker (568M tham số) sang ba reranker nhỏ hơn: MiniLM 33M, mmarco 117M và pruned mmarco 35.6M. Mục tiêu là giảm độ trễ và dung lượng trong khi duy trì chất lượng ranking.
 
-    \item Fine-tune PhoBERT phân loại intent thay thế GPT-4o-mini, nhằm loại bỏ chi phí API và giảm latency routing.
+    \item Huấn luyện router cục bộ dựa trên Sentence-BERT/SetFit để thay thế GPT-4o-mini, nhằm loại bỏ chi phí API và giảm độ trễ định tuyến.
 
-    \item Fine-tune embedding model với Matryoshka Representation Learning và Curriculum Training, nhằm cải thiện chất lượng retrieval trên domain tài liệu kỹ thuật tiếng Việt.
+    \item Tinh chỉnh mô hình embedding với Matryoshka Representation Learning, Curriculum Training và GIST, nhằm cải thiện chất lượng truy hồi trên miền tài liệu kỹ thuật tiếng Việt.
 \end{itemize}
 
 \section{Đóng góp đồ án}
@@ -46,15 +46,13 @@ Giai đoạn 2 dựa trên kết quả giai đoạn 1 để đề xuất ba hư�
 Các đóng góp chính của đồ án bao gồm:
 
 \begin{itemize}
-    \item \textbf{[C1] Bộ benchmark RAG ba pipeline.} Đánh giá toàn diện Baseline, Fusion và Router-Summary trên 991 câu hỏi tiếng Việt, bao gồm phân tích theo intent, chất lượng retrieval và phân loại nguyên nhân lỗi định tính trên 27 câu sai của pipeline tốt nhất.
+    \item \textbf{[C1] Quy trình xây dựng dữ liệu huấn luyện dùng chung cho embedding và reranker.} Quy trình gồm năm giai đoạn: dùng mô hình ngôn ngữ làm giám khảo để xác định positive (gold chunk), tổng hợp hard negative theo hai nguồn (loại tạo sinh có kiểm soát và loại khai thác từ kết quả truy hồi), lọc khả năng trả lời độc lập, rồi gộp và chia tập huấn luyện. Cùng một nguồn dữ liệu được tái sử dụng cho cả hai tầng: tầng embedding dùng curriculum hai giai đoạn, còn tầng reranker áp dụng tiêu chí lọc và ghép cặp chặt hơn để tạo triplet phục vụ học xếp hạng.
 
-    \item \textbf{[C2] Pipeline xây dựng dữ liệu năm giai đoạn cho lightweight reranker.} Từ GPT judge xác định positive, tổng hợp hard negatives (synthesized + mined), lọc answerability độc lập, đến merge và split train/dev --- tạo ra 2,994 triplets với xác minh chất lượng đa tầng.
+    \item \textbf{[C2] Tinh chỉnh embedding theo curriculum kết hợp Matryoshka Representation Learning.} Áp dụng curriculum hai giai đoạn GIST$\to$MNRL --- học ranh giới ngữ nghĩa từ negative tạo sinh trước, rồi tinh chỉnh khả năng phân biệt bằng hard negative khai thác --- kết hợp MRL để tạo biểu diễn đa kích thước. Nhờ đó embedding 512 chiều đạt chất lượng gần tương đương 1024 chiều, giảm một nửa dung lượng vector index mà vẫn cải thiện độ chính xác truy hồi so với base model trên cả tập in-domain lẫn tập held-out.
 
-    \item \textbf{[C3] ADR-MSE loss function.} Sử dụng rank positions làm teacher signal thay vì continuous scores, tránh scale mismatch giữa cross-encoder logits và retrieval scores. ADR-MSE đạt MRR@10 = 0.7827, vượt PhoRanker 135M (+0.0412) với model nhỏ hơn 4 lần.
+    \item \textbf{[C3] Nén reranker bằng chưng cất tri thức kết hợp cắt tỉa từ vựng.} Chưng cất teacher BGE-reranker-v2-m3 (568M tham số) sang các student nhẹ qua quy trình hai giai đoạn (thích nghi miền bằng contrastive learning, rồi chưng cất tín hiệu xếp hạng của teacher), sau đó cắt ma trận embedding của bộ tách từ từ 250.002 xuống 36.324 token. Kết hợp hai kỹ thuật, reranker pruned 35.6M tham số (giảm khoảng 70\% so với mmarco 117M) đạt MRR@10 = 0.8718 --- giữ 99.6\% chất lượng của mmarco và vượt ViRanker 568M (0.8434) dù nhỏ hơn khoảng 16 lần và nhanh hơn khoảng 5.8 lần (23.8ms so với 138.9ms).
 
-    \item \textbf{[C4] Phân tích so sánh các loss function cho reranker KD.} So sánh thực nghiệm sáu loss function --- ListwiseKL, Margin-MSE, RankNet, ADR-MSE, Discounted ADR, Top-K ADR --- trên cùng dữ liệu và điều kiện, rút ra nhận xét về ảnh hưởng của quy mô dữ liệu và chất lượng teacher signal.
-
-    \item \textbf{[C5] Hệ thống RAG tối ưu end-to-end.} Tích hợp lightweight reranker, PhoBERT intent classifier và fine-tuned embedding giảm latency và chi phí inference đáng kể so với hệ thống v1 trong khi duy trì accuracy tổng thể.
+    \item \textbf{[C4] Hệ thống RAG tối ưu đầu cuối.} Tích hợp embedding tinh chỉnh 512 chiều, reranker chưng cất và router cục bộ dựa trên Sentence-BERT/SetFit (thay GPT router) để giảm độ trễ, dung lượng và chi phí suy luận so với hệ thống v1, trong khi vẫn duy trì chất lượng truy hồi và xếp hạng.
 \end{itemize}
 
 \section{Bố cục đồ án}
@@ -63,15 +61,13 @@ Các đóng góp chính của đồ án bao gồm:
 Nội dung còn lại của đồ án được tổ chức như sau:
 
 \begin{itemize}
-    \item Chương 2 trình bày nền tảng lý thuyết của các kỹ thuật được sử dụng, từ BM25, dense retrieval, cross-encoder reranker, đến knowledge distillation, MRL và PhoBERT.
+    \item Chương 2 trình bày nền tảng lý thuyết của các kỹ thuật được sử dụng, từ BM25, dense retrieval, cross-encoder reranker, đến chưng cất tri thức (knowledge distillation), MRL, Sentence-BERT/SetFit và PhoBERT.
 
-    \item Chương 3 mô tả hệ thống RAG ban đầu (v1): quy trình tiền xử lý tài liệu, kiến trúc ba pipeline và kết quả đánh giá thực nghiệm, bao gồm xác định các bottleneck dẫn đến giai đoạn tối ưu.
+    \item Chương 3 trình bày mô hình đề xuất: hệ thống RAG ban đầu (v1), quy trình tiền xử lý tài liệu, kiến trúc luồng xử lý, các điểm nghẽn quan sát được và thiết kế các thành phần tối ưu cho v2.
 
-    \item Chương 4 trình bày ba phương pháp tối ưu đề xuất --- lightweight reranker, fine-tune embedding và fine-tune intent classifier --- cùng thiết kế dữ liệu huấn luyện cho từng phương pháp.
+    \item Chương 4 báo cáo kết quả đánh giá thực nghiệm, bao gồm nghiên cứu loại bỏ (ablation), so sánh với các mô hình nền (baseline), đánh giá từng thành phần và đánh giá đầu cuối v1 so với v2.
 
-    \item Chương 5 báo cáo kết quả thực nghiệm toàn diện, bao gồm ablation study, so sánh với các baseline và đánh giá end-to-end v1 so với v2.
-
-    \item Chương 6 đưa ra kết luận, thảo luận hạn chế và định hướng phát triển.
+    \item Chương 5 đưa ra kết luận, thảo luận hạn chế và định hướng phát triển.
 \end{itemize}
 
 \end{document}

@@ -15,10 +15,32 @@ test.ipynb
 .vscode/
 .DS_Store
 Thumbs.db
+Untitled*.ipynb
+
+# LaTeX build artifacts
+GOAL/build/
+GOAL/Chuong/build/
+GOAL/*.aux
+GOAL/*.bbl
+GOAL/*.bcf
+GOAL/*.blg
+GOAL/*.fdb_latexmk
+GOAL/*.fls
+GOAL/*.lof
+GOAL/*.log
+GOAL/*.lot
+GOAL/*.out
+GOAL/*.run.xml
+GOAL/*.synctex.gz
+GOAL/*.toc
+GOAL/*.xdv
 
 # Runtime cache
 cache/
 .qa_cache/
+logs/*
+!logs/.gitkeep
+demo/runtime/
 
 # Generated QA outputs
 baseline.csv
@@ -28,6 +50,9 @@ baseline_debug.json
 fusion_debug.json
 results_*.csv
 results_*.json
+test/*.csv
+test/*_debug.json
+test/*_wrong.json
 benchmark_reranker/
 domain_data/retrieve_991_test.jsonl
 domain_data/retrieve_rerank_991_voyage.jsonl
@@ -40,11 +65,21 @@ doc_index/
 # Generated OCR/RAG outputs
 outputs/
 outputs_*/
+chunk_outputs_finals/
 chunk_outputs1_finals/
+DoAn/chunk_outputs_finals/
+DoAn/chunk_outputs1_finals/
 chroma_db_viettel_outputs*/
 data_check/
 
+# Local/generated datasets
+data/mmarco_vi_*.jsonl
+training/data_preparation_pipeline/*.jsonl
+DoAn/training/data_preparation_pipeline/*.jsonl
+
 # Local model checkpoints / heavy artifacts
+models/*
+!models/.gitkeep
 stage_b_adrmse/
 
 # Old/local scratch

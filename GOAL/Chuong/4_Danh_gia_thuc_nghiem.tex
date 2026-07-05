@@ -1,0 +1,680 @@
+% !TEX root = ../DoAn.tex
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+
+\section{Thiết lập thực nghiệm}
+\label{section:4.1}
+
+\subsection{Môi trường và phần cứng}
+\label{subsection:4.1.1}
+
+Toàn bộ quá trình huấn luyện và đánh giá được thực hiện trên hai môi trường. Huấn luyện reranker và embedding sử dụng GPU NVIDIA RTX 6000, cấu hình đủ để duy trì batch size lớn cho MNRL (128) và chạy teacher BGE-reranker-v2-m3 song song với student trong giai đoạn B.
+
+Các phép đo xếp hạng và pipeline độ trễ mới trong chương này được thực hiện trên RTX 6000 để so sánh các cấu hình production trong cùng một môi trường. Riêng phép đo đầu cuối MCQ được thực hiện trong môi trường CPU/API trên máy cá nhân, dùng để so sánh ảnh hưởng tổng thể của pipeline v1 và v2 tới độ chính xác và độ trễ.
+
+\subsection{Tập dữ liệu đánh giá}
+\label{subsection:4.1.2}
+
+Đồ án sử dụng hai tập đánh giá chính cho truy hồi và xếp hạng. D1 là tập in-domain dùng để kiểm tra chất lượng embedding trên miền huấn luyện. D2 là tập độc lập gồm 343 queries trên 50 PDF kỹ thuật tiếng Việt chưa dùng khi huấn luyện; cùng một bộ D2 này được dùng làm tập kiểm thử zero-shot cho embedding, reranker và các phân tích pipeline liên quan. Như vậy, kết quả embedding độc lập và kết quả reranker được đo trên cùng nguồn tài liệu/câu hỏi, chỉ khác phạm vi xếp hạng: embedding xếp hạng toàn corpus, còn reranker xếp hạng lại candidate pool top-20 do embedding tạo ra.
+
+\begin{table}[H]
+    \centering
+    \caption{Các tập dữ liệu dùng trong đánh giá}
+    \label{tab:evaluation-datasets}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{4.1cm}|>{\raggedright\arraybackslash}p{6.0cm}|}
+        \hline
+        \textbf{Tập} & \textbf{Quy mô} & \textbf{Mục đích} \\ \hline
+        D1 in-domain embedding & 157 queries, 2,317 đoạn & So sánh các cấu hình embedding truy hồi, tài liệu thuộc miền huấn luyện \\ \hline
+        D2 độc lập embedding/reranker & 343 queries, 813 đoạn từ 50 PDF mới & Đánh giá zero-shot chung cho embedding và reranker trên tài liệu mới \\ \hline
+        Dev reranker & 305 triplets, 50 queries & Theo dõi và lựa chọn checkpoint trong quá trình huấn luyện \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Tập D2 (343 queries, 50 PDF) hoàn toàn tách biệt với tập phát triển v1 (991 câu, 200 PDF), không có tài liệu nào trùng lặp. Đây là điều kiện zero-shot: model chưa từng thấy bất kỳ đoạn nào từ 50 PDF này trong quá trình huấn luyện. Kết quả trên tập này do đó phản ánh khả năng tổng quát hóa của model, không phải học thuộc dữ liệu.
+
+\subsection{Độ đo đánh giá}
+\label{subsection:4.1.3}
+
+\textbf{Đánh giá reranker} sử dụng bốn metrics tiêu chuẩn trong information truy hồi: Hit@1 (tỉ lệ gold đoạn xuất hiện ở rank 1), Recall@5 (tỉ lệ gold đoạn xuất hiện trong top-5), MRR@10 (Mean Reciprocal Rank, đo vị trí trung bình của gold đoạn) và NDCG@10 (Normalized Discounted Cumulative Gain, đo chất lượng toàn bộ thứ tự xếp hạng). Metric chính để so sánh là MRR@10 và Recall@5 vì chúng phản ánh trực tiếp hiệu quả của reranker trong pipeline RAG thực tế, nơi top-5 đoạn được đưa vào LLM.
+
+\noindent\textbf{Đánh giá embedding.}
+
+Các metrics gồm Acc@1, Acc@5, MRR@10 và NDCG@10 cho embedding. D1 (in-domain) gồm 157 câu trên corpus 2,317 đoạn dùng làm benchmark phát triển chính. D2 (độc lập) gồm 343 câu trên corpus 813 đoạn của 50 tài liệu mới, đồng thời là tập test chung với reranker.
+
+\textbf{Đánh giá đầu cuối} sử dụng accuracy trên 390 câu hỏi trắc nghiệm (exact match với đáp án A/B/C/D), kết hợp đo độ trễ (ms/câu) và so sánh trực tiếp pipeline v1 với v2.
+
+\section{Đánh giá reranker}
+\label{section:4.2}
+
+\subsection{Kết quả chính trên tập kiểm thử reranker}
+\label{subsection:4.2.1}
+
+Tập test reranker chính là D2 gồm 343 queries zero-shot. Candidate pool là top-20 đoạn do đã tinh chỉnh embedding 512d (curriculum GIST$\to$MNRL) truy xuất từ toàn bộ corpus 813 đoạn, đúng cấu hình pipeline thực tế ở v2. Khi chưa rerank, riêng embedding đạt MRR@10 = 0.8023 trên candidate pool top-20, đây là điểm tham chiếu để đánh giá đóng góp của từng reranker.
+
+Các model trong Bảng~\ref{tab:reranker-main-results} bao phủ ba nhóm so sánh.
+
+BGE reranker là teacher và là mốc chất lượng mạnh nhất của v1.
+
+ViRanker~\cite{viranker} và PhoRanker~\cite{phoranker} là các cross-encoder reranker tiếng Việt công khai. mmarco-mMiniLMv2 base là reranker đa ngôn ngữ đã học passage xếp hạng từ mMARCO, dùng để tách đóng góp của năng lực pretrained khỏi đóng góp của domain distillation. MiniLM-L12 base~\cite{wang2020minilm} là baseline 33M rất nhẹ, đại diện cho trường hợp ưu tiên độ trễ nhưng chưa thích nghi với tiếng Việt kỹ thuật. Bảng~\ref{tab:reranker-main-results} so sánh teacher, các student sau distillation và các baseline này trên cùng candidate pool.
+
+\begin{table}[H]
+    \centering
+    \caption{Kết quả reranker trên 343 câu hỏi}
+    \label{tab:reranker-main-results}
+    {\scriptsize
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.4cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.7cm}|}
+        \hline
+        \textbf{Model} & \textbf{Params} & \textbf{Hit@1} & \textbf{Recall@5} & \textbf{MRR@10} & \textbf{NDCG@10} \\ \hline
+        BGE-reranker-v2-m3 teacher & 568M & 0.8192 & 0.9563 & 0.8804 & 0.9007 \\ \hline
+        \textbf{mmarco-mMiniLMv2 + ADR-MSE} & \textbf{117M} & \textbf{0.8163} & \textbf{0.9621} & \textbf{0.8753} & \textbf{0.8979} \\ \hline
+        Pruned mmarco + ADR-MSE & 35.6M & 0.8134 & 0.9504 & 0.8718 & 0.8961 \\ \hline
+        ViRanker SOTA VI & 568M & 0.7638 & 0.9534 & 0.8434 & 0.8703 \\ \hline
+        mmarco-mMiniLMv2 base & 117M & 0.7522 & 0.9359 & 0.8352 & 0.8670 \\ \hline
+        MiniLM-L12 + ADR-MSE (with mMARCO) & 33M & 0.6939 & 0.9213 & 0.7869 & 0.8201 \\ \hline
+        PhoRanker VI (segmented) & 135M & 0.6910 & 0.8921 & 0.7772 & 0.8083 \\ \hline
+        MiniLM-L12 base & 33M & 0.5219 & 0.8338 & 0.6520 & 0.7060 \\ \hline
+    \end{tabular}%
+    }
+    }
+
+    \vspace{2mm} {\footnotesize \textit{Ghi chú: BGE-reranker-v2-m3 teacher được dùng làm mốc tham chiếu chất lượng. In đậm biểu thị student tốt nhất cho cấu hình triển khai.}}
+\end{table}
+
+Student mmarco-mMiniLMv2 117M sau distillation đạt MRR@10 = 0.8753, tương đương 99.4\% so với teacher BGE-reranker-v2-m3, trong khi số tham số nhỏ hơn khoảng 4.8 lần. Từ vựng cắt tỉa tạo ra phiên bản pruned 35.6M gần như không làm suy giảm chất lượng: pruned đạt MRR@10 = 0.8718, bằng 99.6\% so với mmarco 117M và 99.0\% so với teacher.
+
+So với ViRanker, pruned 35.6M cao hơn 0.0284 điểm MRR@10 dù có số tham số nhỏ hơn khoảng 16 lần. Kết quả này cho thấy dữ liệu đúng miền và quá trình distillation phù hợp có thể quan trọng hơn việc chỉ tăng kích thước mô hình hoặc sử dụng dữ liệu tổng quát quy mô lớn. Đối với PhoRanker, văn bản đầu vào được tách từ bằng pyvi trước khi đánh giá để phù hợp với cách tiền xử lý của mô hình này. Ngay cả trong thiết lập đó, các student sau distillation vẫn vượt PhoRanker trên toàn bộ các metric.
+
+MiniLM-L12 33M vẫn là lựa chọn siêu nhẹ: MRR@10 tăng từ 0.6520 lên 0.7869 sau tinh chỉnh ở cấu hình có bổ sung mMARCO tại giai đoạn A, đồng thời vượt PhoRanker 135M trên toàn bộ các metric. Tuy nhiên, trên candidate pool sinh bởi bộ truy hồi mạnh, MiniLM 33M chỉ đạt MRR@10 = 0.7869, thấp hơn baseline embedding-only chưa rerank là 0.8023. Điều này cho thấy khi bộ truy hồi đã đủ mạnh, mô hình 33M không còn đủ năng lực để cải thiện thứ hạng như các student 35.6M hoặc 117M.
+
+\subsection{Nghiên cứu loại bỏ thành phần}
+\label{subsection:4.2.2}
+
+% trong .md nen da bo. .md ghi "KD truc tiep khong giai đoạn A = 0.7436" (do tren pool ft embedding),
+\begin{table}[H]
+    \centering
+    \caption{So sánh cấu hình huấn luyện trên MiniLM, mmarco và pruned}
+    \label{tab:reranker-ablation-summary}
+    {\small
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{6.2cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.9cm}|}
+        \hline
+        \textbf{Cấu hình} & \textbf{Hit@1} & \textbf{Recall@5} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
+        MiniLM KD trực tiếp, không giai đoạn A & 0.6297 & 0.8892 & 0.7436 & 0.7862 \\ \hline
+        MiniLM giai đoạn A+B, no mMARCO, $\alpha=0.7$ & 0.6501 & 0.9096 & 0.7572 & 0.7983 \\ \hline
+        MiniLM giai đoạn A+B, no mMARCO, $\alpha=1.0$ & 0.6501 & 0.8980 & 0.7508 & 0.7914 \\ \hline
+        \textbf{MiniLM giai đoạn A+B, with mMARCO, $\alpha=0.7$} & \textbf{0.6939} & \textbf{0.9213} & \textbf{0.7869} & \textbf{0.8201} \\ \hline
+        mmarco ADR-MSE, $\alpha=0.7$ & 0.8163 & 0.9621 & 0.8753 & 0.8979 \\ \hline
+        mmarco ADR-MSE, $\alpha=1.0$ & 0.7959 & 0.9563 & 0.8634 & 0.8886 \\ \hline
+        Pruned ADR-MSE, $\alpha=0.7$ & 0.8134 & 0.9504 & 0.8718 & 0.8961 \\ \hline
+        Pruned ADR-MSE, $\alpha=1.0$ & 0.8017 & 0.9504 & 0.8650 & 0.8911 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Ba kết luận chính rút ra từ Bảng~\ref{tab:reranker-ablation-summary}. Thứ nhất, giai đoạn A cần thiết cho MiniLM: KD trực tiếp không giai đoạn A chỉ đạt MRR@10 = 0.7436, thấp hơn cấu hình có giai đoạn A (0.7572), cho thấy domain adaptation giúp student tiếp nhận xếp hạng signal tốt hơn. Thứ hai, CL anchor với $\alpha=0.7$ tốt hơn KD-only ($\alpha=1.0$) trên cả ba kiến trúc: MiniLM +0.0064, mmarco +0.0119 và pruned +0.0068 MRR@10; giữ lại một phần tín hiệu contrastive giúp student không trôi khỏi vùng phân biệt domain đã học ở giai đoạn A. Thứ ba, thêm dữ liệu mMARCO-VI generic ở giai đoạn A có lợi cho MiniLM English-only: cấu hình with-mMARCO đạt MRR@10 = 0.7869, cao hơn no-mMARCO 0.7572 (+0.0297), vì MiniLM cần thêm nền tảng tiếng Việt mà domain data nhỏ chưa cung cấp đủ. Hiệu ứng này chỉ áp dụng cho MiniLM; các student mmarco và pruned đã có encoder đa ngôn ngữ mạnh nên không dùng mMARCO.
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh các hàm mất mát chưng cất trên MiniLM 33M (giai đoạn A no-mMARCO, giai đoạn B $\alpha=0.7$)}
+    \label{tab:stage-b-losses}
+    {\scriptsize
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\raggedright\arraybackslash}p{3.6cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|}
+        \hline
+        \textbf{Loss} & \textbf{Teacher signal} & \textbf{Hit@1} & \textbf{Recall@5} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
+        \textbf{ADR-MSE} & Rank positions & \textbf{0.6501} & \textbf{0.9096} & \textbf{0.7572} & \textbf{0.7983} \\ \hline
+        Discounted ADR-MSE & Rank + NDCG weights & 0.6239 & 0.8921 & 0.7409 & 0.7829 \\ \hline
+        ListwiseKL & Score distribution & 0.6297 & 0.8863 & 0.7371 & 0.7780 \\ \hline
+        Top-K ADR-MSE ($k=10$) & Top-10 ranks & 0.6239 & 0.8834 & 0.7356 & 0.7787 \\ \hline
+        Margin-MSE & Score margins & 0.6152 & 0.8892 & 0.7334 & 0.7778 \\ \hline
+        RankNet & Pairwise probabilities & 0.6122 & 0.8892 & 0.7311 & 0.7764 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+ADR-MSE tốt nhất, cao hơn loss xếp thứ hai (Discounted ADR-MSE) 0.0163 MRR@10, vì dùng rank positions đã chuẩn hóa trong $[-1,+1]$, tránh scale mismatch của teacher logits. Margin-MSE và RankNet bị ảnh hưởng bởi teacher margin range rộng, trong khi Discounted ADR và Top-K ADR làm mất một phần tín hiệu của candidate list nhỏ chỉ gồm 20 vị trí.
+
+\noindent\textbf{Liều lượng mMARCO-VI ở giai đoạn A.}
+
+Bảng~\ref{tab:reranker-ablation-summary} cho thấy thêm mMARCO-VI có lợi cho MiniLM, nhưng câu hỏi tiếp theo là dùng bao nhiêu là đủ. Bảng~\ref{tab:mmarco-dose} khảo sát ba mức liều lượng. Thêm 50,000 mẫu nâng MRR@10 từ 0.7357 lên 0.7465, nhưng tăng tiếp lên 100,000 mẫu lại làm giảm xuống 0.7243, thấp hơn cả khi không dùng mMARCO-VI.
+
+\begin{table}[H]
+    \centering
+    \caption{Ảnh hưởng của tập MMARCO-VI ở giai đoạn A trên MiniLM}
+    \label{tab:mmarco-dose}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|}
+        \hline
+        \textbf{Cấu hình} & \textbf{Hit@1} & \textbf{Recall@5} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
+        giai đoạn A, không mMARCO (0k) & 0.6239 & 0.8863 & 0.7357 & 0.7792 \\ \hline
+        \textbf{Giai đoạn A + mMARCO 50k} & \textbf{0.6443} & \textbf{0.8863} & \textbf{0.7465} & \textbf{0.7843} \\ \hline
+        giai đoạn A + mMARCO 100k & 0.6152 & 0.8630 & 0.7243 & 0.7671 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Phân tích phân bố độ khó của negative giải thích hiện tượng ``sweet spot'' này. Khi chấm bằng cross-encoder BGE-reranker-v2-m3 (logit thô), margin trung bình giữa positive và negative của mMARCO-VI là 8.94, với 78.5\% mẫu thuộc nhóm easy negative (margin $> 5$); trong khi negative của dữ liệu kỹ thuật có margin trung bình chỉ 4.13 và chỉ 37.0\% là easy. Điểm negative trung bình của mMARCO-VI ($-5.68$) cũng thấp hơn nhiều so với domain ($-2.96$), cho thấy negative của mMARCO-VI dễ phân biệt hơn hẳn. Như vậy mMARCO-VI chủ yếu cung cấp easy negative generic --- chúng bổ sung nền tảng tiếng Việt cho MiniLM English-only nhưng không dạy phân biệt hard negative kỹ thuật. Ở liều 50k, lượng easy negative này đủ giúp student làm quen ngôn ngữ; ở liều 100k, lượng dữ liệu generic lớn lấn át 2,994 triplet domain, làm model lệch về phân bố tổng quát và giảm khả năng phân biệt hard negative đặc thù.
+
+\noindent\textbf{Cách tổ chức curriculum thích nghi miền.}
+
+Một câu hỏi thiết kế khác là nên trộn mMARCO-VI với dữ liệu miền ngay từ đầu (2-stage) hay tách thành curriculum tuần tự học tiếng Việt trước rồi mới thích nghi miền (3-stage). Bảng~\ref{tab:curriculum-3stage} so sánh hai cách trên MiniLM. Cấu hình 2-stage trộn đạt MRR@10 = 0.7869. Curriculum 3-stage chỉ vượt rõ khi learning rate ở giai đoạn 2 (thích nghi miền) được giảm xuống $5\times10^{-6}$, đạt MRR@10 = 0.7953; nếu giữ learning rate cao $2\times10^{-5}$, 3-stage không cải thiện đáng kể so với trộn (0.7896). Nguyên nhân là learning rate quá lớn ở giai đoạn thích nghi miền ghi đè một phần biểu diễn tiếng Việt đã học từ mMARCO-VI ở giai đoạn trước.
+
+\begin{table}[H]
+    \centering
+    \caption{Ảnh hưởng của cách tổ chức curriculum và learning rate}
+    \label{tab:curriculum-3stage}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.8cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.9cm}|}
+        \hline
+        \textbf{Cấu hình} & \textbf{Hit@1} & \textbf{Recall@5} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
+        2-stage, trộn mMARCO + domain & 0.6939 & 0.9213 & 0.7869 & 0.8201 \\ \hline
+        3-stage, lr giai đoạn 2 $= 2\times10^{-5}$ & 0.6910 & 0.9125 & 0.7896 & 0.8243 \\ \hline
+        \textbf{3-stage, lr giai đoạn 2 $= 5\times10^{-6}$} & \textbf{0.7055} & 0.9184 & \textbf{0.7953} & \textbf{0.8279} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+\subsection{Cắt tỉa từ vựng cho mmarco}
+\label{subsection:4.2.3}
+
+\begin{table}[H]
+    \centering
+    \caption{Nén Mmarco bằng cắt tỉa từ vựng}
+    \label{tab:vocab-pruning}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{2.2cm}|}
+        \hline
+        \textbf{Thành phần} & \textbf{Trước cắt tỉa} & \textbf{Sau cắt tỉa} & \textbf{Giảm} \\ \hline
+        Từ vựng & 250.002 token & 36,324 tokens & 85.5\% \\ \hline
+        Total params & 117.6M & 35.6M & 69.7\% \\ \hline
+        Transformer encoder & Giữ nguyên & Giữ nguyên & -- \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Pruning chỉ cắt embedding matrix và giữ nguyên transformer encoder. Tokens được giữ gồm special tokens, toàn bộ tokens xuất hiện trong corpus và queries, cùng 30,000 tokens phổ biến nhất để an toàn cho tài liệu mới. Trên corpus mới, UNK rate chỉ 0.225\%, cho thấy cắt tỉa không làm mất token tiếng Việt quan trọng.
+
+\begin{table}[H]
+    \centering
+    \caption{Chất lượng pruned reranker sau tinh chỉnh}
+    \label{tab:pruned-reranker-quality}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|>{\centering\arraybackslash}p{1.7cm}|}
+        \hline
+        \textbf{Model} & \textbf{Params} & \textbf{Hit@1} & \textbf{Recall@5} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
+        BGE-reranker-v2-m3 teacher & 568M & 0.8192 & 0.9563 & 0.8804 & 0.9007 \\ \hline
+        mmarco 117M đã tinh chỉnh & 117M & 0.8163 & 0.9621 & 0.8753 & 0.8979 \\ \hline
+        \textbf{Pruned 35.6M đã tinh chỉnh} & \textbf{35.6M} & \textbf{0.8134} & 0.9504 & \textbf{0.8718} & \textbf{0.8961} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Pruned 35.6M giữ 99.6\% MRR@10 của mmarco 117M (0.8718/0.8753) nhưng giảm memory dung lượng 3.3 lần. Độ trễ không giảm tương ứng vì transformer layers vẫn giữ nguyên; lợi ích chính của cắt tỉa là giảm tham số, dung lượng lưu trữ và yêu cầu bộ nhớ, không phải tốc độ.
+
+\subsection{Phân tích sự phụ thuộc của reranker vào độ mạnh của bộ truy hồi}
+\label{subsection:4.2.4}
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh các reranker trên bộ truy hồi mạnh}
+    \label{tab:reranker-strong-retriever}
+    {\scriptsize
+    \setlength{\tabcolsep}{2pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.1cm}|>{\centering\arraybackslash}p{1.2cm}|>{\centering\arraybackslash}p{1.2cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.5cm}|}
+        \hline
+        \textbf{Reranker} & \textbf{Params} & \textbf{Hit@1} & \textbf{Recall@5} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} & \shortstack{\textbf{Delta}\\\textbf{MRR}} & \shortstack{\textbf{Total}\\\textbf{ms}} \\ \hline
+        Không reranker & -- & 0.7172 & 0.9271 & 0.8023 & 0.8398 & baseline & 6.8 \\ \hline
+        H384 base & 117M & 0.7522 & 0.9359 & 0.8352 & 0.8670 & +0.0330 & 23.8 \\ \hline
+        Pruned base & 35.6M & 0.7580 & 0.9329 & 0.8389 & 0.8690 & +0.0366 & 23.9 \\ \hline
+        ViRanker SOTA VI & 568M & 0.7638 & 0.9534 & 0.8434 & 0.8703 & +0.0411 & 138.9 \\ \hline
+        \textbf{Pruned 35.6M đã tinh chỉnh} & \textbf{35.6M} & 0.8134 & 0.9504 & 0.8718 & 0.8961 & +0.0695 & 23.8 \\ \hline
+        \textbf{H384 117M đã tinh chỉnh} & \textbf{117M} & \textbf{0.8163} & \textbf{0.9621} & \textbf{0.8753} & \textbf{0.8979} & \textbf{+0.0731} & \textbf{23.7} \\ \hline
+        BGE-reranker-v2-m3 teacher & 568M & 0.8192 & 0.9563 & 0.8804 & 0.9007 & +0.0781 & 138.8 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Với bộ truy hồi mạnh, MiniLM 33M làm giảm chất lượng, còn các reranker từ 35.6M trở lên vẫn cải thiện rõ rệt. H384 117M đã tinh chỉnh đạt 99.4\% MRR của BGE-reranker-v2-m3 trên pipeline này (0.8753/0.8804) nhưng tổng độ trễ chỉ 23.7ms, nhanh hơn BGE-reranker-v2-m3 khoảng 5.9 lần. Pruned 35.6M vượt ViRanker 568M cả về MRR (0.8718 so 0.8434) lẫn độ trễ (23.8ms so 138.9ms, nhanh khoảng 5.8 lần), xác nhận lợi ích của distillation trên dữ liệu đúng miền. Đáng chú ý, độ trễ của pruned 35.6M xấp xỉ H384 117M dù giảm 69.7\% tham số: vì cắt tỉa chỉ cắt embedding matrix mà giữ nguyên encoder, lợi ích là tiết kiệm bộ nhớ chứ không phải tốc độ.
+
+
+\subsection{Tương tác giữa reranker và bộ truy hồi}
+\label{subsection:4.2.5}
+
+Để hiểu rõ khi nào reranker có ích, đồ án đánh giá ba reranker trên hai bộ truy hồi khác nhau về độ mạnh: bộ truy hồi yếu (vietnamese-bi-encoder, pre-rerank MRR@10 = 0.6190) và bộ truy hồi mạnh (đã tinh chỉnh embedding GIST$\to$MNRL 512d, pre-rerank MRR@10 = 0.8023). Bảng~\ref{tab:reranker-retriever-strength} cho thấy tác động của reranker phụ thuộc mạnh vào chất lượng candidate pool đầu vào.
+
+\begin{table}[H]
+    \centering
+    \caption{Reranker trên bộ truy hồi yếu so với bộ truy hồi mạnh (MRR@10)}
+    \label{tab:reranker-retriever-strength}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.6cm}|>{\centering\arraybackslash}p{2.2cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.2cm}|>{\centering\arraybackslash}p{2.0cm}|}
+        \hline
+        \textbf{Reranker} & \textbf{Yếu (post)} & \textbf{$\Delta$ yếu} & \textbf{Mạnh (post)} & \textbf{$\Delta$ mạnh} \\ \hline
+        MiniLM-L12 33M & 0.7408 & $+0.1218$ & 0.7953 & $-0.0070$ \\ \hline
+        Pruned 35.6M đã tinh chỉnh & 0.7993 & $+0.1803$ & 0.8718 & $+0.0695$ \\ \hline
+        H384 117M đã tinh chỉnh & 0.8036 & $+0.1846$ & 0.8753 & $+0.0730$ \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Hai quan sát chính. Thứ nhất, MiniLM 33M cải thiện mạnh bộ truy hồi yếu, tăng 0.1218 MRR@10, nhưng lại làm giảm nhẹ bộ truy hồi mạnh, giảm 0.0070 MRR@10. Khi pool đầu vào đã tốt, một reranker 33M không đủ năng lực để sắp xếp lại tốt hơn embedding đã tinh chỉnh. Thứ hai, các reranker từ 35.6M trở lên cải thiện cả hai bộ truy hồi, với mức tăng trên bộ truy hồi yếu lớn hơn nhiều: khoảng 0.18 so với 0.07 MRR@10. Đáng chú ý, reranker đủ mạnh có khả năng ``san bằng'' chất lượng bộ truy hồi: pool yếu sau khi rerank bằng pruned đạt 0.7993, gần bằng điểm xuất phát của bộ truy hồi mạnh (0.8023). Điều này hàm ý rằng tăng top-K khi retrieve chỉ cải thiện recall (gold lọt vào pool) mà không thay đổi thứ hạng đầu, trong khi reranker mới là thành phần kéo gold lên các vị trí top --- hai công cụ giải quyết hai vấn đề khác nhau.
+
+\subsection{So sánh các phương pháp truy hồi}
+\label{subsection:4.2.6}
+
+Bảng~\ref{tab:retriever-comparison} so sánh các phương pháp ở tầng truy hồi trước khi rerank, cùng trên 343 queries và corpus 813 đoạn. BM25 được cài đặt với word segmentation để công bằng cho tiếng Việt.
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh các phương pháp truy hồi (trước rerank) và đóng góp của reranker}
+    \label{tab:retriever-comparison}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.6cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|}
+        \hline
+        \textbf{Phương pháp} & \textbf{Hit@1} & \textbf{Recall@5} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
+        BM25 (segmented) & 0.6939 & 0.9009 & 0.7836 & 0.8155 \\ \hline
+        Dense (ft embedding 512d) & 0.7172 & 0.9271 & 0.8023 & 0.8398 \\ \hline
+        Hybrid (BM25 + Dense, RRF) & 0.7347 & 0.9388 & 0.8218 & 0.8558 \\ \hline
+        \textbf{Hybrid + Pruned reranker} & \textbf{0.8134} & \textbf{0.9504} & \textbf{0.8718} & \textbf{0.8961} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Thứ tự chất lượng ở tầng truy hồi là BM25 $<$ Dense $<$ Hybrid: hybrid RRF cao hơn dense $+0.0195$ MRR@10 nhờ kết hợp tín hiệu lexical và semantic. Tuy nhiên, ngay cả bộ truy hồi tốt nhất (hybrid, 0.8218) vẫn thấp hơn nhiều so với khi thêm reranker (0.8718, $+0.0500$). Kết quả này khẳng định giá trị của kiến trúc hai tầng: fusion ở tầng truy hồi và xếp hạng lại ở tầng sau bổ sung cho nhau, không thay thế nhau.
+
+\subsection{Các hướng đã thử nhưng không cải thiện}
+\label{subsection:4.2.7}
+
+Đồ án ghi lại bốn hướng đã thử nghiệm nhưng không vượt được cấu hình chính (pruned đã tinh chỉnh, MRR@10 = 0.8718), vì mỗi kết quả âm đều cung cấp một góc nhìn về thiết kế pipeline.
+
+\noindent\textbf{Hợp nhất điểm (RRF) ở tầng reranker.} Kết hợp thứ hạng của embedding và reranker bằng RRF đạt MRR@10 = 0.8511, thấp hơn reranker đơn (0.8718). Vì reranker đã vượt trội embedding ở tầng này, fusion tĩnh kéo kết quả về phía nguồn yếu hơn. Điều này khác với fusion ở tầng truy hồi (BM25 + dense), nơi hai nguồn cân bằng và bổ sung nhau --- fusion chỉ có lợi khi các nguồn có chất lượng tương đương.
+
+\noindent\textbf{Lấy mẫu phân tầng cho candidate chưng cất.} Thay vì lấy top-20 candidate liền nhau theo điểm BGE-reranker-v2-m3, thử một chiến lược phân tầng: luôn giữ 6 candidate điểm cao nhất (để đảm bảo chứa positive), sau đó chia 14 candidate còn lại của pool thành bốn tầng theo điểm BGE-reranker-v2-m3 và lấy đều mỗi tầng (lấy mẫu cách đều trong từng tầng) cho đủ 20. Mục tiêu là tăng đa dạng độ khó của negative đưa vào KD. Kết quả MRR@10 = 0.8672, thấp hơn top-20 (0.8718), cho thấy top-20 tự nhiên đã đủ đa dạng (gold, hard và easy negatives) mà việc phân tầng thủ công lại loại bỏ một số hard negative gần top có giá trị.
+
+\noindent\textbf{Tăng cường dữ liệu bằng diễn giải lại câu hỏi.} Bổ sung 786 câu hỏi paraphrase (do GPT sinh) vào dữ liệu giai đoạn B đạt MRR@10 = 0.8697, thấp hơn dữ liệu gốc (0.8718). Phân tích phân bố gap cho thấy pool paraphrase có 90.7\% easy negative (gap $>0.7$) so với 66.2\% của dữ liệu gốc: câu paraphrase rõ nghĩa hơn nên retrieve ``sạch'' hơn, thiếu hard negative có giá trị --- tương tự hiện tượng quá liều mMARCO ở giai đoạn A.
+
+\noindent\textbf{Mở rộng từ vựng cho MiniLM tiếng Anh.} Thử thêm token tiếng Việt vào tokenizer English của ms-marco-MiniLM nhằm cải thiện biểu diễn tiếng Việt. Phân tích token cho thấy vấn đề không nằm ở thiếu token (UNK chỉ 0.14\%) mà ở việc mất dấu thanh: WordPiece English tách ``Việt'' thành [viet] (mất dấu), ``Công nghệ'' thành ba mảnh [cong, ng, \#\#he]. Do encoder pretrain trên tiếng Anh không có biểu diễn tiếng Việt có dấu, việc mở rộng từ vựng chỉ giảm phân mảnh chứ không sửa được encoder. Hướng cắt tỉa (giữ encoder đa ngôn ngữ) vì vậy hiệu quả hơn hẳn (0.8718 so với 0.7572 của MiniLM English).
+
+Cả bốn hướng đều củng cố các lựa chọn thiết kế cuối: reranker đơn (không RRF tầng cuối), candidate top-20 (không stratified), dữ liệu domain sạch (không paraphrase augmentation), và cắt tỉa encoder đa ngôn ngữ (không từ vựng expansion English).
+
+\subsection{Đánh giá đầu cuối trên câu hỏi trắc nghiệm}
+\label{subsection:4.2.8}
+
+Để đánh giá tác động đầu cuối của toàn bộ pipeline v2, đồ án chạy lại bài toán MCQ trên 390 câu hỏi, so sánh trực tiếp pipeline v1 (baseline) với pipeline v2. Pipeline v1 dùng embedding 1024 chiều, GPT router và reranker BGE-reranker-v2-m3; pipeline v2 dùng embedding GIST$\to$MNRL 512 chiều, router cục bộ dựa trên Sentence-BERT/SetFit (mục~\ref{section:4.4}) và reranker pruned 35.6M. Phép đo thực hiện trong môi trường CPU/API trên máy cá nhân (mục~\ref{subsection:4.1.1}), nên độ trễ phản ánh thiết lập triển khai thực tế chứ không so trực tiếp với độ trễ xếp hạng đo trên GPU ở các bảng trước.
+
+\begin{table}[H]
+    \centering
+    \caption{Đánh giá đầu cuối trên 390 câu trắc nghiệm: pipeline v1 so với v2}
+    \label{tab:reranker-e2e}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.8cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{2.0cm}|}
+        \hline
+        \textbf{Pipeline} & \textbf{Accuracy} & \textbf{Độ trễ/câu} & \shortstack{\textbf{Intent}\\\textbf{acc.}} \\ \hline
+        v1 baseline (1024d, GPT router, BGE-reranker-v2-m3) & 97.44\% (380/390) & $\approx$25,898ms & 94.62\% \\ \hline
+        \textbf{v2 (512d, Sentence-BERT/SetFit router, pruned 35.6M)} & \textbf{97.18\% (379/390)} & \textbf{$\approx$2,630ms} & \textbf{97.69\%} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Về độ chính xác, hai pipeline gần như tương đương: v2 chỉ kém v1 đúng một câu (379 so với 380 trên 390), trong khi tổng thời gian mỗi câu giảm khoảng 9.85 lần và loại bỏ chi phí gọi API cho cả định tuyến lẫn rerank. Đáng chú ý, router cục bộ dựa trên Sentence-BERT/SetFit của v2 phân loại ý định tốt hơn GPT router của v1 (97.69\% so với 94.62\%, chi tiết ở mục~\ref{section:4.4}).
+
+\begin{table}[H]
+    \centering
+    \caption{Độ trễ trung bình theo thành phần (ms/câu)}
+    \label{tab:e2e-latency}
+    {\small
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.6cm}|>{\centering\arraybackslash}p{2.8cm}|>{\centering\arraybackslash}p{2.8cm}|>{\centering\arraybackslash}p{1.8cm}|}
+        \hline
+        \textbf{Module} & \textbf{v1 baseline} & \textbf{v2} & \textbf{Speedup} \\ \hline
+        Routing & 743.0 & 49.1 & 15.1$\times$ \\ \hline
+        Truy hồi & 21.9 & 6.3 & 3.5$\times$ \\ \hline
+        Rerank & 23,166.6 & 1,151.5 & 20.1$\times$ \\ \hline
+        Sinh câu trả lời (LLM) & 1,966.2 & 1,423.5 & 1.4$\times$ \\ \hline
+        \textbf{Tổng} & \textbf{25,897.8} & \textbf{2,630.4} & \textbf{9.85$\times$} \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Rerank đóng góp phần tăng tốc lớn nhất, khoảng 20.1 lần khi chuyển từ BGE-reranker-v2-m3 sang pruned 35.6M; tiếp theo là định tuyến, khoảng 15.1 lần khi chuyển từ GPT API sang router cục bộ dựa trên Sentence-BERT/SetFit. Bước sinh câu trả lời bằng LLM gần như không đổi nên trở thành thành phần độ trễ chi phối còn lại của v2. Về truy hồi, v2 có recall hơi thấp hơn v1 (gold-hit 96.15\% so với 96.92\%, nhiều hơn ba câu miss), một đánh đổi nhỏ khi dùng embedding 512 chiều nhưng không làm thay đổi đáng kể accuracy cuối cùng.
+
+\begin{table}[H]
+    \centering
+    \caption{Dung lượng lưu trữ của embedding cache và index trong pipeline đầu cuối}
+    \label{tab:e2e-storage}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.5cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{3.0cm}|>{\centering\arraybackslash}p{2.3cm}|}
+        \hline
+        \textbf{Thành phần} & \textbf{v1 baseline 1024d} & \textbf{v2 512d} & \textbf{Tỉ lệ v1/v2} \\ \hline
+        Model embedding & 2,187.00 MiB & 2,181.91 MiB & 1.00$\times$ \\ \hline
+        Chunk embedding cache & 3.18 MiB & 1.59 MiB & 2.00$\times$ \\ \hline
+        Query embedding cache & 1.58 MiB & 0.82 MiB & 1.93$\times$ \\ \hline
+        Chroma DB & 10.68 MiB & 9.45 MiB & 1.13$\times$ \\ \hline
+        \textbf{Cache + Chroma} & \textbf{15.44 MiB} & \textbf{11.85 MiB} & \textbf{1.30$\times$} \\ \hline
+        Tổng model + runtime storage & 2,202.44 MiB & 2,193.77 MiB & 1.004$\times$ \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Bảng~\ref{tab:e2e-storage} cho thấy lợi ích bộ nhớ chính của v2 nằm ở phần vector runtime: đoạn cache giảm từ ma trận $(813, 1024)$ xuống $(813, 512)$ float32, còn query cache giảm từ 390 vector 1024 chiều xuống 390 vector 512 chiều. Vì vậy phần raw embedding cache giảm gần đúng 2 lần. Chroma DB chỉ giảm 1.13 lần do ngoài vector còn chứa metadata và cấu trúc chỉ mục. Nếu tính cả thư mục model embedding, tổng dung lượng chỉ giảm nhẹ vì hai encoder đều có kích thước khoảng 2.18GB; tuy nhiên trong triển khai với corpus lớn hơn, phần cache/index sẽ tăng tuyến tính theo số đoạn và lợi thế 512d sẽ rõ hơn.
+
+Nhìn chung, pipeline v2 giữ được độ chính xác của v1 nhưng nhanh hơn gần 10 lần, giảm lưu trữ runtime cho vector/index và chạy hoàn toàn cục bộ, đúng với mục tiêu hiệu quả của đồ án.
+
+\subsection{Phân rã nguồn lỗi đầu cuối}
+\label{subsection:4.2.9}
+ 
+Bảng~\ref{tab:reranker-e2e} cho thấy v2 kém v1 đúng một câu về độ chính xác (379 so với 380 trên 390). Để xác định khoản chênh này đến từ thành phần nào trong pipeline, đồ án phân rã từng câu trả lời sai theo hai trục độc lập: (1) bộ phân loại ý định định tuyến \emph{đúng} hay \emph{sai}, và (2) đáp án cuối \emph{đúng} hay \emph{sai}. Kết quả tạo thành ma trận $2\times2$ ở Bảng~\ref{tab:e2e-confusion}.
+ 
+\begin{table}[H]
+    \centering
+    \caption{Ma trận định tuyến $\times$ đáp án cuối trên 390 câu trắc nghiệm}
+    \label{tab:e2e-confusion}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.0cm}|c|c|c|c|}
+        \hline
+        & \multicolumn{2}{c|}{\textbf{v1 (GPT router)}} & \multicolumn{2}{c|}{\textbf{v2 (Sentence-BERT/SetFit router)}} \\ \cline{2-5}
+        \textbf{Trường hợp} & \textbf{Đáp án đúng} & \textbf{Đáp án sai} & \textbf{Đáp án đúng} & \textbf{Đáp án sai} \\ \hline
+        Định tuyến đúng & 361 & 8 & 371 & 10 \\ \hline
+        Định tuyến sai & 19 & 2 & 8 & 1 \\ \hline
+    \end{tabular}
+    }
+\end{table}
+ 
+Ô đáng chú ý nhất là \emph{định tuyến sai \textbf{và} đáp án sai} --- tức lỗi định tuyến thực sự làm hỏng đáp án cuối: v2 chỉ có 1 câu, v1 có 2 câu. Như vậy, mặc dù v2 có chín câu định tuyến sai, gần như toàn bộ là vô hại với độ chính xác: sáu câu \plaincode{tra_cuu} bị định tuyến nhầm sang \plaincode{tinh_toan} chỉ phát sinh thêm một lượt suy luận (lỗi chi phí/độ trễ, không sai đáp án), còn trong ba câu \plaincode{tinh_toan} bị nhầm sang \plaincode{tra_cuu}, chỉ duy nhất một câu thực sự mất bước suy luận từng bước và bị lật đáp án (ví dụ câu hỏi ``\textit{kích thước large\_string gấp bao nhiêu lần kích thước buffer}'' --- một phép chia bị nhận nhầm là tra cứu do cách phát biểu đơn giản, đúng dạng lỗi biên đã mô tả ở mục~\ref{section:4.4} liên quan đến câu tính toán phát biểu giống tra cứu). Hệ quả là việc thay GPT router bằng router cục bộ dựa trên Sentence-BERT/SetFit \emph{không} làm giảm độ chính xác, thậm chí còn giảm một câu lỗi do định tuyến.
+ 
+Như vậy, khoản chênh một câu của v2 không đến từ việc thay router mà phản ánh đánh đổi recall ở tầng truy hồi khi giảm chiều biểu diễn xuống 512 --- mục~\ref{subsection:4.2.8} đã ghi nhận v2 có tỉ lệ gold-hit thấp hơn v1 một chút --- một lựa chọn có chủ đích để đổi lấy dung lượng vector index và chi phí tìm kiếm tương đồng nhỏ hơn hai lần. Các hướng cải thiện tầng truy hồi được thảo luận ở mục~\ref{section:4.6}.
+
+\section{Đánh giá embedding}
+\label{section:4.3}
+
+\subsection{Thiết lập đánh giá}
+\label{subsection:4.3.1}
+
+Embedding được đánh giá trên hai bộ test. D1 (in-domain) gồm 157 queries trên corpus 2,317 đoạn của các tài liệu thuộc miền huấn luyện, với câu hỏi tách riêng và không dùng khi train. D2 (độc lập) gồm 343 queries trên 50 tài liệu độc lập (corpus 813 đoạn). D1 đánh giá truy hồi in-domain; D2 đánh giá zero-shot trên tài liệu chưa từng thấy và đồng thời là tập dùng chung cho đánh giá reranker.
+
+\begin{table}[H]
+    \centering
+    \caption{Các tập dữ liệu đánh giá embedding}
+    \label{tab:embedding-evaluation-sets}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{2.7cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{3.4cm}|}
+        \hline
+        \textbf{Tập test} & \textbf{Queries} & \textbf{Corpus} & \textbf{Nguồn tài liệu} & \textbf{Cách sinh câu hỏi} \\ \hline
+        D1 (in-domain) & 157 & 2,317 đoạn & Miền huấn luyện (200 docs) & Tách từ tập câu hỏi, không dùng khi train \\ \hline
+        D2 (độc lập) & 343 & 813 đoạn & Độc lập (50 docs) & Tập test chung với reranker \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+\subsection{Kết quả trên hai tập kiểm thử}
+\label{subsection:4.3.2}
+
+\begin{table}[H]
+    \centering
+    \caption{Kết quả trên tập D1}
+    \label{tab:embedding-internal-benchmark}
+    {\scriptsize
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.4cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.9cm}|}
+        \hline
+        \textbf{Model} & \textbf{Acc@1} & \textbf{Acc@5} & \textbf{MRR@10} & \textbf{NDCG@10} \\ \hline
+        BKAI bi-encoder & 58.60\% & 80.89\% & 0.6877 & 0.6451 \\ \hline
+        Vietnamese Embedding v1 & 71.34\% & 94.27\% & 0.8127 & 0.8037 \\ \hline
+        Vietnamese Embedding v2 baseline & 73.89\% & 93.63\% & 0.8259 & 0.8032 \\ \hline
+        BGE-M3 raw & 74.52\% & 94.90\% & 0.8384 & \textbf{0.8409} \\ \hline
+        \textbf{Tinh chỉnh 512d (GIST$\to$MNRL)} & \textbf{76.43\%} & \textbf{96.18\%} & \textbf{0.8454} & 0.8392 \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Kết quả trên tập D2}
+    \label{tab:embedding-external-benchmark}
+    {\scriptsize
+    \setlength{\tabcolsep}{3pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.4cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.8cm}|>{\centering\arraybackslash}p{1.9cm}|}
+        \hline
+        \textbf{Model} & \textbf{Acc@1} & \textbf{Acc@5} & \textbf{MRR@10} & \textbf{NDCG@10} \\ \hline
+        BKAI bi-encoder & 50.73\% & 77.55\% & 0.6190 & 0.6627 \\ \hline
+        Vietnamese Embedding v1 & 69.10\% & 90.09\% & 0.7830 & 0.8258 \\ \hline
+        Vietnamese Embedding v2 baseline & 70.55\% & 92.13\% & 0.7976 & 0.8334 \\ \hline
+        BGE-M3 raw & 68.80\% & 91.25\% & 0.7806 & 0.8172 \\ \hline
+        \textbf{Tinh chỉnh 512d (GIST$\to$MNRL)} & \textbf{72.30\%} & \textbf{92.42\%} & \textbf{0.8042} & \textbf{0.8413} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Tinh chỉnh 512d (GIST$\to$MNRL) thắng Acc@1 rõ rệt trên cả D1 và D2. Trên D1 (in-domain), Acc@1 tăng từ 73.89\% lên 76.43\% và MRR@10 cao nhất (0.8454). Trên D2 (độc lập), Acc@1 tăng từ 70.55\% lên 72.30\%, đồng thời MRR@10 = 0.8042 và NDCG@10 = 0.8413 đều cao nhất --- GIST ở giai đoạn 1 giúp khả năng tổng quát hóa nhờ lọc false negatives khi học. Như vậy tinh chỉnh không chỉ cải thiện trên dữ liệu quen thuộc mà còn giữ lợi ích trên tài liệu chưa từng thấy.
+
+Lưu ý về cách đo: MRR@10 của embedding trên D2 (0.8042) là kết quả xếp hạng toàn corpus bằng evaluator của embedding; trong phân tích pipeline reranker (mục~\ref{subsection:4.2.4}), baseline khi chưa rerank được đo trên pool top-20 nên đạt 0.8023 --- chênh nhỏ do khác phạm vi đánh giá, cùng một bộ truy hồi.
+
+\subsection{Phân tích số chiều biểu diễn MRL}
+\label{subsection:4.3.3}
+
+\begin{table}[H]
+    \centering
+    \caption{Phân tích số chiều biểu diễn MRL trên D1 và D2}
+    \label{tab:embedding-dimensions}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{|>{\centering\arraybackslash}p{2.4cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.2cm}|>{\centering\arraybackslash}p{2.2cm}|}
+        \hline
+        \textbf{Test} & \textbf{Dim} & \textbf{Acc@1} & \textbf{MRR@10} & \textbf{NDCG@10} \\ \hline
+        D1 & 256 & 72.61\% & 0.8094 & 0.8067 \\ \hline
+        D1 & \textbf{512} & \textbf{76.43\%} & 0.8454 & 0.8392 \\ \hline
+        D1 & 1024 & 75.80\% & 0.8519 & 0.8418 \\ \hline
+        D2 & 256 & 69.68\% & 0.7784 & 0.8140 \\ \hline
+        D2 & \textbf{512} & \textbf{72.30\%} & 0.8042 & 0.8413 \\ \hline
+        D2 & 1024 & 71.14\% & 0.8068 & 0.8428 \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Kích thước tăng theo đúng quy luật MRL (256 < 512 $\leq$ 1024). 512-dim thắng Acc@1 ở cả D1 và D2 (76.43\%/72.30\% so với 75.80\%/71.14\% của 1024-dim); 1024-dim nhỉnh MRR@10 và NDCG@10 sát nút trên D2 (chênh dưới 0.003). Hai kích thước gần như tương đương về chất lượng tổng thể, nên 512-dim được chọn làm cấu hình chính nhờ giảm storage và chi phí similarity search 2 lần. 256-dim kém rõ rệt (giảm trên 3 điểm phần trăm Acc@1) nên chỉ dùng khi cần tối đa tốc độ hoặc bộ nhớ.
+
+\subsection{Nghiên cứu loại bỏ curriculum và GIST}
+\label{subsection:4.3.4}
+
+Pipeline embedding cuối dùng curriculum hai stage với loss khác nhau theo stage. Giai đoạn 1 dùng GISTEmbedLoss học từ synthesized negatives --- dữ liệu dễ lẫn false negative nên cần guide model BGE-M3 lọc bớt. Giai đoạn 2 chuyển sang MultipleNegativesRankingLoss (MNRL) với mined hard negatives --- dữ liệu đã sạch (mine theo gap điểm BGE-reranker-v2-m3, khác tài liệu). Lý do không dùng GIST ở giai đoạn 2: GIST có xu hướng lọc nhầm chính các mined hard negative này vì chúng ``trông giống'' positive, làm mất tín hiệu phân biệt tinh vi; MNRL giữ lại toàn bộ hard negative nên học phân biệt tốt hơn.
+
+\begin{table}[H]
+    \centering
+    \caption{Cấu hình huấn luyện embedding cuối cùng}
+    \label{tab:embedding-training-final}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{3.2cm}|>{\centering\arraybackslash}p{1.3cm}|>{\centering\arraybackslash}p{1.2cm}|>{\centering\arraybackslash}p{1.4cm}|}
+        \hline
+        \textbf{Giai đoạn} & \textbf{Loss} & \textbf{Nguồn negative} & \textbf{Epochs} & \textbf{Batch} & \textbf{LR} \\ \hline
+        giai đoạn 1 & GIST (guide BGE-M3, temp 0.01) & Synthesized, signal rõ & 2 & 64 & $2\times10^{-6}$ \\ \hline
+        giai đoạn 2 & MNRL (scale 20) & Mined hard negatives & 1 & 32 & $5\times10^{-7}$ \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+GISTEmbedLoss ở giai đoạn 1 dùng BGE-M3 làm guide model để lọc false negatives trong in-batch negatives. Điều này quan trọng vì corpus kỹ thuật có nhiều đoạn cùng chủ đề; positive của query này có thể liên quan tới query khác nhưng MNRL thông thường vẫn xem nó là negative. GIST giảm nhiễu này và góp phần giúp đã tinh chỉnh embedding generalize tốt trên D2 độc lập, thể hiện qua việc GIST$\to$MNRL đạt MRR@10 và NDCG@10 cao nhất trên D2 trong ablation curriculum loss.
+
+Bảng~\ref{tab:embedding-curriculum-loss} kiểm chứng lựa chọn loss bằng cách so sánh ba cấu hình (cùng base model, cùng dữ liệu, cùng hyperparameters, chỉ khác loss mỗi stage, đều ở 512d).
+
+\begin{table}[H]
+    \centering
+    \caption{Ablation curriculum loss: GIST vs MNRL theo stage (512d)}
+    \label{tab:embedding-curriculum-loss}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.4cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{1.9cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{1.9cm}|}
+        \hline
+        \textbf{Cấu hình} & \textbf{D1 Acc@1} & \textbf{D1 MRR} & \textbf{D2 Acc@1} & \textbf{D2 MRR} \\ \hline
+        GIST $\to$ GIST & 73.89\% & 0.8308 & 71.14\% & 0.7999 \\ \hline
+        MNRL $\to$ MNRL & 75.80\% & 0.8441 & 71.14\% & 0.7975 \\ \hline
+        \textbf{GIST $\to$ MNRL} & \textbf{76.43\%} & \textbf{0.8454} & \textbf{72.30\%} & \textbf{0.8042} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+GIST$\to$MNRL thắng MRR@10 trên cả D1 và D2. GIST$\to$GIST kém hơn vì dùng GIST ở giai đoạn 2 có thể lọc nhầm các mined hard negative; MNRL$\to$MNRL thiếu lọc false negative ở giai đoạn 1. GIST$\to$MNRL kết hợp ưu điểm của cả hai: lọc nhiễu khi học rộng (giai đoạn 1) và giữ hard negative khi tinh chỉnh (giai đoạn 2). Chênh tuyệt đối nhỏ (khoảng 1--3 câu mỗi bộ), nhưng tính nhất quán trên cả in-domain và zero-shot D2 cùng cơ chế giải thích về vai trò hard negative cho thấy đây là xu hướng thật, không phải dao động ngẫu nhiên.
+
+\section{Đánh giá bộ phân loại ý định}
+\label{section:4.4}
+
+Bộ phân loại ý định v2 (mô tả ở mục~\ref{section:3.9}) tinh chỉnh một Sentence-BERT tiếng Việt (\plaincode{keepitreal/vietnamese-sbert}, dựa trên PhoBERT-base) theo phương pháp SetFit --- contrastive learning trên encoder rồi đặt một head Logistic Regression trên embedding. Dữ liệu gồm 983 câu sạch với tỉ lệ lớp xấp xỉ 12:1, nên metric chính là F1-macro và việc đánh giá dùng stratified 5-fold cross-validation; một tập test tách riêng 80/20 được dùng bổ sung để phân tích cơ cấu lỗi theo từng lớp.
+
+Bảng~\ref{tab:intent-cv} so sánh ba cấu hình theo F1-macro 5-fold. Tinh chỉnh encoder bằng contrastive learning nâng F1-macro từ 0.859 (embedding đông cứng, chỉ train head) lên 0.947, cải thiện khoảng 0.09 điểm. Hai backbone Sentence-BERT tiếng Việt dựa trên PhoBERT-base cho kết quả tương đương; BKAI Vietnamese bi-encoder có mean ngang nhưng độ lệch chuẩn nhỏ hơn (ổn định hơn).
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh cấu hình ý định classifier theo F1-macro}
+    \label{tab:intent-cv}
+    {\small
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{7.8cm}|>{\centering\arraybackslash}p{4.2cm}|}
+        \hline
+        \textbf{Cấu hình} & \textbf{F1-macro (5-fold CV)} \\ \hline
+        Embedding đông cứng + Logistic Regression & 0.859 \\ \hline
+        \textbf{SetFit tinh chỉnh (\plaincode{keepitreal/vietnamese-sbert})} & \textbf{0.947 $\pm$ 0.028} \\ \hline
+        SetFit tinh chỉnh (\plaincode{bkai-foundation-models/vietnamese-bi-encoder}) & 0.950 $\pm$ 0.017 \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+Độ lệch chuẩn ($\pm0.02$--$0.03$) chủ yếu đến từ việc lớp \plaincode{tinh_toan} chỉ có 76 mẫu, bị chia mỏng qua các fold (khoảng 15 mẫu mỗi tập test); mỗi câu phân loại sai làm F1-macro của fold đó thay đổi vài phần trăm. Vì vậy con số 5-fold (0.947) đáng tin hơn kết quả single-split (lên tới 0.981), vốn là đầu lạc quan.
+
+Cơ cấu cải thiện thể hiện rõ khi phân tích theo lớp trên tập test tách riêng. Ở cấu hình đông cứng, lớp \plaincode{tinh_toan} có precision thấp (0.60--0.64): model nhầm nhiều câu \plaincode{tra_cuu} có chứa số liệu thành \plaincode{tinh_toan} (ví dụ ``hằng số điện môi có giá trị bao nhiêu?'' --- thực chất là tra một giá trị có sẵn). Sau tinh chỉnh contrastive, precision lớp \plaincode{tinh_toan} đạt 1.00 và không còn false positive nào trên tập test --- ranh giới \textit{có-sẵn so với phải-tính} đã được học đúng. Bảng~\ref{tab:intent-setfit-intrinsic} trình bày chất lượng nội tại của classifier v2; Bảng~\ref{tab:intent-results} mới so sánh router v1 và v2 trên cùng tập 390 câu MCQ đầu cuối, tránh trộn kết quả test tách riêng/CV với kết quả pipeline.
+
+\begin{table}[H]
+    \centering
+    \caption{Đánh giá nội tại bộ phân loại ý định v2 (SetFit)}
+    \label{tab:intent-setfit-intrinsic}
+    {\small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{3.4cm}|>{\raggedright\arraybackslash}p{5.2cm}|}
+        \hline
+        \textbf{Metric} & \textbf{Kết quả} & \textbf{Protocol} \\ \hline
+        Accuracy & 99.49\% & Test tách riêng 80/20 trên tập ý định sạch \\ \hline
+        F1-macro & 0.947 $\pm$ 0.028 & Stratified 5-fold CV trên 983 câu \\ \hline
+        F1 lớp \plaincode{tra_cuu} & 0.997 & Test tách riêng \\ \hline
+        F1 lớp \plaincode{tinh_toan} & 0.966 & Test tách riêng \\ \hline
+        Độ trễ/câu & $\approx 11$ms đơn, $<1$ms batch & Đo suy luận local trên GPU T4 \\ \hline
+        Chi phí/1M queries & \$0 & Chạy local, không gọi API \\ \hline
+    \end{tabular}
+    }
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{So sánh bộ định tuyến v1 (GPT) và v2 (Sentence-BERT/SetFit)}
+    \label{tab:intent-results}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\centering\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{4.2cm}|}
+        \hline
+        \textbf{Metric} & \textbf{GPT-4o-mini router (v1)} & \textbf{Sentence-BERT/SetFit router (v2)} \\ \hline
+        Độ chính xác ý định & 94.62\% (369/390) & \textbf{97.69\% (381/390)} \\ \hline
+        Số câu sai ý định & 21 & \textbf{9} \\ \hline
+        Gold \plaincode{tra_cuu} $\rightarrow$ routed \plaincode{tinh_toan} & 21 & \textbf{6} \\ \hline
+        Gold \plaincode{tinh_toan} $\rightarrow$ routed \plaincode{tra_cuu} & \textbf{0} & 3 \\ \hline
+        Phân bố routed ý định & 322 \plaincode{tra_cuu}, 68 \plaincode{tinh_toan} & 340 \plaincode{tra_cuu}, 50 \plaincode{tinh_toan} \\ \hline
+        Độ trễ định tuyến trung bình & 743.0ms/câu (API) & \textbf{49.1ms/câu (local)} \\ \hline
+        Chi phí/1M queries & Có chi phí API, phụ thuộc biểu giá và token đầu vào & \textbf{\$0} \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Đồ án cũng khảo sát việc bổ sung dữ liệu bằng paraphrase do LLM sinh (786 câu) nhưng loại bỏ hướng này. Kiểm tra cho thấy paraphrase bị trôi nhãn: LLM thường bỏ số liệu cụ thể và biến câu yêu cầu tính toán thành câu hỏi công thức hoặc khái niệm (mang sắc thái \plaincode{tra_cuu}), khiến 17/49 câu \plaincode{tinh_toan} bị đổi ý nghĩa trong khi vẫn giữ nhãn cũ. Đưa dữ liệu này vào huấn luyện sẽ tiêm nhãn sai vào đúng lớp thiểu số đang yếu. Đây là biểu hiện của distribution gap khi dùng synthetic data, và là lý do model cuối chỉ dùng dữ liệu gán nhãn tay.
+
+So với mục tiêu thiết kế (accuracy $\geq 97\%$, độ trễ thấp), F1-macro 0.947 và accuracy trên test tách riêng 99.49\% đáp ứng ngưỡng chất lượng nội tại. Khi đưa vào pipeline MCQ 390 câu, router cục bộ dựa trên Sentence-BERT/SetFit đạt ý định accuracy 97.69\%, cao hơn GPT router v1 94.62\%. Về độ trễ, classifier local đạt khoảng 11ms/câu khi xử lý đơn lẻ trên GPU T4 và dưới 1ms/câu khi batch; trong phép đo đầu cuối trên máy cá nhân, định tuyến v2 trung bình 49.1ms/câu, nhanh hơn GPT router v1 743.0ms/câu khoảng 15 lần, đồng thời loại bỏ chi phí API và cho phép chạy offline.
+
+\section{Khuyến nghị cấu hình triển khai}
+\label{section:4.5}
+
+Từ kết quả embedding và reranker, cấu hình được khuyến nghị cho pipeline v2 là đã tinh chỉnh embedding 512d để truy xuất top-20, sau đó dùng mmarco-mMiniLMv2 117M đã tinh chỉnh để rerank. Cấu hình này đạt gần chất lượng teacher BGE-reranker-v2-m3 nhưng có độ trễ thấp hơn nhiều trong phép đo xếp hạng pipeline.
+
+\begin{table}[H]
+    \centering
+    \caption{Các cấu hình pipeline khuyến nghị}
+    \label{tab:pipeline-recommendations}
+    {\small
+    \setlength{\tabcolsep}{4pt}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{5.2cm}|>{\centering\arraybackslash}p{2.0cm}|>{\centering\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{3.6cm}|}
+        \hline
+        \textbf{Ưu tiên} & \textbf{Cấu hình} & \textbf{MRR@10} & \textbf{Độ trễ} & \textbf{Nhận xét} \\ \hline
+        Tốc độ tối đa & Embedding tinh chỉnh 512d, không reranker & 0.8023 & 6.8ms & Phù hợp khi tài nguyên rất hạn chế \\ \hline
+        \textbf{Cân bằng khuyến nghị} & Embedding tinh chỉnh 512d + H384/mmarco 117M đã tinh chỉnh & \textbf{0.8753} & \textbf{23.7ms} & Đạt 99.4\% MRR của BGE-reranker-v2-m3 với độ trễ thấp hơn khoảng 5.9 lần \\ \hline
+        Bộ nhớ thấp & Embedding tinh chỉnh 512d + pruned mmarco 35.6M & 0.8718 & 23.8ms & Giảm tham số 69.7\%, chất lượng gần mmarco 117M \\ \hline
+        Chất lượng tối đa & Embedding tinh chỉnh 512d + BGE-reranker-v2-m3 teacher & 0.8804 & 138.8ms & Chất lượng cao nhất nhưng độ trễ lớn \\ \hline
+    \end{tabular}%
+    }
+    }
+\end{table}
+
+Kết quả này cho thấy lựa chọn tối ưu không phải luôn là model nhỏ nhất. Khi bộ truy hồi đã mạnh, reranker 33M không đủ capacity để khai thác candidate list tốt hơn, trong khi mmarco 117M và pruned 35.6M vẫn cải thiện đáng kể. Vì vậy, pipeline production nên dùng 512d embedding làm bộ truy hồi chính và chọn giữa mmarco 117M hoặc pruned 35.6M tùy ràng buộc bộ nhớ.
+
+\section{Phân tích lỗi tổng thể}
+\label{section:4.6}
+
+Tổng hợp phân tích từ các thành phần cho thấy ba nguồn gốc lỗi chính theo thứ tự tác động giảm dần.
+
+Trên reranker production pruned 35.6M, phân tích 64 query miss (Hit@1 = 81.3\%, tức 279/343) cho thấy cơ cấu lỗi như sau: 67.2\% là near miss (gold bị xếp ở rank 1--4 thay vì rank 1), 25.0\% là far miss và chỉ 7.8\% là truy hồi miss (gold không có trong pool top-20). Phần lớn nhầm lẫn đến từ cùng tài liệu (same-doc 72.9\%) thay vì khác tài liệu (cross-doc 27.1\%). Theo độ khó, Hit@1 đạt 83.5\% ở nhóm easy, 81.0\% ở medium và 75.0\% ở hard. Như vậy, đa số lỗi là sai lệch thứ hạng sát ngưỡng và nhầm giữa các đoạn gần nhau trong cùng tài liệu, không phải mất gold khỏi pool.
+
+\noindent\textbf{Nguồn 1 -- Giới hạn trần của truy hồi.}
+
+Một phần lỗi xuất hiện trước khi reranker nhìn thấy dữ liệu: gold đoạn không nằm trong top-20 candidates hoặc chỉ xuất hiện ở vị trí thấp. Embedding tinh chỉnh 512d cải thiện Acc@1 trên D1 (in-domain) từ 73.89\% lên 76.43\% và trên D2 độc lập từ 70.55\% lên 72.30\%, giúp giảm nhóm lỗi truy hồi nhưng không loại bỏ hoàn toàn. Các trường hợp khó nhất gồm acronym match, bảng số liệu liền kề và đoạn có nội dung gần giống nhau.
+
+\noindent\textbf{Nguồn 2 -- Sai lệch nhỏ trong xếp hạng.}
+
+Nhiều lỗi không phải sai hoàn toàn mà là gold nằm gần ngưỡng chọn ngữ cảnh, ví dụ rank 6--10. Tăng top-K từ 5 lên 6 hoặc 7 có thể khôi phục thêm một phần các query này, nhưng phải đánh đổi với ngữ cảnh window lớn hơn và chi phí generation cao hơn. Đây là trade-off cần được quyết định theo yêu cầu triển khai thực tế.
+
+\noindent\textbf{Nguồn 3 -- Nhầm lẫn đặc thù miền.}
+
+Cross-domain noise và same-domain confusion phản ánh giới hạn của embedding và BM25 với tài liệu kỹ thuật đặc thù. Các hướng cải thiện tiếp theo gồm bổ sung dữ liệu domain-specific cho embedding tinh chỉnh, áp dụng query expansion để tăng recall trước khi rerank, hoặc cải thiện chunking strategy cho bảng biểu và đoạn định nghĩa ngắn.
+
+Nhìn tổng thể, pipeline v2 đạt mục tiêu chính: đã tinh chỉnh embedding 512d (curriculum GIST$\to$MNRL) đạt MRR@10 = 0.8042 trên D2 độc lập, mmarco 117M đã tinh chỉnh nâng pipeline lên MRR@10 = 0.8753 với độ trễ 23.7ms, còn pruned 35.6M đạt MRR@10 = 0.8718 với dung lượng nhỏ hơn. Các giới hạn còn lại tập trung ở truy hồi ceiling, dữ liệu domain-specific và chunking strategy.
+
+\end{document}

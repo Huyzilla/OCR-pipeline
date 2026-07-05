@@ -1,0 +1,848 @@
+[
+    {
+        "question": "Theo yêu cầu về mật khẩu mạnh, nếu mật khẩu người dùng thông thường hiện có 6 ký tự thì cần thêm ít nhất bao nhiêu ký tự để đạt mức tối thiểu?",
+        "options": {
+            "A": "1 ký tự",
+            "B": "2 ký tự",
+            "C": "3 ký tự",
+            "D": "4 ký tự"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_155::chunk::2"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Mật khẩu người dùng thông thường cần tối thiểu 8 ký tự. Cần thêm 8 - 6 = 2 ký tự.",
+        "evidence": "Mật khẩu mạnh cho người dùng thông thường cần có độ dài lớn hơn hoặc bằng 8 ký tự."
+    },
+    {
+        "question": "Nếu mật khẩu quản trị viên hiện có 7 ký tự, cần thêm ít nhất bao nhiêu ký tự để đạt yêu cầu tối thiểu?",
+        "options": {
+            "A": "1 ký tự",
+            "B": "2 ký tự",
+            "C": "3 ký tự",
+            "D": "4 ký tự"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::2"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Mật khẩu quản trị viên cần tối thiểu 10 ký tự. Cần thêm 10 - 7 = 3 ký tự.",
+        "evidence": "Mật khẩu cho người quản trị hệ thống cần có độ dài lớn hơn hoặc bằng 10 ký tự."
+    },
+    {
+        "question": "Độ dài tối thiểu của mật khẩu quản trị viên nhiều hơn mật khẩu người dùng thông thường bao nhiêu ký tự?",
+        "options": {
+            "A": "1 ký tự",
+            "B": "2 ký tự",
+            "C": "4 ký tự",
+            "D": "8 ký tự"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_155::chunk::2"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Mật khẩu quản trị viên tối thiểu 10 ký tự, người dùng thông thường tối thiểu 8 ký tự. Chênh lệch = 10 - 8 = 2 ký tự.",
+        "evidence": "Người dùng thông thường cần lớn hơn hoặc bằng 8 ký tự; người quản trị hệ thống cần lớn hơn hoặc bằng 10 ký tự."
+    },
+    {
+        "question": "Nếu một tổ chức yêu cầu đổi mật khẩu định kỳ 3 tháng một lần, trong 1 năm người dùng cần đổi mật khẩu bao nhiêu lần?",
+        "options": {
+            "A": "2 lần",
+            "B": "3 lần",
+            "C": "4 lần",
+            "D": "6 lần"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::2"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Một năm có 12 tháng. Nếu đổi 3 tháng một lần thì số lần đổi là 12 / 3 = 4 lần.",
+        "evidence": "Thời hạn đổi mật khẩu ... có thể là 3 tháng, hoặc 6 tháng."
+    },
+    {
+        "question": "Trong ví dụ tràn bộ đệm, nếu large_string dài 256 byte được sao chép vào buffer 16 byte, số byte vượt quá dung lượng buffer là bao nhiêu?",
+        "options": {
+            "A": "16 byte",
+            "B": "128 byte",
+            "C": "240 byte",
+            "D": "256 byte"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::6"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Số byte vượt quá = 256 - 16 = 240 byte.",
+        "evidence": "large_string có độ dài 256 byte; buffer có kích thước 16 byte."
+    },
+    {
+        "question": "Trong ví dụ tràn bộ đệm, kích thước large_string gấp bao nhiêu lần kích thước buffer?",
+        "options": {
+            "A": "8 lần",
+            "B": "16 lần",
+            "C": "32 lần",
+            "D": "240 lần"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_155::chunk::6"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Tỷ lệ kích thước = 256 / 16 = 16 lần.",
+        "evidence": "large_string có kích thước 256 byte; buffer có kích thước 16 byte."
+    },
+    {
+        "question": "Trong ví dụ tràn bộ đệm, nếu chỉ 16 byte đầu tiên của large_string được lưu vào buffer thì còn lại bao nhiêu byte có thể ghi đè lên các ô nhớ khác?",
+        "options": {
+            "A": "16 byte",
+            "B": "128 byte",
+            "C": "240 byte",
+            "D": "272 byte"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::6"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Phần còn lại = 256 - 16 = 240 byte.",
+        "evidence": "Chỉ 16 byte đầu tiên của large_string được lưu vào buffer; large_string có độ dài 256 byte."
+    },
+    {
+        "question": "Sâu SQL Slammer lây nhiễm khoảng 75.000 máy chủ trong 30 phút. Trung bình mỗi phút sâu lây nhiễm khoảng bao nhiêu máy chủ?",
+        "options": {
+            "A": "1.500 máy chủ/phút",
+            "B": "2.500 máy chủ/phút",
+            "C": "3.000 máy chủ/phút",
+            "D": "25.000 máy chủ/phút"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_155::chunk::8"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "average",
+        "solution": "Tốc độ trung bình = 75.000 / 30 = 2.500 máy chủ/phút.",
+        "evidence": "Nó lây nhiễm ra khoảng 75.000 máy chủ chỉ trong khoảng 30 phút."
+    },
+    {
+        "question": "Nếu mỗi máy chủ bị nhiễm SQL Slammer nhận một gói tin UDP kích thước 376 byte, thì 75.000 máy chủ tương ứng với tổng dung lượng khoảng bao nhiêu byte?",
+        "options": {
+            "A": "2.820.000 byte",
+            "B": "8.200.000 byte",
+            "C": "28.200.000 byte",
+            "D": "282.000.000 byte"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::8"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "multiplication",
+        "solution": "Tổng dung lượng = 75.000 × 376 = 28.200.000 byte.",
+        "evidence": "Sâu sử dụng giao thức UDP với kích thước gói tin 376 byte; lây nhiễm khoảng 75.000 máy chủ."
+    },
+    {
+        "question": "Số liệu mô tả SQL Slammer lây nhiễm khoảng 75.000 máy chủ, còn bản đồ tại thời điểm 6h00 UTC ghi nhận 74.855 máy chủ bị nhiễm. Hai số liệu này chênh lệch bao nhiêu máy chủ?",
+        "options": {
+            "A": "45 máy chủ",
+            "B": "145 máy chủ",
+            "C": "245 máy chủ",
+            "D": "1.455 máy chủ"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_155::chunk::8"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Chênh lệch = 75.000 - 74.855 = 145 máy chủ.",
+        "evidence": "Lây nhiễm khoảng 75.000 máy chủ; bản đồ ... với 74.855 máy chủ bị nhiễm."
+    },
+    {
+        "question": "Nếu vòng lặp chính của sâu SQL Slammer gồm 22 lệnh hợp ngữ, thì 100 vòng lặp sẽ thực hiện bao nhiêu lệnh hợp ngữ?",
+        "options": {
+            "A": "220 lệnh",
+            "B": "1.100 lệnh",
+            "C": "2.200 lệnh",
+            "D": "22.000 lệnh"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::8"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "multiplication",
+        "solution": "Số lệnh = 22 × 100 = 2.200 lệnh.",
+        "evidence": "Vòng lặp chính của sâu chỉ gồm 22 lệnh hợp ngữ."
+    },
+    {
+        "question": "Theo thống kê trong tài liệu, thư rác chiếm khoảng 70-80% email trên Internet. Nếu có 1.000 email, số thư rác nằm trong khoảng bao nhiêu?",
+        "options": {
+            "A": "70-80 email",
+            "B": "200-300 email",
+            "C": "700-800 email",
+            "D": "800-900 email"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::20"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "percentage",
+        "solution": "70% của 1.000 là 700, 80% của 1.000 là 800. Vậy khoảng 700-800 email là thư rác.",
+        "evidence": "Khoảng 70-80% lượng email gửi trên mạng Internet là thư rác."
+    },
+    {
+        "question": "Nếu trong một ngày có 5.000 email được gửi trên Internet và thư rác chiếm khoảng 70-80%, thì số email không phải thư rác nằm trong khoảng bao nhiêu?",
+        "options": {
+            "A": "500-1.000 email",
+            "B": "1.000-1.500 email",
+            "C": "3.500-4.000 email",
+            "D": "4.000-4.500 email"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_155::chunk::20"
+        ],
+        "difficulty": "hard",
+        "label": "tinh_toan",
+        "calculation_type": "percentage",
+        "solution": "Nếu thư rác chiếm 70-80% thì email không phải thư rác chiếm 20-30%. Với 5.000 email: 20% = 1.000 và 30% = 1.500.",
+        "evidence": "Khoảng 70-80% lượng email gửi trên mạng Internet là thư rác."
+    },
+    {
+        "question": "Trong trò lừa đảo Nigeria 4-1-9, kẻ lừa đảo hứa trả 20-30% khoản tiền. Nếu khoản tiền là 100 triệu USD, phần tiền được hứa trả nằm trong khoảng bao nhiêu?",
+        "options": {
+            "A": "2-3 triệu USD",
+            "B": "10-20 triệu USD",
+            "C": "20-30 triệu USD",
+            "D": "70-80 triệu USD"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::22"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "percentage",
+        "solution": "20% của 100 triệu là 20 triệu, 30% của 100 triệu là 30 triệu. Vậy khoảng 20-30 triệu USD.",
+        "evidence": "Kẻ lừa đảo hứa sẽ trả cho người tham gia một phần số tiền, lên đến 20-30%."
+    },
+    {
+        "question": "Nếu khoản tiền trong trò lừa đảo Nigeria 4-1-9 là 80 triệu USD và kẻ lừa đảo hứa trả 30%, số tiền được hứa trả là bao nhiêu?",
+        "options": {
+            "A": "16 triệu USD",
+            "B": "20 triệu USD",
+            "C": "24 triệu USD",
+            "D": "30 triệu USD"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_155::chunk::22"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "percentage",
+        "solution": "30% của 80 triệu USD = 0,30 × 80 = 24 triệu USD.",
+        "evidence": "Kẻ lừa đảo hứa sẽ trả cho người tham gia một phần số tiền, lên đến 20-30%."
+    },
+    {
+        "question": "Khi vào số 1, tài liệu nói khoảng 2/3 hành trình đầu nhả nhanh bàn đạp ly hợp. Nếu toàn bộ hành trình bàn đạp ly hợp là 30 cm, phần nhả nhanh dài bao nhiêu cm?",
+        "options": {
+            "A": "10 cm",
+            "B": "15 cm",
+            "C": "20 cm",
+            "D": "25 cm"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_207::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Phần nhả nhanh = 2/3 × 30 = 20 cm.",
+        "evidence": "Sau khi vào số nhả bàn đạp ly hợp, khoảng 2/3 hành trình đầu nhả nhanh."
+    },
+    {
+        "question": "Khi vào số 1, khoảng 1/3 hành trình sau cần nhả từ từ. Nếu toàn bộ hành trình bàn đạp ly hợp là 36 cm, đoạn cần nhả từ từ dài bao nhiêu cm?",
+        "options": {
+            "A": "9 cm",
+            "B": "12 cm",
+            "C": "18 cm",
+            "D": "24 cm"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_207::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Phần nhả từ từ = 1/3 × 36 = 12 cm.",
+        "evidence": "Khoảng 1/3 hành trình sau nhả từ từ."
+    },
+    {
+        "question": "Trong phần cài số trên hộp số cơ khí, nếu người lái chuyển tuần tự từ số 1 lên số 4 thì phải thực hiện bao nhiêu lần chuyển số?",
+        "options": {
+            "A": "2 lần",
+            "B": "3 lần",
+            "C": "4 lần",
+            "D": "5 lần"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_207::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Chuyển tuần tự từ số 1 lên số 4 gồm: 1 sang 2, 2 sang 3, 3 sang 4, tổng cộng 3 lần.",
+        "evidence": "Từ số \"1\" sang số \"2\"; từ số \"2\" sang số \"3\"; từ số \"3\" sang số \"4\"."
+    },
+    {
+        "question": "Trong phần cài số trên hộp số cơ khí, nếu mỗi lần chuyển số từ số 1 lên số 4 đều phải đưa cần số về số 0 trước khi vào số tiếp theo, thì số 0 được đi qua bao nhiêu lần?",
+        "options": {
+            "A": "1 lần",
+            "B": "2 lần",
+            "C": "3 lần",
+            "D": "4 lần"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_207::chunk::3"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Có 3 lần chuyển số: 1→2, 2→3, 3→4. Mỗi lần đều về số 0, nên đi qua số 0 tổng cộng 3 lần.",
+        "evidence": "Kéo nhẹ cần số về số \"0\" sau đó đẩy vào số \"2\"; đẩy cần số về số \"0\", sau đó đẩy vào số \"3\"; đẩy cần số về số \"0\", sau đó đẩy vào số \"4\"."
+    },
+    {
+        "question": "Khi vào số lùi, tài liệu nêu khoảng 2/3 hành trình đầu nhả nhanh ly hợp và 1/3 hành trình sau nhả từ từ. Nếu hành trình ly hợp là 24 cm, phần nhả nhanh dài hơn phần nhả từ từ bao nhiêu cm?",
+        "options": {
+            "A": "4 cm",
+            "B": "8 cm",
+            "C": "12 cm",
+            "D": "16 cm"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_207::chunk::4"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Phần nhả nhanh = 2/3 × 24 = 16 cm. Phần nhả từ từ = 1/3 × 24 = 8 cm. Chênh lệch = 16 - 8 = 8 cm.",
+        "evidence": "Sau khi vào số lùi (R) nhả nhanh bàn đạp ly hợp khoảng 2/3 hành trình đầu... Khoảng 1/3 hành trình sau nhả từ từ."
+    },
+    {
+        "question": "Nếu người lái đang ở số 4 và chuyển lên số 5 qua số 0, thì cần số đi qua tổng cộng bao nhiêu vị trí số tính cả vị trí bắt đầu và kết thúc?",
+        "options": {
+            "A": "2 vị trí",
+            "B": "3 vị trí",
+            "C": "4 vị trí",
+            "D": "5 vị trí"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_207::chunk::4"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Đường chuyển là số 4 → số 0 → số 5, tổng cộng 3 vị trí.",
+        "evidence": "Để chuyển từ số \"4\" sang số \"5\", người lái xe ... kéo cần số về số \"0\", sau đó đẩy nhẹ sang cửa số 5 và đẩy vào số \"5\"."
+    },
+    {
+        "question": "Trong các vị trí P, R, N, D, 2, 1 trên hộp số tự động, nếu coi D, 2 và 1 là các số tiến được nêu trong tài liệu, thì số tiến chiếm bao nhiêu phần trong tổng số 6 vị trí?",
+        "options": {
+            "A": "1/6",
+            "B": "2/6",
+            "C": "3/6",
+            "D": "4/6"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_207::chunk::6"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Các số tiến được nêu là D, 2 và 1, tổng cộng 3 vị trí trên 6 vị trí. Tỷ lệ là 3/6.",
+        "evidence": "Trên bảng đồng hồ cũng hiện các số tương ứng, P, R, N, D, 2, 1; Số 2 là số tiến đi chậm; Số 1 là số tiến khi cần đi rất chậm."
+    },
+    {
+        "question": "Khi khởi động bằng nút bấm, tài liệu yêu cầu bấm và giữ nút khởi động 3 giây. Nếu thực hiện thao tác này 4 lần, tổng thời gian giữ nút là bao nhiêu giây?",
+        "options": {
+            "A": "7 giây",
+            "B": "9 giây",
+            "C": "12 giây",
+            "D": "15 giây"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_208::chunk::1"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Mỗi lần giữ nút 3 giây, 4 lần là 3 × 4 = 12 giây.",
+        "evidence": "Bấm và giữ nút khởi động (3 giây) để khởi động động cơ."
+    },
+    {
+        "question": "Mỗi lần khởi động không được quá 5 giây. Nếu người lái thử khởi động 3 lần, tổng thời gian khởi động tối đa là bao nhiêu giây?",
+        "options": {
+            "A": "5 giây",
+            "B": "10 giây",
+            "C": "15 giây",
+            "D": "20 giây"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_208::chunk::1"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Mỗi lần tối đa 5 giây, 3 lần là 5 × 3 = 15 giây.",
+        "evidence": "Mỗi lần khởi động không được quá 5 giây, sau ba lần khởi động mà động cơ không nổ thì phải dừng lại."
+    },
+    {
+        "question": "Giữa các lần khởi động liên tiếp phải cách nhau từ 2 đến 3 phút. Nếu người lái khởi động 3 lần liên tiếp thì có 2 khoảng nghỉ giữa các lần. Tổng thời gian nghỉ nằm trong khoảng nào?",
+        "options": {
+            "A": "2-3 phút",
+            "B": "4-6 phút",
+            "C": "5-8 phút",
+            "D": "6-9 phút"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_208::chunk::1"
+        ],
+        "difficulty": "hard",
+        "label": "tinh_toan",
+        "calculation_type": "range",
+        "solution": "Có 2 khoảng nghỉ. Mỗi khoảng từ 2 đến 3 phút nên tổng thời gian nghỉ là 2 × 2 đến 2 × 3, tức 4-6 phút.",
+        "evidence": "Giữa các lần khởi động liên tiếp phải cách nhau khoảng thời gian từ 2 đến 3 phút."
+    },
+    {
+        "question": "Nếu người lái khởi động 3 lần, mỗi lần đủ mức tối đa 5 giây và giữa các lần nghỉ tối thiểu 2 phút, tổng thời gian tối thiểu gồm cả khởi động và nghỉ là bao nhiêu giây?",
+        "options": {
+            "A": "135 giây",
+            "B": "150 giây",
+            "C": "255 giây",
+            "D": "375 giây"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_208::chunk::1"
+        ],
+        "difficulty": "hard",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Thời gian khởi động = 3 × 5 = 15 giây. Có 2 khoảng nghỉ tối thiểu, mỗi khoảng 2 phút = 120 giây, nên thời gian nghỉ = 240 giây. Tổng = 15 + 240 = 255 giây.",
+        "evidence": "Mỗi lần khởi động không được quá 5 giây; giữa các lần khởi động liên tiếp phải cách nhau khoảng thời gian từ 2 đến 3 phút."
+    },
+    {
+        "question": "Trước khi tắt động cơ, động cơ xăng cần chạy chậm từ 1-2 phút, còn động cơ Diesel đến 3 phút. Nếu so với mức tối đa của động cơ xăng là 2 phút, động cơ Diesel cần chạy chậm lâu hơn bao nhiêu phút?",
+        "options": {
+            "A": "1 phút",
+            "B": "2 phút",
+            "C": "3 phút",
+            "D": "5 phút"
+        },
+        "answer": "A",
+        "gold_chunk_ids": [
+            "Public_208::chunk::2"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Động cơ Diesel cần đến 3 phút, động cơ xăng tối đa 2 phút. Chênh lệch = 3 - 2 = 1 phút.",
+        "evidence": "Giảm ga để động cơ chạy chậm từ 1-2 phút đối với động cơ xăng và đến 3 phút đối với động cơ diezel."
+    },
+    {
+        "question": "Nếu một xe động cơ xăng chạy chậm 2 phút và một xe động cơ Diesel chạy chậm 3 phút trước khi tắt máy, tổng thời gian chạy chậm của hai xe là bao nhiêu phút?",
+        "options": {
+            "A": "3 phút",
+            "B": "4 phút",
+            "C": "5 phút",
+            "D": "6 phút"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_208::chunk::2"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Tổng thời gian = 2 + 3 = 5 phút.",
+        "evidence": "Động cơ chạy chậm từ 1-2 phút đối với động cơ xăng và đến 3 phút đối với động cơ diezel."
+    },
+    {
+        "question": "Khi khởi hành, khoảng 2/3 hành trình đầu của bàn đạp ly hợp được nhả nhanh. Nếu toàn bộ hành trình bàn đạp ly hợp là 30 cm, đoạn nhả nhanh dài bao nhiêu cm?",
+        "options": {
+            "A": "10 cm",
+            "B": "15 cm",
+            "C": "20 cm",
+            "D": "25 cm"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_208::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Đoạn nhả nhanh = 2/3 × 30 = 20 cm.",
+        "evidence": "Sau khi vào số nhả bàn đạp ly hợp, khoảng 2/3 hành trình đầu nhả nhanh."
+    },
+    {
+        "question": "Khi khởi hành, khoảng 1/3 hành trình sau của bàn đạp ly hợp được nhả từ từ. Nếu toàn bộ hành trình là 36 cm, đoạn nhả từ từ dài bao nhiêu cm?",
+        "options": {
+            "A": "9 cm",
+            "B": "12 cm",
+            "C": "18 cm",
+            "D": "24 cm"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_208::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Đoạn nhả từ từ = 1/3 × 36 = 12 cm.",
+        "evidence": "Khoảng 1/3 hành trình sau nhả từ từ."
+    },
+    {
+        "question": "Khi khởi hành, nếu hành trình bàn đạp ly hợp là 24 cm, phần nhả nhanh 2/3 hành trình dài hơn phần nhả từ từ 1/3 hành trình bao nhiêu cm?",
+        "options": {
+            "A": "4 cm",
+            "B": "8 cm",
+            "C": "12 cm",
+            "D": "16 cm"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_208::chunk::3"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Phần nhả nhanh = 2/3 × 24 = 16 cm. Phần nhả từ từ = 1/3 × 24 = 8 cm. Chênh lệch = 16 - 8 = 8 cm.",
+        "evidence": "Khoảng 2/3 hành trình đầu nhả nhanh; khoảng 1/3 hành trình sau nhả từ từ."
+    },
+    {
+        "question": "Theo yêu cầu tăng số theo thứ tự từ thấp đến cao, nếu xe đang ở số 1 và cần tăng lên số 5 thì người lái phải thực hiện bao nhiêu lần chuyển số?",
+        "options": {
+            "A": "2 lần",
+            "B": "3 lần",
+            "C": "4 lần",
+            "D": "5 lần"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_209::chunk::0"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Tăng tuần tự từ số 1 lên số 5 gồm 1→2, 2→3, 3→4, 4→5, tổng cộng 4 lần chuyển số.",
+        "evidence": "Từ số 1 sang số 2; từ số 2 sang số 3; từ số 3 sang số 4; từ số 4 sang số 5; cần tăng số theo thứ tự từ thấp đến cao."
+    },
+    {
+        "question": "Trong các lần tăng số từ số 1 lên số 5, tài liệu nêu có 2 lần nhả ly hợp nhanh là từ số 3 sang số 4 và từ số 4 sang số 5. Tỷ lệ số lần nhả ly hợp nhanh so với tổng 4 lần tăng số là bao nhiêu?",
+        "options": {
+            "A": "1/4",
+            "B": "1/2",
+            "C": "3/4",
+            "D": "4/4"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_209::chunk::0"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Có 2 lần nhả ly hợp nhanh trên tổng 4 lần tăng số, nên tỷ lệ là 2/4 = 1/2.",
+        "evidence": "Từ số 3 sang số 4: nhả ly hợp nhanh; từ số 4 sang số 5: nhả ly hợp nhanh."
+    },
+    {
+        "question": "Khi chuyển từ số 4 sang số 5, người lái kéo cần số về số 0 rồi đẩy vào số 5. Nếu tính cả vị trí bắt đầu và kết thúc, cần số đi qua bao nhiêu vị trí?",
+        "options": {
+            "A": "2 vị trí",
+            "B": "3 vị trí",
+            "C": "4 vị trí",
+            "D": "5 vị trí"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_209::chunk::0"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Đường chuyển là số 4 → số 0 → số 5, tổng cộng 3 vị trí.",
+        "evidence": "Để chuyển từ số \"4\" sang số \"5\", người lái xe ... kéo cần số về số \"0\", sau đó ... đẩy vào số \"5\"."
+    },
+    {
+        "question": "Nếu người lái đã thực hiện 2 lần tăng số tuần tự từ số 1, thì xe đang ở số mấy?",
+        "options": {
+            "A": "Số 2",
+            "B": "Số 3",
+            "C": "Số 4",
+            "D": "Số 5"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_209::chunk::0"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Từ số 1, tăng 1 lần lên số 2, tăng lần thứ 2 lên số 3.",
+        "evidence": "Cần tăng số theo thứ tự từ thấp đến cao; từ số 1 sang số 2; từ số 2 sang số 3."
+    },
+    {
+        "question": "Theo yêu cầu giảm số theo thứ tự từ cao đến thấp, nếu xe đang ở số 5 và cần giảm xuống số 2 thì phải thực hiện bao nhiêu lần giảm số?",
+        "options": {
+            "A": "2 lần",
+            "B": "3 lần",
+            "C": "4 lần",
+            "D": "5 lần"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_209::chunk::1"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Giảm tuần tự từ số 5 xuống số 2 gồm 5→4, 4→3, 3→2, tổng cộng 3 lần.",
+        "evidence": "Cần giảm số theo thứ tự từ số cao đến số thấp; kéo cần số từ số 5 về số 0 và cài số vào số 4."
+    },
+    {
+        "question": "Khi giảm từ số 5 về số 4 qua số 0, nếu tính cả vị trí bắt đầu và kết thúc thì cần số đi qua bao nhiêu vị trí?",
+        "options": {
+            "A": "2 vị trí",
+            "B": "3 vị trí",
+            "C": "4 vị trí",
+            "D": "5 vị trí"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_209::chunk::1"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Đường chuyển là số 5 → số 0 → số 4, tổng cộng 3 vị trí.",
+        "evidence": "Đạp hết hành trình bàn đạp ly hợp, kéo cần số từ số 5 về số 0 và cài số vào số 4."
+    },
+    {
+        "question": "Trong phần kiểm tra an toàn khi lùi xe, tài liệu liệt kê các cách từ (a) đến (f). Nếu đã thực hiện 4 cách đầu tiên, còn lại bao nhiêu cách chưa thực hiện?",
+        "options": {
+            "A": "1 cách",
+            "B": "2 cách",
+            "C": "3 cách",
+            "D": "4 cách"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_209::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Từ (a) đến (f) có 6 cách. Đã thực hiện 4 cách, còn lại 6 - 4 = 2 cách.",
+        "evidence": "Các cách kiểm tra được liệt kê từ (a) đến (f)."
+    },
+    {
+        "question": "Trong 6 cách kiểm tra an toàn khi lùi xe từ (a) đến (f), có 3 cách kiểm tra qua gương chiếu hậu bên trái, bên phải và trong xe. Tỷ lệ các cách kiểm tra qua gương là bao nhiêu?",
+        "options": {
+            "A": "1/6",
+            "B": "2/6",
+            "C": "3/6",
+            "D": "5/6"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_209::chunk::3"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Có 3 cách kiểm tra qua gương trên tổng 6 cách, nên tỷ lệ là 3/6.",
+        "evidence": "(a) Kiểm tra qua gương chiếu hậu bên trái; (b) bên phải; (c) trong xe; danh sách gồm các mục từ (a) đến (f)."
+    },
+    {
+        "question": "Khi lùi xe, nếu hành trình bàn đạp ly hợp là 20 cm và người lái thực hiện đạp nửa ly hợp, bàn đạp được đạp khoảng bao nhiêu cm?",
+        "options": {
+            "A": "5 cm",
+            "B": "10 cm",
+            "C": "15 cm",
+            "D": "20 cm"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_209::chunk::5"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Nửa hành trình của 20 cm là 20 × 1/2 = 10 cm.",
+        "evidence": "Muốn cho xe chạy chậm, có thể ... thực hiện đạp nửa ly hợp."
+    },
+    {
+        "question": "Khi lùi xe, nếu toàn bộ hành trình bàn đạp ly hợp là 30 cm, thao tác đạp nửa ly hợp tương ứng với bao nhiêu cm?",
+        "options": {
+            "A": "10 cm",
+            "B": "12 cm",
+            "C": "15 cm",
+            "D": "20 cm"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_209::chunk::5"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "ratio",
+        "solution": "Nửa hành trình của 30 cm là 30 × 1/2 = 15 cm.",
+        "evidence": "Có thể lặp lại thao tác cắt, nhả ly hợp liên tục, hoặc thực hiện đạp nửa ly hợp."
+    },
+    {
+        "question": "Trong quá trình lùi ghép dọc, tài liệu yêu cầu quan sát phía sau và hai bên hông xe. Nếu tính phía sau là 1 hướng và hai bên hông xe là 2 hướng, tổng cộng cần quan sát bao nhiêu hướng?",
+        "options": {
+            "A": "1 hướng",
+            "B": "2 hướng",
+            "C": "3 hướng",
+            "D": "4 hướng"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_210::chunk::0"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Cần quan sát 1 hướng phía sau và 2 hướng hai bên hông xe, tổng cộng 1 + 2 = 3 hướng.",
+        "evidence": "Trong quá trình lùi luôn quan sát phía sau và hai bên hông xe qua gương chiếu hậu."
+    },
+    {
+        "question": "Trong trình tự lùi xe ghép dọc, nếu tính hai lần dừng xe: một lần khi tiến đến vị trí phù hợp và một lần khi đã lùi đến vị trí cần đỗ, mỗi lần đều dùng bàn đạp ly hợp và bàn đạp phanh. Tổng số thao tác đạp bàn đạp là bao nhiêu?",
+        "options": {
+            "A": "2 thao tác",
+            "B": "3 thao tác",
+            "C": "4 thao tác",
+            "D": "5 thao tác"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_210::chunk::0"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Mỗi lần dừng dùng 2 bàn đạp: ly hợp và phanh. Có 2 lần dừng nên tổng số thao tác đạp là 2 × 2 = 4.",
+        "evidence": "Đạp bàn đạp ly hợp hết hành trình và đạp phanh để dừng lại; đạp bàn đạp ly hợp, đạp bàn đạp phanh, dừng xe."
+    },
+    {
+        "question": "Trong ghép ngang, nếu mỗi lần dừng xe đều cần đạp bàn đạp ly hợp và bàn đạp phanh, với 3 lần dừng xe thì tổng số thao tác đạp bàn đạp là bao nhiêu?",
+        "options": {
+            "A": "3 thao tác",
+            "B": "4 thao tác",
+            "C": "5 thao tác",
+            "D": "6 thao tác"
+        },
+        "answer": "D",
+        "gold_chunk_ids": [
+            "Public_210::chunk::1"
+        ],
+        "difficulty": "medium",
+        "label": "tinh_toan",
+        "calculation_type": "other",
+        "solution": "Mỗi lần dừng cần 2 thao tác đạp: ly hợp và phanh. Có 3 lần dừng nên tổng là 3 × 2 = 6 thao tác.",
+        "evidence": "Đạp hết hành trình bàn đạp ly hợp, đạp phanh...; đạp bàn đạp ly hợp, đạp bàn đạp phanh...; đạp bàn đạp ly hợp hết hành trình, đạp bàn đạp phanh..."
+    },
+    {
+        "question": "Theo phương pháp căn đường, tâm người lái và tâm vết bánh trước bên trái thường cách nhau khoảng 100-150 mm. Độ chênh lệch giữa giới hạn trên và giới hạn dưới của khoảng này là bao nhiêu?",
+        "options": {
+            "A": "25 mm",
+            "B": "50 mm",
+            "C": "100 mm",
+            "D": "150 mm"
+        },
+        "answer": "B",
+        "gold_chunk_ids": [
+            "Public_215::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "subtraction",
+        "solution": "Độ chênh lệch = 150 - 100 = 50 mm.",
+        "evidence": "Tâm của người lái và tâm vết bánh trước bên trái cách nhau khoảng 100mm - 150mm."
+    },
+    {
+        "question": "Theo phương pháp căn đường, tâm người lái và tâm vết bánh trước bên trái thường cách nhau khoảng 100-150 mm. Giá trị trung bình của khoảng cách này là bao nhiêu?",
+        "options": {
+            "A": "100 mm",
+            "B": "120 mm",
+            "C": "125 mm",
+            "D": "150 mm"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_215::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "average",
+        "solution": "Giá trị trung bình = (100 + 150) / 2 = 125 mm.",
+        "evidence": "Tâm của người lái và tâm vết bánh trước bên trái cách nhau khoảng 100mm - 150mm."
+    },
+    {
+        "question": "Khi hai xe ô tô tránh nhau, tài liệu yêu cầu chia phần đường tưởng tượng của xe mình ra làm 3 phần bằng nhau. Nếu phần đường tưởng tượng rộng 3,6 m thì mỗi phần rộng bao nhiêu mét?",
+        "options": {
+            "A": "0,9 m",
+            "B": "1,0 m",
+            "C": "1,2 m",
+            "D": "1,8 m"
+        },
+        "answer": "C",
+        "gold_chunk_ids": [
+            "Public_215::chunk::3"
+        ],
+        "difficulty": "easy",
+        "label": "tinh_toan",
+        "calculation_type": "division",
+        "solution": "Mỗi phần rộng = 3,6 / 3 = 1,2 m.",
+        "evidence": "Chia phần đường tưởng tượng của xe mình ra làm 3 phần bằng nhau."
+    }
+]

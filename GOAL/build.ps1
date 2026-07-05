@@ -6,6 +6,16 @@ if (-not (Test-Path build)) {
 
 latexmk -xelatex -interaction=nonstopmode -halt-on-error -outdir=build DoAn.tex
 
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "latexmk failed with exit code $LASTEXITCODE. DoAn.pdf was not updated."
+    exit $LASTEXITCODE
+}
+
+if (-not (Test-Path build\DoAn.pdf)) {
+    Write-Error "build\DoAn.pdf was not created. DoAn.pdf was not updated."
+    exit 1
+}
+
 Copy-Item -Path build\DoAn.pdf -Destination DoAn.pdf -Force
 
 $rootArtifacts = @(

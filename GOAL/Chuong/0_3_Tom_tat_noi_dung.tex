@@ -1,3 +1,4 @@
+% !TEX root = ../DoAn.tex
 \documentclass[../DoAn.tex]{subfiles}
 \begin{document}
 
@@ -5,11 +6,20 @@
     \Large{\textbf{TÓM TẮT NỘI DUNG ĐỒ ÁN}}\\
 \end{center}
 \vspace{1cm}
-Sinh viên viết tóm tắt ĐATN của mình trong mục này, với 200 đến 350 từ. Theo trình tự, các nội dung tóm tắt cần có: (i) Giới thiệu vấn đề (tại sao có vấn đề đó, hiện tại được giải quyết chưa, có những hướng tiếp cận nào, các hướng này giải quyết như thế nào, hạn chế là gì), (ii) Hướng tiếp cận sinh viên lựa chọn là gì, vì sao chọn hướng đó, (iii) Tổng quan giải pháp của sinh viên theo hướng tiếp cận đã chọn, và (iv) Đóng góp chính của ĐATN là gì, kết quả đạt được sau cùng là gì. Sinh viên cần viết thành đoạn văn, không được viết ý hoặc gạch đầu dòng.
+
+Hệ thống hỏi--đáp dựa trên truy hồi (Retrieval-Augmented Generation, RAG) cho tài liệu kỹ thuật tiếng Việt phải đối mặt với hai thách thức chính: chất lượng truy hồi trên văn bản chuyên ngành nhiều thuật ngữ và bảng biểu, cùng chi phí và độ trễ của tầng xếp hạng lại (reranking). Các giải pháp hiện tại thường dùng mô hình cross-encoder lớn như BGE-M3 (568M tham số) để rerank và một mô hình ngôn ngữ lớn qua API để định tuyến câu hỏi; cách này cho độ chính xác cao nhưng nặng, chậm khi chạy trên CPU và phát sinh chi phí, trong khi embedding nền tảng lại chưa được tối ưu cho miền dữ liệu.
+
+Đồ án lựa chọn hướng tối ưu toàn bộ pipeline thành các thành phần nhẹ, có thể triển khai trên CPU với chi phí thấp mà vẫn giữ chất lượng gần với mô hình lớn, thay vì phụ thuộc vào mô hình nặng hoặc dịch vụ API. Theo hướng này, embedding được fine-tune theo miền, reranker được chưng cất tri thức (knowledge distillation) xuống các mô hình nhỏ kèm cắt tỉa từ vựng (vocabulary pruning), và bộ định tuyến LLM được thay bằng một router cục bộ dựa trên Sentence-BERT/SetFit.
+
+Cụ thể, embedding \plaincode{Vietnamese_Embedding_v2} (nền BGE-M3) được huấn luyện theo curriculum hai giai đoạn: giai đoạn 1 dùng hàm mất mát GIST --- một biến thể của MNRL có guide model BGE-M3 lọc các false negative; giai đoạn 2 chuyển sang hàm mất mát MNRL trên các hard negative đã khai phá. Cả hai giai đoạn đều kết hợp với Matryoshka Representation Learning cho ba kích thước 256/512/1024, trong đó cấu hình 512 chiều được chọn làm chính. Reranker được chưng cất từ teacher BGE-reranker-v2-m3 sang student mmarco-mMiniLMv2 117M và một bản pruned 35.6M, sử dụng hàm mất mát ADR-MSE dựa trên thứ hạng và huấn luyện hai giai đoạn trên bộ dữ liệu dùng chung với embedding.
+
+Kết quả, embedding 512 chiều đạt Acc@1 76.43\% (so với 73.89\% của baseline) và MRR@10 = 0.8042 --- cao nhất trong các mô hình so sánh trên tập tài liệu không xuất hiện trong quá trình huấn luyện. Reranker pruned 35.6M đạt MRR@10 = 0.8718, vượt ViRanker 568M (0.8434) dù nhỏ hơn khoảng 16 lần và nhanh hơn khoảng 5.8 lần (23.8ms so với 138.9ms), còn student 117M giữ được 99.4\% MRR của teacher. Toàn bộ pipeline chạy được trên CPU, chứng minh tính khả thi của một hệ thống RAG tiếng Việt hiệu quả với chi phí thấp.
+
 \begin{flushright}
-Sinh viên thực hiện\\
-\begin{tabular}{@{}c@{}}
-\textit{(Ký và ghi rõ họ tên)}
+\begin{tabular}{c}
+Sinh viên thực hiện\\[0.4cm]
+\textit{Huy}\\
+Trần Quang Huy
 \end{tabular}
 \end{flushright}
 

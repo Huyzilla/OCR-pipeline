@@ -1,0 +1,52 @@
+% !TEX root = ../DoAn.tex
+\documentclass[../DoAn.tex]{subfiles}
+\begin{document}
+
+\section{Tổng kết}
+\label{section:5.1}
+
+Đồ án giải quyết bài toán hỏi đáp trên kho tài liệu kỹ thuật tiếng Việt bằng kiến trúc Retrieval-Augmented Generation, với trọng tâm là tối ưu hai thành phần quyết định chất lượng truy hồi: mô hình embedding và reranker. Xuất phát từ một hệ thống nền tảng (v1), đồ án đo lường và xác định ba điểm nghẽn cụ thể về độ trễ, chi phí và chất lượng, sau đó đề xuất hệ thống v2 với nguyên tắc mỗi thay đổi kỹ thuật phải giải quyết một vấn đề đã được đo lường thay vì tối ưu dựa trên giả định.
+
+Về embedding, đồ án tinh chỉnh mô hình \plaincode{Vietnamese_Embedding_v2} (dựa trên BGE-M3) theo curriculum hai giai đoạn GIST$\to$MNRL kết hợp Matryoshka Representation Learning. Mô hình sau tinh chỉnh đạt Acc@1 = 76.43\% và MRR@10 = 0.8454 trên tập in-domain, đồng thời vượt cả BGE-M3 gốc trên tập độc lập (held-out) (MRR@10 = 0.8042), cho thấy việc thích nghi miền có hiệu quả nhất quán chứ không chỉ trên dữ liệu quen thuộc. Nhờ MRL, biểu diễn 512 chiều đạt chất lượng gần tương đương 1024 chiều, giúp giảm một nửa dung lượng vector index mà không hy sinh đáng kể độ chính xác.
+
+Về reranker, đồ án chưng cất teacher BGE-reranker-v2-m3 (568M tham số) thành các student nhẹ thông qua quy trình hai giai đoạn (contrastive learning rồi chưng cất tri thức) với hàm mất mát ADR-MSE theo hướng rank-based. Student mmarco 117M fine-tuned nâng pipeline lên MRR@10 = 0.8753, còn phiên bản pruned 35.6M tham số đạt MRR@10 = 0.8718 với dung lượng nhỏ hơn nhiều. Đáng chú ý, reranker pruned 35.6M vượt ViRanker 568M (lớn hơn khoảng 16 lần) trên cùng tập đánh giá, khẳng định chưng cất và cắt tỉa từ vựng đúng miền có thể giữ phần lớn năng lực của teacher với chi phí thấp.
+
+Về routing, đồ án thay GPT router bằng một bộ phân loại ý định cục bộ dựa trên Sentence-BERT, loại bỏ phụ thuộc vào API ngoài, giảm độ trễ và chi phí trên mỗi truy vấn đồng thời giữ dữ liệu trong hạ tầng nội bộ.
+
+\section{Đóng góp chính}
+\label{section:5.2}
+
+Các đóng góp chính của đồ án gồm:
+
+\begin{itemize}
+\item \textbf{Quy trình xây dựng dữ liệu huấn luyện dùng chung cho embedding và reranker.} Quy trình năm giai đoạn dùng mô hình ngôn ngữ làm giám khảo xác định positive, tổng hợp hard negative từ hai nguồn (tạo sinh có kiểm soát và khai thác từ kết quả truy hồi), lọc khả năng trả lời, rồi gộp và chia tập. Cùng một nguồn dữ liệu được tái sử dụng cho cả hai tầng với tiêu chí lọc riêng.
+\item \textbf{Fine-tune embedding theo curriculum kết hợp MRL.} Curriculum GIST$\to$MNRL cho phép học ranh giới ngữ nghĩa từ negative tạo sinh trước, rồi cải thiện khả năng phân biệt bằng hard negative khai thác; MRL tạo biểu diễn đa kích thước, giúp embedding 512 chiều đạt chất lượng gần tương đương 1024 chiều với nửa dung lượng.
+\item \textbf{Nén reranker bằng chưng cất tri thức kết hợp cắt tỉa từ vựng.} Chưng cất teacher BGE-reranker-v2-m3 qua hai giai đoạn rồi cắt tỉa từ vựng, tạo ra reranker 35.6M tham số đạt chất lượng cao hơn các baseline tiếng Việt lớn hơn nhiều lần, phù hợp triển khai trên môi trường tài nguyên hạn chế.
+\item \textbf{Hệ thống RAG tối ưu đầu cuối.} Tích hợp embedding tinh chỉnh 512 chiều, reranker chưng cất và bộ phân loại ý định cục bộ thay GPT router, giảm độ trễ, dung lượng và chi phí suy luận so với hệ thống v1 trong khi vẫn giữ chất lượng truy hồi và xếp hạng.
+\end{itemize}
+
+\section{Hạn chế}
+\label{section:5.3}
+
+Bên cạnh các kết quả đạt được, đồ án còn một số hạn chế.
+
+Thứ nhất, mức cải thiện của tinh chỉnh embedding là vừa phải (khoảng hai điểm phần trăm Acc@1) do base model BGE-M3 đã rất mạnh và lượng dữ liệu miền còn nhỏ. Bi-encoder cũng có trần kiến trúc khi phải nén toàn bộ ngữ nghĩa vào một vector đơn, khiến việc phân biệt các hard negative khác nhau ở mức chi tiết factual (số liệu, thực thể) trở nên khó khăn; phần này được bù đắp bởi reranker nhưng chưa được giải quyết triệt để ở tầng embedding.
+
+Thứ hai, một phần dữ liệu đánh giá được sinh tự động qua mô hình ngôn ngữ. Mặc dù dữ liệu đã qua nhiều bước lọc, việc kiểm chứng thủ công toàn bộ câu hỏi vẫn cần thiết để loại bỏ hoàn toàn nguy cơ thiên lệch trong quá trình sinh dữ liệu.
+
+Thứ ba, cắt tỉa từ vựng giảm dung lượng mô hình nhưng không giảm đáng kể độ trễ của Transformer encoder do số tầng và kích thước ẩn được giữ nguyên; lợi ích chủ yếu nằm ở dung lượng lưu trữ chứ không phải tốc độ suy luận.
+
+Thứ tư, hệ thống được đánh giá trên một miền tài liệu kỹ thuật cụ thể. Khả năng tổng quát hóa sang các miền khác hoặc các loại tài liệu khác cần được kiểm chứng thêm.
+
+\section{Hướng phát triển}
+\label{section:5.4}
+
+Từ các hạn chế trên, đồ án đề xuất ba hướng phát triển tiếp theo.
+
+Thứ nhất, về dữ liệu và chất lượng truy hồi, có thể xây dựng một bộ kiểm thử được xác minh thủ công hoàn toàn để củng cố độ tin cậy của đánh giá, đồng thời mở rộng dữ liệu tinh chỉnh embedding với nhiều hard negative đặc thù hơn nhằm nâng trần chất lượng ở tầng truy hồi.
+
+Thứ hai, về mô hình, có thể khảo sát các kỹ thuật nén giảm được cả độ trễ (như cắt tỉa tầng hoặc lượng tử hóa) thay vì chỉ giảm dung lượng, cũng như thử nghiệm các kiến trúc reranker khác để tìm điểm cân bằng tốt hơn giữa chất lượng và tốc độ.
+
+Thứ ba, về khả năng tổng quát hóa và triển khai thực tế, việc đánh giá hệ thống trên nhiều miền tài liệu khác nhau và thử nghiệm trong môi trường vận hành thực tế sẽ giúp kiểm chứng tính ứng dụng của các giải pháp đề xuất ngoài phạm vi miền tài liệu kỹ thuật hiện tại.
+
+\end{document}

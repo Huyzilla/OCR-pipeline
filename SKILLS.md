@@ -21,6 +21,15 @@ Use this file as the first context before making code changes in this repository
 - Prefer constants for fixed project paths and models.
 - Prefer small helper functions over shared framework-style plumbing.
 
+## Current project layout
+
+- Runtime/importable code lives in `src/`.
+- CLI entry points and experiment runners live in `scripts/`.
+- Training data preparation lives in `training/data_preparation_pipeline/`.
+- Thesis/report files live in `GOAL/` and should be treated as separate from runtime code.
+- Local model/checkpoint/cache folders live in `models/` and should not be committed.
+- Scripts that import from `src/` should call `scripts._bootstrap.setup_paths()` before importing project packages.
+
 ## Pipeline code
 
 - Each pipeline stage should be a plain function with clear inputs and outputs.
@@ -43,8 +52,10 @@ Use this file as the first context before making code changes in this repository
 ## Validation
 
 - After changing code, run the smallest useful check:
+  - Activate the project environment first: `conda activate huy`.
   - `python -m compileall <folder>` for syntax.
-  - `python file.py --dry-run` for runners.
+  - `python scripts/<file>.py --dry-run` for runners.
+  - `python training/data_preparation_pipeline/data_reranker/run_pipeline.py status` for the reranker data pipeline.
   - A small `--n` smoke test for expensive stages.
 - If a check cannot run because of network/API/GPU/env constraints, say exactly what blocked it.
 

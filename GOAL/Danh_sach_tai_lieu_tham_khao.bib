@@ -1,55 +1,242 @@
-@article{hovy1993automated,
-  title={Automated discourse generation using discourse structure relations},
-  author={Hovy, Eduard H},
-  journal={Artificial intelligence},
-  volume={63},
-  number={1-2},
-  pages={341--385},
-  year={1993},
-  publisher={Elsevier Science Publishers}
+% ===== RAG & pipeline =====
+@inproceedings{lewis2020rag,
+title     = {Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks},
+author    = {Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{"a}schel, Tim and Riedel, Sebastian and Kiela, Douwe},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+year      = {2020},
+note      = {arXiv:2005.11401}
 }
 
-@book{peterson2007computer,
-  title={Computer networks: a systems approach},
-  author={Peterson, Larry L and Davie, Bruce S},
-  year={2007},
-  publisher={Elsevier}
+% ===== Transformer / backbone =====
+@inproceedings{vaswani2017attention,
+title     = {Attention Is All You Need},
+author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+year      = {2017},
+note      = {arXiv:1706.03762}
 }
 
-@book{NguyenThucHai,
-  title={Mạng máy tính và các hệ thống mở},
-  author={Nguyễn Thúc Hải},
-  year={1999},
-  publisher={Nhà xuất bản giáo dục}
+@inproceedings{devlin2019bert,
+title     = {{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+author    = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+year      = {2019},
+pages     = {4171--4186},
+doi       = {10.18653/v1/N19-1423},
+note      = {arXiv:1810.04805}
 }
 
-@inproceedings{poesio2001discourse,
-  title={Discourse structure and anaphoric accessibility},
-  author={Poesio, Massimo and Di Eugenio, Barbara},
-  booktitle={{ESSLLI} workshop on information structure, discourse structure and discourse semantics, Copenhagen, Denmark},
-  pages={129--143},
-  year={2001}
+@inproceedings{reimers2019sbert,
+title     = {Sentence-{BERT}: Sentence Embeddings using Siamese {BERT}-Networks},
+author    = {Reimers, Nils and Gurevych, Iryna},
+booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing},
+year      = {2019},
+pages     = {3982--3992},
+doi       = {10.18653/v1/D19-1410},
+note      = {arXiv:1908.10084}
 }
 
-@phdthesis{knott1996data,
-  author  = {Knott, Alistair},
-  title   = {A data-driven methodology for motivating a set of coherence relations},
-  school  = {The University of Edinburgh, {UK}},
-  year    = {1996}
+% ===== Embedding: backbone & kỹ thuật =====
+@article{chen2024bgem3,
+title   = {{BGE} {M3}-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation},
+author  = {Chen, Jianlv and Xiao, Shitao and Zhang, Peitian and Luo, Kun and Lian, Defu and Liu, Zheng},
+journal = {arXiv preprint arXiv:2402.03216},
+year    = {2024}
 }
 
-@misc{BernersTim,
-  author = {Berners-Lee, Tim},
-  title = {Hypertext Transfer Protocol ({HTTP})},
-  url = {ftp:/info.cern.ch/pub/www/doc/http-spec.txt.Z},
-  urldate = {2010-09-30}
+@misc{bge_reranker_v2_m3,
+author       = {{Beijing Academy of Artificial Intelligence}},
+title        = {{BAAI/bge-reranker-v2-m3}},
+year         = {2024},
+howpublished = {\url{https://huggingface.co/BAAI/bge-reranker-v2-m3}},
 }
 
-
-@misc{LectureA,
-  author = {{Princeton University}},
-  title = {WordNet},
-  urldate = {2010-09-30},
-   url = {http://www.cogsci.princeton.edu/~wn/index.shtml}
+@article{henderson2017mnr,
+title   = {Efficient Natural Language Response Suggestion for Smart Reply},
+author  = {Henderson, Matthew and Al-Rfou, Rami and Strope, Brian and Sung, Yun-Hsuan and Lukacs, Laszlo and Guo, Ruiqi and Kumar, Sanjiv and Miklos, Balint and Kurzweil, Ray},
+journal = {arXiv preprint arXiv:1705.00652},
+year    = {2017}
 }
 
+@article{solatorio2024gistembed,
+title   = {{GISTEmbed}: Guided In-sample Selection of Training Negatives for Text Embedding Fine-tuning},
+author  = {Solatorio, Aivin V.},
+journal = {arXiv preprint arXiv:2402.16829},
+year    = {2024}
+}
+
+@inproceedings{kusupati2022matryoshka,
+title     = {Matryoshka Representation Learning},
+author    = {Kusupati, Aditya and Bhatt, Gantavya and Rege, Aniket and Wallingford, Matthew and Sinha, Aditya and Ramanujan, Vivek and Howard-Snyder, Will and Chen, Kaifeng and Kakade, Sham and Jain, Prateek and Farhadi, Ali},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+year      = {2022},
+note      = {arXiv:2205.13147}
+}
+
+@inproceedings{bengio2009curriculum,
+title     = {Curriculum Learning},
+author    = {Bengio, Yoshua and Louradour, J{'e}r{^o}me and Collobert, Ronan and Weston, Jason},
+booktitle = {Proceedings of the 26th International Conference on Machine Learning},
+year      = {2009},
+pages     = {41--48},
+doi       = {10.1145/1553374.1553380}
+}
+
+% ===== Reranking: distillation & loss functions =====
+@inproceedings{hinton2015distillation,
+title     = {Distilling the Knowledge in a Neural Network},
+author    = {Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff},
+booktitle = {NeurIPS Deep Learning Workshop},
+year      = {2015},
+note      = {arXiv:1503.02531}
+}
+
+@article{hofstatter2020marginmse,
+title   = {Improving Efficient Neural Ranking Models with Cross-Architecture Knowledge Distillation},
+author  = {Hofst{\"a}tter, Sebastian and Althammer, Sophia and Schr{\"o}der, Michael and Sertkan, Mete and Hanbury, Allan},
+journal = {arXiv preprint arXiv:2010.02666},
+year    = {2020}
+}
+
+@inproceedings{burges2005ranknet,
+title     = {Learning to Rank using Gradient Descent},
+author    = {Burges, Chris and Shaked, Tal and Renshaw, Erin and Lazier, Ari and Deeds, Matt and Hamilton, Nicole and Hullender, Greg},
+booktitle = {Proceedings of the 22nd International Conference on Machine Learning},
+year      = {2005},
+pages     = {89--96},
+doi       = {10.1145/1102351.1102363}
+}
+
+@inproceedings{schlatt2025rankdistillm,
+title     = {Rank-DistiLLM: Closing the Effectiveness Gap Between Cross-Encoders and {LLMs} for Passage Re-Ranking},
+author    = {Schlatt, Ferdinand and Fr{"o}be, Maik and Scells, Harrisen and Zhuang, Shengyao and Koopman, Bevan and Zuccon, Guido and Stein, Benno and Potthast, Martin and Hagen, Matthias},
+booktitle = {Advances in Information Retrieval (ECIR 2025)},
+year      = {2025},
+note      = {arXiv:2405.07920}
+}
+
+@inproceedings{wang2020minilm,
+title     = {{MiniLM}: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers},
+author    = {Wang, Wenhui and Wei, Furu and Dong, Li and Bao, Hangbo and Yang, Nan and Zhou, Ming},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+year      = {2020},
+note      = {arXiv:2002.10957}
+}
+
+% ===== Truy hồi: lexical & fusion =====
+@article{robertson2009bm25,
+title   = {The Probabilistic Relevance Framework: {BM25} and Beyond},
+author  = {Robertson, Stephen and Zaragoza, Hugo},
+journal = {Foundations and Trends in Information Retrieval},
+volume  = {3},
+number  = {4},
+pages   = {333--389},
+year    = {2009},
+doi     = {10.1561/1500000019}
+}
+
+@inproceedings{cormack2009rrf,
+title     = {Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods},
+author    = {Cormack, Gordon V. and Clarke, Charles L. A. and Buettcher, Stefan},
+booktitle = {Proceedings of the 32nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+year      = {2009},
+pages     = {758--759},
+doi       = {10.1145/1571941.1572114}
+}
+
+% ===== Dữ liệu =====
+@inproceedings{nguyen2016msmarco,
+title     = {{MS} {MARCO}: A Human Generated {MA}chine Reading {CO}mprehension Dataset},
+author    = {Nguyen, Tri and Rosenberg, Mir and Song, Xia and Gao, Jianfeng and Tiwary, Saurabh and Majumder, Rangan and Deng, Li},
+booktitle = {Proceedings of the Workshop on Cognitive Computation: Integrating Neural and Symbolic Approaches 2016 Co-located with the 30th Annual Conference on Neural Information Processing Systems},
+year      = {2016},
+note      = {arXiv:1611.09268}
+}
+
+@article{bonifacio2021mmarco,
+title   = {{mMARCO}: A Multilingual Version of the {MS} {MARCO} Passage Ranking Dataset},
+author  = {Bonifacio, Luiz and Jeronymo, Vitor and Abonizio, Hugo Queiroz and Campiotti, Israel and Fadaee, Marzieh and Lotufo, Roberto and Nogueira, Rodrigo},
+journal = {arXiv preprint arXiv:2108.13897},
+year    = {2021}
+}
+
+% ===== Metric =====
+@article{jarvelin2002ndcg,
+title   = {Cumulated Gain-based Evaluation of {IR} Techniques},
+author  = {J{\"a}rvelin, Kalervo and Kek{\"a}l{\"a}inen, Jaana},
+journal = {ACM Transactions on Information Systems (TOIS)},
+volume  = {20},
+number  = {4},
+pages   = {422--446},
+year    = {2002},
+doi     = {10.1145/582415.582418}
+}
+
+% ===== Tiếng Việt / LLM / prompting =====
+@inproceedings{nguyen2020phobert,
+title     = {{PhoBERT}: Pre-trained Language Models for Vietnamese},
+author    = {Nguyen, Dat Quoc and Nguyen, Anh Tuan},
+booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2020},
+year      = {2020},
+pages     = {1037--1042},
+doi       = {10.18653/v1/2020.findings-emnlp.92},
+note      = {arXiv:2003.00744}
+}
+
+@inproceedings{wei2022cot,
+title     = {Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},
+author    = {Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and Chi, Ed H. and Xia, Fei and Le, Quoc V. and Zhou, Denny},
+booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+year      = {2022},
+note      = {arXiv:2201.11903}
+}
+
+@article{tunstall2022setfit,
+title   = {Efficient Few-Shot Learning Without Prompts},
+author  = {Tunstall, Lewis and Reimers, Nils and Jo, Unso Eun Seo and Bates, Luke and Korat, Daniel and Wasserblat, Moshe and Pereg, Oren},
+journal = {arXiv preprint arXiv:2209.11055},
+year    = {2022}
+}
+
+@misc{openai2024gpt4omini,
+author       = {{OpenAI}},
+title        = {{GPT-4o mini}: Advancing Cost-Efficient Intelligence},
+year         = {2024},
+howpublished = {\url{https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/}},
+}
+
+% ===== Model dùng trong đồ án (Hugging Face/model cards) =====
+@misc{aiteamvn_embedding,
+author       = {{AITeamVN}},
+title        = {Vietnamese\_Embedding\_v2},
+year         = {2025},
+howpublished = {\url{https://huggingface.co/AITeamVN/Vietnamese_Embedding_v2}}
+}
+
+@misc{vietnamese_sbert,
+author       = {{keepitreal}},
+title        = {vietnamese-sbert},
+howpublished = {\url{https://huggingface.co/keepitreal/vietnamese-sbert}},
+}
+
+@misc{viranker,
+title        = {{ViRanker}: A {BGE-M3} and Blockwise Parallel Transformer Cross-Encoder for Vietnamese Reranking},
+author       = {Dang, Phuong-Nam and Nguyen, Kieu-Linh and Pham, Thanh-Hieu},
+year         = {2025},
+howpublished = {\url{https://huggingface.co/namdp-ptit/ViRanker}},
+}
+
+@misc{phoranker,
+author       = {{itdainb}},
+title        = {{PhoRanker}: A Cross-Encoder Reranker for Vietnamese},
+year         = {2024},
+howpublished = {\url{https://huggingface.co/itdainb/PhoRanker}},
+}
+
+% ===== Document parsing tool =====
+@misc{marker2024,
+author       = {{Datalab}},
+title        = {Marker: Convert Documents to Markdown, JSON, Chunks, and HTML},
+year         = {2024},
+howpublished = {\url{https://github.com/datalab-to/marker}},
+}

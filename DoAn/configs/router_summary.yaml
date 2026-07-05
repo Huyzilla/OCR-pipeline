@@ -1,0 +1,9 @@
+# Runtime defaults for the router-summary QA pipeline.
+question_csv: data/question.csv
+chunk_dir: chunk_outputs_finals
+doc_index_dir: doc_index
+router_model: gpt-4o-mini
+embedding_model: AITeamVN/Vietnamese_Embedding_v2
+rerank_model: BAAI/bge-reranker-v2-m3
+answer_model: gpt-4o-mini
+max_questions: 200
