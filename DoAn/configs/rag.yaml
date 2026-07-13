@@ -1,8 +1,0 @@
-# Runtime defaults for the RAG indexing pipeline.
-input_dir: outputs
-chunk_dir: chunk_outputs_finals
-chroma_path: chroma_db_viettel
-collection_name: rag
-embedding_model: AITeamVN/Vietnamese_Embedding_v2
-batch_size: 256
-id_prefix: viettel_v1

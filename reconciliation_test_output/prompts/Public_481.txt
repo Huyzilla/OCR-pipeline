@@ -1,0 +1,83 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_481", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] (GIỚI THIỆU VỀ MẠNG NƠ-RON NHÂN TẠO)
+# GIỚI THIỆU VỀ MẠNG NƠ-RON NHÂN TẠO
+
+Mạng nơ-ron nhân tạo (Artificial Neural Networks – ANN) là nền tảng cốt lõi của trí tuệ nhân tạo hiện đại. Ý tưởng dựa trên cách bộ não sinh học xử lý thông tin thông qua các nơ-ron liên kết.
+
+---
+
+[chunk_index=1] (MẠNG NƠ-RON NHÂN TẠO > Mục đích của phần thí nghiệm)
+## Mục đích của phần thí nghiệm
+
+Mục đích của phần thí nghiệm:
+
+* Hiểu nguyên lý hoạt động của ANN.
+* Làm quen với các công thức toán học mô tả quá trình huấn luyện.
+* Ứng dụng ANN trong bài toán thực tế: phân loại, dự đoán, xử lý ảnh, ngôn ngữ.
+
+---
+
+[chunk_index=2] (MẠNG NƠ-RON NHÂN TẠO > Tóm tắt lý thuyết > Nơ-ron nhân tạo)
+Cột: Định nghĩa | Công thức
+
+Dòng 1: Nơ-ron nhân tạo thực hiện phép biến đổi tuyến tính–tịnh tiến trên vector đặc trưng đầu vào, sau đó qua hàm kích hoạt phi tuyến để tăng năng lực biểu diễn; bias giúp dịch chuyển biên quyết định. | 𝑛 𝑧 = ∑𝑤𝑖𝑥𝑖 + 𝑏 𝑖=1 𝑓(𝑧) 𝑦 =
+Dòng 2: Sigmoid nén giá trị về (0,1), thường dùng cho đầu ra nhị phân; nhưng dễ bão hòa gradient ở vùng biên. | 1 𝜎(𝑧) = −𝑧 1 + 𝑒
+Dòng 3: Sigmoid Function: \sigma(z) = \frac{1}{1 + e^{-z}} 1.0 0.8 0.6 0.9 0.4 0.2 0.0 -6 -4 -2 0 2 4 6
+Dòng 4: Tanh là phiên bản tịnh tiến/scale của Sigmoid, đầu ra (-1,1), trung bình bằng 0 giúp hội tụ tốt hơn trong một số mạng | tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}
+Dòng 5: ReLU giữ thành phần dương, triệt tiêu âm, giúp mạng sâu hội tụ nhanh; có biến thể Leaky ReLU khắc phục "neuron chết". | ReLU(z) = max(0, z), LeakyReLU(z) = max(\alpha z, z)
+
+---
+
+[chunk_index=3] (MẠNG NƠ-RON NHÂN TẠO > Tóm tắt lý thuyết > Nơ-ron nhân tạo)
+Cột: Softmax chuyển vector logit thành phân phối xác suất trên K lớp; nhạy cảm với chênh lệch lớn giữa các logit. | softmax(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}
+
+Dòng 1: Cross-Entropy đa lớp đo độ lệch giữa nhãn thật 1-hot và phân phối dự đoán; kết hợp Softmax cho huấn luyện phân loại. | L = -\sum_{i=1}^{K} y_i \log ! \left( \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}} \right)
+Dòng 2: Binary Cross-Entropy dùng cho nhị phân/đa nhãn; khuyến nghị dùng logit-stable triển khai để tránh tràn số. | L = -\frac{1}{N} \sum_{i=1}^{N} (y_i \cdot log(\hat{y}_i) + (1 - y_i) \cdot log(1 - \hat{y}_i))
+
+---
+
+[chunk_index=4] (MẠNG NƠ-RON NHÂN TẠO > Tóm tắt lý thuyết > Tối ưu hoá > Gradient Descent/SGD)
+Cột: 
+
+Dòng 1: [CT1] | 𝜂𝛻𝜃𝐿(𝜃𝑡 ) 𝜃𝑡+1 = 𝜃𝑡 −
+
+---
+
+[chunk_index=5] (MẠNG NƠ-RON NHÂN TẠO > Tóm tắt lý thuyết > Tối ưu hoá > Adam)
+Cột: 
+
+Dòng 1: [CT2] | 2 (1 )𝑔𝑡 (1 )𝑔𝑡 𝑚𝑡 = 𝛽1𝑚𝑡−1 + − 𝛽1 , 𝑣𝑡 = 𝛽2𝑣𝑡−1 + − 𝛽2 , 𝑚̂𝑡 𝑚𝑡 𝑣𝑡 𝑚̂𝑡 = , 𝑣̂𝑡 = , 𝜃𝑡+1 = 𝜃𝑡 − 𝜂 𝑡 𝑡 1 − 𝛽1 1 − 𝛽2 √𝑣̂𝑡 + 𝜖
+
+---
+
+[chunk_index=6] (MẠNG NƠ-RON NHÂN TẠO > Tóm tắt lý thuyết > Regularization & Normalization)
+Cột: L1/L2 Regularization lần lượt khuyến khích thưa (sparsity) và nhỏ hoá tham số; tác động khác nhau lên giải pháp tối ưu. Dropout vô hiệu ngẫu nhiên đơn vị trong huấn luyện để phá đồng thích nghi; scale ở suy luận để bảo toàn kỳ vọng. | 2 𝜆∑|𝑤𝑖 | 𝛺𝐿1 = , 𝛺𝐿2 = 𝜆∑𝑤𝑖 𝑖 𝑖 ̃ ̃ ℎ𝑖 = ℎ𝑖 ⋅ 𝑑𝑖 , ℎ𝑖 ∼ Bernoulli𝑝
+
+Dòng 1: BatchNorm (train) chuẩn hoá theo mini-batch rồi affine transform với (γ,β); cải thiện ổn định và tốc độ học.tránh tràn số. | 1 1 2 = 2 ∑(𝑥𝑖 𝜇𝐵) 𝜇𝐵 = ∑𝑥𝑖 , 𝜎𝐵 − , 𝑥̂𝑖 𝑚 𝑚 𝑖 𝑖 𝑥𝑖 − 𝜇𝐵 = , 𝑥̂𝑖 = 𝛾𝑥̂𝑖 2 + √𝜎𝐵 𝜖
+Dòng 2: MSE thường dùng cho hồi quy; nhạy cảm với ngoại lai do bình phương sai số. | 𝑁 1 2 ∑(𝑦𝑖 ) 𝐿 = − 𝑦̂𝑖 𝑁 𝑖=1
+Dòng 3: Hinge loss dùng trong SVM/NN phân biệt biên cứng; khuyến khích lề phân tách lớn. | L = \sum_{i=1}^{N} max(0,1 - y_i \widehat{y_i})

@@ -1,0 +1,162 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_599", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] (PHÂN TÍCH HỆ THỐNG ĐIỆN CẦN THIẾT KẾ. CÂN BẰNG CÔNG SUẤT > Phân tích đặc điểm của nguồn và phụ tải > Số liệu về nguồn cung cấp)
+### Số liệu về nguồn cung cấp
+
+* − Mạng lưới có 1 nguồn cung cấp điện (thanh cái cao áp hoặc trạm biến áp trung gian)
+* − Nguồn điện cung cấp đủ công suất tác dụng cho phụ tải.
+* − Hệ số công suất trung bình trên thanh góp cao áp của nguồn điện bằng 0,85
+* − Điện áp vận hành
+  * + Chế độ phụ tải cực đại: 110% điện áp định mức
+  * + Chế độ cực tiểu: 105% điện áp định mức.
+  * + Chế độ sự cố: 110% điện áp định mức.
+
+---
+
+[chunk_index=1] (PHÂN TÍCH HỆ THỐNG ĐIỆN CẦN THIẾT KẾ. CÂN BẰNG CÔNG SUẤT > Phân tích đặc điểm của nguồn và phụ tải > Số liệu về phụ tải)
+Cột: Các thông số | Các hộ tiêu thụ
+
+Dòng 1: 1 | 2 | 3 | 4 | 5 | 6
+Dòng 2: Phụ tải cực đại (MW) | 25 | 18 | 35 | 28 | 25 | 25
+Dòng 3: Hệ số công suất | 0,9
+Dòng 4: Mức đảm bảo cung cấp điện | I | I | I | I | I | I
+Dòng 5: Yêu cầu điều chỉnh điện áp | 0%,Usc U , U = 5% = = 5% max min
+Dòng 6: Thời gian sử dụng công suất cực đại (h) | 5500
+Dòng 7: Điện áp định mức lưới điện hạ áp (kV) | 22 | 22 | 22 | 10 | 10 | 10
+
+---
+
+[chunk_index=2] (PHÂN TÍCH HỆ THỐNG ĐIỆN CẦN THIẾT KẾ. CÂN BẰNG CÔNG SUẤT > Phân tích đặc điểm của nguồn và phụ tải > Số liệu về phụ tải)
+Cột: Phụ tải | MAX | MIN
+
+Dòng 1: P, MW | Q, MVAr | S, MVA | P, MW | Q, MVAr | S, MVA
+Dòng 2: 1 | 25 | 12,10805262 | 25+12,10805262i | 12,5 | 6,05402631 | 12,5+6,05402631i
+Dòng 3: 2 | 18 | 8,717797887 | 18+8,71779789i | 9 | 4,35889894 | 9+4,35889894i
+Dòng 4: 3 | 35 | 16,95127367 | 35+16,95127367i | 17,5 | 8,47563683 | 17,5+8,47563683i
+Dòng 5: 4 | 28 | 13,56101894 | 28+13,56101894i | 14 | 6,78050947 | 14+6,78050947i
+Dòng 6: 5 | 25 | 12,10805262 | 25+12,10805262i | 12,5 | 6,05402631 | 12,5+6,05402631i
+Dòng 7: 6 | 25 | 12,10805262 | 25+12,10805262i | 12,5 | 6,05402631 | 12,5+6,05402631i
+
+---
+
+[chunk_index=3] (PHÂN TÍCH HỆ THỐNG ĐIỆN CẦN THIẾT KẾ. CÂN BẰNG CÔNG SUẤT > Cân bằng công suất tác dụng)
+## Cân bằng công suất tác dụng
+
+* − Một đặc điểm rất quan trọng của hệ thống điện là truyền tải tức thời điện năng từ các nguồn đến các hộ tiêu thụ và không thể tích trữ điện năng. Tính chất này xác định đồng bộ của quá trình sản xuất và tiêu thụ điện năng.
+* − Thực hiện trong chế độ phụ tải cực đại, phản ánh tần số trong hệ thống điện. Cân bằng công suất tác dụng được thực hiện trong các nhà máy điện bằng cách sử dụng bộ điều tốc.
+* − Tại mỗi thời điểm trong chế độ xác lập của hệ thống, các nhà máy của hệ thống cần phải phát công suất bằng với công suất của các hộ tiêu thụ bao gồm cả công suất tổn thất trong lưới điện. Nghĩa là cần phải thực hiện đúng sự cân bằng giữa công suất phát và công suất tiêu thụ.
+* − Ngoài ra để đảm bảo cho hệ thống vận hành bình thường, cần phải có dự trữ nhất định của công suất tác dụng trong hệ thống. Dự trữ trong hệ thống điện là một vấn đề quan trọng liên quan đến vận hành cũng như sự phát triển của hệ thống.
+
+---
+
+[chunk_index=4] (PHÂN TÍCH HỆ THỐNG ĐIỆN CẦN THIẾT KẾ. CÂN BẰNG CÔNG SUẤT > Cân bằng công suất phản kháng)
+## Cân bằng công suất phản kháng
+
+− Các hộ tiêu thụ không chỉ tiêu thụ công suất tác dụng mà còn tiêu thụ cả công suất phản kháng.
+
+Ta thấy công suất phản kháng do nguồn cấp lớn hơn công suất phản kháng yêu cầu của các hộ tiêu thụ do đó nguồn cung cấp đủ công suất phản kháng cho mạng điện và không cần bù.
+
+---
+
+[chunk_index=5] (LỰA CHỌN PHƯƠNG ÁN HỢP LÍ VỀ KINH TẾ KĨ THUẬT > Nêu các phương án lưới điện > Nguyên tắc thành lập phương án lưới điện)
+### Nguyên tắc thành lập phương án lưới điện
+
+* − Tính toán lựa chọn phương án cung cấp điện hợp lý phải dựa trên nhiều nguyên tắc, nhưng nguyên tắc chủ yếu và quan trọng nhất của công tác thiết kế mạng điện là cung cấp điện kinh tế với chất lượng và độ tin cậy cao. Mục đích tính toán thiết kế là nhằm tìm ra phương án phù hợp. Làm được điều đó thì vấn đề đầu tiên cần phải giải quyết là lựa chọn sơ đồ cung cấp điện. Trong đó những công việc phải tiến hành đồng thời như lựa chọn điện áp làm việc, tiết diện dây dẫn, tính toán các thông số kỹ thuật, kinh tế ...
+* − Trong quá trình thành lập phương án nối điện ta phải chú ý tới các nguyên tắc sau
+
+đây: Đảm bảo độ tin cậy theo yêu cầu. Mạng điện phải đảm bảo tính an toàn cung cấp điện liên tục, mức độ đảm bảo cung cấp điện phụ thuộc vào hộ tiêu thụ. Đối với phụ tải loại I phải đảm bảo cấp điện liên tục không được phép gián đoạn trong bất cứ tình huống nào, vì vậy trong phương án nối dây phải có đường dây dự phòng (2 đường dây độc lập: 2 đường dây song song hoặc mạch vòng kín).
+
+* − Đảm bảo chất lượng điện năng (tần số, điện áp, ...)
+* − Chỉ tiêu kinh tế cao, vốn đầu tư thấp, tổn thất nhỏ, chi phí vận hành hàng năm nhỏ.
+* − Đảm bảo an toàn cho người và thiết bị. Vận hành đơn giản, linh hoạt và có khả năng phát triển.
+
+---
+
+[chunk_index=6] (LỰA CHỌN PHƯƠNG ÁN HỢP LÍ VỀ KINH TẾ KĨ THUẬT > Nêu các phương án lưới điện > Các phương án)
+### Các phương án
+
+Kết hợp với việc phân tích nguồn và phụ tải ở trên nhận thấy: có 6 phụ tải đều là hộ loại I, yêu cầu độ tin cậy cung cấp điện cao. Do đó phải sử dụng các biện pháp cung cấp điện như: lộ kép, mạch vòng. Từ phương pháp trên ta lập được các phương án như sau
+
+Phương án 1
+
+![](images/image2.jpg)
+
+![](images/image3.jpg)
+
+*Hình 2.1 Phương án 1*
+
+---
+
+[chunk_index=7] (LỰA CHỌN PHƯƠNG ÁN HỢP LÍ VỀ KINH TẾ KĨ THUẬT > Trình tự tính toán kĩ thuật các phương án > Phân bố công suất trong lưới điện)
+### Phân bố công suất trong lưới điện
+
+Dựa vào cấu trúc lưới điện ta tính sơ bộ dòng công suất tác dụng và dòng công suất phản kháng chạy trong từng đường dây của đường dây.
+
+Lựa chọn điên áp định mức cho mạng điện là nhiệm vụ rất quan trọng, vì trị số điện áp ảnh hưởng trực tiếp đến các chỉ tiêu kinh tế, kĩ thuật của mạng điện. Để chọn cấp điện áp hợp lí phải thoả mãn yêu cầu sau:
+
+* ➢ Đáp ứng được yêu cầu mở rộng phụ tải sau này.
+* ➢ Đảm bảo tổn thất điện áp từ nguồn đến phụ tải.
+* ➢ Khi điện áp tăng cao thì tổn thất càng bé, sử dụng ít kim loại màu. Nhưng khi điện áp càng cao thì chi phí xây dựng mạng điện càng lớn và giá thành thiết bị càng cao. Vì vậy phải chọn điện áp như thế nào để phù hợp điều kiện về kinh tế- kĩ thuật.
+
+---
+
+[chunk_index=8] (LỰA CHỌN PHƯƠNG ÁN HỢP LÍ VỀ KINH TẾ KĨ THUẬT > Trình tự tính toán kĩ thuật các phương án > Tính toán các thông số của đường dây)
+### Tính toán các thông số của đường dây
+
+Trong đồ án, sử dụng dây nhôm lõi thép (ACSR) bố trí 2 lộ với phụ tải loại I. Đối với mạch vòng sử dụng 1 lộ
+
+![](images/image4.jpg)
+
+Hình 2.8 Cấu trúc cột 2 mạch và cột 1 mạch
+
+Vì dây dẫn các pha đặt không đối xứng, cảm kháng giữa các pha sẽ khác nhau. Để khắc phục nhược điểm này, cần dùng biện pháp hoán vị đường dây.
+
+*Bảng 2.8 Bảng thông số các đường dây*
+
+---
+
+[chunk_index=9] (LỰA CHỌN PHƯƠNG ÁN HỢP LÍ VỀ KINH TẾ KĨ THUẬT > Trình tự tính toán kĩ thuật các phương án > Tính toán các thông số của đường dây)
+Cột: 
+
+Dòng 1: Loại dây | Đường kính,m | 𝑥0, Ω⁄𝑘𝑚 | , 10−6 b .km / 0 | 𝑟0, Ω⁄𝑘𝑚
+Dòng 2: Cột 1 | Cột 2 | Cột 1 | Cột 2
+Dòng 3: mạch | mạch | mạch | mạch
+Dòng 4: ACSR-70 | 11,4 | 0,449 | 0,428 | 2,727 | 2,876 | 0,46
+Dòng 5: ACSR-95 | 13,5 | 0,439 | 0,418 | 2,588 | 2,722 | 0,33
+Dòng 6: ACSR 120 | 15,2 | 0,431 | 0,41 | 2,727 | 2,876 | 0,27
+Dòng 7: ACSR 150 | 17 | 0,424 | 0,403 | 2,588 | 2,722 | 0,21
+Dòng 8: ACSR 185 | 19 | 0,417 | 0,396 | 2,727 | 2,876 | 0,17
+Dòng 9: ACSR 240 | 21,6 | 0,409 | 0,388 | 2,588 | 2,722 | 0,132
+
+---
+
+[chunk_index=10] (LỰA CHỌN PHƯƠNG ÁN HỢP LÍ VỀ KINH TẾ KĨ THUẬT > Trình tự tính toán kĩ thuật các phương án > Xác định sơ bộ tổn thất điện áp lớn nhất của mạng điện)
+### Xác định sơ bộ tổn thất điện áp lớn nhất của mạng điện
+
+Tổn thất điện áp lớn nhất là tổn thất điện áp của các đường dây tham gia vào đường nối từ điểm nguồn đến điểm có điện áp thấp nhất. Tính trong cả chế độ bình thường và chế độ sự cố. Ở trong phạm vi đồ án này, ta xét tiêu chuẩn N-1 để tính tổn thất điện áp lớn nhất của mạng điện.
+
+![](images/image5.jpg)

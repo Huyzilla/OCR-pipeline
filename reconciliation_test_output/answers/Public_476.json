@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Python được sử dụng chủ yếu cho lĩnh vực nào trong nghiên cứu?",
+    "options": {"A": "Trí tuệ nhân tạo", "B": "Lập trình web", "C": "Phát triển game", "D": "Xử lý hình ảnh"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "ngôn ngữ lập trình phổ biến cho nghiên cứu và ứng dụng trí tuệ nhân tạo"
+  },
+  {
+    "question": "Để thực hiện thí nghiệm về mô hình học máy, người học cần có kiến thức nào?",
+    "options": {"A": "Kinh tế vi mô", "B": "Căn bản về Python", "C": "Lập trình C++", "D": "Thiết kế đồ họa"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Có kiến thức cơ bản về Python"
+  },
+  {
+    "question": "Mô hình hồi quy logistic dùng để làm gì?",
+    "options": {"A": "Dự đoán giá trị liên tục", "B": "Phân loại nhị phân", "C": "Tối ưu hóa tham số", "D": "Khám phá dữ liệu"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "phân loại nhị phân với hàm sigmoid"
+  },
+  {
+    "question": "Công thức nào sau đây được sử dụng để đánh giá độ chính xác của mô hình?",
+    "options": {"A": "MSE = (1/n) Σ (yᵢ − ŷᵢ)²", "B": "Accuracy = (TP + TN) / (TP + TN + FP + FN)", "C": "Loss = −(1/n) Σ [yᵢ log(ŷᵢ) + (1 − yᵢ) log(1 − ŷᵢ)]", "D": "z = (x − μ) / σ"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "𝐴𝑐𝑐𝑢𝑟𝑎𝑐𝑦 = (𝑇𝑃 + 𝑇𝑁) / (𝑇𝑃 + 𝑇𝑁 + 𝐹𝑃 + 𝐹𝑁)"
+  },
+  {
+    "question": "Chuẩn hóa dữ liệu được xác định bằng công thức nào?",
+    "options": {"A": "z = (x - μ) / σ", "B": "ŷ = wᵀx + b", "C": "θ := θ - α ∇J(θ)", "D": "J(w) = (1/n) Σ (yᵢ − ŷᵢ)² + λ ||w||₁"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "𝑧 = (𝑥 − 𝜇) / 𝜎"
+  },
+  {
+    "question": "Nếu một mô hình hồi quy logistic có độ chính xác là 80%, trong đó số lượng True Positives (TP) là 40 và số lượng True Negatives (TN) là 40, thì số lượng False Positives (FP) và False Negatives (FN) là bao nhiêu nếu tổng số mẫu là 200?",
+    "options": {"A": "40, 40", "B": "20, 20", "C": "10, 10", "D": "30, 30"},
+    "gold_answer": "B",
+    "type": "tinh_toan",
+    "source_chunk_index": [3],
+    "evidence_quote": "Không có trích dẫn cụ thể cho câu hỏi này, nhưng có đủ dữ liệu để tính toán."
+  }
+]

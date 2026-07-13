@@ -1,0 +1,50 @@
+[
+  {
+    "question": "STEM là viết tắt của những lĩnh vực nào?",
+    "options": {"A": "Khoa học, Công nghệ, Kỹ thuật, Toán học", "B": "Khoa học, Nghệ thuật, Kỹ thuật, Toán học", "C": "Khoa học, Công nghệ, Nghệ thuật, Toán học", "D": "Khoa học, Công nghệ, Kỹ thuật, Ngôn ngữ"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [2],
+    "evidence_quote": "STEM là thuật ngữ viết tắt của các từ Science (Khoa học), Technology (Công nghệ), Engineering (Kĩ thuật) và Mathematics (Toán học)."
+  },
+  {
+    "question": "Mô hình giáo dục STEM nhấn mạnh điều gì trong quá trình học tập?",
+    "options": {"A": "Tính thiết kế", "B": "Nghiên cứu lý thuyết", "C": "Thực hành đơn giản", "D": "Đánh giá kết quả học tập"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Đặc điểm nổi bật của giáo dục STEM là nhấn mạnh các yếu tố kỹ thuật và cụ thể là tính thiết kế."
+  },
+  {
+    "question": "Trong quy trình xây dựng bài giảng điện tử E-learning, bước đầu tiên là gì?",
+    "options": {"A": "Xác định trọng tâm và kiến thức cơ bản", "B": "Xác định mục tiêu bài học", "C": "Chạy thử chương trình", "D": "Xây dựng và số hóa kịch bản"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [6],
+    "evidence_quote": "Quy trình xây dựng thiết kế bài giảng điện tử E – learning gồm 6 bước: + Xác định mục tiêu bài học."
+  },
+  {
+    "question": "Kết quả thực nghiệm sư phạm cho thấy lớp nào có điểm trung bình cao hơn?",
+    "options": {"A": "Lớp đối chứng", "B": "Lớp thực nghiệm", "C": "Cả hai lớp có điểm trung bình bằng nhau", "D": "Lớp thực nghiệm có điểm trung bình thấp hơn"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [17],
+    "evidence_quote": "Điểm trung bình của lớp TN cao hơn lớp ĐC."
+  },
+  {
+    "question": "Điểm chênh lệch giữa hai lớp thực nghiệm và đối chứng là bao nhiêu?",
+    "options": {"A": "1,612", "B": "0,543", "C": "0,724", "D": "3,6"},
+    "gold_answer": "A",
+    "type": "tinh_toan",
+    "source_chunk_index": [17],
+    "evidence_quote": "Độ chênh lệch điểm số giữa hai lớp là 1,612."
+  },
+  {
+    "question": "Giáo dục STEM nhằm mục đích gì cho học sinh?",
+    "options": {"A": "Phát triển năng lực giải quyết vấn đề", "B": "Tăng cường khả năng nhớ lý thuyết", "C": "Giảm thời gian học tập", "D": "Tập trung vào việc thi cử"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "Giáo dục STEM là một phương thức giáo dục nhằm trang bị cho HS những kiến thức khoa học gắn liền với ứng dụng của chúng trong thực tiễn, qua đó phát triển cho HS NL phát hiện và giải quyết vấn đề."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Bãi phẳng được định nghĩa như thế nào trong tài liệu?",
+    "options": {"A": "Là một bãi rộng và phẳng để luyện tập lái xe.", "B": "Là bãi có nhiều chướng ngại vật.", "C": "Là bãi có độ dốc lớn.", "D": "Là khu vực có nhiều xe cộ qua lại."},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Bãi phẳng là một bãi rộng và phẳng"
+  },
+  {
+    "question": "Khi muốn điều khiển xe ôtô quay vòng sang trái, người lái cần làm gì?",
+    "options": {"A": "Quay vô lăng lái theo chiều kim đồng hồ.", "B": "Quay vô lăng lái ngược chiều kim đồng hồ.", "C": "Giữ vô lăng ở vị trí cố định.", "D": "Đổi số trước khi quay."},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "quay vô lăng lái ngược chiều kim đồng hồ"
+  },
+  {
+    "question": "Phương pháp căn đường chủ yếu là gì?",
+    "options": {"A": "So sánh vị trí với điểm chuẩn trên mặt đường.", "B": "Quan sát tình huống giao thông.", "C": "Giữ khoảng cách an toàn với xe phía trước.", "D": "Đi chậm để quan sát."},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "Phương pháp chủ yếu để căn đường là so sánh vị trí"
+  },
+  {
+    "question": "Khi lái xe ôtô lên dốc cao, điều gì là quan trọng nhất?",
+    "options": {"A": "Đạp phanh mạnh.", "B": "Về số thấp và điều chỉnh ga.", "C": "Giữ tốc độ ổn định.", "D": "Không cần giảm tốc độ."},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [6],
+    "evidence_quote": "cần về các số thấp từ chân và ngang dốc"
+  },
+  {
+    "question": "Khi dừng xe ở giữa dốc xuống, người lái cần thực hiện thao tác nào đầu tiên?",
+    "options": {"A": "Đạp phanh sớm và mạnh.", "B": "Phát tín hiệu và lái xe sát vào lề đường.", "C": "Về số 1.", "D": "Đánh lái sang trái."},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [9],
+    "evidence_quote": "Phát tín hiệu, lái xe sát vào lề đường bên phải"
+  },
+  {
+    "question": "Khi lái xe trên đường cong, người lái nên làm gì để đảm bảo an toàn?",
+    "options": {"A": "Tăng tốc độ tối đa.", "B": "Giảm tốc độ để tránh trượt bánh.", "C": "Giữ nguyên tốc độ.", "D": "Quay vô lăng nhanh chóng."},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [11],
+    "evidence_quote": "khi đi vào đường cong người lái xe phải giảm tốc độ"
+  }
+]

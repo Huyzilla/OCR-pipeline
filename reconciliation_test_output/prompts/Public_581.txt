@@ -1,0 +1,168 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_581", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] (Mở đầu)
+# Mở đầu
+
+Nghị quyết Đại hội XII của Đảng đã đưa ra một trong những nhiệm vụ trọng tâm hiện nay đó là: "Đổi mới căn bản và toàn diện Giáo dục và Đào tạo (GD&ĐT); phát triển nguồn nhân lực, nhất là nguồn nhân lực chất lượng cao" nhằm hội nhập kinh tế quốc tế và tiến tới cuộc cách mạng 4.0. Và theo chỉ thị số 16/CT-TTg ngày 4/5/2017 của Thủ tướng chính phủ cần tập trung vào thúc đẩy đào tạo về khoa học, công nghệ, kỹ thuật và toán học (STEM) và tin học trong chương trình giáo dục phổ thông (GDPT). Đặc điểm nổi bật của giáo dục STEM là nhấn mạnh các yếu tố kỹ thuật và cụ thể là tính thiết kế [4]. Đồng thời, công nghệ thông tin (CNTT) phát triển đã đưa đến một giải pháp mới cho những người muốn học tập nhưng gặp phải trở ngại về thời gian và vị trí địa lý. Hóa học là một môn khoa học có sự kết hợp chặt chẽ giữa lý thuyết và thực hành. Vì vậy, sự kết hợp giữa CNTT chính là thiết kế bài giảng E – learning với chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM để tạo ra môi trường học tập hiệu quả trong dạy học Hóa học.
+
+Đã có một số công trình công bố ở trong nước và quốc tế liên quan đến mô hình giáo dục STEM và E – learning của HS THPT. Luận án tiến sĩ của Lê Xuân Quang: "Dạy học môn Công nghệ phổ thông theo định hướng Giáo dục STEM" [5]; sách "Dạy học theo chủ để STEM cho HS THCS và THPT" do Nguyễn Thanh Nga chủ biên, Đại học Sư phạm thành phố Hồ Chí Minh xuất bản [4]; chủ đề STEM về sử dụng quy trình thiết kế kỹ thuật để chế tạo máy lọc nước của cô Nguyễn Thị Thùy Trang và các thầy cô trường ĐHSP Huế [3]. Yousef Haik và Tamer Shahin, vận dụng quy trình thiết kế kỹ thuật. Bates A.W. lại nói về học tập E – learning và giáo dục.
+
+Bài viết nhằm kết hợp mô hình giáo dục STEM và bài giảng E - learning với chủ đề chế tạo máy lọc khói thuốc lá mini trong dạy học Hóa học cho học sinh lớp 12.
+
+---
+
+[chunk_index=1] (Nội dung > Cơ sở lí luận về giáo dục STEM và quy trình thiết kế kỹ thuật trong giáo dục STEM)
+## Cơ sở lí luận về giáo dục STEM và quy trình thiết kế kỹ thuật trong giáo dục STEM
+
+---
+
+[chunk_index=2] (Nội dung > Cơ sở lí luận về giáo dục STEM và quy trình thiết kế kỹ thuật trong giáo dục STEM > Khái niệm STEM)
+### Khái niệm STEM
+
+STEM là thuật ngữ viết tắt của các từ Science (Khoa học), Technology (Công nghệ), Engineering (Kĩ thuật) và Mathematics (Toán học).
+
+---
+
+[chunk_index=3] (Nội dung > Cơ sở lí luận về giáo dục STEM và quy trình thiết kế kỹ thuật trong giáo dục STEM > Giáo dục STEM)
+### Giáo dục STEM
+
+Giáo dục STEM là một phương thức giáo dục nhằm trang bị cho HS những kiến thức khoa học gắn liền với ứng dụng của chúng trong thực tiễn, qua đó phát triển cho HS NL phát hiện và giải quyết vấn đề cừng với những năng lực khác tương ứng, đáp ứng được yêu cầu của sự phát triển kinh tế - xã hội [2].
+
+---
+
+[chunk_index=4] (Nội dung > Cơ sở lí luận về giáo dục STEM và quy trình thiết kế kỹ thuật trong giáo dục STEM > Quy trình thiết kế kỹ thuật)
+### Quy trình thiết kế kỹ thuật
+
+* Định nghĩa của ABET nói rằng thiết kế kỹ thuật là quá trình tạo ra một hệ thống, thành phần hoặc quy trình để đáp ứng các nhu cầu mong muốn. Đó là một quá trình ra quyết định (thường lặp lại), trong đó khoa học cơ bản, toán học và khoa học kỹ thuật được áp dụng để chuyển đổi tối ưu các nguồn lực để đáp ứng mục tiêu đã nêu [7].
+
+* Quy trình thiết kế kỹ thuật trong giáo dục STEM: Trong giáo dục STEM, HS sẽ sử dụng quy trình kỹ thuật sau để giải quyết các vấn đề khi học các chủ đề STEM một cách hiệu quả.
+
+![](images/image1.jpg)
+
+**Hình 1.** Quy trình thiết kế kỹ thuật trong giáo dục STEM
+
+---
+
+[chunk_index=6] (Nội dung > Cơ sở lí luận về bài giảng E – learning > Quy trình xây dựng bài giảng điện tử [6])
+### Quy trình xây dựng bài giảng điện tử [6]
+
+Quy trình xây dựng thiết kế bài giảng điện tử E – learning gồm 6 bước:
+
+* + Xác định mục tiêu bài học,
+* + Xác định trọng tâm và kiến thức cơ bản,
+* + Multimedia hóa kiến thức,
+* + Xây dựng thư viện tư liệu,
+* + Xây dựng và số hóa kịch bản,
+* + Chạy thử chương trình, sửa chửa và đóng gói.
+
+---
+
+[chunk_index=8] (Nội dung > Dạy học bằng trang web)
+## Dạy học bằng trang web
+
+Dạy học bằng trang web là một hình thức học tập trong đó hầu như toàn bộ các thông tin, kiến thức đều đến từ các trang Web trên internet. GV giảng dạy và HS thực hiện việc học trên mạng internet với chủ đề tích hợp gắn với tình huống thực tiễn. Bài giảng E – learning theo mô hình giáo dục STEM về chủ đề được truy cập từ trang liên kết (Internet links) do GV chọn lọc từ trước. Dạy học webquest là cách thức giúp HS tự học một cách hiệu quả, rèn luyện NL giải quyết vấn đề và NL sáng tạo … hiện nay đang được áp dụng.
+
+---
+
+[chunk_index=9] (Nội dung > Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM)
+## Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM
+
+---
+
+[chunk_index=10] (Nội dung > Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM > Thực nghiệm sư phạm)
+### Thực nghiệm sư phạm
+
+Chúng tôi đã chọn 2 cặp lớp ở 2 trường khác nhau ở TP Huế gồm: trường THPT Thuận Hóa và trường THPT Nguyễn Trường Tộ thực nghiệm trong năm học 2019 – 2020 nhằm đánh giá kết quả bài kiểm tra về chủ đề chế tạo máy lọc khói thuốc lá mini, trong đó 2 lớp thực nghiệm (TN) và 2 lớp đối chứng (ĐC).
+
+**Bảng 1.** Bảng phân phối tần số, tần suất, và tần suất lũy tích kết quả TNSP năm học 2019 – 2020
+
+---
+
+[chunk_index=12] (Nội dung > Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM > Thực nghiệm sư phạm)
+Cột: Điểm xi | Số | SV đạt điểm xi | % số xi | HS đạt điểm | % số HS đạt điểm xi trở xuống
+
+Dòng 1: 7 – 7,7 | 13 | 16 | 16,25 | 20,78 | 33,75 | 84,41
+Dòng 2: 8 – 8,7 | 41 | 9 | 51,25 | 11,69 | 85,00 | 96,10
+Dòng 3: 9 – 9,7 | 11 | 3 | 13,75 | 3,90 | 98,75 | 100
+Dòng 4: 10 | 1 | 0 | 1,25 | 0,00 | 100 | 100
+Dòng 5: Tổng | 80 | 77 | 100 | 100
+
+---
+
+[chunk_index=13] (Nội dung > Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM > Thực nghiệm sư phạm)
+![](images/image2.jpg)
+
+**Hình 2.** Biểu đồ phân phối điểm kiểm tra chủ đề TNSP năm học 2019 – 2020
+
+![](images/image3.jpg)
+
+**Hình 3.** Biểu đồ phân phối tần suất lũy tích điểm kiểm tra chủ đề TNSP năm học 2019 – 2020
+
+**Bảng 2.** Bảng phân loại kết quả TNSP năm học 2019 – 2020
+
+---
+
+[chunk_index=14] (Nội dung > Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM > Thực nghiệm sư phạm)
+Cột: Miền | Yếu – Trung bình | Khá | Giỏi | Tổng
+
+Dòng 1: Điểm số | 0 – 6.7 | 7.0 – 9.7 | 9.0 – 10,0
+Dòng 2: Lớp | TN | ĐC | TN | ĐC | TN | ĐC | TN | ĐC
+Dòng 3: Số HS | 14 | 49 | 54 | 25 | 12 | 3 | 80 | 77
+Dòng 4: Tỉ lệ % | 17.5 | 63.6 | 67.5 | 32.5 | 15.0 | 3.9 | 100.0 | 100.0
+
+---
+
+[chunk_index=15] (Nội dung > Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM > Thực nghiệm sư phạm)
+![](images/image4.jpg)
+
+**Hình 4.** Đồ thị phân loại kết quả TNSP năm học 2019 – 2020
+
+**Bảng 2.** Mô tả và so sánh các dữ liệu kết quả TNSP năm học 2019 – 2020
+
+---
+
+[chunk_index=17] (Nội dung > Bài giảng E- learning chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM > Thực nghiệm sư phạm)
+Từ kết quả thu được, phân tích kết quả xử lý dữ liệu TNSP, nhận thấy, dạy học bằng trang web bài giảng E – learning với chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình giáo dục STEM, HS có sự phát triển về khả nặng tự học, NL giải quyết vấn đề, NL sáng tạo, NL hợp tác và NL nhận thức, cụ thể:
+
+Đồ thị đường lũy tích của lớp TN nằm bên phải và phía dưới đường lũy tích của lớp ĐC (hình 3). Như vậy, chất lượng học tập của lớp TN tốt hơn lớp ĐC.
+
+Kết quả của bài kiểm tra sau tác động của lớp TN có điểm trung bình lần lượt bằng
+
+7,804 cao hơn lớp ĐC có điểm trung bình lần lượt bằng 6,192. Độ chênh lệch điểm số giữa hai lớp là 1,612. Điều này cho thấy điểm trung bình của hai lớp ĐC và TN đã có sự khác biệt rõ rệt, lớp được tác động có điểm trung bình cao hơn lớp ĐC.
+
+Phép kiểm chứng t-test điểm trung bình của bài kiểm tra sau tác động của chủ đề trải nghiệm đối với hai lớp TN và ĐC có giá trị p là 3,6.10-7 (nhỏ hơn 0,05). Kết quả này khẳng định sự chênh lệch điểm trung bình của hai lớp không phải là do ngẫu nhiên mà do tác động, nghiêng về nhóm TN.
+
+Chênh lệch giá trị trung bình chuẩn của bài kiểm tra là lớp TN là 0,543 và lớp đối chứng là 0,724; Điều này có nghĩa mức độ ảnh hưởng của học tập trải nghiệm đến quá trình học tập, nhận thức của HS từ trung bình đến lớn.
+
+Phép kiểm chứng Chi-square ở ba miền kết quả phân loại học tập của HS có giá trị p bằng 1,20.10-5 (nhỏ hơn 0,001). Như vậy, tồn tại sự tương quan có ý nghĩa giữa lớp TN với lớp ĐC và kết quả phân loại HS, chứng tỏ tất cả các dữ liệu thu được không xảy ra ngẫu nhiên. Điều này có nghĩa là ở lớp TN đã giảm tỉ lệ HS yếu – trung bình và tăng tỉ lệ HS khá, giỏi so với lớp ĐC.
+
+---
+
+[chunk_index=18] (Kết luận)
+# Kết luận
+
+Thiết kế bài giảng E – learning kết hợp theo mô hình Giáo dục STEM là vấn đề còn khá mới ở Việt Nam. Bài báo này đã giới thiệu về thiết kế bài giảng E – learning với chủ đề chế tạo máy lọc khói thuốc lá mini theo mô hình Giáo dục STEM trong Hóa học cho học sinh lớp 12. Kết quả thực nghiệm sư phạm trong năm học 2019 – 2020 sau khi xử lí số liệu đã cho thấy kết quả cao so với dạy học truyền thống. Đề tài này đã cho thấy tính khả thi và đạt hiệu quả cao và nghiên cứu này có thể nhân rộng được.

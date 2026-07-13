@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Để vẽ một đoạn thẳng trong phần mềm, bạn cần chọn tùy chọn nào từ menu Style?",
+    "options": {"A": "Normal hoặc Construction", "B": "Auto hoặc Dimension", "C": "Offset hoặc Mirror", "D": "Ellipse hoặc Circle"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Chọn Normal hoặc Construction trong menu Style"
+  },
+  {
+    "question": "Khi muốn tạo một hình chữ nhật, bạn cần xác định điều gì?",
+    "options": {"A": "Hai góc đối diện", "B": "Ba đỉnh", "C": "Một điểm giữa", "D": "Một đường thẳng"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Qua 2 góc đối diện"
+  },
+  {
+    "question": "Để tạo đường cong tiếp xúc với đoạn thẳng, bạn cần sử dụng lệnh nào?",
+    "options": {"A": "Arc", "B": "Circle", "C": "Spline", "D": "Ellipse"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Vẽ cung tròn: * Đi qua 3 điểm * Biết tâm và 2 điểm cuối"
+  },
+  {
+    "question": "Để cắt bỏ một phần đối tượng, bạn cần sử dụng lệnh nào từ menu ngữ cảnh?",
+    "options": {"A": "Trim", "B": "Extend", "C": "Mirror", "D": "Offset"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "Cắt bỏ một phần đối"
+  },
+  {
+    "question": "Khi bạn muốn tạo ràng buộc vuông góc cho các đoạn thẳng, bạn nên thực hiện lệnh nào?",
+    "options": {"A": "Constraint", "B": "Dimension", "C": "Auto", "D": "Rotate"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [4],
+    "evidence_quote": "Tạo ràng buộc vuông góc"
+  },
+  {
+    "question": "Nếu bạn có một đoạn thẳng dài 5 cm và một đoạn thẳng khác dài 3 cm, tổng chiều dài của hai đoạn thẳng là bao nhiêu cm?",
+    "options": {"A": "8 cm", "B": "7 cm", "C": "6 cm", "D": "9 cm"},
+    "gold_answer": "A",
+    "type": "tinh_toan",
+    "source_chunk_index": [],
+    "evidence_quote": ""
+  }
+]

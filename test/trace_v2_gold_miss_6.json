@@ -1,0 +1,316 @@
+[
+  {
+    "question_index": 178,
+    "question": "Loại vật liệu dẫn điện nào thường được dùng làm dây điện trở nung nóng?",
+    "gold_chunk_ids": [
+      "Public_579::chunk::12"
+    ],
+    "candidate_count": 16,
+    "gold_rank_pre_rerank": 4,
+    "gold_rank_after_rerank": 8,
+    "layer": "rerank: gold co trong pool nhung bi day khoi top-5",
+    "retrieve_ms": 5.3,
+    "rerank_ms": 1502.5,
+    "pre_top20_ids": [
+      "Public_508::chunk::0",
+      "Public_579::chunk::4",
+      "Public_579::chunk::3",
+      "Public_579::chunk::12",
+      "Public_579::chunk::19",
+      "Public_579::chunk::11",
+      "Public_579::chunk::16",
+      "Public_579::chunk::1",
+      "Public_579::chunk::17",
+      "Public_574::chunk::8",
+      "Public_579::chunk::15",
+      "Public_508::chunk::2",
+      "Public_574::chunk::11",
+      "Public_508::chunk::1",
+      "Public_579::chunk::0",
+      "Public_508::chunk::5"
+    ],
+    "post_top20_ids": [
+      "Public_508::chunk::0",
+      "Public_579::chunk::3",
+      "Public_579::chunk::4",
+      "Public_579::chunk::11",
+      "Public_574::chunk::8",
+      "Public_574::chunk::11",
+      "Public_579::chunk::0",
+      "Public_579::chunk::12",
+      "Public_508::chunk::2",
+      "Public_579::chunk::1",
+      "Public_579::chunk::15",
+      "Public_579::chunk::19",
+      "Public_579::chunk::17",
+      "Public_508::chunk::5",
+      "Public_579::chunk::16",
+      "Public_508::chunk::1"
+    ],
+    "top5_ids": [
+      "Public_508::chunk::0",
+      "Public_579::chunk::3",
+      "Public_579::chunk::4",
+      "Public_579::chunk::11",
+      "Public_574::chunk::8"
+    ]
+  },
+  {
+    "question_index": 188,
+    "question": "Hiệu suất sử dụng tài sản cố định năm nay của doanh nghiệp là bao nhiêu?",
+    "gold_chunk_ids": [
+      "Public_580::chunk::10"
+    ],
+    "candidate_count": 13,
+    "gold_rank_pre_rerank": 13,
+    "gold_rank_after_rerank": 9,
+    "layer": "rerank: gold co trong pool nhung bi day khoi top-5",
+    "retrieve_ms": 6.1,
+    "rerank_ms": 1641.7,
+    "pre_top20_ids": [
+      "Public_580::chunk::3",
+      "Public_580::chunk::9",
+      "Public_580::chunk::8",
+      "Public_580::chunk::1",
+      "Public_580::chunk::7",
+      "Public_580::chunk::0",
+      "Public_580::chunk::4",
+      "Public_578::chunk::12",
+      "Public_580::chunk::2",
+      "Public_600::chunk::9",
+      "Public_580::chunk::5",
+      "Public_600::chunk::3",
+      "Public_580::chunk::10"
+    ],
+    "post_top20_ids": [
+      "Public_580::chunk::3",
+      "Public_580::chunk::9",
+      "Public_580::chunk::8",
+      "Public_580::chunk::7",
+      "Public_580::chunk::0",
+      "Public_580::chunk::2",
+      "Public_580::chunk::5",
+      "Public_580::chunk::1",
+      "Public_580::chunk::10",
+      "Public_580::chunk::4",
+      "Public_578::chunk::12",
+      "Public_600::chunk::9",
+      "Public_600::chunk::3"
+    ],
+    "top5_ids": [
+      "Public_580::chunk::3",
+      "Public_580::chunk::9",
+      "Public_580::chunk::8",
+      "Public_580::chunk::7",
+      "Public_580::chunk::0"
+    ]
+  },
+  {
+    "question_index": 203,
+    "question": "Trong thực nghiệm so sánh SQL Server và Hortonworks Sandbox, ở lần xử lý thứ 31 điều gì xảy ra với SQL Server?",
+    "gold_chunk_ids": [
+      "Public_583::chunk::20"
+    ],
+    "candidate_count": 13,
+    "gold_rank_pre_rerank": 4,
+    "gold_rank_after_rerank": 6,
+    "layer": "rerank: gold co trong pool nhung bi day khoi top-5",
+    "retrieve_ms": 8.4,
+    "rerank_ms": 1646.4,
+    "pre_top20_ids": [
+      "Public_583::chunk::17",
+      "Public_583::chunk::21",
+      "Public_583::chunk::16",
+      "Public_583::chunk::20",
+      "Public_583::chunk::19",
+      "Public_583::chunk::18",
+      "Public_155::chunk::8",
+      "Public_619::chunk::29",
+      "Public_583::chunk::14",
+      "Public_583::chunk::9",
+      "Public_155::chunk::16",
+      "Public_583::chunk::8",
+      "Public_583::chunk::7"
+    ],
+    "post_top20_ids": [
+      "Public_583::chunk::21",
+      "Public_583::chunk::17",
+      "Public_583::chunk::18",
+      "Public_583::chunk::19",
+      "Public_583::chunk::16",
+      "Public_583::chunk::20",
+      "Public_583::chunk::14",
+      "Public_583::chunk::8",
+      "Public_583::chunk::9",
+      "Public_583::chunk::7",
+      "Public_155::chunk::8",
+      "Public_155::chunk::16",
+      "Public_619::chunk::29"
+    ],
+    "top5_ids": [
+      "Public_583::chunk::21",
+      "Public_583::chunk::17",
+      "Public_583::chunk::18",
+      "Public_583::chunk::19",
+      "Public_583::chunk::16"
+    ]
+  },
+  {
+    "question_index": 254,
+    "question": "Tính năng triển khai máy ảo có cấu hình cao yêu cầu hỗ trợ tối thiểu bao nhiêu vCPU và RAM?",
+    "gold_chunk_ids": [
+      "Public_605::chunk::1"
+    ],
+    "candidate_count": 13,
+    "gold_rank_pre_rerank": 1,
+    "gold_rank_after_rerank": 7,
+    "layer": "rerank: gold co trong pool nhung bi day khoi top-5",
+    "retrieve_ms": 10.0,
+    "rerank_ms": 1737.0,
+    "pre_top20_ids": [
+      "Public_605::chunk::1",
+      "Public_605::chunk::14",
+      "Public_618::chunk::2",
+      "Public_605::chunk::3",
+      "Public_605::chunk::12",
+      "Public_605::chunk::11",
+      "Public_605::chunk::15",
+      "Public_605::chunk::13",
+      "Public_605::chunk::7",
+      "Public_605::chunk::2",
+      "Public_618::chunk::4",
+      "Public_605::chunk::4",
+      "Public_605::chunk::17"
+    ],
+    "post_top20_ids": [
+      "Public_618::chunk::2",
+      "Public_605::chunk::3",
+      "Public_605::chunk::14",
+      "Public_605::chunk::15",
+      "Public_618::chunk::4",
+      "Public_605::chunk::2",
+      "Public_605::chunk::1",
+      "Public_605::chunk::4",
+      "Public_605::chunk::12",
+      "Public_605::chunk::13",
+      "Public_605::chunk::11",
+      "Public_605::chunk::7",
+      "Public_605::chunk::17"
+    ],
+    "top5_ids": [
+      "Public_618::chunk::2",
+      "Public_605::chunk::3",
+      "Public_605::chunk::14",
+      "Public_605::chunk::15",
+      "Public_618::chunk::4"
+    ]
+  },
+  {
+    "question_index": 341,
+    "question": "Đường kính ngoài đầu cuối của ống soi dạ dày được yêu cầu tối đa là bao nhiêu?",
+    "gold_chunk_ids": [
+      "Public_633::chunk::12"
+    ],
+    "candidate_count": 15,
+    "gold_rank_pre_rerank": 12,
+    "gold_rank_after_rerank": 6,
+    "layer": "rerank: gold co trong pool nhung bi day khoi top-5",
+    "retrieve_ms": 6.7,
+    "rerank_ms": 1259.5,
+    "pre_top20_ids": [
+      "Public_633::chunk::24",
+      "Public_633::chunk::50",
+      "Public_633::chunk::0",
+      "Public_633::chunk::13",
+      "Public_633::chunk::7",
+      "Public_633::chunk::19",
+      "Public_633::chunk::45",
+      "Public_633::chunk::20",
+      "Public_633::chunk::40",
+      "Public_633::chunk::44",
+      "Public_633::chunk::25",
+      "Public_633::chunk::12",
+      "Public_633::chunk::8",
+      "Public_633::chunk::32",
+      "Public_633::chunk::14"
+    ],
+    "post_top20_ids": [
+      "Public_633::chunk::50",
+      "Public_633::chunk::19",
+      "Public_633::chunk::45",
+      "Public_633::chunk::13",
+      "Public_633::chunk::24",
+      "Public_633::chunk::12",
+      "Public_633::chunk::44",
+      "Public_633::chunk::20",
+      "Public_633::chunk::7",
+      "Public_633::chunk::8",
+      "Public_633::chunk::40",
+      "Public_633::chunk::32",
+      "Public_633::chunk::25",
+      "Public_633::chunk::0",
+      "Public_633::chunk::14"
+    ],
+    "top5_ids": [
+      "Public_633::chunk::50",
+      "Public_633::chunk::19",
+      "Public_633::chunk::45",
+      "Public_633::chunk::13",
+      "Public_633::chunk::24"
+    ]
+  },
+  {
+    "question_index": 343,
+    "question": "Ống soi đại tràng video yêu cầu khả năng phóng đại tối đa bao nhiêu lần khi kết hợp màn hình tương thích?",
+    "gold_chunk_ids": [
+      "Public_633::chunk::17"
+    ],
+    "candidate_count": 15,
+    "gold_rank_pre_rerank": null,
+    "gold_rank_after_rerank": null,
+    "layer": "embedding/retrieval: gold ngoai candidate pool",
+    "retrieve_ms": 9.6,
+    "rerank_ms": 1734.2,
+    "pre_top20_ids": [
+      "Public_633::chunk::0",
+      "Public_633::chunk::42",
+      "Public_633::chunk::14",
+      "Public_633::chunk::16",
+      "Public_633::chunk::10",
+      "Public_633::chunk::7",
+      "Public_633::chunk::32",
+      "Public_633::chunk::46",
+      "Public_631::chunk::35",
+      "Public_633::chunk::40",
+      "Public_633::chunk::25",
+      "Public_633::chunk::6",
+      "Public_633::chunk::21",
+      "Public_633::chunk::38",
+      "Public_633::chunk::8"
+    ],
+    "post_top20_ids": [
+      "Public_633::chunk::16",
+      "Public_633::chunk::42",
+      "Public_633::chunk::10",
+      "Public_633::chunk::38",
+      "Public_633::chunk::32",
+      "Public_633::chunk::6",
+      "Public_633::chunk::0",
+      "Public_633::chunk::21",
+      "Public_633::chunk::7",
+      "Public_633::chunk::25",
+      "Public_633::chunk::14",
+      "Public_633::chunk::46",
+      "Public_631::chunk::35",
+      "Public_633::chunk::40",
+      "Public_633::chunk::8"
+    ],
+    "top5_ids": [
+      "Public_633::chunk::16",
+      "Public_633::chunk::42",
+      "Public_633::chunk::10",
+      "Public_633::chunk::38",
+      "Public_633::chunk::32"
+    ]
+  }
+]

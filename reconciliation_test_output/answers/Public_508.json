@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Vật liệu nào có độ bền về điện từ 50-100 kV/mm?",
+    "options": {"A": "Mi ca", "B": "Gốm", "C": "Cao su", "D": "Nhựa thông"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Độ bền về điện (kV/mm) 50-100"
+  },
+  {
+    "question": "Nhiệt độ tối đa mà giấy làm tụ điện có thể chịu đựng là bao nhiêu độ C?",
+    "options": {"A": "100", "B": "60", "C": "70", "D": "80"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Nhiệt độ chịu đựng (t 0 C) 100"
+  },
+  {
+    "question": "Lụa cách điện có độ bền về điện là bao nhiêu?",
+    "options": {"A": "8-60", "B": "20-30", "C": "10-15", "D": "50-60"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [2],
+    "evidence_quote": "Độ bền về điện 8-60"
+  },
+  {
+    "question": "Gốm có khả năng chịu đựng điện áp cao hay không?",
+    "options": {"A": "Có", "B": "Không", "C": "Chỉ ở một số loại", "D": "Không rõ"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "chịu được điện áp cao"
+  },
+  {
+    "question": "Nhựa thông được sử dụng trong ứng dụng nào?",
+    "options": {"A": "Chất tẩm sấy", "B": "Làm tụ điện", "C": "Chất cách điện", "D": "Chất làm nguội"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [4],
+    "evidence_quote": "Dùng làm chất tẩm sấy"
+  },
+  {
+    "question": "Nếu lụa cách điện có độ bền về điện là 8-60 kV/mm và nhiệt độ chịu đựng là 105 độ C, thì tổng độ bền về điện và nhiệt độ chịu đựng là bao nhiêu?",
+    "options": {"A": "113", "B": "68", "C": "105", "D": "60"},
+    "gold_answer": "A",
+    "type": "tinh_toan",
+    "source_chunk_index": [2, 1],
+    "evidence_quote": ""
+  }
+]

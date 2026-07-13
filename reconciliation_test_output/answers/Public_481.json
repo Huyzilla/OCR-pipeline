@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Mạng nơ-ron nhân tạo (ANN) chủ yếu dựa trên nguyên lý nào trong việc xử lý thông tin?",
+    "options": {"A": "Cách bộ não sinh học xử lý thông tin", "B": "Các thuật toán toán học phức tạp", "C": "Mô phỏng hành vi của con người", "D": "Xử lý ngữ nghĩa tự nhiên"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "cách bộ não sinh học xử lý thông tin"
+  },
+  {
+    "question": "Mục tiêu chính của phần thí nghiệm liên quan đến mạng nơ-ron nhân tạo là gì?",
+    "options": {"A": "Hiểu nguyên lý hoạt động của ANN", "B": "Tìm hiểu về các loại dữ liệu", "C": "Phân tích dữ liệu lớn", "D": "Phát triển phần mềm"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Hiểu nguyên lý hoạt động của ANN"
+  },
+  {
+    "question": "Hàm kích hoạt nào dưới đây giữ lại các thành phần dương và triệt tiêu các thành phần âm?",
+    "options": {"A": "Sigmoid", "B": "Tanh", "C": "ReLU", "D": "Softmax"},
+    "gold_answer": "C",
+    "type": "tra_cuu",
+    "source_chunk_index": [2],
+    "evidence_quote": "ReLU giữ thành phần dương, triệt tiêu âm"
+  },
+  {
+    "question": "Để đo độ lệch giữa nhãn thật và phân phối dự đoán trong mạng nơ-ron, hàm mất mát nào được sử dụng?",
+    "options": {"A": "MSE", "B": "Hinge loss", "C": "Cross-Entropy", "D": "Log loss"},
+    "gold_answer": "C",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "Cross-Entropy đa lớp đo độ lệch giữa nhãn thật 1-hot và phân phối dự đoán"
+  },
+  {
+    "question": "Trong phương pháp tối ưu hóa Adam, công thức nào được sử dụng để tính toán tham số mới?",
+    "options": {"A": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝛻𝜃𝐿(𝜃𝑡)", "B": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝑚𝑡", "C": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝑣𝑡", "D": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝑚̂𝑡/√𝑣̂𝑡"},
+    "gold_answer": "D",
+    "type": "tra_cuu",
+    "source_chunk_index": [5],
+    "evidence_quote": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂 𝑚̂𝑡 / √𝑣̂𝑡 + 𝜖"
+  },
+  {
+    "question": "Nếu một nơ-ron nhân tạo đầu vào có 3 nơ-ron với trọng số lần lượt là 0.2, 0.5 và 0.3, cùng với bias là 0.1, giá trị đầu ra sẽ là bao nhiêu? (Giả sử sử dụng hàm kích hoạt là sigmoid)",
+    "options": {"A": "0.5", "B": "0.731", "C": "0.622", "D": "0.785"},
+    "gold_answer": "B",
+    "type": "tinh_toan",
+    "source_chunk_index": [2],
+    "evidence_quote": "𝑛 𝑧 = ∑𝑤𝑖𝑥𝑖 + 𝑏"
+  }
+]

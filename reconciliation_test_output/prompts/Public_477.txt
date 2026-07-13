@@ -1,0 +1,131 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_477", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] (GIỚI THIỆU VỀ PYTHON)
+# GIỚI THIỆU VỀ PYTHON
+
+Python là ngôn ngữ lập trình mạnh mẽ, hỗ trợ nhiều thư viện khoa học như NumPy, Pandas, Matplotlib, SciPy. Trong lĩnh vực năng lượng tái tạo, Python được sử dụng để:
+
+* Mô phỏng sản lượng điện mặt trời theo dữ liệu bức xạ.
+* Tính toán hiệu suất hệ thống lưu trữ pin.
+* Phân tích dữ liệu vận hành và tối ưu hóa cấu hình hệ thống.
+
+---
+
+[chunk_index=1] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Yêu cầu trước khi làm thí nghiệm)
+## Yêu cầu trước khi làm thí nghiệm
+
+Nắm vững kiến thức về:
+
+* Bức xạ mặt trời và các yếu tố ảnh hưởng.
+* Nguyên lý hoạt động của tấm pin quang điện (PV).
+* Cách tính dung lượng và hiệu suất pin lưu trữ.
+
+---
+
+[chunk_index=2] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Mục đích của phần thí nghiệm)
+## Mục đích của phần thí nghiệm
+
+Dùng Python mô phỏng các nội dung sau:
+
+* Công suất phát của hệ thống PV theo giờ trong ngày.
+* Chu kỳ sạc/xả của pin lưu trữ.
+* Hiệu suất tổng thể của hệ thống PV + pin.
+
+---
+
+[chunk_index=3] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Tóm tắt lý thuyết > Mô hình nguồn pin mặt trời PV)
+### Mô hình nguồn pin mặt trời PV
+
+Pin mặt trời PV (Photovoltaic cell) gồm các lớp bán dẫn chịu tác dụng của quang học để biến đổi các năng lượng phôton bức xạ mặt trời thành năng lượng điện. Theo quan điểm năng lượng điện tử, pin mặt trời có thể được coi là những
+
+![](images/image1.jpg)
+
+---
+
+[chunk_index=4] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Tóm tắt lý thuyết > Mô hình nguồn pin mặt trời PV)
+Cột: 
+
+Dòng 1: nguồn dòng biểu diễn mối quan hệ phi tuyến I-V.
+Dòng 2: Hiệu suất của tấm pin mặt trời sẽ lớn nhất khi pin mặt
+Dòng 3: trời cung cấp cho ta công suất cực đại. Theo đặc tính
+Dòng 4: phi tuyến trên hình 2, nó sẽ xảy ra khi P-V là cực đại,
+Dòng 5: tức là P-V = Pmax tại thời điểm (Imax ,Vmax ) được
+Dòng 6: gọi là điểm cực đại MPP (Maximum Point Power).
+Dòng 7: Hệ bám điểm công suất
+Dòng 8: cực đại MPPT (Maximum Point Power Tracking)
+Dòng 9: được sử dụng để đảm bảo rằng pin mặt trời sẽ luôn
+Dòng 10: luôn làm việc ở điểm MPP
+
+---
+
+[chunk_index=5] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Tóm tắt lý thuyết > Định nghĩa một số đại lượng cơ bản)
+Cột: Đại lượng | Ký hiệu | Công thức | Đơn vị | Ý nghĩa
+
+Dòng 1: Bức xạ mặt trời | 𝐺𝑡 | W/m² | Năng lượng bức xạ tới bề mặt tấm pin
+Dòng 2: Hiệu suất tấm pin | η𝑝𝑣 | % | Tỉ lệ chuyển đổi bức xạ thành điện năng
+Dòng 3: Công suất PV | Ppv | Ppv = Gt ⋅ A ⋅ ηpv | W | Công suất tức thời của hệ PV. Phụ thuộc vào bức xạ mặt trời, diện tích tấm pin và hiệu suất tấm pin
+Dòng 4: Dung lượng pin | Cbat | kWh | Lượng điện năng pin có thể lưu trữ
+Dòng 5: Hiệu | ηbat | % | Tỉ lệ điện năng thu hồi so
+Dòng 6: suất pin | với khi sạc
+
+---
+
+[chunk_index=6] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Tóm tắt lý thuyết > Một số định nghĩa khác)
+Cột: Nếu có hai hệ PV độc lập:
+
+Dòng 1: 𝑃𝑡𝑜𝑡𝑎𝑙(𝑡) (𝑡) (𝑡) = 𝑃𝑝𝑣1 + 𝑃𝑝𝑣2
+Dòng 2: ′ (𝑡) 𝑃𝑝𝑣(𝑡) 𝑃 = 𝑘 ⋅
+Dòng 3: ′ (𝑡) 𝑃𝑝𝑣(𝑡 𝛥𝑡) 𝑃 = −
+Dòng 4: Đảo thời gian (mô phỏng ngược dữ liệu): | ′ (𝑡) 𝑃𝑝𝑣(−𝑡 ) 𝑃 =
+Dòng 5: Năng lượng lưu trữ: | ∑𝑃𝑐ℎ𝑎𝑟𝑔𝑒(𝑡) 𝐸𝑠𝑡𝑜𝑟𝑒𝑑 = ⋅ 𝜂𝑏𝑎𝑡 𝑡
+Dòng 6: Công suất trung bình: | 𝑇 1 ∑𝑃(𝑡) 𝑃𝑎𝑣𝑔 = 𝑇 𝑡=1
+
+---
+
+[chunk_index=7] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Tóm tắt lý thuyết > Hệ thống PV + Pin)
+### Hệ thống PV + Pin
+
+*Hệ thống bất biến theo thời gian:* Nếu điều kiện bức xạ và nhiệt độ không đổi, công suất PV không đổi theo thời gian.
+
+*Hệ thống nhân quả:* Công suất tại thời điểm t chỉ phụ thuộc vào dữ liệu bức xạ và SOC trước đó.
+
+*Hệ thống ổn định:* SOC luôn nằm trong khoảng [0, 1].
+
+Phương trình cân bằng năng lượng:
+
+$$P_{load}(t) = P_{pv}(t) + P_{discharge}(t) - P_{charge}(t)$$
+
+---
+
+[chunk_index=8] (HỆ THỐNG NĂNG LƯỢNG MẶT TRỜI Ở MIỀN THỜI GIAN (t) > Tóm tắt lý thuyết > Bảng dữ liệu mô phỏng (ví dụ 1 ngày))
+Cột: Giờ | 𝐆𝐭 (W/m²) | 𝐏𝐩𝐯 (kW) | SOC (%) | 𝐏𝐜𝐡𝐚𝐫𝐠𝐞(𝐤𝐖) | 𝐏𝐝𝐢𝐬𝐜𝐡𝐚𝐫𝐠𝐞(𝐤𝐖) | 𝐏𝐥𝐨𝐚𝐝(𝐤𝐖)
+
+Dòng 1: 0 | 0 | 0.00 | 65 | 0.00 | 0.50 | 0.50
+Dòng 2: 1 | 0 | 0.00 | 62 | 0.00 | 0.45 | 0.45
+Dòng 3: 2 | 0 | 0.00 | 60 | 0.00 | 0.40 | 0.40
+Dòng 4: 12 | 850 | 2.55 | 80 | 1.00 | 0.00 | 1.55
+Dòng 5: 23 | 0 | 0.00 | 68 | 0.00 | 0.55 | 0.55

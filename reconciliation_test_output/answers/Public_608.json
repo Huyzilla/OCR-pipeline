@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Mục tiêu chính của việc thiết kế website là gì?",
+    "options": {"A": "Giới thiệu sản phẩm và công ty", "B": "Tạo ra một giao diện phức tạp", "C": "Tối ưu hóa SEO cho trang web", "D": "Phát triển ứng dụng di động"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Giới thiệu công ty & các hoạt động có liên quan"
+  },
+  {
+    "question": "Yêu cầu nào là cần thiết cho giao diện của website?",
+    "options": {"A": "Phải sử dụng màu sắc tươi sáng", "B": "Thiết kế phải chuyên nghiệp và đẹp mắt", "C": "Giao diện phải có nhiều hình ảnh", "D": "Nội dung phải phong phú và đa dạng"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Giao diện thiết kế chuyên nghiệp, đẹp mắt"
+  },
+  {
+    "question": "Trang web cần đạt yêu cầu gì về bảo mật?",
+    "options": {"A": "Cần phải có nhiều hình ảnh", "B": "Đảm bảo hoạt động ổn định và an toàn", "C": "Cần có nhiều ngôn ngữ hỗ trợ", "D": "Cần phải có thiết kế động"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [2],
+    "evidence_quote": "Trang web đạt độ an toàn và bảo mật cao"
+  },
+  {
+    "question": "Đâu là một yêu cầu quan trọng cho nội dung thông tin của website?",
+    "options": {"A": "Website phải có ít nhất 5 ngôn ngữ", "B": "Nội dung phải dễ dàng cập nhật", "C": "Tất cả thông tin phải được viết bằng tiếng Anh", "D": "Nội dung chỉ cần cập nhật hàng tháng"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "Công cụ Cập nhật dễ sử dụng giúp người quản trị website dễ dàng cập nhật"
+  },
+  {
+    "question": "Gói Pro của website có những dịch vụ gì?",
+    "options": {"A": "Chỉ cung cấp hosting", "B": "Chỉ cung cấp thiết kế giao diện", "C": "Gồm cả dịch vụ hosting và đào tạo", "D": "Chỉ cung cấp bảo trì"},
+    "gold_answer": "C",
+    "type": "tra_cuu",
+    "source_chunk_index": [15],
+    "evidence_quote": "Hosting | Plan B web hosting: Dung lượng : 2,000 MB"
+  },
+  {
+    "question": "Nếu một gói website có giá 12,000,000 VNĐ và chi phí thanh toán nội địa là 1,500,000 VNĐ, tổng chi phí cho gói website và thanh toán nội địa sẽ là bao nhiêu?",
+    "options": {"A": "13,500,000 VNĐ", "B": "14,500,000 VNĐ", "C": "12,500,000 VNĐ", "D": "15,000,000 VNĐ"},
+    "gold_answer": "A",
+    "type": "tinh_toan",
+    "source_chunk_index": [12, 13],
+    "evidence_quote": "Tổng tiền | 23,800,000 VNĐ"
+  }
+]

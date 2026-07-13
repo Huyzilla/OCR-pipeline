@@ -201,9 +201,16 @@ def prepare_retrieval(args, questions: list[dict]):
 
     collection = build_chroma_collection(args, chunk_texts, chunk_ids, embedder)
 
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(f"Loading reranker: {args.rerank_model} ({device})")
-    reranker = CrossEncoder(args.rerank_model, device=device)
+    rerank_path = Path(args.rerank_model)
+    if rerank_path.is_dir() and any(rerank_path.glob("*.onnx")):
+        from baseline_fusion.onnx_reranker import OnnxCrossEncoder
+
+        print(f"Loading reranker: {args.rerank_model} (ONNX Runtime CPU)")
+        reranker = OnnxCrossEncoder(rerank_path)
+    else:
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"Loading reranker: {args.rerank_model} ({device})")
+        reranker = CrossEncoder(args.rerank_model, device=device)
 
     return chunk_texts, chunk_ids, bm25, query_cache, collection, reranker
 

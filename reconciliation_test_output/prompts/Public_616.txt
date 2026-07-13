@@ -1,0 +1,166 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_616", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] (ĐỊNH NGHĨA VÀ THUẬT NGỮ)
+# ĐỊNH NGHĨA VÀ THUẬT NGỮ
+
+**HTĐ:** Hệ thống điện.
+
+**MBA**: Máy biến áp.
+
+**MPĐ**: Máy phát điện
+
+**UPS:** Hệ thống cấp nguồn AC liên tục
+
+**STS:** Thiết bị chuyển nguồn tĩnh
+
+**TVSS**: (Transient voltage surge suppressor) bộ triệt xung điện áp.
+
+**HPL** (High-pressure Laminates): Loại sàn tấm thép lõi bê tông mặt phủ HPL chống tĩnh điện.
+
+**Rss** (Surface resistance): Điện trở bề mặt.
+
+**Rsg** (Grouding resistance): Điện trở nối đất.
+
+**LB(s)** (Bristish Pound): Đơn vị đo khối lượng của Anh, 1LB = 1 Pound = 0,454kg.
+
+**TGLB:** Thông gió lọc bụi.
+
+**AC (**Alternating Current): Hệ thống nguồn xoay chiều bao gồm các tủ phân phối, các thiết bị đóng cắt bảo vệ, ATS (thiết bị chuyển đổi nguồn tự động), cáp điện.
+
+Thiết bị đóng cắt: Bao gồm MCB, MCCB, ACB, Contactor, cầu chì, dao cách ly... và ngắn mạch
+
+**MCB** (Miniature Circuit Breaker): Là máy cắt loại nhỏ (thường có dòng định mức Iđm ≤ 100A) dùng để đóng cắt mạch điện, bảo vệ quá tải
+
+**MCCB** (Molded Case Circuit Breaker): Là máy cắt dạng khối (thường có dòng định mức khoảng 100A < Iđm < 1000A) dùng để đóng cắt mạch điện, bảo vệ quá tải và ngắn mạch.
+
+**ACB** (Air Circuit Breaker): Là máy cắt không khí, có dòng cắt định mức lớn (thường ≥ 1000A) dùng để đóng cắt mạch điện, bảo vệ quá tải và ngắn mạch.
+
+**ATS** (Automatic Transfer Switch): Hệ thống chuyển nguồn tự động, có tác dụng khi nguồn chính bị mất thì ATS sẽ khởi động và chuyển sang nguồn dự phòng. Nguồn dự phòng thường là máy phát điện.
+
+---
+
+[chunk_index=1] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS)
+# HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS
+
+Tùy theo điều kiện hoạt động cụ thể của từng UPS/STS cần đảm bảo lên kế hoạch bảo dưỡng phù hợp và thay thế linh kiện vật tư tiêu hao theo khuyến cáo của hãng sản xuất theo từng Model sản phẩm để đảm bảo hệ thống UPS/STS Luôn luôn ở chế độ hoạt động ổn định.
+
+Phòng dịch vụ Trung tâm Dữ liệu (DV TTDL):
+
+* + Phối hợp với các đơn vị vận hành lập kế hoạch bảo dưỡng UPS/STS định kỳ hàng quý (3 tháng/ lần). Phối hợp với các đối tác cung cấp dịch vụ bảo dưỡng để thực hiện bảo dưỡng theo kế hoạch đã được duyệt.
+* + Thẩm định các hoạt động bảo dưỡng UPS/STS: Thực hiện trình ký BGĐ TT DVHTS, BGĐ Công ty theo quy định.
+
+UPS/STS được bảo dưỡng định kỳ với nội dung trong bảng sau:
+
+---
+
+[chunk_index=2] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS > Đối với UPS:)
+Cột: 
+
+Dòng 1: Nội dung công việc | Tần suất thực hiện
+Dòng 2: ТТ | 1 tháng | 3 tháng (check A) | 6 tháng (check B) | 12 tháng | Ghi chú
+Dòng 3: 1 | Kiêm tra tình trạng của quạt làm mát (kiểm tra tốc độ, nhiệt độ bạc đạn,) | X | X
+Dòng 4: 2 | Vệ sinh các thiết bị bên trong | X
+Dòng 5: 3 | Kiểm tra điện áp của các ắc quy khi nạp/xả. Đo nội trở của battery (có kết quả đánh giá) | x | x
+Dòng 6: 4 | Kiểm tra các mối nối, siết nối. lại các mối | X
+Dòng 7: 5 | Hiệu chỉnh các thông số Điện áp, dòng điện và tần số (nếu cần) bằng phần mềm | X
+Dòng 8: 9 03.3 5 | Kiểm tra chất lương Kiểm tra chất lượng (ổn định) của UPS. Kiểm tra log file và phân tích log nhằm phát hiện bất thường. | x | x
+Dòng 9: 7 | Kiểm tra tình trạng và kết nối đảm bảo sự hoạt động ổn định hộp hòa đồng bộ (nếu có) | x | X
+Dòng 10: 8 | Kiểm tra chất lượng (ổn định) của Inverter. Đo kiểm bằng thiết bị chuyên dụng | x | X
+
+---
+
+[chunk_index=3] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS > Đối với UPS:)
+Cột: 
+
+Dòng 1: 7 | Kiểm tra tình trạng và kết nối đảm bảo sự hoạt động ổn định hộp hòa đồng bộ (nếu có) | x | X
+Dòng 2: 8 | Kiểm tra chất lượng (ổn định) của Inverter. Đo kiểm bằng thiết bị chuyên dụng | x | X
+Dòng 3: 9 | Kiểm tra chất lượng (ổn định) của Rectifier. Đo kiểm bằng thiết bị chuyên dụng. | X AIR | X
+Dòng 4: 10 | Kiểm tra chất lượng (ổn định) của Static Switch. Đo kiểm bằng thiết bị chuyên | 93.39. | x | x | 2025-10-19
+
+---
+
+[chunk_index=4] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS > Đối với UPS:)
+Cột: 
+
+Dòng 1: 11 | Kiểm tra tình trạng của các tụ điện li bằng cảm quan và đo kiểm các thông số (nếu có) | x | Có kết quả thông số đính kèm
+Dòng 2: 12 | Kiểm tra tình trạng, vệ sinh và đo kiểm thông số các mạch điện tử (điều nguồn). | x
+Dòng 3: 13 | Kiểm tra tình trạng của các Switch. Đo kiểm bằng thiết bị chuyên dụng. | x
+Dòng 4: 14 | Kiểm tra, vệ sinh cáp nguồn vào/ra, Cáp nguồn DC. | x
+Dòng 5: 15 | Vệ sinh, kiểm tra, hiệu chỉnh các thông số với các ACB kèm theo UPS bằng các phần mềm thiết bị chuyên dụng | x
+Dòng 6: 16 | Kiểm tra UPS theo chế độ bảo dưỡng dự phòng (Test xả ắc quy, bypass) | x
+
+---
+
+[chunk_index=5] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS > Đối với UPS:)
+Trong đó:
+
+* + 02 lần kiểm tra A
+* + 02 lần kiểm tra B
+
+Mô tả chi tiết:
+
+* + Kiểm tra A: Kiểm tra tình trạng UPS, kiểm tra các thông số của UPS mà không cần Shutdown UPS, công việc này thực hiện 2 lần trong 1 năm, thời gian làm là từ 1 tiếng đến 2 tiếng/ 01 UPS.
+* + Kiểm tra B: Làm vệ sinh máy, kiểm tra tình trạng UPS, kiểm tra các thông số UPS, cân chỉnh các giá trị điện của UPS (nếu có sai số), công việc này cần phải shutdown UPS, thực hiện 2 lần trong 1 năm, thời gian làm là từ 2 tiếng đến 4 tiếng/ 01 UPS.
+
+---
+
+[chunk_index=6] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS > Đối với STS)
+Cột: 1
+
+Dòng 1: Tần suất thực hiện
+Dòng 2: TT | Nội dung công việc | 1 tháng | 3 tháng (check A) | 6 tháng (check B) | 12 tháng | Ghi chú
+Dòng 3: 1 | Kiểm tra tình trạng của quạt làm mát (kiểm tra tốc độ, nhiệt độ bạc đạn | x | X | X | X
+Dòng 4: 2 | Vệ sinh các thiết bị bên trong. | X | X
+Dòng 5: 3 | Kiểm tra các mối nối, siết chặt lại các mối nối. | X | X
+Dòng 6: 4 | Hiệu chỉnh các thông số Điện áp, dòng điện và tần số. | X | X
+Dòng 7: 5 \9 03.3 5 | Kiểm tra chất lượng (ổn định) của STS. Kiểm tra log file và phân tích log nhằm phát hiện bất thường. Giam do | X | х | х | X | Đo kiểm bằng thiết bị/ phần mềm chuyên dụng
+Dòng 8: 6 | Kiểm tra cảm quan bên ngoài và đo kiểm thông số tụ điện li | X | Х | Có kết quả thông số đính kèm
+Dòng 9: 7 | Kiểm tra STS theo chế độ bảo dưỡng dự phòng nguồn 1 và nguồn 2 - Chuyển mạch STS - Chuyển bypass STS | x | x | x 2CO | x
+Dòng 10: 8 | Kiểm tra tình trạng các mạch điện tử (điều khiển, nguồn). Đo kiểm bằng thiết bị chuyên dụng | x 39. | 18 AIR | X
+
+---
+
+[chunk_index=7] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS > Đối với STS)
+Cột: 9 | Kiểm tra tình trạng của các Switch Kiểm tra cảm quan bên ngoài Kiểm tra tác động trong quá trình chuyển mạch STS (Kiểm tra bằng thiết bị chuyên dụng) | x | x
+
+Dòng 1: 10 | Kiểm tra cáp nguồn vào/ra, Cáp nguồn DC. | x | x
+Dòng 2: 11 | Vệ sinh bên ngoài thiết bị | x | x | x | x
+
+---
+
+[chunk_index=8] (HƯỚNG DẪN BẢO DƯỠNG HỆ THỐNG UPS/STS > Đối với STS)
+Trong đó:
+
+* + 02 lần kiểm tra A
+* + 02 lần kiểm tra B
+
+Mô tả chi tiết:
+
+* + Kiểm tra A: Kiểm tra tình trạng STS, kiểm tra các thông số của STS mà không cần Shutdown STS, công việc này thực hiện 2 lần trong 1 năm, thời gian làm là từ 1 tiếng đến 2 tiếng/ 01 STS.
+* + Kiểm tra B: Làm vệ sinh máy, kiểm tra tình trạng STS, kiểm tra các thông số STS, cân chỉnh các giá trị điện của STS (nếu có sai số), công việc này cần phải shutdown STS, thực hiện 2 lần trong 1 năm, thời gian làm là từ 1 tiếng đến 2 tiếng/ 01 STS.
+
+![](images/image3.jpg)

@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "chunk_dir": "C:\\Users\\xiaoxin\\Downloads\\DATN_backup\\chunk_outputs_finals",
+  "gold_judged": "C:\\Users\\xiaoxin\\Downloads\\DATN_backup\\training\\data_preparation_pipeline\\gold_chunks_judged.jsonl",
+  "n_corpus": 2317,
+  "n_clean_queries": 792,
+  "n_train_queries": 634,
+  "n_eval_queries": 158,
+  "n_train_pairs": 1180,
+  "train_intent_dist": {
+    "tra_cuu": 594,
+    "tinh_toan": 40
+  },
+  "eval_intent_dist": {
+    "tra_cuu": 148,
+    "tinh_toan": 10
+  }
+}

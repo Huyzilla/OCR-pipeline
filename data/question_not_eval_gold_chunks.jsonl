@@ -1,0 +1,832 @@
+{"query":"Trong mô hình nhà thông minh, IoT chủ yếu đóng vai trò gì?","positive":["Public001::chunk::17","Public001::chunk::22","Public001::chunk::1"]}
+{"query":"Năm 2010, công nghệ nào thường được sử dụng trong kiểm soát ra vào ngôi nhà thông minh?","positive":["Public001::chunk::5"]}
+{"query":"Nội dung chính của bài báo nghiên cứu Public_001 về IoT trong xây dựng nhà thông minh là gì?","positive":["Public001::chunk::0","Public001::chunk::22"]}
+{"query":"Dựa vào thông tin trong tài liệu Public_001, hãy tính số bài báo trung bình mỗi lớp trong nghiên cứu được đề cập.","positive":["Public001::chunk::0"]}
+{"query":"Dựa trên tài liệu Public_002, mô tả học phần Cơ sở dữ liệu nâng cao, hãy liệt kê các loại CSDL không được đề cập trong nội dung học phần này.","positive":["Public002::chunk::0"]}
+{"query":"Trong tài liệu Public_002, đối với đoạn liệt kê các học phần từ số 47 đến 81, nếu các học phần này được trải đều trên 7 trang, trung bình mỗi trang mô tả bao nhiêu học phần?","positive":[]}
+{"query":"Điểm BLEU được dùng để đánh giá chất lượng bản dịch trong tài liệu Public_003 là gì?","positive":["Public003::chunk::14","Public003::chunk::13"]}
+{"query":"Công cụ nào được nhóm tác giả của tài liệu Public_003 sử dụng để huấn luyện các hệ dịch nơ ron?","positive":["Public003::chunk::13"]}
+{"query":"Công nghệ in bê tông 3D được thực hiện theo quy trình nào?","positive":["Public004::chunk::2","Public004::chunk::8","Public004::chunk::5"]}
+{"query":"Công nghệ nào được phát triển tại Đại học Loughborough (Anh)?","positive":["Public004::chunk::7"]}
+{"query":"Nội dung chính của bài báo Public_004 là gì?","positive":[]}
+{"query":"Trong tài liệu, ưu điểm của công nghệ Contour Crafting so với Concrete Printing là gì?","positive":["Public004::chunk::11","Public004::chunk::6"]}
+{"query":"Công nghệ nào vừa cho phép máy tính tự động nhận biết ký tự trên hình ảnh, vừa có khả năng đọc hiểu dữ liệu chữ viết tay và chữ in?","positive":["Public005::chunk::4","Public005::chunk::5"]}
+{"query":"Nội dung chính của bài báo là gì?","positive":["Public051::chunk::0"]}
+{"query":"Theo tài liệu Public_005, tỷ lệ sai số theo đơn vị từ của FPT.AI Reader trong thử nghiệm là bao nhiêu?","positive":["Public005::chunk::14"]}
+{"query":"Theo tài liệu Public_006, các nhiệm vụ và quyền hạn của các thiết chế quản trị đại học ở Việt Nam được quy định trong luật nào?","positive":[]}
+{"query":"Theo tài liệu Public_006, cơ quan nào có thẩm quyền cao nhất trong trường đại học?","positive":[]}
+{"query":"Làm thế nào để ứng dụng công nghệ số trong quản trị đại học có thể bao quát toàn bộ hoạt động của nhà trường kịp thời và hỗ trợ ra quyết sách quản lý, điều hành hiệu quả?","positive":["Public006::chunk::4","Public006::chunk::12","Public006::chunk::15","Public006::chunk::5","Public006::chunk::7"]}
+{"query":"Nội dung chính của bài báo Public_006 là gì?","positive":[]}
+{"query":"Theo số liệu trong tài liệu, đến nay ngành giáo dục đã số hóa dữ liệu của khoảng bao nhiêu giáo viên và học sinh?","positive":["Public006::chunk::6"]}
+{"query":"ISO 15189:2022 áp dụng cho đối tượng nào?","positive":[]}
+{"query":"Theo tiêu chuẩn trong tài liệu Public_007, “khiếu nại” được định nghĩa như thế nào?","positive":[]}
+{"query":"Trong các tiêu chuẩn ISO/IEC liên quan đến đo lường và đánh giá sự phù hợp, tiêu chuẩn nào cung cấp từ vựng quốc tế về đo lường và định nghĩa thuật ngữ độ chệch?","positive":["Public007::chunk::1"]}
+{"query":"Nội dung chính của tiêu chuẩn ISO 15189:2022 là gì?","positive":[]}
+{"query":"Theo Public_007, “khoảng tham chiếu sinh học” thường được định nghĩa ở mức bao nhiêu phần trăm giá trị tập trung?","positive":["Public007::chunk::2"]}
+{"query":"ISO 15189:2022 yêu cầu thiết lập và theo dõi những chỉ số chất lượng nào?","positive":["Public008::chunk::4","Public010::chunk::21"]}
+{"query":"Theo tài liệu Public_008, các yêu cầu đúng khi lựa chọn, vận hành và bảo dưỡng thiết bị phòng xét nghiệm là gì?","positive":["Public008::chunk::14","Public008::chunk::13","Public008::chunk::17","Public008::chunk::16"]}
+{"query":"Nội dung chính của phần tiêu chuẩn trong tài liệu là gì?","positive":["Public010::chunk::9","Public010::chunk::7","Public010::chunk::1"]}
+{"query":"Nếu phòng xét nghiệm có 500 mẫu xét nghiệm trong tháng, trong đó có 25 mẫu bị từ chối, tỷ lệ từ chối mẫu là bao nhiêu?","positive":[]}
+{"query":"Học phần Nhập môn ngành CNTT trang bị cho sinh viên những kỹ năng nào ngoài kiến thức chuyên ngành?","positive":["Public002::chunk::8","Public009::chunk::5"]}
+{"query":"Học phần nào vừa giúp sinh viên năm nhất làm quen với môi trường đại học và kiến thức cơ bản ngành CNTT, vừa rèn luyện các kỹ năng mềm và chuẩn mực đạo đức cần thiết để trở thành kỹ sư công nghệ thông tin?","positive":["Public009::chunk::1"]}
+{"query":"Nội dung chính của tài liệu Public_009 là gì?","positive":[]}
+{"query":"Theo quy định tại tài liệu Public_009, nếu một học phần có cấu trúc 3(2:1:6) thì số tiết lý thuyết, thực hành và tự học lần lượt là bao nhiêu?","positive":["Public002::chunk::5","Public002::chunk::7","Public002::chunk::0"]}
+{"query":"Theo tiêu chuẩn ISO 15189:2022, việc lưu giữ hồ sơ phòng xét nghiệm nhằm mục đích chính nào?","positive":["Public010::chunk::13","Public010::chunk::11"]}
+{"query":"Theo hướng dẫn về kiểm soát hồ sơ, phòng xét nghiệm phải đảm bảo điều gì khi sửa đổi hồ sơ?","positive":["Public010::chunk::12"]}
+{"query":"Nội dung chính của phần 8 trong tiêu chuẩn ISO 15189:2022 là gì?","positive":[]}
+{"query":"Mạng GAN (Global Area Network) là gì?","positive":["Public039::chunk::5","Public040::chunk::1","Public039::chunk::6"]}
+{"query":"Mạng máy tính được phân loại theo những tiêu chí nào và Internet ban đầu ra đời từ mục đích gì?","positive":["Public011::chunk::1","Public011::chunk::3"]}
+{"query":"Nội dung chính của tài liệu Public_011 là gì?","positive":[]}
+{"query":"Với một mạng kết nối 200 máy tính và có bán kính hoạt động 500m trong một tòa nhà, phân loại mạng chính xác nhất của nó là gì?","positive":["Public011::chunk::1"]}
+{"query":"Theo tài liệu, ký hiệu đại diện * trong tên tệp có ý nghĩa gì?","positive":[]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Nếu Windows XP quản lý cho phép đặt tên tập tin dài tối đa 255 ký tự, còn MS-DOS chỉ cho phép tối đa 8 ký tự, thì Windows XP dài hơn bao nhiêu ký tự?","positive":["Public012::chunk::4"]}
+{"query":"Thế hệ máy tính điện tử nào sử dụng bóng đèn điện tử chân không?","positive":["Public013::chunk::3","Public013::chunk::4"]}
+{"query":"Thông tin khác dữ liệu ở điểm nào và quá trình xử lý thông tin theo máy tính gồm những bước nào?","positive":["Public013::chunk::2","Public021::chunk::3","Public013::chunk::0"]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Nếu một máy tính thế hệ 2 có tốc độ trung bình 50.000 phép tính/giây, thì nó nhanh gấp bao nhiêu lần so với máy thế hệ 1 tốc độ trung bình 1.000 phép tính/giây?","positive":["Public013::chunk::4"]}
+{"query":"Bit là viết tắt của từ gì?","positive":["Public014::chunk::8","Public014::chunk::2"]}
+{"query":"Trong hệ đếm thập lục phân, ký tự “F” biểu diễn giá trị thập phân nào?","positive":[]}
+{"query":"Trong máy tính, mọi dữ liệu được biểu diễn dưới dạng gì và đơn vị thông tin nhỏ nhất là gì?","positive":["Public014::chunk::7","Public014::chunk::8"]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Nếu dùng 8 bit để biểu diễn số nguyên không dấu, giá trị lớn nhất có thể biểu diễn là bao nhiêu?","positive":["Public014::chunk::9"]}
+{"query":"Khối nào trong CPU có nhiệm vụ thực hiện các phép tính số học và logic?","positive":["Public015::chunk::0"]}
+{"query":"Bộ nhớ nào lưu trữ chương trình hệ thống và không bị mất dữ liệu khi tắt máy?","positive":["Public015::chunk::3"]}
+{"query":"CPU gồm những bộ phận chính nào và bộ nhớ chính của máy tính được chia thành những loại nào?","positive":["Public015::chunk::0","Public015::chunk::2"]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Nếu một CPU có 36 bit địa chỉ, dung lượng tối đa của bộ nhớ chính mà nó quản lý được là bao nhiêu?","positive":["Public015::chunk::2"]}
+{"query":"Tiêu chuẩn TCVN 9395:2012 áp dụng cho loại cọc nào?","positive":["Public016::chunk::1"]}
+{"query":"Dung dịch khoan bentonite có vai trò chính gì trong thi công cọc khoan nhồi?","positive":["Public016::chunk::19","Public016::chunk::4"]}
+{"query":"Theo TCVN 9395:2012, tiêu chuẩn này áp dụng cho loại cọc nào và từ đường kính bao nhiêu trở lên?","positive":["Public016::chunk::1"]}
+{"query":"Nội dung chính của tiêu chuẩn TCVN 9395:2012 là gì?","positive":["Public018::chunk::9"]}
+{"query":"Nếu trong quá trình khoan, cao độ dung dịch khoan phải luôn cao hơn mực nước ngầm ít nhất 1,5 m, giả sử mực nước ngầm ở -10 m thì cao độ dung dịch khoan tối thiểu phải đạt bao nhiêu?","positive":[]}
+{"query":"Theo TCVN 5574:2018, tính toán kết cấu bê tông và bê tông cốt thép cần được thực hiện dựa trên những trạng thái giới hạn nào?","positive":["Public017::chunk::3","Public017::chunk::0","Public018::chunk::11"]}
+{"query":"Các loại bê tông nào được phép sử dụng khi thiết kế kết cấu theo TCVN 5574:2018?","positive":["Public017::chunk::14"]}
+{"query":"Theo TCVN 9379:2012, tính toán kết cấu bê tông và bê tông cốt thép cần được thực hiện theo những trạng thái giới hạn nào và phải đảm bảo điều gì trong suốt thời hạn sử dụng công trình?","positive":["Public017::chunk::0","Public017::chunk::5","Public018::chunk::11","Public018::chunk::10"]}
+{"query":"Nội dung chính của tiêu chuẩn TCVN 5574:2018 là gì?","positive":["Public018::chunk::9"]}
+{"query":"Nếu một dầm bê tông cốt thép có nhịp 6 m, theo TCVN 5574:2018 độ võng tối đa cho phép là 1/150 nhịp, giá trị võng lớn nhất cho phép là bao nhiêu?","positive":[]}
+{"query":"Tiêu chuẩn TCVN 5574:2018 áp dụng cho những loại bê tông nào?","positive":["Public018::chunk::0","Public017::chunk::14"]}
+{"query":"Theo TCVN 9379:2012, tính toán kết cấu bê tông và bê tông cốt thép cần được tiến hành theo những trạng thái giới hạn nào và phải đảm bảo điều gì trong suốt thời hạn sử dụng công trình?","positive":["Public017::chunk::0","Public017::chunk::5","Public018::chunk::11","Public018::chunk::10"]}
+{"query":"Nội dung chính của phần yêu cầu chung đối với kết cấu bê tông và bê tông cốt thép trong TCVN 5574:2018 là gì?","positive":["Public018::chunk::8","Public018::chunk::7","Public018::chunk::0","Public018::chunk::9","Public017::chunk::0"]}
+{"query":"Nếu một cấu kiện bê tông làm việc trong môi trường xâm thực, theo TCVN 5574:2018, cần đảm bảo thêm yêu cầu gì ngoài an toàn và sử dụng bình thường?","positive":["Public018::chunk::9","Public018::chunk::8"]}
+{"query":"Bộ phận nào trong hệ thống chống sét có nhiệm vụ thu sét trực tiếp?","positive":[]}
+{"query":"Quốc gia nào là nước đầu tiên công bố Kế hoạch chiến lược trí tuệ nhân tạo quốc gia và vào năm nào?","positive":["Public019::chunk::11"]}
+{"query":"Nội dung chính của TCVN 9385:2012 là gì?","positive":["Public018::chunk::9"]}
+{"query":"Một công trình cao 30 m cần bảo vệ chống sét trực tiếp. Theo bán kính bảo vệ của kim thu sét (r = 1,5h), bán kính bảo vệ tối đa là bao nhiêu?","positive":[]}
+{"query":"Theo quy định, chiều dày màng khô của vật liệu bảo vệ được đo bằng nguyên tắc nào và loại đầu đo nhiệt nào được ưu tiên sử dụng khi thử nghiệm trên cấu kiện thép?","positive":["Public020::chunk::1","Public020::chunk::7"]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Theo quy định, cần bao nhiêu phép đo chiều dày tối thiểu trên dầm chịu tải?","positive":["Public020::chunk::2"]}
+{"query":"Bộ mã chuẩn nào đã được chọn cho tiếng Việt trong CNTT?","positive":["Public283::chunk::17","Public257::chunk::17"]}
+{"query":"Trong xử lý ngôn ngữ, bài toán nào có mục tiêu chuyển văn bản thành tiếng nói?","positive":["Public021::chunk::5"]}
+{"query":"Theo tài liệu Public_021, khi đo chiều dày màng khô của vật liệu bảo vệ, nguyên tắc nào được áp dụng và liệu có yêu cầu về đường kính vỏ bọc tối thiểu ưu tiên của đầu đo nhiệt liên quan đến quy trình này không?","positive":["Public020::chunk::1","Public020::chunk::7"]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Theo đánh giá, hiện có bao nhiêu phần trăm dữ liệu không cấu trúc trong tổng lượng dữ liệu của loài người?","positive":[]}
+{"query":"Chiều dày lớp bảo vệ chịu lửa được định nghĩa như thế nào?","positive":["Public022::chunk::7"]}
+{"query":"Theo tài liệu Public_022, các thử nghiệm chịu lửa được áp dụng cho những loại tiết diện thép nào và không áp dụng cho loại nào?","positive":["Public022::chunk::0"]}
+{"query":"Nội dung chính của tiêu chuẩn TCVN xxxx:202x là gì?","positive":[]}
+{"query":"Theo quy định, mẫu thử nghiệm dầm chịu tải phải chịu tải trọng bằng bao nhiêu phần trăm sức kháng mô men thiết kế?","positive":[]}
+{"query":"Chiều dày vật liệu bọc bảo vệ dạng bản hoặc tấm được phép sai lệch tối đa bao nhiêu % so với giá trị trung bình?","positive":["Public023::chunk::1"]}
+{"query":"Đối với lớp phủ dạng phản ứng, độ dày trung bình được xác định như thế nào?","positive":["Public023::chunk::2","Public023::chunk::1","Public022::chunk::7"]}
+{"query":"Nội dung chính của tài liệu Public_023 là gì?","positive":[]}
+{"query":"Theo tài liệu Public_024, thực phẩm được định nghĩa là gì?","positive":["Public024::chunk::0"]}
+{"query":"Thực phẩm giàu protein thường có trong nhóm nguyên liệu nào?","positive":["Public024::chunk::2"]}
+{"query":"Thực phẩm là gì? Thực phẩm chức năng dùng chủ yếu để làm gì?","positive":["Public024::chunk::0","Public024::chunk::3"]}
+{"query":"Nội dung chính của phần “Khái quát về thực phẩm và công nghệ thực phẩm” là gì?","positive":[]}
+{"query":"Nếu một người tiêu dùng mua 100g bánh mì (giàu glucid ~50%) và 100g cá (giàu protein ~20%), thì lượng glucid và protein người đó nạp vào lần lượt là bao nhiêu gam?","positive":[]}
+{"query":"Tia bức xạ nào hiện nay được sử dụng phổ biến trong công nghiệp thực phẩm?","positive":["Public025::chunk::0"]}
+{"query":"Chiếu xạ thực phẩm về mặt cơ sở khoa học là gì? Và mục đích công nghệ chủ yếu hiện nay của chiếu xạ thực phẩm là gì?","positive":["Public025::chunk::0","Public025::chunk::3","Public025::chunk::1"]}
+{"query":"Nội dung chính của phần “Chiếu xạ trong công nghiệp thực phẩm” là gì?","positive":["Public025::chunk::0","Public025::chunk::3","Public025::chunk::1"]}
+{"query":"Nếu một loại trái cây được xử lý bằng liều chiếu xạ 2 kGy, trong khi mức 1 kGy không làm mất vitamin C còn mức 2–4 kGy làm giảm mạnh vitamin C, thì loại trái cây đó có nguy cơ bị giảm giá trị dinh dưỡng như thế nào?","positive":["Public025::chunk::5"]}
+{"query":"Xơ dệt được phân loại theo nguồn gốc thành mấy nhóm chính?","positive":["Public026::chunk::4"]}
+{"query":"Theo tài liệu Public_026, thành phần chính của xơ len là gì?","positive":["Public027::chunk::2"]}
+{"query":"Nội dung chính của chương 1 trong tài liệu `Public_026` là gì?","positive":["Public056::chunk::0","Public151::chunk::0"]}
+{"query":"Nếu một sợi có chiều dài 1000 m và khối lượng 20 g thì chỉ số Tex của sợi đó bằng bao nhiêu?","positive":[]}
+{"query":"Nhiệt độ chuyển mềm của len thường nằm trong khoảng nào?","positive":[]}
+{"query":"Nội dung chính của tài liệu Public_027 là gì?","positive":[]}
+{"query":"Nếu sợi bông có độ ẩm hoàn toàn khô là 8 g, khi hút ẩm đạt khối lượng 8,8 g thì độ ẩm tương đối của sợi là bao nhiêu?","positive":[]}
+{"query":"Ai là những nhà khoa học được ghi nhận phát minh ra transistor lưỡng cực vào năm 1947?","positive":["Public028::chunk::0"]}
+{"query":"Transistor được tạo thành từ mấy lớp bán dẫn và ba người nào được ghi nhận là những nhà phát minh ra nó?","positive":["Public028::chunk::0","Public028::chunk::1"]}
+{"query":"Nội dung chính của tài liệu Public_028 là gì?","positive":[]}
+{"query":"Nếu bộ phát (Emitter) bị pha tạp nặng, Base pha tạp nhẹ và Collector pha tạp vừa phải, thì vùng nghèo kiệt sẽ mở rộng nhiều hơn về phía nào?","positive":["Public028::chunk::4","Public028::chunk::5"]}
+{"query":"Vật liệu nào phổ biến nhất được sử dụng làm chất bán dẫn cơ bản?","positive":["Public029::chunk::0"]}
+{"query":"Chất bán dẫn tinh khiết là gì và hiện tượng pha tạp (doping) có tác dụng gì?","positive":["Public029::chunk::0","Public029::chunk::1"]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Nếu một tinh thể silicon có tỷ lệ doping là 1 nguyên tử tạp chất trên 10 triệu nguyên tử Si, thì khi thêm 100 nguyên tử tạp chất, số nguyên tử Si xấp xỉ bao nhiêu?","positive":[]}
+{"query":"Đơn vị đo điện dung của tụ điện là gì?","positive":["Public030::chunk::1"]}
+{"query":"Hằng số điện môi ε₀ trong chân không có giá trị bao nhiêu?","positive":["Public149::chunk::3"]}
+{"query":"Tụ điện là gì và điện dung của tụ được tính theo công thức nào?","positive":["Public030::chunk::6","Public030::chunk::1","Public030::chunk::0"]}
+{"query":"Nội dung chính của tài liệu Public_030 là gì?","positive":[]}
+{"query":"Một tụ điện phẳng có A = 10 m², d = 5 m, điện môi là không khí (εr = 1). Hãy tính điện dung C.","positive":["Public030::chunk::5","Public030::chunk::6"]}
+{"query":"Đơn vị đo điện trở là gì?","positive":["Public031::chunk::1","Public033::chunk::10"]}
+{"query":"Ký hiệu điện trở theo tiêu chuẩn IEC có dạng nào?","positive":["Public031::chunk::2"]}
+{"query":"Điện trở là gì và tại sao được gọi là linh kiện thụ động?","positive":["Public031::chunk::0"]}
+{"query":"Nội dung chính của tài liệu Public_031 là gì?","positive":[]}
+{"query":"Một mạch nối tiếp gồm R1 = 2Ω, R2 = 4Ω, R3 = 6Ω, dòng điện I = 4A. Hãy tính điện áp toàn mạch.","positive":["Public031::chunk::6"]}
+{"query":"Nguồn điện nào thường tạo ra điện áp một chiều (DC)?","positive":["Public032::chunk::0","Public032::chunk::10"]}
+{"query":"Dòng điện một chiều (DC) là gì và định luật Ohm liên quan như thế nào?","positive":["Public032::chunk::0","Public032::chunk::1"]}
+{"query":"Nội dung chính của tài liệu là gì?","positive":[]}
+{"query":"Một mạch có điện áp 12V và điện trở 6Ω. Hãy tính dòng điện chạy qua mạch theo định luật Ohm.","positive":["Public032::chunk::2","Public032::chunk::1"]}
+{"query":"Ai là người phát minh ra pin điện đầu tiên vào năm 1800?","positive":[]}
+{"query":"Dòng điện tử trong thực tế chảy theo chiều nào?","positive":["Public033::chunk::4"]}
+{"query":"Nguồn gốc dòng điện và hai giả thuyết về chiều dòng điện là gì?","positive":["Public033::chunk::4"]}
+{"query":"Nếu một dầm dây dẫn có dòng điện 2000 mA chạy qua, giá trị này tương ứng với bao nhiêu ampe?","positive":[]}
+{"query":"Theo tài liệu Public_034, photodiode hoạt động hiệu quả nhất khi được phân cực như thế nào?","positive":["Public034::chunk::0","Public034::chunk::11"]}
+{"query":"Ai là người đầu tiên đề xuất ý tưởng về phototransistor?","positive":["Public034::chunk::5"]}
+{"query":"Photodiode hoạt động như thế nào và khác gì với phototransistor?","positive":["Public034::chunk::0","Public034::chunk::9"]}
+{"query":"Nội dung chính của tài liệu Public_034 là gì?","positive":[]}
+{"query":"MAE loss còn có tên khác là gì","positive":["Public035::chunk::10"]}
+{"query":"Theo tài liệu Public_035, điều gì xảy ra nếu learning rate quá nhỏ?","positive":["Public035::chunk::9"]}
+{"query":"Trong bối cảnh linear regression đơn biến, mô hình được biểu diễn ra sao và mục tiêu của bài toán khi được mô hình hóa là gì?","positive":[]}
+{"query":"Những thành phần chính nào cấu thành mô hình hồi quy tuyến tính?","positive":[]}
+{"query":"Một trình tối ưu linear regression ghi nhận cost function tăng. Hành động hợp lý tiếp theo là gì?","positive":[]}
+{"query":"Trong tài liệu Public_036, đâu không phải một ứng dụng của Image segmentation được đề cập?","positive":[]}
+{"query":"Mạng U-Net có mấy phần chính?","positive":["Public036::chunk::3","Public036::chunk::4"]}
+{"query":"Theo tài liệu Public_036, có bao nhiêu loại bài toán segmentation và đó là những loại nào?","positive":["Public036::chunk::1"]}
+{"query":"Theo tài liệu Public_036, mạng U-Net có những hạn chế hoặc điểm yếu nào khi áp dụng trong bài toán Image segmentation?","positive":[]}
+{"query":"Xác định padding (p) và stride (s) khi tiến hành transposed convolution với input 4x4, kernel 3x3 để cho ra output 9x9","positive":["Public040::chunk::2"]}
+{"query":"Mô hình skip-gram ban đầu có bao nhiêu lớp ẩn (hidden layer)?","positive":["Public037::chunk::10"]}
+{"query":"Co-occurrence matrix có tính chất đối xứng gì và kích thước của ma trận này là bao nhiêu (với V là kích thước từ điển)?","positive":["Public037::chunk::7","Public037::chunk::9"]}
+{"query":"Khẳng định nào dưới đây không đúng với bối cảnh bài toán trong tài liệu Public_037?","positive":[]}
+{"query":"Trong số các mô hình mạng nơ-ron được đề cập trong tài liệu Public_038, mô hình nào không phải là một dạng của Mạng Nơ-ron Hồi quy (RNN)?","positive":["Public110::chunk::0"]}
+{"query":"Sinh mô tả ảnh thuộc vào dạng RNN nào?","positive":["Public038::chunk::0","Public037::chunk::3","Public037::chunk::0"]}
+{"query":"Theo tài liệu Public_038, câu output của mô hình seq2seq sẽ có thêm mấy token và đó là những token nào?","positive":["Public037::chunk::5"]}
+{"query":"Trong bối cảnh dịch máy, đâu là cách hiểu \"sản phẩm trung gian\" phù hợp với seq2seq?","positive":["Public038::chunk::1"]}
+{"query":"Theo tài liệu Public_038, khẳng định nào dưới đây là đúng với cơ chế attention?","positive":[]}
+{"query":"Đâu không phải là một ứng dụng của GAN được nêu trong phần đầu tiên của tài liệu Public_039?","positive":["Public039::chunk::0","Public039::chunk::2"]}
+{"query":"GAN là viết tắt của?","positive":["Public039::chunk::5"]}
+{"query":"GAN gồm bao nhiêu thành phần mạng và tên gọi của chúng, theo đúng thuật ngữ, là?","positive":["Public039::chunk::5","Public040::chunk::1","Public039::chunk::6"]}
+{"query":"Tóm tắt cách hoạt động của GAN?","positive":["Public039::chunk::5","Public039::chunk::6"]}
+{"query":"Khác biệt về kiến trúc của DCGAN và GAN?","positive":["Public040::chunk::1","Public040::chunk::0"]}
+{"query":"Input của Generator trong mạng tạo sinh đối kháng (GAN) là gì?","positive":["Public039::chunk::7","Public040::chunk::9"]}
+{"query":"Kích thước ảnh của CIFAR-10 và Fashion-MNIST là gì?","positive":["Public116::chunk::19","Public116::chunk::17","Public040::chunk::6"]}
+{"query":"Điểm chung giữa DCGAN và Conditional GAN là?","positive":["Public040::chunk::5","Public040::chunk::0"]}
+{"query":"Đâu là yếu tố tạo nên \"Conditional\" trong Conditional GAN?","positive":["Public040::chunk::5","Public040::chunk::9"]}
+{"query":"Logistic regression có đầu ra là gì?","positive":["Public042::chunk::2","Public045::chunk::1"]}
+{"query":"Đâu là công thức của sigmoid?","positive":["Public041::chunk::4","Public042::chunk::2"]}
+{"query":"Hàm mất mát Cross-Entropy biến thiên ra sao khi nhãn thực y_i lần lượt là 1 và 0, ứng với các giá trị xác suất dự đoán p_i?","positive":["Public041::chunk::7"]}
+{"query":"Điểm giống nhau cơ bản của logistic regression và linear regression là gì","positive":[]}
+{"query":"Theo nguyên lý xác suất được trình bày trong tài liệu Public_041, đâu không phải là một khẳng định hợp lý?","positive":[]}
+{"query":"Mô hình neural network lấy cảm hứng từ?","positive":["Public042::chunk::0","Public090::chunk::3"]}
+{"query":"Neural network bắt chước toàn bộ cơ chế hoạt động của hệ thần kinh, đúng hay sai?","positive":["Public042::chunk::0","Public090::chunk::3"]}
+{"query":"Ký hiệu phổ biến cho số đặc trưng trong một điểm dữ liệu và số điểm dữ liệu lần lượt là?","positive":[]}
+{"query":"Bài toán về toán tử bit nào là minh chứng cho việc cần xây dựng nhiều hơn một lớp ẩn?","positive":["Public042::chunk::6"]}
+{"query":"Theo tài liệu Public_042, vì sao lại nên dùng hàm kích hoạt phi tuyến (non-linear activation)?","positive":["Public046::chunk::12","Public046::chunk::17"]}
+{"query":"Hệ màu RGB biểu diễn tất cả các màu khả kiến dưới dạng tổ hợp của ba màu gì?","positive":["Public043::chunk::0","Public146::chunk::0"]}
+{"query":"Một pixel của ảnh xám có thể nhận giá trị tối thiểu và tối đa lần lượt là?","positive":["Public043::chunk::5","Public043::chunk::3"]}
+{"query":"Phép tích chập (convolution) gồm ba yếu tố chính là kernel và hai thành phần nào?","positive":["Public079::chunk::1"]}
+{"query":"Đâu là vấn đề trong xử lý ảnh mà CNN giải quyết tốt hơn so với các mạng nơ-ron truyền thống?","positive":["Public116::chunk::2","Public040::chunk::0","Public116::chunk::3"]}
+{"query":"Pooling layer được thiết kế để?","positive":["Public044::chunk::8","Public079::chunk::6","Public079::chunk::1"]}
+{"query":"Tổng quát một CNN sẽ gồm hai phần chính nào sau đây?","positive":[]}
+{"query":"Kết quả average pooling của hình vuông gồm 4 giá trị 15, 20, 30, 45 là?","positive":[]}
+{"query":"Theo tài liệu Public_045, điểm chung của Transfer learning và data augmentation là gì?","positive":["Public045::chunk::4"]}
+{"query":"Theo tài liệu Public_045, đâu không phải là một hình thức data augmentation cho ảnh?","positive":["Public045::chunk::4"]}
+{"query":"Theo tài liệu Public_045, khi tiến hành phân lớp với nhiều hơn hai lớp, có bao nhiêu chiến lược tiếp cận? Hình thức của chúng là gì?","positive":[]}
+{"query":"Trường hợp nào sau đây được đề xuất sử dụng Finetuning hơn là Feature extractor?\r\nI. Dữ liệu lớn, khác dữ liệu pretrain\r\nII. Dữ liệu nhỏ, khác dữ liệu pretrain\r\nIII. Dữ liệu nhỏ, giống dữ liệu pretrain\r\nIV. Dữ liệu lớn, giống dữ liệu pretrain","positive":["Public045::chunk::3"]}
+{"query":"Theo tài liệu Public_045, đâu không phải là khẳng định đúng giữa Finetuning và Feature extractor?","positive":["Public045::chunk::2","Public045::chunk::3","Public045::chunk::1"]}
+{"query":"Lợi ích chính của vectorization là gì","positive":["Public046::chunk::0"]}
+{"query":"Đâu là mục tiêu chính của các phương pháp trong tài liệu Public_046?","positive":[]}
+{"query":"Một thuật toán gradient descent lấy ra 32 dữ liệu điểm mỗi lần tính đạo hàm thì thuộc loại gradient descent nào?","positive":["Public046::chunk::1"]}
+{"query":"Vấn đề chính của R-CNN là?","positive":["Public047::chunk::1"]}
+{"query":"IoU phụ thuộc vào hai toán tử tập hợp nào và công thức là gì?","positive":[]}
+{"query":"Các nguyên tắc cốt lõi và thành phần chính của các cách tiếp cận object detection là gì?","positive":[]}
+{"query":"Trong ROI pooling, để tạo ra output có kích thước 4x4, mỗi vùng quan tâm (ROI) được chia thành bao nhiêu phân vùng con để thực hiện pooling?","positive":[]}
+{"query":"Bộ dữ liệu được sử dụng trong tài liệu Public_048 có bao nhiêu ảnh?","positive":["Public048::chunk::1"]}
+{"query":"Mô hình được sử dụng để huấn luyện trong tài liệu Public_048 là gì?","positive":[]}
+{"query":"Trong tài liệu Public_048, có bao nhiêu phương pháp tăng cường dữ liệu đã được dùng và gồm những thao tác nào?","positive":[]}
+{"query":"Cách tiếp cận đã nêu trong tài liệu Public_048 có tiến hành đọc biển số hay không?","positive":[]}
+{"query":"Phân loại của bài toán được mô tả trong tài liệu Public_048 là gì?","positive":[]}
+{"query":"Theo tài liệu Public_049, khái niệm được dùng để đại diện tập xác định của một biến là gì?","positive":["Public117::chunk::0"]}
+{"query":"Theo tài liệu Public_049, thành phần nào không thuộc phạm vi quản lý của biến?","positive":[]}
+{"query":"Tên kiểu dữ liệu của ký tự ASCII và ký tự Unicode lần lượt là?","positive":["Public257::chunk::17","Public283::chunk::17"]}
+{"query":"Đâu không phải khẳng định đúng về các đặc tính của thuật toán được đề cập trong tài liệu Public_049?","positive":["Public049::chunk::0","Public049::chunk::6"]}
+{"query":"Phương trình toán học 3x + 4y + 5z = 6 có mấy biến?","positive":[]}
+{"query":"Dựa vào tài liệu Public_050, từ nào điền vào chỗ trống sau: nếu hàm số f(x) bị ... bởi hằng số C nhân với g(x), ta nói f(x) có độ phức tạp O(g(x))?","positive":["Public050::chunk::2"]}
+{"query":"Độ phức tạp tuyến tính và giai thừa lần lượt có ký hiệu là?","positive":[]}
+{"query":"Theo tài liệu Public_050, bước đầu tiên của quá trình tiếp cận bài toán là gì?","positive":["Public050::chunk::8"]}
+{"query":"Hai thuật toán được tiến hành kế tiếp nhau lần lượt có độ phức tạp O(n) và O(n^2). Độ phức tạp của chương trình là?","positive":["Public050::chunk::2"]}
+{"query":"Dựa trên tài liệu Public_051, khái niệm nào không thuộc về thuật toán sinh?","positive":["Public051::chunk::0","Public051::chunk::1"]}
+{"query":"Nội dung của tài liệu Public_051 không bao gồm bài toán nào?","positive":["Public051::chunk::0"]}
+{"query":"Số hoán vị của N phần tử phân biệt là bao nhiêu và giá trị tương ứng khi N = 3 là?","positive":["Public052::chunk::2"]}
+{"query":"Đâu là cốt lõi của thuật toán đệ quy?","positive":["Public051::chunk::11"]}
+{"query":"Bài toán liệt kê xâu nhị phân độ dài 6 phải trải qua bao nhiêu cấu hình, nếu biết số cấu hình cho độ dài n là 2^n?","positive":["Public051::chunk::4"]}
+{"query":"Đâu không phải một ví dụ duyệt được thực hiện bởi quay lui?","positive":[]}
+{"query":"Trong bài toán N quân hậu, quân hậu ở hàng thứ i phải thỏa mãn điều gì?","positive":["Public052::chunk::3"]}
+{"query":"Theo tài liệu Public_052, tên của thủ tục tiền xử lý và thủ tục chạy quay lui được gọi trong hàm main() lần lượt là gì?","positive":[]}
+{"query":"Những điều kiện tiên quyết nào áp dụng cho việc sắp xếp dữ liệu?","positive":[]}
+{"query":"Vai trò của sắp xếp đối với hiệu quả của quá trình tìm kiếm dữ liệu là gì?","positive":["Public053::chunk::0","Public053::chunk::1","Public055::chunk::0"]}
+{"query":"Cho biết số lượng thuật toán sắp xếp đơn giản được trình bày trong tài liệu Public_053 và tên của chúng?","positive":["Public053::chunk::2"]}
+{"query":"Độ phức tạp nhỏ nhất của Insertion Sort là?","positive":["Public054::chunk::6"]}
+{"query":"Theo tài liệu Public_054, hành động chính của Bubble Sort là gì?","positive":[]}
+{"query":"Đâu không phải một cách chọn khóa (pivot) điển hình trong Quick Sort","positive":["Public054::chunk::5"]}
+{"query":"Trong heap, chỉ số node con trái và phải của node x lần lượt là? (node gốc có chỉ số 0)","positive":["Public054::chunk::13"]}
+{"query":"Đâu là cấu trúc heap ta nên dùng nếu muốn sắp xếp mảng giảm dần?","positive":["Public054::chunk::13"]}
+{"query":"Đâu là điểm chung giữa Merge Sort và Quick Sort? Chọn một đáp án","positive":["Public054::chunk::9","Public054::chunk::5"]}
+{"query":"Đâu không phải thuật toán tìm kiếm được nêu trong tài liệu?","positive":[]}
+{"query":"Theo tài liệu Public_055, thuật toán đơn giản nhất trong bốn thuật toán được trình bày là gì?","positive":["Public053::chunk::3"]}
+{"query":"Trong ngữ cảnh của tài liệu Public_055, kết quả trả về cụ thể (ví dụ: mã trạng thái, cấu trúc dữ liệu, giá trị) khi tìm kiếm \u0027thấy\u0027 và \u0027không thấy\u0027 một mục lần lượt là gì?","positive":[]}
+{"query":"Nhận định nào sau đây không đúng dựa trên nội dung của tài liệu Public_055?","positive":[]}
+{"query":"Dựa trên thông tin trong tài liệu Public_055 về tìm kiếm nhị phân hoàn thành trong logN bước, cho biết mảng đã sắp xếp gồm 2^8 phần tử sẽ cần bao nhiêu bước?","positive":[]}
+{"query":"Theo tài liệu Public_056, thao tác nào dưới đây không được liệt kê là một thao tác cơ bản trên linked list?","positive":["Public056::chunk::4","Public056::chunk::7","Public056::chunk::10","Public056::chunk::9","Public056::chunk::5"]}
+{"query":"Tên của thao tác cập nhật và tìm kiếm một node trong cấu trúc dữ liệu lần lượt là gì?","positive":[]}
+{"query":"Đâu không phải là đặc điểm của linked list?","positive":[]}
+{"query":"Muốn cập nhật trong linked list phần tử thứ 5 với giá trị 7, ta cần nhập vào khi gọi update() thứ tự giá trị nào cho pos và val?","positive":["Public056::chunk::5"]}
+{"query":"Theo tài liệu Public_057, đâu không phải là một loại đồ thị được phân loại ở cấp dưới trong hệ thống phân loại đồ thị của tài liệu?","positive":["Public057::chunk::1"]}
+{"query":"Tên gọi riêng cho đỉnh bậc 0 và đỉnh bậc 1 trong đồ thị vô hướng là?","positive":["Public057::chunk::3"]}
+{"query":"Tài liệu Public_057 mô tả những cách biểu diễn đồ thị nào?","positive":["Public057::chunk::6","Public057::chunk::11","Public057::chunk::8","Public057::chunk::7"]}
+{"query":"Theo tài liệu `Public_057`, đồ thị bánh xe có bao nhiêu cạnh?","positive":[]}
+{"query":"Tập S biểu diễn các mẫu hành vi hoặc đặc tính động lực học như thế nào?","positive":[]}
+{"query":"Trong tài liệu Public_058, các hành vi \"được đặc tả\" và \"được kiểm thử\" được định nghĩa thuộc tập nào?","positive":["Public058::chunk::1"]}
+{"query":"So sánh kiểm thử hộp trắng và kiểm thử hộp đen, phương pháp nào ưu việt hơn?","positive":["Public064::chunk::1","Public058::chunk::5","Public058::chunk::2"]}
+{"query":"Theo tài liệu Public_058, theo mô hình biểu đồ Venn, thiết kế kiểm chứng nên rơi vào miền nào nhiều nhất?","positive":[]}
+{"query":"Theo tài liệu Public_059, kiểm thử tích hợp tập trung vào vấn đề gì?","positive":["Public059::chunk::0","Public059::chunk::1"]}
+{"query":"Theo tài liệu Public_059, đâu không phải là một hình thức giao diện giữa nhiều module?","positive":[]}
+{"query":"Ngoài hai cách ghép module thông dụng là top down, bottom up thì còn mấy phương pháp và tên của chúng là?","positive":["Public059::chunk::5"]}
+{"query":"Nội dung nào không được đề cập trong tài liệu Public_059?","positive":[]}
+{"query":"Đoạn code ngắn sau định nghĩa giao diện hàm (function interface) như thế nào?","positive":[]}
+{"query":"Có tất cả bao nhiêu cách để đi đến nút \"Not A Triangle\" trong bài toán Tam giác, theo tài liệu?","positive":["Public063::chunk::7"]}
+{"query":"Trong bài toán Ngày kế tiếp, sự phân bố của những loại thực thể nào thường gây ra vấn đề, và liệu việc xác định một thực thể có phụ thuộc vào các thực thể khác không?","positive":[]}
+{"query":"Kết quả kiểm tra xem bộ ba số (3, 4, 5) có tạo thành tam giác vuông hay không?","positive":["Public063::chunk::10"]}
+{"query":"Người kiểm thử cần quan tâm điều gì liên quan đến đặc tả được đề cập trong tài liệu Public_061?","positive":["Public061::chunk::0","Public061::chunk::1","Public061::chunk::3","Public061::chunk::2"]}
+{"query":"Đâu không phải nguyên tắc cốt lõi của khảo sát đặc tả mức cao theo tài liệu Public_061?","positive":["Public061::chunk::0","Public061::chunk::1","Public061::chunk::2"]}
+{"query":"Mục đích của từ \"luôn luôn\" và \"nào đó\", theo danh sách thẩm định thuật ngữ trong tài liệu Public_061, là hàm ý tính không mơ hồ và tính kiểm chứng của đặc tả?","positive":["Public061::chunk::7","Public061::chunk::8"]}
+{"query":"Nhận định nào là chính xác về việc kiểm thử đặc tả mức thấp? Chọn hai nhận định","positive":["Public061::chunk::6","Public061::chunk::1"]}
+{"query":"Đâu không phải một thuật ngữ nhập nhằng trong đặc tả?","positive":[]}
+{"query":"Kiểm thử giá trị biên tổ hợp có công thức số ca kiểm thử là hàm số như nào?","positive":["Public062::chunk::2","Public062::chunk::0"]}
+{"query":"Ký hiệu của cận biên max và cận biên min theo tài liệu Public_062 là gì?","positive":["Public062::chunk::2"]}
+{"query":"Trong kiểm thử giá trị biên, thông thường có bao nhiêu giá trị kiểm thử cụ thể được lựa chọn xung quanh mỗi giới hạn?","positive":["Public062::chunk::2"]}
+{"query":"Giả sử một hàm ba biến f(x1, x2, x3) được đem ra kiểm thử giá trị biên, hỏi một ca kiểm thử gốc sẽ cho ra bao nhiêu ca kiểm thử dẫn xuất?","positive":["Public062::chunk::2"]}
+{"query":"Bảng quyết định gồm hai yếu tố chính có tên là?","positive":["Public063::chunk::1","Public041::chunk::0"]}
+{"query":"Theo tài liệu Public_063, giá trị điều kiện chỉ bó buộc trong T/F, nhận định này đúng hay sai?","positive":["Public063::chunk::3","Public063::chunk::5","Public063::chunk::1"]}
+{"query":"Tiền đề để sử dụng dấu gạch nối (-) trong văn bản kỹ thuật?","positive":[]}
+{"query":"Đâu là tổ hợp biểu diễn một quy tắc có trạng thái điều kiện lần lượt là (đúng, đúng, tùy ý, sai)?","positive":[]}
+{"query":"Theo tài liệu Public_064, yếu tố quan trọng nhất của kiểm thử hộp trắng là gì?","positive":["Public064::chunk::1","Public061::chunk::10","Public058::chunk::5","Public064::chunk::0"]}
+{"query":"Trong tài liệu Public_064, có bao nhiêu độ đo được quyết định chỉ dựa trên câu lệnh rẽ nhánh; đó là những độ đo nào?","positive":[]}
+{"query":"Theo tài liệu Public_064, có tất cả bao nhiêu độ đo kiểm thử?","positive":["Public064::chunk::4","Public064::chunk::0","Public064::chunk::10","Public064::chunk::8","Public064::chunk::6"]}
+{"query":"Xét hàm sau:\r\nif (a == 0) return 0;\r\nif (a == b) return 1;\r\nreturn 2;\r\nCần bao nhiêu ca kiểm thử để đảm bảo 100% độ phủ cho độ đo C1?","positive":["Public064::chunk::8","Public064::chunk::4","Public064::chunk::6"]}
+{"query":"Đâu không phải một yếu tố giúp xác định lát cắt được đề cập trong tài liệu Public_065?","positive":[]}
+{"query":"Trong tài liệu Public_065, bối cảnh \"các đoạn câu lệnh\" hàm ý gì?","positive":["Public065::chunk::2"]}
+{"query":"Trong xây dựng lát cắt, câu lệnh dạng I-def và I-use đối với biến v sẽ được xử lý như nào? (Trả lời đúng thứ tự)","positive":["Public065::chunk::3"]}
+{"query":"Hình thức sử dụng biến nào không bao giờ nằm trong lát cắt của biến đó?","positive":["Public065::chunk::3"]}
+{"query":"Câu lệnh `int temp = 31415;` thuộc loại khai báo và khởi tạo biến nào?","positive":[]}
+{"query":"Mục tiêu của mô hình trong kiểm thử dựa trên mô hình?","positive":["Public066::chunk::0","Public066::chunk::1"]}
+{"query":"Đâu không phải một cách biểu diễn một mô hình máy học?","positive":[]}
+{"query":"FSM và DFA được biểu diễn bằng bộ mấy thành phần?","positive":["Public066::chunk::6","Public066::chunk::3"]}
+{"query":"Điểm nào dưới đây là điểm chung cho hầu hết các hình thức biểu diễn mô hình dữ liệu?","positive":[]}
+{"query":"Đâu là nhân tố đóng góp vào việc phát triển kiểm thử tự động","positive":["Public179::chunk::1","Public179::chunk::4"]}
+{"query":"Lý do nào không phải thách thức dẫn đến việc đầu tư cao độ vào phát triển công cụ tìm lỗi và kiểm thử tự động?","positive":[]}
+{"query":"Có bao nhiêu bước phân tích trong quy trình được mô tả trong tài liệu Public_067 và tên của chúng là gì?","positive":[]}
+{"query":"Theo tài liệu Public_067, kiến trúc kiểm thử tự động bao gồm những yếu tố nào?","positive":["Public067::chunk::3","Public179::chunk::4"]}
+{"query":"Trong kiểm thử dựa trên mô hình, những hoạt động nào không được tự động tạo ra từ mô hình mà do con người thực hiện?","positive":[]}
+{"query":"Trong giai đoạn tiền xử lý dữ liệu hình ảnh cho hệ thống thị giác máy tính, kỹ thuật nào giúp giảm nhiễu và tăng độ tương phản?","positive":["Public114::chunk::0","Public115::chunk::0"]}
+{"query":"Mục tiêu chính của việc chia tập dữ liệu theo tỉ lệ 70/15/15 trong huấn luyện mô hình là gì?","positive":[]}
+{"query":"Hãy phân tích các bước then chốt trong toàn bộ vòng đời hệ thống thị giác máy tính công nghiệp, từ thu thập dữ liệu hình ảnh đến triển khai và bảo trì, đồng thời nêu rõ vai trò của chuẩn hóa định dạng dữ liệu và kỹ thuật Edge Computing.","positive":["Public068::chunk::0","Public068::chunk::2","Public078::chunk::0"]}
+{"query":"Theo tài liệu Public_069, những đặc điểm quan trọng nào của dữ liệu chuỗi thời gian cần được xem xét trong việc dự báo?","positive":["Public069::chunk::0","Public069::chunk::4","Public109::chunk::0","Public069::chunk::3"]}
+{"query":"Trình bày quy trình tổng thể để xây dựng hệ thống quản lý dữ liệu chuỗi thời gian từ khâu xác định nguồn, thu thập, tiền xử lý đến lưu trữ và mở rộng; đồng thời giải thích tầm quan trọng của đồng bộ NTP và chiến lược partitioning.","positive":["Public069::chunk::0","Public069::chunk::4","Public069::chunk::1","Public069::chunk::2"]}
+{"query":"Theo tài liệu Public_069, chuỗi thời gian được lưu trữ hiệu quả thường sử dụng hệ thống hoặc định dạng nào?","positive":["Public069::chunk::4"]}
+{"query":"Nếu dữ liệu chuỗi thời gian từ nhiều cảm biến tương quan với nhau được nhóm lại và nén (multi-series group compression), lợi ích nào có thể có được?","positive":[]}
+{"query":"Thành phần nào trong kiến trúc 5G cho phép chia mạng thành nhiều “lát” phục vụ các dịch vụ khác nhau?","positive":["Public070::chunk::1"]}
+{"query":"Công nghệ nào giúp tập trung tín hiệu và tăng hiệu quả sử dụng phổ tần trong 5G?","positive":["Public070::chunk::2","Public070::chunk::1"]}
+{"query":"Hãy mô tả đầy đủ các thành phần kiến trúc chính của mạng 5G, phương pháp triển khai và các cơ chế quản lý dịch vụ \u0026 bảo mật, đồng thời nêu rõ vai trò của network slicing và điện toán biên (MEC).","positive":["Public070::chunk::1","Public070::chunk::2","Public070::chunk::3"]}
+{"query":"Trong quản lý chất lượng dịch vụ 5G, nhóm dịch vụ nào phù hợp nhất cho truyền video 8K và VR?","positive":["Public070::chunk::3","Public070::chunk::5"]}
+{"query":"Giao thức nào thường được dùng cho thiết bị IoT tiết kiệm băng thông và nhẹ?","positive":["Public071::chunk::1","Public069::chunk::2"]}
+{"query":"Theo tài liệu Public_071, phương pháp nào cho phép cập nhật firmware hàng loạt mà không cần tiếp cận vật lý thiết bị?","positive":["Public071::chunk::2"]}
+{"query":"Trình bày kiến trúc đa lớp và quy trình quản lý mạng IoT quy mô hàng triệu thiết bị, đồng thời giải thích cách bảo mật đa tầng (từ thiết bị đến truyền thông) và cơ chế giám sát–phản ứng sự cố.","positive":["Public071::chunk::2","Public071::chunk::3","Public071::chunk::1"]}
+{"query":"Để bảo vệ dữ liệu trong quá trình truyền, lớp bảo mật nào nên được áp dụng cho kết nối TCP/UDP?","positive":["Public071::chunk::3","Public163::chunk::2"]}
+{"query":"Việc phân nhóm thiết bị IoT theo vị trí địa lý và mức độ quan trọng giúp đạt mục tiêu chính nào?","positive":["Public071::chunk::2"]}
+{"query":"Theo tài liệu Public_072, DRL là sự kết hợp của những lĩnh vực nào?","positive":["Public072::chunk::0"]}
+{"query":"Thành phần nào đóng vai trò đưa ra hành động trong DRL?","positive":["Public072::chunk::1","Public108::chunk::1"]}
+{"query":"Mô tả quy trình xây dựng hệ thống DRL cho robot công nghiệp từ kiến trúc thành phần đến thuật toán, đồng thời nêu các ứng dụng tiêu biểu và thách thức triển khai thực tế.","positive":["Public072::chunk::1","Public072::chunk::6","Public072::chunk::0","Public072::chunk::10"]}
+{"query":"Giả sử một robot đã học thành công trong môi trường mô phỏng nhưng thất bại khi hoạt động thực tế, nguyên nhân hợp lý nhất là gì?","positive":[]}
+{"query":"Theo tài liệu Public_073, ưu điểm nổi bật nhất của Federated Learning trong y tế là gì?","positive":["Public080::chunk::8"]}
+{"query":"Thuật toán tổng hợp trọng số phổ biến trong FL là gì?","positive":[]}
+{"query":"Hãy phân tích nguyên lý hoạt động của Federated Learning và các kỹ thuật bảo mật nâng cao, đồng thời nêu lợi ích và thách thức khi áp dụng trong môi trường y tế đa cơ sở.","positive":["Public073::chunk::2","Public073::chunk::0","Public073::chunk::3"]}
+{"query":"Thách thức lớn nhất khi các bệnh viện có đặc điểm dữ liệu khác nhau là gì?","positive":["Public073::chunk::7","Public079::chunk::10"]}
+{"query":"Giả sử một bệnh viện có hạ tầng yếu, vấn đề chính khi tham gia FL là gì?","positive":[]}
+{"query":"Đơn vị thông tin cơ bản trong điện toán lượng tử là gì?","positive":["Public074::chunk::1","Public199::chunk::1"]}
+{"query":"Thuật toán nào thường dùng để tối ưu hóa tổ hợp trong mạng 6G?","positive":["Public074::chunk::3","Public074::chunk::0"]}
+{"query":"Hình thức triển khai nào cho phép trạm gốc 6G sử dụng tài nguyên lượng tử từ xa?","positive":["Public074::chunk::5"]}
+{"query":"Theo tài liệu Public_074, giải pháp khả thi nhất cho mạng lượng tử khi chưa đủ qubit là gì?","positive":[]}
+{"query":"Pin nào sử dụng chất điện phân rắn thay cho lỏng?","positive":["Public091::chunk::1","Public091::chunk::0","Public091::chunk::2"]}
+{"query":"Ưu điểm nổi bật của pin Sodium-Ion là gì?","positive":["Public098::chunk::6","Public091::chunk::3","Public099::chunk::3"]}
+{"query":"Hãy trình bày các công nghệ pin thế hệ mới cho lưới điện thông minh, nêu ưu nhược điểm từng loại và vai trò của AI trong khám phá vật liệu và điều độ năng lượng.","positive":["Public075::chunk::3","Public075::chunk::0","Public075::chunk::1","Public086::chunk::5"]}
+{"query":"Lợi ích chính của việc tích hợp pin vào lưới điện thông minh là gì?","positive":["Public075::chunk::6","Public075::chunk::5","Public075::chunk::1"]}
+{"query":"Phương pháp truyền thống nào đã trở nên kém hiệu quả trước tấn công mạng hiện đại?","positive":["Public076::chunk::0"]}
+{"query":"Mô hình AI nào được thảo luận trong tài liệu Public_076 phù hợp phát hiện tấn công chuỗi thời gian như DDoS?","positive":["Public076::chunk::6","Public154::chunk::4","Public070::chunk::3"]}
+{"query":"Trình bày kiến trúc tổng thể và các kỹ thuật AI chủ chốt trong hệ thống phát hiện – ứng phó sự cố an ninh mạng, đồng thời giải thích vai trò của học sâu và khả năng phản ứng tự động.","positive":["Public076::chunk::6","Public083::chunk::6","Public076::chunk::1","Public076::chunk::11","Public076::chunk::0"]}
+{"query":"Thách thức nào đặc thù khi huấn luyện AI cho an ninh mạng?","positive":[]}
+{"query":"Ưu điểm cốt lõi của blockchain trong chuỗi cung ứng là gì?","positive":["Public077::chunk::0","Public077::chunk::5"]}
+{"query":"Trong công nghệ blockchain, thành phần nào đảm bảo các khối không thể chỉnh sửa?","positive":["Public077::chunk::2"]}
+{"query":"Mô tả nguyên lý hoạt động của blockchain và cách nó giải quyết minh bạch, chống giả mạo trong chuỗi cung ứng, đồng thời nêu thách thức triển khai.","positive":["Public077::chunk::0","Public077::chunk::6"]}
+{"query":"Theo tài liệu Public_077, công nghệ nào kết hợp với blockchain để tự động ghi dữ liệu môi trường?","positive":["Public077::chunk::16"]}
+{"query":"Điện toán biên giải quyết vấn đề độ trễ trong nhà máy thông minh như thế nào?","positive":["Public078::chunk::0","Public078::chunk::1","Public078::chunk::3"]}
+{"query":"Ưu điểm nổi bật nhất của Edge Computing so với Cloud Computing truyền thống là gì?","positive":["Public078::chunk::0","Public078::chunk::2"]}
+{"query":"Giải thích nguyên lý hoạt động, kiến trúc và lợi ích của Edge Computing trong các ứng dụng thời gian thực công nghiệp, kèm các ví dụ tiêu biểu.","positive":["Public078::chunk::0","Public078::chunk::2","Public078::chunk::1","Public078::chunk::4"]}
+{"query":"Nếu kết nối Internet bị gián đoạn, hệ thống Edge sẽ phản ứng thế nào?","positive":[]}
+{"query":"Điểm mạnh lớn nhất của CNN trong phân tích ảnh y tế là gì?","positive":["Public079::chunk::1","Public079::chunk::0","Public079::chunk::9"]}
+{"query":"Mạng nào chuyên biệt cho bài toán phân đoạn ảnh y tế?","positive":["Public079::chunk::8","Public036::chunk::3"]}
+{"query":"Phân tích nguyên lý, cấu trúc mạng CNN và lợi ích khi áp dụng trong phân tích ảnh y tế, nêu các ứng dụng điển hình.","positive":["Public079::chunk::9","Public079::chunk::0","Public079::chunk::7","Public079::chunk::2","Public079::chunk::1"]}
+{"query":"Thách thức lớn khi triển khai mạng nơ-ron tích chập (CNN) trong bệnh viện là gì?","positive":["Public079::chunk::10"]}
+{"query":"Một xu hướng mới giúp mạng nơ-ron tích chập đảm bảo quyền riêng tư dữ liệu y tế là gì?","positive":["Public079::chunk::11"]}
+{"query":"Lợi ích lớn nhất của Generative AI trong thiết kế thuốc là gì?","positive":["Public080::chunk::5","Public080::chunk::6","Public080::chunk::0"]}
+{"query":"Đặc điểm nào khiến GNN phù hợp cho dữ liệu vật liệu?","positive":["Public081::chunk::0","Public081::chunk::1","Public081::chunk::6"]}
+{"query":"Giải thích cách GNN biểu diễn vật liệu, cơ chế message passing và các ứng dụng trong dự đoán tính chất vật liệu mới.","positive":["Public081::chunk::0","Public081::chunk::1","Public081::chunk::6"]}
+{"query":"Thách thức chính khi dùng GNN trong khám phá vật liệu là gì?","positive":["Public081::chunk::8"]}
+{"query":"Hướng phát triển tương lai đầy tiềm năng của GNN trong vật liệu là gì?","positive":["Public081::chunk::9"]}
+{"query":"Thành phần phần cứng cốt lõi nào giúp hệ thống HPC tối ưu hóa xử lý song song?","positive":["Public082::chunk::2","Public082::chunk::0","Public082::chunk::3"]}
+{"query":"Trình bày kiến trúc HPC và vai trò trong mô phỏng khí hậu, dự báo thời tiết cực đoan, nêu công nghệ hỗ trợ.","positive":["Public082::chunk::0","Public082::chunk::6","Public082::chunk::5","Public082::chunk::3"]}
+{"query":"Thách thức lớn nhất về vận hành siêu máy tính khí hậu là gì?","positive":["Public082::chunk::8"]}
+{"query":"Xu hướng tương lai giúp tăng tốc mô phỏng khí hậu là gì?","positive":["Public082::chunk::9"]}
+{"query":"Đặc điểm nào nổi bật nhất của 6G so với 5G?","positive":["Public074::chunk::2","Public083::chunk::2","Public083::chunk::1","Public083::chunk::5"]}
+{"query":"Dải tần nào sẽ được khai thác chủ yếu trong 6G?","positive":["Public092::chunk::1","Public083::chunk::5"]}
+{"query":"Giải thích đặc trưng cốt lõi của 6G và vai trò AI trong tối ưu và bảo mật mạng, nêu các ứng dụng tiêu biểu.","positive":["Public083::chunk::6","Public083::chunk::7","Public083::chunk::0"]}
+{"query":"Ứng dụng nào cần 6G để đạt độ trễ siêu thấp?","positive":["Public083::chunk::7","Public074::chunk::2","Public083::chunk::0"]}
+{"query":"Thách thức chính khi triển khai 6G là gì?","positive":["Public083::chunk::9","Public092::chunk::12","Public078::chunk::7"]}
+{"query":"Cảm biến nào cung cấp bản đồ 3D chính xác cho xe tự hành?","positive":["Public084::chunk::1"]}
+{"query":"Kỹ thuật nào giúp hợp nhất dữ liệu từ nhiều cảm biến khác nhau nhằm nâng cao độ chính xác và độ tin cậy của thông tin?","positive":["Public084::chunk::1","Public100::chunk::3"]}
+{"query":"Mô tả các thành phần cảm biến, thuật toán và thách thức của hệ thống thị giác máy tính thế hệ tiếp theo cho xe tự hành.","positive":["Public084::chunk::0","Public084::chunk::1","Public084::chunk::5"]}
+{"query":"Thách thức quan trọng nhất đối với xử lý thời gian thực trong xe tự hành là gì?","positive":["Public084::chunk::5","Public100::chunk::9","Public072::chunk::10"]}
+{"query":"Theo tài liệu Public_084, xu hướng tương lai nào cho phép xe giao tiếp trực tiếp với hạ tầng giao thông?","positive":["Public084::chunk::6"]}
+{"query":"Kỹ thuật nào cho phép robot học từ phản hồi môi trường để tối ưu hành động?","positive":["Public085::chunk::6","Public072::chunk::0"]}
+{"query":"Cảm biến nào giúp robot điều chỉnh lực cầm nắm chính xác?","positive":["Public085::chunk::6"]}
+{"query":"Nêu chi tiết cách các cơ chế học của robot công nghiệp tự học được áp dụng để cải thiện thuật toán lập kế hoạch đường đi trong môi trường nhà máy thông minh, kèm theo các ví dụ thực tiễn.","positive":["Public085::chunk::9","Public085::chunk::7","Public072::chunk::6"]}
+{"query":"Thách thức quan trọng khi triển khai robot tự học là gì?","positive":["Public085::chunk::10"]}
+{"query":"Phương pháp nào giảm chi phí huấn luyện robot trong thế giới thực?","positive":["Public072::chunk::7","Public085::chunk::9"]}
+{"query":"Theo tài liệu Public_086, lợi ích lớn nhất của AI trong quản lý năng lượng tái tạo là gì?","positive":["Public086::chunk::5","Public086::chunk::0"]}
+{"query":"Công nghệ nào cho phép xử lý dữ liệu nhanh ngay tại nguồn phát sinh?","positive":["Public078::chunk::0","Public086::chunk::6","Public078::chunk::1"]}
+{"query":"Phân tích vai trò của AI trong dự báo, tối ưu và điều phối năng lượng tái tạo cho thành phố thông minh, đồng thời nêu rõ hạ tầng công nghệ hỗ trợ.","positive":["Public086::chunk::0","Public086::chunk::5","Public086::chunk::7","Public086::chunk::6"]}
+{"query":"Xu hướng nào cho phép giao dịch điện năng trực tiếp giữa các hộ dân?","positive":["Public086::chunk::10"]}
+{"query":"Công nghệ nào kết hợp dữ liệu cảm biến và vệ tinh để dự đoán ô nhiễm?","positive":["Public087::chunk::4","Public087::chunk::6"]}
+{"query":"Mô tả kiến trúc cảm biến và vai trò của trí tuệ nhân tạo (AI) trong dự báo và phát hiện bất thường về chất lượng không khí đô thị.","positive":["Public087::chunk::1","Public087::chunk::5","Public087::chunk::4"]}
+{"query":"Theo tài liệu Public_087, thách thức lớn khi triển khai hệ thống AI giám sát không khí là gì?","positive":["Public086::chunk::9","Public087::chunk::8"]}
+{"query":"Những công nghệ hoặc phương pháp luận tương lai nào hỗ trợ việc thử nghiệm chính sách môi trường trong mô hình ảo?","positive":["Public087::chunk::9","Public082::chunk::9","Public086::chunk::10"]}
+{"query":"Giải thích nguyên lý tính toán dựa trên DNA và các ứng dụng nổi bật trong y sinh học, đồng thời nêu ưu thế so với máy tính silicon.","positive":["Public088::chunk::1","Public088::chunk::4"]}
+{"query":"Thách thức lớn nhất của biocomputing hiện nay là gì?","positive":[]}
+{"query":"Xu hướng nào cho phép kết hợp ưu điểm của điện tử và DNA?","positive":["Public088::chunk::9"]}
+{"query":"Hiện tượng nào đặc trưng của vật liệu siêu dẫn?","positive":["Public089::chunk::4"]}
+{"query":"Tài liệu Public_089 trình bày những tiến bộ nào trong việc đạt siêu dẫn nhiệt độ phòng?","positive":["Public089::chunk::5","Public089::chunk::0"]}
+{"query":"Thách thức lớn nhất để thương mại hóa siêu dẫn nhiệt độ phòng?","positive":["Public089::chunk::8"]}
+{"query":"Điểm khác biệt cốt lõi của máy tính neuromorphic so với kiến trúc Von Neumann là gì?","positive":["Public090::chunk::1","Public090::chunk::4"]}
+{"query":"Trong các mạng thần kinh nhân tạo, thành phần nào đóng vai trò tương tự synapse sinh học?","positive":["Public090::chunk::9"]}
+{"query":"Mô tả kiến trúc và nguyên lý của máy tính neuromorphic lấy cảm hứng từ não người, so sánh với kiến trúc Von Neumann và nêu ứng dụng AI.","positive":["Public090::chunk::1","Public090::chunk::3","Public090::chunk::4"]}
+{"query":"Ứng dụng nào nổi bật của chip neuromorphic trong y tế?","positive":["Public090::chunk::11"]}
+{"query":"Điểm khác biệt lớn nhất của pin thể rắn so với pin lithium-ion truyền thống là gì?","positive":["Public091::chunk::1","Public091::chunk::0"]}
+{"query":"Ưu điểm quan trọng nhất giúp pin thể rắn an toàn hơn?","positive":["Public091::chunk::1","Public091::chunk::0"]}
+{"query":"Dựa trên tài liệu Public_091, hãy phân tích cấu trúc, nguyên lý, ưu điểm của pin thể rắn so với lithium-ion, nêu ứng dụng thực tế và thách thức.","positive":["Public091::chunk::1","Public091::chunk::2","Public091::chunk::0"]}
+{"query":"Thách thức chính cản trở thương mại hóa pin thể rắn là gì?","positive":["Public075::chunk::7"]}
+{"query":"Theo tài liệu Public_091, những xu hướng nghiên cứu nào giúp tăng tính ổn định của pin thể rắn?","positive":["Public091::chunk::6"]}
+{"query":"Điểm đặc trưng của siêu vật liệu so với vật liệu tự nhiên là gì?","positive":["Public092::chunk::1","Public092::chunk::6","Public092::chunk::0"]}
+{"query":"Công nghệ nào trong mạng 6G tận dụng siêu vật liệu để tăng vùng phủ sóng?","positive":["Public092::chunk::8","Public092::chunk::7"]}
+{"query":"Giải thích cấu trúc, nguyên lý và ứng dụng siêu vật liệu trong điều khiển sóng điện từ và mạng 6G.","positive":["Public092::chunk::1","Public092::chunk::6","Public092::chunk::0"]}
+{"query":"Thách thức lớn nhất hiện nay khi thương mại hóa siêu vật liệu?","positive":["Public092::chunk::12","Public089::chunk::8"]}
+{"query":"Theo tài liệu Public_092, xu hướng nào hứa hẹn tối ưu hoạt động RIS trong 6G?","positive":["Public092::chunk::13","Public083::chunk::10"]}
+{"query":"Điểm khác biệt chính của máy tính quang học so với điện tử?","positive":["Public093::chunk::0"]}
+{"query":"Trình bày nguyên lý tính toán bằng photon, lợi ích và ứng dụng trong AI thế hệ mới.","positive":["Public093::chunk::0","Public093::chunk::2","Public093::chunk::1"]}
+{"query":"Ứng dụng nào hưởng lợi trực tiếp từ suy luận thời gian thực của photonic computing?","positive":[]}
+{"query":"Công cụ chính để mô phỏng sự hình thành vũ trụ được thảo luận trong tài liệu Public_094 là gì?","positive":["Public094::chunk::0","Public094::chunk::1","Public094::chunk::2"]}
+{"query":"Theo tài liệu Public_094, mô phỏng N-body chủ yếu tái hiện điều gì?","positive":["Public094::chunk::2","Public094::chunk::0"]}
+{"query":"Mô tả mục tiêu, công nghệ mô phỏng và ứng dụng của vũ trụ học tính toán trong nghiên cứu vũ trụ.","positive":["Public094::chunk::0","Public094::chunk::4","Public094::chunk::2","Public094::chunk::5"]}
+{"query":"Thách thức lớn nhất hiện nay của vũ trụ học tính toán là gì?","positive":["Public094::chunk::9"]}
+{"query":"Công nghệ tương lai nào hứa hẹn tăng độ phân giải mô phỏng vũ trụ?","positive":["Public094::chunk::2","Public094::chunk::10","Public082::chunk::9"]}
+{"query":"Biện pháp nào có thể tạo từ trường nhân tạo cho Sao Hỏa?","positive":["Public095::chunk::6","Public095::chunk::11"]}
+{"query":"Theo tài liệu Public_095, công nghệ nào giúp xây dựng cơ sở hạ tầng tự động trên Sao Hỏa?","positive":["Public095::chunk::9"]}
+{"query":"Public_095 thảo luận về những vấn đề đạo đức nào liên quan đến việc terraform Sao Hỏa?","positive":[]}
+{"query":"Điều kiện cần thiết để quá trình nhiệt hạch xảy ra là gì?","positive":["Public096::chunk::4","Public096::chunk::1"]}
+{"query":"Lò phản ứng Tokamak là gì?","positive":["Public096::chunk::5"]}
+{"query":"Phân tích nguyên lý hoạt động, nhiên liệu, ưu điểm và các công nghệ lò phản ứng nhiệt hạch, đồng thời nêu các thách thức kỹ thuật – kinh tế trong thương mại hóa.","positive":["Public096::chunk::9","Public096::chunk::3","Public096::chunk::10"]}
+{"query":"Dự án quốc tế nào đang xây dựng lò phản ứng 500 MW ở Pháp?","positive":["Public096::chunk::5"]}
+{"query":"Theo tài liệu Public_096, thách thức kỹ thuật trọng yếu của nhiệt hạch là gì?","positive":[]}
+{"query":"Sản phẩm phụ duy nhất của pin nhiên liệu hydro là gì?","positive":["Public097::chunk::1","Public097::chunk::2"]}
+{"query":"Ưu điểm lớn của hydro so với pin lithium-ion cho xe tải đường dài?","positive":["Public097::chunk::3","Public098::chunk::6","Public091::chunk::3"]}
+{"query":"Giải thích nguyên lý pin nhiên liệu hydro và ứng dụng trong giao thông, đồng thời nêu lợi ích và thách thức hạ tầng.","positive":["Public097::chunk::1","Public097::chunk::12","Public097::chunk::11"]}
+{"query":"Thách thức lớn nhất để triển khai đại trà giao thông hydro?","positive":["Public097::chunk::9","Public089::chunk::8"]}
+{"query":"Hãng xe nào đã thương mại hóa xe hơi chạy pin nhiên liệu hydro?","positive":["Public097::chunk::4"]}
+{"query":"Cơ chế lưu trữ năng lượng của siêu tụ điện dựa trên gì?","positive":["Public098::chunk::2","Public098::chunk::0","Public098::chunk::5"]}
+{"query":"Ưu điểm nổi bật giúp siêu tụ phù hợp cho xe buýt điện đô thị?","positive":["Public098::chunk::0","Public098::chunk::7","Public098::chunk::4"]}
+{"query":"Trình bày cơ chế hoạt động, ưu điểm, và ứng dụng của siêu tụ điện trong giao thông bền vững, đồng thời so sánh với pin truyền thống.","positive":["Public098::chunk::0","Public098::chunk::2","Public098::chunk::7","Public098::chunk::4","Public098::chunk::8"]}
+{"query":"Ứng dụng nào tận dụng siêu tụ để thu hồi năng lượng phanh?","positive":["Public098::chunk::7"]}
+{"query":"Hạn chế chính của siêu tụ điện so với pin lithium-ion là gì?","positive":["Public098::chunk::10"]}
+{"query":"Ưu điểm lớn nhất của pin natri-ion so với pin lithium-ion là gì?","positive":["Public099::chunk::3","Public098::chunk::6","Public091::chunk::3"]}
+{"query":"Thách thức kỹ thuật chính của pin natri-ion hiện nay?","positive":["Public098::chunk::10","Public091::chunk::5"]}
+{"query":"Công ty nào công bố pin natri-ion thương mại đầu tiên?","positive":["Public099::chunk::5"]}
+{"query":"Điện toán không gian kết hợp những công nghệ nào để tạo trải nghiệm 3D thực?","positive":["Public100::chunk::1","Public100::chunk::5","Public100::chunk::8"]}
+{"query":"Ứng dụng nào minh họa rõ nhất lợi ích của điện toán không gian trong y tế?","positive":["Public100::chunk::6","Public079::chunk::9","Public079::chunk::7"]}
+{"query":"Giải thích khái niệm, thành phần cốt lõi và các ứng dụng tiêu biểu của điện toán không gian, đồng thời phân tích thách thức triển khai.","positive":["Public100::chunk::5","Public100::chunk::1","Public100::chunk::6","Public086::chunk::9"]}
+{"query":"Cấu hình hạ tầng mạng nào cần thiết để đảm bảo độ trễ thấp và băng thông cao cho trải nghiệm thực tế ảo (VR) mượt mà?","positive":["Public100::chunk::8","Public083::chunk::7","Public070::chunk::2","Public083::chunk::5"]}
+{"query":"Những xu hướng công nghệ tương lai quan trọng nào trong lĩnh vực điện toán không gian dự kiến sẽ tác động đến các ngành công nghiệp chính trong 5 năm tới?","positive":["Public100::chunk::1","Public100::chunk::0","Public093::chunk::9"]}
+{"query":"Cho ma trận hiệp phương sai S của dữ liệu đã chuẩn hoá có các trị riêng λ1=5,λ2=2,λ3=1,λ4=0.5\\lambda_1=5, \\lambda_2=2, \\lambda_3=1, \\lambda_4=0.5λ1​=5,λ2​=2,λ3​=1,λ4​=0.5 (giảm dần). Nếu chọn K=2K=2K=2 thành phần chính, tỉ lệ phương sai được giữ lại là bao nhiêu?","positive":["Public118::chunk::5","Public118::chunk::6"]}
+{"query":"Trong hiện tượng nhiễu xạ, (1) khi nào xảy ra nhiễu xạ Fresnel, và (2) khi nào xảy ra nhiễu xạ Fraunhofer?","positive":["Public150::chunk::23","Public150::chunk::4","Public150::chunk::3","Public150::chunk::2"]}
+{"query":"Hiện tượng giao thoa sóng xảy ra khi nào?","positive":["Public148::chunk::14","Public148::chunk::4","Public148::chunk::2"]}
+{"query":"Mét được định nghĩa dựa trên hiện tượng nào và giây được định nghĩa dựa trên dao động của nguyên tử nào?","positive":["Public126::chunk::12","Public126::chunk::6"]}
+{"query":"Nếu forget gate trong LSTM có giá trị bằng 0 thì điều gì xảy ra với thông tin lưu trữ trong cell state?","positive":[]}
+{"query":"Nội dung chính của tài liệu Public_124, hướng dẫn khai báo QoS cho thiết bị truyền dẫn Viba, là gì?","positive":[]}
+{"query":"Ai là người giải thích thành công hiện tượng quang điện bằng thuyết lượng tử ánh sáng?","positive":["Public199::chunk::3"]}
+{"query":"Trong tài liệu Public_120, cho điểm X1 = (5, 2, 4); X2 = (3, 8, 1). Tính khoảng cách Euclidean của chúng dựa trên công thức trong phần MLkNN.","positive":["Public120::chunk::2"]}
+{"query":"Dựa trên kết quả CIFAR-10, độ chênh lệch tỉ lệ nhận dạng đúng giữa SGD with momentum và AdaDelta là bao nhiêu phần trăm?","positive":[]}
+{"query":"Hiện tượng quang điện ngoài là gì?","positive":[]}
+{"query":"Điều kiện cần và đủ để một vật rắn ở trạng thái cân bằng là:","positive":["Public136::chunk::2","Public136::chunk::1"]}
+{"query":"Một điện tích thử q=+2 Cq = +2 \\, Cq=+2C được dịch chuyển trong điện trường từ điểm M đến điểm N. Công của lực điện thực hiện là 10 J10 \\, J10J. Hiệu điện thế giữa hai điểm M và N bằng bao nhiêu?","positive":["Public145::chunk::1","Public145::chunk::6","Public145::chunk::3","Public145::chunk::12"]}
+{"query":"Một ngọn lửa đèn cồn có chứa muối Na khi đốt sẽ cho ánh sáng màu vàng đặc trưng. Ánh sáng này thuộc loại quang phổ nào?","positive":[]}
+{"query":"Đơn vị của công và năng lượng trong hệ SI là:","positive":[]}
+{"query":"Hàm mục tiêu Fisher cho bài toán 2 lớp được viết dưới dạng nào?","positive":["Public119::chunk::2"]}
+{"query":"Theo tài liệu Public_111, công thức tính xác suất đồng thời của mạng Bayes dựa trên công thức toán học nào?","positive":["Public111::chunk::4"]}
+{"query":"Hai thuật toán quan trọng trong Linear-Chain CRFs lần lượt được dùng cho huấn luyện và suy luận là gì?","positive":["Public103::chunk::4","Public103::chunk::0"]}
+{"query":"Trong chuyển động tròn đều, vectơ vận tốc của vật luôn:","positive":[]}
+{"query":"Điểm chung của mọi dạng chuyển động trong không gian hai chiều là:","positive":["Public128::chunk::0","Public128::chunk::6","Public128::chunk::7"]}
+{"query":"Trọng tâm của một vật rắn là:","positive":["Public136::chunk::2"]}
+{"query":"Ứng dụng quan trọng của âm học trong thực tiễn là gì?","positive":[]}
+{"query":"Mô hình nào sử dụng self-attention để thay thế RNN trong hệ gợi ý tuần tự?","positive":["Public110::chunk::0","Public110::chunk::1"]}
+{"query":"Một sợi dây dài 1,2m được căng cố định hai đầu. Trên dây có sóng dừng với 3 bụng sóng. Biết vận tốc truyền sóng trên dây là 60m/s. Tần số của sóng bằng bao nhiêu?","positive":["Public140::chunk::4"]}
+{"query":"Khái niệm cân bằng tĩnh thường được ứng dụng nhiều nhất trong lĩnh vực nào?","positive":["Public136::chunk::0"]}
+{"query":"Đơn vị của tốc độ góc trong hệ SI là:","positive":["Public126::chunk::20"]}
+{"query":"Theo tài liệu Public_124, chỉ số CDR và HOSR lần lượt có ý nghĩa gì?","positive":[]}
+{"query":"Trình bày nội dung chính của Định lý công - động năng.","positive":["Public134::chunk::3","Public144::chunk::14","Public132::chunk::1"]}
+{"query":"Dựa trên thông tin từ tài liệu Public_110 về BERT4Rec và chuỗi sản phẩm, nếu trong một chuỗi lịch sử gồm 10 sản phẩm, BERT4Rec ẩn ngẫu nhiên 20% để dự đoán lại, thì có bao nhiêu sản phẩm bị ẩn?","positive":[]}
+{"query":"Định luật II Newton cho biết mối quan hệ giữa lực và gia tốc, và định luật III Newton mô tả mối quan hệ giữa hai lực nào?","positive":["Public129::chunk::7"]}
+{"query":"Sử dụng tài liệu `Public_117`, tính P(y=1∣x=1) theo quy tắc Bayes với y∈{0,1} có P(y=1)=0.4 và x∈{0,1} có P(x=1∣y=1)=0.9, P(x=1∣y=0)=0.2.","positive":["Public117::chunk::5"]}
+{"query":"Trong nghiên cứu quang phổ, (1) quang phổ vạch phát xạ xuất hiện khi nào, và (2) quang phổ vạch hấp thụ xuất hiện khi nào?","positive":[]}
+{"query":"Áp kế thủy ngân của Torricelli được dùng để đo đại lượng nào, và giá trị đo phụ thuộc vào yếu tố nào?","positive":["Public141::chunk::2"]}
+{"query":"Một vật có diện tích đáy tiếp xúc với chất lỏng là 0,5 𝑚2. Nếu áp suất của chất lỏng tác dụng lên bề mặt đó là 2000Pa, thì lực mà chất lỏng tác dụng lên vật là bao nhiêu?","positive":["Public138::chunk::1"]}
+{"query":"Trong nguyên tử Hydro, khi electron chuyển từ mức năng lượng cao xuống mức thấp hơn, dạng năng lượng nào được phát ra?","positive":[]}
+{"query":"Trong hệ tọa độ cực, một điểm có tọa độ (r, θ). Công thức chuyển đổi sang tọa độ Descartes là:","positive":["Public127::chunk::3","Public127::chunk::2"]}
+{"query":"Lực ma sát trượt có những đặc điểm nào?","positive":["Public129::chunk::12","Public129::chunk::14"]}
+{"query":"Công do một lực sinh ra được tính bằng:","positive":["Public131::chunk::1","Public131::chunk::2"]}
+{"query":"Mục tiêu chính của phương pháp dual illumination estimation được trình bày trong tài liệu Public_122 là gì?","positive":["Public122::chunk::2","Public122::chunk::0","Public122::chunk::1"]}
+{"query":"BERT4Rec sử dụng mục tiêu huấn luyện nào để dự đoán sản phẩm bị ẩn?","positive":["Public110::chunk::3"]}
+{"query":"Trong thí nghiệm giao thoa sóng mặt nước, tại những điểm cực đại giao thoa ta có đặc điểm gì?","positive":["Public148::chunk::2","Public148::chunk::5","Public148::chunk::14"]}
+{"query":"Nội dung chính của tài liệu Public_112 là gì?","positive":[]}
+{"query":"Biến forward αt(i) trong thuật toán Forward biểu diễn điều gì?","positive":["Public105::chunk::0"]}
+{"query":"Văn bản chủ yếu tập trung nghiên cứu vấn đề gì?","positive":[]}
+{"query":"Trong sóng dừng trên sợi dây, (1) bụng sóng có đặc điểm dao động gì, và (2) nút sóng có đặc điểm dao động thế nào?","positive":[]}
+{"query":"Theo Bohr, (1) electron chỉ tồn tại ổn định ở đâu, và (2) khi electron chuyển quỹ đạo thì điều gì xảy ra?","positive":[]}
+{"query":"Thuật toán nào thường được dùng để tối ưu tham số trong huấn luyện mạng nơ-ron sâu?","positive":["Public101::chunk::0","Public116::chunk::0"]}
+{"query":"Tia sáng truyền từ không khí vào nước bị gãy khúc. Hiện tượng này gọi là gì?","positive":["Public146::chunk::8"]}
+{"query":"Hai giả định cơ bản của Hidden Markov Model là gì?","positive":["Public105::chunk::5","Public105::chunk::11"]}
+{"query":"Nội dung chính của tài liệu tập trung vào vấn đề gì?","positive":[]}
+{"query":"Muốn một vật rắn ở trạng thái cân bằng cần điều kiện gì về lực và điều kiện gì về mômen lực?","positive":["Public136::chunk::2"]}
+{"query":"Trong hiện tượng quang điện, (1) điều kiện để electron quang điện bật ra khỏi kim loại là gì, và (2) năng lượng dư thừa sau khi thắng công thoát biến thành dạng nào?","positive":["Public034::chunk::9","Public025::chunk::4"]}
+{"query":"Định luật I Newton còn được gọi là:","positive":["Public130::chunk::2","Public129::chunk::2"]}
+{"query":"Một người nghe thấy hai âm có tần số lần lượt là 440 Hz và 442 Hz phát ra cùng lúc. Hiện tượng gì xảy ra và số nhịp đập trong 1 giây là bao nhiêu?","positive":[]}
+{"query":"Điều kiện cần và đủ để một vật rắn ở trạng thái cân bằng tĩnh là:","positive":["Public136::chunk::2"]}
+{"query":"Adam và RMSProp khác nhau ở đặc điểm nào?","positive":["Public116::chunk::16"]}
+{"query":"Ý nghĩa quan trọng nhất của mẫu nguyên tử Bohr là gì?","positive":[]}
+{"query":"Nội dung chính của tài liệu \u0027Public_110\u0027 nói về điều gì?","positive":[]}
+{"query":"Nội dung chính của bài báo nghiên cứu Public_108 là gì?","positive":[]}
+{"query":"Theo tài liệu Public_102, nếu chuỗi đầu vào có 4 từ và mỗi từ có thể gán 3 nhãn khác nhau, tổng số cấu hình nhãn có thể có là bao nhiêu?","positive":[]}
+{"query":"Theo tài liệu Public_111, hai thành phần cơ bản của mạng Bayes là gì?","positive":["Public111::chunk::3","Public111::chunk::2"]}
+{"query":"Những ứng dụng quan trọng của hiện tượng nhiễu xạ và phân cực ánh sáng là gì?","positive":["Public150::chunk::13","Public092::chunk::11"]}
+{"query":"Thuật toán nào được dùng để suy luận (tìm chuỗi nhãn tối ưu) trong Linear-Chain CRFs?","positive":["Public103::chunk::4"]}
+{"query":"Hai điện tích điểm cùng dấu đặt cách nhau \r\n0,2m thì đẩy nhau bằng lực \r\n9N. Nếu giữ nguyên các điện tích đó nhưng tăng khoảng cách giữa chúng lên gấp đôi, thì lực tác dụng giữa chúng còn bao nhiêu?","positive":["Public144::chunk::5","Public144::chunk::4"]}
+{"query":"Phần \u0027Xác suất\u0027 trong tài liệu Public_117 chủ yếu trình bày nội dung gì?","positive":[]}
+{"query":"Dựa vào nội dung tài liệu Public_131, hãy tính vận tốc sau va chạm của hai vật trong trường hợp một vật khối lượng 2 kg chuyển động với vận tốc 4 m/s va chạm trực diện, dính chặt vào một vật khối lượng 3 kg đang đứng yên.","positive":["Public133::chunk::11"]}
+{"query":"Đơn vị chuẩn của độ dài trong hệ SI hiện nay được định nghĩa dựa trên:","positive":["Public126::chunk::6"]}
+{"query":"Dựa vào Document Index: Public_129, hãy trình bày công thức hoặc phương pháp tính gia tốc của một vật khi biết khối lượng, lực kéo ngang và hệ số ma sát trượt.","positive":["Public129::chunk::14","Public129::chunk::13","Public129::chunk::4"]}
+{"query":"Một thanh đồng chất dài 4 m, khối lượng 40 kg được đặt nằm ngang trên hai giá đỡ ở hai đầu. Một vật nặng 20 kg được đặt tại điểm cách đầu trái của thanh 1 m. Hỏi phản lực của giá đỡ bên phải bằng bao nhiêu? (Lấy g = 10 m/s²).","positive":[]}
+{"query":"Tóm tắt nội dung chính của phần Linear-Chain CRFs trong tài liệu Public_102?","positive":["Public102::chunk::0","Public102::chunk::2","Public102::chunk::3","Public103::chunk::4","Public103::chunk::0"]}
+{"query":"Nếu một HMM có 3 trạng thái ẩn (N=3) và chuỗi quan sát dài 4 bước (T=4), độ phức tạp của thuật toán Forward là bao nhiêu?","positive":["Public105::chunk::0"]}
+{"query":"Nội dung chính của tài liệu Public_116 là gì?","positive":[]}
+{"query":"Nội dung chính của thuật toán đàn kiến (ACO) là gì?","positive":["Public125::chunk::1","Public125::chunk::9","Public125::chunk::4","Public125::chunk::2"]}
+{"query":"Điện thế tại một điểm trong điện trường đặc trưng cho điều gì?","positive":["Public145::chunk::1","Public145::chunk::6","Public145::chunk::2"]}
+{"query":"Công thức marginal p(x)p(x)p(x) và conditional p(x∣y)p(x\\mid y)p(x∣y) lần lượt là gì?","positive":["Public117::chunk::4","Public117::chunk::3"]}
+{"query":"Nếu một ảnh có nhiều khác biệt mức xám xuất hiện lặp lại, sau khi áp dụng LDR ảnh đầu ra sẽ có đặc điểm gì?","positive":["Public114::chunk::5","Public114::chunk::2"]}
+{"query":"Nội dung chính của phần 2 của tài liệu Public_121 là gì?","positive":[]}
+{"query":"Nội dung chính của phương pháp LDR trong tăng cường tương phản là gì?","positive":["Public114::chunk::0","Public114::chunk::5","Public114::chunk::1"]}
+{"query":"Trong tài liệu Public_122, thuật toán được mô tả khôi phục chi tiết vùng tối bị mất bằng thành phần nào?","positive":[]}
+{"query":"Thuật toán nào thường được sử dụng để giải quyết bài toán Đánh giá và Học trong HMM?","positive":["Public105::chunk::0"]}
+{"query":"Tóm tắt nội dung chính của phần huấn luyện và suy luận Linear-Chain CRFs?","positive":["Public103::chunk::4","Public102::chunk::3","Public103::chunk::0"]}
+{"query":"Giá trị của đo độ Hamming Loss trong trường hợp lí tưởng bằng bao nhiêu?","positive":["Public121::chunk::1"]}
+{"query":"Thuật toán nào có tỉ lệ nhận dạng đúng cao nhất trên tập MNIST?","positive":["Public116::chunk::21"]}
+{"query":"Phân loại Naive Bayes đòi hỏi tính các xác suất điều kiện thành phần P(xi | cj) = nc / n. Trong một số trường hợp thực tế, nc có thể rất nhỏ, thậm chí = 0. Khi đó kĩ thuật nào sẽ được sử dụng?","positive":["Public112::chunk::4"]}
+{"query":"Mạng Bayes giải quyết vấn đề căn bản nào của các bài toán tìm kiếm liên quan đến sự không chắc chắn hoặc suy luận xác suất?","positive":["Public111::chunk::0","Public111::chunk::3"]}
+{"query":"Khi ánh sáng mặt trời phản xạ trên mặt hồ, tại sao ta thường thấy ánh sáng chói bị giảm bớt khi đeo kính râm phân cực?","positive":[]}
+{"query":"CDR là viết tắt của chỉ số nào trong viễn thông?","positive":[]}
+{"query":"Nếu mạng ghi nhận 1.000 cuộc gọi và 25 cuộc bị rớt, hãy tính Tỷ lệ rớt cuộc gọi (CDR).","positive":[]}
+{"query":"Thành phần nào trong học tăng cường đóng vai trò quyết định hành động để tối đa hóa phần thưởng?","positive":["Public108::chunk::1","Public072::chunk::0"]}
+{"query":"Trong chuyển động tròn đều, lực nào giữ cho vật chuyển động theo quỹ đạo tròn và gia tốc nào luôn xuất hiện?","positive":["Public130::chunk::0"]}
+{"query":"Đặc trưng nào dưới đây định nghĩa một dao động điều hòa tắt?","positive":[]}
+{"query":"SASRec và BERT4Rec khác nhau chủ yếu ở những điểm nào?","positive":["Public110::chunk::1","Public110::chunk::3","Public110::chunk::0","Public110::chunk::2"]}
+{"query":"Ý nghĩa quan trọng của hiện tượng quang điện đối với vật lý hiện đại là gì?","positive":[]}
+{"query":"Đâu không phải là một ứng dụng thực tế của phân loại Naive Bayes?","positive":["Public112::chunk::0","Public112::chunk::5"]}
+{"query":"Nội dung chính của phần 1 tài liệu Public_107 về Gradient Descent là gì?","positive":["Public107::chunk::1","Public035::chunk::7"]}
+{"query":"Trong lý thuyết điện trường, (1) định luật Coulomb mô tả điều gì, và (2) khái niệm điện trường được dùng để giải thích hiện tượng nào?","positive":["Public144::chunk::0","Public144::chunk::4"]}
+{"query":"Phương pháp đánh giá các mô hình phân lớp đa nhãn (MLL) được nhắc tới trong tài liệu là gì?","positive":["Public121::chunk::0","Public121::chunk::1"]}
+{"query":"Histogram Equalization (HE) và Contextual Visual Contrast (CVC) có hạn chế gì?","positive":["Public114::chunk::0","Public122::chunk::0"]}
+{"query":"Thuật toán nào được sử dụng cho: (1) Tính xác suất chuỗi quan sát, (2) Tìm chuỗi trạng thái tối ưu?","positive":["Public104::chunk::12","Public104::chunk::10","Public104::chunk::11"]}
+{"query":"Ưu điểm và nhược điểm chính của RNN là gì?","positive":[]}
+{"query":"Công cơ học dương xảy ra trong trường hợp nào và công cơ học âm xảy ra trong trường hợp nào?","positive":[]}
+{"query":"Hệ thống Ant Colony System (ACS) và Max-Min Ant System (MMAS) có điểm gì nổi bật?","positive":["Public125::chunk::11","Public125::chunk::10"]}
+{"query":"Tọa độ góc trong chuyển động quay của vật rắn có vai trò tương tự như đại lượng nào trong chuyển động tịnh tiến?","positive":["Public134::chunk::1"]}
+{"query":"Kiến trúc SASRec dựa trên mô hình nào?","positive":["Public110::chunk::0"]}
+{"query":"Với hàm f(x)=x2+5sin⁡(x)f(x) = x^2 + 5\\sin(x)f(x)=x2+5sin(x), đạo hàm là f′(x)=2x+5cos⁡(x)f\u0027(x) = 2x + 5\\cos(x)f′(x)=2x+5cos(x). Nếu khởi tạo x0=−5x_0 = -5x0​=−5, learning rate η=0.1\\eta = 0.1η=0.1, thuật toán hội tụ sau khoảng bao nhiêu vòng lặp theo tài liệu?","positive":["Public107::chunk::2"]}
+{"query":"Nội dung chính phần 2 của tài liệu HMM (Public_105) là gì?","positive":["Public104::chunk::8","Public104::chunk::11","Public105::chunk::0","Public104::chunk::0"]}
+{"query":"Ai là người đề xuất mẫu nguyên tử dựa trên quỹ đạo dừng và bức xạ/thu năng lượng rời rạc?","positive":[]}
+{"query":"Một học sinh ngồi trên ghế xoay cầm hai quả tạ 3 kg, ban đầu dang tay ra cách trục 1,0 m và quay với tốc độ góc 0,75 rad/s. Khi co tay lại còn cách 0,3 m, hãy cho biết tốc độ góc mới so với ban đầu:","positive":["Public135::chunk::9"]}
+{"query":"Quang phổ liên tục được tạo thành trong điều kiện nào?","positive":[]}
+{"query":"Theo tài liệu Public_144, nguyên tắc quan trọng cần nhớ khi nghiên cứu về điện trường là gì?","positive":["Public144::chunk::0"]}
+{"query":"Nhiễu xạ ánh sáng là gì?","positive":["Public150::chunk::23","Public150::chunk::0","Public150::chunk::1"]}
+{"query":"Định luật vạn vật hấp dẫn do Newton phát biểu năm nào?","positive":["Public137::chunk::2"]}
+{"query":"Hiệu điện thế giữa hai điểm trong điện trường là gì?","positive":["Public145::chunk::6","Public145::chunk::12","Public145::chunk::3"]}
+{"query":"Khi nào sóng dừng hình thành, theo tài liệu Public_142?","positive":[]}
+{"query":"Đặc điểm nào định nghĩa chuyển động tròn đều?","positive":[]}
+{"query":"Trong PCA, công thức của ma trận hiệp phương sai SSS và toạ độ sau khi chiếu Z (trên K thành phần chính) lần lượt là gì?","positive":["Public118::chunk::5","Public118::chunk::6"]}
+{"query":"Đơn vị chuẩn của thời gian (giây) hiện nay được định nghĩa dựa trên:","positive":["Public126::chunk::12"]}
+{"query":"Nội dung chính của tài liệu Public_115 đề xuất điều gì?","positive":[]}
+{"query":"Nội dung chính của tài liệu về CNN tập trung vào vấn đề gì?","positive":[]}
+{"query":"Với một câu đầu vào có 4 từ và mỗi từ có thể gán 4 nhãn khác nhau (v, n, p, d), tổng số chuỗi nhãn *có thể có* mà thuật toán Viterbi xem xét là bao nhiêu?","positive":[]}
+{"query":"Định luật vạn vật hấp dẫn của Newton giải thích những hiện tượng nào?","positive":["Public137::chunk::2","Public137::chunk::0"]}
+{"query":"Động lượng của một vật phụ thuộc trực tiếp vào:","positive":["Public133::chunk::10","Public133::chunk::0"]}
+{"query":"CSSR phản ánh điều gì trong chất lượng mạng?","positive":[]}
+{"query":"Nội dung chính của phần 1 trong tài liệu Public_111 là gì?","positive":[]}
+{"query":"“Learning rate” (ký hiệu η\\etaη) trong Gradient Descent có vai trò gì?","positive":["Public101::chunk::0","Public116::chunk::11"]}
+{"query":"Trong âm học, (1) đặc trưng nào quyết định độ to nhỏ của âm, và (2) đặc trưng nào quyết định âm sắc?","positive":[]}
+{"query":"Đặc trưng vật lý nào quyết định độ cao (trầm hay bổng) của âm?","positive":[]}
+{"query":"Thuật toán nào thường dùng để giải quyết bài toán giải mã cho các mã sửa lỗi?","positive":[]}
+{"query":"GRU4Rec và BERT4Rec khác nhau chủ yếu ở điểm nào?","positive":["Public110::chunk::1","Public110::chunk::3"]}
+{"query":"Với một HMM có N trạng thái và chuỗi quan sát độ dài T, độ phức tạp của thuật toán Viterbi là bao nhiêu?","positive":["Public104::chunk::12"]}
+{"query":"LDR là viết tắt của gì trong xử lý ảnh?","positive":["Public114::chunk::0"]}
+{"query":"Theo tài liệu Public_142, tại nút sóng của sóng dừng có đặc điểm gì?","positive":[]}
+{"query":"Các yếu tố nào được sử dụng để tính bản đồ trọng số (weight map) trong bước multi-exposure fusion?","positive":["Public122::chunk::4"]}
+{"query":"Theo tài liệu Public_131, định luật bảo toàn động lượng khẳng định điều gì trong hệ cô lập?","positive":["Public133::chunk::3"]}
+{"query":"Theo tài liệu Public_140, sóng cơ học là gì?","positive":["Public149::chunk::0","Public140::chunk::1"]}
+{"query":"Cho 5 đối tượng được xếp hạng tương ứng là A, C, E, D, B; một xếp hạng của đối tượng cần đánh giá là A, E, B, D, C. Tính chỉ số MAP (Mean Average Precision) theo công thức được cho trong tài liệu Public_121.","positive":["Public121::chunk::2"]}
+{"query":"Các ứng dụng thực tế của hiện tượng giao thoa sóng trong nghiên cứu khoa học và kỹ thuật được trình bày trong tài liệu Public_141 là gì?","positive":["Public148::chunk::12","Public148::chunk::11"]}
+{"query":"Một vật chuyển động tròn đều bán kính 2 m, tốc độ góc 10 rad/s. Hãy tính vận tốc dài của vật.","positive":["Public134::chunk::1"]}
+{"query":"Ứng dụng của hiệu điện thế trong việc truyền tải và phân phối điện năng là gì?","positive":["Public089::chunk::6"]}
+{"query":"Linear-Chain CRFs thường được áp dụng trong bài toán nào?","positive":["Public102::chunk::1"]}
+{"query":"Trong thiết kế tập trung, node nào chịu trách nhiệm tổng hợp gradient và cập nhật tham số mô hình?","positive":["Public101::chunk::2"]}
+{"query":"Sử dụng thông tin từ tài liệu Public_126, hãy cho biết quãng đường ánh sáng đi được trong chân không trong 1 microsecond (1 µs = 10⁻⁶ s).","positive":["Public126::chunk::6"]}
+{"query":"Ai là người đầu tiên đưa ra bằng chứng thực nghiệm rõ ràng về bản chất sóng của ánh sáng?","positive":["Public146::chunk::2","Public148::chunk::1"]}
+{"query":"Đặc điểm đặc biệt của thuộc tính được chọn C(max) trong Naive Bayes theo Public_112 là gì?","positive":["Public112::chunk::0"]}
+{"query":"Trong mẫu Bohr, electron chuyển động quanh hạt nhân theo các quỹ đạo như thế nào?","positive":["Public025::chunk::4","Public033::chunk::1"]}
+{"query":"Trong dao động điều hòa, (1) điều kiện nào để gọi là dao động điều hòa, và (2) đặc điểm của lực hồi phục là gì?","positive":["Public139::chunk::0","Public139::chunk::1"]}
+{"query":"Trong chuyển động tròn đều, gia tốc hướng tâm của vật luôn:","positive":[]}
+{"query":"Cơ sở của động lực học quay quanh trục cố định được xây dựng trên mối quan hệ nào?","positive":["Public135::chunk::3","Public135::chunk::0","Public134::chunk::5"]}
+{"query":"Trong dao động điều hòa đơn giản của hệ con lắc lò xo (khối lượng m, độ cứng lò xo k), tần số góc ω phụ thuộc vào đại lượng nào?","positive":["Public139::chunk::1"]}
+{"query":"Thuật toán BFS có độ phức tạp và yêu cầu bộ nhớ như thế nào?","positive":["Public106::chunk::7"]}
+{"query":"Tìm tài liệu mô tả cơ chế hoạt động của hệ thống truyền lực tạo ra gia tốc khi ô tô tăng tốc và cơ chế hoạt động của hệ thống lái cùng hệ thống treo khi ô tô đổi hướng.","positive":[]}
+{"query":"Trong thiết kế phân tán, cơ chế Allgather dùng để làm gì và ưu điểm chính của thiết kế này là gì?","positive":["Public101::chunk::3"]}
+{"query":"Trong trạng thái tĩnh, chất lưu tác dụng lực theo hướng nào lên bề mặt vật?","positive":["Public138::chunk::1"]}
+{"query":"Trong chuyển động quay, đại lượng nào đặc trưng cho mức “lười” quay của vật và định lý nào được dùng để tính mômen quán tính khi trục quay không đi qua trọng tâm?","positive":["Public134::chunk::2","Public135::chunk::0"]}
+{"query":"Nếu một chuỗi có độ dài quá lớn gây ra vấn đề gradient vanish/explode, mô hình nào trong tài liệu Public_109 được thiết kế để giải quyết vấn đề này?","positive":["Public109::chunk::1","Public037::chunk::0"]}
+{"query":"Ứng dụng quan trọng của hiện tượng sóng dừng trong thực tế là gì?","positive":[]}
+{"query":"Tính chất đầy đủ của thuật toán BFS được hiểu như thế nào?","positive":["Public106::chunk::6"]}
+{"query":"Một mũi khoan nhỏ mất thời gian Δt để dừng hẳn do mômen ma sát. Nếu thay bằng mũi khoan lớn có mômen quán tính gấp đôi, cùng tốc độ góc ban đầu và cùng mômen ma sát, thì thời gian để dừng lại sẽ là:","positive":["Public134::chunk::2"]}
+{"query":"Nếu có 4 worker trong thiết kế phân tán, mỗi worker tính được gradient ∇L(θ)i\\nabla L(\\theta)_i. Khi dùng cơ chế trung bình, gradient tổng hợp sẽ được tính như thế nào?","positive":["Public101::chunk::3"]}
+{"query":"Theo tài liệu Public_147, một kim loại có công thoát là 2 eV. Nếu chiếu ánh sáng có năng lượng photon đúng bằng 2 eV, thì electron có bật ra không và động năng cực đại bằng bao nhiêu?","positive":["Public034::chunk::9"]}
+{"query":"Nếu robot ở trạng thái st nhận phần thưởng tức thời rt = 5, hằng số chiết khấu γ = 0.9, và giá trị Q kỳ vọng của trạng thái kế tiếp là 10, thì giá trị cập nhật Q mới theo Q-Learning sẽ là bao nhiêu (giả sử Q cũ = 0)?","positive":["Public108::chunk::2"]}
+{"query":"Nội dung chính về BFS trong tài liệu Public_106 là gì?","positive":["Public106::chunk::0"]}
+{"query":"Tầng POOL trong CNN có mục đích chính là gì?","positive":["Public123::chunk::3","Public079::chunk::6"]}
+{"query":"Sử dụng kiến thức từ Tài liệu Public_133, hãy xác định lực mà mỗi giá đỡ tác dụng lên thanh đồng chất dài 2m, khối lượng 10kg, đặt nằm ngang và tựa trên hai giá đỡ tại hai đầu, với trọng lượng thanh tác dụng tại trọng tâm.","positive":[]}
+{"query":"Một điểm có tọa độ Descartes (−3,5;−2,5)(-3,5 ; -2,5)(−3,5;−2,5) m. Hãy xác định tọa độ cực (r, θ) của điểm này.","positive":["Public127::chunk::3"]}
+{"query":"Theo thực nghiệm của Millikan, điện tích có tính chất cơ bản nào?","positive":[]}
+{"query":"Tác dụng chính của lực hướng tâm trong chuyển động tròn đều là gì?","positive":[]}
+{"query":"Dựa vào tài liệu Public_139, hãy trình bày khái niệm, phương trình dao động và đặc điểm năng lượng của dao động điều hòa.","positive":["Public139::chunk::0","Public139::chunk::1","Public139::chunk::3"]}
+{"query":"Trong điện học, (1) đại lượng nào đặc trưng cho khả năng sinh công của điện trường tại một điểm, và (2) hiệu điện thế có ý nghĩa gì đối với chuyển động của điện tích?","positive":["Public145::chunk::1","Public145::chunk::6","Public145::chunk::2","Public145::chunk::12","Public145::chunk::3"]}
+{"query":"Không gian màu HVI được thiết kế nhằm mục đích chính nào?","positive":["Public115::chunk::1"]}
+{"query":"Các ứng dụng quan trọng của sóng cơ học trong đời sống và kỹ thuật là gì?","positive":[]}
+{"query":"Phát biểu nào đúng về số chiều tối đa sau khi áp dụng multi-class LDA với C lớp?","positive":["Public119::chunk::4","Public119::chunk::0"]}
+{"query":"Nội dung chính của tài liệu Public_122 là gì?","positive":[]}
+{"query":"Hệ thức nào về hàm mật độ/phân phối đồng thời là đúng khi hai biến ngẫu nhiên xxx và yyy độc lập?","positive":["Public117::chunk::6"]}
+{"query":"Một vật có khối lượng 2 kg chuyển động với vận tốc 5 m/s. Động năng của vật bằng:","positive":["Public133::chunk::1","Public137::chunk::7"]}
+{"query":"Với mức độ rẽ nhánh là b và độ sâu lời giải d, độ phức tạp bộ nhớ của thuật toán BFS là gì?","positive":["Public106::chunk::7"]}
+{"query":"Trong thuật toán ACO, ký hiệu nào biểu diễn thông tin kinh nghiệm (heuristic information)?","positive":["Public125::chunk::1"]}
+{"query":"Ai là người đầu tiên giới thiệu hệ thống Ant System (AS) trong luận văn năm 1992?","positive":["Public125::chunk::5"]}
+{"query":"Q-Learning và SARSA khác nhau chủ yếu ở điểm nào?","positive":["Public108::chunk::3","Public108::chunk::2"]}
+{"query":"Trong thuật toán BFS, mỗi trạng thái sinh ra b trạng thái kề. Từ nút gốc sẽ sinh ra b nút với độ sâu 1, các nút này lại sinh ra b2 nút với độ sâu 2,... Giả sử nút đích của bài toán nằm ở độ sâu d. Tổng số nút cần mở rộng để tìm ra nút đích là bao nhiêu?","positive":["Public106::chunk::6","Public106::chunk::1","Public106::chunk::7"]}
+{"query":"CRFs mô hình hóa loại xác suất nào?","positive":["Public102::chunk::0","Public103::chunk::0"]}
+{"query":"Hiện tượng quang phổ được ứng dụng chủ yếu để làm gì trong khoa học và kỹ thuật?","positive":["Public148::chunk::12","Public148::chunk::13"]}
+{"query":"Trong multi-class LDA, các ma trận within-class và between-class là gì?","positive":["Public119::chunk::4","Public119::chunk::2"]}
+{"query":"Chuẩn-2 (spectral norm) của ma trận A được định nghĩa tương đương với đại lượng nào?","positive":["Public118::chunk::1"]}
+{"query":"Cổng nào trong GRU quyết định mức độ ảnh hưởng của trạng thái trước đó lên trạng thái mới?","positive":["Public109::chunk::1"]}
+{"query":"Các ứng dụng thực tiễn quan trọng của định luật Pascal trong đời sống và kỹ thuật là gì?","positive":["Public138::chunk::1"]}
+{"query":"Yếu tố giữ vai trò quyết định trong việc phân loại cân bằng bền, cân bằng không bền và cân bằng phiếm định là:","positive":[]}
+{"query":"Đơn vị của gia tốc hướng tâm trong hệ SI là:","positive":["Public126::chunk::20"]}
+{"query":"Nếu ảnh gốc có 3 kênh RGB với giá trị tại 1 điểm ảnh lần lượt là (120, 90, 60), thì giá trị Intensity Map theo định nghĩa trong HVI là bao nhiêu?","positive":["Public115::chunk::3"]}
+{"query":"Một ô tô chạy trên đường vòng bán kính 50 m với tốc độ 36 km/h. Hỏi gia tốc hướng tâm của ô tô là bao nhiêu?","positive":[]}
+{"query":"Nhược điểm của thuật toán K láng giềng trong học đa nhãn là gì?","positive":[]}
+{"query":"Trong ứng dụng phân loại văn bản, hai vấn đề chủ yếu cần giải quyết khi sử dụng phân loại Naive Bayes là gì?","positive":["Public112::chunk::4"]}
+{"query":"Thành phần nào mô tả xác suất chuyển giữa các trạng thái ẩn trong HMM?","positive":["Public104::chunk::0","Public104::chunk::8"]}
+{"query":"Theo định luật Kepler, tất cả các hành tinh chuyển động trên quỹ đạo nào, và vận tốc bán kính nối từ Mặt Trời đến hành tinh quét diện tích trong thời gian bằng nhau có ý nghĩa gì?","positive":["Public137::chunk::5","Public137::chunk::6"]}
+{"query":"Âm học là ngành nghiên cứu về hiện tượng nào?","positive":[]}
+{"query":"Hiện tượng nào giải thích được cả màu sắc cầu vồng và màu đỏ cam lúc hoàng hôn?","positive":["Public146::chunk::0","Public146::chunk::1"]}
+{"query":"Yếu tố \"đầu ra = 1 nếu dự đoán đúng và = 0 nếu ngược lại\" nằm trong các đo độ nào được nhắc đến trong tài liệu?","positive":["Public121::chunk::1"]}
+{"query":"Một sóng cơ truyền dọc theo sợi dây có vận tốc \r\nv=20m/s. Biết tần số của sóng là \r\nf=5Hz. Bước sóng của sóng này bằng bao nhiêu?","positive":["Public140::chunk::6"]}
+{"query":"Hiện tượng con quay hồi chuyển không bị đổ khi quay nhanh là do:","positive":["Public135::chunk::4"]}
+{"query":"Tiêu chuẩn Rayleigh dùng để làm gì?","positive":["Public150::chunk::8","Public150::chunk::23"]}
+{"query":"Chìa khóa giúp LSTM truyền tải thông tin xuyên suốt nhiều bước thời gian là gì?","positive":["Public113::chunk::3"]}
+{"query":"Trong vật lý, những đại lượng nào là vô hướng?","positive":["Public127::chunk::4","Public128::chunk::3","Public131::chunk::1"]}
+{"query":"Đối với sóng cơ học, (1) cần có điều kiện gì để sóng truyền được, và (2) khi sóng truyền thì năng lượng có đặc điểm gì?","positive":["Public149::chunk::0","Public140::chunk::1","Public132::chunk::0"]}
+{"query":"Nội dung chính của tài liệu Hidden Markov Model là gì?","positive":["Public104::chunk::0","Public104::chunk::8","Public124::chunk::9"]}
+{"query":"Trong sóng ngang, các phần tử của môi trường dao động theo hướng nào?","positive":["Public140::chunk::2"]}
+{"query":"Nội dung chính của tài liệu `Public_120` là gì?","positive":[]}
+{"query":"Định nghĩa quang phổ trong tài liệu Public_149 là gì?","positive":[]}
+{"query":"Trong công thức tính xác suất đồng thời P(X1, X2... Xn) của mạng Bayes có một tham số khác, đó là gì?","positive":["Public111::chunk::4"]}
+{"query":"Phương pháp chuyển đổi nhị phân được sử dụng trong các thuật toán MLL nào (được nhắc đến trong tài liệu)?","positive":["Public120::chunk::0","Public120::chunk::5"]}
+{"query":"Với ma trận trực giao U (UTU=IU^TU=IUTU=I), biểu diễn toạ độ mới yyy của một vector xxx trong hệ cơ sở U là gì?","positive":["Public118::chunk::2"]}
+{"query":"Theo tài liệu, trong mô hình phòng vệ theo chiều sâu (Defence in Depth), yếu tố nào được coi là lớp bảo vệ đầu tiên?\r\n\r\n\r\n","positive":["Public152::chunk::8","Public165::chunk::4"]}
+{"query":"Theo tài liệu, trong quá trình đăng ký Tableau, người dùng cần cung cấp một số thông tin cá nhân. Nếu một người dùng nhập sai địa chỉ email trong bước đăng ký, hệ quả nào có thể xảy ra?\r\n","positive":[]}
+{"query":"Theo tài liệu Public_194, MongoDB là gì?","positive":["Public194::chunk::0"]}
+{"query":"Khi lựa chọn công cụ AI để thiết kế học liệu điện tử, giáo viên nên ưu tiên tiêu chí nào quan trọng nhất để đảm bảo hiệu quả dạy học?","positive":["Public197::chunk::10","Public197::chunk::16","Public197::chunk::0"]}
+{"query":"Nêu 1 ưu điểm và 1 nhược điểm của Oracle được đề cập trong tài liệu Public_190.","positive":["Public190::chunk::3"]}
+{"query":"Trong bảy vùng của hạ tầng CNTT, nếu một tổ chức chỉ tập trung bảo mật kỹ ở vùng WAN mà bỏ qua vùng Người dùng (User domain), hệ quả nào có khả năng xảy ra nhất?\r\n","positive":["Public152::chunk::6"]}
+{"query":"Trong giải thuật DES, kích thước hiệu dụng của khóa là bao nhiêu bit?","positive":["Public158::chunk::1"]}
+{"query":"Các giai đoạn phát triển phần mềm","positive":["Public193::chunk::0"]}
+{"query":"Trong tấn công DoS/DDoS, mục tiêu chính của kẻ tấn công là gì?","positive":["Public182::chunk::1","Public182::chunk::2","Public182::chunk::0"]}
+{"query":"Dựa vào tài liệu Public_254, nếu mục tiêu là giấu thông tin trong ảnh rồi truyền đi mà vẫn muốn thông tin ẩn không bị mất khi ảnh bị nén bằng phương pháp không làm mất dữ liệu hoặc chỉnh sửa nhẹ, định dạng ảnh nào là lựa chọn phù hợp nhất?","positive":["Public254::chunk::1"]}
+{"query":"Điện dung ký hiệu trên tụ gốm thường được ghi theo dạng nào?","positive":["Public030::chunk::2"]}
+{"query":"Xác định đúng sự kết hợp giữa “loại HTTT” và “vai trò chính” mà văn bản mô tả:","positive":["Public184::chunk::6"]}
+{"query":"Qua nội dung của tài liệu Public_166, có thể rút ra nhận định tổng quan nào về quản lý an toàn thông tin?","positive":["Public166::chunk::0","Public151::chunk::3","Public166::chunk::8"]}
+{"query":"Các đóng góp cụ thể và cơ chế chính của cách mạng kỹ thuật số trong việc thúc đẩy các mục tiêu phát triển bền vững là gì?","positive":["Public196::chunk::1","Public196::chunk::2"]}
+{"query":"Theo tài liệu Public_175, người dùng cần có những điều kiện cơ bản nào để sử dụng Zoiper?","positive":["Public175::chunk::2"]}
+{"query":"Trong tài liệu có nêu: vi rút, sâu và zombie đều có khả năng tự lây nhiễm (self-infection/self-replicate). Nếu hệ thống bị nhiễm cả vi rút và sâu, nguy cơ nào là đáng lo ngại nhất?","positive":["Public156::chunk::6","Public156::chunk::4","Public156::chunk::7"]}
+{"query":"Theo Phụ lục III, phương thức kết nối đến Cổng dịch vụ chứng thực chữ ký số công cộng là gì?","positive":["Public257::chunk::25","Public257::chunk::13","Public283::chunk::23"]}
+{"query":"Theo kịch bản tấn công Smurf, nếu một mạng LAN có 200 máy và tất cả đều phản hồi ICMP về máy nạn nhân, điều gì có thể xảy ra?","positive":["Public154::chunk::3"]}
+{"query":"Văn bản phân biệt “di chuyển cơ sở dữ liệu” và “sao chép cơ sở dữ liệu” như thế nào?","positive":["Public186::chunk::8"]}
+{"query":"Qua việc so sánh DES, 3-DES và AES, có thể rút ra nhận định tổng quan nào về xu hướng phát triển của các giải thuật mã hóa khóa đối xứng?","positive":["Public158::chunk::0","Public158::chunk::3","Public158::chunk::1"]}
+{"query":"Trong trường hợp, số lượng consumer trong cùng một consumer group nhiều hơn số lượng partition của một topic thì xảy ra vấn đề gì? ","positive":[]}
+{"query":"Thuật toán mật mã nào bắt buộc áp dụng cho chữ ký số theo quy định kỹ thuật trong Thông tư?","positive":["Public257::chunk::19"]}
+{"query":"Mục đích chính của việc bổ sung luồng trình ký Voffice trong hệ thống là gì?","positive":[]}
+{"query":"Theo Microsoft, lỗ hổng bảo mật được phân loại theo mấy mức độ nghiêm trọng?","positive":["Public153::chunk::2"]}
+{"query":"Nếu một nhóm phát triển muốn xem xét thay đổi từ repository từ xa trước khi quyết định có nên hợp nhất chúng vào nhánh chính hay không, theo văn bản, họ nên sử dụng thao tác nào, và lý do?","positive":["Public188::chunk::12"]}
+{"query":"Zoiper có thể hỗ trợ nhiều giao thức kết nối và nhiều nền tảng thiết bị. Phần mềm này hỗ trợ những giao thức nào và có thể cài đặt trên những hệ điều hành nào?","positive":["Public175::chunk::1"]}
+{"query":"Trong phần “Ưu điểm của PostgreSQL”, văn bản liệt kê những điểm nào?","positive":["Public186::chunk::5"]}
+{"query":"Dựa trên thông tin về quantum supremacy của Google và IBM trong tài liệu `Public_199`, nếu một công ty khác tuyên bố có 130 qubit, số qubit này gấp bao nhiêu lần số qubit của Google và hơn số qubit của IBM bao nhiêu?","positive":[]}
+{"query":"Trong học phần An toàn mạng (Network Security), người học cần đạt được những chuẩn đầu ra nào sau đây?","positive":["Public253::chunk::5","Public253::chunk::4","Public253::chunk::6","Public253::chunk::7"]}
+{"query":"Theo tài liệu, mã hóa khóa đối xứng còn được gọi bằng tên nào?\r\n","positive":["Public158::chunk::0"]}
+{"query":"Khi tạo nhóm làm việc mới trong Tableau, sau khi nhập tên nhóm, người dùng cần thao tác gì tiếp theo?","positive":["Public170::chunk::1"]}
+{"query":"Từ các dạng tấn công (SYN Flood, Smurf, DDoS, giả mạo địa chỉ, nghe lén) được mô tả trong tài liệu Public_154, hãy rút ra nhận định tổng quan về đặc điểm của các tấn công từ chối dịch vụ và tấn công mạng.","positive":["Public182::chunk::0","Public182::chunk::5","Public154::chunk::0","Public154::chunk::4"]}
+{"query":"Theo tài liệu Public_184, HTTT quản lý cung cấp dạng thông tin nào và hệ thống hỗ trợ quyết định cung cấp thông tin gì?","positive":["Public184::chunk::6"]}
+{"query":"Lịch sử phát triển các mô hình triển khai ứng dụng","positive":[]}
+{"query":"Luồng nhập điểm của giảng viên và nội dung hiển thị khi nhập là?","positive":[]}
+{"query":"Kể tên 2 công việc của Devops","positive":["Public193::chunk::1"]}
+{"query":"Theo tài liệu, hệ thống IDS hoạt động chủ yếu ở lớp nào trong mô hình OSI?\r\n\r\n\r\n\r\n","positive":["Public165::chunk::4","Public165::chunk::5"]}
+{"query":"Trong bốn phương pháp đánh giá rủi ro, phương pháp nào đòi hỏi chi phí lớn về thời gian, nguồn lực và yêu cầu chuyên gia có trình độ cao?","positive":["Public166::chunk::3","Public166::chunk::1"]}
+{"query":"Điểm khác biệt cơ bản giữa tấn công DoS và tấn công DDoS là gì?","positive":["Public154::chunk::4","Public182::chunk::4","Public182::chunk::5"]}
+{"query":"Dựa vào tài liệu Public_166, hãy xác định ưu điểm chính và nhược điểm nổi bật của phương pháp không chính thức được đề cập.","positive":["Public166::chunk::2","Public166::chunk::3"]}
+{"query":"Thuật toán Shor có vai trò gì trong lịch sử phát triển Máy tính lượng tử?","positive":["Public199::chunk::4"]}
+{"query":"Theo tài liệu, yếu tố nào khiến cho học liệu điện tử (HLĐT) trở thành công cụ đặc biệt phù hợp trong bối cảnh chuyển đổi số giáo dục?","positive":["Public197::chunk::2","Public197::chunk::1"]}
+{"query":"Nêu 1 lý do cần Kubernetes và lý do container trở nên phổ biến","positive":["Public192::chunk::1","Public192::chunk::3"]}
+{"query":"Qua các đặc điểm được mô tả trong tài liệu Public_159, có thể rút ra nhận định tổng quan nào về ưu điểm nổi bật của mã hóa khóa bất đối xứng so với mã hóa khóa đối xứng?","positive":["Public159::chunk::0","Public158::chunk::0","Public162::chunk::10"]}
+{"query":"Dựa trên tài liệu Public_163, hãy xác định một thực thể tham gia mô hình giao dịch SET và một nhiệm vụ chính của thực thể đó.","positive":["Public163::chunk::6"]}
+{"query":"Nếu trong mạch lọc nguồn ta thay tụ hóa phân cực bằng tụ gốm không phân cực, điều gì có khả năng xảy ra?","positive":[]}
+{"query":"Nếu một hệ thống phải xử lý khối lượng lớn dữ liệu động và thường xuyên thay đổi, nhược điểm nào của GraphQL có thể khiến việc tối ưu hiệu suất trở nên phức tạp hơn?","positive":["Public176::chunk::4"]}
+{"query":"Nếu một doanh nghiệp chỉ triển khai “HTTT quản lý” mà không có “hệ thống hỗ trợ quyết định”, hậu quả nào dễ xảy ra nhất?","positive":[]}
+{"query":"Theo tài liệu Public_182, DoS và DDoS là gì?","positive":["Public154::chunk::4","Public182::chunk::4","Public182::chunk::0"]}
+{"query":"Theo tài liệu Public_165, tường lửa lọc gói (Packet-filtering firewall) hoạt động dựa trên nguyên tắc nào?","positive":["Public165::chunk::1","Public165::chunk::0"]}
+{"query":"Khi client chỉ cần một phần thông tin cụ thể từ server, GraphQL giúp loại bỏ tình trạng nào để tối ưu hóa tải trọng dữ liệu?","positive":["Public176::chunk::3","Public176::chunk::1"]}
+{"query":"Nêu một đặc điểm nổi bật của hệ thống quản lý gói trên Ubuntu và phương pháp cài đặt Driver Nvidia sử dụng kho lưu trữ chuẩn.","positive":["Public191::chunk::3","Public191::chunk::0"]}
+{"query":"Loại tấn công nào gửi nhiều HTTP request làm quá tải server?","positive":["Public182::chunk::0","Public154::chunk::0","Public182::chunk::2"]}
+{"query":"Tóm tắt nội dung chính của học phần An toàn mạng (INT1482)?","positive":["Public253::chunk::4"]}
+{"query":"Nếu một nhóm dự án nhỏ (dưới 3 tháng) lựa chọn Jira, rủi ro lớn nhất theo tài liệu là gì?","positive":["Public185::chunk::2"]}
+{"query":"Quản lý dự án giúp doanh nghiệp đạt được mục tiêu chiến lược như thế nào?","positive":["Public178::chunk::7","Public178::chunk::5"]}
+{"query":"Tổng quan về Kubernetes trong tài liệu Public_192","positive":["Public192::chunk::0","Public192::chunk::3","Public192::chunk::1"]}
+{"query":"Qua toàn bộ phần trình bày trong tài liệu Public_167, có thể rút ra nhận định tổng quan nào về cách tiếp cận an toàn thông tin?","positive":[]}
+{"query":"Khi công ty có một nhóm QA/Tester với background là ít kỹ năng lập trình, theo bạn thì lựa chọn công cụ nào phù hợp nhất để phù hợp với đội nhóm cho việc kiểm thử tự động?","positive":["Public179::chunk::3","Public179::chunk::11"]}
+{"query":"Chọn mô tả chính xác nhất về mối quan hệ chức năng giữa Dart, Framework và SDK theo nội dung văn bản:","positive":[]}
+{"query":"Theo tài liệu, phương pháp kết hợp bắt đầu bằng đánh giá rủi ro ở mức cao, sau đó chuyển sang đánh giá chi tiết. Nếu đánh giá ở mức cao ban đầu không chính xác, hậu quả nào có thể xảy ra?","positive":["Public166::chunk::4"]}
+{"query":"Theo tài liệu, những ưu điểm nổi bật nào của Jira được liệt kê?","positive":["Public185::chunk::1","Public185::chunk::9"]}
+{"query":"Olympic 2004 tại Hy Lạp dự kiến kinh phí 2 tỷ EURO, nhưng phải chi tới 12 tỷ EURO. Vậy chi phí thực tế đã vượt bao nhiêu phần trăm (%) so với kế hoạch ban đầu?","positive":[]}
+{"query":"Trong hệ thống phân bổ giảng đường, nếu một giảng đường đang được lên lịch sử dụng cho lớp học chính khóa nhưng đồng thời có sự cố hỏng thiết bị, hệ thống sẽ xử lý thế nào và ai chịu trách nhiệm xử lý sự cố?","positive":["Public282::chunk::7"]}
+{"query":"Kiểm thử tự động là gì, các nguyên tắc cơ bản và lợi ích chính của nó?","positive":["Public179::chunk::0","Public179::chunk::1","Public179::chunk::9"]}
+{"query":"Mục đích chính của quá trình ETL trong quản lý dữ liệu là gì?","positive":["Public174::chunk::0","Public174::chunk::1","Public174::chunk::2"]}
+{"query":"Các phiên bản Ubuntu LTS và các phiên bản hiện đang được hỗ trợ.","positive":[]}
+{"query":"Hãy xác định hai cách thêm người dùng vào Tableau, và thao tác đầu tiên trong mỗi cách.","positive":["Public169::chunk::7"]}
+{"query":"Bước nào nêu rõ các tiêu chí và quy trình để lựa chọn công cụ kiểm thử phù hợp?","positive":["Public179::chunk::3","Public179::chunk::2","Public179::chunk::11"]}
+{"query":"Theo tài liệu Public_152, trong bảy vùng của hạ tầng CNTT, vùng nào được đề cập là có nhiều mối đe dọa và nguy cơ nhất?","positive":["Public152::chunk::7"]}
+{"query":"Transactional outbox pattern lưu message ở đâu, và thành phần nào chịu trách nhiệm đọc \u0026 publish message đó?","positive":["Public183::chunk::5","Public183::chunk::7"]}
+{"query":"Theo tài liệu, tài sản an toàn thông tin bao gồm những loại nào?","positive":["Public166::chunk::0"]}
+{"query":"Các thuật ngữ thường dùng của MongoDB","positive":["Public194::chunk::3","Public194::chunk::2"]}
+{"query":"Theo tài liệu, để thêm nhãn dữ liệu trong Tableau, bước đầu tiên cần thực hiện là gì?","positive":["Public170::chunk::0"]}
+{"query":"Điện trở màng than có ưu điểm gì về độ ổn định và nhược điểm gì khi làm việc ở nhiệt độ cao?","positive":[]}
+{"query":"Nội dung chính của văn bản Public_263 là gì?","positive":[]}
+{"query":"Theo tài liệu, số vòng lặp xử lý trong giải thuật AES khi sử dụng khóa 192 bit là bao nhiêu?\r\n","positive":[]}
+{"query":"Hãy xác định (i) công thức mối quan hệ giữa tấn công, mối đe dọa và lỗ hổng, và (ii) ví dụ một dạng tấn công theo mục đích.","positive":["Public153::chunk::3","Public153::chunk::5"]}
+{"query":"Trong giải thuật RSA, độ an toàn được dựa trên tính khó của bài toán nào?\r\n\r\n\r\n\r\n","positive":["Public159::chunk::1"]}
+{"query":"Từ các phương pháp mã hóa (thay thế, hoán vị, XOR, Vernam, khóa chạy, hàm băm), hãy rút ra nhận định tổng quan về các nguyên lý mã hóa cơ bản hoặc các điểm khác biệt chính giữa chúng.","positive":["Public157::chunk::7","Public157::chunk::10","Public157::chunk::8"]}
+{"query":"Hãy xác định (i) năm DSA được NIST công nhận là chuẩn chữ ký số, và (ii) tên của một thành phần trong PKI có nhiệm vụ xác minh thông tin nhận dạng của người dùng.\r\n","positive":["Public160::chunk::3","Public160::chunk::6"]}
+{"query":"Public_179 mô tả những nhiệm vụ nào trong thiết kế và phát triển kịch bản kiểm thử tự động?","positive":["Public179::chunk::2","Public179::chunk::6"]}
+{"query":"Hãy xác định (i) phần mềm độc hại nào thường giả danh chương trình có ích để lừa người dùng, và (ii) ví dụ một hình thức lây nhiễm đặc trưng của nó.\r\n\r\n\r\n","positive":["Public156::chunk::2"]}
+{"query":"Mục tiêu của tấn công DoS là gì?","positive":["Public182::chunk::1","Public182::chunk::0","Public154::chunk::0"]}
+{"query":"Theo tài liệu Public_174, ETL (Extract, Transform, Load) được hiểu là gì?","positive":["Public174::chunk::0","Public174::chunk::1","Public174::chunk::13"]}
+{"query":"Tổng quan về các tính năng và nguyên lý hoạt động của Ubuntu","positive":["Public191::chunk::0","Public191::chunk::1"]}
+{"query":"Khóa bí mật trong tài liệu Public_283 được hiểu là gì?","positive":["Public283::chunk::2","Public257::chunk::4"]}
+{"query":"Theo tài liệu, giao thức SSL/TLS được xây dựng dựa trên phiên bản nào của SSL?","positive":["Public163::chunk::0"]}
+{"query":"Dựa vào quy định về tín chỉ được nêu trong tài liệu Public_263, nếu sinh viên đang chọn tổng 9 tín chỉ, cần thêm tối thiểu bao nhiêu tín chỉ để nút Lưu được bật?","positive":[]}
+{"query":"Zoiper được biết đến là loại phần mềm gì?","positive":["Public175::chunk::0"]}
+{"query":"Theo tài liệu, Estuary Flow sử dụng tính năng nào của MySQL để sao chép dữ liệu hiệu quả về chi phí?","positive":["Public186::chunk::15"]}
+{"query":"Số lượng mô hình phòng thủ phổ biến trong an toàn mạng được đề cập trong tài liệu Public_253 là bao nhiêu?","positive":[]}
+{"query":"Trong hệ sinh thái Tableau, thành phần nào cho phép người dùng chuẩn bị và làm sạch dữ liệu trước khi phân tích?\r\n","positive":["Public170::chunk::4","Public168::chunk::3"]}
+{"query":"Theo tài liệu Public_160, DSA có ưu điểm nổi bật nào so với RSA?","positive":[]}
+{"query":"Nếu Spike Testing thất bại liên tục, điều gì xảy ra khi một số lượng lớn người dùng truy cập cùng một lúc vào một hệ thống thương mại điện tử?","positive":["Public180::chunk::5"]}
+{"query":"Theo nội dung văn bản, thành phần nào trong Flutter chịu trách nhiệm cung cấp công cụ (ví dụ: trình biên dịch) để biên dịch mã nguồn thành mã gốc (native code) cho từng hệ điều hành, giúp ứng dụng hoạt động mượt mà trên mỗi nền tảng?","positive":["Public187::chunk::3"]}
+{"query":"Qua các nội dung trong tài liệu, có thể rút ra nhận định tổng quan nào về lợi ích khi sử dụng Tableau trong doanh nghiệp?\r\n","positive":["Public168::chunk::7"]}
+{"query":"Theo tài liệu, pgloader cho phép thực hiện những tác vụ nào, và pg-chameleon được dùng trong trường hợp nào?","positive":["Public186::chunk::13","Public186::chunk::14"]}
+{"query":"Trong lịch sử phát triển mật mã, năm 1977 đánh dấu sự ra đời của giải thuật nào?","positive":["Public158::chunk::1","Public159::chunk::1"]}
+{"query":"Mục đích chính của hệ thống thông tin quản lý và phân bổ giảng đường là gì?","positive":["Public282::chunk::6","Public282::chunk::5"]}
+{"query":"Tóm tắt các nội dung chính của văn bản này","positive":["Public021::chunk::17","Public019::chunk::7","Public021::chunk::5"]}
+{"query":"Những công cụ AI nào đã thực sự được phát triển trong giáo dục từ những năm 2000 đến nay, và chúng có vai trò gì?","positive":["Public195::chunk::1","Public195::chunk::6","Public195::chunk::3","Public195::chunk::8"]}
+{"query":"Ba thuộc tính cốt lõi cần bảo vệ trong an toàn thông tin là gì?","positive":["Public151::chunk::1","Public152::chunk::2","Public152::chunk::1"]}
+{"query":"Hãy cho biết các thành phần chính của an toàn thông tin và nêu vai trò của chính sách an toàn thông tin đối với các thành phần đó.","positive":["Public151::chunk::2","Public151::chunk::3"]}
+{"query":"Hãy xác định phiên bản Tableau miễn phí và đặc điểm nổi bật của phiên bản này.\r\n","positive":["Public168::chunk::2"]}
+{"query":"Theo tài liệu Public_162, điểm khác biệt quan trọng giữa IDS và IPS là gì?","positive":["Public165::chunk::4"]}
+{"query":"GraphQL được coi là một ngôn ngữ gì trong lĩnh vực phát triển API?","positive":["Public176::chunk::0"]}
+{"query":"Theo tài liệu Public_197, những yêu cầu cụ thể nào về cơ sở vật chất được xem là thách thức lớn nhất khi ứng dụng AI?","positive":["Public085::chunk::10"]}
+{"query":"Tổng quan Devops dành cho người mới bắt đầu là gì?","positive":["Public193::chunk::0","Public193::chunk::4","Public193::chunk::2"]}
+{"query":"Giao diện của phần mềm softphone Zoiper được thiết kế như thế nào để người dùng cảm thấy quen thuộc khi sử dụng?","positive":["Public175::chunk::3","Public175::chunk::4"]}
+{"query":"Theo tài liệu, chuỗi giá trị băm đầu ra của MD5 có kích thước bao nhiêu bit?\r\n\r\n\r\n","positive":["Public159::chunk::6","Public157::chunk::13"]}
+{"query":"Theo tài liệu, điểm khác biệt chính giữa tường lửa có trạng thái (Stateful) và không trạng thái (Stateless) là gì?","positive":[]}
+{"query":"Theo tài liệu Public_196, các quốc gia nên áp dụng những chiến lược nào để đảm bảo nguồn nước bền vững trong tương lai khi các giải pháp hiện tại không đủ để giải quyết tình trạng khan hiếm nước?","positive":["Public196::chunk::14","Public196::chunk::1"]}
+{"query":"Jira cung cấp loại báo cáo nào, và hạn chế gì khi áp dụng cho dự án ngắn hạn (dưới 3 tháng)?","positive":["Public185::chunk::9","Public185::chunk::2"]}
+{"query":"Theo số liệu năm 2012 từ Cơ sở dữ liệu lỗ hổng quốc gia Hoa Kỳ, lỗ hổng bảo mật được phát hiện nhiều nhất nằm ở thành phần nào của hệ thống?\r\n","positive":[]}
+{"query":"Trong tài liệu Public_282, cơ sở dữ liệu nào được hệ thống sử dụng để lưu trữ dữ liệu?","positive":["Public282::chunk::9"]}
+{"query":"Hãy xác định (i) năm xuất hiện khái niệm mã hóa khóa bất đối xứng, và (ii) tên của hai nhà khoa học đề xuất nó.","positive":["Public157::chunk::4"]}
+{"query":"Trung tâm dữ liệu đã có tường lửa, IDS/IPS và sao lưu định kỳ. Sự cố gần đây cho thấy một máy chủ bị cài mã độc qua tài khoản quản trị mặc định của thiết bị IoT trong mạng nội bộ. Nếu chỉ được chọn một biện pháp bổ sung ngay lập tức, biện pháp nào giảm nguy cơ lặp lại sự cố tương tự một cách trực tiếp và hiệu quả nhất?","positive":["Public071::chunk::3"]}
+{"query":"Hãy xác định (i) tên 2 nhà mật mã học đã phát triển Rijndael – cơ sở của AES, và (ii) năm AES được NIST công nhận là chuẩn mã hóa dữ liệu.","positive":["Public158::chunk::4"]}
+{"query":"SQL Server được sử dụng chủ yếu để quản lý và truy vấn dữ liệu quan hệ trong các hệ thống doanh nghiệp như thế nào?","positive":["Public189::chunk::0","Public189::chunk::5","Public189::chunk::6"]}
+{"query":"Từ tài liệu Public_193, những kiến thức và kỹ năng nào là cần thiết cho một kỹ sư DevOps khi tập trung vào một giai đoạn cụ thể trong roadmap DevOps?","positive":["Public193::chunk::1","Public193::chunk::4"]}
+{"query":"Các loại hệ thống thông tin (HTTT) được văn bản phân loại trong doanh nghiệp có thể nhóm lại thành những loại nào?","positive":["Public184::chunk::6"]}
+{"query":"Hãy xác định hai kỹ thuật phát hiện xâm nhập chính của IDS, và  nhược điểm tương ứng của mỗi kỹ thuật.\r\n","positive":["Public165::chunk::6","Public165::chunk::4"]}
+{"query":"Theo quan điểm hệ thống trong dự án HTTT, yếu tố nào được xem là quan trọng nhất để quyết định hiệu quả toàn bộ hệ thống?","positive":["Public178::chunk::5"]}
+{"query":"Tóm tắt các nội dung chính của văn bản Public_182 về tấn công DoS/DDoS.","positive":["Public154::chunk::4","Public182::chunk::1","Public182::chunk::2","Public154::chunk::0"]}
+{"query":"Phần mềm ký số cần hỗ trợ định dạng dữ liệu nào theo Phụ lục I của tài liệu Public_257?","positive":["Public283::chunk::5","Public283::chunk::4","Public257::chunk::7"]}
+{"query":"Tóm tắt những ảnh hưởng của đại dịch COVID-19 đến việc áp dụng công nghệ trong giáo dục là gì?","positive":["Public195::chunk::3","Public195::chunk::1"]}
+{"query":"Theo tài liệu Public_167, chuẩn ISO/IEC 27001:2005 tập trung vào nội dung nào?","positive":["Public167::chunk::1"]}
+{"query":"Theo báo cáo của WHO và UNICEF, đến năm 2030, tình trạng khan hiếm nước sẽ khiến bao nhiêu triệu người phải di dời?","positive":["Public196::chunk::0"]}
+{"query":"Theo tài liệu, phát hiện dựa trên bất thường cần giai đoạn huấn luyện để xây dựng hồ sơ hành vi bình thường. Nếu giai đoạn huấn luyện thu thập dữ liệu chưa đủ dài hoặc không đại diện, hậu quả nào có thể xảy ra?","positive":[]}
+{"query":"Các phiên bản của Oracle Database","positive":["Public190::chunk::2","Public190::chunk::0"]}
+{"query":"Những yếu tố nào theo văn bản trực tiếp góp phần rút ngắn thời gian phát triển khi dùng Flutter (chọn mọi đáp án phù hợp)?","positive":["Public187::chunk::6","Public187::chunk::5","Public187::chunk::3"]}
+{"query":"Theo tài liệu, thành phần nào trong chứng chỉ số đóng vai trò ký để đảm bảo tính xác thực và toàn vẹn?","positive":["Public160::chunk::7","Public160::chunk::4"]}
+{"query":"Tóm tắt các nội dung chính của văn bản về Apache Kafka.","positive":["Public181::chunk::1","Public181::chunk::11","Public181::chunk::12","Public181::chunk::0","Public181::chunk::9"]}
+{"query":"Tóm tắt các bước cài đặt SQL Server 2022","positive":["Public189::chunk::7","Public189::chunk::10"]}
+{"query":"Qua các dạng phần mềm độc hại được trình bày (virus, sâu, trojan, backdoor, rootkit, spyware, adware, zombie, bom logic…), có thể rút ra nhận định tổng quan nào về đặc điểm chung của phần mềm độc hại?","positive":["Public156::chunk::0","Public156::chunk::7","Public156::chunk::8","Public156::chunk::6"]}
+{"query":"Trong cấu trúc tệp BMP, phần nào có kích thước 14 byte và lưu trữ thông tin tổng quát về tệp hình ảnh bitmap?","positive":["Public254::chunk::2"]}
+{"query":"Khi muốn tạo một nhóm làm việc mới trên Tableau, bước cuối cùng mà người dùng cần thực hiện là gì?","positive":["Public170::chunk::1"]}
+{"query":"Theo tài liệu, MD5 tạo chuỗi giá trị băm 128 bit, SHA1 tạo chuỗi 160 bit. Nếu một ứng dụng yêu cầu độ dài băm tối thiểu 160 bit để đảm bảo an toàn, hệ quả nào có thể xảy ra nếu vẫn sử dụng MD5 thay vì SHA1?","positive":["Public159::chunk::6","Public159::chunk::7"]}
+{"query":"Nội dung chính của tài liệu “Trí tuệ nhân tạo trong kế toán, kiểm toán” là gì?","positive":["Public200::chunk::0","Public200::chunk::8","Public200::chunk::7"]}
+{"query":"Hãy xác định (i) hai phương pháp phát hiện tấn công thường được sử dụng trong IDS, và (ii) nhược điểm của mỗi phương pháp.\r\n","positive":["Public165::chunk::6"]}
+{"query":"Nếu một công ty thương mại điện tử muốn phân tích xu hướng mua hàng trong nhiều năm mà dữ liệu giao dịch chứa nhiều bản ghi trùng lặp, bước nào trong ETL sẽ quan trọng nhất để giải quyết vấn đề này?","positive":["Public174::chunk::16"]}
+{"query":"Nếu AI không được áp dụng trong giáo dục, điều gì có thể xảy ra với khả năng tiếp cận giáo dục của học sinh ở vùng sâu vùng xa?","positive":["Public195::chunk::6"]}
+{"query":"Qua quá trình cấp và sử dụng chứng chỉ số trong PKI được mô tả, những điểm rút ra chính nào có thể được xác định?","positive":["Public160::chunk::6","Public160::chunk::7"]}
+{"query":"Vai trò của an toàn thông tin trong bối cảnh chuyển đổi số và các mối đe dọa mạng gia tăng được thể hiện rõ nhất ở khả năng bảo vệ dữ liệu và đảm bảo hoạt động liên tục?","positive":["Public076::chunk::0"]}
+{"query":"Theo tài liệu Public_178, đặc điểm nào sau đây không phải của một dự án?","positive":["Public178::chunk::2"]}
+{"query":"Trong các giao thức con của SSL/TLS, giao thức nào đảm nhiệm việc tạo đường hầm an toàn để vận chuyển dữ liệu, đảm bảo tính bí mật và toàn vẹn?","positive":["Public163::chunk::3"]}
+{"query":"Thông tư Public_257 quy định những yêu cầu kỹ thuật nào đối với phần mềm ký số và phần mềm kiểm tra chữ ký số?","positive":["Public283::chunk::0","Public257::chunk::2","Public283::chunk::5","Public283::chunk::4"]}
+{"query":"Phân biệt \u0027Học kì\u0027 và \u0027Kì học\u0027 trong hệ thống quản lý đào tạo; mô tả mô hình khóa dữ liệu hợp lí cho các thực thể liên quan, và phân tích hệ quả của mô hình này đối với các ràng buộc trong việc xếp lịch học.","positive":[]}
+{"query":"Theo tài liệu, phát hiện bất thường có thể tạo ra nhiều báo động giả, còn phát hiện dựa trên chữ ký lại không phát hiện được tấn công chưa có mẫu. Nếu một tổ chức muốn giảm thiểu cả hai hạn chế này, giải pháp hợp lý nhất là gì?\r\n\r\n\r\n\r\n","positive":["Public165::chunk::6","Public165::chunk::5","Public165::chunk::7"]}
+{"query":"Trong Git, đâu là mô tả đầy đủ và chính xác nhất về mối quan hệ giữa Branch, Merge, và Master theo văn bản?","positive":["Public188::chunk::13","Public188::chunk::11","Public188::chunk::9","Public188::chunk::10"]}
+{"query":"Nếu một hệ thống vẫn sử dụng DES với khóa hiệu dụng 56 bit trong bối cảnh tốc độ tính toán ngày nay đã tăng nhanh, nguy cơ nào là hiện hữu nhất?","positive":["Public158::chunk::1"]}
+{"query":"Hãy xác định  số lượng vùng trong hạ tầng CNTT được mô tả trong tài liệu và nêu tên một nguy cơ điển hình của vùng WAN.\r\n\r\n","positive":["Public152::chunk::6","Public152::chunk::7"]}
+{"query":"Khi xác định phạm vi tự động hóa, cần chú ý những yếu tố nào?","positive":["Public179::chunk::4"]}
+{"query":"Theo tài liệu Public_174, trong các bước ETL, hoạt động nào chịu trách nhiệm làm sạch, chống trùng lặp và chuẩn hóa dữ liệu?","positive":["Public174::chunk::16"]}
+{"query":"Trong các marker của ảnh JPEG, marker nào có giá trị 0xFF 0xD9 và có chức năng đánh dấu kết thúc ảnh?","positive":["Public254::chunk::6"]}
+{"query":"Trong Phụ lục II, tiêu chí nào xác định tính toàn vẹn của thông điệp dữ liệu đã ký số?","positive":["Public257::chunk::24"]}
+{"query":"Theo tài liệu, Tableau nhấn mạnh việc hiểu rõ kiểu dữ liệu của từng trường (Number, String, Date, Boolean, Geographic Role). Nếu một trường ngày tháng bị gán sai kiểu dữ liệu thành String, hậu quả nào dễ xảy ra nhất?","positive":["Public170::chunk::4"]}
+{"query":"Theo tài liệu, mô hình “Phòng vệ theo chiều sâu” (Defence in Depth) cho thấy nguyên tắc quan trọng nào khi thiết kế hệ thống an toàn thông tin?\r\n\r\n","positive":["Public152::chunk::8"]}
+{"query":"Theo mô hình PGP đảm bảo cả tính bí mật và xác thực, nếu bên gửi không ký thông điệp trước khi mã hóa, hệ quả nào có thể xảy ra?","positive":["Public163::chunk::10"]}
+{"query":"Các bước cơ bản trong quy trình phân tích rủi ro an toàn mạng?","positive":["Public166::chunk::7","Public166::chunk::5","Public166::chunk::6"]}
+{"query":"Theo mô tả trong tài liệu Public_183, outbox_table mang lại những lợi ích nào?","positive":[]}
+{"query":"Hãy xác định kỹ thuật tấn công DoS phổ biến thường được đề cập trong tài liệu, và  biện pháp phòng chống cơ bản cho tấn công SYN Flood.","positive":["Public154::chunk::2","Public154::chunk::0","Public154::chunk::1"]}
+{"query":"Các tính năng chính của Oracle Database là gì?","positive":["Public190::chunk::1","Public190::chunk::3","Public190::chunk::2","Public190::chunk::0"]}
+{"query":"Hãy xác định (i) một số luật tội phạm máy tính ở Mỹ, và (ii) một số luật về sự riêng tư cũng tại Mỹ được nêu trong tài liệu.\r\n\r\n","positive":["Public167::chunk::4","Public167::chunk::5"]}
+{"query":"Trong case notification-service, nếu chỉ có một relay publisher chung cho tất cả channel (sms, email, voice call) thay vì tách riêng, rủi ro lớn nhất là gì?","positive":["Public183::chunk::9"]}
+{"query":"Nội dung cốt lõi của tài liệu Public_199 có tiêu đề “Máy tính lượng tử” là gì?","positive":["Public199::chunk::0","Public199::chunk::1"]}
+{"query":"Khi mô tả hệ thống bằng ngôn ngữ tự nhiên thì ta cần thực hiện bao nhiêu bước","positive":["Public263::chunk::7"]}
+{"query":"Qua các nội dung được trình bày, có thể rút ra nhận định tổng quan nào về vai trò của tường lửa và IDS/IPS trong bảo mật hệ thống?\r\n","positive":["Public165::chunk::4","Public165::chunk::0"]}
+{"query":"Theo tài liệu Public_178, dự án được xem là thành công và thất bại dựa trên những tiêu chí nào?","positive":["Public178::chunk::4","Public178::chunk::5"]}
+{"query":"RPA (Robotic Process Automation) khác với AI ở điểm nào?","positive":["Public200::chunk::8","Public200::chunk::7"]}
+{"query":"Tóm tắt các bước cài đặt thủ công driver chính thức từ Nvidia.com cho card đồ họa trên hệ điều hành Windows.","positive":["Public191::chunk::5"]}
+{"query":"Trong các công ty kiểm toán Big4, công nghệ AI tiêu biểu nào đã được áp dụng, và lợi ích thực tế mà nó mang lại là gì?","positive":["Public200::chunk::8","Public200::chunk::7","Public200::chunk::1"]}
+{"query":"Tóm tắt cách MongoDB lưu trữ dữ liệu","positive":["Public194::chunk::6","Public194::chunk::3","Public194::chunk::1"]}
+{"query":"Độ dài khóa tối thiểu của thuật toán RSA theo quy định là bao nhiêu bit?","positive":["Public257::chunk::19"]}
+{"query":"Theo tài liệu Public_199, đâu là thách thức và cơ hội lớn nhất của Mô hình Ngôn ngữ Lớn (MTLT) lần lượt?","positive":["Public199::chunk::14"]}
+{"query":"Theo tài liệu Public_254, giấu tin trong ảnh được định nghĩa như thế nào?","positive":["Public254::chunk::0"]}
+{"query":"Tóm tắt cách tạo bảng \u0027Cán bộ quản lý mới\u0027 theo hướng dẫn trong tài liệu Public_190.","positive":[]}
+{"query":"Thực thể nào không tham gia mô hình tương tác giữa các thực thể tham gia thực hiện SET","positive":["Public163::chunk::6"]}
+{"query":"Các nhóm linh kiện điện tử cơ bản được đề cập trong tài liệu gồm những nhóm nào?","positive":[]}
+{"query":"Dựa trên nội dung của tài liệu Public_170, nhận định tổng quan nào có thể được rút ra về quy trình sử dụng Tableau cơ bản hiệu quả?","positive":["Public168::chunk::3","Public168::chunk::7","Public170::chunk::10"]}
+{"query":"Sâu Nimda có điểm đặc biệt gì trong phương thức lây lan?","positive":["Public156::chunk::6"]}
+{"query":"Qua toàn bộ các phần trình bày trong tài liệu, có thể rút ra nhận định tổng quan nào về các giao thức SSL/TLS, SET và PGP?","positive":["Public163::chunk::2","Public157::chunk::6","Public163::chunk::0","Public163::chunk::6"]}
+{"query":"Nếu phải tóm tắt toàn bộ nội dung tài liệu “Sử dụng công cụ AI thiết kế học liệu điện tử” trong một câu, ý nào phản ánh đúng nhất?","positive":["Public197::chunk::16","Public197::chunk::0"]}
+{"query":"Trong Git, hành động nào bắt buộc phải thực hiện trước Commit để thay đổi có thể được lưu trữ vào lịch sử dự án?","positive":["Public188::chunk::8","Public188::chunk::7"]}
+{"query":"Nếu một giảng đường bị sự cố hỏng thiết bị, ai có trách nhiệm xử lý báo cáo này trong hệ thống?","positive":["Public282::chunk::7"]}
+{"query":"Trong layer ứng dụng mà MongoDB hoạt động, Front end và Back end là gì?","positive":["Public194::chunk::7"]}
+{"query":"Hệ thống PLATO được phát triển vào thập niên nào?","positive":[]}
+{"query":"Nếu DoS kéo dài mà không phòng chống, nó có thể gây ra những hậu quả cụ thể nào?","positive":["Public182::chunk::3","Public182::chunk::2","Public182::chunk::1"]}
+{"query":"Nút “Kết xuất excel” trong màn hình Quản lý KH CusID có quy tắc hoạt động ra sao?","positive":["Public278::chunk::7"]}
+{"query":"Khái niệm “tấn công” trong an toàn thông tin được hiểu là gì?\r\n","positive":["Public153::chunk::5"]}
+{"query":"Theo tài liệu Public_163, phiên bản TLS nào được sử dụng rộng rãi nhất?","positive":["Public163::chunk::0"]}
+{"query":"Nêu một thành phần thuộc Storage Engine hoặc Query Processor trong Database Engine.","positive":["Public189::chunk::2"]}
+{"query":"Transactional outbox pattern giải quyết triệt để vấn đề nào liên quan đến việc đảm bảo tính nguyên tử (atomicity) giữa cập nhật cơ sở dữ liệu cục bộ và gửi thông báo/sự kiện trong giao dịch phân tán?","positive":["Public183::chunk::4","Public183::chunk::5"]}
+{"query":"Ưu điểm nổi bật của GraphQL so với REST trong việc lấy dữ liệu từ server là gì?","positive":["Public176::chunk::1","Public176::chunk::3","Public176::chunk::0"]}
+{"query":"Nếu sau khi cấu hình tài khoản SIP Account trên Zoiper mà phần mềm không báo trạng thái online, bước hợp lý nhất cần làm là gì?","positive":[]}
+{"query":"Theo chu trình Plan-Do-Check-Act của ISO/IEC 27001:2005, nếu một tổ chức đã thực hiện các bước đánh giá rủi ro, lựa chọn biện pháp kiểm soát và thực thi kế hoạch xử lý rủi ro, thì bước tiếp theo hợp lý nhất là gì?\r\n","positive":["Public167::chunk::1","Public166::chunk::8"]}
+{"query":"Tài liệu `Public_200` mô tả chi tiết gì về phương pháp Deloitte đã sử dụng để xây dựng và quản lý một cơ sở dữ liệu rủi ro lớn như một cơ sở dữ liệu chứa 10.000 trường hợp rủi ro?","positive":["Public166::chunk::7","Public166::chunk::4","Public166::chunk::2"]}
+{"query":"Logic mờ (Fuzzy logic) được áp dụng trong kiểm toán nhằm mục đích chính nào?","positive":["Public200::chunk::5"]}
+{"query":"Broker trong Kafka có vai trò gì?","positive":["Public181::chunk::2"]}
+{"query":"Theo tài liệu, loại vi rút nào lây nhiễm vào cung khởi động (boot sector) của đĩa?\r\n\r\n\r\n","positive":[]}
+{"query":"Khái quát các trường hợp sử dụng của MongoDB","positive":["Public194::chunk::1"]}
+{"query":"Điểm khác biệt cơ bản giữa Luật và Chính sách được tài liệu nêu là gì?","positive":[]}
+{"query":"Nếu dự án liên tục thay đổi yêu cầu nhưng không có cơ chế kiểm soát, hệ quả là gì?","positive":[]}
+{"query":"Theo thống kê trong tài liệu `Public_153`, lỗ hổng nghiêm trọng cao chiếm 35%, trung bình 55% và thấp 10%. Dựa trên tài liệu này, nếu một tổ chức bỏ qua việc khắc phục các lỗ hổng trung bình, điều này tiềm ẩn nguy cơ gì?","positive":["Public153::chunk::2"]}
+{"query":"Theo tài liệu Public_174, Hồ dữ liệu (Data Lake) cho phép lưu trữ dữ liệu có cấu trúc và không có cấu trúc, và nó hỗ trợ những phương pháp phân tích nào?","positive":["Public174::chunk::12"]}
+{"query":"Tóm tắt Kubectl trên Windows","positive":["Public192::chunk::4"]}
+{"query":"GraphQL cung cấp khái niệm query để mô tả yêu cầu dữ liệu và schema để định nghĩa cấu trúc API, vậy mỗi thành phần này có vai trò chính là gì?","positive":["Public176::chunk::5","Public176::chunk::0"]}

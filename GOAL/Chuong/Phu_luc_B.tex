@@ -1,7 +1,7 @@
 \chapter{VÍ DỤ DỮ LIỆU HUẤN LUYỆN}
 \label{appendix:B}
 
-Phụ lục này minh họa cấu trúc dữ liệu huấn luyện đã mô tả ở Chương~3, gồm ví dụ bộ ba cho embedding, các loại negative tạo sinh, và ví dụ hai lớp ý định. Các đoạn văn dài được rút gọn để minh họa; dấu \plaincode{[...]} biểu thị phần đã lược bớt.
+Phụ lục này minh họa cấu trúc dữ liệu huấn luyện đã mô tả ở Chương~3, gồm ví dụ bộ ba cho embedding và ví dụ hai lớp ý định. Các đoạn văn dài được rút gọn để minh họa; dấu \plaincode{[...]} biểu thị phần đã lược bớt.
 
 \section{Ví dụ bộ ba cho embedding}
 \label{appendix:B.1}
@@ -18,44 +18,15 @@ Mỗi câu hỏi được ghép với một positive (đoạn chứa câu trả 
         \textbf{Thành phần} & \textbf{Nội dung} \\ \hline
         Câu hỏi & Chiều dày màng khô của lớp phủ chống cháy được xác định bằng cách nào? \\ \hline
         Positive & ``Độ dày màng khô phải được xác định trực tiếp trên các mẫu thử nghiệm, sau khi lớp phủ được để khô hoàn toàn theo quy định của khách hàng. Phòng thử nghiệm phải đo chiều dày bằng dụng cụ sử dụng nguyên tắc cảm ứng điện từ hoặc nguyên tắc dòng điện xoáy với đường kính tiếp xúc đầu dò ít nhất là 2,5 mm. [...]'' \\ \hline
-        Negative (tạo sinh) & ``[...] đo chiều dày bằng dụng cụ [...] với đường kính tiếp xúc đầu dò ít nhất là \textbf{3 mm}. [...]'' \\ \hline
         Negative (khai thác) & ``Đối với vật liệu bọc phủ dạng phản ứng, độ dày trung bình của lớp sơn lót phải được đo trước và trừ đi từ tổng chiều dày [...]'' \\ \hline
     \end{tabular}
     }
 \end{table}
 
-Trong ví dụ trên, negative tạo sinh gần như sao chép positive nhưng thay đổi một
-chi tiết kỹ thuật quan trọng, từ 2,5 mm thành 3 mm. Do đó, đoạn này vẫn rất gần
-positive về chủ đề và cấu trúc, nhưng tạo ra nhiễu chi tiết so với đoạn đúng.
-Dạng negative này được dùng để giúp embedding học phân biệt các đoạn rất giống
-nhau nhưng khác ở thông tin then chốt.
-
-Negative khai thác là một đoạn thật trong corpus, gần positive trong không gian
-truy hồi nhưng không trực tiếp cung cấp thông tin cần thiết để trả lời câu hỏi.
-
-\section{Các loại negative tạo sinh}
-\label{appendix:B.2}
-
-Bốn phép chỉnh sửa được dùng để tạo negative, mỗi loại thay đổi một yếu tố quyết định khả năng trả lời.
-
-\begin{table}[H]
-    \centering
-    \caption{Ví dụ bốn loại negative tạo sinh}
-    \label{tab:appendix-negative-types}
-    {\small
-    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{9.8cm}|}
-        \hline
-        \textbf{Loại chỉnh sửa} & \textbf{Cách thay đổi (so với positive)} \\ \hline
-        Thay đổi thực thể & Đổi một thực thể quan trọng: ``theo quy định của \textbf{khách hàng}'' $\to$ ``theo quy định của \textbf{nhà cung cấp}''; hoặc ``cảm biến \textbf{nhiệt độ}'' $\to$ ``cảm biến \textbf{độ ẩm}''. \\ \hline
-        Thay đổi thời gian & Đổi mốc thời gian hoặc năm: ``(H. Lee và cộng sự, \textbf{2019})'' $\to$ ``(H. Lee và cộng sự, \textbf{2020})''. \\ \hline
-        Đảo ngược logic & Thêm hoặc đảo một điều kiện làm sai ý nghĩa gốc, ví dụ thêm một mệnh đề ràng buộc không có trong positive. \\ \hline
-        Thay đổi nguồn gốc & Đổi nguồn hoặc phạm vi áp dụng của thông tin, khiến đoạn dẫn chiếu sai tài liệu. \\ \hline
-    \end{tabular}
-    }
-\end{table}
+Negative khai thác là một đoạn thật trong corpus, gần positive trong không gian truy hồi nhưng không trực tiếp cung cấp thông tin cần thiết để trả lời câu hỏi.
 
 \section{Ví dụ hai lớp ý định}
-\label{appendix:B.3}
+\label{appendix:B.2}
 
 Câu hỏi được phân thành hai lớp: \plaincode{tra_cuu} (tra cứu thông tin có sẵn trong tài liệu) và \plaincode{tinh_toan} (cần suy luận hoặc tính toán để tạo ra kết quả).
 

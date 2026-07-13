@@ -80,6 +80,7 @@ DoAn/training/data_preparation_pipeline/*.jsonl
 # Local model checkpoints / heavy artifacts
 models/*
 !models/.gitkeep
+reranker_onnx_fp32/
 stage_b_adrmse/
 
 # Old/local scratch

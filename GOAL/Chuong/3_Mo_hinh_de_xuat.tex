@@ -24,7 +24,7 @@ Hệ thống đề xuất hoạt động theo hai giai đoạn tách biệt: gia
     \label{fig:overall-framework}
 \end{figure}
 
-Ở giai đoạn offline, tài liệu PDF được tiền xử lý (trích xuất văn bản, chia đoạn) thành kho đoạn văn bản. Từ kho này, một quy trình chung xây dựng dữ liệu huấn luyện được dùng cho cả ba thành phần. Trên nền dữ liệu đó, đồ án (1) tinh chỉnh mô hình embedding theo lộ trình GIST$\to$MNRL kết hợp MRL, (2) chưng cất reranker từ teacher BGE-reranker-v2-m3 qua hai giai đoạn kèm cắt tỉa từ vựng, và (3) huấn luyện bộ phân loại ý định bằng SetFit. Kho đoạn cũng được lập chỉ mục thành hai dạng: chỉ mục BM25 và chỉ mục vector dùng chính embedding đã tinh chỉnh.
+Ở giai đoạn offline, tài liệu PDF được tiền xử lý (trích xuất văn bản, chia đoạn) thành kho đoạn văn bản. Từ kho này, một quy trình chung xây dựng dữ liệu huấn luyện được dùng cho cả ba thành phần. Trên nền dữ liệu đó, đồ án (1) tinh chỉnh mô hình embedding bằng MNRL kết hợp resample positive theo epoch và MRL, (2) chưng cất reranker từ teacher BGE-reranker-v2-m3 qua hai giai đoạn kèm cắt tỉa từ vựng, và (3) huấn luyện bộ phân loại ý định bằng SetFit. Kho đoạn cũng được lập chỉ mục thành hai dạng: chỉ mục BM25 và chỉ mục vector dùng chính embedding đã tinh chỉnh.
 
 Ở giai đoạn online, mỗi truy vấn lần lượt đi qua bốn bước. Trước hết, bộ phân loại ý định xác định câu hỏi thuộc loại tra cứu (\plaincode{tra_cuu}) hay tính toán (\plaincode{tinh_toan}) để chọn cách sinh câu trả lời phù hợp. Tiếp theo, hệ thống truy hồi lai kết hợp BM25 và truy hồi dày dựa trên embedding tinh chỉnh, hợp nhất kết quả bằng RRF. Tập ứng viên sau đó được reranker nén xếp hạng lại để chọn ngữ cảnh tốt nhất. Cuối cùng, mô hình ngôn ngữ sinh câu trả lời bám sát ngữ cảnh, với prompt được chọn theo ý định đã phân loại.
 
@@ -37,7 +37,7 @@ Hệ thống RAG ban đầu, gọi là v1 trong đồ án, được xây dựng 
 
 Trong giai đoạn này, hệ thống được chạy thử trên 991 câu hỏi trắc nghiệm và 200 tài liệu PDF từ tập phát triển. Chính 991 câu hỏi này sau đó được dùng để xây dựng dữ liệu huấn luyện cho v2, gồm nhãn ý định, cặp query--positive đoạn và negative samples cho reranker và embedding. Vì vậy, kết quả trên 991 câu chỉ được xem là tín hiệu phát triển nội bộ, không phải kết quả đánh giá cuối cùng.
 
-Tập kiểm thử độc lập gồm 343 câu hỏi từ 50 tài liệu PDF được giữ riêng cho giai đoạn đánh giá v2 và không được sử dụng để huấn luyện.
+Tập kiểm thử độc lập gồm 390 câu hỏi (343 câu gốc cộng 47 câu \plaincode{tinh_toan} bổ sung sau, mục~\ref{subsection:4.2.5}) từ 50 tài liệu PDF được giữ riêng cho giai đoạn đánh giá v2 và không được sử dụng để huấn luyện.
 
 \begin{table}[H]
     \centering
@@ -50,7 +50,7 @@ Tập kiểm thử độc lập gồm 343 câu hỏi từ 50 tài liệu PDF đ�
         \textbf{Nhóm dữ liệu} & \textbf{Quy mô} & \textbf{Vai trò} \\ \hline
         Tập phát triển v1 & 991 câu hỏi, 200 tài liệu PDF & Chạy thử pipeline, quan sát lỗi, đo bottleneck và tạo dữ liệu huấn luyện v2 \\ \hline
         Dữ liệu huấn luyện v2 & Xây dựng từ 991 câu hỏi & Huấn luyện reranker, embedding và bộ phân loại ý định \\ \hline
-        Tập kiểm thử độc lập & 343 câu hỏi, 50 tài liệu PDF & Chỉ dùng để đánh giá v2, không dùng để huấn luyện hoặc lựa chọn cấu hình \\ \hline
+        Tập kiểm thử độc lập & 390 câu hỏi, 50 tài liệu PDF & Chỉ dùng để đánh giá v2, không dùng để huấn luyện hoặc lựa chọn cấu hình \\ \hline
     \end{tabular}
     }
 \end{table}
@@ -123,11 +123,11 @@ ChromaDB lưu dense embeddings của các đoạn. Embedding được tạo bằ
 
 \noindent\textbf{BM25Okapi}
 
-BM25Okapi lập chỉ mục toàn bộ đoạn text cho sparse truy hồi. Thành phần này không cần GPU, có độ trễ dưới khoảng 10ms/query và phù hợp với mã số, ký hiệu hoặc tên thiết bị mà dense model có thể chưa biểu diễn tốt.
+BM25Okapi lập chỉ mục toàn bộ đoạn text cho truy hồi thưa (sparse). Thành phần này không cần GPU, có độ trễ dưới khoảng 10ms/query và phù hợp với mã số, ký hiệu hoặc tên thiết bị mà dense model có thể chưa biểu diễn tốt.
 
 \noindent\textbf{DocIndex}
 
-DocIndex là chỉ mục bổ sung dành cho Router-Summary, trong đó mỗi tài liệu được biểu diễn bằng một \textit{summary vector} ở cấp tài liệu. Từ ``summary'' ở đây không phải là đoạn tóm tắt sinh bởi LLM, mà là biểu diễn vector cô đọng được tính offline từ các đoạn của tài liệu. Mục tiêu là chọn nhanh một vài tài liệu liên quan trước khi truy hồi chi tiết ở cấp đoạn.
+DocIndex là chỉ mục bổ sung dành cho Router-Summary, trong đó mỗi tài liệu được biểu diễn bằng một summary vector ở cấp tài liệu. Từ ``summary'' ở đây không phải là đoạn tóm tắt sinh bởi LLM, mà là biểu diễn vector cô đọng được tính offline từ các đoạn của tài liệu. Mục tiêu là chọn nhanh một vài tài liệu liên quan trước khi truy hồi chi tiết ở cấp đoạn.
 
 Với tài liệu có ít nhất ba text đoạn, DocIndex dùng TextRank trên graph tương đồng giữa các đoạn. Mỗi text đoạn đã có embedding chuẩn hóa L2. Các đoạn được xem như các đỉnh của graph, còn trọng số cạnh là cosine similarity giữa hai embedding:
 
@@ -159,7 +159,7 @@ Trên nền tiền xử lý và chỉ mục chung, đồ án so sánh hai pipeli
 \subsection{Pipeline Baseline Router}
 \label{subsection:3.3.1}
 
-Baseline thực hiện truy xuất lai (hybrid truy hồi) trực tiếp trên toàn corpus rồi đưa ngữ cảnh vào LLM để sinh đáp án.
+Baseline thực hiện truy xuất lai (hybrid) trực tiếp trên toàn corpus rồi đưa ngữ cảnh vào LLM để sinh đáp án.
 
 \begin{figure}[H]
     \centering
@@ -264,9 +264,9 @@ Router-Summary dùng GPT-4o-mini cho bước phân loại ý định trước kh
 
 \plaincode{Vietnamese_Embedding_v2} là mô hình embedding tiếng Việt mạnh nhưng chưa được tối ưu riêng cho miền tài liệu kỹ thuật của đồ án. Khi một phần truy vấn chưa có gold đoạn ở thứ hạng cao nhất, gánh nặng cải thiện thứ hạng dồn sang bộ tái xếp hạng. Nếu gold đoạn rơi khỏi nhóm top-k ứng viên, bộ tái xếp hạng cũng không thể khôi phục. Phân tích định tính cho thấy lỗi truy xuất là một nhóm lỗi đáng kể: các câu hỏi về thông số, bảng số liệu, ký hiệu và thuật ngữ chuyên ngành đòi hỏi embedding nắm được quan hệ đặc thù của miền, thay vì chỉ dựa trên ngữ nghĩa tiếng Việt tổng quát.
 
-Vì mô hình nền vốn đã khá mạnh, hướng tối ưu embedding ở v2 không chỉ nhắm tới độ chính xác mà còn tới hiệu quả biểu diễn: tinh chỉnh với GIST và học theo chương trình để thích nghi miền, kết hợp Matryoshka Representation Learning để tạo biểu diễn đa kích thước, cho phép sử dụng số chiều nhỏ hơn mà không làm giảm đáng kể chất lượng. Mức cải thiện cụ thể được đánh giá ở Chương~4.
+Vì mô hình nền vốn đã khá mạnh, hướng tối ưu embedding ở v2 không chỉ nhắm tới độ chính xác mà còn tới hiệu quả biểu diễn: tinh chỉnh bằng MNRL với resample positive theo epoch để thích nghi miền, kết hợp Matryoshka Representation Learning để tạo biểu diễn đa kích thước, cho phép sử dụng số chiều nhỏ hơn mà không làm giảm đáng kể chất lượng. Mức cải thiện cụ thể được đánh giá ở Chương~4.
 
-Ba nút thắt trên xác định ba hướng tối ưu của v2: xây dựng bộ tái xếp hạng nhẹ bằng chưng cất tri thức để giảm độ trễ; huấn luyện router cục bộ dựa trên Sentence-BERT/SetFit để thay thế GPT router; và tinh chỉnh embedding bằng MRL, học theo chương trình và GIST để thích nghi miền và giảm chi phí biểu diễn.
+Ba nút thắt trên xác định ba hướng tối ưu của v2: xây dựng bộ tái xếp hạng nhẹ bằng chưng cất tri thức để giảm độ trễ; huấn luyện router cục bộ dựa trên Sentence-BERT/SetFit để thay thế GPT router; và tinh chỉnh embedding bằng MRL và resample positive theo epoch để thích nghi miền và giảm chi phí biểu diễn.
 
 \section{Tổng quan định hướng v2}
 \label{section:3.6}
@@ -283,7 +283,7 @@ Từ ba nút thắt được xác định ở các mục trên, hệ thống v2 
     \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\raggedright\arraybackslash}p{5.5cm}|>{\raggedright\arraybackslash}p{5.8cm}|}
         \hline
         \textbf{Nút thắt v1} & \textbf{Giải pháp v2} & \textbf{Mục tiêu thiết kế} \\ \hline
-        Mô hình embedding nền chưa tối ưu theo miền & Tinh chỉnh bằng MRL, học theo chương trình và GIST & Cải thiện truy xuất, hỗ trợ triển khai 512 chiều và giảm dung lượng lưu trữ \\ \hline
+        Mô hình embedding nền chưa tối ưu theo miền & Tinh chỉnh bằng MRL và resample positive theo epoch & Cải thiện truy xuất, hỗ trợ triển khai 512 chiều và giảm dung lượng lưu trữ \\ \hline
         BGE-reranker-v2-m3: 568M tham số, độ trễ lớn khi tái xếp hạng top-20 & Chưng cất sang mmarco 117M, pruned 35.6M và MiniLM 33M & Giữ MRR@10 gần với mô hình teacher, giảm độ trễ pipeline và giảm dung lượng khi triển khai \\ \hline
         GPT router: độ trễ và chi phí API cho mỗi truy vấn & Huấn luyện router cục bộ dựa trên Sentence-BERT/SetFit & Đạt độ chính xác cao, độ trễ thấp và có thể chạy cục bộ \\ \hline
     \end{tabular}%
@@ -293,13 +293,13 @@ Từ ba nút thắt được xác định ở các mục trên, hệ thống v2 
 
 Ba hướng được trình bày theo trình tự của pipeline: trước hết là tinh chỉnh embedding ở tầng truy xuất, tiếp đến là xây dựng bộ tái xếp hạng nhẹ, rồi xây dựng bộ phân loại ý định. Phần chuẩn bị dữ liệu huấn luyện được xây dựng chung, phục vụ embedding trước và được tái sử dụng cho bộ tái xếp hạng. Kết quả đánh giá của cả ba hướng được tổng hợp trong Chương~4.
 
-\section{Tinh chỉnh embedding bằng MRL và học theo lộ trình}
+\section{Tinh chỉnh embedding bằng MRL và resample positive theo epoch}
 \label{section:3.7}
 
-\subsection{Pipeline xây dựng dữ liệu embedding}
+\subsection{Xác định positive cho embedding}
 \label{subsection:3.7.1}
 
-Dữ liệu huấn luyện được xây dựng từ 991 câu hỏi gốc qua một quy trình năm giai đoạn. Cùng một nguồn dữ liệu này được dùng cho cả tầng embedding và tầng reranker; phần khác biệt về tiêu chí lọc và ghép cặp riêng cho reranker được trình bày ở mục~\ref{subsection:3.8.2}.
+Dữ liệu positive cho embedding được xây dựng từ 991 câu hỏi gốc qua hai giai đoạn đầu của quy trình dữ liệu dùng chung với reranker (giai đoạn 3--5 dành cho tổng hợp và khai thác hard negative được trình bày riêng ở mục~\ref{subsection:3.8.2}, không dùng cho embedding).
 
 \begin{figure}[H]
     \centering
@@ -308,43 +308,23 @@ Dữ liệu huấn luyện được xây dựng từ 991 câu hỏi gốc qua m�
     }{%
         \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/data_embedding.png}}}%
     }
-    \caption{Quy trình xây dựng dữ liệu huấn luyện embedding}
+    \caption{Quy trình xác định positive cho embedding}
     \label{fig:data-embedding-pipeline}
 \end{figure}
 
-\noindent\textbf{Giai đoạn 1 -- Truy hồi và xếp hạng lại.} Toàn bộ 991 câu hỏi được đưa qua truy hồi lai (BM25, truy hồi dense và hợp nhất bằng RRF), sau đó được xếp hạng lại bằng BGE-reranker-v2-m3. Mỗi câu hỏi giữ lại 20 ứng viên hàng đầu kèm điểm số và thứ hạng của teacher, tạo thành tập ứng viên đầu vào cho các giai đoạn sau.
+\noindent\textbf{Giai đoạn 1 -- Truy hồi và xếp hạng lại.} Toàn bộ 991 câu hỏi được đưa qua truy hồi lai (BM25, truy hồi dense và hợp nhất bằng RRF), sau đó được xếp hạng lại bằng BGE-reranker-v2-m3. Mỗi câu hỏi giữ lại 20 ứng viên hàng đầu kèm điểm số và thứ hạng của teacher.
 
-\noindent\textbf{Giai đoạn 2 -- Xác định positive bằng mô hình ngôn ngữ.} Thay vì mặc định ứng viên xếp hạng cao nhất là positive, một mô hình ngôn ngữ được dùng làm giám khảo để phân loại từng ứng viên thành liên quan trực tiếp, liên quan một phần hoặc không liên quan. Cách này tránh nhận nhầm các đoạn chỉ liên quan một phần làm positive. Sau khi loại các câu hỏi không có positive đáng tin cậy, còn lại 786 câu hỏi hợp lệ để xây dựng dữ liệu embedding.
+\noindent\textbf{Giai đoạn 2 -- Xác định positive bằng mô hình ngôn ngữ.} Thay vì mặc định ứng viên xếp hạng cao nhất là positive, một mô hình ngôn ngữ được dùng làm giám khảo để phân loại từng ứng viên thành liên quan trực tiếp, liên quan một phần hoặc không liên quan. Một câu hỏi có thể có nhiều hơn một positive nếu nhiều ứng viên cùng được đánh giá là liên quan trực tiếp. Sau khi loại các câu hỏi không có positive đáng tin cậy, còn lại 792 câu hỏi hợp lệ, chia 80/20 phân tầng theo ý định (634 câu hỏi huấn luyện, 158 câu hỏi kiểm thử in-domain --- tập D1).
 
-\noindent\textbf{Giai đoạn 3 -- Tổng hợp hard negative.} Với mỗi câu hỏi có positive, mô hình ngôn ngữ tạo ra các phiên bản gần giống positive nhưng thay đổi một thông tin quyết định khả năng trả lời, chẳng hạn thực thể, số liệu, điều kiện hoặc phạm vi áp dụng. Các negative này rất gần positive về bề mặt nhưng được thiết kế để không trả lời đúng câu hỏi, tạo ra ranh giới ngữ nghĩa có kiểm soát.
-
-\noindent\textbf{Giai đoạn 4 -- Khai thác hard negative từ kết quả xếp hạng.} Bên cạnh negative tạo sinh, hệ thống khai thác các đoạn thật nằm gần positive trong kết quả truy hồi và xếp hạng. Với embedding, các negative này được lấy từ những ứng viên ở hạng 5 đến 15, sau khi loại bỏ các đoạn đã được đánh giá là liên quan trực tiếp hoặc một phần. Đây là các negative sát với phân phối lỗi thực tế của hệ thống truy hồi hơn so với negative tạo sinh.
-
-\noindent\textbf{Giai đoạn 5 -- Gộp và chia tập.} Với mỗi câu hỏi, positive đã xác minh và toàn bộ negative (cả tạo sinh lẫn khai thác) được gom thành một bản ghi. Tập dữ liệu sau đó được chia thành tập huấn luyện và tập kiểm thử theo tỉ lệ 80/20, phân tầng theo ý định. Để huấn luyện theo dạng tương phản, mỗi bản ghi trong tập huấn luyện được tách thành nhiều bộ ba dạng (câu hỏi, positive, negative) --- mỗi negative ghép với positive tạo một bộ ba; tập kiểm thử được giữ riêng để đánh giá, không dùng khi huấn luyện.
-Bộ dữ liệu tổng hợp gồm 786 câu hỏi hợp lệ và hai nguồn negative như trong Bảng~\ref{tab:embedding-master-data}.
-
-\begin{table}[H]
-    \centering
-    \caption{Các nguồn negative trong bộ dữ liệu embedding (pool thô trước khi tạo bộ ba)}
-    \label{tab:embedding-master-data}
-    {\small
-    \setlength{\tabcolsep}{4pt}
-    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.0cm}|>{\centering\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{5.4cm}|}
-        \hline
-        \textbf{Nguồn} & \textbf{Số negative} & \textbf{Ghi chú} \\ \hline
-        Negative tạo sinh & 1.291 & Có ranh giới ngữ nghĩa được kiểm soát \\ \hline
-        Negative khai thác & 9.103 & Đoạn thật nằm gần positive trong không gian vector \\ \hline
-        \textbf{Tổng} & \textbf{10.394} & -- \\ \hline
-    \end{tabular}
-    }
-\end{table}
-
-Khi tạo bộ ba huấn luyện, mỗi negative được ghép với positive tương ứng, số negative khai thác được giới hạn tối đa 10 trên mỗi câu hỏi, và dữ liệu được chia phân tầng theo ý định với tỉ lệ 80/20 (629 câu hỏi huấn luyện, 157 câu hỏi kiểm thử in-domain --- chính là tập D1). Vì vậy số bộ ba thực tế nhỏ hơn tổng pool thô. Curriculum cuối cùng gồm hai giai đoạn: giai đoạn một dùng 1.040 bộ ba chỉ với negative tạo sinh, giai đoạn hai dùng 7.330 bộ ba kết hợp cả negative tạo sinh và negative khai thác.
-
-\subsection{Thiết kế hàm mất mát cho tầng embedding}
+\subsection{Gộp positive và resample theo epoch}
 \label{subsection:3.7.2}
 
-Mô hình nền là \plaincode{AITeamVN/Vietnamese_Embedding_v2}, dựa trên BGE-M3 và tạo vector 1024 chiều. Hàm mất mát nền cho học tương phản (contrastive learning) là MultipleNegativesRankingLoss (MNRL): với kích thước batch $N$, mỗi câu hỏi phân biệt positive của nó với $N-1$ negative trong cùng batch (in-batch negative):
+Nhiều câu hỏi trong 634 câu hỏi huấn luyện có nhiều hơn một positive (nhiều ứng viên cùng được giám khảo đánh giá liên quan trực tiếp). Thay vì chọn cố định một positive đại diện (ví dụ positive có điểm BGE-reranker-v2-m3 cao nhất) và dùng lại positive đó ở mọi epoch, đồ án gộp toàn bộ positive của mỗi câu hỏi thành một danh sách, sau đó ở mỗi epoch chọn ngẫu nhiên đúng một positive trong danh sách này để tạo cặp huấn luyện, với hạt giống ngẫu nhiên đổi theo từng epoch. Nhờ vậy, qua nhiều epoch, một câu hỏi có nhiều positive sẽ lần lượt được ghép với các positive khác nhau thay vì luôn cố định một lựa chọn, giúp mô hình tiếp xúc với nhiều cách diễn đạt hợp lệ của cùng một câu trả lời mà không cần tăng số cặp huấn luyện trong mỗi epoch.
+
+\subsection{Thiết kế hàm mất mát cho tầng embedding}
+\label{subsection:3.7.3}
+
+Mô hình nền là \plaincode{AITeamVN/Vietnamese_Embedding_v2}, dựa trên BGE-M3 và tạo vector 1024 chiều. Hàm mất mát là MultipleNegativesRankingLoss (MNRL): với kích thước batch $N$, mỗi câu hỏi phân biệt positive của nó với $N-1$ mẫu còn lại trong cùng batch, đóng vai trò in-batch negative:
 
 \[
 \mathcal{L}_{\text{MNRL}}
@@ -360,57 +340,38 @@ Mô hình nền là \plaincode{AITeamVN/Vietnamese_Embedding_v2}, dựa trên BG
 }
 \]
 
-Trong thực nghiệm, hệ số scale bằng 20, tương ứng nhiệt độ $\tau=0.05$.
+Trong thực nghiệm, hệ số scale bằng 20, tương ứng nhiệt độ $\tau=0.05$. Vì mỗi câu hỏi chỉ có một positive tại mỗi epoch (theo cơ chế resample ở mục~\ref{subsection:3.7.2}) và không có negative tường minh, toàn bộ tín hiệu phân biệt đến từ in-batch negative --- positive của các câu hỏi khác trong cùng batch.
 
-MNRL thuần xem toàn bộ các mẫu còn lại trong cùng batch là negative. Với tài liệu kỹ thuật, giả định này có thể tạo ra false negative (mẫu bị coi là negative nhưng thực chất vẫn liên quan), do nhiều đoạn khác nhau vẫn có khả năng cùng liên quan đến một câu hỏi. Khi đó, positive của một câu hỏi có thể thực chất cũng liên quan đến một câu hỏi khác trong batch, nhưng vẫn bị xem là negative trong quá trình huấn luyện. Để giảm ảnh hưởng của false negative, đồ án áp dụng GISTEmbedLoss. Phương pháp này sử dụng một mô hình dẫn hướng (guide model) mạnh để đánh giá mức độ tương đồng giữa câu hỏi và các ứng viên trong batch. Trong phạm vi đồ án, BGE-M3 được dùng làm mô hình dẫn hướng. Với mỗi câu hỏi, mô hình dẫn hướng chấm điểm tương đồng cho các cặp câu hỏi--ứng viên và loại khỏi tập negative những ứng viên có độ tương đồng với câu hỏi lớn hơn hoặc bằng positive tương ứng. Cấu hình sử dụng là chiến lược biên tuyệt đối với $\delta = 0$ và nhiệt độ bằng 0.01. Nhờ cơ chế lọc negative này, mô hình hạn chế bị phạt khi xếp hạng cao các mẫu thực chất vẫn liên quan đến câu hỏi, từ đó giảm nhiễu trong quá trình học biểu diễn.
-
-Điểm thiết kế quan trọng của tầng embedding là dùng hàm mất mát theo lộ trình (curriculum): GIST ở giai đoạn 1 và MNRL ở giai đoạn 2, mỗi hàm mất mát đều được bọc trong MatryoshkaLoss để tối ưu đồng thời ba kích thước $\mathcal{M}=\{256,512,1024\}$:
+Hàm mất mát được bọc trong MatryoshkaLoss để tối ưu đồng thời ba kích thước $\mathcal{M}=\{256,512,1024\}$, mỗi kích thước được tính trên phần đầu (prefix) $f_m(\mathbf{x})=\mathbf{x}[:m]$ của vector embedding với trọng số bằng nhau giữa ba kích thước:
 \[
-\mathcal{L}^{(1)} = \text{MatryoshkaLoss}\!\left(\mathcal{L}_{\text{GIST}}\right),
-\qquad
-\mathcal{L}^{(2)} = \text{MatryoshkaLoss}\!\left(\mathcal{L}_{\text{MNRL}}\right)
+\mathcal{L} = \text{MatryoshkaLoss}\!\left(\mathcal{L}_{\text{MNRL}}\right)
 \]
-trong đó mỗi hàm mất mát thành phần được tính trên phần đầu (prefix) $f_m(\mathbf{x})=\mathbf{x}[:m]$ với ba kích thước có trọng số bằng nhau. Lý do tách hàm mất mát theo giai đoạn: giai đoạn 1 học từ negative tạo sinh --- dữ liệu dễ lẫn false negative nên cần GIST lọc bớt; giai đoạn 2 tinh chỉnh với negative khai thác đã sạch (được chọn theo chênh lệch điểm BGE-reranker-v2-m3, thuộc tài liệu khác). Nếu dùng GIST ở giai đoạn 2, mô hình dẫn hướng có thể lọc nhầm chính các negative khai thác này vì chúng ``trông giống'' positive, làm mất tín hiệu phân biệt tinh vi; trong khi MNRL giữ lại toàn bộ hard negative nên kỳ vọng học phân biệt tốt hơn. Hiệu quả của thiết kế lộ trình GIST$\to$MNRL so với các phương án khác được đánh giá bằng thực nghiệm loại bỏ (ablation) ở Chương~4.
 
-\begin{figure}[H]
-    \centering
-    \IfFileExists{Hinhve/training_embedding.png}{%
-        \includegraphics[width=\textwidth]{Hinhve/training_embedding.png}%
-    }{%
-        \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/training_embedding.png}}}%
-    }
-    \caption{Hai giai đoạn huấn luyện cho tầng embedding}
-    \label{fig:embedding-loss-arch}
-\end{figure}
+\subsection{Cấu hình huấn luyện}
+\label{subsection:3.7.4}
 
-\subsection{Huấn luyện theo lộ trình hai giai đoạn}
-\label{subsection:3.7.3}
-
-Hai giai đoạn được huấn luyện nối tiếp. Checkpoint của giai đoạn trước là điểm khởi đầu của giai đoạn sau, và tốc độ học (learning rate) được giảm khi chuyển từ negative tạo sinh có ranh giới được kiểm soát sang negative khai thác --- các đoạn thật được hệ thống truy hồi xếp gần positive, nên sát với phân phối lỗi thực tế hơn.
+Huấn luyện gồm một giai đoạn duy nhất.
 
 \begin{table}[H]
     \centering
-    \caption{Cấu hình huấn luyện theo lộ trình cho embedding}
-    \label{tab:curriculum-config}
+    \caption{Cấu hình huấn luyện embedding}
+    \label{tab:embedding-train-config}
     {\small
-    \setlength{\tabcolsep}{3pt}
+    \setlength{\tabcolsep}{4pt}
     \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|>{\raggedright\arraybackslash}p{1.8cm}|>{\raggedright\arraybackslash}p{3.0cm}|>{\raggedright\arraybackslash}p{3.4cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.3cm}|>{\centering\arraybackslash}p{1.2cm}|>{\centering\arraybackslash}p{1.6cm}|}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.2cm}|>{\raggedright\arraybackslash}p{3.4cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.6cm}|}
         \hline
-        \textbf{Giai đoạn} & \textbf{Hàm mất mát} & \textbf{Nguồn negative} & \textbf{Số bộ ba} & \textbf{Epoch} & \textbf{Batch} & \textbf{Tốc độ học} \\ \hline
-        Giai đoạn 1 & GIST & Negative tạo sinh & 1.040 & 2 & 64 & $2\times10^{-6}$ \\ \hline
-        Giai đoạn 2 & MNRL & Negative khai thác & 7.330 & 1 & 32 & $5\times10^{-7}$ \\ \hline
+        \textbf{Hàm mất mát} & \textbf{Dữ liệu} & \textbf{Epoch} & \textbf{Batch} & \textbf{Tốc độ học} & \textbf{Độ dài chuỗi} \\ \hline
+        MNRL + MatryoshkaLoss & 634 câu hỏi, positive resample theo epoch & 2 & 16 & $2\times10^{-6}$ & 1024 \\ \hline
     \end{tabular}%
     }
     }
 \end{table}
 
-Các tham số chung gồm bộ tối ưu AdamW, hệ số suy giảm trọng số bằng 0.01, ngưỡng cắt gradient bằng 1.0, huấn luyện ở độ chính xác hỗn hợp (mixed precision) và độ dài chuỗi tối đa 512 token.
-
-Giai đoạn 1 dùng negative tạo sinh có ranh giới rõ ràng cùng GIST để lọc false negative trong khi mô hình học ranh giới ngữ nghĩa. Giai đoạn 2 chuyển sang MNRL trên negative khai thác --- các đoạn thật nằm gần positive trong không gian vector --- giữ lại toàn bộ hard negative để tinh chỉnh khả năng phân biệt. Số bước khởi động (warmup) được giữ ở mức thấp để tránh tình trạng giai đoạn ngắn nhưng mô hình chưa kịp đạt tốc độ học chính.
+Các tham số chung gồm bộ tối ưu AdamW, hệ số suy giảm trọng số bằng 0.01, ngưỡng cắt gradient bằng 1.0, huấn luyện ở độ chính xác hỗn hợp (mixed precision), 10 bước khởi động (warmup). Vì mỗi epoch resample lại positive (mục~\ref{subsection:3.7.2}), tập huấn luyện được tái tạo và nạp lại \plaincode{DataLoader} ở đầu mỗi epoch thay vì huấn luyện nhiều epoch liên tục trên cùng một tập cặp cố định.
 
 \subsection{Chiến lược triển khai với MRL}
-\label{subsection:3.7.4}
+\label{subsection:3.7.5}
 
 Một checkpoint hỗ trợ ba cấu hình:
 
@@ -430,7 +391,7 @@ Một checkpoint hỗ trợ ba cấu hình:
     }
 \end{table}
 
-Một checkpoint MRL hỗ trợ ba cấu hình triển khai: 256 chiều khi ưu tiên tốc độ và bộ nhớ (chỉ mục nhỏ hơn 4 lần), 512 chiều cân bằng giữa chất lượng và tài nguyên (dung lượng nhỏ hơn 2 lần so với 1024 chiều), và 1024 chiều khi cần tối đa hóa chất lượng. So sánh chất lượng giữa ba cấu hình và lựa chọn cấu hình triển khai được trình bày ở Chương~4.
+Một checkpoint MRL hỗ trợ ba cấu hình triển khai: 256 chiều khi ưu tiên tốc độ và bộ nhớ (chỉ mục nhỏ hơn 4 lần), 512 chiều cân bằng giữa chất lượng và tài nguyên (dung lượng nhỏ hơn 2 lần so với 1024 chiều), và 1024 chiều khi cần tối đa hóa chất lượng. Thực nghiệm ở Chương~4 cho thấy 1024 chiều đạt MRR/NDCG cao nhất, nhưng đồ án vẫn chọn 512 chiều làm cấu hình triển khai chính vì mức chênh lệch chất lượng so với 1024 chiều là nhỏ trong khi dung lượng chỉ mục giảm một nửa --- đánh đổi hợp lý cho một hệ thống chạy trên tài nguyên hạn chế.
 
 \section{Reranker nhẹ bằng chưng cất tri thức}
 \label{section:3.8}
@@ -438,7 +399,7 @@ Một checkpoint MRL hỗ trợ ba cấu hình triển khai: 256 chiều khi ưu
 \subsection{Động lực và thiết kế tổng quan}
 \label{subsection:3.8.1}
 
-Mục tiêu của hướng reranker là thay BGE-reranker-v2-m3 (568M tham số) bằng các reranker nhỏ hơn nhưng vẫn giữ được chất lượng xếp hạng. Đồ án thử ba mức dung lượng mô hình: MiniLM-L12 33M cho cấu hình siêu nhẹ, mmarco-mMiniLMv2 117M cho cấu hình cân bằng, và mmarco sau cắt tỉa còn 35.6M để giảm chi phí triển khai (dung lượng mô hình, tài nguyên bộ nhớ và chi phí suy luận) nhưng vẫn tận dụng được encoder đa ngôn ngữ mạnh.
+Mục tiêu của hướng reranker là thay BGE-reranker-v2-m3 (568M tham số) bằng các reranker nhỏ hơn nhưng vẫn giữ được chất lượng xếp hạng. Đồ án thử ba mức dung lượng mô hình: MiniLM-L12 33M (\plaincode{cross-encoder/ms-marco-MiniLM-L12-v2}) cho cấu hình siêu nhẹ, mmarco-mMiniLMv2 117M (\plaincode{cross-encoder/mmarco-mMiniLMv2-L12-H384-v1}) cho cấu hình cân bằng, và mmarco sau cắt tỉa còn 35.6M để giảm chi phí triển khai (dung lượng mô hình, tài nguyên bộ nhớ và chi phí suy luận) nhưng vẫn tận dụng được encoder đa ngôn ngữ mạnh.
 
 Một quyết định thiết kế quan trọng là có cần bước thích nghi miền (giai đoạn A) trước khi chưng cất hay không. Giả thuyết là khi chưa thích nghi với miền dữ liệu đích, student chưa hình thành biểu diễn phù hợp cho đầu vào tiếng Việt --- do khoảng cách miền giữa MS MARCO tiếng Anh~\cite{nguyen2016msmarco} và tài liệu kỹ thuật tiếng Việt --- nên việc tiếp nhận tín hiệu xếp hạng từ teacher kém hiệu quả. Vì vậy, đồ án thiết kế quy trình hai giai đoạn (giai đoạn A học tương phản trước, giai đoạn B chưng cất sau); so sánh với phương án chưng cất trực tiếp được trình bày ở Chương~4.
 \begin{itemize}
@@ -448,10 +409,17 @@ Một quyết định thiết kế quan trọng là có cần bước thích ngh
 
 \begin{figure}[H]
     \centering
-    \IfFileExists{Hinhve/training_reranker.png}{%
-        \includegraphics[width=\textwidth]{Hinhve/training_reranker.png}%
+    \IfFileExists{Hinhve/Stage_A.png}{%
+        \includegraphics[width=\textwidth]{Hinhve/Stage_A.png}%
     }{%
-        \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/reranker_training_architecture.png}}}%
+        \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/Stage_A.png}}}%
+    }
+    \vspace{0.8em}
+
+    \IfFileExists{Hinhve/Stage_B.png}{%
+        \includegraphics[width=\textwidth]{Hinhve/Stage_B.png}%
+    }{%
+        \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/Stage_B.png}}}%
     }
     \caption{Kiến trúc huấn luyện reranker hai giai đoạn}
     \label{fig:reranker-training-arch}
@@ -461,48 +429,16 @@ Một quyết định thiết kế quan trọng là có cần bước thích ngh
 
 BGE-reranker-v2-m3 là mô hình cross-encoder: với mỗi cặp $(q,c_i)$ gồm câu hỏi và đoạn ứng viên, mô hình trả về một điểm liên quan thực $s_i^T$ (logit), không phải xác suất đã chuẩn hóa trong khoảng $[0,1]$. Sau khi chấm 20 ứng viên của một câu hỏi, hệ thống sắp xếp các đoạn theo $s_i^T$ giảm dần để tạo thứ hạng teacher. Vì vậy, dữ liệu chưng cất lưu hai loại tín hiệu: điểm logit thô của từng ứng viên và vị trí thứ hạng sau khi xếp hạng lại.
 
-Điểm logit thô mang thông tin về độ tự tin tương đối nhưng không được hiệu chỉnh xác suất; khoảng cách logit có thể rất khác nhau giữa các câu hỏi. Do đó các hàm mất mát được thiết kế theo hai hướng. ListwiseKL chuyển logit của teacher và student thành phân phối mềm bằng softmax theo từng danh sách ứng viên; Margin-MSE và RankNet dùng chênh lệch logit giữa các cặp ứng viên; còn ADR-MSE bỏ qua thang điểm tuyệt đối của teacher và chỉ chưng cất thứ hạng bằng cách ánh xạ thứ hạng về mục tiêu trong khoảng $[-1,+1]$. Như vậy, BGE-reranker-v2-m3 đóng vai trò cung cấp tín hiệu liên quan và thứ hạng, còn từng hàm mất mát quyết định cách chuẩn hóa hoặc khai thác tín hiệu đó trong quá trình chưng cất.
+Điểm logit thô mang thông tin về độ tự tin tương đối nhưng không được hiệu chỉnh xác suất; khoảng cách logit có thể rất khác nhau giữa các câu hỏi. Do đó các hàm mất mát được thiết kế theo hai hướng. Listwise KL chuyển logit của teacher và student thành phân phối mềm bằng softmax theo từng danh sách ứng viên; Margin-MSE và RankNet dùng chênh lệch logit giữa các cặp ứng viên; còn ADR-MSE bỏ qua thang điểm tuyệt đối của teacher và chỉ chưng cất thứ hạng bằng cách ánh xạ thứ hạng về mục tiêu trong khoảng $[-1,+1]$. Như vậy, BGE-reranker-v2-m3 đóng vai trò cung cấp tín hiệu liên quan và thứ hạng, còn từng hàm mất mát quyết định cách chuẩn hóa hoặc khai thác tín hiệu đó trong quá trình chưng cất.
 
 \subsection{Điều chỉnh dữ liệu cho reranker}
 \label{subsection:3.8.2}
 
-Reranker không xây dựng lại dữ liệu từ đầu mà kế thừa kết quả trung gian của quy trình dữ liệu embedding ở mục~\ref{subsection:3.7.1}: tập câu hỏi kèm ứng viên đã xếp hạng, nhãn positive do mô hình ngôn ngữ xác định, và tập negative tạo sinh. Điểm khác là reranker cần dữ liệu dạng bộ ba hoặc danh sách để học xếp hạng, nên các negative phải được lọc chặt hơn và được gộp, chia theo câu hỏi để tránh rò rỉ dữ liệu (leakage). 
-
-Cụ thể, reranker khác embedding ở ba điểm chính:
-
-\begin{itemize}
-    \item Negative tạo sinh được kiểm tra thêm bằng một giám khảo khả năng trả lời độc lập (dùng mô hình ngôn ngữ), chỉ giữ những phiên bản không trả lời được câu hỏi.
-    \item Negative khai thác dùng tiêu chí chặt hơn: ngoài các đoạn khác tài liệu, đoạn cùng tài liệu chỉ được giữ nếu giám khảo xác nhận là không liên quan; đồng thời loại các mẫu có chênh lệch điểm quá nhỏ.
-    \item Việc gộp và chia cho reranker tạo các bộ ba huấn luyện và kiểm định theo câu hỏi với tỉ lệ 90/10, khác với tỉ lệ 80/20 của embedding.
-\end{itemize}
-
-\noindent\textbf{Lọc negative tạo sinh.}
-
-Nguồn tạo sinh ban đầu gồm 1.291 ứng viên từ các phép sửa như thay đổi thực thể, thay đổi thời gian, đảo ngược logic và thay đổi nguồn gốc. Với reranker, mỗi negative đi qua ba tầng lọc: tự kiểm tra trong prompt sinh dữ liệu, giám khảo khả năng trả lời độc lập, và bộ lọc theo chênh lệch điểm BGE-reranker-v2-m3. Sau lọc, 405 ứng viên được giữ lại làm hard negative thật sự cho reranker.
-
-\begin{table}[H]
-    \centering
-    \caption{Thống kê negative tạo sinh sau lọc}
-    \label{tab:synthesized-negative-stats}
-    {\small
-    \setlength{\tabcolsep}{6pt}
-    \begin{tabular}{|>{\raggedright\arraybackslash}p{5.2cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{2.6cm}|>{\centering\arraybackslash}p{2.6cm}|}
-        \hline
-        \textbf{Loại chỉnh sửa} & \textbf{Tổng sinh} & \textbf{Giữ lại} & \textbf{Tỉ lệ} \\ \hline
-        Thay đổi thực thể & 599 & 195 & 32.6\% \\ \hline
-        Thay đổi thời gian & 606 & 183 & 30.2\% \\ \hline
-        Đảo ngược logic & 55 & 18 & 32.7\% \\ \hline
-        Thay đổi nguồn gốc & 31 & 9 & 29.0\% \\ \hline
-        \textbf{Tổng} & \textbf{1.291} & \textbf{405} & \textbf{31.4\%} \\ \hline
-    \end{tabular}
-    }
-\end{table}
-
-Tỉ lệ loại 68.6\% phản ánh tiêu chuẩn nghiêm ngặt: chỉ các negative khó nhưng không trả lời được câu hỏi mới được dùng cho reranker.
+Reranker không xây dựng lại dữ liệu từ đầu mà kế thừa kết quả trung gian của quy trình dữ liệu embedding ở mục~\ref{subsection:3.7.1}: tập câu hỏi kèm ứng viên đã xếp hạng và nhãn positive do mô hình ngôn ngữ xác định. Điểm khác là reranker cần dữ liệu dạng bộ ba để học xếp hạng tương phản, nên cần thêm bước khai thác negative và chia tập theo câu hỏi để tránh rò rỉ dữ liệu (leakage).
 
 \noindent\textbf{Khai thác negative cho reranker.}
 
-Reranker cũng dùng các ứng viên đã xếp hạng từ BGE-reranker-v2-m3, nhưng tiêu chí khai thác khác embedding. Với các đoạn ngoài top-5 đã được giám khảo đánh giá, hệ thống xét các ứng viên ở hạng 6 đến 20; riêng trong top-5, những đoạn được xác nhận là không liên quan vẫn có thể được giữ. Các đoạn liên quan trực tiếp hoặc một phần luôn bị loại. Đoạn cùng tài liệu với positive chỉ được giữ nếu được xác nhận không liên quan, còn đoạn khác tài liệu được giữ nếu vượt ngưỡng chênh lệch điểm. Chênh lệch điểm được dùng để phân loại độ khó: khó trong khoảng 0.1--0.4, trung bình trong khoảng 0.4--0.7, và dễ khi lớn hơn 0.7.
+Reranker dùng các ứng viên đã xếp hạng từ BGE-reranker-v2-m3 để khai thác negative. Với các đoạn ngoài top-5 đã được giám khảo đánh giá, hệ thống xét các ứng viên ở hạng 6 đến 20; riêng trong top-5, những đoạn được xác nhận là không liên quan vẫn có thể được giữ. Các đoạn liên quan trực tiếp hoặc một phần luôn bị loại. Đoạn cùng tài liệu với positive chỉ được giữ nếu được xác nhận không liên quan, còn đoạn khác tài liệu được giữ nếu vượt ngưỡng chênh lệch điểm. Chênh lệch điểm được dùng để phân loại độ khó: khó trong khoảng 0.1--0.4, trung bình trong khoảng 0.4--0.7, và dễ khi lớn hơn 0.7; chỉ negative khó và trung bình được giữ lại cho tập huấn luyện.
 
 Quy trình thu được 9.917 negative khai thác, trong đó 913 negative khó và 1.676 negative trung bình được sử dụng cho tập reranker.
 
@@ -522,9 +458,9 @@ Quy trình thu được 9.917 negative khai thác, trong đó 913 negative khó 
     }
 \end{table}
 
-\noindent\textbf{Gộp và chia tập cho reranker.}
+\noindent\textbf{Chia tập cho reranker.}
 
-Negative tạo sinh sau lọc (405) và negative khai thác khó cùng trung bình (2.589) được gộp thành 2.994 bộ ba. Dữ liệu được chia theo câu hỏi thay vì theo bộ ba, để cùng một câu hỏi không xuất hiện ở cả tập huấn luyện và tập kiểm định. Tỉ lệ 90/10 tạo 2.689 bộ ba huấn luyện từ 439 câu hỏi và 305 bộ ba kiểm định từ 50 câu hỏi.
+Các bộ ba (câu hỏi, positive, negative khai thác) được chia theo câu hỏi, không theo bộ ba, để cùng một câu hỏi không xuất hiện ở cả tập huấn luyện và tập kiểm định. Tỉ lệ 90/10 tạo \textbf{2.328 bộ ba huấn luyện} và \textbf{305 bộ ba kiểm định}, tổng cộng 2.633 bộ ba --- toàn bộ đều là negative khai thác từ kết quả xếp hạng thật.
 
 \begin{table}[H]
     \centering
@@ -535,11 +471,10 @@ Negative tạo sinh sau lọc (405) và negative khai thác khó cùng trung bì
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|>{\raggedright\arraybackslash}p{6.0cm}|>{\centering\arraybackslash}p{2.7cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|}
         \hline
-        \textbf{Nguồn negative} & \textbf{Số bộ ba} & \textbf{Độ khó} & \textbf{Tỉ lệ} \\ \hline
-        Negative tạo sinh & 405 & khó & 13.5\% \\ \hline
-        Negative khai thác khó & 913 & khó & 30.5\% \\ \hline
-        Negative khai thác trung bình & 1.676 & trung bình & 56.0\% \\ \hline
-        \textbf{Tổng} & \textbf{2.994} & -- & \textbf{100\%} \\ \hline
+        \textbf{Tập} & \textbf{Số bộ ba} & \textbf{Số câu hỏi} & \textbf{Tỉ lệ} \\ \hline
+        Huấn luyện & 2.328 & 353 & 88.4\% \\ \hline
+        Kiểm định & 305 & 50 & 11.6\% \\ \hline
+        \textbf{Tổng} & \textbf{2.633} & 403 & \textbf{100\%} \\ \hline
     \end{tabular}%
     }
     }
@@ -568,7 +503,7 @@ Giai đoạn A tinh chỉnh MiniLM-L12 bằng hàm mất mát entropy chéo nh�
 
 trong đó $s_{\text{pos}}$ và $s_{\text{neg}}$ là logit của MiniLM cho đoạn positive và đoạn negative.
 
-Một câu hỏi thiết kế ở giai đoạn A là có nên bổ sung dữ liệu mMARCO-VI~\cite{bonifacio2021mmarco} hay không. Động cơ là MiniLM chỉ huấn luyện trên tiếng Anh nên chưa có biểu diễn tốt cho tiếng Việt; một lượng dữ liệu truy hồi tiếng Việt tổng quát có thể giúp student làm quen với ngôn ngữ trước khi học phân biệt hard negative kỹ thuật. Tuy nhiên, mMARCO-VI là dữ liệu tổng quát, khác phân bố với miền kỹ thuật của đồ án, nên lượng bổ sung cần cân nhắc: quá ít thì không đủ tín hiệu ngôn ngữ, quá nhiều thì có thể lấn át dữ liệu miền đích. Đồ án khảo sát ảnh hưởng của liều lượng mMARCO-VI (0, 50k, 100k mẫu) ở giai đoạn A; kết quả và phân tích phân bố độ khó của negative được trình bày ở Chương~4. Với các student mmarco-mMiniLMv2 và mmarco sau cắt tỉa, do đã có encoder đa ngôn ngữ mạnh, đồ án không bổ sung mMARCO-VI ở giai đoạn A.
+Một vấn đề thiết kế ở giai đoạn A là có nên bổ sung dữ liệu mMARCO-VI~\cite{bonifacio2021mmarco} hay không. Động cơ là MiniLM chỉ huấn luyện trên tiếng Anh nên chưa có biểu diễn tốt cho tiếng Việt; một lượng dữ liệu truy hồi tiếng Việt tổng quát có thể giúp student làm quen với ngôn ngữ trước khi học phân biệt hard negative kỹ thuật. Đồ án đã thử bổ sung mMARCO-VI ở giai đoạn A kết hợp Listwise KL, nhưng không thu được cải thiện đáng kể so với chỉ dùng dữ liệu miền; cấu hình cuối cùng vì vậy không bổ sung mMARCO-VI cho bất kỳ kiến trúc student nào, kể cả MiniLM.
 
 \begin{table}[H]
     \centering
@@ -589,7 +524,6 @@ Một câu hỏi thiết kế ở giai đoạn A là có nên bổ sung dữ li�
     }
 \end{table}
 
-Một vấn đề thiết kế tiếp theo là cách tổ chức dữ liệu trong giai đoạn thích nghi: trộn mMARCO-VI với dữ liệu miền ngay từ đầu (2-stage), hay tách thành một lộ trình tuần tự học tiếng Việt trước rồi mới thích nghi miền (3-stage). Với phương án tuần tự, tốc độ học ở giai đoạn thích nghi miền cần được giảm để bảo toàn biểu diễn tiếng Việt đã học, tránh việc tốc độ học quá lớn ghi đè tri thức từ giai đoạn trước. So sánh giữa hai cách tổ chức và vai trò của tốc độ học được trình bày ở Chương~4.
 \subsection{Giai đoạn B: Chưng cất tri thức}
 \label{subsection:3.8.4}
 
@@ -663,7 +597,7 @@ P_{ij}^T\log P_{ij}^S
 
 Với 20 ứng viên, RankNet tối ưu 380 cặp có thứ tự cho mỗi câu hỏi. Tín hiệu theo từng cặp này phong phú hơn so với chỉ học một positive, nhưng vẫn chịu ảnh hưởng bởi thang điểm của logit teacher: khi chênh lệch logit quá lớn, sigmoid dễ bão hòa và làm giảm độ nhạy giữa các mức liên quan gần nhau.
 
-\noindent\textbf{ADR-MSE (Asymmetric Distillation Ranking MSE)}
+\noindent\textbf{ADR-MSE (Approx Discounted Rank MSE)}
 
 ADR-MSE là một hàm mất mát theo hướng chưng cất dựa trên thứ hạng, được kế thừa từ Rank-DistiLLM~\cite{schlatt2025rankdistillm}. Thay vì dùng điểm teacher, hàm mất mát sử dụng vị trí thứ hạng $r_i\in\{0,\ldots,n-1\}$ và ánh xạ tuyến tính về $[-1,+1]$:
 
@@ -758,14 +692,14 @@ Cách này giảm tổng số tham số từ 117.6M xuống 35.6M, tức giảm 
 
 \section{Tinh chỉnh bộ phân loại ý định Sentence-BERT}
 \label{section:3.9}
- 
+
 \subsection{Kiến trúc và dữ liệu}
 \label{subsection:3.9.1}
- 
+
 Bộ phân loại ý định v2 được xây dựng để phân biệt hai lớp: \plaincode{tra_cuu}, tương ứng với các câu hỏi yêu cầu tra cứu thông tin có sẵn trong tài liệu, và \plaincode{tinh_toan}, tương ứng với các câu hỏi yêu cầu suy luận hoặc tính toán để tạo ra kết quả mới. Backbone của bộ phân loại là mô hình Sentence-BERT tiếng Việt \plaincode{keepitreal/vietnamese-sbert}~\cite{vietnamese_sbert}, dựa trên PhoBERT-base, với embedding đầu ra 768 chiều.
 
 Thay vì gắn một head tuyến tính lên token \plaincode{[CLS]} và tinh chỉnh toàn bộ mô hình bằng cross-entropy, đồ án sử dụng phương pháp SetFit. Cụ thể, encoder được tinh chỉnh bằng contrastive learning trên các cặp câu hỏi, sau đó một head Logistic Regression nhẹ được huấn luyện trên embedding câu. Trước khi đưa vào mô hình, câu hỏi được tách từ bằng Pyvi do các mô hình dựa trên PhoBERT yêu cầu đầu vào đã được tách từ. Sau đó, câu hỏi được encode thành embedding bằng mean pooling và chuẩn hóa L2:
- 
+
 \[
 \mathbf{e}_q
 =
@@ -774,22 +708,29 @@ Thay vì gắn một head tuyến tính lên token \plaincode{[CLS]} và tinh ch
 \qquad
 \lVert\mathbf{e}_q\rVert_2 = 1
 \]
- 
+
 \[
 \hat{y}
 =
 \text{LogisticRegression}(\mathbf{e}_q)
 \in\{\textnormal{tra\_cuu},\textnormal{tinh\_toan}\}
 \]
- 
+
 Trong giai đoạn contrastive fine-tuning, encoder được huấn luyện bằng CosineSimilarityLoss trên các cặp câu. Các cặp cùng ý định được gán target tương đồng bằng 1, trong khi các cặp khác ý định được gán target bằng 0. Cơ chế này giúp kéo các câu hỏi cùng ý định lại gần nhau và đẩy các câu hỏi khác ý định ra xa trong không gian embedding.
 
 \begin{figure}[H]
     \centering
-    \IfFileExists{Hinhve/intent.png}{%
-        \includegraphics[width=\textwidth]{Hinhve/intent.png}%
+    \IfFileExists{Hinhve/Stage_1.png}{%
+        \includegraphics[width=\textwidth]{Hinhve/Stage_1.png}%
     }{%
-        \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/intent_training_architecture.png}}}%
+        \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/Stage_1.png}}}%
+    }
+    \vspace{0.8em}
+
+    \IfFileExists{Hinhve/Stage_2.png}{%
+        \includegraphics[width=\textwidth]{Hinhve/Stage_2.png}%
+    }{%
+        \fbox{\parbox{0.92\textwidth}{\centering Chưa có file hình \plaincode{Hinhve/Stage_2.png}}}%
     }
     \caption{Kiến trúc huấn luyện bộ phân loại ý định theo SetFit}
     \label{fig:intent-training-arch}
@@ -801,28 +742,28 @@ Việc lựa chọn SetFit thay cho kiến trúc \plaincode{[CLS]} + Linear xu�
 Để kiểm tra chất lượng nhãn, đồ án phân tích các cặp câu gần giống nhưng khác nhãn, với ngưỡng cosine similarity lớn hơn 0.8. Kết quả chỉ phát hiện một trường hợp mâu thuẫn nhãn thực sự trên toàn bộ tập dữ liệu, cho thấy dữ liệu có độ nhất quán cao và lỗi phân loại chủ yếu đến từ hạn chế biểu diễn của mô hình, không phải do nhiễu nhãn.
 
 Tập dữ liệu ban đầu gồm 991 câu hỏi được gán nhãn thủ công; sau khi loại bỏ trùng lặp còn 983 câu. Do lớp \plaincode{tinh_toan} là lớp thiểu số, một tập kiểm thử cố định có thể chứa quá ít mẫu tính toán để phản ánh ổn định chất lượng mô hình. Vì vậy, đồ án sử dụng stratified 5-fold cross-validation để đánh giá. Mô hình triển khai cuối cùng được huấn luyện lại trên toàn bộ tập dữ liệu sạch. Ví dụ, câu hỏi ``Theo tài liệu \plaincode{Public_021}, nhiệt độ vận hành tối đa là bao nhiêu?'' thuộc lớp \plaincode{tra_cuu}, trong khi câu hỏi yêu cầu tính chi phí nhiên liệu từ quãng đường, mức tiêu hao và giá xăng thuộc lớp \plaincode{tinh_toan}.
- 
+
 \subsection{Xử lý mất cân bằng lớp}
 \label{subsection:3.9.2}
- 
+
 \plaincode{tra_cuu} chiếm 907/983 câu (khoảng 92.3\%), còn \plaincode{tinh_toan} chỉ có 76/983 câu (khoảng 7.7\%), tỉ lệ xấp xỉ 12:1. Một classifier luôn dự đoán lớp đa số đã đạt accuracy khoảng 92\%, do đó accuracy là metric dễ gây hiểu nhầm; F1-macro được dùng để đánh giá bình đẳng hai lớp. Mất cân bằng được xử lý ở hai tầng.
- 
+
 \noindent\textbf{Lấy mẫu tăng cường cặp tương phản.}
- 
+
 Khi sinh cặp huấn luyện cho SetFit, các cặp được lấy mẫu cân bằng theo lớp (oversampling) thay vì giữ tỉ lệ tự nhiên 92/8, để lớp thiểu số xuất hiện đủ trong cả cặp dương lẫn cặp âm. Mỗi anchor sinh một cặp dương và một cặp âm, nên tổng số cặp xấp xỉ $2 \times T \times N$, với $T$ là số vòng lặp sinh cặp.
- 
+
 \noindent\textbf{Trọng số lớp ở bộ phân loại.}
- 
+
 Bộ phân loại Logistic Regression dùng trọng số lớp cân bằng (\plaincode{balanced}): trọng số mỗi lớp tỉ lệ nghịch với tần suất, $w_c = n/(K\cdot n_c)$ với $K=2$ lớp:
- 
+
 \[
 w_{\text{tra\_cuu}}=\frac{983}{2\times907}\approx 0.54,
 \qquad
 w_{\text{tinh\_toan}}=\frac{983}{2\times76}\approx 6.47
 \]
- 
+
 Lỗi trên lớp \plaincode{tinh_toan} vì vậy bị phạt mạnh hơn khoảng 12 lần.
- 
+
 \begin{table}[H]
     \centering
     \caption{Siêu tham số tinh chỉnh Sentence-BERT (SetFit) cho bộ phân loại ý định}
@@ -846,12 +787,12 @@ Lỗi trên lớp \plaincode{tinh_toan} vì vậy bị phạt mạnh hơn khoả
     \end{tabular}
     }
 \end{table}
- 
+
 Đánh giá theo F1-macro (qua stratified 5-fold cross-validation) đảm bảo không tối ưu nhầm vào accuracy tổng thể khi recall của lớp thiểu số còn thấp. Kết quả định lượng (F1-macro của SetFit so với baseline embedding đông cứng, và so sánh các backbone PhoBERT-base) được trình bày ở Chương~4.
- 
+
 \subsection{Logic định tuyến trong pipeline v2}
 \label{subsection:3.9.3}
- 
+
 Trong v1, query được gửi tới GPT-4o-mini qua API để nhận ý định label. Trong v2, query được tách từ và chạy qua Sentence-BERT local; logic sau classification không đổi: \plaincode{tra_cuu} dùng direct prompt, còn \plaincode{tinh_toan} dùng Chain-of-Thought prompt. Regex trích xuất Public ID chạy song song với classifier.
 
 Sentence-BERT local loại bỏ phụ thuộc vào external API và giữ dữ liệu câu hỏi trong hạ tầng nội bộ, phù hợp với yêu cầu bảo mật của môi trường doanh nghiệp. Các số liệu định lượng về ý định accuracy và độ trễ định tuyến được trình bày ở Chương~4 trên cùng bộ 390 câu MCQ.

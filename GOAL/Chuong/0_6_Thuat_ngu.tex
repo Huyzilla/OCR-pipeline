@@ -15,9 +15,9 @@
 	\textbf{Candidate pool} & Tập ứng viên (chunk) được truy hồi để đưa vào bước xếp hạng lại \\
 	\textbf{Checkpoint} & Bản lưu trọng số mô hình tại một thời điểm huấn luyện \\
 	\textbf{Chunk / Chunking} & Đoạn văn bản chia nhỏ từ tài liệu / quá trình chia tài liệu thành các đoạn \\
+	\textbf{Chroma} & Cơ sở dữ liệu vector dùng để lưu và truy vấn embedding của các đoạn văn bản \\
 	\textbf{Corpus} & Tập văn bản hoặc tập đoạn được dùng để truy hồi, huấn luyện hoặc đánh giá \\
 	\textbf{Cross-encoder} & Kiến trúc đưa đồng thời query và tài liệu qua mô hình để chấm điểm liên quan \\
-	\textbf{Curriculum} & Cách tổ chức dữ liệu hoặc hàm mất mát theo lộ trình từ dễ đến khó qua nhiều giai đoạn \\
 	\textbf{Dense retrieval} & Truy hồi dựa trên vector ngữ nghĩa \\
 	\textbf{Embedding} & Vector biểu diễn ngữ nghĩa của văn bản \\
 	\textbf{Fine-tune} & Tinh chỉnh mô hình tiền huấn luyện trên dữ liệu của miền cụ thể \\
@@ -28,15 +28,19 @@
 	\textbf{Intent classifier} & Bộ phân loại ý định câu hỏi, dùng để chọn nhánh xử lý tra cứu hoặc tính toán \\
 	\textbf{Latency} & Độ trễ xử lý mỗi truy vấn \\
 	\textbf{Logit} & Điểm số thô đầu ra của mô hình trước khi chuẩn hóa thành xác suất hoặc phân phối \\
+	\textbf{Lượng tử hoá} & Nén mô hình bằng cách biểu diễn trọng số ở độ chính xác số học thấp hơn (ví dụ INT8 thay cho FP32) \\
 	\textbf{Markdown} & Định dạng văn bản đánh dấu nhẹ dùng để lưu cấu trúc tài liệu sau OCR/chuyển đổi \\
+	\textbf{ONNX Runtime} & Bộ thực thi suy luận tối ưu cho mô hình định dạng ONNX, hỗ trợ tính toán INT8 hiệu quả trên CPU \\
 	\textbf{PhoBERT} & Mô hình BERT được tiền huấn luyện cho tiếng Việt, dùng trong backbone phân loại ý định \\
 	\textbf{Pipeline} & Chuỗi các bước xử lý nối tiếp của hệ thống \\
+	\textbf{p95} & Phân vị thứ 95 của độ trễ: 95\% số truy vấn có độ trễ thấp hơn giá trị này \\
 	\textbf{Prompt} & Chỉ dẫn đầu vào gửi cho mô hình ngôn ngữ hoặc mô hình giám khảo \\
 	\textbf{Pruned model} & Mô hình đã được cắt tỉa một phần tham số hoặc từ vựng để giảm dung lượng \\
 	\textbf{Query} & Câu truy vấn của người dùng \\
 	\textbf{Reranker} & Mô hình xếp hạng lại các ứng viên đã được truy hồi \\
 	\textbf{Router} & Thành phần định tuyến câu hỏi sang nhánh xử lý phù hợp trong pipeline \\
 	\textbf{SetFit} & Phương pháp fine-tune sentence transformer bằng học tương phản rồi huấn luyện classifier nhẹ \\
+	\textbf{Seed (hạt giống ngẫu nhiên)} & Giá trị khởi tạo bộ sinh số ngẫu nhiên; đổi seed làm đổi thứ tự trộn batch nên kết quả huấn luyện dao động \\
 	\textbf{Sparse retrieval} & Truy hồi dựa trên trùng khớp từ khóa (ví dụ BM25) \\
 	\textbf{Teacher / Student} & Mô hình thầy (lớn) và trò (nhỏ) trong chưng cất tri thức \\
 	\textbf{Tokenizer} & Bộ tách văn bản thành token trước khi đưa vào mô hình ngôn ngữ \\

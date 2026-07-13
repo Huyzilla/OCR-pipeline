@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Để phanh gấp, bạn cần làm gì với gót chân khi đạp bàn đạp phanh?",
+    "options": {"A": "Giữ gót chân không chạm sàn xe", "B": "Đặt gót chân trên sàn xe", "C": "Chuyển gót chân sang bàn đạp ga", "D": "Đứng lên khỏi ghế"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "gót chân không để dính xuống sàn xe"
+  },
+  {
+    "question": "Khi nào bạn nên sử dụng số '1' trong hộp số cơ khí?",
+    "options": {"A": "Khi đi nhanh trên đường bằng", "B": "Khi bắt đầu xuất phát hoặc leo dốc cao", "C": "Khi xuống dốc lớn", "D": "Khi di chuyển trên đường trơn"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "Số '1' được dùng khi bắt đầu xuất phát hoặc khi leo dốc cao"
+  },
+  {
+    "question": "Khi chuyển từ số '1' sang số '2', bạn cần thực hiện thao tác nào?",
+    "options": {"A": "Giữ nguyên bàn đạp ga", "B": "Đạp bàn đạp ly hợp hết hành trình", "C": "Chỉ cần kéo cần số", "D": "Giảm tốc độ bằng phanh"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [3],
+    "evidence_quote": "Đạp bàn đạp ly hợp hết hành trình"
+  },
+  {
+    "question": "Số nào được sử dụng khi đỗ xe trên xe có hộp số tự động?",
+    "options": {"A": "Số D", "B": "Số R", "C": "Số P", "D": "Số N"},
+    "gold_answer": "C",
+    "type": "tra_cuu",
+    "source_chunk_index": [5],
+    "evidence_quote": "Số P: số được gài khi đỗ xe"
+  },
+  {
+    "question": "Để chuyển từ số 'D' sang số '2' trong hộp số tự động, bạn cần làm gì với tốc độ xe?",
+    "options": {"A": "Tăng tốc độ", "B": "Giữ tốc độ ổn định", "C": "Giảm tốc độ", "D": "Tăng ga liên tục"},
+    "gold_answer": "C",
+    "type": "tra_cuu",
+    "source_chunk_index": [6],
+    "evidence_quote": "Khi chuyển từ số D sang số 2 cần giảm tốc độ"
+  },
+  {
+    "question": "Nếu bạn muốn chuyển từ số '4' sang số '5', bạn cần làm gì trước tiên?",
+    "options": {"A": "Giảm tốc độ", "B": "Đạp bàn đạp ly hợp hết hành trình", "C": "Giữ chân ga", "D": "Nhả bàn đạp phanh"},
+    "gold_answer": "B",
+    "type": "tinh_toan",
+    "source_chunk_index": [4],
+    "evidence_quote": "Để chuyển từ số '4' sang số '5', người lái xe đạp hết hành trình bàn đạp ly hợp"
+  }
+]

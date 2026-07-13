@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Python được sử dụng trong lĩnh vực nào để mô phỏng sản lượng điện mặt trời?",
+    "options": {"A": "Năng lượng tái tạo", "B": "Khoa học máy tính", "C": "Kỹ thuật xây dựng", "D": "Công nghệ thông tin"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Python được sử dụng trong lĩnh vực năng lượng tái tạo"
+  },
+  {
+    "question": "Trước khi tiến hành thí nghiệm, người dùng cần nắm vững kiến thức nào?",
+    "options": {"A": "Cách tính dung lượng và hiệu suất pin lưu trữ", "B": "Lập trình Python", "C": "Kỹ thuật điện tử", "D": "Quản lý năng lượng"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Cách tính dung lượng và hiệu suất pin lưu trữ"
+  },
+  {
+    "question": "Hiệu suất của tấm pin mặt trời lớn nhất khi nào theo lý thuyết?",
+    "options": {"A": "Khi bức xạ mặt trời đạt cực đại", "B": "Khi nhiệt độ môi trường thấp", "C": "Khi diện tích tấm pin lớn", "D": "Khi SOC của pin đạt 100%"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [4],
+    "evidence_quote": "Hiệu suất của tấm pin mặt trời sẽ lớn nhất khi pin mặt trời cung cấp cho ta công suất cực đại"
+  },
+  {
+    "question": "Công suất tức thời của hệ PV phụ thuộc vào những yếu tố nào?",
+    "options": {"A": "Bức xạ mặt trời, diện tích tấm pin và hiệu suất", "B": "Nhiệt độ, độ ẩm và bức xạ", "C": "Diện tích tấm pin và trọng lượng", "D": "Hiệu suất pin và thời gian"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [5],
+    "evidence_quote": "Phụ thuộc vào bức xạ mặt trời, diện tích tấm pin và hiệu suất tấm pin"
+  },
+  {
+    "question": "Trong hệ thống PV + pin, công suất tại thời điểm t phụ thuộc vào những gì?",
+    "options": {"A": "Dữ liệu bức xạ và SOC trước đó", "B": "Chỉ vào nhiệt độ môi trường", "C": "Số lượng pin trong hệ thống", "D": "Chỉ vào công suất phát điện"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [7],
+    "evidence_quote": "Công suất tại thời điểm t chỉ phụ thuộc vào dữ liệu bức xạ và SOC trước đó"
+  },
+  {
+    "question": "Nếu bức xạ mặt trời là 850 W/m² và hiệu suất tấm pin là 15%, diện tích tấm pin cần thiết để đạt công suất 1 kW là bao nhiêu?",
+    "options": {"A": "8 m²", "B": "6.67 m²", "C": "5 m²", "D": "10 m²"},
+    "gold_answer": "B",
+    "type": "tinh_toan",
+    "source_chunk_index": [5],
+    "evidence_quote": "Công suất PV | Ppv | Ppv = Gt ⋅ A ⋅ ηpv | W"
+  }
+]

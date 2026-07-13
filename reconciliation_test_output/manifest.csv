@@ -1,0 +1,13 @@
+document_id,doc_folder,n_chunks_total,n_chunks_used,chunk_indices_used,prompt_file
+Public_207,Public_207,7,7,0;1;2;3;4;5;6,reconciliation_test_output\prompts\Public_207.txt
+Public_215,Public_215,13,13,0;1;2;3;4;5;6;7;8;9;10;11;12,reconciliation_test_output\prompts\Public_215.txt
+Public_476,Public_476,6,6,0;1;2;3;4;5,reconciliation_test_output\prompts\Public_476.txt
+Public_477,Public_477,9,9,0;1;2;3;4;5;6;7;8,reconciliation_test_output\prompts\Public_477.txt
+Public_481,Public_481,7,7,0;1;2;3;4;5;6,reconciliation_test_output\prompts\Public_481.txt
+Public_508,Public_508,7,7,0;1;2;3;4;5;6,reconciliation_test_output\prompts\Public_508.txt
+Public_509,Public_509,6,6,0;1;2;3;4;5,reconciliation_test_output\prompts\Public_509.txt
+Public_514,Public_514,9,9,0;1;2;3;4;5;6;7;8,reconciliation_test_output\prompts\Public_514.txt
+Public_581,Public_581,19,15,0;1;2;3;4;6;8;9;10;12;13;14;15;17;18,reconciliation_test_output\prompts\Public_581.txt
+Public_599,Public_599,11,11,0;1;2;3;4;5;6;7;8;9;10,reconciliation_test_output\prompts\Public_599.txt
+Public_608,Public_608,18,15,0;1;2;3;4;5;6;8;9;10;11;12;13;15;16,reconciliation_test_output\prompts\Public_608.txt
+Public_616,Public_616,9,9,0;1;2;3;4;5;6;7;8,reconciliation_test_output\prompts\Public_616.txt

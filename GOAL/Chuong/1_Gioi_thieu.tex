@@ -18,9 +18,9 @@ Các hệ thống RAG hiện nay thường kết hợp truy hồi lai (BM25 + tr
 \begin{itemize}
     \item Reranker quá nặng cho triển khai thực tế. BGE reranker~\cite{bge_reranker_v2_m3} (568M tham số) cho chất lượng xếp hạng cao nhưng chi phí suy luận lớn. Trên môi trường không có GPU mạnh --- chẳng hạn khi triển khai trên CPU hoặc hạ tầng nội bộ hạn chế --- độ trễ của mô hình tăng cao và trở thành điểm nghẽn của toàn bộ luồng xử lý. Các công trình hiện tại thường chỉ báo cáo độ chính xác mà bỏ qua chi phí suy luận, trong khi đây là yếu tố quyết định khả năng triển khai thực tế.
 
-    \item Định tuyến bằng LLM lớn tốn kém không cần thiết. Luồng Router-Summary sử dụng GPT-4o-mini~\cite{openai2024gpt4omini} để phân loại ý định --- một tác vụ thực chất chỉ cần phân biệt hai lớp (\plaincode{tra_cuu} / \plaincode{tinh_toan}). Mỗi lần gọi API thêm khoảng 800ms độ trễ và phát sinh chi phí, trong khi độ chính xác phân loại đạt 99.4\% --- ngưỡng này hoàn toàn có thể đạt được bằng mô hình nhỏ hơn nhiều bậc.
+    \item Định tuyến bằng LLM lớn tốn kém không cần thiết. Luồng Router-Summary sử dụng GPT-4o-mini~\cite{openai2024gpt4omini} để phân loại ý định --- một tác vụ thực chất chỉ cần phân biệt hai lớp (\plaincode{tra_cuu} / \plaincode{tinh_toan}). Mỗi lần gọi API thêm khoảng 740ms độ trễ và phát sinh chi phí, trong khi độ chính xác phân loại chỉ đạt 94.62\% --- một ngưỡng hoàn toàn có thể đạt được, thậm chí vượt qua, bằng mô hình nhỏ hơn nhiều bậc chạy cục bộ.
 
-    \item Mô hình embedding đã huấn luyện sẵn chưa tối ưu cho miền. Mô hình Vietnamese Embedding v2~\cite{aiteamvn_embedding}, dù là embedding mạnh nhất hiện có cho tiếng Việt, vẫn chỉ đạt Acc@1 = 73.89\% trên tập kiểm thử nội bộ khi đánh giá riêng bước truy hồi. Đây là giới hạn trên của toàn luồng xử lý --- nếu truy hồi không lấy đúng đoạn văn bản, các bước sau không thể cứu vãn.
+    \item Mô hình embedding đã huấn luyện sẵn chưa tối ưu cho miền. Mô hình Vietnamese Embedding v2~\cite{aiteamvn_embedding}, dù là embedding mạnh nhất hiện có cho tiếng Việt, chỉ đạt Acc@1 = 65.19\% trên tập kiểm thử nội bộ khi đánh giá riêng bước truy hồi. Chất lượng truy hồi là giới hạn trên của toàn luồng xử lý --- nếu không lấy đúng đoạn văn bản ngay từ đầu, các bước sau không thể cứu vãn.
 \end{itemize}
 
 \section{Mục tiêu và định hướng giải pháp}
@@ -37,7 +37,7 @@ Giai đoạn 2 dựa trên kết quả giai đoạn 1 để đề xuất ba hư�
 
     \item Huấn luyện router cục bộ dựa trên Sentence-BERT/SetFit để thay thế GPT-4o-mini, nhằm loại bỏ chi phí API và giảm độ trễ định tuyến.
 
-    \item Tinh chỉnh mô hình embedding với Matryoshka Representation Learning, Curriculum Training và GIST, nhằm cải thiện chất lượng truy hồi trên miền tài liệu kỹ thuật tiếng Việt.
+    \item Tinh chỉnh mô hình embedding bằng MultipleNegativesRankingLoss kết hợp Matryoshka Representation Learning, nhằm cải thiện chất lượng truy hồi trên miền tài liệu kỹ thuật tiếng Việt đồng thời cho phép triển khai ở số chiều rút gọn.
 \end{itemize}
 
 \section{Đóng góp đồ án}
@@ -46,13 +46,13 @@ Giai đoạn 2 dựa trên kết quả giai đoạn 1 để đề xuất ba hư�
 Các đóng góp chính của đồ án bao gồm:
 
 \begin{itemize}
-    \item \textbf{[C1] Quy trình xây dựng dữ liệu huấn luyện dùng chung cho embedding và reranker.} Quy trình gồm năm giai đoạn: dùng mô hình ngôn ngữ làm giám khảo để xác định positive (gold chunk), tổng hợp hard negative theo hai nguồn (loại tạo sinh có kiểm soát và loại khai thác từ kết quả truy hồi), lọc khả năng trả lời độc lập, rồi gộp và chia tập huấn luyện. Cùng một nguồn dữ liệu được tái sử dụng cho cả hai tầng: tầng embedding dùng curriculum hai giai đoạn, còn tầng reranker áp dụng tiêu chí lọc và ghép cặp chặt hơn để tạo triplet phục vụ học xếp hạng.
+    \item \textbf{[C1] Quy trình xây dựng dữ liệu huấn luyện dùng chung cho embedding và reranker.} Quy trình dùng mô hình ngôn ngữ làm giám khảo để xác định positive (gold chunk), lọc khả năng trả lời độc lập, rồi khai thác hard negative từ kết quả truy hồi cho tầng xếp hạng. Cùng một nguồn dữ liệu được tái sử dụng cho cả hai tầng: tầng embedding chỉ dùng các cặp câu hỏi--positive, còn tầng reranker áp dụng tiêu chí lọc và ghép cặp chặt hơn để tạo triplet phục vụ học xếp hạng.
 
-    \item \textbf{[C2] Tinh chỉnh embedding theo curriculum kết hợp Matryoshka Representation Learning.} Áp dụng curriculum hai giai đoạn GIST$\to$MNRL --- học ranh giới ngữ nghĩa từ negative tạo sinh trước, rồi tinh chỉnh khả năng phân biệt bằng hard negative khai thác --- kết hợp MRL để tạo biểu diễn đa kích thước. Nhờ đó embedding 512 chiều đạt chất lượng gần tương đương 1024 chiều, giảm một nửa dung lượng vector index mà vẫn cải thiện độ chính xác truy hồi so với base model trên cả tập in-domain lẫn tập held-out.
+    \item \textbf{[C2] Tinh chỉnh embedding theo miền kết hợp Matryoshka Representation Learning.} Tinh chỉnh mô hình embedding bằng MultipleNegativesRankingLoss trên các cặp câu hỏi--positive của miền, kết hợp MRL để một mô hình duy nhất cho biểu diễn dùng được ở ba số chiều 256/512/1024. Trên tập kiểm thử in-domain, Acc@1 tăng từ 65.19\% lên $73.21 \pm 0.60$\% (trung bình trên ba hạt giống ngẫu nhiên); trên tập tài liệu chưa từng xuất hiện khi huấn luyện, MRR@10 đạt $0.7982 \pm 0.0017$ ở 512 chiều. Nhờ MRL, cấu hình 512 chiều giữ được phần lớn chất lượng của 1024 chiều trong khi giảm một nửa dung lượng vector index --- đánh đổi phù hợp cho hệ thống chạy trên tài nguyên hạn chế.
 
-    \item \textbf{[C3] Nén reranker bằng chưng cất tri thức kết hợp cắt tỉa từ vựng.} Chưng cất teacher BGE-reranker-v2-m3 (568M tham số) sang các student nhẹ qua quy trình hai giai đoạn (thích nghi miền bằng contrastive learning, rồi chưng cất tín hiệu xếp hạng của teacher), sau đó cắt ma trận embedding của bộ tách từ từ 250.002 xuống 36.324 token. Kết hợp hai kỹ thuật, reranker pruned 35.6M tham số (giảm khoảng 70\% so với mmarco 117M) đạt MRR@10 = 0.8718 --- giữ 99.6\% chất lượng của mmarco và vượt ViRanker 568M (0.8434) dù nhỏ hơn khoảng 16 lần và nhanh hơn khoảng 5.8 lần (23.8ms so với 138.9ms).
+    \item \textbf{[C3] Nén reranker bằng chưng cất tri thức kết hợp cắt tỉa từ vựng.} Chưng cất teacher BGE-reranker-v2-m3 (568M tham số) sang các student nhẹ qua quy trình hai giai đoạn (thích nghi miền bằng contrastive learning, rồi chưng cất tín hiệu xếp hạng của teacher), sau đó cắt ma trận embedding của bộ tách từ từ 250.002 xuống 36.324 token. Kết hợp hai kỹ thuật, reranker 35.6M tham số (giảm khoảng 70\% so với mmarco 117M) đạt MRR@10 = 0.8844 --- giữ 99.8\% chất lượng của mmarco 117M (0.8862, vốn đã bằng teacher 568M) và vượt ViRanker 568M (0.8593) dù nhỏ hơn khoảng 16 lần. Sau lượng tử hoá INT8, mô hình chỉ còn 34.8 MB và chạy trên CPU nhanh hơn teacher khoảng 10 lần, loại bỏ hoàn toàn yêu cầu GPU khỏi tầng xếp hạng lại.
 
-    \item \textbf{[C4] Hệ thống RAG tối ưu đầu cuối.} Tích hợp embedding tinh chỉnh 512 chiều, reranker chưng cất và router cục bộ dựa trên Sentence-BERT/SetFit (thay GPT router) để giảm độ trễ, dung lượng và chi phí suy luận so với hệ thống v1, trong khi vẫn duy trì chất lượng truy hồi và xếp hạng.
+    \item \textbf{[C4] Hệ thống RAG tối ưu đầu cuối.} Tích hợp embedding tinh chỉnh 512 chiều, reranker chưng cất--lượng tử hoá và router cục bộ dựa trên Sentence-BERT/SetFit (thay GPT router). Trên 390 câu trắc nghiệm, hệ thống tối ưu giữ nguyên độ chính xác của v1 (97.4\%) trong khi phần truy hồi--xếp hạng nhanh hơn khoảng 20 lần và không còn phụ thuộc dịch vụ API cho cả định tuyến lẫn xếp hạng; router cục bộ thậm chí phân loại ý định chính xác hơn GPT router (97.69\% so với 94.62\%).
 \end{itemize}
 
 \section{Bố cục đồ án}

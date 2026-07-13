@@ -1,0 +1,999 @@
+[
+  {
+    "question": "Hệ thống chuyển nguồn tự động có tên gọi nào trong tài liệu?",
+    "options": {
+      "A": "ATS",
+      "B": "MCB",
+      "C": "MCCB",
+      "D": "STS"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_616::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Máy biến áp có ký hiệu là gì trong tài liệu?",
+    "options": {
+      "A": "MCCB",
+      "B": "MBA",
+      "C": "HPL",
+      "D": "UPS"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_616::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Theo hướng dẫn, kiểm tra tình trạng của quạt làm mát cho UPS cần thực hiện với tần suất bao lâu?",
+    "options": {
+      "A": "Hàng tháng",
+      "B": "Hàng quý",
+      "C": "Hàng năm",
+      "D": "Hai tháng một lần"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_616::chunk::2",
+      "Public_616::chunk::6"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Trong quy trình bảo dưỡng STS, việc kiểm tra tình trạng các mạch điện tử cần phải thực hiện tần suất bao lâu?",
+    "options": {
+      "A": "3 tháng",
+      "B": "6 tháng",
+      "C": "12 tháng",
+      "D": "Hàng tháng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_616::chunk::6"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Máy cắt không khí có dòng cắt định mức lớn được gọi là gì?",
+    "options": {
+      "A": "MCB",
+      "B": "ACB",
+      "C": "MCCB",
+      "D": "ATS"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_616::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Mục tiêu chính của việc thiết kế website là gì?",
+    "options": {
+      "A": "Giới thiệu sản phẩm và công ty",
+      "B": "Tạo ra một giao diện phức tạp",
+      "C": "Tối ưu hóa SEO cho trang web",
+      "D": "Phát triển ứng dụng di động"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_608::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Yêu cầu nào là cần thiết cho giao diện của website?",
+    "options": {
+      "A": "Phải sử dụng màu sắc tươi sáng",
+      "B": "Thiết kế phải chuyên nghiệp và đẹp mắt",
+      "C": "Giao diện phải có nhiều hình ảnh",
+      "D": "Nội dung phải phong phú và đa dạng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_608::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Trang web cần đạt yêu cầu gì về bảo mật?",
+    "options": {
+      "A": "Cần phải có nhiều hình ảnh",
+      "B": "Đảm bảo hoạt động ổn định và an toàn",
+      "C": "Cần có nhiều ngôn ngữ hỗ trợ",
+      "D": "Cần phải có thiết kế động"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_608::chunk::2"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Đâu là một yêu cầu quan trọng cho nội dung thông tin của website?",
+    "options": {
+      "A": "Website phải có ít nhất 5 ngôn ngữ",
+      "B": "Nội dung phải dễ dàng cập nhật",
+      "C": "Tất cả thông tin phải được viết bằng tiếng Anh",
+      "D": "Nội dung chỉ cần cập nhật hàng tháng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_608::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Gói Pro của website có những dịch vụ gì?",
+    "options": {
+      "A": "Chỉ cung cấp hosting",
+      "B": "Chỉ cung cấp thiết kế giao diện",
+      "C": "Gồm cả dịch vụ hosting và đào tạo",
+      "D": "Chỉ cung cấp bảo trì"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_608::chunk::15"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Nguồn điện cung cấp cho hệ thống điện có những đặc điểm nào?",
+    "options": {
+      "A": "Có 1 nguồn cung cấp điện và đủ công suất tác dụng.",
+      "B": "Có nhiều nguồn cung cấp điện và không đủ công suất.",
+      "C": "Chỉ có 1 nguồn điện và không đủ công suất.",
+      "D": "Có 2 nguồn cung cấp điện và dư công suất."
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_599::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Hệ số công suất trung bình trên thanh góp cao áp của nguồn điện là bao nhiêu?",
+    "options": {
+      "A": "0,75",
+      "B": "0,85",
+      "C": "0,95",
+      "D": "0,90"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_599::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Điện áp vận hành cho chế độ phụ tải cực đại là bao nhiêu phần trăm của điện áp định mức?",
+    "options": {
+      "A": "105%",
+      "B": "110%",
+      "C": "100%",
+      "D": "95%"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_599::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Thời gian sử dụng công suất cực đại của phụ tải là bao lâu?",
+    "options": {
+      "A": "5000 giờ",
+      "B": "5500 giờ",
+      "C": "6000 giờ",
+      "D": "7000 giờ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_599::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để đảm bảo độ tin cậy cho phụ tải loại I, phương án nối dây cần có yêu cầu gì?",
+    "options": {
+      "A": "Cần có 2 đường dây song song hoặc mạch vòng kín.",
+      "B": "Chỉ cần 1 đường dây duy nhất.",
+      "C": "Không cần đường dây dự phòng.",
+      "D": "Phải có 3 đường dây kết nối."
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_599::chunk::5"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "STEM là viết tắt của những lĩnh vực nào?",
+    "options": {
+      "A": "Khoa học, Công nghệ, Kỹ thuật, Toán học",
+      "B": "Khoa học, Nghệ thuật, Kỹ thuật, Toán học",
+      "C": "Khoa học, Công nghệ, Nghệ thuật, Toán học",
+      "D": "Khoa học, Công nghệ, Kỹ thuật, Ngôn ngữ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_581::chunk::2"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Mô hình giáo dục STEM nhấn mạnh điều gì trong quá trình học tập?",
+    "options": {
+      "A": "Tính thiết kế",
+      "B": "Nghiên cứu lý thuyết",
+      "C": "Thực hành đơn giản",
+      "D": "Đánh giá kết quả học tập"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_581::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Trong quy trình xây dựng bài giảng điện tử E-learning, bước đầu tiên là gì?",
+    "options": {
+      "A": "Xác định trọng tâm và kiến thức cơ bản",
+      "B": "Xác định mục tiêu bài học",
+      "C": "Chạy thử chương trình",
+      "D": "Xây dựng và số hóa kịch bản"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_581::chunk::6"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Kết quả thực nghiệm sư phạm cho thấy lớp nào có điểm trung bình cao hơn?",
+    "options": {
+      "A": "Lớp đối chứng",
+      "B": "Lớp thực nghiệm",
+      "C": "Cả hai lớp có điểm trung bình bằng nhau",
+      "D": "Lớp thực nghiệm có điểm trung bình thấp hơn"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_581::chunk::17"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Giáo dục STEM nhằm mục đích gì cho học sinh?",
+    "options": {
+      "A": "Phát triển năng lực giải quyết vấn đề",
+      "B": "Tăng cường khả năng nhớ lý thuyết",
+      "C": "Giảm thời gian học tập",
+      "D": "Tập trung vào việc thi cử"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_581::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để vẽ một đoạn thẳng trong phần mềm, bạn cần chọn tùy chọn nào từ menu Style?",
+    "options": {
+      "A": "Normal hoặc Construction",
+      "B": "Auto hoặc Dimension",
+      "C": "Offset hoặc Mirror",
+      "D": "Ellipse hoặc Circle"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_514::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi muốn tạo một hình chữ nhật, bạn cần xác định điều gì?",
+    "options": {
+      "A": "Hai góc đối diện",
+      "B": "Ba đỉnh",
+      "C": "Một điểm giữa",
+      "D": "Một đường thẳng"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_514::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để tạo đường cong tiếp xúc với đoạn thẳng, bạn cần sử dụng lệnh nào?",
+    "options": {
+      "A": "Arc",
+      "B": "Circle",
+      "C": "Spline",
+      "D": "Ellipse"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_514::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để cắt bỏ một phần đối tượng, bạn cần sử dụng lệnh nào từ menu ngữ cảnh?",
+    "options": {
+      "A": "Trim",
+      "B": "Extend",
+      "C": "Mirror",
+      "D": "Offset"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_514::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi bạn muốn tạo ràng buộc vuông góc cho các đoạn thẳng, bạn nên thực hiện lệnh nào?",
+    "options": {
+      "A": "Constraint",
+      "B": "Dimension",
+      "C": "Auto",
+      "D": "Rotate"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_514::chunk::4"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Biểu đồ phân tán được sử dụng để xác định điều gì giữa hai biến số?",
+    "options": {
+      "A": "Mối tương quan",
+      "B": "Giá trị tuyệt đối",
+      "C": "Sự phân bố",
+      "D": "Đặc tính ngẫu nhiên"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_509::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Giá trị hệ số tương quan r gần với giá trị nào cho thấy có mối quan hệ nghịch rất lớn?",
+    "options": {
+      "A": "-0.85",
+      "B": "0.5",
+      "C": "0",
+      "D": "0.9"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_509::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi hai đặc tính có mối quan hệ thuận, hình dạng của các điểm dữ liệu trong biểu đồ phân tán sẽ như thế nào?",
+    "options": {
+      "A": "Nằm trong vùng elip nghiêng bên trái",
+      "B": "Nằm trong vùng elip nghiêng bên phải",
+      "C": "Phân tán đều",
+      "D": "Tạo thành một đường thẳng đứng"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_509::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để phân tích biểu đồ phân tán, chúng ta có thể thực hiện điều gì?",
+    "options": {
+      "A": "Chỉ dự đoán mối tương quan",
+      "B": "Tính toán hệ số tương quan",
+      "C": "Chỉ tính toán số lượng biến số",
+      "D": "Lập bảng thống kê"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_509::chunk::2"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Công thức nào dưới đây được sử dụng để tính hệ số tương quan?",
+    "options": {
+      "A": "r = x + y",
+      "B": "r = (x*y)/n",
+      "C": "r = (Σ(x_i - x̄)(y_i - ȳ))",
+      "D": "r = (x - y)^2"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_509::chunk::5"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Vật liệu nào có độ bền về điện từ 50-100 kV/mm?",
+    "options": {
+      "A": "Mi ca",
+      "B": "Gốm",
+      "C": "Cao su",
+      "D": "Nhựa thông"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_508::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Nhiệt độ tối đa mà giấy làm tụ điện có thể chịu đựng là bao nhiêu độ C?",
+    "options": {
+      "A": "100",
+      "B": "60",
+      "C": "70",
+      "D": "80"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_508::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Lụa cách điện có độ bền về điện là bao nhiêu?",
+    "options": {
+      "A": "8-60",
+      "B": "20-30",
+      "C": "10-15",
+      "D": "50-60"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_508::chunk::2"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Gốm có khả năng chịu đựng điện áp cao hay không?",
+    "options": {
+      "A": "Có",
+      "B": "Không",
+      "C": "Chỉ ở một số loại",
+      "D": "Không rõ"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_508::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Nhựa thông được sử dụng trong ứng dụng nào?",
+    "options": {
+      "A": "Chất tẩm sấy",
+      "B": "Làm tụ điện",
+      "C": "Chất cách điện",
+      "D": "Chất làm nguội"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_508::chunk::4"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Mạng nơ-ron nhân tạo (ANN) chủ yếu dựa trên nguyên lý nào trong việc xử lý thông tin?",
+    "options": {
+      "A": "Cách bộ não sinh học xử lý thông tin",
+      "B": "Các thuật toán toán học phức tạp",
+      "C": "Mô phỏng hành vi của con người",
+      "D": "Xử lý ngữ nghĩa tự nhiên"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_481::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Mục tiêu chính của phần thí nghiệm liên quan đến mạng nơ-ron nhân tạo là gì?",
+    "options": {
+      "A": "Hiểu nguyên lý hoạt động của ANN",
+      "B": "Tìm hiểu về các loại dữ liệu",
+      "C": "Phân tích dữ liệu lớn",
+      "D": "Phát triển phần mềm"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_481::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Hàm kích hoạt nào dưới đây giữ lại các thành phần dương và triệt tiêu các thành phần âm?",
+    "options": {
+      "A": "Sigmoid",
+      "B": "Tanh",
+      "C": "ReLU",
+      "D": "Softmax"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_481::chunk::2"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để đo độ lệch giữa nhãn thật và phân phối dự đoán trong mạng nơ-ron, hàm mất mát nào được sử dụng?",
+    "options": {
+      "A": "MSE",
+      "B": "Hinge loss",
+      "C": "Cross-Entropy",
+      "D": "Log loss"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_481::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Trong phương pháp tối ưu hóa Adam, công thức nào được sử dụng để tính toán tham số mới?",
+    "options": {
+      "A": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝛻𝜃𝐿(𝜃𝑡)",
+      "B": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝑚𝑡",
+      "C": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝑣𝑡",
+      "D": "𝜃𝑡+1 = 𝜃𝑡 − 𝜂𝑚̂𝑡/√𝑣̂𝑡"
+    },
+    "answer": "D",
+    "gold_chunk_ids": [
+      "Public_481::chunk::5"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Python được sử dụng trong lĩnh vực nào để mô phỏng sản lượng điện mặt trời?",
+    "options": {
+      "A": "Năng lượng tái tạo",
+      "B": "Khoa học máy tính",
+      "C": "Kỹ thuật xây dựng",
+      "D": "Công nghệ thông tin"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_477::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Trước khi tiến hành thí nghiệm, người dùng cần nắm vững kiến thức nào?",
+    "options": {
+      "A": "Cách tính dung lượng và hiệu suất pin lưu trữ",
+      "B": "Lập trình Python",
+      "C": "Kỹ thuật điện tử",
+      "D": "Quản lý năng lượng"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_477::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Hiệu suất của tấm pin mặt trời lớn nhất khi nào theo lý thuyết?",
+    "options": {
+      "A": "Khi bức xạ mặt trời đạt cực đại",
+      "B": "Khi nhiệt độ môi trường thấp",
+      "C": "Khi diện tích tấm pin lớn",
+      "D": "Khi SOC của pin đạt 100%"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_477::chunk::4"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Công suất tức thời của hệ PV phụ thuộc vào những yếu tố nào?",
+    "options": {
+      "A": "Bức xạ mặt trời, diện tích tấm pin và hiệu suất",
+      "B": "Nhiệt độ, độ ẩm và bức xạ",
+      "C": "Diện tích tấm pin và trọng lượng",
+      "D": "Hiệu suất pin và thời gian"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_477::chunk::5"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Trong hệ thống PV + pin, công suất tại thời điểm t phụ thuộc vào những gì?",
+    "options": {
+      "A": "Dữ liệu bức xạ và SOC trước đó",
+      "B": "Chỉ vào nhiệt độ môi trường",
+      "C": "Số lượng pin trong hệ thống",
+      "D": "Chỉ vào công suất phát điện"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_477::chunk::7"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Python được sử dụng chủ yếu cho lĩnh vực nào trong nghiên cứu?",
+    "options": {
+      "A": "Trí tuệ nhân tạo",
+      "B": "Lập trình web",
+      "C": "Phát triển game",
+      "D": "Xử lý hình ảnh"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_476::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để thực hiện thí nghiệm về mô hình học máy, người học cần có kiến thức nào?",
+    "options": {
+      "A": "Kinh tế vi mô",
+      "B": "Căn bản về Python",
+      "C": "Lập trình C++",
+      "D": "Thiết kế đồ họa"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_476::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Mô hình hồi quy logistic dùng để làm gì?",
+    "options": {
+      "A": "Dự đoán giá trị liên tục",
+      "B": "Phân loại nhị phân",
+      "C": "Tối ưu hóa tham số",
+      "D": "Khám phá dữ liệu"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_476::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Công thức nào sau đây được sử dụng để đánh giá độ chính xác của mô hình?",
+    "options": {
+      "A": "MSE = (1/n) Σ (yᵢ − ŷᵢ)²",
+      "B": "Accuracy = (TP + TN) / (TP + TN + FP + FN)",
+      "C": "Loss = −(1/n) Σ [yᵢ log(ŷᵢ) + (1 − yᵢ) log(1 − ŷᵢ)]",
+      "D": "z = (x − μ) / σ"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_476::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Chuẩn hóa dữ liệu được xác định bằng công thức nào?",
+    "options": {
+      "A": "z = (x - μ) / σ",
+      "B": "ŷ = wᵀx + b",
+      "C": "θ := θ - α ∇J(θ)",
+      "D": "J(w) = (1/n) Σ (yᵢ − ŷᵢ)² + λ ||w||₁"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_476::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Bãi phẳng được định nghĩa như thế nào trong tài liệu?",
+    "options": {
+      "A": "Là một bãi rộng và phẳng để luyện tập lái xe.",
+      "B": "Là bãi có nhiều chướng ngại vật.",
+      "C": "Là bãi có độ dốc lớn.",
+      "D": "Là khu vực có nhiều xe cộ qua lại."
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_215::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi muốn điều khiển xe ôtô quay vòng sang trái, người lái cần làm gì?",
+    "options": {
+      "A": "Quay vô lăng lái theo chiều kim đồng hồ.",
+      "B": "Quay vô lăng lái ngược chiều kim đồng hồ.",
+      "C": "Giữ vô lăng ở vị trí cố định.",
+      "D": "Đổi số trước khi quay."
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::1"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Phương pháp căn đường chủ yếu là gì?",
+    "options": {
+      "A": "So sánh vị trí với điểm chuẩn trên mặt đường.",
+      "B": "Quan sát tình huống giao thông.",
+      "C": "Giữ khoảng cách an toàn với xe phía trước.",
+      "D": "Đi chậm để quan sát."
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_215::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi lái xe ôtô lên dốc cao, điều gì là quan trọng nhất?",
+    "options": {
+      "A": "Đạp phanh mạnh.",
+      "B": "Về số thấp và điều chỉnh ga.",
+      "C": "Giữ tốc độ ổn định.",
+      "D": "Không cần giảm tốc độ."
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::6"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi dừng xe ở giữa dốc xuống, người lái cần thực hiện thao tác nào đầu tiên?",
+    "options": {
+      "A": "Đạp phanh sớm và mạnh.",
+      "B": "Phát tín hiệu và lái xe sát vào lề đường.",
+      "C": "Về số 1.",
+      "D": "Đánh lái sang trái."
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::9"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi lái xe trên đường cong, người lái nên làm gì để đảm bảo an toàn?",
+    "options": {
+      "A": "Tăng tốc độ tối đa.",
+      "B": "Giảm tốc độ để tránh trượt bánh.",
+      "C": "Giữ nguyên tốc độ.",
+      "D": "Quay vô lăng nhanh chóng."
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_215::chunk::11"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để phanh gấp, bạn cần làm gì với gót chân khi đạp bàn đạp phanh?",
+    "options": {
+      "A": "Giữ gót chân không chạm sàn xe",
+      "B": "Đặt gót chân trên sàn xe",
+      "C": "Chuyển gót chân sang bàn đạp ga",
+      "D": "Đứng lên khỏi ghế"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_207::chunk::0"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi nào bạn nên sử dụng số '1' trong hộp số cơ khí?",
+    "options": {
+      "A": "Khi đi nhanh trên đường bằng",
+      "B": "Khi bắt đầu xuất phát hoặc leo dốc cao",
+      "C": "Khi xuống dốc lớn",
+      "D": "Khi di chuyển trên đường trơn"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_207::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Khi chuyển từ số '1' sang số '2', bạn cần thực hiện thao tác nào?",
+    "options": {
+      "A": "Giữ nguyên bàn đạp ga",
+      "B": "Đạp bàn đạp ly hợp hết hành trình",
+      "C": "Chỉ cần kéo cần số",
+      "D": "Giảm tốc độ bằng phanh"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_207::chunk::3"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Số nào được sử dụng khi đỗ xe trên xe có hộp số tự động?",
+    "options": {
+      "A": "Số D",
+      "B": "Số R",
+      "C": "Số P",
+      "D": "Số N"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_207::chunk::5"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Để chuyển từ số 'D' sang số '2' trong hộp số tự động, bạn cần làm gì với tốc độ xe?",
+    "options": {
+      "A": "Tăng tốc độ",
+      "B": "Giữ tốc độ ổn định",
+      "C": "Giảm tốc độ",
+      "D": "Tăng ga liên tục"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_207::chunk::6"
+    ],
+    "intent": "tra_cuu"
+  },
+  {
+    "question": "Theo Bảng 1.3, số doanh nghiệp cung cấp dịch vụ viễn thông cố định mặt đất đã giảm bao nhiêu doanh nghiệp từ năm 2015 đến năm 2019?",
+    "options": {
+      "A": "7",
+      "B": "9",
+      "C": "16",
+      "D": "11"
+    },
+    "answer": "B",
+    "gold_chunk_ids": [
+      "Public_600::chunk::7"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Số lượng doanh nghiệp kinh doanh trên thị trường di động đã giảm bao nhiêu phần trăm từ năm 2010 (9 doanh nghiệp) đến giai đoạn từ 2015 đến nay (5 doanh nghiệp)?",
+    "options": {
+      "A": "44,4%",
+      "B": "55,6%",
+      "C": "20%",
+      "D": "80%"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_600::chunk::9"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Theo tài liệu, đơn vị LB (Anh) được quy đổi sang kg theo hệ số nào? Nếu một phụ tùng có khối lượng 20 LB, quy đổi ra kg là bao nhiêu?",
+    "options": {
+      "A": "9,08 kg",
+      "B": "20,454 kg",
+      "C": "44,05 kg",
+      "D": "4,54 kg"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_614::chunk::0"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Theo bảng bảo dưỡng định kỳ máy phát điện, hạng mục kiểm tra rò rỉ hệ thống nhiên liệu được đánh dấu thực hiện theo chu kỳ 3 tháng. Trong một năm, hạng mục này được thực hiện bao nhiêu lần theo chu kỳ đó?",
+    "options": {
+      "A": "2 lần",
+      "B": "3 lần",
+      "C": "4 lần",
+      "D": "12 lần"
+    },
+    "answer": "C",
+    "gold_chunk_ids": [
+      "Public_614::chunk::1",
+      "Public_614::chunk::2"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Mạch thí nghiệm được thiết kế trên mạng điện 3 pha quy đổi từ điện áp 6 kV sang 400 VAC. Tỷ số quy đổi điện áp (điện áp cao/điện áp thấp) trong thiết kế này là bao nhiêu?",
+    "options": {
+      "A": "15",
+      "B": "6",
+      "C": "24",
+      "D": "150"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_504::chunk::0"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Theo bảng kết quả, một mẫu thử có điện trở rò danh định 20Ω. Biết theo phần Nhận xét, các điện trở trong thực tế có sai số ±5% so với mô phỏng lý tưởng, khoảng giá trị thực tế của điện trở rò này nằm trong khoảng nào?",
+    "options": {
+      "A": "19Ω đến 21Ω",
+      "B": "15Ω đến 25Ω",
+      "C": "18Ω đến 22Ω",
+      "D": "20Ω đến 21Ω"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_504::chunk::2",
+      "Public_504::chunk::3"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Theo bảng chỉ tiêu phát triển, tỉnh Bắc Giang đề xuất tốc độ tăng trưởng kinh tế đạt 14%, trong khi hiện trạng năm 2017 là 13,3%. Tỉnh cần cải thiện thêm bao nhiêu điểm phần trăm để đạt chỉ tiêu?",
+    "options": {
+      "A": "0,7 điểm %",
+      "B": "1,3 điểm %",
+      "C": "0,3 điểm %",
+      "D": "1,7 điểm %"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_587::chunk::23"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Chỉ số năng lực cạnh tranh cấp tỉnh (PCI) của Bắc Giang hiện đang xếp thứ hạng 30, trong khi chỉ tiêu đề xuất là đạt thứ hạng 20 (thứ hạng càng nhỏ càng tốt). Tỉnh cần cải thiện bao nhiêu bậc để đạt chỉ tiêu này?",
+    "options": {
+      "A": "10 bậc",
+      "B": "20 bậc",
+      "C": "50 bậc",
+      "D": "30 bậc"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_587::chunk::23"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Theo bảng chỉ tiêu phát triển, tỉnh Bắc Giang đề xuất số doanh nghiệp khởi nghiệp đăng ký đạt 1400 doanh nghiệp/năm, trong khi hiện trạng năm 2017 là 1200 doanh nghiệp/năm. Tỉnh cần tăng thêm bao nhiêu doanh nghiệp/năm để đạt chỉ tiêu?",
+    "options": {
+      "A": "200",
+      "B": "400",
+      "C": "100",
+      "D": "600"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_587::chunk::23"
+    ],
+    "intent": "tinh_toan"
+  },
+  {
+    "question": "Chỉ số hiệu quả quản trị và hành chính công (PAPI Index) của Bắc Giang hiện đang xếp thứ hạng 15, trong khi chỉ tiêu đề xuất là lọt Top 10 cả nước (tức thứ hạng 10 trở lên). Tỉnh cần cải thiện ít nhất bao nhiêu bậc để đạt chỉ tiêu này?",
+    "options": {
+      "A": "5 bậc",
+      "B": "10 bậc",
+      "C": "15 bậc",
+      "D": "25 bậc"
+    },
+    "answer": "A",
+    "gold_chunk_ids": [
+      "Public_587::chunk::24"
+    ],
+    "intent": "tinh_toan"
+  }
+]

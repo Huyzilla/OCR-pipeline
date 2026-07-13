@@ -1,0 +1,103 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_509", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] ()
+Public_509
+
+Biểu đồ phân tán là một dạng hình vẽ, biểu thị mối quan hệ giữa hai thông số nhất định nào đó, xác định xem chúng có mối quan hệ với nhau không (còn được gọi là đồ thị X-Y). Ví dụ: quan hệ giữa tỉ lệ khuyết tật sản phẩm và thông số nhiệt độ.
+
+---
+
+[chunk_index=1] (Mục đích, ý nghĩa và lợi ích áp dụng)
+# Mục đích, ý nghĩa và lợi ích áp dụng
+
+Biểu đồ phân tán được sử dụng để giải quyết các vấn đề và xác định điều kiện tối ưu bằng cách phân tích định lượng mối quan hệ nhân quả giữa hai nhân tố. Biểu đồ phân tán được sử dụng để:
+
+* Xác định mức độ tương quan giữa hai biến số;
+* Xác định có tồn tại mối quan hệ giữa hai đặc tính bằng cách đánh dấu các cặp số liệu trên hệ toạ độ X-Y hoặc đánh dấu một đặc tính trên trục Y còn đặc tính khác trên trục X;
+
+Khi xác định có tồn tại mối quan hệ giữa hai đặc tính tức là chúng có quan hệ với nhau. Khi một đặc tính tăng thì đặc tính khác cũng tăng, chúng có mối quan hệ thuận và các điểm dữ liệu sẽ nằm trong vùng elip nghiêng về bên phải. Nếu một đặc tính giảm mà đặc tính khác tăng chúng có mối quan hệ nghịch. Khi đó, các điểm của dữ liệu nằm trong vùng elip nghiêng về bên trái.
+
+Khi xác định hai đặc tính không có mối quan hệ, các điểm dữ liệu phân tán trong một vòng tròn.
+
+Mối quan hệ được thể hiện qua giá trị của hệ số hồi qui hay hệ số tương quan r. Giá trị này gần với -1 (<-0.85) thì có mối quan hệ nghịch rất lớn (quan hệ nghịch chặt). Giá trị gần với +1 (>0.85) thì có mối quan hệ thuận rất lớn (quan hệ thuận chặt). Giá trị này gần 0 thì mối quan hệ giữa hai đặc tính rất kém.
+
+![](images/image1.jpg)
+
+*Hình 1.5: Hình biểu diễn mức độ quan hệ của 2 biến số theo hệ số tương quan*
+
+Trên cơ sở phân tích biểu đồ phân tán, hệ số tương quan r và phương trình hồi qui, có thể dự báo được đặc tính chất lượng và đặc tính quá trình, cũng như xác định các yếu tố cần được kiểm soát chặt chẽ để đảm bảo chất lượng sản phẩm.
+
+Dựa vào việc phân tích biểu đồ có thể thấy được
+
+nhân tố này phụ thuộc như thế nào vào một nhân tố khác và mức độ phụ thuộc giữa chúng.
+
+---
+
+[chunk_index=2] (Phân tích biểu đồ phân tán)
+# Phân tích biểu đồ phân tán
+
+Mối quan hệ giữa các đặc tính nghĩa là sự thay đổi của một đặc tính có khả năng làm thay đổi các đặc tính khác. Nguyên tắc của loại biểu đồ này là phân tích mối liên hệ giữa hai đặc tính (biến số). Mô hình chung của loại biểu đồ này gồm:
+
+* Trục hoành dùng để biểu thị những biến số.
+* Trục tung dùng để biểu thị số lượng biến số hay tần số.
+* Hình dạng của biểu đồ có thể là những đám chấm, đường gấp khúc hay đường vòng.
+
+Để phân tích biểu đồ phân tán chúng ta có thể:
+
+* Dựa vào hình dạng biểu đồ để dự đoán mối tương quan;
+* Tính toán hệ số tương quan để có thể khẳng định chắc chắn hơn về mối tương quan đã nhận định dựa trên hình dạng của biểu đồ.
+
+---
+
+[chunk_index=3] (Phân tích biểu đồ phân tán)
+Cột: 
+
+Dòng 1: ST T | DẠNG BIỂU ĐỒ | MÓI TƯƠNG QUAN
+Dòng 2: 1 | y A | Mối tương quan thuận (đồng biến) X → Y Л X ⊔ → Y IJ
+Dòng 3: 58 | Rac 2 | y 1000 | Có thể xuất hiện mối tương quan thuận để khẳng định ta phải tính hệ số tương quan r
+Dòng 4: 3 | y ♠ ( | Mối tương quan nghịch X → Y X → Y X → Y X → Y X
+Dòng 5: 4 | Có thể xuất hiện mối tương quan nghịch giống như trường hợp 2 để khẳng định phải tính hệ số tương quan r
+Dòng 6: 5 | Không có tương quan
+Dòng 7: 6 | Mối tương quan không tuyến tính
+
+---
+
+[chunk_index=4] (Phân tích biểu đồ phân tán)
+Lưu ý: Khi phân tích tương quan chúng ta phải xét đến các vấn đề như Cách chia trục toạ độ; Sự phân vùng dữ liệu; Những mối tương quan giả.
+
+![](images/image2.jpg)
+
+---
+
+[chunk_index=5] (Phân tích hệ số tương quan)
+# Phân tích hệ số tương quan
+
+Để mô tả độ tương quan giữa hai biến cần phải ước tính hệ số tương quan r. Công thức hệ số tương quan như sau:
+
+$$r = \frac{\sum_{i=1}^{n} (x_i - \overline{x})(y_i - \overline{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \overline{x})^2 \sum_{i=1}^{n} (y_i - \overline{y})^2}} = \frac{\sum_{i=1}^{n} x_i y_i - \frac{1}{n} \left(\sum_{i=1}^{n} x_i\right) \left(\sum_{i=1}^{n} y_i\right)}{(n-1) s_x s_y}$$
+
+Công thức này còn được biết đến như là hệ số tương quan Pearson (Pearson's correlation coefficient) để ghi nhận cống hiến của nhà thống kê học nổi tiếng Karl Pearson. Nếu giá trị của r là dương, hai biến x và y cùng biến thiên theo một hướng. Nếu giá trị của r là âm, x và y có mối quan hệ nghịch, tức khi khi x tăng thì y giảm và ngược lại. Nếu r = 1 hay r = -1 như Biểu đồ 1.8 a và 1.8 b, mối liên hệ của y và x được hoàn toàn xác định, có nghĩa là cho bất cứ giá trị nào của x, chúng ta có thể xác định giá trị của y. Nếu r = 0 như biểu đồ 1.8 c, hai biến x và y hoàn toàn độc lập, tức không có liên hệ với nhau.

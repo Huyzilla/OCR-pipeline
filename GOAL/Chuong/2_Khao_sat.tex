@@ -10,11 +10,11 @@
 
 Các mô hình ngôn ngữ lớn (Large Language Models -- LLM) như GPT, Llama hay Qwen đã đạt kết quả tốt trong nhiều tác vụ xử lý ngôn ngữ tự nhiên. Tuy nhiên, khi áp dụng trực tiếp vào bài toán hỏi đáp trên kho tài liệu kỹ thuật nội bộ, LLM thuần túy vẫn gặp một số hạn chế căn bản.
 
-Thứ nhất là hiện tượng \textit{hallucination}, tức mô hình tạo ra câu trả lời nghe hợp lý nhưng không được hỗ trợ bởi nguồn tài liệu chính xác. Nguyên nhân là LLM sinh văn bản dựa trên xác suất của token tiếp theo, trong khi không có cơ chế mặc định để kiểm chứng câu trả lời với tài liệu bên ngoài. Với tài liệu kỹ thuật, nơi các câu trả lời thường liên quan tới thông số, điều kiện vận hành, đơn vị đo hoặc quy trình cụ thể, hallucination có thể làm giảm đáng kể độ tin cậy của hệ thống.
+Thứ nhất là hiện tượng hallucination, tức mô hình tạo ra câu trả lời nghe hợp lý nhưng không được hỗ trợ bởi nguồn tài liệu chính xác. Nguyên nhân là LLM sinh văn bản dựa trên xác suất của token tiếp theo, trong khi không có cơ chế mặc định để kiểm chứng câu trả lời với tài liệu bên ngoài. Với tài liệu kỹ thuật, nơi các câu trả lời thường liên quan tới thông số, điều kiện vận hành, đơn vị đo hoặc quy trình cụ thể, hallucination có thể làm giảm đáng kể độ tin cậy của hệ thống.
 
 Thứ hai là giới hạn về tri thức. Tri thức của LLM bị cố định tại thời điểm huấn luyện và không tự động cập nhật theo tài liệu mới. Nếu tổ chức thay đổi quy trình, bổ sung phiên bản tài liệu mới hoặc cập nhật thông số thiết bị, LLM thuần túy không thể biết các thay đổi này nếu không được tinh chỉnh lại hoặc không có cơ chế truy cập tài liệu ngoài.
 
-Thứ ba là khoảng cách miền dữ liệu (\textit{domain gap}). Dữ liệu huấn luyện của LLM thường có tính tổng quát, trong khi tài liệu kỹ thuật nội bộ có nhiều thuật ngữ chuyên ngành, bảng biểu, ký hiệu, mã tài liệu và cách diễn đạt đặc thù. Vì vậy, LLM có thể hiểu tốt ngôn ngữ tự nhiên nói chung nhưng vẫn trả lời thiếu chính xác khi câu hỏi yêu cầu thông tin rất cụ thể trong một corpus hẹp.
+Thứ ba là khoảng cách miền dữ liệu (domain gap). Dữ liệu huấn luyện của LLM thường có tính tổng quát, trong khi tài liệu kỹ thuật nội bộ có nhiều thuật ngữ chuyên ngành, bảng biểu, ký hiệu, mã tài liệu và cách diễn đạt đặc thù. Vì vậy, LLM có thể hiểu tốt ngôn ngữ tự nhiên nói chung nhưng vẫn trả lời thiếu chính xác khi câu hỏi yêu cầu thông tin rất cụ thể trong một corpus hẹp.
 
 \subsection{Retrieval-Augmented Generation}
 \label{subsection:2.1.2}
@@ -25,7 +25,7 @@ Một hệ thống RAG thường gồm hai giai đoạn chính:
 
 \begin{itemize}
 \item \textbf{Giai đoạn offline}: tài liệu được tiền xử lý, chia thành các đoạn nhỏ gọi là đoạn, mã hóa thành vector embedding và lưu trong chỉ mục truy hồi.
-\item \textbf{Giai đoạn online}: hệ thống nhận truy vấn từ người dùng, truy hồi các đoạn liên quan, có thể xếp hạng lại lại các đoạn này, sau đó đưa top đoạn vào prompt cho LLM sinh câu trả lời.
+\item \textbf{Giai đoạn online}: hệ thống nhận truy vấn từ người dùng, truy hồi các đoạn liên quan, có thể xếp hạng lại các đoạn này, sau đó đưa top đoạn vào prompt cho LLM sinh câu trả lời.
 \end{itemize}
 
 Kiến trúc tổng quát của RAG có thể được mô tả như sau:
@@ -47,7 +47,7 @@ Trong pipeline này, chất lượng câu trả lời cuối phụ thuộc mạn
 
 Bài toán hỏi đáp tài liệu kỹ thuật tiếng Việt có một số đặc thù so với RAG trên văn bản tổng quát. Thứ nhất, nhiều câu hỏi yêu cầu truy hồi chính xác một giá trị, một điều kiện hoặc một thông số nằm trong bảng biểu. Thứ hai, tài liệu có thể chứa nhiều ký hiệu, mã thiết bị, tên module hoặc định danh tài liệu, khiến khớp từ khóa chính xác vẫn giữ vai trò quan trọng. Thứ ba, cùng một chủ đề kỹ thuật có thể xuất hiện ở nhiều đoạn khác nhau, làm tăng nguy cơ false negatives khi huấn luyện truy hồi model. Thứ tư, hệ thống cần cân bằng giữa chất lượng trả lời, độ trễ và chi phí triển khai, đặc biệt khi chạy trên CPU hoặc môi trường tài nguyên hạn chế.
 
-Các đặc thù này dẫn đến lựa chọn kiến trúc trong đồ án: sử dụng hybrid truy hồi để kết hợp sparse và dense truy hồi, dùng cross-encoder reranker để cải thiện thứ hạng, sau đó tối ưu các thành phần nặng bằng tinh chỉnh, chưng cất và nén mô hình.
+Các đặc thù này dẫn đến lựa chọn kiến trúc trong đồ án: sử dụng truy hồi lai (hybrid) để kết hợp truy hồi thưa (sparse) và truy hồi dày (dense), dùng cross-encoder reranker để cải thiện thứ hạng, sau đó tối ưu các thành phần nặng bằng tinh chỉnh, chưng cất và nén mô hình.
 
 \section{Truy hồi thông tin}
 \label{section:2.2}
@@ -55,7 +55,7 @@ Các đặc thù này dẫn đến lựa chọn kiến trúc trong đồ án: s�
 \subsection{BM25 và truy hồi thưa (sparse retrieval)}
 \label{subsection:2.2.1}
 
-BM25 (Best Matching 25) là một mô hình truy hồi dựa trên thống kê từ khóa, được sử dụng rộng rãi như một baseline mạnh trong information truy hồi~\cite{robertson2009bm25}. BM25 thuộc nhóm sparse truy hồi vì tài liệu và truy vấn được biểu diễn thông qua các term rời rạc thay vì vector dày đặc.
+BM25 (Best Matching 25) là một mô hình truy hồi dựa trên thống kê từ khóa, được sử dụng rộng rãi như một baseline mạnh trong truy hồi thông tin~\cite{robertson2009bm25}. BM25 thuộc nhóm truy hồi thưa (sparse) vì tài liệu và truy vấn được biểu diễn thông qua các term rời rạc thay vì vector dày đặc.
 
 Với truy vấn $q$ gồm các term $q_i$ và tài liệu $d$, điểm BM25 được tính như sau:
 
@@ -99,7 +99,7 @@ trong đó $N$ là tổng số tài liệu và $n(q_i)$ là số tài liệu ch�
 \subsection{Truy hồi dày (dense retrieval) và bi-encoder}
 \label{subsection:2.2.2}
 
-Dense truy hồi sử dụng các mô hình neural embedding để mã hóa truy vấn và document thành các vector dày đặc trong cùng một không gian ngữ nghĩa. Kiến trúc phổ biến nhất là bi-encoder, trong đó truy vấn và document được mã hóa độc lập:
+Truy hồi dày (dense) sử dụng các mô hình neural embedding để mã hóa truy vấn và document thành các vector dày đặc trong cùng một không gian ngữ nghĩa. Kiến trúc phổ biến nhất là bi-encoder, trong đó truy vấn và document được mã hóa độc lập:
 
 \[
 \mathbf{e}_q = E_q(q),
@@ -123,12 +123,12 @@ s(q,d)
 
 Trong nhiều hệ thống, $E_q$ và $E_d$ dùng chung trọng số. Khi các vector được chuẩn hóa L2, cosine similarity tương đương với tích vô hướng giữa hai vector. Ưu điểm lớn của bi-encoder là document embeddings có thể được tính trước ở giai đoạn offline. Khi suy luận, hệ thống chỉ cần mã hóa truy vấn một lần rồi tìm các vector gần nhất trong vector database hoặc approximate nearest neighbor index.
 
-So với BM25, dense truy hồi có khả năng bắt quan hệ ngữ nghĩa tốt hơn. Ví dụ, truy vấn ``thiết bị chịu được nhiệt độ bao nhiêu'' có thể gần với đoạn ``nhiệt độ vận hành tối đa là 85\textdegree C'' dù hai câu không trùng khớp hoàn toàn về mặt từ vựng. Hạn chế của dense truy hồi là chất lượng phụ thuộc mạnh vào mô hình embedding. Nếu model chưa được tối ưu cho miền tài liệu kỹ thuật, các đoạn liên quan có thể không được xếp đủ cao trong top-k.
+So với BM25, truy hồi dày (dense) có khả năng bắt quan hệ ngữ nghĩa tốt hơn. Ví dụ, truy vấn ``thiết bị chịu được nhiệt độ bao nhiêu'' có thể gần với đoạn ``nhiệt độ vận hành tối đa là 85\textdegree C'' dù hai câu không trùng khớp hoàn toàn về mặt từ vựng. Hạn chế của truy hồi dày là chất lượng phụ thuộc mạnh vào mô hình embedding. Nếu model chưa được tối ưu cho miền tài liệu kỹ thuật, các đoạn liên quan có thể không được xếp đủ cao trong top-k.
 
 \subsection{Truy hồi lai và Reciprocal Rank Fusion}
 \label{subsection:2.2.3}
 
-Sparse truy hồi và dense truy hồi có tính bổ sung. BM25 mạnh với khớp chính xác, trong khi dense truy hồi mạnh với khớp ngữ nghĩa. Hybrid truy hồi kết hợp cả hai hướng để tăng khả năng đưa gold đoạn vào tập ứng viên.
+Truy hồi thưa (sparse) và truy hồi dày (dense) có tính bổ sung. BM25 mạnh với khớp chính xác, trong khi truy hồi dày mạnh với khớp ngữ nghĩa. Truy hồi lai (hybrid) kết hợp cả hai hướng để tăng khả năng đưa gold đoạn vào tập ứng viên.
 
 Một khó khăn khi kết hợp là điểm số của hai retriever nằm trên các thang đo khác nhau. Điểm BM25 không bị chặn trên, còn cosine similarity thường nằm trong khoảng $[-1,1]$. Việc cộng trực tiếp hai loại điểm có thể khiến kết quả bị chi phối bởi retriever có scale lớn hơn.
 
@@ -141,7 +141,7 @@ Reciprocal Rank Fusion -- RRF~\cite{cormack2009rrf} giải quyết vấn đề n
 \frac{1}{k+\mathrm{rank}_r(d)}.
 \]
 
-Trong đó, $R$ là tập các retriever, $\mathrm{rank}_r(d)$ là thứ hạng của tài liệu $d$ theo retriever $r$, và $k$ là hằng số làm mượt, thường được đặt bằng 60. Một tài liệu xuất hiện ở thứ hạng cao trong nhiều retriever sẽ nhận điểm RRF cao hơn. Cách này giúp hybrid truy hồi ổn định hơn khi các retriever có scale điểm khác nhau.
+Trong đó, $R$ là tập các retriever, $\mathrm{rank}_r(d)$ là thứ hạng của tài liệu $d$ theo retriever $r$, và $k$ là hằng số làm mượt, thường được đặt bằng 60. Một tài liệu xuất hiện ở thứ hạng cao trong nhiều retriever sẽ nhận điểm RRF cao hơn. Cách này giúp truy hồi lai ổn định hơn khi các retriever có scale điểm khác nhau.
 
 \begin{table}[H]
 \centering
@@ -151,7 +151,7 @@ Trong đó, $R$ là tập các retriever, $\mathrm{rank}_r(d)$ là thứ hạng 
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{|>{\raggedright\arraybackslash}p{3.3cm}|>{\raggedright\arraybackslash}p{3.6cm}|>{\raggedright\arraybackslash}p{3.8cm}|>{\raggedright\arraybackslash}p{3.8cm}|}
 \hline
-\textbf{Đặc điểm} & \textbf{BM25} & \textbf{Dense truy hồi} & \textbf{Hybrid truy hồi} \\ \hline
+\textbf{Đặc điểm} & \textbf{BM25} & \textbf{Truy hồi dày} & \textbf{Truy hồi lai} \\ \hline
 Biểu diễn & Từ khóa sparse & Vector embedding & Kết hợp nhiều retriever \\ \hline
 Điểm mạnh & Khớp chính xác, mã tài liệu, thuật ngữ kỹ thuật & Ngữ nghĩa, diễn đạt tương đương & Tăng recall tổng thể \\ \hline
 Điểm yếu & Kém khi khác cách diễn đạt & Phụ thuộc mô hình embedding & Cần cơ chế fusion \\ \hline
@@ -187,7 +187,7 @@ s(q,d)
 
 Nhờ cross-attention, cross-encoder thường cho chất lượng ranking cao hơn bi-encoder. Ví dụ, token ``tối đa'' trong truy vấn có thể attend trực tiếp tới cụm ``85\textdegree C'' trong document, giúp mô hình đánh giá liên quan chính xác hơn. Hạn chế là cross-encoder không thể tính trước document embeddings. Với mỗi truy vấn mới, mô hình phải chạy lại trên từng cặp truy vấn--ứng viên. Do đó, độ trễ của cross-encoder tăng gần tuyến tính theo số ứng viên cần xếp hạng lại.
 
-Trong pipeline RAG thực tế, kiến trúc thường dùng là hai tầng: bi-encoder hoặc hybrid truy hồi tạo tập ứng viên nhanh, sau đó cross-encoder xếp hạng lại một số lượng nhỏ ứng viên như top-20 hoặc top-50.
+Trong pipeline RAG thực tế, kiến trúc thường dùng là hai tầng: bi-encoder hoặc truy hồi lai tạo tập ứng viên nhanh, sau đó cross-encoder xếp hạng lại một số lượng nhỏ ứng viên như top-20 hoặc top-50.
 
 \begin{table}[H]
 \centering
@@ -253,16 +253,20 @@ Tùy theo cách sử dụng teacher signal, các loss cho reranker chưng cất 
 \item \textbf{Rank-based}: học trực tiếp từ thứ hạng, giảm phụ thuộc vào scale logit của teacher.
 \end{itemize}
 
+\noindent\textbf{Lựa chọn negative cho dữ liệu chưng cất.} Chất lượng của student phụ thuộc nhiều vào tập ứng viên mà teacher được yêu cầu chấm điểm. Nếu negative quá dễ --- chẳng hạn lấy ngẫu nhiên từ corpus --- teacher sẽ chấm điểm gần như bằng không cho tất cả, và student không học được ranh giới phân biệt nào có ý nghĩa. Ngược lại, mined hard negatives là các đoạn thật nằm gần gold trong kết quả truy hồi nhưng không trả lời đúng truy vấn; chúng phản ánh đúng những trường hợp mà bộ truy hồi thực sự nhầm lẫn, nên là ứng viên có giá trị nhất để teacher phân biệt và student học theo.
+
+Cách khai thác phổ biến là dùng chính bộ truy hồi để lấy top-$k$ ứng viên cho mỗi truy vấn, loại bỏ các đoạn thuộc tập gold, và giữ lại phần còn lại làm negative. Rủi ro chính của cách này là false negatives: một đoạn không được gán nhãn gold vẫn có thể trả lời được truy vấn, và khi bị dùng làm negative, nó dạy mô hình những tín hiệu sai. Trong bối cảnh chưng cất, rủi ro này được giảm nhẹ một cách tự nhiên: thay vì gán nhãn cứng ``đúng/sai'', teacher cross-encoder chấm cho mỗi ứng viên một điểm liên tục, nên một false negative sẽ nhận điểm cao và student học được rằng đoạn đó vẫn liên quan thay vì bị ép đẩy ra xa. Đây là một ưu điểm của chưng cất so với huấn luyện contrastive trên nhãn nhị phân.
+
 \subsection{Các hàm mất mát cho chưng cất reranker}
 \label{subsection:2.3.4}
 
-Khi chưng cất reranker, lựa chọn hàm mất mát quyết định cách student tiếp nhận tín hiệu của teacher. Các phương pháp phổ biến khác nhau ở chỗ chúng khai thác \textit{loại tín hiệu} nào từ teacher: điểm thô (logit), chênh lệch điểm giữa các cặp, hay thứ hạng của các ứng viên.
+Khi chưng cất reranker, lựa chọn hàm mất mát quyết định cách student tiếp nhận tín hiệu của teacher. Các phương pháp phổ biến khác nhau ở chỗ chúng khai thác loại tín hiệu nào từ teacher: điểm thô (logit), chênh lệch điểm giữa các cặp, hay thứ hạng của các ứng viên.
 
 \begin{itemize}
     \item \textbf{Listwise KL Divergence} chuyển logit của teacher và student thành hai phân phối mềm trên toàn bộ danh sách ứng viên (bằng softmax với nhiệt độ $\tau$) rồi buộc phân phối của student tiến gần phân phối của teacher. Cách này học ưu tiên tương đối trên cả danh sách nhưng nhạy với nhiễu và nhiệt độ.
-    \item \textbf{Margin-MSE}~\cite{hofstatter2020marginmse} cho student khớp \textit{chênh lệch điểm} giữa các cặp ứng viên thay vì điểm tuyệt đối, phù hợp khi thứ tự tương đối quan trọng hơn giá trị điểm; tuy nhiên dễ bị chi phối bởi các cặp dễ có margin lớn.
+    \item \textbf{Margin-MSE}~\cite{hofstatter2020marginmse} cho student khớp chênh lệch điểm giữa các cặp ứng viên thay vì điểm tuyệt đối, phù hợp khi thứ tự tương đối quan trọng hơn giá trị điểm; tuy nhiên dễ bị chi phối bởi các cặp dễ có margin lớn.
     \item \textbf{RankNet}~\cite{burges2005ranknet} mô hình hóa xác suất một ứng viên được ưu tiên hơn ứng viên khác qua hàm sigmoid của hiệu điểm, tạo tín hiệu theo từng cặp phong phú nhưng vẫn phụ thuộc vào thang điểm của teacher.
-    \item \textbf{ADR-MSE}, kế thừa từ Rank-DistiLLM~\cite{schlatt2025rankdistillm}, chỉ dùng \textit{thứ hạng} của ứng viên (ánh xạ về một khoảng cố định) làm mục tiêu, nên không buộc student khớp thang điểm tuyệt đối của teacher --- giảm được ảnh hưởng của chênh lệch thang điểm giữa hai mô hình.
+    \item \textbf{ADR-MSE}, kế thừa từ Rank-DistiLLM~\cite{schlatt2025rankdistillm}, chỉ dùng thứ hạng của ứng viên (ánh xạ về một khoảng cố định) làm mục tiêu, nên không buộc student khớp thang điểm tuyệt đối của teacher --- giảm được ảnh hưởng của chênh lệch thang điểm giữa hai mô hình.
 \end{itemize}
 
 Công thức chi tiết của từng hàm mất mát và lựa chọn sử dụng trong đồ án được trình bày ở mục~\ref{subsection:3.8.4}. Bảng~\ref{tab:reranker-kd-loss-summary} tóm tắt khác biệt cốt lõi giữa bốn phương pháp.
@@ -287,13 +291,17 @@ ADR-MSE & Vị trí xếp hạng của teacher & Ít phụ thuộc vào thang đ
 \subsection{Nén reranker và cắt tỉa từ vựng}
 \label{subsection:2.3.5}
 
-Reranker cross-encoder thường có chất lượng cao nhưng chi phí suy luận lớn. Để triển khai thực tế, đặc biệt trên CPU, cần giảm kích thước và độ trễ của reranker. Hai hướng phổ biến là knowledge chưng cất và cắt tỉa.
+Reranker cross-encoder thường có chất lượng cao nhưng chi phí suy luận lớn. Để triển khai thực tế, đặc biệt trên CPU, cần giảm kích thước và độ trễ của reranker. Hai hướng phổ biến là chưng cất tri thức và cắt tỉa.
 
-Knowledge chưng cất giảm chi phí bằng cách huấn luyện student nhỏ hơn bắt chước teacher lớn. Student có thể có ít layer hơn, hidden size nhỏ hơn hoặc kiến trúc nhẹ hơn. Nếu dữ liệu chưng cất đúng miền, student có thể học được hành vi ranking quan trọng của teacher mà không cần giữ toàn bộ capacity.
+Chưng cất tri thức giảm chi phí bằng cách huấn luyện student nhỏ hơn bắt chước teacher lớn. Student có thể có ít layer hơn, hidden size nhỏ hơn hoặc kiến trúc nhẹ hơn. Nếu dữ liệu chưng cất đúng miền, student có thể học được hành vi ranking quan trọng của teacher mà không cần giữ toàn bộ capacity.
 
-Vocabulary cắt tỉa (cắt tỉa từ vựng) là một dạng nén khác, tập trung vào embedding matrix của mô hình ngôn ngữ. Với các model đa ngôn ngữ, tokenizer thường chứa số lượng token rất lớn để hỗ trợ nhiều ngôn ngữ. Khi triển khai trên một miền hẹp, chẳng hạn tài liệu kỹ thuật tiếng Việt, chỉ một phần nhỏ từ vựng được sử dụng thường xuyên. Cắt bỏ các token không cần thiết giúp giảm số tham số ở embedding matrix và giảm dung lượng lưu trữ. Tuy nhiên, cắt tỉa từ vựng thường không làm giảm đáng kể độ trễ của Transformer encoder nếu số layer và hidden size được giữ nguyên.
+Cắt tỉa từ vựng (vocabulary pruning) là một dạng nén khác, tập trung vào embedding matrix của mô hình ngôn ngữ. Với các model đa ngôn ngữ, tokenizer thường chứa số lượng token rất lớn để hỗ trợ nhiều ngôn ngữ. Khi triển khai trên một miền hẹp, chẳng hạn tài liệu kỹ thuật tiếng Việt, chỉ một phần nhỏ từ vựng được sử dụng thường xuyên. Cắt bỏ các token không cần thiết giúp giảm số tham số ở embedding matrix và giảm dung lượng lưu trữ. Tuy nhiên, cắt tỉa từ vựng thường không làm giảm đáng kể độ trễ của Transformer encoder nếu số layer và hidden size được giữ nguyên.
 
-Trong đồ án, từ vựng cắt tỉa được xem như một hướng nén bổ sung cho chưng cất: student đã học ranking từ teacher, sau đó giảm từ vựng để giảm dung lượng mô hình mà vẫn giữ năng lực xử lý tiếng Việt trong miền đích.
+\noindent\textbf{Lượng tử hoá (quantization).} Hướng nén thứ ba tác động vào độ chính xác số học của trọng số thay vì vào kiến trúc hay từ vựng. Thay vì lưu trọng số ở dạng dấu phẩy động 32 bit (FP32), lượng tử hoá biểu diễn chúng bằng số nguyên 8 bit (INT8), giảm dung lượng khoảng bốn lần. Có hai biến thể chính. Lượng tử hoá động (dynamic quantization) chỉ nén trọng số, còn activation vẫn được tính ở FP32 và phải chuyển đổi qua lại ở mỗi tầng; cách này không cần dữ liệu hiệu chuẩn nên rất dễ triển khai, nhưng mức tăng tốc thực tế thấp hơn giới hạn lý thuyết $4\times$ vì chi phí chuyển đổi. Lượng tử hoá tĩnh (static quantization) nén cả activation, đạt tăng tốc cao hơn nhưng đòi hỏi một tập dữ liệu hiệu chuẩn đại diện để ước lượng dải giá trị của activation.
+
+Lượng tử hoá thường được triển khai cùng một runtime suy luận tối ưu như ONNX Runtime, vốn thực hiện thêm các tối ưu ở mức đồ thị tính toán (hợp nhất toán tử, loại bỏ nút thừa) và cung cấp các nhân tính toán INT8 hiệu quả trên CPU. Ngoài lợi ích về dung lượng và thông lượng, một hiệu ứng ít được nhắc tới nhưng quan trọng khi triển khai là độ ổn định của độ trễ: trọng số INT8 nhỏ hơn bốn lần nên dễ nằm gọn trong bộ nhớ đệm của CPU, giảm số lần truy cập bộ nhớ chính và do đó thu hẹp đuôi trễ (p95, p99) --- chỉ số thường quyết định trải nghiệm người dùng nhiều hơn giá trị trung vị.
+
+Ba hướng nén trên tác động vào ba thành phần khác nhau nên có thể kết hợp: chưng cất giảm số tầng và kích thước ẩn, cắt tỉa từ vựng giảm ma trận embedding, lượng tử hoá giảm độ chính xác số học của toàn bộ trọng số còn lại. Trong đồ án, cả ba được áp dụng nối tiếp: student học ranking từ teacher, sau đó giảm từ vựng để giảm dung lượng mô hình mà vẫn giữ năng lực xử lý tiếng Việt trong miền đích, và cuối cùng lượng tử hoá INT8 để triển khai trên CPU.
 
 \section{Mô hình nhúng văn bản và tinh chỉnh embedding}
 \label{section:2.4}
@@ -310,7 +318,7 @@ Tuy nhiên, BERT gốc không tạo ra biểu diễn câu phù hợp để so kh
 
 Trong RAG, mô hình embedding có nhiệm vụ ánh xạ truy vấn và đoạn vào cùng một không gian vector sao cho các cặp liên quan nằm gần nhau. Với corpus tiếng Việt, mô hình embedding cần xử lý tốt cả ngôn ngữ tự nhiên, thuật ngữ kỹ thuật, ký hiệu, bảng biểu và cách diễn đạt đặc thù.
 
-Các mô hình như BGE-M3~\cite{chen2024bgem3} và các biến thể đã tinh chỉnh cho tiếng Việt hỗ trợ dense truy hồi đa ngôn ngữ. Trong đồ án, \plaincode{AITeamVN/Vietnamese_Embedding_v2} được sử dụng làm base mô hình embedding. Mô hình này dựa trên BGE-M3 và tạo vector 1024 chiều. Các chương sau trình bày cách tinh chỉnh mô hình này để phù hợp hơn với miền tài liệu kỹ thuật, đồng thời hỗ trợ triển khai embedding 512 chiều thông qua Matryoshka Representation Learning.
+Các mô hình như BGE-M3~\cite{chen2024bgem3} và các biến thể đã tinh chỉnh cho tiếng Việt hỗ trợ truy hồi dày (dense) đa ngôn ngữ. Trong đồ án, \plaincode{AITeamVN/Vietnamese_Embedding_v2} được sử dụng làm base mô hình embedding. Mô hình này dựa trên BGE-M3 và tạo vector 1024 chiều. Các chương sau trình bày cách tinh chỉnh mô hình này để phù hợp hơn với miền tài liệu kỹ thuật, đồng thời hỗ trợ triển khai embedding 512 chiều thông qua Matryoshka Representation Learning.
 
 \subsection{MultipleNegativesRankingLoss}
 \label{subsection:2.4.3}
@@ -420,22 +428,6 @@ f_m(\mathbf{e}_p)
 \]
 
 Nếu $\mathcal{L}$ là MNRL hoặc GISTEmbedLoss, mô hình sẽ đồng thời tối ưu khả năng truy hồi ở nhiều kích thước embedding. Lợi ích thực tiễn là cùng một checkpoint có thể dùng cho nhiều cấu hình triển khai. Khi cần giảm dung lượng vector index hoặc tăng tốc tìm kiếm, hệ thống có thể dùng embedding prefix ngắn hơn mà không cần huấn luyện lại model từ đầu.
-
-\subsection{Học theo lộ trình cho embedding truy hồi}
-\label{subsection:2.4.6}
-
-Curriculum learning~\cite{bengio2009curriculum} là chiến lược tổ chức dữ liệu huấn luyện theo độ khó tăng dần. Thay vì đưa toàn bộ dữ liệu khó vào ngay từ đầu, mô hình được học từ các mẫu rõ ràng hơn trước, sau đó chuyển dần sang các mẫu khó hơn.
-
-Trong truy hồi embedding, độ khó của negative có thể đến từ mức độ gần ngữ nghĩa với positive. Các negative quá dễ giúp model học ranh giới cơ bản nhưng ít đóng góp cho khả năng phân biệt tinh vi. Ngược lại, hard negatives gần positive hơn và sát lỗi thực tế của bộ truy hồi hơn, nhưng nếu dùng quá sớm hoặc chứa nhiễu, chúng có thể làm quá trình huấn luyện kém ổn định.
-
-Với tài liệu kỹ thuật, curriculum learning phù hợp vì có thể tách dữ liệu thành nhiều nguồn:
-
-\begin{itemize}
-\item \textbf{Synthesized negatives (Mẫu âm tổng hợp)}: negative được tạo có kiểm soát bằng cách thay đổi thực thể, số liệu, điều kiện hoặc logic trong positive đoạn.
-\item \textbf{Mined hard negatives (Mẫu âm khó khai thác)}: các đoạn thật nằm gần gold trong kết quả truy hồi/tái xếp hạng nhưng không trả lời đúng truy vấn.
-\end{itemize}
-
-Một curriculum hợp lý có thể dùng tạo sinh negatives ở stage đầu để học ranh giới cơ bản, sau đó dùng khai thác hard negatives ở stage sau để cải thiện khả năng phân biệt trong miền đích. Khi kết hợp với MRL, mỗi stage có thể tối ưu đồng thời nhiều kích thước embedding.
 
 \section{Mô hình ngôn ngữ lớn và thiết kế prompt trong RAG}
 \label{section:2.5}
@@ -596,11 +588,11 @@ Từ cơ sở lý thuyết và đặc thù của bài toán, đồ án xác đ�
 
 \noindent\textbf{Gap 1 -- Reranker nhẹ cho tài liệu kỹ thuật tiếng Việt}
 
-Cross-encoder reranker mạnh có thể cải thiện chất lượng ranking nhưng thường có kích thước lớn và độ trễ cao. Trong bối cảnh tiếng Việt, đặc biệt với tài liệu kỹ thuật, vẫn cần khảo sát cách nén reranker bằng chưng cất và từ vựng cắt tỉa để giữ chất lượng gần teacher trong khi giảm chi phí triển khai.
+Cross-encoder reranker mạnh có thể cải thiện chất lượng ranking nhưng thường có kích thước lớn và độ trễ cao. Trong bối cảnh tiếng Việt, đặc biệt với tài liệu kỹ thuật, vẫn cần khảo sát cách nén reranker bằng chưng cất và cắt tỉa từ vựng để giữ chất lượng gần teacher trong khi giảm chi phí triển khai.
 
 \noindent\textbf{Gap 2 -- Tinh chỉnh embedding có kiểm soát false negatives}
 
-Các mô hình embedding đa ngôn ngữ hoặc tiếng Việt tổng quát chưa chắc tối ưu cho corpus kỹ thuật hẹp. Khi tinh chỉnh bằng contrastive learning, false negatives dễ xuất hiện vì nhiều đoạn cùng liên quan tới một truy vấn hoặc cùng chủ đề. Do đó, cần thiết kế curriculum và loss phù hợp để vừa học được hard negatives, vừa hạn chế nhiễu từ false negatives.
+Các mô hình embedding đa ngôn ngữ hoặc tiếng Việt tổng quát chưa chắc tối ưu cho corpus kỹ thuật hẹp. Khi tinh chỉnh bằng contrastive learning, false negatives dễ xuất hiện vì nhiều đoạn cùng liên quan tới một truy vấn hoặc cùng chủ đề --- với tài liệu kỹ thuật, hiện tượng này càng phổ biến do nhiều đoạn cùng mô tả một thiết bị hoặc các phần khác nhau của cùng một quy trình. Do đó, cần lựa chọn hàm mất mát và cách tổ chức dữ liệu huấn luyện sao cho hạn chế được nhiễu từ false negatives, đồng thời tận dụng được lượng dữ liệu miền vốn hạn chế.
 
 \noindent\textbf{Gap 3 -- Tối ưu đồng thời chất lượng, độ trễ và dung lượng}
 
@@ -610,6 +602,6 @@ Nhiều hệ thống RAG chỉ báo cáo độ chính xác hoặc truy hồi met
 
 LLM-based định tuyến có thể đạt chất lượng tốt nhưng tạo thêm độ trễ và chi phí API cho mỗi truy vấn. Khi bài toán định tuyến chỉ gồm một số lớp ý định rõ ràng, một classifier cục bộ dựa trên SBERT/SetFit có thể là lựa chọn hiệu quả hơn. Vấn đề cần giải quyết là làm sao giữ độ chính xác cao trong điều kiện dữ liệu ít và mất cân bằng lớp.
 
-Các khoảng trống trên dẫn tới các hướng tối ưu được trình bày ở các chương sau: xây dựng dữ liệu huấn luyện từ pipeline v1, tinh chỉnh embedding bằng curriculum GIST$\to$MNRL kết hợp MRL, chưng cất và nén reranker, đồng thời thay thế GPT router bằng ý định classifier chạy cục bộ.
+Các khoảng trống trên dẫn tới các hướng tối ưu được trình bày ở các chương sau: xây dựng dữ liệu huấn luyện từ pipeline v1; tinh chỉnh embedding bằng MNRL kết hợp MRL để hỗ trợ nhiều số chiều triển khai; chưng cất, cắt tỉa từ vựng và lượng tử hoá reranker để chạy được trên CPU; đồng thời thay thế GPT router bằng bộ phân loại ý định chạy cục bộ.
 
 \end{document}

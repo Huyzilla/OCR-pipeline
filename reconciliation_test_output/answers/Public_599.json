@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Nguồn điện cung cấp cho hệ thống điện có những đặc điểm nào?",
+    "options": {"A": "Có 1 nguồn cung cấp điện và đủ công suất tác dụng.", "B": "Có nhiều nguồn cung cấp điện và không đủ công suất.", "C": "Chỉ có 1 nguồn điện và không đủ công suất.", "D": "Có 2 nguồn cung cấp điện và dư công suất."},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Nguồn điện cung cấp đủ công suất tác dụng cho phụ tải."
+  },
+  {
+    "question": "Hệ số công suất trung bình trên thanh góp cao áp của nguồn điện là bao nhiêu?",
+    "options": {"A": "0,75", "B": "0,85", "C": "0,95", "D": "0,90"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Hệ số công suất trung bình trên thanh góp cao áp của nguồn điện bằng 0,85"
+  },
+  {
+    "question": "Điện áp vận hành cho chế độ phụ tải cực đại là bao nhiêu phần trăm của điện áp định mức?",
+    "options": {"A": "105%", "B": "110%", "C": "100%", "D": "95%"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "Chế độ phụ tải cực đại: 110% điện áp định mức"
+  },
+  {
+    "question": "Thời gian sử dụng công suất cực đại của phụ tải là bao lâu?",
+    "options": {"A": "5000 giờ", "B": "5500 giờ", "C": "6000 giờ", "D": "7000 giờ"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Thời gian sử dụng công suất cực đại (h) | 5500"
+  },
+  {
+    "question": "Tổng công suất cực đại của tất cả các hộ tiêu thụ là bao nhiêu megawatt?",
+    "options": {"A": "120 MW", "B": "150 MW", "C": "125 MW", "D": "130 MW"},
+    "gold_answer": "A",
+    "type": "tinh_toan",
+    "source_chunk_index": [1, 2],
+    "evidence_quote": "Phụ tải cực đại (MW) | 25 | 18 | 35 | 28 | 25 | 25"
+  },
+  {
+    "question": "Để đảm bảo độ tin cậy cho phụ tải loại I, phương án nối dây cần có yêu cầu gì?",
+    "options": {"A": "Cần có 2 đường dây song song hoặc mạch vòng kín.", "B": "Chỉ cần 1 đường dây duy nhất.", "C": "Không cần đường dây dự phòng.", "D": "Phải có 3 đường dây kết nối."},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [5],
+    "evidence_quote": "đối với phụ tải loại I phải đảm bảo cấp điện liên tục không được phép gián đoạn trong bất cứ tình huống nào, vì vậy trong phương án nối dây phải có đường dây dự phòng"
+  }
+]

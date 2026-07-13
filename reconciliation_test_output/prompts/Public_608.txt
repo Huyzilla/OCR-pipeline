@@ -1,0 +1,209 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_608", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] (MỤC TIÊU, LỢI ÍCH CỦA WEBSITE > MỤC TIÊU THIẾT KẾ WEBSITE:)
+## MỤC TIÊU THIẾT KẾ WEBSITE:
+
+* Thiết kế một website mới phong cách hiện đại và theo xu hướng mới của thị trường.
+* Website là Kênh thông tin giới thiệu:
+  * Giới thiệu công ty & các hoạt động có liên quan
+  * Giới thiệu sản phẩm do công ty phân phối, sản xuất
+* Đẩy mạnh hoạt động PR & Marketing trên Internet thông qua website
+  * Thông tin báo chí (Press Release)
+  * Hình ảnh, Video Clip các hoạt động công ty
+  * Khảo sát thăm dò ý kiến qua mạng, Bình chọn
+  * Các chuyên mục tư vấn kĩ thuật dành cho khách hàng
+  * Các tài liệu hướng dẫn cách sử dụng và bảo quản thiết bị
+
+* Cung cấp đầu đủ các công cụ cho phép khách hàng dễ dàng tìm kiếm các thông tin liên quan đến sản phẩm
+
+---
+
+[chunk_index=1] (YÊU CẦU: > Yêu cầu về Giao diện – Mỹ thuật:)
+## Yêu cầu về Giao diện – Mỹ thuật:
+
+* Giao diện thiết kế chuyên nghiệp, đẹp mắt, đảm bảo tính mỹ thuật. Phù hợp với 1 website giới thiệu sản phẩm
+* Nội dung phải thống nhất với nhau về: kiểu font, kích thước font nhằm tạo ra sự thân thiện cho người dùng.
+
+---
+
+[chunk_index=2] (YÊU CẦU: > Yêu cầu về Bảo mật – Hiệu suất)
+## Yêu cầu về Bảo mật – Hiệu suất
+
+* Trang web đạt độ an toàn và bảo mật cao, luôn đảm bảo cho trang web hoạt động ổn định, không bị mất dữ liệu và không gặp sự cố
+* Webiste được thiết kế đảm bảo tốc độ truy cập tránh cho người truy cập chờ quá lâu, đồng thời đáp ứng được số lượng người truy cập lớn trong cùng 1 thời điểm.
+
+---
+
+[chunk_index=3] (YÊU CẦU: > Yêu cầu về Nội dung thông tin – Tần suất cập nhật dữ liệu)
+## Yêu cầu về Nội dung thông tin – Tần suất cập nhật dữ liệu
+
+* Website đa ngôn ngữ: Tiếng Việt.
+* Dễ dàng mở rộng đa ngôn ngữ
+* Website thiết kế động (có cơ sở dữ liệu), dễ dàng quản trị, cập nhật thông tin.
+* Công cụ Cập nhật dễ sử dụng giúp người quản trị website dễ dàng cập nhật các thông tin Dịch vụ, Tin tức mà không cần đến sự hỗ trợ của các lập trình viên chuyên nghiệp, giúp tiết kiệm chi phí mà vẫn đảm bảo được giao diện chuyên nghiệp của website.
+
+---
+
+[chunk_index=4] (ĐẶC TÍNH CƠ BẢN CỦA WEBSITE)
+Cột: STT | MODULE | GHI CHÚ
+
+Dòng 1: GIAO DIỆN THEO GÓI PRO
+Dòng 2: 01 | Trang chủ
+Dòng 3: 02 | Giới thiệu (Module news) | Thêm / xóa / sửa nội dung. - Cho phép tạo nhiều danh mục con. - Nhập liệu nội dung thông tin trên một trang - con.
+Dòng 4: 03 | Các khu du lịch (Module news) Du lịch trong nước • Du lịch quốc tế • | Thêm / xóa / sửa nội dung dịch vụ. - Cho phép tạo nhiều danh mục con. - Nhập liệu nội dung thông tin lên các trang -
+Dòng 5: 04 | Các dịch vụ vui chơi (Module news) Lặn • golf • | Thêm/ xoá/ sửa nội dung - cho phép tạo nhiều danh mục con. - Nhập liệu nội dung thông tin trên trang. -
+Dòng 6: 05 | Book vé | - Cho phép khách hàng book vé
+Dòng 7: 06 | Thanh toán | - Cho phép khách hàng thanh toán qua các cổng thanh toán : Bảo Kim & Ngân Lượng, PayPal
+Dòng 8: 07 | Liên hệ | Nhập liệu nội dung trên trang
+Dòng 9: 08 | Chi tiết bài viết | - Thêm/ xoá/ sửa thông tin bài viết trang trong.
+Dòng 10: 09 | Hệ thống SEO cơ bản | Tích hợp hệ thống seo cơ bản trong admin giúp quản trị viên có thể chủ động điều chỉnh thêm/ xoá/ sửa các nhóm từ khoá trên mỗi module riêng biệt. Module nội dung trang: Key words • Meta • Description • Module bản tin: Key words • Meta • Description • Module sản phẩm: Key words • Meta • Description • Hệ thống SEO tổng quát: Google key • Alexa key • Yahoo key • Google analytics • Meta tag • Robots.txt • SEO cấu hình hệ thống ▪ Titlte website ▪ Keywords website ▪ Description website
+
+---
+
+[chunk_index=5] (GIẢI PHÁP CÔNG NGHỆ WEBSITE > Yêu cầu chung về công nghệ:)
+## Yêu cầu chung về công nghệ:
+
+* Việc lựa chọn công nghệ để xây dựng website phải đáp ứng các yêu cầu chung sau đây:
+  * Chọn giải pháp công nghệ tốt mang lại thành công của dự án, và hệ thống phải hoạt động tốt.
+  * Hoạt động ổn định liên tục và lâu dài, có khả năng truy xuất dữ liệu lớn mà không ảnh hưởng đến website.
+
+▪ Chi phí xây dựng ít tốn kém nhưng hiệu quả tốt cho công việc.
+
+---
+
+[chunk_index=6] (GIẢI PHÁP CÔNG NGHỆ WEBSITE > Công nghệ thiết kế website:)
+## Công nghệ thiết kế website:
+
+* CNV sử dụng công nghệ trên nền tảng mã nguồn mở kết hợp Smarty của Nhật Bản giúp tăng tối đa tốc độ load cũng như bóc tách dữ liệu được tối ưu hóa.
+
+▪ Ngôn ngữ : PHP kết hợp Smarty ( <http://www.smarty.net/> )
+
+▪ Database : Mysql
+
+▪ Giao diện : Adobe Photoshop, Ai, Corel
+
+▪ OS server : Linux
+
+---
+
+[chunk_index=8] (GIẢI PHÁP CÔNG NGHỆ WEBSITE > Hosting:)
+## Hosting:
+
+* Hệ thống máy chủ được CNV sử dụng và đề xuất được đặt hoàn toàn tại VDC
+* FPT Viettel DC, tất cả các trung tâm đều được đáp ứng đủ về nhu cầu điện, máy lạnh, cháy nổ, độ ẩm đảm bảo server hoạt động liên tục 24/24 nhiều năm liền mà không gây trở ngại giúp cho việc hoạt động của website trở nên thông suốt.
+* Dung lượng sử dụng : 2000 MB băng thông 100GB
+
+---
+
+[chunk_index=9] (KẾ HOẠCH TIẾN ĐỘ)
+Cột: GIAI ĐOẠN | QUY TRÌNH CNV | QUY TRÌNH KHÁCH HÀNG | THỜI GIAN (ngày)
+
+Dòng 1: Lấy tin 01 hàng | thông | - Tư vấn khách hàng về những tính năng phù hợp theo ngành nghề | - Đưa những yêu cầu cơ bản về website
+Dòng 2: khách | - Tư vấn phương án triển khai giao diện | - Đưa những yêu cầu về giao diện mà khách hàng muốn | 01
+Dòng 3: - Lên danh sách tính năng và viết kế hoạch thực hiện bởi khách hàng | - Xem xét và bổ sung / chỉnh sửa đề án | 02
+Dòng 4: -Hòan thiện tính năng của website | Kiểm tra lại đề án | 01
+Dòng 5: THỐNG NHẤT VÀ DUYỆT PHƯƠNG ÁN | 01
+Dòng 6: 02 | Ký hợp đồng | - Tạm ứng chi phí lần 01 (40% ) | - Thanh toán chi phí lần 01 (40% ) | 01
+Dòng 7: - Tiếp nhận thông tin tổng thể | Cung cấp tài liệu, hình ảnh, logoliên quan
+Dòng 8: Theo dõi tiến độ triển - khai
+Dòng 9: 03 | Thiết kế giao diện | - Triển khai lên ý tưởng demo giao diện | Lên ý tưởng đăng ký tên - miền Chuẩn bị nội dung để - nhập liệu mẫu lên website | 07
+Dòng 10: - Gởi bản demo giao diện lần 01 | - Duyệt giao diện lần 01, đưa thêm những yêu cầu nếu cần chỉnh sửa | 05
+
+---
+
+[chunk_index=10] (KẾ HOẠCH TIẾN ĐỘ)
+Cột: GIAI ĐOẠN | QUY TRÌNH CNV | QUY TRÌNH KHÁCH HÀNG | THỜI GIAN (ngày)
+
+Dòng 1: 03 | Thiết kế giao diện | - Triển khai lên ý tưởng demo giao diện | Lên ý tưởng đăng ký tên - miền Chuẩn bị nội dung để - nhập liệu mẫu lên website | 07
+Dòng 2: - Gởi bản demo giao diện lần 01 | - Duyệt giao diện lần 01, đưa thêm những yêu cầu nếu cần chỉnh sửa | 05
+Dòng 3: 04 | Xác nhận giao diện | - Gởi bản demo giao diện lần 02 | - Duyệt giao diện lần 02, ký xác nhận giao diện nếu hài lòng | 03
+Dòng 4: KÝ XÁC NHẬN GIAO DIỆN ( Thanh toán lần 02 – 40%) | 01
+Dòng 5: Coding và xây dựng - database Xây dựng các tính năng - theo yêu cầu | - Theo dõi triển khai | 20
+Dòng 6: 05 | Lập trình | - Test các tính năng chính lần 01 | - Theo dõi triển khai | 01
+Dòng 7: - Chuyển giao khách hàng test các yêu cầu về tính năng | - Tiếp nhận website phiên bản beta và kiểm tra các yêu cầu | 05
+Dòng 8: 06 | Thử nghiệm sản phẩm | - Đưa website lên môi trường internet và đưa tên miền vào sử dụng | - Kiểm tra toàn bộ các tính năng cũng như yêu cầu về mỹ thuật sau khi coding. | 02
+Dòng 9: 07 | Nhập liệu | - Nhập dữ liệu mẫu lên website ( 10 trang A4 dữ liệu) | - Bắt đầu nhập liệu lên website, kiểm tra các tính năng admin hoạt động tốt | 03
+Dòng 10: 08 | KIỂM | TRA TOÀN DIỆN VÀ CHUYỂN | GIAO SẢN PHẨM | 01
+
+---
+
+[chunk_index=11] (KẾ HOẠCH TIẾN ĐỘ)
+Cột: GIAI ĐOẠN | QUY TRÌNH CNV | QUY TRÌNH KHÁCH HÀNG | THỜI GIAN (ngày)
+
+Dòng 1: 07 | Nhập liệu | - Nhập dữ liệu mẫu lên website ( 10 trang A4 dữ liệu) | - Bắt đầu nhập liệu lên website, kiểm tra các tính năng admin hoạt động tốt | 03
+Dòng 2: 08 | KIỂM | TRA TOÀN DIỆN VÀ CHUYỂN | GIAO SẢN PHẨM | 01
+Dòng 3: 09 | Nghiệm thu website | - Bàn giao admin, hướng dẫn sử dụng admin cho nhân viên khách hàng HOÀN TẤT THANH TOÁN ( LẦN 3 – | Nhận bàn giao các - thông tin cần thiết của website Chuyển giao nhân viên - tiếp nhận admin 20%)
+
+---
+
+[chunk_index=12] (CHI PHÍ TRIỂN KHAI WEBSITE)
+Cột: Gói Pro
+
+Dòng 1: Giao diện chuyên nghiệp, tạo sự ấn tượng đối với khách hàng ghé - thăm. Ứng dụng các hiệu úng HTML5 vào trình diễn ảnh trên slide. - Link tối ưu hoá và thân thiện với cổng tìm kiếm Google. - Style phù hợp xu hướng nước ngoài, cập nhật xu hướng mới - nhất tạo nên sự khác biệt cho website.
+Dòng 2: Diễn giải | Truyền tải được bản sắc thương hiệu, giá trị văn hóa Doanh nghiệp. - Giao diện thân thiện với người dùng. - + Bố cục trang front end thân thiện, tiện ích với người xem website. + Bố cục trang back end thân thiện, đầy đủ công cụ quản trị. Tốc độ xử lý và đáp ứng kịp thời nhanh chóng cho lượng lớn người -
+Dòng 3: dùng. Hỗ trợ SEO nâng cao: - + Google analytics + Key Words. + Các thẻ meta liên quan khác. + Text Link
+Dòng 4: + Mạng xã hội: face, G+, v.v - - Support 24/24/365
+Dòng 5: Gói website | 12,000,000 VNĐ
+Dòng 6: Giao diện Mobile(40 %) | 4,800,000 VNĐ
+Dòng 7: Thành viên | 1,000,000 VNĐ
+Dòng 8: Book phòng | 3,000,000 VNĐ
+Dòng 9: Thanh toán nội địa | 1,500,000 VNĐ
+Dòng 10: Thanh toán quốc tế | 1,500,000 VNĐ
+
+---
+
+[chunk_index=13] (CHI PHÍ TRIỂN KHAI WEBSITE)
+Cột: Gói Pro
+
+Dòng 1: Thanh toán nội địa | 1,500,000 VNĐ
+Dòng 2: Thanh toán quốc tế | 1,500,000 VNĐ
+Dòng 3: Tổng tiền | 23,800,000 VNĐ
+
+---
+
+[chunk_index=15] (CHI PHÍ TRIỂN KHAI WEBSITE)
+Cột: DỊCH VỤ HẬU MÃI
+
+Dòng 1: NỘI DUNG | GHI CHÚ CHI
+Dòng 2: Hosting | Plan B web hosting: Dung lượng : 2,000 MB - Băng thông : 100 GB - Datacenter : FPT - Viettel - http://cnv.vn/noi-dung/hosting-doanh-nghiep 436 | 1,800,000 VNĐ
+Dòng 3: Đào tạo | Đào tạo quản trị tại văn phòng khách • hàng: 01 buổi làm việc. Bảo hành, bảo trì vĩnh viễn trong suốt quá • trình hệ thống lưu trữ trên máy chủ CNV. | 0 VNĐ
+
+---
+
+[chunk_index=16] (CHI PHÍ TRIỂN KHAI WEBSITE)
+Cột: 
+
+Dòng 1: • | Theo dõi, xử lý sự cố & sao lưu dữ liệu
+Dòng 2: vào mỗi tuần.
+Dòng 3: • | Cập nhật, đăng tải hình ảnh banner mỗi
+Dòng 4: năm 01 lần khi gia hạn dịch vụ.
+Dòng 5: • | Hướng dẫn phân tích lượng truy cập vào
+Dòng 6: website.
+Dòng 7: • | Tối ưu & tăng uy tín website với Google.
+Dòng 8: • | Xử lý các sự cố liên quan đến hệ thống dữ
+Dòng 9: Bảo hành | - Bảo trì | liệu trong 24 giờ, 48 giờ đối với các ngày | 0 VNĐ
+Dòng 10: lễ và 72 giờ đối với các ngày lễ đặc biệt.

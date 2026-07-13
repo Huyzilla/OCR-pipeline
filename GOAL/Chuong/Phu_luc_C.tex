@@ -1,7 +1,7 @@
 \chapter{CÁC PROMPT SỬ DỤNG VỚI MÔ HÌNH NGÔN NGỮ}
 \label{appendix:C}
 
-Phụ lục này tập hợp các prompt dùng với mô hình ngôn ngữ trong hai vai trò: (1) vận hành hệ thống hỏi đáp (định tuyến ý định và sinh câu trả lời), và (2) xây dựng dữ liệu huấn luyện (xác định positive, sinh hard negative và kiểm tra hard negative). Các trường trong dấu ngoặc nhọn như \plaincode{\{question\}} là chỗ điền nội dung động khi chạy.
+Phụ lục này tập hợp các prompt dùng với mô hình ngôn ngữ trong hai vai trò: (1) vận hành hệ thống hỏi đáp (định tuyến ý định và sinh câu trả lời), và (2) xây dựng dữ liệu huấn luyện (xác định positive, sinh query-positive bổ sung). Các trường trong dấu ngoặc nhọn như \plaincode{\{question\}} là chỗ điền nội dung động khi chạy.
 
 \section{Prompt định tuyến ý định}
 \label{appendix:C.1}
@@ -108,55 +108,34 @@ CÁC ĐOẠN VĂN:
 Phân loại từng chunk.
 \end{promptbox}
 
-\section{Prompt sinh hard negative}
+\section{Prompt sinh query-positive bổ sung}
 \label{appendix:C.4}
 
-Prompt yêu cầu mô hình tạo hai phiên bản sai lệch tinh vi từ đoạn gốc, mỗi phiên bản dùng một loại chỉnh sửa khác nhau.
+Prompt này được dùng để tạo thêm câu hỏi cho các đoạn chưa xuất hiện trong tập huấn luyện hoặc đánh giá. System prompt đặt vai trò và yêu cầu trả về JSON hợp lệ:
 
 \begin{promptbox}
-Bạn tạo dữ liệu huấn luyện cho retrieval system.
+Bạn tạo dữ liệu query-positive cho hệ thống truy hồi tài liệu.
 
-Với đoạn văn GỐC và query, tạo 2 phiên bản sai lệch tinh vi.
-Chọn 2 loại edit PHÙ HỢP NHẤT với nội dung,
-mỗi version dùng 1 loại khác nhau:
-
-- entity_swap:         đổi thực thể lõi (tên, điều khoản, đối tượng)
-- temporal_edit:       đổi số liệu, ngưỡng, mốc thời gian
-- logic_flip:          đảo ngược điều kiện, quan hệ nhân quả
-- provenance_conflict: đổi phạm vi áp dụng, nguồn tài liệu
-
-Yêu cầu BẮT BUỘC:
-- SAO CHÉP TOÀN BỘ đoạn văn gốc, chỉ thay đổi 1-2 chi tiết nhỏ
-- KHÔNG rút ngắn, KHÔNG tóm tắt, KHÔNG bỏ câu nào
-- Độ dài version phải gần bằng đoạn gốc (+-10%)
-- KHÔNG thêm câu giveaway như "tuy nhiên...", "thực ra..."
-- Mỗi version dùng 1 loại edit khác nhau
-- Tự kiểm tra: still_plausible, answers_query, contains_giveaway_style
+Nhiệm vụ: đọc một đoạn văn pháp lý/kỹ thuật và viết các câu hỏi mà người dùng thật có thể gõ để tìm đoạn đó.
+Luôn trả về JSON hợp lệ, không giải thích thêm.
 \end{promptbox}
 
-\section{Prompt kiểm tra hard negative}
-\label{appendix:C.5}
-
-Prompt dùng một mô hình độc lập để xác nhận hard negative hợp lệ, tức đoạn không trả lời được câu hỏi.
+User prompt nhận nội dung đoạn và số câu hỏi cần sinh:
 
 \begin{promptbox}
-Bạn là judge độc lập để kiểm tra khả năng trả lời của hard negative
-trong dữ liệu huấn luyện RAG tiếng Việt.
+Bạn là người dùng đang tra cứu tài liệu pháp lý/kỹ thuật. Đọc đoạn văn sau và đặt câu hỏi mà đoạn này trả lời được.
 
-Nhiệm vụ: Với một QUERY và một CANDIDATE CHUNK,
-quyết định xem đoạn này có trả lời được query hay không.
+ĐOẠN VĂN:
+{chunk_text}
 
-Trả về answers_query=true nếu đoạn văn chứa đủ thông tin
-để trả lời trực tiếp query, hoặc nếu đáp án có thể được
-suy ra rõ ràng từ đoạn văn.
+YÊU CẦU:
+- Đặt {n_questions} câu hỏi KHÁC NHAU mà đoạn văn trên trả lời được.
+- Viết như người dùng thật gõ tìm kiếm: ngắn gọn, tự nhiên. KHÔNG "xin vui lòng", KHÔNG trang trọng.
+- QUAN TRỌNG: KHÔNG sao chép nguyên cụm từ dài trong đoạn văn. Diễn đạt lại bằng từ ngữ của bạn, dùng từ đồng nghĩa. Câu hỏi và đoạn văn KHÔNG được trùng lặp nhiều từ khóa.
+- Câu hỏi phải trả lời được CHỈ bằng đoạn văn này, không cần thông tin ngoài.
+- Nếu đoạn văn có số liệu/công thức/điều kiện tính toán, đặt ít nhất 1 câu hỏi dạng tính toán/áp dụng.
+- Nếu đoạn văn quá ngắn/không có nội dung đáng hỏi (mục lục, tiêu đề, bảng trống), trả về danh sách rỗng.
 
-Trả về answers_query=false nếu đoạn văn chỉ liên quan cùng chủ đề,
-có chi tiết sai/mâu thuẫn, thiếu thông tin then chốt,
-hoặc không trả lời được query.
-
-Hãy đánh giá nghiêm ngặt: hard negative hợp lệ là đoạn
-KHÔNG trả lời được query.
-
-JSON only:
-{"answers_query": true|false, "confidence": "high|medium|low"}
+Trả về JSON:
+{"questions": ["câu hỏi 1", "câu hỏi 2"], "chunk_quality": "good" | "low"}
 \end{promptbox}

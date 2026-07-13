@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Hệ thống chuyển nguồn tự động có tên gọi nào trong tài liệu?",
+    "options": {"A": "ATS", "B": "MCB", "C": "MCCB", "D": "STS"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "ATS (Automatic Transfer Switch): Hệ thống chuyển nguồn tự động"
+  },
+  {
+    "question": "Máy biến áp có ký hiệu là gì trong tài liệu?",
+    "options": {"A": "MCCB", "B": "MBA", "C": "HPL", "D": "UPS"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "MBA: Máy biến áp."
+  },
+  {
+    "question": "Theo hướng dẫn, kiểm tra tình trạng của quạt làm mát cho UPS cần thực hiện với tần suất bao lâu?",
+    "options": {"A": "Hàng tháng", "B": "Hàng quý", "C": "Hàng năm", "D": "Hai tháng một lần"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [2, 6],
+    "evidence_quote": "Kiểm tra tình trạng của quạt làm mát (kiểm tra tốc độ, nhiệt độ bạc đạn,) | X"
+  },
+  {
+    "question": "Trong quy trình bảo dưỡng STS, việc kiểm tra tình trạng các mạch điện tử cần phải thực hiện tần suất bao lâu?",
+    "options": {"A": "3 tháng", "B": "6 tháng", "C": "12 tháng", "D": "Hàng tháng"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [6],
+    "evidence_quote": "Kiểm tra tình trạng các mạch điện tử (điều khiển, nguồn). Đo kiểm bằng thiết bị chuyên dụng | x 39. | 18 AIR | X"
+  },
+  {
+    "question": "Máy cắt không khí có dòng cắt định mức lớn được gọi là gì?",
+    "options": {"A": "MCB", "B": "ACB", "C": "MCCB", "D": "ATS"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [0],
+    "evidence_quote": "ACB (Air Circuit Breaker): Là máy cắt không khí, có dòng cắt định mức lớn"
+  },
+  {
+    "question": "Nếu bạn thực hiện kiểm tra A cho UPS, thời gian tối đa cần thiết là bao lâu?",
+    "options": {"A": "1 giờ", "B": "2 giờ", "C": "3 giờ", "D": "4 giờ"},
+    "gold_answer": "B",
+    "type": "tinh_toan",
+    "source_chunk_index": [5],
+    "evidence_quote": "Thời gian làm là từ 1 tiếng đến 2 tiếng/ 01 UPS."
+  }
+]

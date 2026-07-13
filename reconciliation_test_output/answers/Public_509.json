@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Biểu đồ phân tán được sử dụng để xác định điều gì giữa hai biến số?",
+    "options": {"A": "Mối tương quan", "B": "Giá trị tuyệt đối", "C": "Sự phân bố", "D": "Đặc tính ngẫu nhiên"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "Xác định mức độ tương quan giữa hai biến số"
+  },
+  {
+    "question": "Giá trị hệ số tương quan r gần với giá trị nào cho thấy có mối quan hệ nghịch rất lớn?",
+    "options": {"A": "-0.85", "B": "0.5", "C": "0", "D": "0.9"},
+    "gold_answer": "A",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "gần với -1 (<-0.85) thì có mối quan hệ nghịch rất lớn"
+  },
+  {
+    "question": "Khi hai đặc tính có mối quan hệ thuận, hình dạng của các điểm dữ liệu trong biểu đồ phân tán sẽ như thế nào?",
+    "options": {"A": "Nằm trong vùng elip nghiêng bên trái", "B": "Nằm trong vùng elip nghiêng bên phải", "C": "Phân tán đều", "D": "Tạo thành một đường thẳng đứng"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [1],
+    "evidence_quote": "các điểm dữ liệu sẽ nằm trong vùng elip nghiêng về bên phải"
+  },
+  {
+    "question": "Để phân tích biểu đồ phân tán, chúng ta có thể thực hiện điều gì?",
+    "options": {"A": "Chỉ dự đoán mối tương quan", "B": "Tính toán hệ số tương quan", "C": "Chỉ tính toán số lượng biến số", "D": "Lập bảng thống kê"},
+    "gold_answer": "B",
+    "type": "tra_cuu",
+    "source_chunk_index": [2],
+    "evidence_quote": "Tính toán hệ số tương quan để có thể khẳng định chắc chắn hơn"
+  },
+  {
+    "question": "Công thức nào dưới đây được sử dụng để tính hệ số tương quan?",
+    "options": {"A": "r = x + y", "B": "r = (x*y)/n", "C": "r = (Σ(x_i - x̄)(y_i - ȳ))", "D": "r = (x - y)^2"},
+    "gold_answer": "C",
+    "type": "tra_cuu",
+    "source_chunk_index": [5],
+    "evidence_quote": "Công thức hệ số tương quan như sau: r = Σ(x_i - x̄)(y_i - ȳ)"
+  },
+  {
+    "question": "Nếu một biến x tăng thì biến y giảm, hệ số tương quan r sẽ có giá trị gần với giá trị nào?",
+    "options": {"A": "1", "B": "-1", "C": "0", "D": "0.5"},
+    "gold_answer": "B",
+    "type": "tinh_toan",
+    "source_chunk_index": [5],
+    "evidence_quote": "Nếu giá trị của r là âm, x và y có mối quan hệ nghịch"
+  }
+]

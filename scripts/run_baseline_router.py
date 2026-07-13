@@ -35,21 +35,21 @@ DATA_DIR = Path("data")
 CACHE_DIR = Path("cache")
 
 MAX_QUESTIONS = 200
-RESUME = True
+RESUME = False
 DRY_RUN = False
 LOAD_ENV_FILE = True
 ENV_FILE = Path(".env")
 
-QUESTION_FILE = DATA_DIR / "question.csv"
-CHUNK_DIR = Path("chunk_outputs_finals")
+QUESTION_FILE = DATA_DIR / "question_mcq.json"
+CHUNK_DIR = Path("chunk_outputs1_finals")
 
-OUTPUT_CSV = Path("baseline_router.csv")
-OUTPUT_JSON = Path("baseline_router_debug.json")
+OUTPUT_CSV = Path("baseline_router_mcq.csv")
+OUTPUT_JSON = Path("baseline_router_debug_mcq.json")
 
-QUERY_CACHE = CACHE_DIR / "cache_query_embeddings_question_csv_router.pkl"
-PREPARED_CACHE = CACHE_DIR / "cache_prepared_question_csv_router.pkl"
-CHUNK_EMB_CACHE = CACHE_DIR / "cache_chunk_embeddings.pkl"
-CHROMA_PATH = Path("chroma_db_viettel")
+QUERY_CACHE = CACHE_DIR / "cache_query_mcq_v1.pkl"
+PREPARED_CACHE = CACHE_DIR / "cache_prepared_question_mcq_v1_chunks1.pkl"
+CHUNK_EMB_CACHE = CACHE_DIR / "cache_chunk_embeddings_vn_embed_v2_chunks1.pkl"
+CHROMA_PATH = Path("chroma_db_viettel_vn_embed_v2_chunks1")
 CHROMA_COLLECTION = "rag"
 
 EMBEDDING_MODEL = "AITeamVN/Vietnamese_Embedding_v2"

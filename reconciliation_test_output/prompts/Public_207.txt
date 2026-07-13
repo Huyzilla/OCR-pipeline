@@ -1,0 +1,205 @@
+Bạn là người ra đề thi trắc nghiệm kỹ thuật tiếng Việt, độc lập với bất kỳ hệ thống truy hồi hay AI nào. Nhiệm vụ của bạn là tạo câu hỏi trắc nghiệm để kiểm tra khả năng hiểu tài liệu kỹ thuật của con người, KHÔNG phải để đánh giá một hệ thống máy tính cụ thể.
+
+Dựa trên các đoạn văn bản (chunk) sau đây trích từ tài liệu kỹ thuật "Public_207", hãy tạo 6 câu hỏi trắc nghiệm 4 đáp án (A/B/C/D, chỉ một đáp án đúng).
+
+YÊU CẦU BẮT BUỘC:
+- 5 câu thuộc loại TRA_CUU: câu hỏi có thể trả lời trực tiếp bằng cách tìm thông tin có sẵn trong đoạn văn (định nghĩa, thông số, giá trị, quy trình được nêu rõ).
+- 1 câu thuộc loại TINH_TOAN: câu hỏi yêu cầu lấy từ 2 dữ kiện trở lên trong đoạn văn rồi thực hiện phép tính hoặc suy luận để ra kết quả mới (không có sẵn con số đáp án trong văn bản). Nếu tài liệu không có đủ dữ kiện số liệu để tạo loại này, hãy thay bằng câu tra_cuu và ghi rõ lý do ở cuối.
+- KHÔNG diễn đạt câu hỏi bằng cách sao chép nguyên văn cụm từ trong đoạn gold — hãy diễn đạt lại (paraphrase) để câu hỏi giống cách một người dùng thực tế sẽ hỏi, không lộ rõ đáp án nằm ở đâu.
+- Với ít nhất 1 câu, hãy cố tình tạo câu hỏi mà thông tin cần thiết nằm rải rác ở nhiều vị trí/đoạn khác nhau trong các chunk được cung cấp (multi-hop), thay vì chỉ nằm gọn trong một câu duy nhất.
+- 3 đáp án nhiễu (distractor) phải hợp lý, không được sai một cách hiển nhiên hay vô nghĩa — nên là các giá trị/khái niệm có thật trong tài liệu nhưng không phải đáp án đúng cho câu hỏi này (ví dụ: đúng thông số nhưng sai điều kiện, đúng đơn vị nhưng sai giá trị).
+- Không tự đánh giá độ khó hay độ "hợp lý" của câu hỏi khi tạo — chỉ tạo đúng số lượng yêu cầu.
+
+Với mỗi câu hỏi, trả về đúng một object JSON theo cấu trúc sau (trả về một mảng JSON gồm 6 object, không kèm text nào khác ngoài JSON):
+[
+  {
+    "question": "...",
+    "options": {"A": "...", "B": "...", "C": "...", "D": "..."},
+    "gold_answer": "A/B/C/D",
+    "type": "tra_cuu hoặc tinh_toan",
+    "source_chunk_index": [chỉ số chunk_index dùng làm nguồn],
+    "evidence_quote": "trích đúng câu/đoạn ngắn (dưới 20 từ) trong chunk chứng minh đáp án đúng"
+  }
+]
+
+Các đoạn văn bản (mỗi đoạn có chunk_index để bạn tham chiếu ở source_chunk_index):
+
+[chunk_index=0] (Đạp bàn đạp phanh)
+# Đạp bàn đạp phanh
+
+Muốn đạp phanh phải chuyển chân phải từ bàn đạp ga sang bàn đạp phanh. Khi đạp phanh gấp, dùng mũi bàn chân đạp mạnh vào bàn đạp phanh, gót chân không để dính xuống sàn xe (hình 2-20).
+
+![](images/image1.jpg)
+
+Hình 2-9: Đạp bàn đạp phanh
+
+Dẫn động phanh ôtô thường có 2 loại chủ yếu: phanh dầu và phanh khí nén - Đối với dẫn động phanh khí nén: Từ từ đạp bàn đạp phanh cho đến khi tốc độ xe ôtô giảm theo ý muốn.
+
+---
+
+[chunk_index=1] (Nhả bàn đạp phanh)
+# Nhả bàn đạp phanh
+
+Sau khi phanh, phải nhanh chóng nhấc chân khỏi bàn đạp phanh chuyển về bàn đạp ga.
+
+![](images/image2.jpg)
+
+Hình 2-10: Nhả bàn đạp phanh
+
+---
+
+[chunk_index=2] (ĐIỀU KHIỂN CẦN SỐ)
+# ĐIỀU KHIỂN CẦN SỐ
+
+Khi điều khiển cần số sẽ làm thay đổi sự ăn khớp giữa các cặp bánh răng trong hộp số, làm thay đổi sức kéo và tốc độ chuyển động của xe ôtô.
+
+---
+
+[chunk_index=3] (ĐIỀU KHIỂN CẦN SỐ > Điều khiển cần số trên xe có trang bị hộp số điều khiển cơ khí)
+## Điều khiển cần số trên xe có trang bị hộp số điều khiển cơ khí
+
+Để chuyển số người lái xe đặt lòng bàn tay phải vào núm cần số, dùng lực của cánh tay đưa cần số từ số đang hoạt động về số "0", rồi từ đó đưa cần số vào vị trí số phù hợp.
+
+![](images/image3.jpg)
+
+* Cài số 1:
+* Đạp bàn đạp ly hợp hết hành trình;
+* Từ số "0" sang số "1": số "0" không có cặp bánh răng nào ăn khớp giữa trục trung gian với trục thực cấp trong hộp số (xe ô tô không chuyển động). Số "1" lực kéo lớn nhất nhưng tốc độ chậm nhất. Số "1" được dùng khi bắt đầu xuất phát hoặc khi leo dốc cao. Để chuyển từ số "0" sang số "1", người lái xe kéo nhẹ cần số về phía cửa số "1" rồi đẩy vào số "1"
+
+![](images/image4.jpg)
+
+* Sau khi vào số nhả bàn đạp ly hợp, khoảng 2/3 hành trình đầu nhả nhanh cho đĩa ma sát của ly hợp tiếp giáp với bánh đà.
+* Khoảng 1/3 hành trình sau nhả từ từ, để tặng dần mô men quay truyền từ động cơ đến hệ thống truyền lực.
+
+![](images/image5.jpg)
+
+* Cài số 2:
+* Đạp bàn đạp ly hợp hết hành trình;
+* + Từ số "1" sang số "2": số "2" so với số "1" lực kéo nhỏ hơn nhưng tốc độ lớn hơn.
+* + Để chuyển từ số "1" sang số "2", người lái xe đạp bàn đạp ly hợp hết hành trình, kéo nhẹ cần số về số "0" sau đó đẩy vào số "2".
+
+![](images/image6.jpg)
+
+* Sau khi vào số 2 nhả nhanh bàn đạp ly hợp, tăng ga.
+
+![](images/image7.jpg)
+
+* Tiếp tục tăng ga
+
+![](images/image8.jpg)
+
+* Cài số 3:
+* Từ số "2" sang số "3" : số "3" so với số "2" lực kéo nhỏ hơn nhưng tốc độ lớn hơn.
+* + Để chuyển từ số "2" sang số "3", người lái xe đạp hết hành trình bàn đạp ly hợp đẩy cần số về số "0", sau đó đẩy vào số "3".
+
+![](images/image9.jpg)
+
+* Sau khi vào số 3 nhả nhanh bàn đạp ly hợp, tăng ga.
+
+![](images/image10.jpg)
+
+* Cài số 4:
+* + Từ số "3" sang số "4": số "4" so với số "3" lực kéo nhỏ hơn nhưng tốc độ lớn hơn.
+* + Để chuyển từ số "3" sang số "4", người lái xe đạp bàn đạp ly hợp hết hành trình,
+* đẩy cần số về số "0", sau đó đẩy vào số "4".
+
+![](images/image11.jpg)
+
+* Sau khi vào số 4 nhả nhanh bàn đạp ly hợp, tăng ga.
+
+![](images/image12.jpg)
+
+* Tiếp tục tăng ga
+
+![](images/image13.jpg)
+
+Cài số 5:
+
+---
+
+[chunk_index=4] (ĐIỀU KHIỂN CẦN SỐ > Điều khiển cần số trên xe có trang bị hộp số điều khiển cơ khí)
+Cài số 5:
+
+* Từ số "4" sang số "5": số "5" so với số "4" lực kéo nhỏ hơn nhưng tốc độ lớn hơn.
+* Để chuyển từ số "4" sang số "5", người lái xe đạp hết hành trình bàn đạp ly hợp kéo cần số về số "0", sau đó đẩy nhẹ sang cửa số 5 và đẩy vào số "5".
+
+![](images/image14.jpg)
+
+* Sau khi vào số 5 nhả nhanh bàn đạp ly hợp, tăng ga.
+
+![](images/image15.jpg)
+
+* Giữ chân ga để ổn định tốc độ.
+
+![](images/image16.jpg)
+
+* Vào số lùi : số lùi dùng khi lùi xe .
+* + Để vào số lùi, từ vị trí số "0" người lái xe đạp hết hành trình bàn đạp ly hợp và kéo cần số về phía cửa số lùi, sau đó đẩy vào số lùi.
+
+![](images/image17.jpg)
+
+* + Sau khi vào số lùi (R) nhả nhanh bàn đạp ly hợp khoảng 2/3 hành trình đầu nhả nhanh cho đĩa ma sát của ly hợp tiếp giáp với bánh đà.
+* + Khoảng 1/3 hành trình sau nhả từ từ, để tăng dần mô men quay truyền từ động cơ đến hệ thống truyền lực
+* + Tăng nhẹ ga
+
+Trên một số xe, trước khi vào số lùi (R) phải thực hiện thêm thao tác phụ để mở khoá hãm.
+
+*Yêu cầu* : Mắt nhìn thẳng. Thao tác nhanh, dứt khoát, khi xong đưa tay về nắm vào vành vô lăng lái.
+
+*Chú ý: Khi giảm số chủ động thì giảm tuần tự từ cao xuống thấp, khi giảm số bị động có thể giảm tắt số mà không cần tuần tự.*
+
+---
+
+[chunk_index=5] (ĐIỀU KHIỂN CẦN SỐ > Điều khiển cần số trên xe có trang bị hộp số điều khiển tự động)
+## Điều khiển cần số trên xe có trang bị hộp số điều khiển tự động
+
+![](images/image18.jpg)
+
+* Số P: số được gài khi đỗ xe.
+
+![](images/image19.jpg)
+
+* R là số lùi;
+* Để chuyển từ số P sang số lùi (R), người lái xe phải đạp phanh chân hết hành trình như hình vẽ và gạt cần số sang phải và kéo xuống đến vị trí số R và thả ra như trên hình vẽ
+
+![](images/image20.jpg)
+
+* N là số 0
+* Số chuyển tiếp từ R sang D
+
+---
+
+[chunk_index=6] (GIÁO TRÌNH KỸ THUẬT LÁI XE Ô TÔ Lần ban hành:)
+# GIÁO TRÌNH KỸ THUẬT LÁI XE Ô TÔ Lần ban hành:
+
+**VIETTEL AI RACE** TD207
+
+![](images/image21.jpg)
+
+![](images/image22.jpg)
+
+![](images/image23.jpg)
+
+* Khi gạt cần số từ N sang D không cần đạp phanh. Tuy nhiên khi điều khiển khởi hành xe người lái xe cần đạp phanh, kiểm tra đã gài đúng số chưa rồi mới đạp ga cho xe đi.
+
+![](images/image24.jpg)
+
+* Số 2 là số tiến đi chậm, sử dụng khi lên dốc, xuống dốc có độ dốc lớn, đi vào đường trơn trượt.
+* Khi chuyển từ số D sang số 2 cần giảm tốc độ, đạp phanh.
+
+![](images/image25.jpg)
+
+* Số 1 là số tiến khi cần đi rất chậm, qua đường trơn trượt, lên dốc cao, xuống dốc cao. Số 1 được sử dụng trong thời gian ngắn vì vòng tua máy rất cao khi sử dụng số 1.
+* Để cài số 1, nhất thiết phải đạp bàn đạp phanh cho xe đi rất chậm hoặc dừng lại hẳn rồi mới gài số 1.
+
+Khi cài cần số tự động ở các vị trí, trên bảng đồng hồ cũng hiện các số tương ứng, P, R, N, D, 2, 1 để báo hiệu cho người lái xe biết mình đang đi ở số nào.
+
+*Chú ý :*
+
+*Khi gài số D để tiến (hoặc số R để lùi ), phải giữ chặt chân phanh và kiểm tra lại xem có bị nhầm số không rồi mới được cho xe lăn bánh.*
+
+*Khi dừng xe mà cài số P hoặc số N cần đạp phanh chân nếu không xe vẫn cứ tiến (hiện tượng xe tự chuyển động), trường hợp cần thiết phải kéo phanh tay cho an toàn.*
+
+*Nếu xuống dốc dài phải cài số 2 hoặc số 1( L). Khi đỗ xe phải cài số P và kéo phanh tay.*
+
+![](images/image26.jpg)
