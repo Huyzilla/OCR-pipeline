@@ -206,13 +206,14 @@ ViRanker~\cite{viranker} là cross-encoder reranker tiếng Việt công khai. B
     \label{tab:reranker-main-results}
     {\small
     \setlength{\tabcolsep}{4pt}
+    \renewcommand{\arraystretch}{1.15}
     \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.4cm}|>{\centering\arraybackslash}p{1.5cm}|>{\centering\arraybackslash}p{1.4cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.6cm}|>{\centering\arraybackslash}p{1.7cm}|}
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{4.8cm}|c|c|c|c|c|}
         \hline
         \textbf{Model} & \textbf{Params} & \shortstack{\textbf{Hit}\\\textbf{@1}} & \shortstack{\textbf{Recall}\\\textbf{@5}} & \shortstack{\textbf{MRR}\\\textbf{@10}} & \shortstack{\textbf{NDCG}\\\textbf{@10}} \\ \hline
         BGE-reranker-v2-m3 teacher & 568M & 0.8256 & 0.9615 & 0.8862 & 0.9068 \\ \hline
-        \textbf{mmarco-mMiniLMv2 (H384) + ADR-MSE} & \textbf{117M} & \textbf{0.8308} & \textbf{0.9615} & \textbf{0.8862} & \textbf{0.9069} \\ \hline
-        Pruned H384 + ADR-MSE & 35.6M & 0.8282 & 0.9590 & 0.8844 & 0.9051 \\ \hline
+        \textbf{mmarco-mMiniLMv2 (H384) + ADR-MSE} & \textbf{117M} & \textbf{0.8325 $\pm$ 0.0029} & \textbf{0.9615 $\pm$ 0.0000} & \textbf{0.8865 $\pm$ 0.0008} & \textbf{0.9073 $\pm$ 0.0006} \\ \hline
+        Pruned H384 + ADR-MSE & 35.6M & 0.8291 $\pm$ 0.0015 & 0.9615 $\pm$ 0.0026 & 0.8847 $\pm$ 0.0006 & 0.9051 $\pm$ 0.0006 \\ \hline
         ViRanker SOTA VI & 568M & 0.7872 & 0.9564 & 0.8593 & 0.8844 \\ \hline
         mmarco-mMiniLMv2 (H384) base & 117M & 0.7615 & 0.9410 & 0.8442 & 0.8732 \\ \hline
         Pruned H384 base & 35.6M & 0.7564 & 0.9385 & 0.8423 & 0.8710 \\ \hline
@@ -220,7 +221,7 @@ ViRanker~\cite{viranker} là cross-encoder reranker tiếng Việt công khai. B
     }
     }
 
-    \vspace{2mm} {\footnotesize \textit{Ghi chú: BGE-reranker-v2-m3 teacher được dùng làm mốc tham chiếu chất lượng. In đậm biểu thị student tốt nhất cho cấu hình triển khai.}}
+    \vspace{2mm} {\footnotesize \textit{Ghi chú: Metrics của H384 và Pruned H384 báo cáo trung bình $\pm$ độ lệch chuẩn trên 3 hạt giống $\{42, 123, 7\}$}}
 \end{table}
 
 Student mmarco-\allowbreak mMiniLMv2 (H384) 117M sau distillation đạt MRR@10 = 0.8862, ngang bằng teacher BGE-\allowbreak reranker-\allowbreak v2-\allowbreak m3 trên tập đánh giá này, trong khi số tham số nhỏ hơn khoảng 4.8 lần. Từ vựng cắt tỉa tạo ra phiên bản pruned 35.6M gần như không làm suy giảm chất lượng: pruned đạt MRR@10 = 0.8844, bằng 99.8\% so với mmarco 117M và so với teacher.
@@ -813,6 +814,13 @@ Một phát hiện đáng chú ý khác liên quan đến chỉ số gold-hit c�
 
 Tóm lại, phép kiểm chứng đối chiếu xác nhận: (i) các chỉ số tuyệt đối trên bộ 390 câu có phần lạc quan hơn thực tế khoảng 3--5 điểm phần trăm do hiệu ứng lựa chọn cấu hình, đúng như dự đoán; (ii) kết luận so sánh giữa v1 và v2 --- accuracy tương đương hoặc nhỉnh hơn nhẹ cho v2, tốc độ nhanh hơn đáng kể, router cục bộ chính xác hơn GPT router --- vẫn đứng vững và tái lập nhất quán trên dữ liệu độc lập; và (iii) một phần chỉ số gold-hit có thể bị đánh giá thấp hơn thực tế do giới hạn của nhãn gold đơn nhất.
 
+
+\section{Phân tích token ngoài từ vựng sau cắt tỉa}
+\label{section:unk-analysis}
+
+Một rủi ro tiềm ẩn của cắt tỉa từ vựng là token trong tập đánh giá có thể không nằm trong từ vựng rút gọn và bị thay bằng \plaincode{[UNK]}, làm giảm chất lượng mã hoá. Đồ án đo UNK rate trực tiếp bằng tokenizer pruned trên tập D2 --- hoàn toàn ngoài miền, không dùng khi xây dựng từ vựng.
+
+Kết quả: toàn bộ 390 câu hỏi D2 có UNK rate $= 0.000\%$. Trên 813 đoạn corpus D2, chỉ 49 trong số 196.046 token bị UNK ($0.025\%$), phân bố trên 33 đoạn --- tương đương dưới 2 token mỗi đoạn bị ảnh hưởng. Ở mức này reranker đọc được trên $99.97\%$ nội dung tài liệu ngoài miền, và chiến lược giữ lại 30.000 token phổ biến nhất cùng toàn bộ token trong corpus miền đã đủ phủ từ vựng tiếng Việt kỹ thuật trong thực tế.
 
 \section{Khuyến nghị cấu hình triển khai}
 \label{section:4.5}
